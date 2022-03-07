@@ -34,13 +34,24 @@
         }
     </style>
     <script>
-        document.addEventListener("keypress", (event) => {
-            if (event.key.match(/[a-zA-Z]/)) {
-                console.log(event.key);
-            }
-        });
+        const isNullOrUndefined = (value) => value == null;
+
+        if (!Array.prototype.last) {
+            Array.prototype.last = function () {
+                return this[this.length - 1];
+            };
+        };
+
+        if (!Array.prototype.first) {
+            Array.prototype.first = function () {
+                return this[0];
+            };
+        };
 
         class LetterBox extends HTMLElement {
+            static placeholderKey = 'placeholder'
+            static valueKey = 'value'
+
             constructor() {
                 super();
 
@@ -51,14 +62,23 @@
             }
 
             attributeChangedCallback(name, oldValue, newValue) {
-                this.innerSpan.textContent = newValue ?? '_';
+                if (name === LetterBox.valueKey && newValue) {
+                    this.innerSpan.textContent = newValue;
+                } else if (name === LetterBox.placeholderKey && !this.value) {
+                    this.innerSpan.textContent = newValue;
+                } else {
+                    this.innerSpan.textContent = this.placeholder;
+                }
             }
 
-            get letter() { return this.getAttribute('letter') };
-            set letter(value) { this.setAttribute('letter', value) };
+            get placeholder() { return this.getAttribute(LetterBox.placeholderKey) };
+            get value() { return this.getAttribute(LetterBox.valueKey) };
+
+            set placeholder(value) { this.setAttribute(LetterBox.placeholderKey, value) };
+            set value(value) { this.setAttribute(LetterBox.valueKey, value) };
         }
 
-        LetterBox.observedAttributes = ['letter'];
+        LetterBox.observedAttributes = [LetterBox.placeholderKey, LetterBox.valueKey];
         LetterBox.template = document.createElement('template');
 
         LetterBox.template.innerHTML = `
@@ -86,7 +106,7 @@
             }
         </style>
         <span class="letter-container">
-            <span class="letter">_</span>
+            <span class="letter"></span>
         </span>
         `;
 
@@ -107,12 +127,12 @@
         </div>
 
         <div class="entry-container">
-            <p-letter-box id="answer-1"></p-letter-box>
-            <p-letter-box id="answer-2"></p-letter-box>
-            <p-letter-box id="answer-3"></p-letter-box>
-            <p-letter-box id="answer-4"></p-letter-box>
-            <p-letter-box id="answer-5"></p-letter-box>
-            <p-letter-box id="answer-6"></p-letter-box>
+            <p-letter-box id="entry-1" placeholder="_"></p-letter-box>
+            <p-letter-box id="entry-2" placeholder="_"></p-letter-box>
+            <p-letter-box id="entry-3" placeholder="_"></p-letter-box>
+            <p-letter-box id="entry-4" placeholder="_"></p-letter-box>
+            <p-letter-box id="entry-5" placeholder="_"></p-letter-box>
+            <p-letter-box id="entry-6" placeholder="_"></p-letter-box>
         </div>
 
         <!--
@@ -156,13 +176,83 @@
     </div> -->
 </body>
 <script>
-    const letters = document.querySelectorAll(`[id^='letter-']`);
-    letters[0].setAttribute('letter', 'r');
-    letters[1].setAttribute('letter', 'e');
-    letters[2].setAttribute('letter', 's');
-    letters[3].setAttribute('letter', 'c');
-    letters[4].setAttribute('letter', 'u');
-    letters[5].setAttribute('letter', 'e');
+    const EMPTY = '_';
+    const letters = Array.from(document.querySelectorAll(`[id^='letter-']`));
+    const entries = Array.from(document.querySelectorAll(`[id^='entry-']`));
+
+    Array.from('rescue').forEach((l, i) => {
+        letters[i].placeholder = letters[i].value = l;
+    });
+
+    document.addEventListener('keydown', (event) => handleKeyDown(event.key));
+
+    function handleKeyDown(key) {
+        if (wasBackspacePressed(key)) {
+            tryBackspace();
+        } else if (wasLetterPressed(key)) {
+            trySubmitLetter(key.toLowerCase());
+        } else if (wasEnterPressed(key)) {
+            trySubmitWord();
+        }
+    }
+
+    function wasBackspacePressed(key) {
+        return key === 'Backspace';
+    }
+
+    function wasEnterPressed(key) {
+        return key === 'Enter';
+    }
+
+    function wasLetterPressed(key) {
+        return key.match(/^[a-zA-Z]$/);
+    }
+
+    function tryBackspace() {
+        const lastEntry = entries
+            .filter(element => element.value)
+            .last();
+
+        if (!isNullOrUndefined(lastEntry)) {
+            const letter = letters
+                .filter(e => e.placeholder == lastEntry.value && e.value === EMPTY)
+                .last();
+
+            letter.value = letter.placeholder;
+            lastEntry.removeAttribute(LetterBox.valueKey);
+        }
+    }
+
+    function trySubmitLetter(key) {
+        if (!isLetterAvailable(key)) {
+            return;
+        }
+
+        const nextEntry = entries
+            .filter(e => !e.value)
+            .first();
+
+        if (!isNullOrUndefined(nextEntry)) {
+            const letter = letters
+                .filter(element => element.value === key)
+                .first();
+
+            letter.value = EMPTY;
+            nextEntry.value = key;
+        }
+    }
+
+    function trySubmitWord() {
+        console.log(entries.map(e => e.value).join(''));
+    }
+
+    function isLetterAvailable(key) {
+        const letter = letters
+            .filter(e => e.value === key)
+            .first();
+
+        return !!letter;
+    }
 </script>
 
 </html>
