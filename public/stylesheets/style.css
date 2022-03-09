@@ -1,0 +1,19 @@
+body {
+  padding: 2em;
+  font: 1em "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FE; }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.scramble-container {
+  margin: 0.5em; }
+
+.answer-container {
+  display: flex; }
+
+/*# sourceMappingURL=style.css.map */
