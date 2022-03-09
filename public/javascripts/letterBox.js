@@ -56,7 +56,7 @@ LetterBox.template.innerHTML = `
     .letter {
         color: white;
         display: inline-block;
-        padding-top: 2px;
+        padding-top: 3px;
         text-align: center;
         text-transform: uppercase;
         width: 100%;
