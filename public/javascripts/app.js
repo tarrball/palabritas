@@ -1,12 +1,15 @@
 import LetterBox from "./letterBox.js";
+import GameManager from "./gameManager.js";
 
 customElements.define("p-letter-box", LetterBox);
 
 const EMPTY = "_";
 const letters = Array.from(document.querySelectorAll(`[id^='letter-']`));
 const entries = Array.from(document.querySelectorAll(`[id^='entry-']`));
+const gameManager = new GameManager();
+const game = gameManager.nextGame();
 
-Array.from("rescue").forEach((l, i) => {
+Array.from(game.word).forEach((l, i) => {
   letters[i].placeholder = letters[i].value = l;
 });
 

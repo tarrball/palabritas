@@ -13,7 +13,9 @@ a {
 .scramble-container {
   margin: 0.5em; }
 
-.answer-container {
-  display: flex; }
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */
