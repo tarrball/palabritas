@@ -17,9 +17,9 @@ Array.from(game.word).forEach((l, i) => {
 
 game.subset.forEach((word) => {
   const letterBoxes = Array.from(word).map((letter) => {
-    const box = document.createElement("p-letter-box");
-    box.value = "_";
+    const box = document.createElement("p-letter-box");    
     box.placeholder = letter;
+    box.value = "_";
 
     return box;
   });
