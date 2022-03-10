@@ -2,10 +2,12 @@ import LetterBox from "./letterBox.js";
 import GameManager from "./gameManager.js";
 
 customElements.define("p-letter-box", LetterBox);
+document.addEventListener("keydown", (event) => handleKeyDown(event.key));
 
 const EMPTY = "_";
 const letters = Array.from(document.querySelectorAll(`[id^='letter-']`));
 const entries = Array.from(document.querySelectorAll(`[id^='entry-']`));
+const answerContainer = document.querySelector(".answers-container");
 const gameManager = new GameManager();
 const game = gameManager.nextGame();
 
@@ -13,7 +15,21 @@ Array.from(game.word).forEach((l, i) => {
   letters[i].placeholder = letters[i].value = l;
 });
 
-document.addEventListener("keydown", (event) => handleKeyDown(event.key));
+game.subset.forEach((word) => {
+  const letterBoxes = Array.from(word).map((letter) => {
+    const box = document.createElement("p-letter-box");
+    box.value = "_";
+    box.placeholder = letter;
+
+    return box;
+  });
+
+  const div = document.createElement("div");
+  div.classList.add("answer-container");
+  div.append(...letterBoxes);
+
+  answerContainer.append(div);
+});
 
 function handleKeyDown(key) {
   if (wasBackspacePressed(key)) {

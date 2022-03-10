@@ -16,6 +16,11 @@ a {
 .answers-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 1em;
+  max-height: 15em;
+  width: 80%; }
+  .answers-container > * {
+    padding: .5em; }
 
 /*# sourceMappingURL=style.css.map */
