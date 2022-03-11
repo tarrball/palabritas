@@ -41,15 +41,24 @@ game.subset.forEach((word) => {
 const input = document.querySelector(".hidden-input");
 input.value = "begin";
 
-input.addEventListener(
-  "focus",
-  () => {
-    input.value = "";
-    input.classList.add("hidden");
-    document.addEventListener("keydown", (event) => handleKeyDown(event.key));
-  },
-  { once: true }
-);
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  input.removeAttribute("hidden");
+  input.addEventListener(
+    "focus",
+    () => {
+      input.value = "";
+      input.classList.add("hidden");
+      document.addEventListener("keydown", (event) => handleKeyDown(event.key));
+    },
+    { once: true }
+  );
+} else {
+  document.addEventListener("keydown", (event) => handleKeyDown(event.key));
+}
 
 function handleKeyDown(key) {
   if (wasBackspacePressed(key)) {
