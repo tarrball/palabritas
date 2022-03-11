@@ -2,7 +2,6 @@ import LetterBox from "./letterBox.js";
 import GameManager from "./gameManager.js";
 
 customElements.define("p-letter-box", LetterBox);
-document.addEventListener("keydown", (event) => handleKeyDown(event.key));
 
 const EMPTY = "_";
 const letters = Array.from(document.querySelectorAll(`[id^='letter-']`));
@@ -11,13 +10,15 @@ const answerContainer = document.querySelector(".answers-container");
 const gameManager = new GameManager();
 const game = gameManager.nextGame();
 
+let answers = [];
+
 Array.from(game.word).forEach((l, i) => {
   letters[i].placeholder = letters[i].value = l;
 });
 
 game.subset.forEach((word) => {
   const letterBoxes = Array.from(word).map((letter) => {
-    const box = document.createElement("p-letter-box");    
+    const box = document.createElement("p-letter-box");
     box.placeholder = letter;
     box.value = "_";
 
@@ -29,7 +30,26 @@ game.subset.forEach((word) => {
   div.append(...letterBoxes);
 
   answerContainer.append(div);
+
+  answers.push({
+    container: div,
+    isFound: false,
+    word,
+  });
 });
+
+const input = document.querySelector(".hidden-input");
+input.value = "begin";
+
+input.addEventListener(
+  "focus",
+  () => {
+    input.value = "";
+    input.classList.add("hidden");
+    document.addEventListener("keydown", (event) => handleKeyDown(event.key));
+  },
+  { once: true }
+);
 
 function handleKeyDown(key) {
   if (wasBackspacePressed(key)) {
@@ -82,7 +102,21 @@ function trySubmitLetter(key) {
 }
 
 function trySubmitWord() {
-  console.log(entries.map((e) => e.value).join(""));
+  input.value = "";
+
+  const entry = entries.map((e) => e.value).join("");
+  const answer = answers.find((a) => !a.isFound && a.word === entry);
+
+  if (answer) {
+    answer.isFound = true;
+
+    const boxes = answer.container.querySelectorAll("p-letter-box");
+    boxes.forEach((b) => (b.value = b.placeholder));
+    entries.forEach((e) => (e.value = ""));
+    letters.forEach((l) => (l.value = l.placeholder));
+  } else {
+    // wrong answer
+  }
 }
 
 function isLetterAvailable(key) {

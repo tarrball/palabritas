@@ -49,14 +49,13 @@ LetterBox.template.innerHTML = `
         border: black solid 1px;
         cursor: default;
         display: inline-block;
-        height: 1.3em;                
-        width: 1.3em;
+        width: 1em;
     }
 
     .letter {
         color: white;
         display: inline-block;
-        padding-top: 3px;
+        padding-top: .125em;
         text-align: center;
         text-transform: uppercase;
         width: 100%;

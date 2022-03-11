@@ -1,26 +1,42 @@
 body {
-  padding: 2em;
-  font: 1em "Lucida Grande", Helvetica, Arial, sans-serif; }
+  display: flex;
+  font: 4em "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden; }
 
-a {
-  color: #00B7FE; }
+.hidden-input {
+  background: grey;
+  border: 5px solid black;
+  border-radius: 1.5em;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  left: calc(50% - 5em);
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 45%;
+  width: 10em; }
+
+.hidden-input.hidden {
+  opacity: 0;
+  top: 0;
+  cursor: default; }
 
 .main-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-
-.scramble-container {
-  margin: 0.5em; }
+  width: 66%; }
 
 .answers-container {
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 1em;
-  max-height: 15em;
-  width: 80%; }
+  overflow-y: auto;
+  padding: .5em 0; }
   .answers-container > * {
-    padding: .5em; }
+    padding: .2em .1em; }
 
 /*# sourceMappingURL=style.css.map */
