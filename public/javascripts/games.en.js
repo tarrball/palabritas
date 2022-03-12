@@ -1,7 +1,9 @@
+// @flow
+
 export const GAMES = [
     {
-        'word': 'ubando',
-        'subset': [
+        word: 'ubando',
+        subset: [
             'ado',
             'and',
             'bad',
@@ -21,12 +23,12 @@ export const GAMES = [
             'bond',
             'undo',
             'bound',
-            'abound'
-        ]
+            'abound',
+        ],
     },
     {
-        'word': 'rmaals',
-        'subset': [
+        word: 'rmaals',
+        subset: [
             'ala',
             'als',
             'ama',
@@ -46,12 +48,12 @@ export const GAMES = [
             'mars',
             'slam',
             'alarm',
-            'alarms'
-        ]
+            'alarms',
+        ],
     },
     {
-        'word': 'loacev',
-        'subset': [
+        word: 'loacev',
+        subset: [
             'ace',
             'ale',
             'ave',
@@ -71,12 +73,12 @@ export const GAMES = [
             'oval',
             'veal',
             'vocal',
-            'alcove'
-        ]
+            'alcove',
+        ],
     },
     {
-        'word': 'amroal',
-        'subset': [
+        word: 'amroal',
+        subset: [
             'ala',
             'ama',
             'arm',
@@ -96,12 +98,12 @@ export const GAMES = [
             'alarm',
             'aroma',
             'moral',
-            'amoral'
-        ]
+            'amoral',
+        ],
     },
     {
-        'word': 'uarond',
-        'subset': [
+        word: 'uarond',
+        subset: [
             'ado',
             'and',
             'don',
@@ -121,12 +123,12 @@ export const GAMES = [
             'road',
             'undo',
             'round',
-            'around'
-        ]
+            'around',
+        ],
     },
     {
-        'word': 'siadov',
-        'subset': [
+        word: 'siadov',
+        subset: [
             'ado',
             'ads',
             'aid',
@@ -146,12 +148,12 @@ export const GAMES = [
             'void',
             'avoid',
             'divas',
-            'avoids'
-        ]
+            'avoids',
+        ],
     },
     {
-        'word': 'nbnaer',
-        'subset': [
+        word: 'nbnaer',
+        subset: [
             'ane',
             'are',
             'ban',
@@ -171,12 +173,12 @@ export const GAMES = [
             'bren',
             'earn',
             'near',
-            'banner'
-        ]
+            'banner',
+        ],
     },
     {
-        'word': 'btihrs',
-        'subset': [
+        word: 'btihrs',
+        subset: [
             'bit',
             'his',
             'hit',
@@ -196,12 +198,12 @@ export const GAMES = [
             'this',
             'birth',
             'shirt',
-            'births'
-        ]
+            'births',
+        ],
     },
     {
-        'word': 'ebldsn',
-        'subset': [
+        word: 'ebldsn',
+        subset: [
             'bed',
             'bel',
             'ben',
@@ -221,12 +223,12 @@ export const GAMES = [
             'sled',
             'bends',
             'blend',
-            'blends'
-        ]
+            'blends',
+        ],
     },
     {
-        'word': 'owbngi',
-        'subset': [
+        word: 'owbngi',
+        subset: [
             'big',
             'bin',
             'bio',
@@ -246,12 +248,12 @@ export const GAMES = [
             'wing',
             'bingo',
             'owing',
-            'bowing'
-        ]
+            'bowing',
+        ],
     },
     {
-        'word': 'banmow',
-        'subset': [
+        word: 'banmow',
+        subset: [
             'bam',
             'ban',
             'boa',
@@ -271,12 +273,12 @@ export const GAMES = [
             'moan',
             'womb',
             'woman',
-            'bowman'
-        ]
+            'bowman',
+        ],
     },
     {
-        'word': 'brncah',
-        'subset': [
+        word: 'brncah',
+        subset: [
             'arc',
             'bah',
             'ban',
@@ -296,12 +298,12 @@ export const GAMES = [
             'crab',
             'narc',
             'ranch',
-            'branch'
-        ]
+            'branch',
+        ],
     },
     {
-        'word': 'raebzn',
-        'subset': [
+        word: 'raebzn',
+        subset: [
             'ane',
             'are',
             'ban',
@@ -321,12 +323,12 @@ export const GAMES = [
             'earn',
             'near',
             'zebra',
-            'brazen'
-        ]
+            'brazen',
+        ],
     },
     {
-        'word': 'roombs',
-        'subset': [
+        word: 'roombs',
+        subset: [
             'boo',
             'bro',
             'mob',
@@ -346,12 +348,12 @@ export const GAMES = [
             'broom',
             'moors',
             'rooms',
-            'brooms'
-        ]
+            'brooms',
+        ],
     },
     {
-        'word': 'acncre',
-        'subset': [
+        word: 'acncre',
+        subset: [
             'ace',
             'ane',
             'arc',
@@ -371,12 +373,12 @@ export const GAMES = [
             'near',
             'race',
             'crane',
-            'cancer'
-        ]
+            'cancer',
+        ],
     },
     {
-        'word': 'arctor',
-        'subset': [
+        word: 'arctor',
+        subset: [
             'act',
             'arc',
             'art',
@@ -396,12 +398,12 @@ export const GAMES = [
             'roar',
             'taco',
             'actor',
-            'carrot'
-        ]
+            'carrot',
+        ],
     },
     {
-        'word': 'icsgar',
-        'subset': [
+        word: 'icsgar',
+        subset: [
             'air',
             'arc',
             'car',
@@ -421,12 +423,12 @@ export const GAMES = [
             'scag',
             'scar',
             'cigar',
-            'cigars'
-        ]
+            'cigars',
+        ],
     },
     {
-        'word': 'lcumps',
-        'subset': [
+        word: 'lcumps',
+        subset: [
             'cum',
             'cup',
             'lum',
@@ -446,12 +448,12 @@ export const GAMES = [
             'clump',
             'lumps',
             'plums',
-            'clumps'
-        ]
+            'clumps',
+        ],
     },
     {
-        'word': 'mcodey',
-        'subset': [
+        word: 'mcodey',
+        subset: [
             'cod',
             'coy',
             'dey',
@@ -471,12 +473,12 @@ export const GAMES = [
             'dome',
             'mode',
             'decoy',
-            'comedy'
-        ]
+            'comedy',
+        ],
     },
     {
-        'word': 'cdrono',
-        'subset': [
+        word: 'cdrono',
+        subset: [
             'cod',
             'con',
             'coo',
@@ -496,12 +498,12 @@ export const GAMES = [
             'croon',
             'donor',
             'condor',
-            'cordon'
-        ]
+            'cordon',
+        ],
     },
     {
-        'word': 'ocfner',
-        'subset': [
+        word: 'ocfner',
+        subset: [
             'con',
             'cor',
             'fen',
@@ -521,12 +523,12 @@ export const GAMES = [
             'once',
             'force',
             'recon',
-            'confer'
-        ]
+            'confer',
+        ],
     },
     {
-        'word': 'docorn',
-        'subset': [
+        word: 'docorn',
+        subset: [
             'cod',
             'con',
             'coo',
@@ -546,12 +548,12 @@ export const GAMES = [
             'croon',
             'donor',
             'condor',
-            'cordon'
-        ]
+            'cordon',
+        ],
     },
     {
-        'word': 'csoign',
-        'subset': [
+        word: 'csoign',
+        subset: [
             'cog',
             'con',
             'cos',
@@ -571,12 +573,12 @@ export const GAMES = [
             'song',
             'coins',
             'icons',
-            'cosign'
-        ]
+            'cosign',
+        ],
     },
     {
-        'word': 'riscpy',
-        'subset': [
+        word: 'riscpy',
+        subset: [
             'cry',
             'icy',
             'pic',
@@ -596,12 +598,12 @@ export const GAMES = [
             'spry',
             'crisp',
             'spicy',
-            'crispy'
-        ]
+            'crispy',
+        ],
     },
     {
-        'word': 'outcms',
-        'subset': [
+        word: 'outcms',
+        subset: [
             'cos',
             'cot',
             'cum',
@@ -621,12 +623,12 @@ export const GAMES = [
             'sumo',
             'toms',
             'scout',
-            'custom'
-        ]
+            'custom',
+        ],
     },
     {
-        'word': 'dceiet',
-        'subset': [
+        word: 'dceiet',
+        subset: [
             'cee',
             'dee',
             'die',
@@ -646,12 +648,12 @@ export const GAMES = [
             'tied',
             'cited',
             'edict',
-            'deceit'
-        ]
+            'deceit',
+        ],
     },
     {
-        'word': 'derevi',
-        'subset': [
+        word: 'derevi',
+        subset: [
             'dee',
             'die',
             'ere',
@@ -671,12 +673,12 @@ export const GAMES = [
             'veer',
             'diver',
             'drive',
-            'derive'
-        ]
+            'derive',
+        ],
     },
     {
-        'word': 'deucse',
-        'subset': [
+        word: 'deucse',
+        subset: [
             'cee',
             'cud',
             'cue',
@@ -696,12 +698,12 @@ export const GAMES = [
             'deuce',
             'suede',
             'deuces',
-            'seduce'
-        ]
+            'seduce',
+        ],
     },
     {
-        'word': 'veodet',
-        'subset': [
+        word: 'veodet',
+        subset: [
             'dee',
             'doe',
             'dot',
@@ -721,12 +723,12 @@ export const GAMES = [
             'vote',
             'voted',
             'devote',
-            'vetoed'
-        ]
+            'vetoed',
+        ],
     },
     {
-        'word': 'dvuoer',
-        'subset': [
+        word: 'dvuoer',
+        subset: [
             'doe',
             'due',
             'duo',
@@ -746,12 +748,12 @@ export const GAMES = [
             'rode',
             'rude',
             'drove',
-            'devour'
-        ]
+            'devour',
+        ],
     },
     {
-        'word': 'coodtr',
-        'subset': [
+        word: 'coodtr',
+        subset: [
             'cod',
             'coo',
             'cor',
@@ -771,12 +773,12 @@ export const GAMES = [
             'root',
             'roto',
             'toro',
-            'doctor'
-        ]
+            'doctor',
+        ],
     },
     {
-        'word': 'vrdien',
-        'subset': [
+        word: 'vrdien',
+        subset: [
             'den',
             'die',
             'end',
@@ -796,12 +798,12 @@ export const GAMES = [
             'diner',
             'diver',
             'drive',
-            'driven'
-        ]
+            'driven',
+        ],
     },
     {
-        'word': 'dumreb',
-        'subset': [
+        word: 'dumreb',
+        subset: [
             'bed',
             'bud',
             'bum',
@@ -821,12 +823,12 @@ export const GAMES = [
             'rube',
             'rude',
             'demur',
-            'dumber'
-        ]
+            'dumber',
+        ],
     },
     {
-        'word': 'uledes',
-        'subset': [
+        word: 'uledes',
+        subset: [
             'dee',
             'del',
             'due',
@@ -846,12 +848,12 @@ export const GAMES = [
             'used',
             'elude',
             'suede',
-            'eludes'
-        ]
+            'eludes',
+        ],
     },
     {
-        'word': 'entrei',
-        'subset': [
+        word: 'entrei',
+        subset: [
             'ere',
             'nee',
             'net',
@@ -871,12 +873,12 @@ export const GAMES = [
             'tree',
             'enter',
             'inter',
-            'entire'
-        ]
+            'entire',
+        ],
     },
     {
-        'word': 'xesist',
-        'subset': [
+        word: 'xesist',
+        subset: [
             'ess',
             'its',
             'set',
@@ -896,12 +898,12 @@ export const GAMES = [
             'sites',
             'sixes',
             'exists',
-            'sexist'
-        ]
+            'sexist',
+        ],
     },
     {
-        'word': 'dnagif',
-        'subset': [
+        word: 'dnagif',
+        subset: [
             'aid',
             'ain',
             'and',
@@ -921,12 +923,12 @@ export const GAMES = [
             'fang',
             'find',
             'gain',
-            'fading'
-        ]
+            'fading',
+        ],
     },
     {
-        'word': 'faustl',
-        'subset': [
+        word: 'faustl',
+        subset: [
             'aft',
             'als',
             'alt',
@@ -946,12 +948,12 @@ export const GAMES = [
             'slut',
             'fault',
             'flats',
-            'faults'
-        ]
+            'faults',
+        ],
     },
     {
-        'word': 'ifsfth',
-        'subset': [
+        word: 'ifsfth',
+        subset: [
             'fit',
             'his',
             'hit',
@@ -971,12 +973,12 @@ export const GAMES = [
             'fifth',
             'shift',
             'stiff',
-            'fifths'
-        ]
+            'fifths',
+        ],
     },
     {
-        'word': 'ilelfr',
-        'subset': [
+        word: 'ilelfr',
+        subset: [
             'elf',
             'ell',
             'fer',
@@ -996,12 +998,12 @@ export const GAMES = [
             'lifer',
             'rifle',
             'filler',
-            'refill'
-        ]
+            'refill',
+        ],
     },
     {
-        'word': 'fooled',
-        'subset': [
+        word: 'fooled',
+        subset: [
             'del',
             'doe',
             'dol',
@@ -1021,12 +1023,12 @@ export const GAMES = [
             'fool',
             'lode',
             'flood',
-            'fooled'
-        ]
+            'fooled',
+        ],
     },
     {
-        'word': 'gerofo',
-        'subset': [
+        word: 'gerofo',
+        subset: [
             'ego',
             'fer',
             'foe',
@@ -1046,12 +1048,12 @@ export const GAMES = [
             'forge',
             'forgo',
             'gofer',
-            'forego'
-        ]
+            'forego',
+        ],
     },
     {
-        'word': 'roofgt',
-        'subset': [
+        word: 'roofgt',
+        subset: [
             'fog',
             'for',
             'fro',
@@ -1071,12 +1073,12 @@ export const GAMES = [
             'roto',
             'toro',
             'forgo',
-            'forgot'
-        ]
+            'forgot',
+        ],
     },
     {
-        'word': 'rfiedg',
-        'subset': [
+        word: 'rfiedg',
+        subset: [
             'die',
             'dig',
             'fed',
@@ -1096,12 +1098,12 @@ export const GAMES = [
             'fried',
             'grief',
             'ridge',
-            'fridge'
-        ]
+            'fridge',
+        ],
     },
     {
-        'word': 'fuelde',
-        'subset': [
+        word: 'fuelde',
+        subset: [
             'dee',
             'del',
             'due',
@@ -1121,12 +1123,12 @@ export const GAMES = [
             'flue',
             'fuel',
             'elude',
-            'fueled'
-        ]
+            'fueled',
+        ],
     },
     {
-        'word': 'grailc',
-        'subset': [
+        word: 'grailc',
+        subset: [
             'ail',
             'air',
             'arc',
@@ -1146,12 +1148,12 @@ export const GAMES = [
             'rail',
             'cigar',
             'grail',
-            'garlic'
-        ]
+            'garlic',
+        ],
     },
     {
-        'word': 'sgslay',
-        'subset': [
+        word: 'sgslay',
+        subset: [
             'als',
             'ass',
             'gal',
@@ -1171,12 +1173,12 @@ export const GAMES = [
             'slay',
             'gassy',
             'glass',
-            'glassy'
-        ]
+            'glassy',
+        ],
     },
     {
-        'word': 'otgaee',
-        'subset': [
+        word: 'otgaee',
+        subset: [
             'age',
             'ago',
             'ate',
@@ -1196,12 +1198,12 @@ export const GAMES = [
             'gate',
             'goat',
             'toga',
-            'goatee'
-        ]
+            'goatee',
+        ],
     },
     {
-        'word': 'ugrops',
-        'subset': [
+        word: 'ugrops',
+        subset: [
             'gor',
             'ops',
             'our',
@@ -1221,12 +1223,12 @@ export const GAMES = [
             'spur',
             'group',
             'pours',
-            'groups'
-        ]
+            'groups',
+        ],
     },
     {
-        'word': 'ahrlyd',
-        'subset': [
+        word: 'ahrlyd',
+        subset: [
             'dah',
             'day',
             'dry',
@@ -1246,12 +1248,12 @@ export const GAMES = [
             'yard',
             'hardy',
             'hydra',
-            'hardly'
-        ]
+            'hardly',
+        ],
     },
     {
-        'word': 'alhdee',
-        'subset': [
+        word: 'alhdee',
+        subset: [
             'ale',
             'dah',
             'dee',
@@ -1271,12 +1273,12 @@ export const GAMES = [
             'heel',
             'held',
             'lead',
-            'healed'
-        ]
+            'healed',
+        ],
     },
     {
-        'word': 'gihesn',
-        'subset': [
+        word: 'gihesn',
+        subset: [
             'eng',
             'gen',
             'gin',
@@ -1296,12 +1298,12 @@ export const GAMES = [
             'sing',
             'shine',
             'singe',
-            'hinges'
-        ]
+            'hinges',
+        ],
     },
     {
-        'word': 'uhsseo',
-        'subset': [
+        word: 'uhsseo',
+        subset: [
             'ess',
             'hoe',
             'hue',
@@ -1321,12 +1323,12 @@ export const GAMES = [
             'house',
             'shoes',
             'souse',
-            'houses'
-        ]
+            'houses',
+        ],
     },
     {
-        'word': 'ehlust',
-        'subset': [
+        word: 'ehlust',
+        subset: [
             'eth',
             'hue',
             'hut',
@@ -1346,12 +1348,12 @@ export const GAMES = [
             'thus',
             'tush',
             'hustle',
-            'sleuth'
-        ]
+            'sleuth',
+        ],
     },
     {
-        'word': 'dinnte',
-        'subset': [
+        word: 'dinnte',
+        subset: [
             'den',
             'die',
             'dit',
@@ -1371,12 +1373,12 @@ export const GAMES = [
             'tend',
             'tide',
             'tied',
-            'intend'
-        ]
+            'intend',
+        ],
     },
     {
-        'word': 'lekson',
-        'subset': [
+        word: 'lekson',
+        subset: [
             'elk',
             'ken',
             'nos',
@@ -1396,12 +1398,12 @@ export const GAMES = [
             'nose',
             'ones',
             'sole',
-            'kelson'
-        ]
+            'kelson',
+        ],
     },
     {
-        'word': 'ikneyd',
-        'subset': [
+        word: 'ikneyd',
+        subset: [
             'den',
             'dey',
             'die',
@@ -1421,12 +1423,12 @@ export const GAMES = [
             'dyke',
             'kind',
             'dinky',
-            'kidney'
-        ]
+            'kidney',
+        ],
     },
     {
-        'word': 'lamayn',
-        'subset': [
+        word: 'lamayn',
+        subset: [
             'ala',
             'ama',
             'ana',
@@ -1446,12 +1448,12 @@ export const GAMES = [
             'maya',
             'manly',
             'mayan',
-            'layman'
-        ]
+            'layman',
+        ],
     },
     {
-        'word': 'evliyt',
-        'subset': [
+        word: 'evliyt',
+        subset: [
             'ivy',
             'lei',
             'let',
@@ -1471,12 +1473,12 @@ export const GAMES = [
             'veil',
             'vile',
             'yeti',
-            'levity'
-        ]
+            'levity',
+        ],
     },
     {
-        'word': 'cinlhe',
-        'subset': [
+        word: 'cinlhe',
+        subset: [
             'chi',
             'hen',
             'hic',
@@ -1496,12 +1498,12 @@ export const GAMES = [
             'nice',
             'chile',
             'niche',
-            'lichen'
-        ]
+            'lichen',
+        ],
     },
     {
-        'word': 'ppleid',
-        'subset': [
+        word: 'ppleid',
+        subset: [
             'del',
             'die',
             'dip',
@@ -1521,12 +1523,12 @@ export const GAMES = [
             'pipe',
             'pled',
             'piled',
-            'lipped'
-        ]
+            'lipped',
+        ],
     },
     {
-        'word': 'riltte',
-        'subset': [
+        word: 'riltte',
+        subset: [
             'lei',
             'let',
             'lie',
@@ -1546,12 +1548,12 @@ export const GAMES = [
             'liter',
             'title',
             'trite',
-            'litter'
-        ]
+            'litter',
+        ],
     },
     {
-        'word': 'looped',
-        'subset': [
+        word: 'looped',
+        subset: [
             'del',
             'doe',
             'dol',
@@ -1571,12 +1573,12 @@ export const GAMES = [
             'polo',
             'pool',
             'looped',
-            'poodle'
-        ]
+            'poodle',
+        ],
     },
     {
-        'word': 'ramker',
-        'subset': [
+        word: 'ramker',
+        subset: [
             'are',
             'ark',
             'arm',
@@ -1596,12 +1598,12 @@ export const GAMES = [
             'rear',
             'maker',
             'marker',
-            'remark'
-        ]
+            'remark',
+        ],
     },
     {
-        'word': 'mtarxi',
-        'subset': [
+        word: 'mtarxi',
+        subset: [
             'aim',
             'air',
             'ami',
@@ -1621,12 +1623,12 @@ export const GAMES = [
             'taxi',
             'tram',
             'trim',
-            'matrix'
-        ]
+            'matrix',
+        ],
     },
     {
-        'word': 'megane',
-        'subset': [
+        word: 'megane',
+        subset: [
             'age',
             'ane',
             'eng',
@@ -1646,12 +1648,12 @@ export const GAMES = [
             'mean',
             'name',
             'enema',
-            'menage'
-        ]
+            'menage',
+        ],
     },
     {
-        'word': 'simdse',
-        'subset': [
+        word: 'simdse',
+        subset: [
             'die',
             'dim',
             'dis',
@@ -1671,12 +1673,12 @@ export const GAMES = [
             'sims',
             'dimes',
             'sides',
-            'missed'
-        ]
+            'missed',
+        ],
     },
     {
-        'word': 'misuse',
-        'subset': [
+        word: 'misuse',
+        subset: [
             'ems',
             'ess',
             'mis',
@@ -1696,12 +1698,12 @@ export const GAMES = [
             'uses',
             'issue',
             'muses',
-            'misuse'
-        ]
+            'misuse',
+        ],
     },
     {
-        'word': 'iemrxs',
-        'subset': [
+        word: 'iemrxs',
+        subset: [
             'ems',
             'ers',
             'mis',
@@ -1721,12 +1723,12 @@ export const GAMES = [
             'sire',
             'mixer',
             'mixes',
-            'mixers'
-        ]
+            'mixers',
+        ],
     },
     {
-        'word': 'eotnmm',
-        'subset': [
+        word: 'eotnmm',
+        subset: [
             'men',
             'met',
             'mom',
@@ -1746,12 +1748,12 @@ export const GAMES = [
             'tome',
             'tone',
             'monte',
-            'moment'
-        ]
+            'moment',
+        ],
     },
     {
-        'word': 'mtolye',
-        'subset': [
+        word: 'mtolye',
+        subset: [
             'elm',
             'let',
             'lot',
@@ -1771,12 +1773,12 @@ export const GAMES = [
             'mote',
             'tome',
             'motel',
-            'motley'
-        ]
+            'motley',
+        ],
     },
     {
-        'word': 'omvers',
-        'subset': [
+        word: 'omvers',
+        subset: [
             'ems',
             'ers',
             'mor',
@@ -1796,12 +1798,12 @@ export const GAMES = [
             'sore',
             'morse',
             'moves',
-            'movers'
-        ]
+            'movers',
+        ],
     },
     {
-        'word': 'suclme',
-        'subset': [
+        word: 'suclme',
+        subset: [
             'cue',
             'cum',
             'elm',
@@ -1821,12 +1823,12 @@ export const GAMES = [
             'slum',
             'clues',
             'mules',
-            'muscle'
-        ]
+            'muscle',
+        ],
     },
     {
-        'word': 'onachs',
-        'subset': [
+        word: 'onachs',
+        subset: [
             'ash',
             'can',
             'con',
@@ -1846,12 +1848,12 @@ export const GAMES = [
             'scan',
             'chaos',
             'nacho',
-            'nachos'
-        ]
+            'nachos',
+        ],
     },
     {
-        'word': 'enblau',
-        'subset': [
+        word: 'enblau',
+        subset: [
             'ale',
             'ane',
             'ban',
@@ -1871,12 +1873,12 @@ export const GAMES = [
             'lube',
             'luna',
             'nebula',
-            'unable'
-        ]
+            'unable',
+        ],
     },
     {
-        'word': 'peolyn',
-        'subset': [
+        word: 'peolyn',
+        subset: [
             'lop',
             'lye',
             'ole',
@@ -1896,12 +1898,12 @@ export const GAMES = [
             'pole',
             'poly',
             'pony',
-            'openly'
-        ]
+            'openly',
+        ],
     },
     {
-        'word': 'outnig',
-        'subset': [
+        word: 'outnig',
+        subset: [
             'gin',
             'git',
             'got',
@@ -1921,12 +1923,12 @@ export const GAMES = [
             'tung',
             'unit',
             'unto',
-            'outing'
-        ]
+            'outing',
+        ],
     },
     {
-        'word': 'napgig',
-        'subset': [
+        word: 'napgig',
+        subset: [
             'ain',
             'ani',
             'gag',
@@ -1946,12 +1948,12 @@ export const GAMES = [
             'pina',
             'ping',
             'aging',
-            'paging'
-        ]
+            'paging',
+        ],
     },
     {
-        'word': 'paclae',
-        'subset': [
+        word: 'paclae',
+        subset: [
             'ace',
             'ala',
             'ale',
@@ -1971,12 +1973,12 @@ export const GAMES = [
             'pale',
             'plea',
             'place',
-            'palace'
-        ]
+            'palace',
+        ],
     },
     {
-        'word': 'napvig',
-        'subset': [
+        word: 'napvig',
+        subset: [
             'ain',
             'ani',
             'gap',
@@ -1996,12 +1998,12 @@ export const GAMES = [
             'pina',
             'ping',
             'vain',
-            'paving'
-        ]
+            'paving',
+        ],
     },
     {
-        'word': 'peincl',
-        'subset': [
+        word: 'peincl',
+        subset: [
             'ice',
             'lei',
             'lie',
@@ -2021,12 +2023,12 @@ export const GAMES = [
             'nice',
             'pile',
             'pine',
-            'pencil'
-        ]
+            'pencil',
+        ],
     },
     {
-        'word': 'pikect',
-        'subset': [
+        word: 'pikect',
+        subset: [
             'ice',
             'ick',
             'kip',
@@ -2046,12 +2048,12 @@ export const GAMES = [
             'pick',
             'pike',
             'tick',
-            'picket'
-        ]
+            'picket',
+        ],
     },
     {
-        'word': 'icpees',
-        'subset': [
+        word: 'icpees',
+        subset: [
             'cee',
             'ice',
             'pee',
@@ -2071,12 +2073,12 @@ export const GAMES = [
             'spic',
             'piece',
             'spice',
-            'pieces'
-        ]
+            'pieces',
+        ],
     },
     {
-        'word': 'pisgty',
-        'subset': [
+        word: 'pisgty',
+        subset: [
             'git',
             'its',
             'pig',
@@ -2096,12 +2098,12 @@ export const GAMES = [
             'spit',
             'tips',
             'tipsy',
-            'pigsty'
-        ]
+            'pigsty',
+        ],
     },
     {
-        'word': 'plilar',
-        'subset': [
+        word: 'plilar',
+        subset: [
             'ail',
             'air',
             'all',
@@ -2121,12 +2123,12 @@ export const GAMES = [
             'pill',
             'rail',
             'pilar',
-            'pillar'
-        ]
+            'pillar',
+        ],
     },
     {
-        'word': 'depleg',
-        'subset': [
+        word: 'depleg',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -2146,12 +2148,12 @@ export const GAMES = [
             'pele',
             'pled',
             'ledge',
-            'pledge'
-        ]
+            'pledge',
+        ],
     },
     {
-        'word': 'podole',
-        'subset': [
+        word: 'podole',
+        subset: [
             'del',
             'doe',
             'dol',
@@ -2171,12 +2173,12 @@ export const GAMES = [
             'polo',
             'pool',
             'looped',
-            'poodle'
-        ]
+            'poodle',
+        ],
     },
     {
-        'word': 'toprre',
-        'subset': [
+        word: 'toprre',
+        subset: [
             'err',
             'ore',
             'ort',
@@ -2196,12 +2198,12 @@ export const GAMES = [
             'tore',
             'retro',
             'porter',
-            'report'
-        ]
+            'report',
+        ],
     },
     {
-        'word': 'epossi',
-        'subset': [
+        word: 'epossi',
+        subset: [
             'ess',
             'ops',
             'ose',
@@ -2221,12 +2223,12 @@ export const GAMES = [
             'poses',
             'posse',
             'spies',
-            'posies'
-        ]
+            'posies',
+        ],
     },
     {
-        'word': 'potten',
-        'subset': [
+        word: 'potten',
+        subset: [
             'net',
             'not',
             'one',
@@ -2246,12 +2248,12 @@ export const GAMES = [
             'tent',
             'tone',
             'tote',
-            'potent'
-        ]
+            'potent',
+        ],
     },
     {
-        'word': 'irdpde',
-        'subset': [
+        word: 'irdpde',
+        subset: [
             'did',
             'die',
             'dip',
@@ -2271,12 +2273,12 @@ export const GAMES = [
             'dried',
             'pride',
             'redid',
-            'prided'
-        ]
+            'prided',
+        ],
     },
     {
-        'word': 'yscpoh',
-        'subset': [
+        word: 'yscpoh',
+        subset: [
             'cop',
             'cos',
             'coy',
@@ -2296,12 +2298,12 @@ export const GAMES = [
             'shop',
             'chops',
             'psych',
-            'psycho'
-        ]
+            'psycho',
+        ],
     },
     {
-        'word': 'prusue',
-        'subset': [
+        word: 'prusue',
+        subset: [
             'ers',
             'per',
             'pus',
@@ -2321,12 +2323,12 @@ export const GAMES = [
             'user',
             'purse',
             'super',
-            'pursue'
-        ]
+            'pursue',
+        ],
     },
     {
-        'word': 'adrail',
-        'subset': [
+        word: 'adrail',
+        subset: [
             'aid',
             'ail',
             'air',
@@ -2346,12 +2348,12 @@ export const GAMES = [
             'raid',
             'rail',
             'laird',
-            'radial'
-        ]
+            'radial',
+        ],
     },
     {
-        'word': 'cnroek',
-        'subset': [
+        word: 'cnroek',
+        subset: [
             'con',
             'cor',
             'ken',
@@ -2371,12 +2373,12 @@ export const GAMES = [
             'once',
             'rock',
             'recon',
-            'reckon'
-        ]
+            'reckon',
+        ],
     },
     {
-        'word': 'efrill',
-        'subset': [
+        word: 'efrill',
+        subset: [
             'elf',
             'ell',
             'fer',
@@ -2396,12 +2398,12 @@ export const GAMES = [
             'lifer',
             'rifle',
             'filler',
-            'refill'
-        ]
+            'refill',
+        ],
     },
     {
-        'word': 'remake',
-        'subset': [
+        word: 'remake',
+        subset: [
             'are',
             'ark',
             'arm',
@@ -2421,12 +2423,12 @@ export const GAMES = [
             'ream',
             'reek',
             'maker',
-            'remake'
-        ]
+            'remake',
+        ],
     },
     {
-        'word': 'markre',
-        'subset': [
+        word: 'markre',
+        subset: [
             'are',
             'ark',
             'arm',
@@ -2446,12 +2448,12 @@ export const GAMES = [
             'rear',
             'maker',
             'marker',
-            'remark'
-        ]
+            'remark',
+        ],
     },
     {
-        'word': 'ermdey',
-        'subset': [
+        word: 'ermdey',
+        subset: [
             'dee',
             'dey',
             'dry',
@@ -2471,12 +2473,12 @@ export const GAMES = [
             'mere',
             'reed',
             'emery',
-            'remedy'
-        ]
+            'remedy',
+        ],
     },
     {
-        'word': 'rrepot',
-        'subset': [
+        word: 'rrepot',
+        subset: [
             'err',
             'ore',
             'ort',
@@ -2496,12 +2498,12 @@ export const GAMES = [
             'tore',
             'retro',
             'porter',
-            'report'
-        ]
+            'report',
+        ],
     },
     {
-        'word': 'uriatl',
-        'subset': [
+        word: 'uriatl',
+        subset: [
             'ail',
             'air',
             'alt',
@@ -2521,12 +2523,12 @@ export const GAMES = [
             'trail',
             'trial',
             'ultra',
-            'ritual'
-        ]
+            'ritual',
+        ],
     },
     {
-        'word': 'uderly',
-        'subset': [
+        word: 'uderly',
+        subset: [
             'del',
             'dey',
             'dry',
@@ -2546,12 +2548,12 @@ export const GAMES = [
             'rule',
             'lured',
             'ruled',
-            'rudely'
-        ]
+            'rudely',
+        ],
     },
     {
-        'word': 'sivala',
-        'subset': [
+        word: 'sivala',
+        subset: [
             'ail',
             'ala',
             'als',
@@ -2571,12 +2573,12 @@ export const GAMES = [
             'alias',
             'silva',
             'vials',
-            'saliva'
-        ]
+            'saliva',
+        ],
     },
     {
-        'word': 'aaldsn',
-        'subset': [
+        word: 'aaldsn',
+        subset: [
             'ads',
             'ala',
             'als',
@@ -2596,12 +2598,12 @@ export const GAMES = [
             'lands',
             'nasal',
             'salad',
-            'sandal'
-        ]
+            'sandal',
+        ],
     },
     {
-        'word': 'ostans',
-        'subset': [
+        word: 'ostans',
+        subset: [
             'ant',
             'ass',
             'nos',
@@ -2621,12 +2623,12 @@ export const GAMES = [
             'tons',
             'toss',
             'santo',
-            'santos'
-        ]
+            'santos',
+        ],
     },
     {
-        'word': 'scrsoe',
-        'subset': [
+        word: 'scrsoe',
+        subset: [
             'cor',
             'cos',
             'ers',
@@ -2646,12 +2648,12 @@ export const GAMES = [
             'roses',
             'score',
             'sores',
-            'scores'
-        ]
+            'scores',
+        ],
     },
     {
-        'word': 'uesedc',
-        'subset': [
+        word: 'uesedc',
+        subset: [
             'cee',
             'cud',
             'cue',
@@ -2671,12 +2673,12 @@ export const GAMES = [
             'deuce',
             'suede',
             'deuces',
-            'seduce'
-        ]
+            'seduce',
+        ],
     },
     {
-        'word': 'sesend',
-        'subset': [
+        word: 'sesend',
+        subset: [
             'dee',
             'den',
             'end',
@@ -2696,12 +2698,12 @@ export const GAMES = [
             'seeds',
             'sends',
             'sense',
-            'sensed'
-        ]
+            'sensed',
+        ],
     },
     {
-        'word': 'seasme',
-        'subset': [
+        word: 'seasme',
+        subset: [
             'ass',
             'ems',
             'ess',
@@ -2721,12 +2723,12 @@ export const GAMES = [
             'eases',
             'seams',
             'seems',
-            'sesame'
-        ]
+            'sesame',
+        ],
     },
     {
-        'word': 'eesgwa',
-        'subset': [
+        word: 'eesgwa',
+        subset: [
             'age',
             'awe',
             'ewe',
@@ -2746,12 +2748,12 @@ export const GAMES = [
             'sage',
             'wage',
             'wages',
-            'sewage'
-        ]
+            'sewage',
+        ],
     },
     {
-        'word': 'sesixt',
-        'subset': [
+        word: 'sesixt',
+        subset: [
             'ess',
             'its',
             'set',
@@ -2771,12 +2773,12 @@ export const GAMES = [
             'sites',
             'sixes',
             'exists',
-            'sexist'
-        ]
+            'sexist',
+        ],
     },
     {
-        'word': 'uesxla',
-        'subset': [
+        word: 'uesxla',
+        subset: [
             'ale',
             'als',
             'axe',
@@ -2796,12 +2798,12 @@ export const GAMES = [
             'sale',
             'saul',
             'seal',
-            'sexual'
-        ]
+            'sexual',
+        ],
     },
     {
-        'word': 'savnhe',
-        'subset': [
+        word: 'savnhe',
+        subset: [
             'ane',
             'ash',
             'ave',
@@ -2821,12 +2823,12 @@ export const GAMES = [
             'vase',
             'haven',
             'shave',
-            'shaven'
-        ]
+            'shaven',
+        ],
     },
     {
-        'word': 'hsifyt',
-        'subset': [
+        word: 'hsifyt',
+        subset: [
             'fit',
             'his',
             'hit',
@@ -2846,12 +2848,12 @@ export const GAMES = [
             'this',
             'fishy',
             'shift',
-            'shifty'
-        ]
+            'shifty',
+        ],
     },
     {
-        'word': 'rmhisp',
-        'subset': [
+        word: 'rmhisp',
+        subset: [
             'him',
             'hip',
             'his',
@@ -2871,12 +2873,12 @@ export const GAMES = [
             'rips',
             'ship',
             'simp',
-            'shrimp'
-        ]
+            'shrimp',
+        ],
     },
     {
-        'word': 'msipyl',
-        'subset': [
+        word: 'msipyl',
+        subset: [
             'imp',
             'lip',
             'lis',
@@ -2896,12 +2898,12 @@ export const GAMES = [
             'imply',
             'limps',
             'slimy',
-            'simply'
-        ]
+            'simply',
+        ],
     },
     {
-        'word': 'istcom',
-        'subset': [
+        word: 'istcom',
+        subset: [
             'cos',
             'cot',
             'its',
@@ -2921,12 +2923,12 @@ export const GAMES = [
             'toms',
             'moist',
             'stoic',
-            'sitcom'
-        ]
+            'sitcom',
+        ],
     },
     {
-        'word': 'lsezae',
-        'subset': [
+        word: 'lsezae',
+        subset: [
             'ale',
             'als',
             'eel',
@@ -2946,12 +2948,12 @@ export const GAMES = [
             'zeal',
             'easel',
             'lease',
-            'sleaze'
-        ]
+            'sleaze',
+        ],
     },
     {
-        'word': 'lesepy',
-        'subset': [
+        word: 'lesepy',
+        subset: [
             'eel',
             'eye',
             'lee',
@@ -2971,12 +2973,12 @@ export const GAMES = [
             'seep',
             'peels',
             'sleep',
-            'sleepy'
-        ]
+            'sleepy',
+        ],
     },
     {
-        'word': 'steulh',
-        'subset': [
+        word: 'steulh',
+        subset: [
             'eth',
             'hue',
             'hut',
@@ -2996,12 +2998,12 @@ export const GAMES = [
             'thus',
             'tush',
             'hustle',
-            'sleuth'
-        ]
+            'sleuth',
+        ],
     },
     {
-        'word': 'aenssk',
-        'subset': [
+        word: 'aenssk',
+        subset: [
             'ane',
             'ask',
             'ass',
@@ -3021,12 +3023,12 @@ export const GAMES = [
             'snake',
             'sneak',
             'snakes',
-            'sneaks'
-        ]
+            'sneaks',
+        ],
     },
     {
-        'word': 'nessak',
-        'subset': [
+        word: 'nessak',
+        subset: [
             'ane',
             'ask',
             'ass',
@@ -3046,12 +3048,12 @@ export const GAMES = [
             'snake',
             'sneak',
             'snakes',
-            'sneaks'
-        ]
+            'sneaks',
+        ],
     },
     {
-        'word': 'spygni',
-        'subset': [
+        word: 'spygni',
+        subset: [
             'gin',
             'ins',
             'nip',
@@ -3071,12 +3073,12 @@ export const GAMES = [
             'snip',
             'spin',
             'spiny',
-            'spying'
-        ]
+            'spying',
+        ],
     },
     {
-        'word': 'tsnigy',
-        'subset': [
+        word: 'tsnigy',
+        subset: [
             'gin',
             'git',
             'ins',
@@ -3096,12 +3098,12 @@ export const GAMES = [
             'tiny',
             'sting',
             'tying',
-            'stingy'
-        ]
+            'stingy',
+        ],
     },
     {
-        'word': 'sloost',
-        'subset': [
+        word: 'sloost',
+        subset: [
             'loo',
             'lot',
             'sol',
@@ -3121,12 +3123,12 @@ export const GAMES = [
             'slots',
             'stool',
             'tools',
-            'stools'
-        ]
+            'stools',
+        ],
     },
     {
-        'word': 'tdsoui',
-        'subset': [
+        word: 'tdsoui',
+        subset: [
             'dis',
             'dit',
             'dos',
@@ -3146,12 +3148,12 @@ export const GAMES = [
             'outs',
             'stud',
             'suit',
-            'studio'
-        ]
+            'studio',
+        ],
     },
     {
-        'word': 'syhopn',
-        'subset': [
+        word: 'syhopn',
+        subset: [
             'hon',
             'hop',
             'hoy',
@@ -3171,12 +3173,12 @@ export const GAMES = [
             'pony',
             'shop',
             'phony',
-            'syphon'
-        ]
+            'syphon',
+        ],
     },
     {
-        'word': 'xating',
-        'subset': [
+        word: 'xating',
+        subset: [
             'ain',
             'ani',
             'ant',
@@ -3196,12 +3198,12 @@ export const GAMES = [
             'taxi',
             'ting',
             'giant',
-            'taxing'
-        ]
+            'taxing',
+        ],
     },
     {
-        'word': 'tdhirs',
-        'subset': [
+        word: 'tdhirs',
+        subset: [
             'dis',
             'dit',
             'hid',
@@ -3221,12 +3223,12 @@ export const GAMES = [
             'this',
             'shirt',
             'third',
-            'thirds'
-        ]
+            'thirds',
+        ],
     },
     {
-        'word': 'topepd',
-        'subset': [
+        word: 'topepd',
+        subset: [
             'doe',
             'dot',
             'ode',
@@ -3246,12 +3248,12 @@ export const GAMES = [
             'toed',
             'depot',
             'opted',
-            'topped'
-        ]
+            'topped',
+        ],
     },
     {
-        'word': 'otermr',
-        'subset': [
+        word: 'otermr',
+        subset: [
             'err',
             'met',
             'mor',
@@ -3271,12 +3273,12 @@ export const GAMES = [
             'tore',
             'metro',
             'retro',
-            'tremor'
-        ]
+            'tremor',
+        ],
     },
     {
-        'word': 'otrphy',
-        'subset': [
+        word: 'otrphy',
+        subset: [
             'hop',
             'hot',
             'hoy',
@@ -3296,12 +3298,12 @@ export const GAMES = [
             'tory',
             'troy',
             'typo',
-            'trophy'
-        ]
+            'trophy',
+        ],
     },
     {
-        'word': 'anebul',
-        'subset': [
+        word: 'anebul',
+        subset: [
             'ale',
             'ane',
             'ban',
@@ -3321,12 +3323,12 @@ export const GAMES = [
             'lube',
             'luna',
             'nebula',
-            'unable'
-        ]
+            'unable',
+        ],
     },
     {
-        'word': 'unfiar',
-        'subset': [
+        word: 'unfiar',
+        subset: [
             'ain',
             'air',
             'ani',
@@ -3346,12 +3348,12 @@ export const GAMES = [
             'rain',
             'ruin',
             'infra',
-            'unfair'
-        ]
+            'unfair',
+        ],
     },
     {
-        'word': 'unsure',
-        'subset': [
+        word: 'unsure',
+        subset: [
             'ers',
             'res',
             'rue',
@@ -3371,12 +3373,12 @@ export const GAMES = [
             'user',
             'nurse',
             'runes',
-            'unsure'
-        ]
+            'unsure',
+        ],
     },
     {
-        'word': 'alvsue',
-        'subset': [
+        word: 'alvsue',
+        subset: [
             'ale',
             'als',
             'ave',
@@ -3396,12 +3398,12 @@ export const GAMES = [
             'slave',
             'suave',
             'value',
-            'values'
-        ]
+            'values',
+        ],
     },
     {
-        'word': 'vteoed',
-        'subset': [
+        word: 'vteoed',
+        subset: [
             'dee',
             'doe',
             'dot',
@@ -3421,12 +3423,12 @@ export const GAMES = [
             'vote',
             'voted',
             'devote',
-            'vetoed'
-        ]
+            'vetoed',
+        ],
     },
     {
-        'word': 'vidoes',
-        'subset': [
+        word: 'vidoes',
+        subset: [
             'die',
             'dis',
             'doe',
@@ -3446,12 +3448,12 @@ export const GAMES = [
             'dives',
             'doves',
             'video',
-            'videos'
-        ]
+            'videos',
+        ],
     },
     {
-        'word': 'oviced',
-        'subset': [
+        word: 'oviced',
+        subset: [
             'cod',
             'die',
             'doc',
@@ -3471,12 +3473,12 @@ export const GAMES = [
             'void',
             'video',
             'voice',
-            'voiced'
-        ]
+            'voiced',
+        ],
     },
     {
-        'word': 'dadwle',
-        'subset': [
+        word: 'dadwle',
+        subset: [
             'add',
             'ale',
             'awe',
@@ -3496,12 +3498,12 @@ export const GAMES = [
             'lewd',
             'wade',
             'weld',
-            'waddle'
-        ]
+            'waddle',
+        ],
     },
     {
-        'word': 'waeekn',
-        'subset': [
+        word: 'waeekn',
+        subset: [
             'ane',
             'awe',
             'ewe',
@@ -3521,12 +3523,12 @@ export const GAMES = [
             'wean',
             'week',
             'waken',
-            'weaken'
-        ]
+            'weaken',
+        ],
     },
     {
-        'word': 'ekiwnl',
-        'subset': [
+        word: 'ekiwnl',
+        subset: [
             'elk',
             'ilk',
             'ink',
@@ -3546,12 +3548,12 @@ export const GAMES = [
             'link',
             'wine',
             'wink',
-            'winkle'
-        ]
+            'winkle',
+        ],
     },
     {
-        'word': 'wihsed',
-        'subset': [
+        word: 'wihsed',
+        subset: [
             'dew',
             'die',
             'dis',
@@ -3571,12 +3573,12 @@ export const GAMES = [
             'wish',
             'hides',
             'wised',
-            'wished'
-        ]
+            'wished',
+        ],
     },
     {
-        'word': 'mayemr',
-        'subset': [
+        word: 'mayemr',
+        subset: [
             'are',
             'arm',
             'aye',
@@ -3596,12 +3598,12 @@ export const GAMES = [
             'mare',
             'ream',
             'year',
-            'yammer'
-        ]
+            'yammer',
+        ],
     },
     {
-        'word': 'rzoeed',
-        'subset': [
+        word: 'rzoeed',
+        subset: [
             'dee',
             'doe',
             'ere',
@@ -3621,12 +3623,12 @@ export const GAMES = [
             'zero',
             'dozer',
             'erode',
-            'zeroed'
-        ]
+            'zeroed',
+        ],
     },
     {
-        'word': 'asbbot',
-        'subset': [
+        word: 'asbbot',
+        subset: [
             'abs',
             'bat',
             'boa',
@@ -3645,12 +3647,12 @@ export const GAMES = [
             'abbot',
             'boast',
             'boats',
-            'abbots'
-        ]
+            'abbots',
+        ],
     },
     {
-        'word': 'faftec',
-        'subset': [
+        word: 'faftec',
+        subset: [
             'ace',
             'act',
             'aft',
@@ -3669,12 +3671,12 @@ export const GAMES = [
             'feat',
             'feta',
             'facet',
-            'affect'
-        ]
+            'affect',
+        ],
     },
     {
-        'word': 'yanegc',
-        'subset': [
+        word: 'yanegc',
+        subset: [
             'ace',
             'age',
             'ane',
@@ -3693,12 +3695,12 @@ export const GAMES = [
             'cane',
             'yang',
             'cagey',
-            'agency'
-        ]
+            'agency',
+        ],
     },
     {
-        'word': 'iaring',
-        'subset': [
+        word: 'iaring',
+        subset: [
             'ain',
             'air',
             'ani',
@@ -3717,12 +3719,12 @@ export const GAMES = [
             'rang',
             'ring',
             'grain',
-            'airing'
-        ]
+            'airing',
+        ],
     },
     {
-        'word': 'nameai',
-        'subset': [
+        word: 'nameai',
+        subset: [
             'aim',
             'ain',
             'ama',
@@ -3741,12 +3743,12 @@ export const GAMES = [
             'mina',
             'mine',
             'name',
-            'anemia'
-        ]
+            'anemia',
+        ],
     },
     {
-        'word': 'ramory',
-        'subset': [
+        word: 'ramory',
+        subset: [
             'arm',
             'mar',
             'may',
@@ -3765,12 +3767,12 @@ export const GAMES = [
             'armor',
             'marry',
             'mayor',
-            'armory'
-        ]
+            'armory',
+        ],
     },
     {
-        'word': 'umtsai',
-        'subset': [
+        word: 'umtsai',
+        subset: [
             'aim',
             'ami',
             'its',
@@ -3789,12 +3791,12 @@ export const GAMES = [
             'mist',
             'must',
             'suit',
-            'autism'
-        ]
+            'autism',
+        ],
     },
     {
-        'word': 'avenge',
-        'subset': [
+        word: 'avenge',
+        subset: [
             'age',
             'ane',
             'ave',
@@ -3813,12 +3815,12 @@ export const GAMES = [
             'neve',
             'vegan',
             'avenge',
-            'geneva'
-        ]
+            'geneva',
+        ],
     },
     {
-        'word': 'alybsl',
-        'subset': [
+        word: 'alybsl',
+        subset: [
             'abs',
             'all',
             'als',
@@ -3837,12 +3839,12 @@ export const GAMES = [
             'slay',
             'balls',
             'sally',
-            'ballsy'
-        ]
+            'ballsy',
+        ],
     },
     {
-        'word': 'arborw',
-        'subset': [
+        word: 'arborw',
+        subset: [
             'bar',
             'boa',
             'bow',
@@ -3861,12 +3863,12 @@ export const GAMES = [
             'roar',
             'arbor',
             'arrow',
-            'barrow'
-        ]
+            'barrow',
+        ],
     },
     {
-        'word': 'tbeled',
-        'subset': [
+        word: 'tbeled',
+        subset: [
             'bed',
             'bee',
             'bel',
@@ -3885,12 +3887,12 @@ export const GAMES = [
             'debt',
             'teed',
             'bleed',
-            'belted'
-        ]
+            'belted',
+        ],
     },
     {
-        'word': 'lenbri',
-        'subset': [
+        word: 'lenbri',
+        subset: [
             'bel',
             'ben',
             'bin',
@@ -3909,12 +3911,12 @@ export const GAMES = [
             'rein',
             'rile',
             'liner',
-            'berlin'
-        ]
+            'berlin',
+        ],
     },
     {
-        'word': 'bddrei',
-        'subset': [
+        word: 'bddrei',
+        subset: [
             'bed',
             'bid',
             'deb',
@@ -3933,12 +3935,12 @@ export const GAMES = [
             'bride',
             'dried',
             'redid',
-            'bidder'
-        ]
+            'bidder',
+        ],
     },
     {
-        'word': 'birkse',
-        'subset': [
+        word: 'birkse',
+        subset: [
             'ers',
             'res',
             'rib',
@@ -3957,12 +3959,12 @@ export const GAMES = [
             'biker',
             'bikes',
             'skier',
-            'bikers'
-        ]
+            'bikers',
+        ],
     },
     {
-        'word': 'bledse',
-        'subset': [
+        word: 'bledse',
+        subset: [
             'bed',
             'bee',
             'bel',
@@ -3981,12 +3983,12 @@ export const GAMES = [
             'seed',
             'sled',
             'bleed',
-            'bleeds'
-        ]
+            'bleeds',
+        ],
     },
     {
-        'word': 'obdlyi',
-        'subset': [
+        word: 'obdlyi',
+        subset: [
             'bid',
             'bio',
             'bod',
@@ -4005,12 +4007,12 @@ export const GAMES = [
             'lido',
             'oily',
             'doily',
-            'bodily'
-        ]
+            'bodily',
+        ],
     },
     {
-        'word': 'neobdd',
-        'subset': [
+        word: 'neobdd',
+        subset: [
             'bed',
             'ben',
             'bod',
@@ -4029,12 +4031,12 @@ export const GAMES = [
             'done',
             'node',
             'boned',
-            'bonded'
-        ]
+            'bonded',
+        ],
     },
     {
-        'word': 'obgroe',
-        'subset': [
+        word: 'obgroe',
+        subset: [
             'beg',
             'boo',
             'bro',
@@ -4053,12 +4055,12 @@ export const GAMES = [
             'ogre',
             'robe',
             'booger',
-            'goober'
-        ]
+            'goober',
+        ],
     },
     {
-        'word': 'booemr',
-        'subset': [
+        word: 'booemr',
+        subset: [
             'boo',
             'bro',
             'mob',
@@ -4077,12 +4079,12 @@ export const GAMES = [
             'room',
             'broom',
             'romeo',
-            'boomer'
-        ]
+            'boomer',
+        ],
     },
     {
-        'word': 'oboedt',
-        'subset': [
+        word: 'oboedt',
+        subset: [
             'bed',
             'bet',
             'bod',
@@ -4101,12 +4103,12 @@ export const GAMES = [
             'dote',
             'oboe',
             'toed',
-            'booted'
-        ]
+            'booted',
+        ],
     },
     {
-        'word': 'rebbid',
-        'subset': [
+        word: 'rebbid',
+        subset: [
             'bed',
             'bib',
             'bid',
@@ -4125,12 +4127,12 @@ export const GAMES = [
             'bribe',
             'bride',
             'bribed',
-            'ribbed'
-        ]
+            'ribbed',
+        ],
     },
     {
-        'word': 'borenk',
-        'subset': [
+        word: 'borenk',
+        subset: [
             'ben',
             'bro',
             'ken',
@@ -4149,12 +4151,12 @@ export const GAMES = [
             'robe',
             'boner',
             'broke',
-            'broken'
-        ]
+            'broken',
+        ],
     },
     {
-        'word': 'adceid',
-        'subset': [
+        word: 'adceid',
+        subset: [
             'ace',
             'add',
             'aid',
@@ -4173,12 +4175,12 @@ export const GAMES = [
             'idea',
             'aided',
             'diced',
-            'caddie'
-        ]
+            'caddie',
+        ],
     },
     {
-        'word': 'acreer',
-        'subset': [
+        word: 'acreer',
+        subset: [
             'ace',
             'arc',
             'are',
@@ -4197,12 +4199,12 @@ export const GAMES = [
             'rare',
             'rear',
             'racer',
-            'career'
-        ]
+            'career',
+        ],
     },
     {
-        'word': 'caught',
-        'subset': [
+        word: 'caught',
+        subset: [
             'act',
             'cat',
             'cut',
@@ -4221,12 +4223,12 @@ export const GAMES = [
             'tach',
             'thug',
             'aught',
-            'caught'
-        ]
+            'caught',
+        ],
     },
     {
-        'word': 'cuases',
-        'subset': [
+        word: 'cuases',
+        subset: [
             'ace',
             'ass',
             'cue',
@@ -4245,12 +4247,12 @@ export const GAMES = [
             'cases',
             'cause',
             'sauce',
-            'causes'
-        ]
+            'causes',
+        ],
     },
     {
-        'word': 'sdecae',
-        'subset': [
+        word: 'sdecae',
+        subset: [
             'ace',
             'ads',
             'cad',
@@ -4269,12 +4271,12 @@ export const GAMES = [
             'seed',
             'cased',
             'cease',
-            'ceased'
-        ]
+            'ceased',
+        ],
     },
     {
-        'word': 'clihes',
-        'subset': [
+        word: 'clihes',
+        subset: [
             'chi',
             'hic',
             'his',
@@ -4293,12 +4295,12 @@ export const GAMES = [
             'chile',
             'slice',
             'chiles',
-            'chisel'
-        ]
+            'chisel',
+        ],
     },
     {
-        'word': 'ceihls',
-        'subset': [
+        word: 'ceihls',
+        subset: [
             'chi',
             'hic',
             'his',
@@ -4317,12 +4319,12 @@ export const GAMES = [
             'chile',
             'slice',
             'chiles',
-            'chisel'
-        ]
+            'chisel',
+        ],
     },
     {
-        'word': 'ockehs',
-        'subset': [
+        word: 'ockehs',
+        subset: [
             'cos',
             'hoe',
             'ose',
@@ -4341,12 +4343,12 @@ export const GAMES = [
             'cokes',
             'hocks',
             'shock',
-            'chokes'
-        ]
+            'chokes',
+        ],
     },
     {
-        'word': 'ioucts',
-        'subset': [
+        word: 'ioucts',
+        subset: [
             'cos',
             'cot',
             'cut',
@@ -4365,12 +4367,12 @@ export const GAMES = [
             'suit',
             'scout',
             'stoic',
-            'coitus'
-        ]
+            'coitus',
+        ],
     },
     {
-        'word': 'locral',
-        'subset': [
+        word: 'locral',
+        subset: [
             'all',
             'arc',
             'car',
@@ -4389,12 +4391,12 @@ export const GAMES = [
             'carol',
             'coral',
             'local',
-            'collar'
-        ]
+            'collar',
+        ],
     },
     {
-        'word': 'omcpel',
-        'subset': [
+        word: 'omcpel',
+        subset: [
             'col',
             'cop',
             'elm',
@@ -4413,12 +4415,12 @@ export const GAMES = [
             'mope',
             'poem',
             'pole',
-            'compel'
-        ]
+            'compel',
+        ],
     },
     {
-        'word': 'cnoodm',
-        'subset': [
+        word: 'cnoodm',
+        subset: [
             'cod',
             'con',
             'coo',
@@ -4437,12 +4439,12 @@ export const GAMES = [
             'moon',
             'condo',
             'mondo',
-            'condom'
-        ]
+            'condom',
+        ],
     },
     {
-        'word': 'cosdon',
-        'subset': [
+        word: 'cosdon',
+        subset: [
             'cod',
             'con',
             'coo',
@@ -4461,12 +4463,12 @@ export const GAMES = [
             'nods',
             'soon',
             'condo',
-            'condos'
-        ]
+            'condos',
+        ],
     },
     {
-        'word': 'rovsce',
-        'subset': [
+        word: 'rovsce',
+        subset: [
             'cor',
             'cos',
             'ers',
@@ -4485,12 +4487,12 @@ export const GAMES = [
             'sore',
             'cover',
             'score',
-            'covers'
-        ]
+            'covers',
+        ],
     },
     {
-        'word': 'erpeyc',
-        'subset': [
+        word: 'erpeyc',
+        subset: [
             'cee',
             'cry',
             'ere',
@@ -4509,12 +4511,12 @@ export const GAMES = [
             'pyre',
             'creep',
             'crepe',
-            'creepy'
-        ]
+            'creepy',
+        ],
     },
     {
-        'word': 'rciess',
-        'subset': [
+        word: 'rciess',
+        subset: [
             'ers',
             'ess',
             'ice',
@@ -4533,12 +4535,12 @@ export const GAMES = [
             'sirs',
             'cries',
             'rises',
-            'crises'
-        ]
+            'crises',
+        ],
     },
     {
-        'word': 'cuvesr',
-        'subset': [
+        word: 'cuvesr',
+        subset: [
             'cue',
             'cur',
             'ers',
@@ -4557,12 +4559,12 @@ export const GAMES = [
             'cures',
             'curse',
             'curve',
-            'curves'
-        ]
+            'curves',
+        ],
     },
     {
-        'word': 'yacbml',
-        'subset': [
+        word: 'yacbml',
+        subset: [
             'bam',
             'bay',
             'cab',
@@ -4581,12 +4583,12 @@ export const GAMES = [
             'clay',
             'lacy',
             'lamb',
-            'cymbal'
-        ]
+            'cymbal',
+        ],
     },
     {
-        'word': 'edreda',
-        'subset': [
+        word: 'edreda',
+        subset: [
             'add',
             'are',
             'dad',
@@ -4605,12 +4607,12 @@ export const GAMES = [
             'reed',
             'dared',
             'dread',
-            'deader'
-        ]
+            'deader',
+        ],
     },
     {
-        'word': 'ftedly',
-        'subset': [
+        word: 'ftedly',
+        subset: [
             'del',
             'dey',
             'dye',
@@ -4629,12 +4631,12 @@ export const GAMES = [
             'fled',
             'left',
             'lefty',
-            'deftly'
-        ]
+            'deftly',
+        ],
     },
     {
-        'word': 'demeis',
-        'subset': [
+        word: 'demeis',
+        subset: [
             'dee',
             'die',
             'dim',
@@ -4653,12 +4655,12 @@ export const GAMES = [
             'semi',
             'side',
             'dimes',
-            'demise'
-        ]
+            'demise',
+        ],
     },
     {
-        'word': 'diehss',
-        'subset': [
+        word: 'diehss',
+        subset: [
             'die',
             'dis',
             'ess',
@@ -4677,12 +4679,12 @@ export const GAMES = [
             'sheds',
             'sides',
             'dishes',
-            'hissed'
-        ]
+            'hissed',
+        ],
     },
     {
-        'word': 'dodgre',
-        'subset': [
+        word: 'dodgre',
+        subset: [
             'doe',
             'dog',
             'ego',
@@ -4701,12 +4703,12 @@ export const GAMES = [
             'redo',
             'rode',
             'dodge',
-            'dodger'
-        ]
+            'dodger',
+        ],
     },
     {
-        'word': 'odrlos',
-        'subset': [
+        word: 'odrlos',
+        subset: [
             'dol',
             'dos',
             'loo',
@@ -4725,12 +4727,12 @@ export const GAMES = [
             'doors',
             'drool',
             'lords',
-            'drools'
-        ]
+            'drools',
+        ],
     },
     {
-        'word': 'dumepr',
-        'subset': [
+        word: 'dumepr',
+        subset: [
             'due',
             'med',
             'mud',
@@ -4749,12 +4751,12 @@ export const GAMES = [
             'rump',
             'demur',
             'prude',
-            'dumper'
-        ]
+            'dumper',
+        ],
     },
     {
-        'word': 'idngye',
-        'subset': [
+        word: 'idngye',
+        subset: [
             'den',
             'dey',
             'die',
@@ -4773,12 +4775,12 @@ export const GAMES = [
             'edgy',
             'dingy',
             'dying',
-            'dyeing'
-        ]
+            'dyeing',
+        ],
     },
     {
-        'word': 'bmeoyr',
-        'subset': [
+        word: 'bmeoyr',
+        subset: [
             'bey',
             'boy',
             'bro',
@@ -4797,12 +4799,12 @@ export const GAMES = [
             'obey',
             'robe',
             'yore',
-            'embryo'
-        ]
+            'embryo',
+        ],
     },
     {
-        'word': 'pmloye',
-        'subset': [
+        word: 'pmloye',
+        subset: [
             'elm',
             'lop',
             'lye',
@@ -4821,12 +4823,12 @@ export const GAMES = [
             'pole',
             'poly',
             'mopey',
-            'employ'
-        ]
+            'employ',
+        ],
     },
     {
-        'word': 'anelbe',
-        'subset': [
+        word: 'anelbe',
+        subset: [
             'ale',
             'ane',
             'ban',
@@ -4845,12 +4847,12 @@ export const GAMES = [
             'bene',
             'lane',
             'lean',
-            'enable'
-        ]
+            'enable',
+        ],
     },
     {
-        'word': 'enugoh',
-        'subset': [
+        word: 'enugoh',
+        subset: [
             'ego',
             'eng',
             'gen',
@@ -4869,12 +4871,12 @@ export const GAMES = [
             'hong',
             'huge',
             'hung',
-            'enough'
-        ]
+            'enough',
+        ],
     },
     {
-        'word': 'recnih',
-        'subset': [
+        word: 'recnih',
+        subset: [
             'chi',
             'hen',
             'her',
@@ -4893,12 +4895,12 @@ export const GAMES = [
             'rich',
             'nicer',
             'niche',
-            'enrich'
-        ]
+            'enrich',
+        ],
     },
     {
-        'word': 'epxtor',
-        'subset': [
+        word: 'epxtor',
+        subset: [
             'ore',
             'ort',
             'per',
@@ -4917,12 +4919,12 @@ export const GAMES = [
             'port',
             'rope',
             'tore',
-            'export'
-        ]
+            'export',
+        ],
     },
     {
-        'word': 'efline',
-        'subset': [
+        word: 'efline',
+        subset: [
             'eel',
             'elf',
             'fee',
@@ -4941,12 +4943,12 @@ export const GAMES = [
             'lien',
             'life',
             'line',
-            'feline'
-        ]
+            'feline',
+        ],
     },
     {
-        'word': 'faelem',
-        'subset': [
+        word: 'faelem',
+        subset: [
             'ale',
             'eel',
             'elf',
@@ -4965,12 +4967,12 @@ export const GAMES = [
             'male',
             'meal',
             'flame',
-            'female'
-        ]
+            'female',
+        ],
     },
     {
-        'word': 'ifdlde',
-        'subset': [
+        word: 'ifdlde',
+        subset: [
             'del',
             'did',
             'die',
@@ -4989,12 +4991,12 @@ export const GAMES = [
             'life',
             'field',
             'filed',
-            'fiddle'
-        ]
+            'fiddle',
+        ],
     },
     {
-        'word': 'ofridb',
-        'subset': [
+        word: 'ofridb',
+        subset: [
             'bid',
             'bio',
             'bod',
@@ -5013,12 +5015,12 @@ export const GAMES = [
             'bird',
             'fido',
             'ford',
-            'forbid'
-        ]
+            'forbid',
+        ],
     },
     {
-        'word': 'fugnla',
-        'subset': [
+        word: 'fugnla',
+        subset: [
             'fag',
             'fan',
             'flu',
@@ -5037,12 +5039,12 @@ export const GAMES = [
             'luna',
             'lung',
             'flung',
-            'fungal'
-        ]
+            'fungal',
+        ],
     },
     {
-        'word': 'agngde',
-        'subset': [
+        word: 'agngde',
+        subset: [
             'age',
             'and',
             'ane',
@@ -5061,12 +5063,12 @@ export const GAMES = [
             'gage',
             'gang',
             'ganged',
-            'nagged'
-        ]
+            'nagged',
+        ],
     },
     {
-        'word': 'veneag',
-        'subset': [
+        word: 'veneag',
+        subset: [
             'age',
             'ane',
             'ave',
@@ -5085,12 +5087,12 @@ export const GAMES = [
             'neve',
             'vegan',
             'avenge',
-            'geneva'
-        ]
+            'geneva',
+        ],
     },
     {
-        'word': 'nltege',
-        'subset': [
+        word: 'nltege',
+        subset: [
             'eel',
             'eng',
             'gee',
@@ -5109,12 +5111,12 @@ export const GAMES = [
             'glen',
             'lent',
             'teen',
-            'gentle'
-        ]
+            'gentle',
+        ],
     },
     {
-        'word': 'biegrl',
-        'subset': [
+        word: 'biegrl',
+        subset: [
             'beg',
             'bel',
             'big',
@@ -5133,12 +5135,12 @@ export const GAMES = [
             'lier',
             'rile',
             'bilge',
-            'gerbil'
-        ]
+            'gerbil',
+        ],
     },
     {
-        'word': 'givres',
-        'subset': [
+        word: 'givres',
+        subset: [
             'ers',
             'res',
             'rev',
@@ -5157,12 +5159,12 @@ export const GAMES = [
             'sire',
             'giver',
             'gives',
-            'givers'
-        ]
+            'givers',
+        ],
     },
     {
-        'word': 'ogober',
-        'subset': [
+        word: 'ogober',
+        subset: [
             'beg',
             'boo',
             'bro',
@@ -5181,12 +5183,12 @@ export const GAMES = [
             'ogre',
             'robe',
             'booger',
-            'goober'
-        ]
+            'goober',
+        ],
     },
     {
-        'word': 'egotnt',
-        'subset': [
+        word: 'egotnt',
+        subset: [
             'ego',
             'eng',
             'gen',
@@ -5205,12 +5207,12 @@ export const GAMES = [
             'tone',
             'tong',
             'tote',
-            'gotten'
-        ]
+            'gotten',
+        ],
     },
     {
-        'word': 'heemlt',
-        'subset': [
+        word: 'heemlt',
+        subset: [
             'eel',
             'elm',
             'eth',
@@ -5229,12 +5231,12 @@ export const GAMES = [
             'thee',
             'them',
             'theme',
-            'helmet'
-        ]
+            'helmet',
+        ],
     },
     {
-        'word': 'rhoeic',
-        'subset': [
+        word: 'rhoeic',
+        subset: [
             'chi',
             'cor',
             'her',
@@ -5253,12 +5255,12 @@ export const GAMES = [
             'rich',
             'choir',
             'chore',
-            'heroic'
-        ]
+            'heroic',
+        ],
     },
     {
-        'word': 'oienrh',
-        'subset': [
+        word: 'oienrh',
+        subset: [
             'hen',
             'her',
             'hoe',
@@ -5277,12 +5279,12 @@ export const GAMES = [
             'noir',
             'rein',
             'rhino',
-            'heroin'
-        ]
+            'heroin',
+        ],
     },
     {
-        'word': 'ihppos',
-        'subset': [
+        word: 'ihppos',
+        subset: [
             'hip',
             'his',
             'hop',
@@ -5301,12 +5303,12 @@ export const GAMES = [
             'ship',
             'shop',
             'hippo',
-            'hippos'
-        ]
+            'hippos',
+        ],
     },
     {
-        'word': 'ssheid',
-        'subset': [
+        word: 'ssheid',
+        subset: [
             'die',
             'dis',
             'ess',
@@ -5325,12 +5327,12 @@ export const GAMES = [
             'sheds',
             'sides',
             'dishes',
-            'hissed'
-        ]
+            'hissed',
+        ],
     },
     {
-        'word': 'htoetr',
-        'subset': [
+        word: 'htoetr',
+        subset: [
             'eth',
             'her',
             'hoe',
@@ -5349,12 +5351,12 @@ export const GAMES = [
             'trot',
             'other',
             'otter',
-            'hotter'
-        ]
+            'hotter',
+        ],
     },
     {
-        'word': 'hmaune',
-        'subset': [
+        word: 'hmaune',
+        subset: [
             'ane',
             'ham',
             'hem',
@@ -5373,12 +5375,12 @@ export const GAMES = [
             'menu',
             'name',
             'human',
-            'humane'
-        ]
+            'humane',
+        ],
     },
     {
-        'word': 'guerhn',
-        'subset': [
+        word: 'guerhn',
+        subset: [
             'eng',
             'gen',
             'gun',
@@ -5397,12 +5399,12 @@ export const GAMES = [
             'rune',
             'rung',
             'urge',
-            'hunger'
-        ]
+            'hunger',
+        ],
     },
     {
-        'word': 'aiynfm',
-        'subset': [
+        word: 'aiynfm',
+        subset: [
             'aim',
             'ain',
             'ami',
@@ -5421,12 +5423,12 @@ export const GAMES = [
             'main',
             'many',
             'mina',
-            'infamy'
-        ]
+            'infamy',
+        ],
     },
     {
-        'word': 'issude',
-        'subset': [
+        word: 'issude',
+        subset: [
             'die',
             'dis',
             'due',
@@ -5445,12 +5447,12 @@ export const GAMES = [
             'uses',
             'issue',
             'sides',
-            'issued'
-        ]
+            'issued',
+        ],
     },
     {
-        'word': 'ejster',
-        'subset': [
+        word: 'ejster',
+        subset: [
             'ere',
             'ers',
             'jet',
@@ -5469,12 +5471,12 @@ export const GAMES = [
             'reset',
             'steer',
             'trees',
-            'jester'
-        ]
+            'jester',
+        ],
     },
     {
-        'word': 'ojsphe',
-        'subset': [
+        word: 'ojsphe',
+        subset: [
             'hep',
             'hoe',
             'hop',
@@ -5493,12 +5495,12 @@ export const GAMES = [
             'shoe',
             'shop',
             'hopes',
-            'joseph'
-        ]
+            'joseph',
+        ],
     },
     {
-        'word': 'okrhse',
-        'subset': [
+        word: 'okrhse',
+        subset: [
             'ers',
             'her',
             'hoe',
@@ -5517,12 +5519,12 @@ export const GAMES = [
             'sore',
             'horse',
             'shore',
-            'kosher'
-        ]
+            'kosher',
+        ],
     },
     {
-        'word': 'olaubr',
-        'subset': [
+        word: 'olaubr',
+        subset: [
             'bar',
             'boa',
             'bra',
@@ -5541,12 +5543,12 @@ export const GAMES = [
             'bura',
             'oral',
             'labor',
-            'labour'
-        ]
+            'labour',
+        ],
     },
     {
-        'word': 'agloon',
-        'subset': [
+        word: 'agloon',
+        subset: [
             'ago',
             'gal',
             'goa',
@@ -5565,12 +5567,12 @@ export const GAMES = [
             'loon',
             'along',
             'logan',
-            'lagoon'
-        ]
+            'lagoon',
+        ],
     },
     {
-        'word': 'eninsl',
-        'subset': [
+        word: 'eninsl',
+        subset: [
             'inn',
             'ins',
             'lei',
@@ -5589,12 +5591,12 @@ export const GAMES = [
             'linen',
             'lines',
             'nines',
-            'linens'
-        ]
+            'linens',
+        ],
     },
     {
-        'word': 'aoelcl',
-        'subset': [
+        word: 'aoelcl',
+        subset: [
             'ace',
             'ale',
             'all',
@@ -5613,12 +5615,12 @@ export const GAMES = [
             'loca',
             'cello',
             'local',
-            'locale'
-        ]
+            'locale',
+        ],
     },
     {
-        'word': 'olpepd',
-        'subset': [
+        word: 'olpepd',
+        subset: [
             'del',
             'doe',
             'dol',
@@ -5637,12 +5639,12 @@ export const GAMES = [
             'plop',
             'pole',
             'pope',
-            'lopped'
-        ]
+            'lopped',
+        ],
     },
     {
-        'word': 'iulrgn',
-        'subset': [
+        word: 'iulrgn',
+        subset: [
             'gin',
             'gun',
             'lin',
@@ -5661,12 +5663,12 @@ export const GAMES = [
             'ruin',
             'rung',
             'luring',
-            'ruling'
-        ]
+            'ruling',
+        ],
     },
     {
-        'word': 'amkgni',
-        'subset': [
+        word: 'amkgni',
+        subset: [
             'aim',
             'ain',
             'ami',
@@ -5685,12 +5687,12 @@ export const GAMES = [
             'main',
             'mina',
             'mink',
-            'making'
-        ]
+            'making',
+        ],
     },
     {
-        'word': 'magnae',
-        'subset': [
+        word: 'magnae',
+        subset: [
             'aga',
             'age',
             'ama',
@@ -5709,12 +5711,12 @@ export const GAMES = [
             'game',
             'mean',
             'name',
-            'manage'
-        ]
+            'manage',
+        ],
     },
     {
-        'word': 'armtry',
-        'subset': [
+        word: 'armtry',
+        subset: [
             'arm',
             'art',
             'mar',
@@ -5733,12 +5735,12 @@ export const GAMES = [
             'tram',
             'tray',
             'marry',
-            'martyr'
-        ]
+            'martyr',
+        ],
     },
     {
-        'word': 'anmiee',
-        'subset': [
+        word: 'anmiee',
+        subset: [
             'aim',
             'ain',
             'ami',
@@ -5757,12 +5759,12 @@ export const GAMES = [
             'mine',
             'name',
             'enema',
-            'meanie'
-        ]
+            'meanie',
+        ],
     },
     {
-        'word': 'remyel',
-        'subset': [
+        word: 'remyel',
+        subset: [
             'eel',
             'elm',
             'ere',
@@ -5781,12 +5783,12 @@ export const GAMES = [
             'emery',
             'leery',
             'merle',
-            'merely'
-        ]
+            'merely',
+        ],
     },
     {
-        'word': 'mkoced',
-        'subset': [
+        word: 'mkoced',
+        subset: [
             'cod',
             'doc',
             'doe',
@@ -5805,12 +5807,12 @@ export const GAMES = [
             'dome',
             'mock',
             'mode',
-            'mocked'
-        ]
+            'mocked',
+        ],
     },
     {
-        'word': 'hmaori',
-        'subset': [
+        word: 'hmaori',
+        subset: [
             'aim',
             'air',
             'ami',
@@ -5829,12 +5831,12 @@ export const GAMES = [
             'harm',
             'hora',
             'roam',
-            'mohair'
-        ]
+            'mohair',
+        ],
     },
     {
-        'word': 'loimle',
-        'subset': [
+        word: 'loimle',
+        subset: [
             'ell',
             'elm',
             'ill',
@@ -5853,12 +5855,12 @@ export const GAMES = [
             'moil',
             'mole',
             'moll',
-            'mollie'
-        ]
+            'mollie',
+        ],
     },
     {
-        'word': 'poedmp',
-        'subset': [
+        word: 'poedmp',
+        subset: [
             'doe',
             'dom',
             'med',
@@ -5877,12 +5879,12 @@ export const GAMES = [
             'poem',
             'pope',
             'moped',
-            'mopped'
-        ]
+            'mopped',
+        ],
     },
     {
-        'word': 'ornmos',
-        'subset': [
+        word: 'ornmos',
+        subset: [
             'mon',
             'moo',
             'mor',
@@ -5901,12 +5903,12 @@ export const GAMES = [
             'moors',
             'moron',
             'rooms',
-            'morons'
-        ]
+            'morons',
+        ],
     },
     {
-        'word': 'hmoytu',
-        'subset': [
+        word: 'hmoytu',
+        subset: [
             'hot',
             'hoy',
             'hum',
@@ -5925,12 +5927,12 @@ export const GAMES = [
             'thou',
             'mouth',
             'youth',
-            'mouthy'
-        ]
+            'mouthy',
+        ],
     },
     {
-        'word': 'nagegd',
-        'subset': [
+        word: 'nagegd',
+        subset: [
             'age',
             'and',
             'ane',
@@ -5949,12 +5951,12 @@ export const GAMES = [
             'gage',
             'gang',
             'ganged',
-            'nagged'
-        ]
+            'nagged',
+        ],
     },
     {
-        'word': 'mtneug',
-        'subset': [
+        word: 'mtneug',
+        subset: [
             'eng',
             'gem',
             'gen',
@@ -5973,12 +5975,12 @@ export const GAMES = [
             'mute',
             'tune',
             'tung',
-            'nutmeg'
-        ]
+            'nutmeg',
+        ],
     },
     {
-        'word': 'moelet',
-        'subset': [
+        word: 'moelet',
+        subset: [
             'eel',
             'elm',
             'lee',
@@ -5997,12 +5999,12 @@ export const GAMES = [
             'mote',
             'tome',
             'motel',
-            'omelet'
-        ]
+            'omelet',
+        ],
     },
     {
-        'word': 'touidb',
-        'subset': [
+        word: 'touidb',
+        subset: [
             'bid',
             'bio',
             'bit',
@@ -6021,12 +6023,12 @@ export const GAMES = [
             'tub',
             'bout',
             'doubt',
-            'outbid'
-        ]
+            'outbid',
+        ],
     },
     {
-        'word': 'ptrewe',
-        'subset': [
+        word: 'ptrewe',
+        subset: [
             'ere',
             'ewe',
             'pee',
@@ -6045,12 +6047,12 @@ export const GAMES = [
             'were',
             'peter',
             'twerp',
-            'pewter'
-        ]
+            'pewter',
+        ],
     },
     {
-        'word': 'kciped',
-        'subset': [
+        word: 'kciped',
+        subset: [
             'die',
             'dip',
             'ice',
@@ -6069,12 +6071,12 @@ export const GAMES = [
             'pick',
             'pied',
             'pike',
-            'picked'
-        ]
+            'picked',
+        ],
     },
     {
-        'word': 'psside',
-        'subset': [
+        word: 'psside',
+        subset: [
             'die',
             'dip',
             'dis',
@@ -6093,12 +6095,12 @@ export const GAMES = [
             'sides',
             'spied',
             'spies',
-            'pissed'
-        ]
+            'pissed',
+        ],
     },
     {
-        'word': 'pitedt',
-        'subset': [
+        word: 'pitedt',
+        subset: [
             'die',
             'dip',
             'dit',
@@ -6117,12 +6119,12 @@ export const GAMES = [
             'tied',
             'petit',
             'tepid',
-            'pitted'
-        ]
+            'pitted',
+        ],
     },
     {
-        'word': 'eisplx',
-        'subset': [
+        word: 'eisplx',
+        subset: [
             'lei',
             'lex',
             'lie',
@@ -6141,12 +6143,12 @@ export const GAMES = [
             'slip',
             'piles',
             'spiel',
-            'pixels'
-        ]
+            'pixels',
+        ],
     },
     {
-        'word': 'oedpll',
-        'subset': [
+        word: 'oedpll',
+        subset: [
             'del',
             'doe',
             'dol',
@@ -6165,12 +6167,12 @@ export const GAMES = [
             'pled',
             'pole',
             'poll',
-            'polled'
-        ]
+            'polled',
+        ],
     },
     {
-        'word': 'tpodte',
-        'subset': [
+        word: 'tpodte',
+        subset: [
             'doe',
             'dot',
             'ode',
@@ -6189,12 +6191,12 @@ export const GAMES = [
             'tote',
             'depot',
             'opted',
-            'potted'
-        ]
+            'potted',
+        ],
     },
     {
-        'word': 'opunce',
-        'subset': [
+        word: 'opunce',
+        subset: [
             'con',
             'cop',
             'cue',
@@ -6213,12 +6215,12 @@ export const GAMES = [
             'upon',
             'coupe',
             'ounce',
-            'pounce'
-        ]
+            'pounce',
+        ],
     },
     {
-        'word': 'rzpied',
-        'subset': [
+        word: 'rzpied',
+        subset: [
             'die',
             'dip',
             'per',
@@ -6237,12 +6239,12 @@ export const GAMES = [
             'ripe',
             'pride',
             'prize',
-            'prized'
-        ]
+            'prized',
+        ],
     },
     {
-        'word': 'rponve',
-        'subset': [
+        word: 'rponve',
+        subset: [
             'nor',
             'one',
             'ore',
@@ -6261,12 +6263,12 @@ export const GAMES = [
             'rope',
             'prone',
             'prove',
-            'proven'
-        ]
+            'proven',
+        ],
     },
     {
-        'word': 'qnuist',
-        'subset': [
+        word: 'qnuist',
+        subset: [
             'ins',
             'its',
             'nut',
@@ -6285,12 +6287,12 @@ export const GAMES = [
             'unit',
             'quits',
             'units',
-            'quints'
-        ]
+            'quints',
+        ],
     },
     {
-        'word': 'rraign',
-        'subset': [
+        word: 'rraign',
+        subset: [
             'ain',
             'air',
             'ani',
@@ -6309,12 +6311,12 @@ export const GAMES = [
             'rang',
             'ring',
             'grain',
-            'raring'
-        ]
+            'raring',
+        ],
     },
     {
-        'word': 'arveag',
-        'subset': [
+        word: 'arveag',
+        subset: [
             'aga',
             'age',
             'are',
@@ -6333,12 +6335,12 @@ export const GAMES = [
             'rave',
             'vera',
             'grave',
-            'ravage'
-        ]
+            'ravage',
+        ],
     },
     {
-        'word': 'erdaer',
-        'subset': [
+        word: 'erdaer',
+        subset: [
             'are',
             'dee',
             'ear',
@@ -6357,12 +6359,12 @@ export const GAMES = [
             'erred',
             'reader',
             'reared',
-            'reread'
-        ]
+            'reread',
+        ],
     },
     {
-        'word': 'rerdea',
-        'subset': [
+        word: 'rerdea',
+        subset: [
             'are',
             'dee',
             'ear',
@@ -6381,12 +6383,12 @@ export const GAMES = [
             'erred',
             'reader',
             'reared',
-            'reread'
-        ]
+            'reread',
+        ],
     },
     {
-        'word': 'etrcum',
-        'subset': [
+        word: 'etrcum',
+        subset: [
             'cue',
             'cum',
             'cur',
@@ -6405,12 +6407,12 @@ export const GAMES = [
             'true',
             'cuter',
             'truce',
-            'rectum'
-        ]
+            'rectum',
+        ],
     },
     {
-        'word': 'reevse',
-        'subset': [
+        word: 'reevse',
+        subset: [
             'ere',
             'ers',
             'eve',
@@ -6429,12 +6431,12 @@ export const GAMES = [
             'sever',
             'verse',
             'reeves',
-            'severe'
-        ]
+            'severe',
+        ],
     },
     {
-        'word': 'ergetn',
-        'subset': [
+        word: 'ergetn',
+        subset: [
             'eng',
             'ere',
             'gee',
@@ -6453,12 +6455,12 @@ export const GAMES = [
             'genre',
             'green',
             'greet',
-            'regent'
-        ]
+            'regent',
+        ],
     },
     {
-        'word': 'erdera',
-        'subset': [
+        word: 'erdera',
+        subset: [
             'are',
             'dee',
             'ear',
@@ -6477,12 +6479,12 @@ export const GAMES = [
             'erred',
             'reader',
             'reared',
-            'reread'
-        ]
+            'reread',
+        ],
     },
     {
-        'word': 'eertst',
-        'subset': [
+        word: 'eertst',
+        subset: [
             'ere',
             'ers',
             'ree',
@@ -6501,12 +6503,12 @@ export const GAMES = [
             'steer',
             'trees',
             'retest',
-            'street'
-        ]
+            'street',
+        ],
     },
     {
-        'word': 'ierbdb',
-        'subset': [
+        word: 'ierbdb',
+        subset: [
             'bed',
             'bib',
             'bid',
@@ -6525,12 +6527,12 @@ export const GAMES = [
             'bribe',
             'bride',
             'bribed',
-            'ribbed'
-        ]
+            'ribbed',
+        ],
     },
     {
-        'word': 'rbiobn',
-        'subset': [
+        word: 'rbiobn',
+        subset: [
             'bib',
             'bin',
             'bio',
@@ -6549,12 +6551,12 @@ export const GAMES = [
             'noir',
             'robin',
             'ribbon',
-            'robbin'
-        ]
+            'robbin',
+        ],
     },
     {
-        'word': 'irpple',
-        'subset': [
+        word: 'irpple',
+        subset: [
             'lei',
             'lie',
             'lip',
@@ -6573,12 +6575,12 @@ export const GAMES = [
             'ripe',
             'peril',
             'piper',
-            'ripple'
-        ]
+            'ripple',
+        ],
     },
     {
-        'word': 'rbobin',
-        'subset': [
+        word: 'rbobin',
+        subset: [
             'bib',
             'bin',
             'bio',
@@ -6597,12 +6599,12 @@ export const GAMES = [
             'noir',
             'robin',
             'ribbon',
-            'robbin'
-        ]
+            'robbin',
+        ],
     },
     {
-        'word': 'orrpme',
-        'subset': [
+        word: 'orrpme',
+        subset: [
             'err',
             'mop',
             'mor',
@@ -6621,12 +6623,12 @@ export const GAMES = [
             'prom',
             'romp',
             'rope',
-            'romper'
-        ]
+            'romper',
+        ],
     },
     {
-        'word': 'oturre',
-        'subset': [
+        word: 'oturre',
+        subset: [
             'err',
             'ore',
             'ort',
@@ -6645,12 +6647,12 @@ export const GAMES = [
             'retro',
             'route',
             'truer',
-            'router'
-        ]
+            'router',
+        ],
     },
     {
-        'word': 'ruling',
-        'subset': [
+        word: 'ruling',
+        subset: [
             'gin',
             'gun',
             'lin',
@@ -6669,12 +6671,12 @@ export const GAMES = [
             'ruin',
             'rung',
             'luring',
-            'ruling'
-        ]
+            'ruling',
+        ],
     },
     {
-        'word': 'sseaon',
-        'subset': [
+        word: 'sseaon',
+        subset: [
             'ane',
             'ass',
             'ess',
@@ -6693,12 +6695,12 @@ export const GAMES = [
             'seas',
             'sons',
             'noses',
-            'season'
-        ]
+            'season',
+        ],
     },
     {
-        'word': 'esserv',
-        'subset': [
+        word: 'esserv',
+        subset: [
             'ere',
             'ers',
             'ess',
@@ -6717,12 +6719,12 @@ export const GAMES = [
             'serve',
             'sever',
             'verse',
-            'serves'
-        ]
+            'serves',
+        ],
     },
     {
-        'word': 'servee',
-        'subset': [
+        word: 'servee',
+        subset: [
             'ere',
             'ers',
             'eve',
@@ -6741,12 +6743,12 @@ export const GAMES = [
             'sever',
             'verse',
             'reeves',
-            'severe'
-        ]
+            'severe',
+        ],
     },
     {
-        'word': 'hirsts',
-        'subset': [
+        word: 'hirsts',
+        subset: [
             'his',
             'hit',
             'its',
@@ -6765,12 +6767,12 @@ export const GAMES = [
             'shirt',
             'shits',
             'stirs',
-            'shirts'
-        ]
+            'shirts',
+        ],
     },
     {
-        'word': 'hoosts',
-        'subset': [
+        word: 'hoosts',
+        subset: [
             'hot',
             'oho',
             'ooh',
@@ -6789,12 +6791,12 @@ export const GAMES = [
             'hosts',
             'shoot',
             'shots',
-            'shoots'
-        ]
+            'shoots',
+        ],
     },
     {
-        'word': 'thosrs',
-        'subset': [
+        word: 'thosrs',
+        subset: [
             'hot',
             'ort',
             'rot',
@@ -6813,12 +6815,12 @@ export const GAMES = [
             'short',
             'shots',
             'sorts',
-            'shorts'
-        ]
+            'shorts',
+        ],
     },
     {
-        'word': 'hsevol',
-        'subset': [
+        word: 'hsevol',
+        subset: [
             'hoe',
             'ole',
             'ose',
@@ -6837,12 +6839,12 @@ export const GAMES = [
             'loves',
             'shove',
             'solve',
-            'shovel'
-        ]
+            'shovel',
+        ],
     },
     {
-        'word': 'hsrdew',
-        'subset': [
+        word: 'hsrdew',
+        subset: [
             'dew',
             'ers',
             'her',
@@ -6861,12 +6863,12 @@ export const GAMES = [
             'herds',
             'shred',
             'shrew',
-            'shrewd'
-        ]
+            'shrewd',
+        ],
     },
     {
-        'word': 'ksewed',
-        'subset': [
+        word: 'ksewed',
+        subset: [
             'dee',
             'dew',
             'ewe',
@@ -6885,12 +6887,12 @@ export const GAMES = [
             'swede',
             'weeds',
             'weeks',
-            'skewed'
-        ]
+            'skewed',
+        ],
     },
     {
-        'word': 'mksoed',
-        'subset': [
+        word: 'mksoed',
+        subset: [
             'doe',
             'dom',
             'dos',
@@ -6909,12 +6911,12 @@ export const GAMES = [
             'some',
             'domes',
             'smoke',
-            'smoked'
-        ]
+            'smoked',
+        ],
     },
     {
-        'word': 'soketc',
-        'subset': [
+        word: 'soketc',
+        subset: [
             'cos',
             'cot',
             'ose',
@@ -6933,12 +6935,12 @@ export const GAMES = [
             'cokes',
             'stock',
             'stoke',
-            'socket'
-        ]
+            'socket',
+        ],
     },
     {
-        'word': 'osnics',
-        'subset': [
+        word: 'osnics',
+        subset: [
             'con',
             'cos',
             'ins',
@@ -6957,12 +6959,12 @@ export const GAMES = [
             'sons',
             'coins',
             'icons',
-            'sonics'
-        ]
+            'sonics',
+        ],
     },
     {
-        'word': 'rsolre',
-        'subset': [
+        word: 'rsolre',
+        subset: [
             'err',
             'ers',
             'ole',
@@ -6981,12 +6983,12 @@ export const GAMES = [
             'loser',
             'roles',
             'sorel',
-            'sorrel'
-        ]
+            'sorrel',
+        ],
     },
     {
-        'word': 'sounds',
-        'subset': [
+        word: 'sounds',
+        subset: [
             'don',
             'dos',
             'dun',
@@ -7005,12 +7007,12 @@ export const GAMES = [
             'suds',
             'undo',
             'sound',
-            'sounds'
-        ]
+            'sounds',
+        ],
     },
     {
-        'word': 'esepdy',
-        'subset': [
+        word: 'esepdy',
+        subset: [
             'dee',
             'dey',
             'dye',
@@ -7029,12 +7031,12 @@ export const GAMES = [
             'seep',
             'seedy',
             'speed',
-            'speedy'
-        ]
+            'speedy',
+        ],
     },
     {
-        'word': 'hsipxn',
-        'subset': [
+        word: 'hsipxn',
+        subset: [
             'hip',
             'his',
             'ins',
@@ -7053,12 +7055,12 @@ export const GAMES = [
             'ship',
             'snip',
             'spin',
-            'sphinx'
-        ]
+            'sphinx',
+        ],
     },
     {
-        'word': 'cpsesi',
-        'subset': [
+        word: 'cpsesi',
+        subset: [
             'ess',
             'ice',
             'pic',
@@ -7077,12 +7079,12 @@ export const GAMES = [
             'specs',
             'spice',
             'spies',
-            'spices'
-        ]
+            'spices',
+        ],
     },
     {
-        'word': 'iskspe',
-        'subset': [
+        word: 'iskspe',
+        subset: [
             'ess',
             'kip',
             'pie',
@@ -7101,12 +7103,12 @@ export const GAMES = [
             'skies',
             'spies',
             'spike',
-            'spikes'
-        ]
+            'spikes',
+        ],
     },
     {
-        'word': 'pelsen',
-        'subset': [
+        word: 'pelsen',
+        subset: [
             'eel',
             'lee',
             'nee',
@@ -7125,12 +7127,12 @@ export const GAMES = [
             'seep',
             'peels',
             'sleep',
-            'spleen'
-        ]
+            'spleen',
+        ],
     },
     {
-        'word': 'tsptoy',
-        'subset': [
+        word: 'tsptoy',
+        subset: [
             'ops',
             'pot',
             'sop',
@@ -7149,12 +7151,12 @@ export const GAMES = [
             'toys',
             'typo',
             'potty',
-            'spotty'
-        ]
+            'spotty',
+        ],
     },
     {
-        'word': 'uspnky',
-        'subset': [
+        word: 'uspnky',
+        subset: [
             'pun',
             'pus',
             'sky',
@@ -7173,12 +7175,12 @@ export const GAMES = [
             'punks',
             'punky',
             'spunk',
-            'spunky'
-        ]
+            'spunky',
+        ],
     },
     {
-        'word': 'esncht',
-        'subset': [
+        word: 'esncht',
+        subset: [
             'eth',
             'hen',
             'net',
@@ -7197,12 +7199,12 @@ export const GAMES = [
             'cents',
             'chest',
             'scent',
-            'stench'
-        ]
+            'stench',
+        ],
     },
     {
-        'word': 'ksitcs',
-        'subset': [
+        word: 'ksitcs',
+        subset: [
             'ick',
             'its',
             'kit',
@@ -7221,12 +7223,12 @@ export const GAMES = [
             'tick',
             'stick',
             'ticks',
-            'sticks'
-        ]
+            'sticks',
+        ],
     },
     {
-        'word': 'esertt',
-        'subset': [
+        word: 'esertt',
+        subset: [
             'ere',
             'ers',
             'ree',
@@ -7245,12 +7247,12 @@ export const GAMES = [
             'steer',
             'trees',
             'retest',
-            'street'
-        ]
+            'street',
+        ],
     },
     {
-        'word': 'emusmr',
-        'subset': [
+        word: 'emusmr',
+        subset: [
             'ems',
             'ers',
             'mum',
@@ -7269,12 +7271,12 @@ export const GAMES = [
             'sure',
             'user',
             'serum',
-            'summer'
-        ]
+            'summer',
+        ],
     },
     {
-        'word': 'temrpe',
-        'subset': [
+        word: 'temrpe',
+        subset: [
             'ere',
             'met',
             'pee',
@@ -7293,12 +7295,12 @@ export const GAMES = [
             'tree',
             'meter',
             'peter',
-            'temper'
-        ]
+            'temper',
+        ],
     },
     {
-        'word': 'etnatn',
-        'subset': [
+        word: 'etnatn',
+        subset: [
             'ane',
             'ant',
             'ate',
@@ -7317,12 +7319,12 @@ export const GAMES = [
             'neat',
             'tate',
             'tent',
-            'tenant'
-        ]
+            'tenant',
+        ],
     },
     {
-        'word': 'eetstn',
-        'subset': [
+        word: 'eetstn',
+        subset: [
             'nee',
             'net',
             'see',
@@ -7341,12 +7343,12 @@ export const GAMES = [
             'teens',
             'tense',
             'tents',
-            'tenets'
-        ]
+            'tenets',
+        ],
     },
     {
-        'word': 'etthsn',
-        'subset': [
+        word: 'etthsn',
+        subset: [
             'eth',
             'hen',
             'net',
@@ -7365,12 +7367,12 @@ export const GAMES = [
             'then',
             'tenth',
             'tents',
-            'tenths'
-        ]
+            'tenths',
+        ],
     },
     {
-        'word': 'trhust',
-        'subset': [
+        word: 'trhust',
+        subset: [
             'hut',
             'rut',
             'tut',
@@ -7389,12 +7391,12 @@ export const GAMES = [
             'trust',
             'truth',
             'thrust',
-            'truths'
-        ]
+            'truths',
+        ],
     },
     {
-        'word': 'ltlire',
-        'subset': [
+        word: 'ltlire',
+        subset: [
             'ell',
             'ill',
             'lei',
@@ -7413,12 +7415,12 @@ export const GAMES = [
             'till',
             'tire',
             'liter',
-            'tiller'
-        ]
+            'tiller',
+        ],
     },
     {
-        'word': 'ptiedp',
-        'subset': [
+        word: 'ptiedp',
+        subset: [
             'die',
             'dip',
             'dit',
@@ -7437,12 +7439,12 @@ export const GAMES = [
             'tide',
             'tied',
             'tepid',
-            'tipped'
-        ]
+            'tipped',
+        ],
     },
     {
-        'word': 'iteolt',
-        'subset': [
+        word: 'iteolt',
+        subset: [
             'lei',
             'let',
             'lie',
@@ -7461,12 +7463,12 @@ export const GAMES = [
             'tote',
             'lotte',
             'title',
-            'toilet'
-        ]
+            'toilet',
+        ],
     },
     {
-        'word': 'utoche',
-        'subset': [
+        word: 'utoche',
+        subset: [
             'cot',
             'cue',
             'cut',
@@ -7485,12 +7487,12 @@ export const GAMES = [
             'thou',
             'chute',
             'touch',
-            'touche'
-        ]
+            'touche',
+        ],
     },
     {
-        'word': 'rtgaic',
-        'subset': [
+        word: 'rtgaic',
+        subset: [
             'act',
             'air',
             'arc',
@@ -7509,12 +7511,12 @@ export const GAMES = [
             'cart',
             'trig',
             'cigar',
-            'tragic'
-        ]
+            'tragic',
+        ],
     },
     {
-        'word': 'ustrth',
-        'subset': [
+        word: 'ustrth',
+        subset: [
             'hut',
             'rut',
             'tut',
@@ -7533,12 +7535,12 @@ export const GAMES = [
             'trust',
             'truth',
             'thrust',
-            'truths'
-        ]
+            'truths',
+        ],
     },
     {
-        'word': 'lutmeb',
-        'subset': [
+        word: 'lutmeb',
+        subset: [
             'bel',
             'bet',
             'bum',
@@ -7557,12 +7559,12 @@ export const GAMES = [
             'mute',
             'tube',
             'blume',
-            'tumble'
-        ]
+            'tumble',
+        ],
     },
     {
-        'word': 'donenu',
-        'subset': [
+        word: 'donenu',
+        subset: [
             'den',
             'doe',
             'don',
@@ -7581,12 +7583,12 @@ export const GAMES = [
             'noun',
             'nude',
             'undo',
-            'undone'
-        ]
+            'undone',
+        ],
     },
     {
-        'word': 'esuany',
-        'subset': [
+        word: 'esuany',
+        subset: [
             'ane',
             'any',
             'aye',
@@ -7605,12 +7607,12 @@ export const GAMES = [
             'sane',
             'syne',
             'yuan',
-            'uneasy'
-        ]
+            'uneasy',
+        ],
     },
     {
-        'word': 'ulnoad',
-        'subset': [
+        word: 'ulnoad',
+        subset: [
             'ado',
             'and',
             'dol',
@@ -7629,12 +7631,12 @@ export const GAMES = [
             'luna',
             'undo',
             'aloud',
-            'unload'
-        ]
+            'unload',
+        ],
     },
     {
-        'word': 'vainhs',
-        'subset': [
+        word: 'vainhs',
+        subset: [
             'ain',
             'ani',
             'ash',
@@ -7653,12 +7655,12 @@ export const GAMES = [
             'visa',
             'savin',
             'shiva',
-            'vanish'
-        ]
+            'vanish',
+        ],
     },
     {
-        'word': 'ysvtla',
-        'subset': [
+        word: 'ysvtla',
+        subset: [
             'als',
             'alt',
             'las',
@@ -7677,12 +7679,12 @@ export const GAMES = [
             'stay',
             'vast',
             'salty',
-            'vastly'
-        ]
+            'vastly',
+        ],
     },
     {
-        'word': 'irelyv',
-        'subset': [
+        word: 'irelyv',
+        subset: [
             'ivy',
             'lei',
             'lie',
@@ -7701,12 +7703,12 @@ export const GAMES = [
             'vile',
             'liver',
             'riley',
-            'verily'
-        ]
+            'verily',
+        ],
     },
     {
-        'word': 'asvige',
-        'subset': [
+        word: 'asvige',
+        subset: [
             'age',
             'ave',
             'gas',
@@ -7725,12 +7727,12 @@ export const GAMES = [
             'vase',
             'visa',
             'gives',
-            'visage'
-        ]
+            'visage',
+        ],
     },
     {
-        'word': 'kwaing',
-        'subset': [
+        word: 'kwaing',
+        subset: [
             'ain',
             'ani',
             'gin',
@@ -7749,12 +7751,12 @@ export const GAMES = [
             'king',
             'wing',
             'wink',
-            'waking'
-        ]
+            'waking',
+        ],
     },
     {
-        'word': 'ihwety',
-        'subset': [
+        word: 'ihwety',
+        subset: [
             'eth',
             'hey',
             'hit',
@@ -7773,12 +7775,12 @@ export const GAMES = [
             'with',
             'yeti',
             'white',
-            'whitey'
-        ]
+            'whitey',
+        ],
     },
     {
-        'word': 'wiengr',
-        'subset': [
+        word: 'wiengr',
+        subset: [
             'eng',
             'gen',
             'gin',
@@ -7797,12 +7799,12 @@ export const GAMES = [
             'wire',
             'reign',
             'wring',
-            'winger'
-        ]
+            'winger',
+        ],
     },
     {
-        'word': 'worded',
-        'subset': [
+        word: 'worded',
+        subset: [
             'dew',
             'doe',
             'odd',
@@ -7821,12 +7823,12 @@ export const GAMES = [
             'rode',
             'word',
             'wore',
-            'worded'
-        ]
+            'worded',
+        ],
     },
     {
-        'word': 'dagnae',
-        'subset': [
+        word: 'dagnae',
+        subset: [
             'aga',
             'age',
             'ana',
@@ -7844,12 +7846,12 @@ export const GAMES = [
             'dean',
             'nada',
             'adage',
-            'agenda'
-        ]
+            'agenda',
+        ],
     },
     {
-        'word': 'iglaht',
-        'subset': [
+        word: 'iglaht',
+        subset: [
             'ail',
             'alt',
             'gal',
@@ -7867,12 +7869,12 @@ export const GAMES = [
             'hilt',
             'tail',
             'light',
-            'alight'
-        ]
+            'alight',
+        ],
     },
     {
-        'word': 'apache',
-        'subset': [
+        word: 'apache',
+        subset: [
             'ace',
             'aha',
             'ape',
@@ -7890,12 +7892,12 @@ export const GAMES = [
             'pace',
             'cheap',
             'peach',
-            'apache'
-        ]
+            'apache',
+        ],
     },
     {
-        'word': 'tairmu',
-        'subset': [
+        word: 'tairmu',
+        subset: [
             'aim',
             'air',
             'ami',
@@ -7913,12 +7915,12 @@ export const GAMES = [
             'mart',
             'tram',
             'trim',
-            'atrium'
-        ]
+            'atrium',
+        ],
     },
     {
-        'word': 'aiebyl',
-        'subset': [
+        word: 'aiebyl',
+        subset: [
             'ail',
             'ale',
             'aye',
@@ -7936,12 +7938,12 @@ export const GAMES = [
             'bail',
             'bale',
             'bialy',
-            'bailey'
-        ]
+            'bailey',
+        ],
     },
     {
-        'word': 'brmiau',
-        'subset': [
+        word: 'brmiau',
+        subset: [
             'aim',
             'air',
             'ami',
@@ -7959,12 +7961,12 @@ export const GAMES = [
             'brim',
             'bura',
             'rumba',
-            'barium'
-        ]
+            'barium',
+        ],
     },
     {
-        'word': 'barrio',
-        'subset': [
+        word: 'barrio',
+        subset: [
             'air',
             'bar',
             'bio',
@@ -7982,12 +7984,12 @@ export const GAMES = [
             'roar',
             'arbor',
             'briar',
-            'barrio'
-        ]
+            'barrio',
+        ],
     },
     {
-        'word': 'mabeed',
-        'subset': [
+        word: 'mabeed',
+        subset: [
             'bad',
             'bam',
             'bed',
@@ -8005,12 +8007,12 @@ export const GAMES = [
             'made',
             'mead',
             'edema',
-            'beamed'
-        ]
+            'beamed',
+        ],
     },
     {
-        'word': 'ebraer',
-        'subset': [
+        word: 'ebraer',
+        subset: [
             'are',
             'bar',
             'bee',
@@ -8028,12 +8030,12 @@ export const GAMES = [
             'rare',
             'rear',
             'barre',
-            'bearer'
-        ]
+            'bearer',
+        ],
     },
     {
-        'word': 'fealbl',
-        'subset': [
+        word: 'fealbl',
+        subset: [
             'ale',
             'all',
             'bel',
@@ -8051,12 +8053,12 @@ export const GAMES = [
             'fable',
             'fella',
             'label',
-            'befall'
-        ]
+            'befall',
+        ],
     },
     {
-        'word': 'nldbis',
-        'subset': [
+        word: 'nldbis',
+        subset: [
             'bid',
             'bin',
             'dis',
@@ -8074,12 +8076,12 @@ export const GAMES = [
             'slid',
             'binds',
             'blind',
-            'blinds'
-        ]
+            'blinds',
+        ],
     },
     {
-        'word': 'boolds',
-        'subset': [
+        word: 'boolds',
+        subset: [
             'bod',
             'boo',
             'dol',
@@ -8097,12 +8099,12 @@ export const GAMES = [
             'sold',
             'solo',
             'blood',
-            'bloods'
-        ]
+            'bloods',
+        ],
     },
     {
-        'word': 'noobgs',
-        'subset': [
+        word: 'noobgs',
+        subset: [
             'boo',
             'gob',
             'goo',
@@ -8120,12 +8122,12 @@ export const GAMES = [
             'soon',
             'bongo',
             'goons',
-            'bongos'
-        ]
+            'bongos',
+        ],
     },
     {
-        'word': 'sdoebs',
-        'subset': [
+        word: 'sdoebs',
+        subset: [
             'bed',
             'bod',
             'deb',
@@ -8143,12 +8145,12 @@ export const GAMES = [
             'dose',
             'sobs',
             'doses',
-            'bossed'
-        ]
+            'bossed',
+        ],
     },
     {
-        'word': 'rbrave',
-        'subset': [
+        word: 'rbrave',
+        subset: [
             'are',
             'ave',
             'bar',
@@ -8166,12 +8168,12 @@ export const GAMES = [
             'vera',
             'barre',
             'brave',
-            'braver'
-        ]
+            'braver',
+        ],
     },
     {
-        'word': 'rbcksi',
-        'subset': [
+        word: 'rbcksi',
+        subset: [
             'ick',
             'rib',
             'sic',
@@ -8189,12 +8191,12 @@ export const GAMES = [
             'brick',
             'cribs',
             'ricks',
-            'bricks'
-        ]
+            'bricks',
+        ],
     },
     {
-        'word': 'bsaysp',
-        'subset': [
+        word: 'bsaysp',
+        subset: [
             'abs',
             'ass',
             'bay',
@@ -8212,12 +8214,12 @@ export const GAMES = [
             'saps',
             'says',
             'spas',
-            'bypass'
-        ]
+            'bypass',
+        ],
     },
     {
-        'word': 'calnsa',
-        'subset': [
+        word: 'calnsa',
+        subset: [
             'ala',
             'als',
             'ana',
@@ -8235,12 +8237,12 @@ export const GAMES = [
             'scan',
             'canal',
             'nasal',
-            'canals'
-        ]
+            'canals',
+        ],
     },
     {
-        'word': 'canape',
-        'subset': [
+        word: 'canape',
+        subset: [
             'ace',
             'ana',
             'ane',
@@ -8258,12 +8260,12 @@ export const GAMES = [
             'pace',
             'pane',
             'pecan',
-            'canape'
-        ]
+            'canape',
+        ],
     },
     {
-        'word': 'gacneh',
-        'subset': [
+        word: 'gacneh',
+        subset: [
             'ace',
             'age',
             'ane',
@@ -8281,12 +8283,12 @@ export const GAMES = [
             'each',
             'hang',
             'chang',
-            'change'
-        ]
+            'change',
+        ],
     },
     {
-        'word': 'isucrt',
-        'subset': [
+        word: 'isucrt',
+        subset: [
             'cur',
             'cut',
             'its',
@@ -8304,12 +8306,12 @@ export const GAMES = [
             'stir',
             'suit',
             'crust',
-            'citrus'
-        ]
+            'citrus',
+        ],
     },
     {
-        'word': 'icaxlm',
-        'subset': [
+        word: 'icaxlm',
+        subset: [
             'ail',
             'aim',
             'ami',
@@ -8327,12 +8329,12 @@ export const GAMES = [
             'mail',
             'maxi',
             'claim',
-            'climax'
-        ]
+            'climax',
+        ],
     },
     {
-        'word': 'oclsse',
-        'subset': [
+        word: 'oclsse',
+        subset: [
             'col',
             'cos',
             'ess',
@@ -8350,12 +8352,12 @@ export const GAMES = [
             'coles',
             'loses',
             'soles',
-            'closes'
-        ]
+            'closes',
+        ],
     },
     {
-        'word': 'dicogn',
-        'subset': [
+        word: 'dicogn',
+        subset: [
             'cod',
             'cog',
             'con',
@@ -8373,12 +8375,12 @@ export const GAMES = [
             'icon',
             'dingo',
             'doing',
-            'coding'
-        ]
+            'coding',
+        ],
     },
     {
-        'word': 'cppoer',
-        'subset': [
+        word: 'cppoer',
+        subset: [
             'cop',
             'cor',
             'ore',
@@ -8396,12 +8398,12 @@ export const GAMES = [
             'prep',
             'prop',
             'rope',
-            'copper'
-        ]
+            'copper',
+        ],
     },
     {
-        'word': 'oscuin',
-        'subset': [
+        word: 'oscuin',
+        subset: [
             'con',
             'cos',
             'ins',
@@ -8419,12 +8421,12 @@ export const GAMES = [
             'nous',
             'coins',
             'icons',
-            'cousin'
-        ]
+            'cousin',
+        ],
     },
     {
-        'word': 'rpacpy',
-        'subset': [
+        word: 'rpacpy',
+        subset: [
             'arc',
             'cap',
             'car',
@@ -8442,12 +8444,12 @@ export const GAMES = [
             'crap',
             'pray',
             'racy',
-            'crappy'
-        ]
+            'crappy',
+        ],
     },
     {
-        'word': 'eecdrs',
-        'subset': [
+        word: 'eecdrs',
+        subset: [
             'cee',
             'dee',
             'ere',
@@ -8465,12 +8467,12 @@ export const GAMES = [
             'seed',
             'seer',
             'creed',
-            'creeds'
-        ]
+            'creeds',
+        ],
     },
     {
-        'word': 'cerhyp',
-        'subset': [
+        word: 'cerhyp',
+        subset: [
             'cry',
             'hep',
             'her',
@@ -8488,12 +8490,12 @@ export const GAMES = [
             'yech',
             'hyper',
             'perch',
-            'cypher'
-        ]
+            'cypher',
+        ],
     },
     {
-        'word': 'magdea',
-        'subset': [
+        word: 'magdea',
+        subset: [
             'aga',
             'age',
             'ama',
@@ -8511,12 +8513,12 @@ export const GAMES = [
             'made',
             'mead',
             'adage',
-            'damage'
-        ]
+            'damage',
+        ],
     },
     {
-        'word': 'elepdy',
-        'subset': [
+        word: 'elepdy',
+        subset: [
             'dee',
             'del',
             'dey',
@@ -8534,12 +8536,12 @@ export const GAMES = [
             'peel',
             'pele',
             'pled',
-            'deeply'
-        ]
+            'deeply',
+        ],
     },
     {
-        'word': 'dfenie',
-        'subset': [
+        word: 'dfenie',
+        subset: [
             'dee',
             'den',
             'die',
@@ -8557,12 +8559,12 @@ export const GAMES = [
             'need',
             'fiend',
             'fined',
-            'define'
-        ]
+            'define',
+        ],
     },
     {
-        'word': 'mduree',
-        'subset': [
+        word: 'mduree',
+        subset: [
             'dee',
             'due',
             'ere',
@@ -8580,12 +8582,12 @@ export const GAMES = [
             'reed',
             'rude',
             'demur',
-            'demure'
-        ]
+            'demure',
+        ],
     },
     {
-        'word': 'douhce',
-        'subset': [
+        word: 'douhce',
+        subset: [
             'cod',
             'cud',
             'cue',
@@ -8603,12 +8605,12 @@ export const GAMES = [
             'duce',
             'echo',
             'ouch',
-            'douche'
-        ]
+            'douche',
+        ],
     },
     {
-        'word': 'uclted',
-        'subset': [
+        word: 'uclted',
+        subset: [
             'cud',
             'cue',
             'cut',
@@ -8626,12 +8628,12 @@ export const GAMES = [
             'duel',
             'duet',
             'luce',
-            'dulcet'
-        ]
+            'dulcet',
+        ],
     },
     {
-        'word': 'wdlels',
-        'subset': [
+        word: 'wdlels',
+        subset: [
             'del',
             'dew',
             'ell',
@@ -8649,12 +8651,12 @@ export const GAMES = [
             'dwell',
             'swell',
             'wells',
-            'dwells'
-        ]
+            'dwells',
+        ],
     },
     {
-        'word': 'emprie',
-        'subset': [
+        word: 'emprie',
+        subset: [
             'ere',
             'imp',
             'pee',
@@ -8672,12 +8674,12 @@ export const GAMES = [
             'prim',
             'ripe',
             'prime',
-            'empire'
-        ]
+            'empire',
+        ],
     },
     {
-        'word': 'eoxdsu',
-        'subset': [
+        word: 'eoxdsu',
+        subset: [
             'dex',
             'doe',
             'dos',
@@ -8695,12 +8697,12 @@ export const GAMES = [
             'dues',
             'sued',
             'used',
-            'exodus'
-        ]
+            'exodus',
+        ],
     },
     {
-        'word': 'eyfits',
-        'subset': [
+        word: 'eyfits',
+        subset: [
             'fey',
             'fit',
             'ifs',
@@ -8718,12 +8720,12 @@ export const GAMES = [
             'site',
             'ties',
             'yeti',
-            'feisty'
-        ]
+            'feisty',
+        ],
     },
     {
-        'word': 'felolw',
-        'subset': [
+        word: 'felolw',
+        subset: [
             'elf',
             'ell',
             'few',
@@ -8741,12 +8743,12 @@ export const GAMES = [
             'lowe',
             'well',
             'wolf',
-            'fellow'
-        ]
+            'fellow',
+        ],
     },
     {
-        'word': 'uflatn',
-        'subset': [
+        word: 'uflatn',
+        subset: [
             'aft',
             'alt',
             'ant',
@@ -8764,12 +8766,12 @@ export const GAMES = [
             'luna',
             'tuna',
             'fault',
-            'flaunt'
-        ]
+            'flaunt',
+        ],
     },
     {
-        'word': 'loodfs',
-        'subset': [
+        word: 'loodfs',
+        subset: [
             'dol',
             'dos',
             'loo',
@@ -8787,12 +8789,12 @@ export const GAMES = [
             'folds',
             'foods',
             'fools',
-            'floods'
-        ]
+            'floods',
+        ],
     },
     {
-        'word': 'iflorn',
-        'subset': [
+        word: 'iflorn',
+        subset: [
             'fin',
             'fir',
             'for',
@@ -8810,12 +8812,12 @@ export const GAMES = [
             'loin',
             'noir',
             'rolf',
-            'florin'
-        ]
+            'florin',
+        ],
     },
     {
-        'word': 'foergr',
-        'subset': [
+        word: 'foergr',
+        subset: [
             'ego',
             'err',
             'fer',
@@ -8833,12 +8835,12 @@ export const GAMES = [
             'forge',
             'gofer',
             'roger',
-            'forger'
-        ]
+            'forger',
+        ],
     },
     {
-        'word': 'fokred',
-        'subset': [
+        word: 'fokred',
+        subset: [
             'doe',
             'fed',
             'fer',
@@ -8856,12 +8858,12 @@ export const GAMES = [
             'fork',
             'redo',
             'rode',
-            'forked'
-        ]
+            'forked',
+        ],
     },
     {
-        'word': 'uogtfh',
-        'subset': [
+        word: 'uogtfh',
+        subset: [
             'fog',
             'got',
             'gut',
@@ -8879,12 +8881,12 @@ export const GAMES = [
             'tofu',
             'ought',
             'tough',
-            'fought'
-        ]
+            'fought',
+        ],
     },
     {
-        'word': 'aigeyt',
-        'subset': [
+        word: 'aigeyt',
+        subset: [
             'age',
             'ate',
             'aye',
@@ -8902,12 +8904,12 @@ export const GAMES = [
             'yet',
             'gate',
             'yeti',
-            'gaiety'
-        ]
+            'gaiety',
+        ],
     },
     {
-        'word': 'esrgye',
-        'subset': [
+        word: 'esrgye',
+        subset: [
             'ere',
             'ers',
             'eye',
@@ -8925,12 +8927,12 @@ export const GAMES = [
             'grey',
             'seer',
             'serge',
-            'geyser'
-        ]
+            'geyser',
+        ],
     },
     {
-        'word': 'iftged',
-        'subset': [
+        word: 'iftged',
+        subset: [
             'die',
             'dig',
             'dit',
@@ -8948,12 +8950,12 @@ export const GAMES = [
             'gift',
             'tide',
             'tied',
-            'gifted'
-        ]
+            'gifted',
+        ],
     },
     {
-        'word': 'bagbyr',
-        'subset': [
+        word: 'bagbyr',
+        subset: [
             'bag',
             'bar',
             'bay',
@@ -8971,12 +8973,12 @@ export const GAMES = [
             'grab',
             'gray',
             'gabby',
-            'grabby'
-        ]
+            'grabby',
+        ],
     },
     {
-        'word': 'garnny',
-        'subset': [
+        word: 'garnny',
+        subset: [
             'any',
             'gar',
             'gay',
@@ -8994,12 +8996,12 @@ export const GAMES = [
             'yang',
             'yarn',
             'angry',
-            'granny'
-        ]
+            'granny',
+        ],
     },
     {
-        'word': 'igsdue',
-        'subset': [
+        word: 'igsdue',
+        subset: [
             'die',
             'dig',
             'dis',
@@ -9017,12 +9019,12 @@ export const GAMES = [
             'sued',
             'used',
             'guide',
-            'guides'
-        ]
+            'guides',
+        ],
     },
     {
-        'word': 'haoird',
-        'subset': [
+        word: 'haoird',
+        subset: [
             'ado',
             'aid',
             'air',
@@ -9040,12 +9042,12 @@ export const GAMES = [
             'raid',
             'road',
             'radio',
-            'hairdo'
-        ]
+            'hairdo',
+        ],
     },
     {
-        'word': 'ehlepr',
-        'subset': [
+        word: 'ehlepr',
+        subset: [
             'eel',
             'ere',
             'hep',
@@ -9063,12 +9065,12 @@ export const GAMES = [
             'pele',
             'reel',
             'leper',
-            'helper'
-        ]
+            'helper',
+        ],
     },
     {
-        'word': 'haxose',
-        'subset': [
+        word: 'haxose',
+        subset: [
             'ash',
             'axe',
             'has',
@@ -9086,12 +9088,12 @@ export const GAMES = [
             'hose',
             'shea',
             'shoe',
-            'hoaxes'
-        ]
+            'hoaxes',
+        ],
     },
     {
-        'word': 'hoielr',
-        'subset': [
+        word: 'hoielr',
+        subset: [
             'her',
             'hoe',
             'lei',
@@ -9109,12 +9111,12 @@ export const GAMES = [
             'lore',
             'rile',
             'role',
-            'holier'
-        ]
+            'holier',
+        ],
     },
     {
-        'word': 'hoemga',
-        'subset': [
+        word: 'hoemga',
+        subset: [
             'age',
             'ago',
             'ego',
@@ -9132,12 +9134,12 @@ export const GAMES = [
             'game',
             'home',
             'omega',
-            'homage'
-        ]
+            'homage',
+        ],
     },
     {
-        'word': 'ohpper',
-        'subset': [
+        word: 'ohpper',
+        subset: [
             'hep',
             'her',
             'hoe',
@@ -9155,12 +9157,12 @@ export const GAMES = [
             'prep',
             'prop',
             'rope',
-            'hopper'
-        ]
+            'hopper',
+        ],
     },
     {
-        'word': 'cienmo',
-        'subset': [
+        word: 'cienmo',
+        subset: [
             'con',
             'ice',
             'ion',
@@ -9178,12 +9180,12 @@ export const GAMES = [
             'omen',
             'once',
             'mince',
-            'income'
-        ]
+            'income',
+        ],
     },
     {
-        'word': 'niduce',
-        'subset': [
+        word: 'niduce',
+        subset: [
             'cud',
             'cue',
             'den',
@@ -9201,12 +9203,12 @@ export const GAMES = [
             'nice',
             'nude',
             'nudie',
-            'induce'
-        ]
+            'induce',
+        ],
     },
     {
-        'word': 'jseiut',
-        'subset': [
+        word: 'jseiut',
+        subset: [
             'its',
             'jet',
             'jus',
@@ -9224,12 +9226,12 @@ export const GAMES = [
             'suit',
             'ties',
             'suite',
-            'jesuit'
-        ]
+            'jesuit',
+        ],
     },
     {
-        'word': 'bamlda',
-        'subset': [
+        word: 'bamlda',
+        subset: [
             'ala',
             'ama',
             'baa',
@@ -9247,12 +9249,12 @@ export const GAMES = [
             'blam',
             'lama',
             'lamb',
-            'lambda'
-        ]
+            'lambda',
+        ],
     },
     {
-        'word': 'ptlpoa',
-        'subset': [
+        word: 'ptlpoa',
+        subset: [
             'alt',
             'lap',
             'lop',
@@ -9270,12 +9272,12 @@ export const GAMES = [
             'palp',
             'plop',
             'plot',
-            'laptop'
-        ]
+            'laptop',
+        ],
     },
     {
-        'word': 'erlava',
-        'subset': [
+        word: 'erlava',
+        subset: [
             'ala',
             'ale',
             'are',
@@ -9293,12 +9295,12 @@ export const GAMES = [
             'real',
             'veal',
             'vera',
-            'larvae'
-        ]
+            'larvae',
+        ],
     },
     {
-        'word': 'liable',
-        'subset': [
+        word: 'liable',
+        subset: [
             'ail',
             'ale',
             'all',
@@ -9316,12 +9318,12 @@ export const GAMES = [
             'bill',
             'label',
             'libel',
-            'liable'
-        ]
+            'liable',
+        ],
     },
     {
-        'word': 'allics',
-        'subset': [
+        word: 'allics',
+        subset: [
             'ail',
             'all',
             'als',
@@ -9339,12 +9341,12 @@ export const GAMES = [
             'sill',
             'calls',
             'lilac',
-            'lilacs'
-        ]
+            'lilacs',
+        ],
     },
     {
-        'word': 'bilmer',
-        'subset': [
+        word: 'bilmer',
+        subset: [
             'bel',
             'elm',
             'lei',
@@ -9362,12 +9364,12 @@ export const GAMES = [
             'merl',
             'mile',
             'rile',
-            'limber'
-        ]
+            'limber',
+        ],
     },
     {
-        'word': 'zldria',
-        'subset': [
+        word: 'zldria',
+        subset: [
             'aid',
             'ail',
             'air',
@@ -9385,12 +9387,12 @@ export const GAMES = [
             'raid',
             'rail',
             'laird',
-            'lizard'
-        ]
+            'lizard',
+        ],
     },
     {
-        'word': 'lcolsa',
-        'subset': [
+        word: 'lcolsa',
+        subset: [
             'all',
             'als',
             'col',
@@ -9408,12 +9410,12 @@ export const GAMES = [
             'calls',
             'coals',
             'local',
-            'locals'
-        ]
+            'locals',
+        ],
     },
     {
-        'word': 'lprpeo',
-        'subset': [
+        word: 'lprpeo',
+        subset: [
             'lop',
             'ole',
             'ore',
@@ -9431,12 +9433,12 @@ export const GAMES = [
             'prop',
             'role',
             'rope',
-            'lopper'
-        ]
+            'lopper',
+        ],
     },
     {
-        'word': 'welory',
-        'subset': [
+        word: 'welory',
+        subset: [
             'low',
             'lye',
             'ole',
@@ -9454,12 +9456,12 @@ export const GAMES = [
             'wore',
             'yore',
             'lower',
-            'lowery'
-        ]
+            'lowery',
+        ],
     },
     {
-        'word': 'jaorms',
-        'subset': [
+        word: 'jaorms',
+        subset: [
             'arm',
             'jam',
             'jar',
@@ -9477,12 +9479,12 @@ export const GAMES = [
             'roam',
             'soar',
             'major',
-            'majors'
-        ]
+            'majors',
+        ],
     },
     {
-        'word': 'ranmta',
-        'subset': [
+        word: 'ranmta',
+        subset: [
             'ama',
             'ana',
             'ant',
@@ -9500,12 +9502,12 @@ export const GAMES = [
             'mart',
             'rant',
             'tram',
-            'mantra'
-        ]
+            'mantra',
+        ],
     },
     {
-        'word': 'ramrow',
-        'subset': [
+        word: 'ramrow',
+        subset: [
             'arm',
             'mar',
             'maw',
@@ -9523,12 +9525,12 @@ export const GAMES = [
             'worm',
             'armor',
             'arrow',
-            'marrow'
-        ]
+            'marrow',
+        ],
     },
     {
-        'word': 'itmtne',
-        'subset': [
+        word: 'itmtne',
+        subset: [
             'men',
             'met',
             'net',
@@ -9546,12 +9548,12 @@ export const GAMES = [
             'nite',
             'tent',
             'time',
-            'mitten'
-        ]
+            'mitten',
+        ],
     },
     {
-        'word': 'mtosyl',
-        'subset': [
+        word: 'mtosyl',
+        subset: [
             'lot',
             'mol',
             'sly',
@@ -9569,12 +9571,12 @@ export const GAMES = [
             'slot',
             'toms',
             'toys',
-            'mostly'
-        ]
+            'mostly',
+        ],
     },
     {
-        'word': 'tovime',
-        'subset': [
+        word: 'tovime',
+        subset: [
             'met',
             'tie',
             'toe',
@@ -9592,12 +9594,12 @@ export const GAMES = [
             'vote',
             'movie',
             'vomit',
-            'motive'
-        ]
+            'motive',
+        ],
     },
     {
-        'word': 'muoyse',
-        'subset': [
+        word: 'muoyse',
+        subset: [
             'ems',
             'ose',
             'soy',
@@ -9615,12 +9617,12 @@ export const GAMES = [
             'mouse',
             'mousy',
             'youse',
-            'mousey'
-        ]
+            'mousey',
+        ],
     },
     {
-        'word': 'neosln',
-        'subset': [
+        word: 'neosln',
+        subset: [
             'nos',
             'ole',
             'one',
@@ -9638,12 +9640,12 @@ export const GAMES = [
             'nose',
             'ones',
             'sole',
-            'nelson'
-        ]
+            'nelson',
+        ],
     },
     {
-        'word': 'nppire',
-        'subset': [
+        word: 'nppire',
+        subset: [
             'nip',
             'pen',
             'pep',
@@ -9661,12 +9663,12 @@ export const GAMES = [
             'rein',
             'ripe',
             'piper',
-            'nipper'
-        ]
+            'nipper',
+        ],
     },
     {
-        'word': 'rnoidc',
-        'subset': [
+        word: 'rnoidc',
+        subset: [
             'cod',
             'con',
             'cor',
@@ -9684,12 +9686,12 @@ export const GAMES = [
             'icon',
             'iron',
             'noir',
-            'nordic'
-        ]
+            'nordic',
+        ],
     },
     {
-        'word': 'bnuemr',
-        'subset': [
+        word: 'bnuemr',
+        subset: [
             'ben',
             'bum',
             'bun',
@@ -9707,12 +9709,12 @@ export const GAMES = [
             'numb',
             'rube',
             'rune',
-            'number'
-        ]
+            'number',
+        ],
     },
     {
-        'word': 'uortnu',
-        'subset': [
+        word: 'uortnu',
+        subset: [
             'nor',
             'not',
             'nut',
@@ -9730,12 +9732,12 @@ export const GAMES = [
             'tour',
             'turn',
             'unto',
-            'outrun'
-        ]
+            'outrun',
+        ],
     },
     {
-        'word': 'rpmede',
-        'subset': [
+        word: 'rpmede',
+        subset: [
             'dee',
             'ere',
             'med',
@@ -9753,12 +9755,12 @@ export const GAMES = [
             'peer',
             'perm',
             'reed',
-            'premed'
-        ]
+            'premed',
+        ],
     },
     {
-        'word': 'orpmtp',
-        'subset': [
+        word: 'orpmtp',
+        subset: [
             'mop',
             'mor',
             'ort',
@@ -9776,12 +9778,12 @@ export const GAMES = [
             'prom',
             'prop',
             'romp',
-            'prompt'
-        ]
+            'prompt',
+        ],
     },
     {
-        'word': 'uredpg',
-        'subset': [
+        word: 'uredpg',
+        subset: [
             'due',
             'dug',
             'ged',
@@ -9799,12 +9801,12 @@ export const GAMES = [
             'prude',
             'purge',
             'urged',
-            'purged'
-        ]
+            'purged',
+        ],
     },
     {
-        'word': 'afeflr',
-        'subset': [
+        word: 'afeflr',
+        subset: [
             'ale',
             'are',
             'arf',
@@ -9822,12 +9824,12 @@ export const GAMES = [
             'lear',
             'real',
             'flare',
-            'raffle'
-        ]
+            'raffle',
+        ],
     },
     {
-        'word': 'orramd',
-        'subset': [
+        word: 'orramd',
+        subset: [
             'ado',
             'arm',
             'dam',
@@ -9845,12 +9847,12 @@ export const GAMES = [
             'roam',
             'roar',
             'armor',
-            'ramrod'
-        ]
+            'ramrod',
+        ],
     },
     {
-        'word': 'vshair',
-        'subset': [
+        word: 'vshair',
+        subset: [
             'air',
             'ash',
             'has',
@@ -9868,12 +9870,12 @@ export const GAMES = [
             'visa',
             'hairs',
             'shiva',
-            'ravish'
-        ]
+            'ravish',
+        ],
     },
     {
-        'word': 'eerrfs',
-        'subset': [
+        word: 'eerrfs',
+        subset: [
             'ere',
             'err',
             'ers',
@@ -9891,12 +9893,12 @@ export const GAMES = [
             'frees',
             'reefs',
             'refer',
-            'refers'
-        ]
+            'refers',
+        ],
     },
     {
-        'word': 'enetrp',
-        'subset': [
+        word: 'enetrp',
+        subset: [
             'ere',
             'nee',
             'net',
@@ -9914,12 +9916,12 @@ export const GAMES = [
             'tree',
             'enter',
             'peter',
-            'repent'
-        ]
+            'repent',
+        ],
     },
     {
-        'word': 'epture',
-        'subset': [
+        word: 'epture',
+        subset: [
             'ere',
             'pee',
             'per',
@@ -9937,12 +9939,12 @@ export const GAMES = [
             'erupt',
             'peter',
             'puree',
-            'repute'
-        ]
+            'repute',
+        ],
     },
     {
-        'word': 'rnided',
-        'subset': [
+        word: 'rnided',
+        subset: [
             'den',
             'did',
             'die',
@@ -9960,12 +9962,12 @@ export const GAMES = [
             'diner',
             'dried',
             'redid',
-            'ridden'
-        ]
+            'ridden',
+        ],
     },
     {
-        'word': 'siadts',
-        'subset': [
+        word: 'siadts',
+        subset: [
             'ads',
             'aid',
             'ass',
@@ -9983,12 +9985,12 @@ export const GAMES = [
             'dais',
             'said',
             'sits',
-            'sadist'
-        ]
+            'sadist',
+        ],
     },
     {
-        'word': 'saloon',
-        'subset': [
+        word: 'saloon',
+        subset: [
             'als',
             'las',
             'loo',
@@ -10006,12 +10008,12 @@ export const GAMES = [
             'loans',
             'loons',
             'salon',
-            'saloon'
-        ]
+            'saloon',
+        ],
     },
     {
-        'word': 'oscpes',
-        'subset': [
+        word: 'oscpes',
+        subset: [
             'cop',
             'cos',
             'ess',
@@ -10029,12 +10031,12 @@ export const GAMES = [
             'posse',
             'scope',
             'specs',
-            'scopes'
-        ]
+            'scopes',
+        ],
     },
     {
-        'word': 'socsut',
-        'subset': [
+        word: 'socsut',
+        subset: [
             'cos',
             'cot',
             'cut',
@@ -10052,12 +10054,12 @@ export const GAMES = [
             'costs',
             'scots',
             'scout',
-            'scouts'
-        ]
+            'scouts',
+        ],
     },
     {
-        'word': 'elmspe',
-        'subset': [
+        word: 'elmspe',
+        subset: [
             'eel',
             'elm',
             'ems',
@@ -10075,12 +10077,12 @@ export const GAMES = [
             'seep',
             'peels',
             'sleep',
-            'semple'
-        ]
+            'semple',
+        ],
     },
     {
-        'word': 'iesres',
-        'subset': [
+        word: 'iesres',
+        subset: [
             'ere',
             'ers',
             'ess',
@@ -10098,12 +10100,12 @@ export const GAMES = [
             'sirs',
             'rises',
             'siree',
-            'series'
-        ]
+            'series',
+        ],
     },
     {
-        'word': 'eersvr',
-        'subset': [
+        word: 'eersvr',
+        subset: [
             'ere',
             'err',
             'ers',
@@ -10121,12 +10123,12 @@ export const GAMES = [
             'serve',
             'sever',
             'verse',
-            'server'
-        ]
+            'server',
+        ],
     },
     {
-        'word': 'ahevss',
-        'subset': [
+        word: 'ahevss',
+        subset: [
             'ash',
             'ass',
             'ave',
@@ -10144,12 +10146,12 @@ export const GAMES = [
             'ashes',
             'saves',
             'shave',
-            'shaves'
-        ]
+            'shaves',
+        ],
     },
     {
-        'word': 'hinses',
-        'subset': [
+        word: 'hinses',
+        subset: [
             'ess',
             'hen',
             'his',
@@ -10167,12 +10169,12 @@ export const GAMES = [
             'sins',
             'shine',
             'shins',
-            'shines'
-        ]
+            'shines',
+        ],
     },
     {
-        'word': 'ohsved',
-        'subset': [
+        word: 'ohsved',
+        subset: [
             'doe',
             'dos',
             'hoe',
@@ -10190,12 +10192,12 @@ export const GAMES = [
             'doves',
             'hosed',
             'shove',
-            'shoved'
-        ]
+            'shoved',
+        ],
     },
     {
-        'word': 'sgiths',
-        'subset': [
+        word: 'sgiths',
+        subset: [
             'git',
             'his',
             'hit',
@@ -10213,12 +10215,12 @@ export const GAMES = [
             'shits',
             'sighs',
             'sight',
-            'sights'
-        ]
+            'sights',
+        ],
     },
     {
-        'word': 'sneind',
-        'subset': [
+        word: 'sneind',
+        subset: [
             'den',
             'die',
             'dis',
@@ -10236,12 +10238,12 @@ export const GAMES = [
             'sine',
             'nines',
             'snide',
-            'sinned'
-        ]
+            'sinned',
+        ],
     },
     {
-        'word': 'sedipp',
-        'subset': [
+        word: 'sedipp',
+        subset: [
             'die',
             'dip',
             'dis',
@@ -10259,12 +10261,12 @@ export const GAMES = [
             'side',
             'pipes',
             'spied',
-            'sipped'
-        ]
+            'sipped',
+        ],
     },
     {
-        'word': 'skewre',
-        'subset': [
+        word: 'skewre',
+        subset: [
             'ere',
             'ers',
             'ewe',
@@ -10282,12 +10284,12 @@ export const GAMES = [
             'reeks',
             'sewer',
             'weeks',
-            'skewer'
-        ]
+            'skewer',
+        ],
     },
     {
-        'word': 'samsck',
-        'subset': [
+        word: 'samsck',
+        subset: [
             'ask',
             'ass',
             'cam',
@@ -10305,12 +10307,12 @@ export const GAMES = [
             'sacks',
             'scams',
             'smack',
-            'smacks'
-        ]
+            'smacks',
+        ],
     },
     {
-        'word': 'soiree',
-        'subset': [
+        word: 'soiree',
+        subset: [
             'ere',
             'ers',
             'ore',
@@ -10328,12 +10330,12 @@ export const GAMES = [
             'sire',
             'sore',
             'siree',
-            'soiree'
-        ]
+            'soiree',
+        ],
     },
     {
-        'word': 'spakrs',
-        'subset': [
+        word: 'spakrs',
+        subset: [
             'ark',
             'ask',
             'ass',
@@ -10351,12 +10353,12 @@ export const GAMES = [
             'spas',
             'parks',
             'spark',
-            'sparks'
-        ]
+            'sparks',
+        ],
     },
     {
-        'word': 'qsruae',
-        'subset': [
+        word: 'qsruae',
+        subset: [
             'are',
             'ear',
             'era',
@@ -10374,12 +10376,12 @@ export const GAMES = [
             'sera',
             'sure',
             'user',
-            'square'
-        ]
+            'square',
+        ],
     },
     {
-        'word': 'tsrtsa',
-        'subset': [
+        word: 'tsrtsa',
+        subset: [
             'art',
             'ass',
             'att',
@@ -10397,12 +10399,12 @@ export const GAMES = [
             'start',
             'stats',
             'tarts',
-            'starts'
-        ]
+            'starts',
+        ],
     },
     {
-        'word': 'tsitch',
-        'subset': [
+        word: 'tsitch',
+        subset: [
             'chi',
             'hic',
             'his',
@@ -10420,12 +10422,12 @@ export const GAMES = [
             'shit',
             'this',
             'tits',
-            'stitch'
-        ]
+            'stitch',
+        ],
     },
     {
-        'word': 'toysck',
-        'subset': [
+        word: 'toysck',
+        subset: [
             'cos',
             'cot',
             'coy',
@@ -10443,12 +10445,12 @@ export const GAMES = [
             'sock',
             'toys',
             'stock',
-            'stocky'
-        ]
+            'stocky',
+        ],
     },
     {
-        'word': 'stosrm',
-        'subset': [
+        word: 'stosrm',
+        subset: [
             'mor',
             'ort',
             'rom',
@@ -10466,12 +10468,12 @@ export const GAMES = [
             'toss',
             'sorts',
             'storm',
-            'storms'
-        ]
+            'storms',
+        ],
     },
     {
-        'word': 'tosrll',
-        'subset': [
+        word: 'tosrll',
+        subset: [
             'lot',
             'ort',
             'rot',
@@ -10489,12 +10491,12 @@ export const GAMES = [
             'tolls',
             'troll',
             'stroll',
-            'trolls'
-        ]
+            'trolls',
+        ],
     },
     {
-        'word': 'usrkce',
-        'subset': [
+        word: 'usrkce',
+        subset: [
             'cue',
             'cur',
             'ers',
@@ -10512,12 +10514,12 @@ export const GAMES = [
             'user',
             'cures',
             'curse',
-            'sucker'
-        ]
+            'sucker',
+        ],
     },
     {
-        'word': 'atusnn',
-        'subset': [
+        word: 'atusnn',
+        subset: [
             'ant',
             'nan',
             'nun',
@@ -10535,12 +10537,12 @@ export const GAMES = [
             'stun',
             'tuna',
             'aunts',
-            'suntan'
-        ]
+            'suntan',
+        ],
     },
     {
-        'word': 'wnssig',
-        'subset': [
+        word: 'wnssig',
+        subset: [
             'gin',
             'ins',
             'sin',
@@ -10558,12 +10560,12 @@ export const GAMES = [
             'sings',
             'swing',
             'wings',
-            'swings'
-        ]
+            'swings',
+        ],
     },
     {
-        'word': 'atlucm',
-        'subset': [
+        word: 'atlucm',
+        subset: [
             'act',
             'alt',
             'cam',
@@ -10581,12 +10583,12 @@ export const GAMES = [
             'cult',
             'malt',
             'maul',
-            'talcum'
-        ]
+            'talcum',
+        ],
     },
     {
-        'word': 'hagutt',
-        'subset': [
+        word: 'hagutt',
+        subset: [
             'att',
             'gat',
             'gut',
@@ -10604,12 +10606,12 @@ export const GAMES = [
             'that',
             'thug',
             'aught',
-            'taught'
-        ]
+            'taught',
+        ],
     },
     {
-        'word': 'toyngi',
-        'subset': [
+        word: 'toyngi',
+        subset: [
             'gin',
             'git',
             'got',
@@ -10627,12 +10629,12 @@ export const GAMES = [
             'tony',
             'yogi',
             'tying',
-            'toying'
-        ]
+            'toying',
+        ],
     },
     {
-        'word': 'loltrs',
-        'subset': [
+        word: 'loltrs',
+        subset: [
             'lot',
             'ort',
             'rot',
@@ -10650,12 +10652,12 @@ export const GAMES = [
             'tolls',
             'troll',
             'stroll',
-            'trolls'
-        ]
+            'trolls',
+        ],
     },
     {
-        'word': 'rtmups',
-        'subset': [
+        word: 'rtmups',
+        subset: [
             'pus',
             'put',
             'rum',
@@ -10673,12 +10675,12 @@ export const GAMES = [
             'spurt',
             'stump',
             'trump',
-            'trumps'
-        ]
+            'trumps',
+        ],
     },
     {
-        'word': 'rytuot',
-        'subset': [
+        word: 'rytuot',
+        subset: [
             'ort',
             'our',
             'out',
@@ -10696,12 +10698,12 @@ export const GAMES = [
             'your',
             'trout',
             'tutor',
-            'tryout'
-        ]
+            'tryout',
+        ],
     },
     {
-        'word': 'pttysi',
-        'subset': [
+        word: 'pttysi',
+        subset: [
             'its',
             'pis',
             'pit',
@@ -10719,12 +10721,12 @@ export const GAMES = [
             'tips',
             'tits',
             'tipsy',
-            'typist'
-        ]
+            'typist',
+        ],
     },
     {
-        'word': 'ugiles',
-        'subset': [
+        word: 'ugiles',
+        subset: [
             'gel',
             'leg',
             'lei',
@@ -10742,12 +10744,12 @@ export const GAMES = [
             'luge',
             'slug',
             'glues',
-            'uglies'
-        ]
+            'uglies',
+        ],
     },
     {
-        'word': 'mrpieu',
-        'subset': [
+        word: 'mrpieu',
+        subset: [
             'imp',
             'per',
             'pie',
@@ -10765,12 +10767,12 @@ export const GAMES = [
             'ripe',
             'rump',
             'prime',
-            'umpire'
-        ]
+            'umpire',
+        ],
     },
     {
-        'word': 'nsiaud',
-        'subset': [
+        word: 'nsiaud',
+        subset: [
             'ads',
             'aid',
             'ain',
@@ -10788,12 +10790,12 @@ export const GAMES = [
             'dais',
             'said',
             'sand',
-            'unsaid'
-        ]
+            'unsaid',
+        ],
     },
     {
-        'word': 'unswie',
-        'subset': [
+        word: 'unswie',
+        subset: [
             'ins',
             'new',
             'sen',
@@ -10811,12 +10813,12 @@ export const GAMES = [
             'wins',
             'wise',
             'swine',
-            'unwise'
-        ]
+            'unwise',
+        ],
     },
     {
-        'word': 'uwaprn',
-        'subset': [
+        word: 'uwaprn',
+        subset: [
             'nap',
             'naw',
             'pan',
@@ -10834,12 +10836,12 @@ export const GAMES = [
             'warn',
             'warp',
             'wrap',
-            'unwrap'
-        ]
+            'unwrap',
+        ],
     },
     {
-        'word': 'veneus',
-        'subset': [
+        word: 'veneus',
+        subset: [
             'eve',
             'nee',
             'see',
@@ -10857,12 +10859,12 @@ export const GAMES = [
             'evens',
             'seven',
             'venue',
-            'venues'
-        ]
+            'venues',
+        ],
     },
     {
-        'word': 'kawcos',
-        'subset': [
+        word: 'kawcos',
+        subset: [
             'ask',
             'cos',
             'cow',
@@ -10880,12 +10882,12 @@ export const GAMES = [
             'sock',
             'wack',
             'wacko',
-            'wackos'
-        ]
+            'wackos',
+        ],
     },
     {
-        'word': 'gianwg',
-        'subset': [
+        word: 'gianwg',
+        subset: [
             'ain',
             'ani',
             'gag',
@@ -10903,12 +10905,12 @@ export const GAMES = [
             'gnaw',
             'wing',
             'aging',
-            'waging'
-        ]
+            'waging',
+        ],
     },
     {
-        'word': 'vwinga',
-        'subset': [
+        word: 'vwinga',
+        subset: [
             'ain',
             'ani',
             'gin',
@@ -10926,12 +10928,12 @@ export const GAMES = [
             'gnaw',
             'vain',
             'wing',
-            'waving'
-        ]
+            'waving',
+        ],
     },
     {
-        'word': 'kyoels',
-        'subset': [
+        word: 'kyoels',
+        subset: [
             'elk',
             'key',
             'lye',
@@ -10949,12 +10951,12 @@ export const GAMES = [
             'yoke',
             'yolk',
             'yokel',
-            'yokels'
-        ]
+            'yokels',
+        ],
     },
     {
-        'word': 'oznkde',
-        'subset': [
+        word: 'oznkde',
+        subset: [
             'den',
             'doe',
             'don',
@@ -10972,12 +10974,12 @@ export const GAMES = [
             'dozen',
             'kendo',
             'zoned',
-            'zonked'
-        ]
+            'zonked',
+        ],
     },
     {
-        'word': 'rocass',
-        'subset': [
+        word: 'rocass',
+        subset: [
             'arc',
             'ass',
             'car',
@@ -10994,12 +10996,12 @@ export const GAMES = [
             'cross',
             'scars',
             'soars',
-            'across'
-        ]
+            'across',
+        ],
     },
     {
-        'word': 'ingage',
-        'subset': [
+        word: 'ingage',
+        subset: [
             'age',
             'ain',
             'ane',
@@ -11016,12 +11018,12 @@ export const GAMES = [
             'gain',
             'gang',
             'aging',
-            'ageing'
-        ]
+            'ageing',
+        ],
     },
     {
-        'word': 'aotmci',
-        'subset': [
+        word: 'aotmci',
+        subset: [
             'act',
             'aim',
             'ami',
@@ -11038,12 +11040,12 @@ export const GAMES = [
             'coma',
             'moat',
             'taco',
-            'atomic'
-        ]
+            'atomic',
+        ],
     },
     {
-        'word': 'banikg',
-        'subset': [
+        word: 'banikg',
+        subset: [
             'ain',
             'ani',
             'bag',
@@ -11060,12 +11062,12 @@ export const GAMES = [
             'bank',
             'gain',
             'king',
-            'baking'
-        ]
+            'baking',
+        ],
     },
     {
-        'word': 'atboll',
-        'subset': [
+        word: 'atboll',
+        subset: [
             'all',
             'alt',
             'bat',
@@ -11082,12 +11084,12 @@ export const GAMES = [
             'bolt',
             'tall',
             'toll',
-            'ballot'
-        ]
+            'ballot',
+        ],
     },
     {
-        'word': 'anbend',
-        'subset': [
+        word: 'anbend',
+        subset: [
             'and',
             'ane',
             'bad',
@@ -11104,12 +11106,12 @@ export const GAMES = [
             'bean',
             'bend',
             'dean',
-            'banned'
-        ]
+            'banned',
+        ],
     },
     {
-        'word': 'gbeset',
-        'subset': [
+        word: 'gbeset',
+        subset: [
             'bee',
             'beg',
             'bet',
@@ -11126,12 +11128,12 @@ export const GAMES = [
             'gees',
             'gets',
             'beets',
-            'begets'
-        ]
+            'begets',
+        ],
     },
     {
-        'word': 'ebhidn',
-        'subset': [
+        word: 'ebhidn',
+        subset: [
             'bed',
             'ben',
             'bid',
@@ -11148,12 +11150,12 @@ export const GAMES = [
             'dine',
             'hide',
             'hind',
-            'behind'
-        ]
+            'behind',
+        ],
     },
     {
-        'word': 'ebfrte',
-        'subset': [
+        word: 'ebfrte',
+        subset: [
             'bee',
             'bet',
             'ere',
@@ -11170,12 +11172,12 @@ export const GAMES = [
             'reef',
             'tree',
             'beret',
-            'bereft'
-        ]
+            'bereft',
+        ],
     },
     {
-        'word': 'bseide',
-        'subset': [
+        word: 'bseide',
+        subset: [
             'bed',
             'bee',
             'bid',
@@ -11192,12 +11194,12 @@ export const GAMES = [
             'dies',
             'seed',
             'side',
-            'beside'
-        ]
+            'beside',
+        ],
     },
     {
-        'word': 'obloms',
-        'subset': [
+        word: 'obloms',
+        subset: [
             'boo',
             'lob',
             'loo',
@@ -11214,12 +11216,12 @@ export const GAMES = [
             'solo',
             'bloom',
             'bosom',
-            'blooms'
-        ]
+            'blooms',
+        ],
     },
     {
-        'word': 'nbuerk',
-        'subset': [
+        word: 'nbuerk',
+        subset: [
             'ben',
             'bun',
             'ken',
@@ -11236,12 +11238,12 @@ export const GAMES = [
             'rube',
             'rune',
             'burke',
-            'bunker'
-        ]
+            'bunker',
+        ],
     },
     {
-        'word': 'ttbued',
-        'subset': [
+        word: 'ttbued',
+        subset: [
             'bed',
             'bet',
             'bud',
@@ -11258,12 +11260,12 @@ export const GAMES = [
             'duet',
             'tube',
             'debut',
-            'butted'
-        ]
+            'butted',
+        ],
     },
     {
-        'word': 'canont',
-        'subset': [
+        word: 'canont',
+        subset: [
             'act',
             'ant',
             'can',
@@ -11280,12 +11282,12 @@ export const GAMES = [
             'conn',
             'taco',
             'cannot',
-            'canton'
-        ]
+            'canton',
+        ],
     },
     {
-        'word': 'cnoyap',
-        'subset': [
+        word: 'cnoyap',
+        subset: [
             'any',
             'can',
             'cap',
@@ -11302,12 +11304,12 @@ export const GAMES = [
             'capo',
             'copy',
             'pony',
-            'canopy'
-        ]
+            'canopy',
+        ],
     },
     {
-        'word': 'anctno',
-        'subset': [
+        word: 'anctno',
+        subset: [
             'act',
             'ant',
             'can',
@@ -11324,12 +11326,12 @@ export const GAMES = [
             'conn',
             'taco',
             'cannot',
-            'canton'
-        ]
+            'canton',
+        ],
     },
     {
-        'word': 'ecnret',
-        'subset': [
+        word: 'ecnret',
+        subset: [
             'cee',
             'ere',
             'nee',
@@ -11346,12 +11348,12 @@ export const GAMES = [
             'erect',
             'center',
             'centre',
-            'recent'
-        ]
+            'recent',
+        ],
     },
     {
-        'word': 'crneet',
-        'subset': [
+        word: 'crneet',
+        subset: [
             'cee',
             'ere',
             'nee',
@@ -11368,12 +11370,12 @@ export const GAMES = [
             'erect',
             'center',
             'centre',
-            'recent'
-        ]
+            'recent',
+        ],
     },
     {
-        'word': 'hceres',
-        'subset': [
+        word: 'hceres',
+        subset: [
             'cee',
             'ere',
             'ers',
@@ -11390,12 +11392,12 @@ export const GAMES = [
             'seer',
             'cheer',
             'sheer',
-            'cheers'
-        ]
+            'cheers',
+        ],
     },
     {
-        'word': 'yhtces',
-        'subset': [
+        word: 'yhtces',
+        subset: [
             'eth',
             'hey',
             'sec',
@@ -11412,12 +11414,12 @@ export const GAMES = [
             'they',
             'yech',
             'chest',
-            'chesty'
-        ]
+            'chesty',
+        ],
     },
     {
-        'word': 'cslasy',
-        'subset': [
+        word: 'cslasy',
+        subset: [
             'als',
             'ass',
             'lac',
@@ -11434,12 +11436,12 @@ export const GAMES = [
             'says',
             'slay',
             'class',
-            'classy'
-        ]
+            'classy',
+        ],
     },
     {
-        'word': 'vlcone',
-        'subset': [
+        word: 'vlcone',
+        subset: [
             'col',
             'con',
             'ole',
@@ -11456,12 +11458,12 @@ export const GAMES = [
             'clone',
             'coven',
             'novel',
-            'cloven'
-        ]
+            'cloven',
+        ],
     },
     {
-        'word': 'lrocar',
-        'subset': [
+        word: 'lrocar',
+        subset: [
             'arc',
             'car',
             'col',
@@ -11478,12 +11480,12 @@ export const GAMES = [
             'roar',
             'carol',
             'coral',
-            'corral'
-        ]
+            'corral',
+        ],
     },
     {
-        'word': 'ricpss',
-        'subset': [
+        word: 'ricpss',
+        subset: [
             'pic',
             'pis',
             'psi',
@@ -11500,12 +11502,12 @@ export const GAMES = [
             'spic',
             'crisp',
             'priss',
-            'crisps'
-        ]
+            'crisps',
+        ],
     },
     {
-        'word': 'cusrbm',
-        'subset': [
+        word: 'cusrbm',
+        subset: [
             'bum',
             'bus',
             'cub',
@@ -11522,12 +11524,12 @@ export const GAMES = [
             'scum',
             'crumb',
             'scrub',
-            'crumbs'
-        ]
+            'crumbs',
+        ],
     },
     {
-        'word': 'dityan',
-        'subset': [
+        word: 'dityan',
+        subset: [
             'aid',
             'ain',
             'and',
@@ -11544,12 +11546,12 @@ export const GAMES = [
             'anti',
             'tidy',
             'tiny',
-            'dainty'
-        ]
+            'dainty',
+        ],
     },
     {
-        'word': 'dobson',
-        'subset': [
+        word: 'dobson',
+        subset: [
             'bod',
             'boo',
             'don',
@@ -11566,12 +11568,12 @@ export const GAMES = [
             'snob',
             'soon',
             'bonds',
-            'dobson'
-        ]
+            'dobson',
+        ],
     },
     {
-        'word': 'dlolra',
-        'subset': [
+        word: 'dlolra',
+        subset: [
             'ado',
             'all',
             'dol',
@@ -11588,12 +11590,12 @@ export const GAMES = [
             'road',
             'roll',
             'droll',
-            'dollar'
-        ]
+            'dollar',
+        ],
     },
     {
-        'word': 'ndoors',
-        'subset': [
+        word: 'ndoors',
+        subset: [
             'don',
             'dos',
             'nod',
@@ -11610,12 +11612,12 @@ export const GAMES = [
             'soon',
             'donor',
             'doors',
-            'donors'
-        ]
+            'donors',
+        ],
     },
     {
-        'word': 'wrdosy',
-        'subset': [
+        word: 'wrdosy',
+        subset: [
             'dos',
             'dry',
             'rod',
@@ -11632,12 +11634,12 @@ export const GAMES = [
             'rowdy',
             'sword',
             'words',
-            'drowsy'
-        ]
+            'drowsy',
+        ],
     },
     {
-        'word': 'wasdrf',
-        'subset': [
+        word: 'wasdrf',
+        subset: [
             'ads',
             'arf',
             'fad',
@@ -11654,12 +11656,12 @@ export const GAMES = [
             'wars',
             'draws',
             'dwarf',
-            'dwarfs'
-        ]
+            'dwarfs',
+        ],
     },
     {
-        'word': 'ereily',
-        'subset': [
+        word: 'ereily',
+        subset: [
             'eel',
             'ere',
             'eye',
@@ -11676,12 +11678,12 @@ export const GAMES = [
             'rile',
             'leery',
             'riley',
-            'eerily'
-        ]
+            'eerily',
+        ],
     },
     {
-        'word': 'foeftr',
-        'subset': [
+        word: 'foeftr',
+        subset: [
             'fer',
             'foe',
             'for',
@@ -11698,12 +11700,12 @@ export const GAMES = [
             'tore',
             'forte',
             'offer',
-            'effort'
-        ]
+            'effort',
+        ],
     },
     {
-        'word': 'needvi',
-        'subset': [
+        word: 'needvi',
+        subset: [
             'dee',
             'den',
             'die',
@@ -11720,12 +11722,12 @@ export const GAMES = [
             'vein',
             'vine',
             'endive',
-            'envied'
-        ]
+            'envied',
+        ],
     },
     {
-        'word': 'envied',
-        'subset': [
+        word: 'envied',
+        subset: [
             'dee',
             'den',
             'die',
@@ -11742,12 +11744,12 @@ export const GAMES = [
             'vein',
             'vine',
             'endive',
-            'envied'
-        ]
+            'envied',
+        ],
     },
     {
-        'word': 'aexdpn',
-        'subset': [
+        word: 'aexdpn',
+        subset: [
             'and',
             'ane',
             'ape',
@@ -11764,12 +11766,12 @@ export const GAMES = [
             'apex',
             'dean',
             'pane',
-            'expand'
-        ]
+            'expand',
+        ],
     },
     {
-        'word': 'brafci',
-        'subset': [
+        word: 'brafci',
+        subset: [
             'air',
             'arc',
             'arf',
@@ -11786,12 +11788,12 @@ export const GAMES = [
             'crab',
             'crib',
             'fair',
-            'fabric'
-        ]
+            'fabric',
+        ],
     },
     {
-        'word': 'afreir',
-        'subset': [
+        word: 'afreir',
+        subset: [
             'air',
             'are',
             'arf',
@@ -11808,12 +11810,12 @@ export const GAMES = [
             'rare',
             'rear',
             'rife',
-            'fairer'
-        ]
+            'fairer',
+        ],
     },
     {
-        'word': 'alcfon',
-        'subset': [
+        word: 'alcfon',
+        subset: [
             'can',
             'col',
             'con',
@@ -11830,12 +11832,12 @@ export const GAMES = [
             'loan',
             'loca',
             'focal',
-            'falcon'
-        ]
+            'falcon',
+        ],
     },
     {
-        'word': 'afnria',
-        'subset': [
+        word: 'afnria',
+        subset: [
             'ain',
             'air',
             'ana',
@@ -11852,12 +11854,12 @@ export const GAMES = [
             'fair',
             'rain',
             'infra',
-            'farina'
-        ]
+            'farina',
+        ],
     },
     {
-        'word': 'afhtom',
-        'subset': [
+        word: 'afhtom',
+        subset: [
             'aft',
             'fat',
             'ham',
@@ -11874,12 +11876,12 @@ export const GAMES = [
             'moat',
             'moth',
             'oath',
-            'fathom'
-        ]
+            'fathom',
+        ],
     },
     {
-        'word': 'leonfy',
-        'subset': [
+        word: 'leonfy',
+        subset: [
             'elf',
             'fen',
             'fey',
@@ -11896,12 +11898,12 @@ export const GAMES = [
             'noel',
             'only',
             'felon',
-            'felony'
-        ]
+            'felony',
+        ],
     },
     {
-        'word': 'iafecn',
-        'subset': [
+        word: 'iafecn',
+        subset: [
             'ace',
             'ain',
             'ane',
@@ -11918,12 +11920,12 @@ export const GAMES = [
             'face',
             'fine',
             'nice',
-            'fiance'
-        ]
+            'fiance',
+        ],
     },
     {
-        'word': 'ddfore',
-        'subset': [
+        word: 'ddfore',
+        subset: [
             'doe',
             'fed',
             'fer',
@@ -11940,12 +11942,12 @@ export const GAMES = [
             'fore',
             'redo',
             'rode',
-            'fodder'
-        ]
+            'fodder',
+        ],
     },
     {
-        'word': 'ofeddl',
-        'subset': [
+        word: 'ofeddl',
+        subset: [
             'del',
             'doe',
             'dol',
@@ -11962,12 +11964,12 @@ export const GAMES = [
             'floe',
             'fold',
             'lode',
-            'folded'
-        ]
+            'folded',
+        ],
     },
     {
-        'word': 'rfancs',
-        'subset': [
+        word: 'rfancs',
+        subset: [
             'arc',
             'arf',
             'can',
@@ -11984,12 +11986,12 @@ export const GAMES = [
             'scar',
             'franc',
             'scarf',
-            'francs'
-        ]
+            'francs',
+        ],
     },
     {
-        'word': 'gsased',
-        'subset': [
+        word: 'gsased',
+        subset: [
             'ads',
             'age',
             'ass',
@@ -12006,12 +12008,12 @@ export const GAMES = [
             'sage',
             'seas',
             'gases',
-            'gassed'
-        ]
+            'gassed',
+        ],
     },
     {
-        'word': 'ghosts',
-        'subset': [
+        word: 'ghosts',
+        subset: [
             'got',
             'hog',
             'hot',
@@ -12028,12 +12030,12 @@ export const GAMES = [
             'ghost',
             'hosts',
             'shots',
-            'ghosts'
-        ]
+            'ghosts',
+        ],
     },
     {
-        'word': 'gdiedl',
-        'subset': [
+        word: 'gdiedl',
+        subset: [
             'del',
             'did',
             'die',
@@ -12050,12 +12052,12 @@ export const GAMES = [
             'idle',
             'lied',
             'glide',
-            'gilded'
-        ]
+            'gilded',
+        ],
     },
     {
-        'word': 'godadm',
-        'subset': [
+        word: 'godadm',
+        subset: [
             'add',
             'ado',
             'ago',
@@ -12072,12 +12074,12 @@ export const GAMES = [
             'odd',
             'dago',
             'goad',
-            'goddam'
-        ]
+            'goddam',
+        ],
     },
     {
-        'word': 'ghraam',
-        'subset': [
+        word: 'ghraam',
+        subset: [
             'aga',
             'aha',
             'ama',
@@ -12094,12 +12096,12 @@ export const GAMES = [
             'gram',
             'harm',
             'aargh',
-            'graham'
-        ]
+            'graham',
+        ],
     },
     {
-        'word': 'gworth',
-        'subset': [
+        word: 'gworth',
+        subset: [
             'gor',
             'got',
             'hog',
@@ -12116,12 +12118,12 @@ export const GAMES = [
             'grow',
             'throw',
             'worth',
-            'growth'
-        ]
+            'growth',
+        ],
     },
     {
-        'word': 'gadurs',
-        'subset': [
+        word: 'gadurs',
+        subset: [
             'ads',
             'dag',
             'dug',
@@ -12138,12 +12140,12 @@ export const GAMES = [
             'drugs',
             'guard',
             'sugar',
-            'guards'
-        ]
+            'guards',
+        ],
     },
     {
-        'word': 'gitrau',
-        'subset': [
+        word: 'gitrau',
+        subset: [
             'air',
             'art',
             'gar',
@@ -12160,12 +12162,12 @@ export const GAMES = [
             'tau',
             'tug',
             'trig',
-            'guitar'
-        ]
+            'guitar',
+        ],
     },
     {
-        'word': 'rhabro',
-        'subset': [
+        word: 'rhabro',
+        subset: [
             'bah',
             'bar',
             'boa',
@@ -12182,12 +12184,12 @@ export const GAMES = [
             'hora',
             'roar',
             'arbor',
-            'harbor'
-        ]
+            'harbor',
+        ],
     },
     {
-        'word': 'pehled',
-        'subset': [
+        word: 'pehled',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -12204,12 +12206,12 @@ export const GAMES = [
             'peel',
             'pele',
             'pled',
-            'helped'
-        ]
+            'helped',
+        ],
     },
     {
-        'word': 'hyereb',
-        'subset': [
+        word: 'hyereb',
+        subset: [
             'bee',
             'bey',
             'bye',
@@ -12226,12 +12228,12 @@ export const GAMES = [
             'herb',
             'here',
             'beery',
-            'hereby'
-        ]
+            'hereby',
+        ],
     },
     {
-        'word': 'holing',
-        'subset': [
+        word: 'holing',
+        subset: [
             'gin',
             'hog',
             'hon',
@@ -12248,12 +12250,12 @@ export const GAMES = [
             'long',
             'nigh',
             'lingo',
-            'holing'
-        ]
+            'holing',
+        ],
     },
     {
-        'word': 'olhoap',
-        'subset': [
+        word: 'olhoap',
+        subset: [
             'hap',
             'hop',
             'lap',
@@ -12270,12 +12272,12 @@ export const GAMES = [
             'polo',
             'pooh',
             'pool',
-            'hoopla'
-        ]
+            'hoopla',
+        ],
     },
     {
-        'word': 'poihgn',
-        'subset': [
+        word: 'poihgn',
+        subset: [
             'gin',
             'hip',
             'hog',
@@ -12292,12 +12294,12 @@ export const GAMES = [
             'nigh',
             'ping',
             'pong',
-            'hoping'
-        ]
+            'hoping',
+        ],
     },
     {
-        'word': 'thodog',
-        'subset': [
+        word: 'thodog',
+        subset: [
             'dog',
             'dot',
             'god',
@@ -12314,12 +12316,12 @@ export const GAMES = [
             'good',
             'hood',
             'hoot',
-            'hotdog'
-        ]
+            'hotdog',
+        ],
     },
     {
-        'word': 'miubed',
-        'subset': [
+        word: 'miubed',
+        subset: [
             'bed',
             'bid',
             'bud',
@@ -12336,12 +12338,12 @@ export const GAMES = [
             'bide',
             'dime',
             'dumb',
-            'imbued'
-        ]
+            'imbued',
+        ],
     },
     {
-        'word': 'ndieis',
-        'subset': [
+        word: 'ndieis',
+        subset: [
             'den',
             'die',
             'dis',
@@ -12358,12 +12360,12 @@ export const GAMES = [
             'indie',
             'snide',
             'indies',
-            'inside'
-        ]
+            'inside',
+        ],
     },
     {
-        'word': 'isdnie',
-        'subset': [
+        word: 'isdnie',
+        subset: [
             'den',
             'die',
             'dis',
@@ -12380,12 +12382,12 @@ export const GAMES = [
             'indie',
             'snide',
             'indies',
-            'inside'
-        ]
+            'inside',
+        ],
     },
     {
-        'word': 'tjacke',
-        'subset': [
+        word: 'tjacke',
+        subset: [
             'ace',
             'act',
             'ate',
@@ -12402,12 +12404,12 @@ export const GAMES = [
             'jake',
             'tack',
             'take',
-            'jacket'
-        ]
+            'jacket',
+        ],
     },
     {
-        'word': 'ogjarn',
-        'subset': [
+        word: 'ogjarn',
+        subset: [
             'ago',
             'gar',
             'goa',
@@ -12424,12 +12426,12 @@ export const GAMES = [
             'rang',
             'argon',
             'organ',
-            'jargon'
-        ]
+            'jargon',
+        ],
     },
     {
-        'word': 'nkgtih',
-        'subset': [
+        word: 'nkgtih',
+        subset: [
             'gin',
             'git',
             'hit',
@@ -12446,12 +12448,12 @@ export const GAMES = [
             'night',
             'thing',
             'think',
-            'knight'
-        ]
+            'knight',
+        ],
     },
     {
-        'word': 'kniesv',
-        'subset': [
+        word: 'kniesv',
+        subset: [
             'ink',
             'ins',
             'ken',
@@ -12468,12 +12470,12 @@ export const GAMES = [
             'vein',
             'vine',
             'veins',
-            'knives'
-        ]
+            'knives',
+        ],
     },
     {
-        'word': 'akeled',
-        'subset': [
+        word: 'akeled',
+        subset: [
             'ale',
             'dee',
             'del',
@@ -12490,12 +12492,12 @@ export const GAMES = [
             'lake',
             'lead',
             'leak',
-            'leaked'
-        ]
+            'leaked',
+        ],
     },
     {
-        'word': 'elsser',
-        'subset': [
+        word: 'elsser',
+        subset: [
             'eel',
             'ere',
             'ers',
@@ -12512,12 +12514,12 @@ export const GAMES = [
             'seer',
             'sees',
             'reels',
-            'lesser'
-        ]
+            'lesser',
+        ],
     },
     {
-        'word': 'ckeilr',
-        'subset': [
+        word: 'ckeilr',
+        subset: [
             'elk',
             'ice',
             'ick',
@@ -12534,12 +12536,12 @@ export const GAMES = [
             'rile',
             'clerk',
             'relic',
-            'licker'
-        ]
+            'licker',
+        ],
     },
     {
-        'word': 'titell',
-        'subset': [
+        word: 'titell',
+        subset: [
             'ell',
             'ill',
             'lei',
@@ -12556,12 +12558,12 @@ export const GAMES = [
             'till',
             'tilt',
             'title',
-            'little'
-        ]
+            'little',
+        ],
     },
     {
-        'word': 'logger',
-        'subset': [
+        word: 'logger',
+        subset: [
             'egg',
             'ego',
             'gel',
@@ -12578,12 +12580,12 @@ export const GAMES = [
             'ogre',
             'role',
             'gorge',
-            'logger'
-        ]
+            'logger',
+        ],
     },
     {
-        'word': 'namica',
-        'subset': [
+        word: 'namica',
+        subset: [
             'aim',
             'ain',
             'ama',
@@ -12600,12 +12602,12 @@ export const GAMES = [
             'main',
             'mina',
             'manic',
-            'maniac'
-        ]
+            'maniac',
+        ],
     },
     {
-        'word': 'pmapde',
-        'subset': [
+        word: 'pmapde',
+        subset: [
             'amp',
             'ape',
             'dam',
@@ -12622,12 +12624,12 @@ export const GAMES = [
             'damp',
             'made',
             'mead',
-            'mapped'
-        ]
+            'mapped',
+        ],
     },
     {
-        'word': 'amnsos',
-        'subset': [
+        word: 'amnsos',
+        subset: [
             'ass',
             'man',
             'mas',
@@ -12644,12 +12646,12 @@ export const GAMES = [
             'sons',
             'mason',
             'moans',
-            'masons'
-        ]
+            'masons',
+        ],
     },
     {
-        'word': 'olmlwe',
-        'subset': [
+        word: 'olmlwe',
+        subset: [
             'ell',
             'elm',
             'low',
@@ -12666,12 +12668,12 @@ export const GAMES = [
             'mole',
             'moll',
             'well',
-            'mellow'
-        ]
+            'mellow',
+        ],
     },
     {
-        'word': 'meledt',
-        'subset': [
+        word: 'meledt',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -12688,12 +12690,12 @@ export const GAMES = [
             'meet',
             'melt',
             'teed',
-            'melted'
-        ]
+            'melted',
+        ],
     },
     {
-        'word': 'nmiedd',
-        'subset': [
+        word: 'nmiedd',
+        subset: [
             'den',
             'did',
             'die',
@@ -12710,12 +12712,12 @@ export const GAMES = [
             'mine',
             'dined',
             'mined',
-            'minded'
-        ]
+            'minded',
+        ],
     },
     {
-        'word': 'tmooin',
-        'subset': [
+        word: 'tmooin',
+        subset: [
             'ion',
             'mon',
             'moo',
@@ -12732,12 +12734,12 @@ export const GAMES = [
             'moot',
             'onto',
             'toon',
-            'motion'
-        ]
+            'motion',
+        ],
     },
     {
-        'word': 'ttmanu',
-        'subset': [
+        word: 'ttmanu',
+        subset: [
             'ant',
             'att',
             'man',
@@ -12754,12 +12756,12 @@ export const GAMES = [
             'taut',
             'tuna',
             'taunt',
-            'mutant'
-        ]
+            'mutant',
+        ],
     },
     {
-        'word': 'mganin',
-        'subset': [
+        word: 'mganin',
+        subset: [
             'aim',
             'ain',
             'ami',
@@ -12776,12 +12778,12 @@ export const GAMES = [
             'gain',
             'main',
             'mina',
-            'naming'
-        ]
+            'naming',
+        ],
     },
     {
-        'word': 'aonrwr',
-        'subset': [
+        word: 'aonrwr',
+        subset: [
             'naw',
             'nor',
             'now',
@@ -12798,12 +12800,12 @@ export const GAMES = [
             'worn',
             'arrow',
             'rowan',
-            'narrow'
-        ]
+            'narrow',
+        ],
     },
     {
-        'word': 'npipel',
-        'subset': [
+        word: 'npipel',
+        subset: [
             'lei',
             'lie',
             'lin',
@@ -12820,12 +12822,12 @@ export const GAMES = [
             'pile',
             'pine',
             'pipe',
-            'nipple'
-        ]
+            'nipple',
+        ],
     },
     {
-        'word': 'eybedo',
-        'subset': [
+        word: 'eybedo',
+        subset: [
             'bed',
             'bee',
             'bey',
@@ -12842,12 +12844,12 @@ export const GAMES = [
             'body',
             'eyed',
             'obey',
-            'obeyed'
-        ]
+            'obeyed',
+        ],
     },
     {
-        'word': 'foefrs',
-        'subset': [
+        word: 'foefrs',
+        subset: [
             'ers',
             'fer',
             'foe',
@@ -12864,12 +12866,12 @@ export const GAMES = [
             'rose',
             'sore',
             'offer',
-            'offers'
-        ]
+            'offers',
+        ],
     },
     {
-        'word': 'capked',
-        'subset': [
+        word: 'capked',
+        subset: [
             'ace',
             'ape',
             'cad',
@@ -12886,12 +12888,12 @@ export const GAMES = [
             'peak',
             'peck',
             'paced',
-            'packed'
-        ]
+            'packed',
+        ],
     },
     {
-        'word': 'pecekr',
-        'subset': [
+        word: 'pecekr',
+        subset: [
             'cee',
             'ere',
             'pee',
@@ -12908,12 +12910,12 @@ export const GAMES = [
             'creek',
             'creep',
             'crepe',
-            'pecker'
-        ]
+            'pecker',
+        ],
     },
     {
-        'word': 'eipeng',
-        'subset': [
+        word: 'eipeng',
+        subset: [
             'eng',
             'gee',
             'gen',
@@ -12930,12 +12932,12 @@ export const GAMES = [
             'pine',
             'ping',
             'genie',
-            'peeing'
-        ]
+            'peeing',
+        ],
     },
     {
-        'word': 'pecliv',
-        'subset': [
+        word: 'pecliv',
+        subset: [
             'ice',
             'lei',
             'lie',
@@ -12952,12 +12954,12 @@ export const GAMES = [
             'veil',
             'vice',
             'vile',
-            'pelvic'
-        ]
+            'pelvic',
+        ],
     },
     {
-        'word': 'pocbhi',
-        'subset': [
+        word: 'pocbhi',
+        subset: [
             'bio',
             'bop',
             'chi',
@@ -12974,12 +12976,12 @@ export const GAMES = [
             'poi',
             'chip',
             'chop',
-            'phobic'
-        ]
+            'phobic',
+        ],
     },
     {
-        'word': 'mpiepl',
-        'subset': [
+        word: 'mpiepl',
+        subset: [
             'elm',
             'imp',
             'lei',
@@ -12996,12 +12998,12 @@ export const GAMES = [
             'pile',
             'pimp',
             'pipe',
-            'pimple'
-        ]
+            'pimple',
+        ],
     },
     {
-        'word': 'uplnge',
-        'subset': [
+        word: 'uplnge',
+        subset: [
             'eng',
             'gel',
             'gen',
@@ -13018,12 +13020,12 @@ export const GAMES = [
             'lung',
             'plug',
             'lunge',
-            'plunge'
-        ]
+            'plunge',
+        ],
     },
     {
-        'word': 'modpui',
-        'subset': [
+        word: 'modpui',
+        subset: [
             'dim',
             'dip',
             'dom',
@@ -13040,12 +13042,12 @@ export const GAMES = [
             'ump',
             'dump',
             'opium',
-            'podium'
-        ]
+            'podium',
+        ],
     },
     {
-        'word': 'lipyoc',
-        'subset': [
+        word: 'lipyoc',
+        subset: [
             'col',
             'cop',
             'coy',
@@ -13062,12 +13064,12 @@ export const GAMES = [
             'oily',
             'ploy',
             'poly',
-            'policy'
-        ]
+            'policy',
+        ],
     },
     {
-        'word': 'ushedp',
-        'subset': [
+        word: 'ushedp',
+        subset: [
             'due',
             'hep',
             'hue',
@@ -13084,12 +13086,12 @@ export const GAMES = [
             'spud',
             'sued',
             'used',
-            'pushed'
-        ]
+            'pushed',
+        ],
     },
     {
-        'word': 'ibabtr',
-        'subset': [
+        word: 'ibabtr',
+        subset: [
             'air',
             'art',
             'bar',
@@ -13106,12 +13108,12 @@ export const GAMES = [
             'brat',
             'brit',
             'rabbi',
-            'rabbit'
-        ]
+            'rabbit',
+        ],
     },
     {
-        'word': 'sardui',
-        'subset': [
+        word: 'sardui',
+        subset: [
             'ads',
             'aid',
             'air',
@@ -13128,12 +13130,12 @@ export const GAMES = [
             'raid',
             'said',
             'raids',
-            'radius'
-        ]
+            'radius',
+        ],
     },
     {
-        'word': 'cernte',
-        'subset': [
+        word: 'cernte',
+        subset: [
             'cee',
             'ere',
             'nee',
@@ -13150,12 +13152,12 @@ export const GAMES = [
             'erect',
             'center',
             'centre',
-            'recent'
-        ]
+            'recent',
+        ],
     },
     {
-        'word': 'reggae',
-        'subset': [
+        word: 'reggae',
+        subset: [
             'age',
             'are',
             'ear',
@@ -13172,12 +13174,12 @@ export const GAMES = [
             'rage',
             'agree',
             'eager',
-            'reggae'
-        ]
+            'reggae',
+        ],
     },
     {
-        'word': 'reurtn',
-        'subset': [
+        word: 'reurtn',
+        subset: [
             'err',
             'net',
             'nut',
@@ -13194,12 +13196,12 @@ export const GAMES = [
             'turn',
             'truer',
             'return',
-            'turner'
-        ]
+            'turner',
+        ],
     },
     {
-        'word': 'yhmsre',
-        'subset': [
+        word: 'yhmsre',
+        subset: [
             'ems',
             'ers',
             'hem',
@@ -13216,12 +13218,12 @@ export const GAMES = [
             'hers',
             'mesh',
             'rhyme',
-            'rhymes'
-        ]
+            'rhymes',
+        ],
     },
     {
-        'word': 'rgthio',
-        'subset': [
+        word: 'rgthio',
+        subset: [
             'git',
             'gor',
             'got',
@@ -13238,12 +13240,12 @@ export const GAMES = [
             'trio',
             'girth',
             'right',
-            'righto'
-        ]
+            'righto',
+        ],
     },
     {
-        'word': 'arorty',
-        'subset': [
+        word: 'arorty',
+        subset: [
             'art',
             'oar',
             'ort',
@@ -13260,12 +13262,12 @@ export const GAMES = [
             'tory',
             'tray',
             'troy',
-            'rotary'
-        ]
+            'rotary',
+        ],
     },
     {
-        'word': 'rulers',
-        'subset': [
+        word: 'rulers',
+        subset: [
             'err',
             'ers',
             'res',
@@ -13282,12 +13284,12 @@ export const GAMES = [
             'lures',
             'ruler',
             'rules',
-            'rulers'
-        ]
+            'rulers',
+        ],
     },
     {
-        'word': 'exesir',
-        'subset': [
+        word: 'exesir',
+        subset: [
             'ere',
             'ers',
             'ree',
@@ -13304,12 +13306,12 @@ export const GAMES = [
             'seer',
             'sire',
             'siree',
-            'sexier'
-        ]
+            'sexier',
+        ],
     },
     {
-        'word': 'hsgayg',
-        'subset': [
+        word: 'hsgayg',
+        subset: [
             'ash',
             'gag',
             'gas',
@@ -13326,12 +13328,12 @@ export const GAMES = [
             'hags',
             'shag',
             'shay',
-            'shaggy'
-        ]
+            'shaggy',
+        ],
     },
     {
-        'word': 'hskeas',
-        'subset': [
+        word: 'hskeas',
+        subset: [
             'ash',
             'ask',
             'ass',
@@ -13348,12 +13350,12 @@ export const GAMES = [
             'ashes',
             'sakes',
             'shake',
-            'shakes'
-        ]
+            'shakes',
+        ],
     },
     {
-        'word': 'heesyn',
-        'subset': [
+        word: 'heesyn',
+        subset: [
             'eye',
             'hen',
             'hey',
@@ -13370,12 +13372,12 @@ export const GAMES = [
             'seen',
             'syne',
             'sheen',
-            'sheeny'
-        ]
+            'sheeny',
+        ],
     },
     {
-        'word': 'hesrds',
-        'subset': [
+        word: 'hesrds',
+        subset: [
             'ers',
             'ess',
             'her',
@@ -13392,12 +13394,12 @@ export const GAMES = [
             'herds',
             'sheds',
             'shred',
-            'shreds'
-        ]
+            'shreds',
+        ],
     },
     {
-        'word': 'hsrink',
-        'subset': [
+        word: 'hsrink',
+        subset: [
             'his',
             'ink',
             'ins',
@@ -13414,12 +13416,12 @@ export const GAMES = [
             'shin',
             'sink',
             'skin',
-            'shrink'
-        ]
+            'shrink',
+        ],
     },
     {
-        'word': 'moskre',
-        'subset': [
+        word: 'moskre',
+        subset: [
             'ems',
             'ers',
             'mor',
@@ -13436,12 +13438,12 @@ export const GAMES = [
             'sore',
             'morse',
             'smoke',
-            'smoker'
-        ]
+            'smoker',
+        ],
     },
     {
-        'word': 'tsonty',
-        'subset': [
+        word: 'tsonty',
+        subset: [
             'nos',
             'not',
             'son',
@@ -13458,12 +13460,12 @@ export const GAMES = [
             'tots',
             'toys',
             'stony',
-            'snotty'
-        ]
+            'snotty',
+        ],
     },
     {
-        'word': 'tsolyf',
-        'subset': [
+        word: 'tsolyf',
+        subset: [
             'fly',
             'lot',
             'sly',
@@ -13480,12 +13482,12 @@ export const GAMES = [
             'toys',
             'lofty',
             'softy',
-            'softly'
-        ]
+            'softly',
+        ],
     },
     {
-        'word': 'slipls',
-        'subset': [
+        word: 'slipls',
+        subset: [
             'ill',
             'lip',
             'lis',
@@ -13502,12 +13504,12 @@ export const GAMES = [
             'pills',
             'slips',
             'spill',
-            'spills'
-        ]
+            'spills',
+        ],
     },
     {
-        'word': 'stlils',
-        'subset': [
+        word: 'stlils',
+        subset: [
             'ill',
             'its',
             'lis',
@@ -13524,12 +13526,12 @@ export const GAMES = [
             'till',
             'lists',
             'still',
-            'stills'
-        ]
+            'stills',
+        ],
     },
     {
-        'word': 'stdogy',
-        'subset': [
+        word: 'stdogy',
+        subset: [
             'dog',
             'dos',
             'dot',
@@ -13546,12 +13548,12 @@ export const GAMES = [
             'dots',
             'gods',
             'toys',
-            'stodgy'
-        ]
+            'stodgy',
+        ],
     },
     {
-        'word': 'stogoe',
-        'subset': [
+        word: 'stogoe',
+        subset: [
             'ego',
             'get',
             'goo',
@@ -13568,12 +13570,12 @@ export const GAMES = [
             'soot',
             'toes',
             'goose',
-            'stooge'
-        ]
+            'stooge',
+        ],
     },
     {
-        'word': 'tsrcuk',
-        'subset': [
+        word: 'tsrcuk',
+        subset: [
             'cur',
             'cut',
             'rut',
@@ -13590,12 +13592,12 @@ export const GAMES = [
             'truck',
             'turks',
             'struck',
-            'trucks'
-        ]
+            'trucks',
+        ],
     },
     {
-        'word': 'tsyeld',
-        'subset': [
+        word: 'tsyeld',
+        subset: [
             'del',
             'dey',
             'dye',
@@ -13612,12 +13614,12 @@ export const GAMES = [
             'lets',
             'sled',
             'style',
-            'styled'
-        ]
+            'styled',
+        ],
     },
     {
-        'word': 'tsylbu',
-        'subset': [
+        word: 'tsylbu',
+        subset: [
             'bus',
             'but',
             'buy',
@@ -13634,12 +13636,12 @@ export const GAMES = [
             'stub',
             'tubs',
             'busty',
-            'subtly'
-        ]
+            'subtly',
+        ],
     },
     {
-        'word': 'uswaby',
-        'subset': [
+        word: 'uswaby',
+        subset: [
             'abs',
             'bay',
             'bus',
@@ -13656,12 +13658,12 @@ export const GAMES = [
             'swab',
             'sway',
             'ways',
-            'subway'
-        ]
+            'subway',
+        ],
     },
     {
-        'word': 'esswed',
-        'subset': [
+        word: 'esswed',
+        subset: [
             'dee',
             'dew',
             'ess',
@@ -13678,12 +13680,12 @@ export const GAMES = [
             'sewed',
             'swede',
             'weeds',
-            'swedes'
-        ]
+            'swedes',
+        ],
     },
     {
-        'word': 'eatttl',
-        'subset': [
+        word: 'eatttl',
+        subset: [
             'ale',
             'alt',
             'ate',
@@ -13700,12 +13702,12 @@ export const GAMES = [
             'tate',
             'teal',
             'latte',
-            'tattle'
-        ]
+            'tattle',
+        ],
     },
     {
-        'word': 'hemted',
-        'subset': [
+        word: 'hemted',
+        subset: [
             'dee',
             'eth',
             'hem',
@@ -13722,12 +13724,12 @@ export const GAMES = [
             'thee',
             'them',
             'theme',
-            'themed'
-        ]
+            'themed',
+        ],
     },
     {
-        'word': 'tihgsh',
-        'subset': [
+        word: 'tihgsh',
+        subset: [
             'git',
             'his',
             'hit',
@@ -13744,12 +13746,12 @@ export const GAMES = [
             'highs',
             'sight',
             'thigh',
-            'thighs'
-        ]
+            'thighs',
+        ],
     },
     {
-        'word': 'tohugh',
-        'subset': [
+        word: 'tohugh',
+        subset: [
             'got',
             'gut',
             'hog',
@@ -13766,12 +13768,12 @@ export const GAMES = [
             'thug',
             'ought',
             'tough',
-            'though'
-        ]
+            'though',
+        ],
     },
     {
-        'word': 'kiecrt',
-        'subset': [
+        word: 'kiecrt',
+        subset: [
             'ice',
             'ick',
             'kit',
@@ -13788,12 +13790,12 @@ export const GAMES = [
             'tire',
             'trek',
             'trick',
-            'ticker'
-        ]
+            'ticker',
+        ],
     },
     {
-        'word': 'oastyt',
-        'subset': [
+        word: 'oastyt',
+        subset: [
             'att',
             'sat',
             'say',
@@ -13810,12 +13812,12 @@ export const GAMES = [
             'toys',
             'tasty',
             'toast',
-            'toasty'
-        ]
+            'toasty',
+        ],
     },
     {
-        'word': 'tloler',
-        'subset': [
+        word: 'tloler',
+        subset: [
             'ell',
             'let',
             'lot',
@@ -13832,12 +13834,12 @@ export const GAMES = [
             'toll',
             'tore',
             'troll',
-            'toller'
-        ]
+            'toller',
+        ],
     },
     {
-        'word': 'tocamt',
-        'subset': [
+        word: 'tocamt',
+        subset: [
             'act',
             'att',
             'cam',
@@ -13854,12 +13856,12 @@ export const GAMES = [
             'moat',
             'taco',
             'tact',
-            'tomcat'
-        ]
+            'tomcat',
+        ],
     },
     {
-        'word': 'ptploe',
-        'subset': [
+        word: 'ptploe',
+        subset: [
             'let',
             'lop',
             'lot',
@@ -13876,12 +13878,12 @@ export const GAMES = [
             'poet',
             'pole',
             'pope',
-            'topple'
-        ]
+            'topple',
+        ],
     },
     {
-        'word': 'otquer',
-        'subset': [
+        word: 'otquer',
+        subset: [
             'ore',
             'ort',
             'our',
@@ -13898,12 +13900,12 @@ export const GAMES = [
             'outer',
             'quote',
             'route',
-            'torque'
-        ]
+            'torque',
+        ],
     },
     {
-        'word': 'trucsk',
-        'subset': [
+        word: 'trucsk',
+        subset: [
             'cur',
             'cut',
             'rut',
@@ -13920,12 +13922,12 @@ export const GAMES = [
             'truck',
             'turks',
             'struck',
-            'trucks'
-        ]
+            'trucks',
+        ],
     },
     {
-        'word': 'ucrkte',
-        'subset': [
+        word: 'ucrkte',
+        subset: [
             'cue',
             'cur',
             'cut',
@@ -13942,12 +13944,12 @@ export const GAMES = [
             'cuter',
             'truce',
             'truck',
-            'tucker'
-        ]
+            'tucker',
+        ],
     },
     {
-        'word': 'rutenr',
-        'subset': [
+        word: 'rutenr',
+        subset: [
             'err',
             'net',
             'nut',
@@ -13964,12 +13966,12 @@ export const GAMES = [
             'turn',
             'truer',
             'return',
-            'turner'
-        ]
+            'turner',
+        ],
     },
     {
-        'word': 'nuklie',
-        'subset': [
+        word: 'nuklie',
+        subset: [
             'elk',
             'ilk',
             'ink',
@@ -13986,12 +13988,12 @@ export const GAMES = [
             'line',
             'link',
             'nuke',
-            'unlike'
-        ]
+            'unlike',
+        ],
     },
     {
-        'word': 'uandpi',
-        'subset': [
+        word: 'uandpi',
+        subset: [
             'aid',
             'ain',
             'and',
@@ -14008,12 +14010,12 @@ export const GAMES = [
             'paid',
             'pain',
             'pina',
-            'unpaid'
-        ]
+            'unpaid',
+        ],
     },
     {
-        'word': 'uevinl',
-        'subset': [
+        word: 'uevinl',
+        subset: [
             'lei',
             'lie',
             'lin',
@@ -14030,12 +14032,12 @@ export const GAMES = [
             'vile',
             'vine',
             'liven',
-            'unveil'
-        ]
+            'unveil',
+        ],
     },
     {
-        'word': 'dpluao',
-        'subset': [
+        word: 'dpluao',
+        subset: [
             'ado',
             'dol',
             'duo',
@@ -14052,12 +14054,12 @@ export const GAMES = [
             'loud',
             'opal',
             'aloud',
-            'upload'
-        ]
+            'upload',
+        ],
     },
     {
-        'word': 'avnity',
-        'subset': [
+        word: 'avnity',
+        subset: [
             'ain',
             'ani',
             'ant',
@@ -14074,12 +14076,12 @@ export const GAMES = [
             'navy',
             'tiny',
             'vain',
-            'vanity'
-        ]
+            'vanity',
+        ],
     },
     {
-        'word': 'usivla',
-        'subset': [
+        word: 'usivla',
+        subset: [
             'ail',
             'als',
             'las',
@@ -14096,12 +14098,12 @@ export const GAMES = [
             'visa',
             'silva',
             'vials',
-            'visual'
-        ]
+            'visual',
+        ],
     },
     {
-        'word': 'lwlaop',
-        'subset': [
+        word: 'lwlaop',
+        subset: [
             'all',
             'lap',
             'law',
@@ -14118,12 +14120,12 @@ export const GAMES = [
             'poll',
             'wall',
             'allow',
-            'wallop'
-        ]
+            'wallop',
+        ],
     },
     {
-        'word': 'tnowan',
-        'subset': [
+        word: 'tnowan',
+        subset: [
             'ant',
             'nan',
             'naw',
@@ -14140,12 +14142,12 @@ export const GAMES = [
             'town',
             'want',
             'wont',
-            'wanton'
-        ]
+            'wanton',
+        ],
     },
     {
-        'word': 'eewrar',
-        'subset': [
+        word: 'eewrar',
+        subset: [
             'are',
             'awe',
             'ear',
@@ -14162,12 +14164,12 @@ export const GAMES = [
             'ware',
             'wear',
             'were',
-            'wearer'
-        ]
+            'wearer',
+        ],
     },
     {
-        'word': 'weysne',
-        'subset': [
+        word: 'weysne',
+        subset: [
             'ewe',
             'eye',
             'nee',
@@ -14184,12 +14186,12 @@ export const GAMES = [
             'sewn',
             'syne',
             'weeny',
-            'weensy'
-        ]
+            'weensy',
+        ],
     },
     {
-        'word': 'wegiht',
-        'subset': [
+        word: 'wegiht',
+        subset: [
             'eth',
             'get',
             'git',
@@ -14206,12 +14208,12 @@ export const GAMES = [
             'eight',
             'weigh',
             'white',
-            'weight'
-        ]
+            'weight',
+        ],
     },
     {
-        'word': 'iwtcyh',
-        'subset': [
+        word: 'iwtcyh',
+        subset: [
             'chi',
             'hic',
             'hit',
@@ -14228,12 +14230,12 @@ export const GAMES = [
             'with',
             'itchy',
             'witch',
-            'witchy'
-        ]
+            'witchy',
+        ],
     },
     {
-        'word': 'diadng',
-        'subset': [
+        word: 'diadng',
+        subset: [
             'add',
             'aid',
             'ain',
@@ -14249,12 +14251,12 @@ export const GAMES = [
             'dang',
             'ding',
             'gain',
-            'adding'
-        ]
+            'adding',
+        ],
     },
     {
-        'word': 'airffm',
-        'subset': [
+        word: 'airffm',
+        subset: [
             'aim',
             'air',
             'ami',
@@ -14270,12 +14272,12 @@ export const GAMES = [
             'farm',
             'firm',
             'riff',
-            'affirm'
-        ]
+            'affirm',
+        ],
     },
     {
-        'word': 'iminag',
-        'subset': [
+        word: 'iminag',
+        subset: [
             'aim',
             'ain',
             'ami',
@@ -14291,12 +14293,12 @@ export const GAMES = [
             'main',
             'mina',
             'mini',
-            'aiming'
-        ]
+            'aiming',
+        ],
     },
     {
-        'word': 'ialisb',
-        'subset': [
+        word: 'ialisb',
+        subset: [
             'abs',
             'ail',
             'als',
@@ -14312,12 +14314,12 @@ export const GAMES = [
             'alibi',
             'bails',
             'basil',
-            'alibis'
-        ]
+            'alibis',
+        ],
     },
     {
-        'word': 'amiosg',
-        'subset': [
+        word: 'amiosg',
+        subset: [
             'ago',
             'aim',
             'ami',
@@ -14333,12 +14335,12 @@ export const GAMES = [
             'smog',
             'amigo',
             'sigma',
-            'amigos'
-        ]
+            'amigos',
+        ],
     },
     {
-        'word': 'argoan',
-        'subset': [
+        word: 'argoan',
+        subset: [
             'aga',
             'ago',
             'ana',
@@ -14354,12 +14356,12 @@ export const GAMES = [
             'rang',
             'argon',
             'organ',
-            'angora'
-        ]
+            'angora',
+        ],
     },
     {
-        'word': 'iapcee',
-        'subset': [
+        word: 'iapcee',
+        subset: [
             'ace',
             'ape',
             'cap',
@@ -14375,12 +14377,12 @@ export const GAMES = [
             'pace',
             'peace',
             'piece',
-            'apiece'
-        ]
+            'apiece',
+        ],
     },
     {
-        'word': 'atiasw',
-        'subset': [
+        word: 'atiasw',
+        subset: [
             'its',
             'sat',
             'saw',
@@ -14396,12 +14398,12 @@ export const GAMES = [
             'await',
             'waist',
             'waits',
-            'awaits'
-        ]
+            'awaits',
+        ],
     },
     {
-        'word': 'awakne',
-        'subset': [
+        word: 'awakne',
+        subset: [
             'ana',
             'ane',
             'awe',
@@ -14417,12 +14419,12 @@ export const GAMES = [
             'wean',
             'awake',
             'waken',
-            'awaken'
-        ]
+            'awaken',
+        ],
     },
     {
-        'word': 'ahilwe',
-        'subset': [
+        word: 'ahilwe',
+        subset: [
             'ail',
             'ale',
             'awe',
@@ -14438,12 +14440,12 @@ export const GAMES = [
             'wail',
             'whale',
             'while',
-            'awhile'
-        ]
+            'awhile',
+        ],
     },
     {
-        'word': 'akebcd',
-        'subset': [
+        word: 'akebcd',
+        subset: [
             'ace',
             'bad',
             'bed',
@@ -14459,12 +14461,12 @@ export const GAMES = [
             'cake',
             'deck',
             'baked',
-            'backed'
-        ]
+            'backed',
+        ],
     },
     {
-        'word': 'baberr',
-        'subset': [
+        word: 'baberr',
+        subset: [
             'are',
             'bar',
             'bra',
@@ -14480,12 +14482,12 @@ export const GAMES = [
             'rare',
             'rear',
             'barre',
-            'barber'
-        ]
+            'barber',
+        ],
     },
     {
-        'word': 'armban',
-        'subset': [
+        word: 'armban',
+        subset: [
             'ama',
             'ana',
             'arm',
@@ -14501,12 +14503,12 @@ export const GAMES = [
             'ran',
             'barn',
             'bran',
-            'barman'
-        ]
+            'barman',
+        ],
     },
     {
-        'word': 'bleefi',
-        'subset': [
+        word: 'bleefi',
+        subset: [
             'bee',
             'bel',
             'eel',
@@ -14522,12 +14524,12 @@ export const GAMES = [
             'flee',
             'life',
             'belie',
-            'belief'
-        ]
+            'belief',
+        ],
     },
     {
-        'word': 'blieve',
-        'subset': [
+        word: 'blieve',
+        subset: [
             'bee',
             'bel',
             'eel',
@@ -14543,12 +14545,12 @@ export const GAMES = [
             'vibe',
             'vile',
             'belie',
-            'belive'
-        ]
+            'belive',
+        ],
     },
     {
-        'word': 'obipsy',
-        'subset': [
+        word: 'obipsy',
+        subset: [
             'bio',
             'bop',
             'boy',
@@ -14564,12 +14566,12 @@ export const GAMES = [
             'spy',
             'bios',
             'boys',
-            'biopsy'
-        ]
+            'biopsy',
+        ],
     },
     {
-        'word': 'tbtrei',
-        'subset': [
+        word: 'tbtrei',
+        subset: [
             'bet',
             'bit',
             'rib',
@@ -14585,12 +14587,12 @@ export const GAMES = [
             'britt',
             'tribe',
             'trite',
-            'bitter'
-        ]
+            'bitter',
+        ],
     },
     {
-        'word': 'bobcta',
-        'subset': [
+        word: 'bobcta',
+        subset: [
             'act',
             'bat',
             'boa',
@@ -14606,12 +14608,12 @@ export const GAMES = [
             'cobb',
             'taco',
             'abbot',
-            'bobcat'
-        ]
+            'bobcat',
+        ],
     },
     {
-        'word': 'bomebd',
-        'subset': [
+        word: 'bomebd',
+        subset: [
             'bed',
             'bob',
             'bod',
@@ -14627,12 +14629,12 @@ export const GAMES = [
             'demo',
             'dome',
             'mode',
-            'bombed'
-        ]
+            'bombed',
+        ],
     },
     {
-        'word': 'nobtne',
-        'subset': [
+        word: 'nobtne',
+        subset: [
             'ben',
             'bet',
             'bot',
@@ -14648,12 +14650,12 @@ export const GAMES = [
             'none',
             'note',
             'tone',
-            'bonnet'
-        ]
+            'bonnet',
+        ],
     },
     {
-        'word': 'lbtote',
-        'subset': [
+        word: 'lbtote',
+        subset: [
             'bel',
             'bet',
             'bot',
@@ -14669,12 +14671,12 @@ export const GAMES = [
             'lobe',
             'tote',
             'lotte',
-            'bottle'
-        ]
+            'bottle',
+        ],
     },
     {
-        'word': 'broocn',
-        'subset': [
+        word: 'broocn',
+        subset: [
             'boo',
             'bro',
             'cob',
@@ -14690,12 +14692,12 @@ export const GAMES = [
             'coon',
             'corn',
             'croon',
-            'bronco'
-        ]
+            'bronco',
+        ],
     },
     {
-        'word': 'zrbone',
-        'subset': [
+        word: 'zrbone',
+        subset: [
             'ben',
             'bro',
             'nor',
@@ -14711,12 +14713,12 @@ export const GAMES = [
             'zero',
             'zone',
             'boner',
-            'bronze'
-        ]
+            'bronze',
+        ],
     },
     {
-        'word': 'libuds',
-        'subset': [
+        word: 'libuds',
+        subset: [
             'bid',
             'bud',
             'bus',
@@ -14732,12 +14734,12 @@ export const GAMES = [
             'lids',
             'slid',
             'build',
-            'builds'
-        ]
+            'builds',
+        ],
     },
     {
-        'word': 'pbuemr',
-        'subset': [
+        word: 'pbuemr',
+        subset: [
             'bum',
             'per',
             'pub',
@@ -14753,12 +14755,12 @@ export const GAMES = [
             'pure',
             'rube',
             'rump',
-            'bumper'
-        ]
+            'bumper',
+        ],
     },
     {
-        'word': 'nubege',
-        'subset': [
+        word: 'nubege',
+        subset: [
             'bee',
             'beg',
             'ben',
@@ -14774,12 +14776,12 @@ export const GAMES = [
             'bene',
             'gene',
             'begun',
-            'bungee'
-        ]
+            'bungee',
+        ],
     },
     {
-        'word': 'urilba',
-        'subset': [
+        word: 'urilba',
+        subset: [
             'ail',
             'air',
             'bar',
@@ -14795,12 +14797,12 @@ export const GAMES = [
             'liar',
             'lira',
             'rail',
-            'burial'
-        ]
+            'burial',
+        ],
     },
     {
-        'word': 'acmlyl',
-        'subset': [
+        word: 'acmlyl',
+        subset: [
             'all',
             'cam',
             'lac',
@@ -14816,12 +14818,12 @@ export const GAMES = [
             'clay',
             'lacy',
             'mall',
-            'calmly'
-        ]
+            'calmly',
+        ],
     },
     {
-        'word': 'bcshaa',
-        'subset': [
+        word: 'bcshaa',
+        subset: [
             'abs',
             'aha',
             'ash',
@@ -14837,12 +14839,12 @@ export const GAMES = [
             'casa',
             'cash',
             'scab',
-            'casbah'
-        ]
+            'casbah',
+        ],
     },
     {
-        'word': 'ohekcd',
-        'subset': [
+        word: 'ohekcd',
+        subset: [
             'cod',
             'doc',
             'doe',
@@ -14858,12 +14860,12 @@ export const GAMES = [
             'heck',
             'hock',
             'choke',
-            'choked'
-        ]
+            'choked',
+        ],
     },
     {
-        'word': 'choerk',
-        'subset': [
+        word: 'choerk',
+        subset: [
             'cor',
             'her',
             'hoe',
@@ -14879,12 +14881,12 @@ export const GAMES = [
             'rock',
             'choke',
             'chore',
-            'choker'
-        ]
+            'choker',
+        ],
     },
     {
-        'word': 'khcsun',
-        'subset': [
+        word: 'khcsun',
+        subset: [
             'hun',
             'sun',
             'uns',
@@ -14900,12 +14902,12 @@ export const GAMES = [
             'hunks',
             'shuck',
             'snuck',
-            'chunks'
-        ]
+            'chunks',
+        ],
     },
     {
-        'word': 'ouclyd',
-        'subset': [
+        word: 'ouclyd',
+        subset: [
             'cod',
             'col',
             'coy',
@@ -14921,12 +14923,12 @@ export const GAMES = [
             'loud',
             'cloud',
             'could',
-            'cloudy'
-        ]
+            'cloudy',
+        ],
     },
     {
-        'word': 'ocvelr',
-        'subset': [
+        word: 'ocvelr',
+        subset: [
             'col',
             'cor',
             'ole',
@@ -14942,12 +14944,12 @@ export const GAMES = [
             'role',
             'cover',
             'lover',
-            'clover'
-        ]
+            'clover',
+        ],
     },
     {
-        'word': 'voecls',
-        'subset': [
+        word: 'voecls',
+        subset: [
             'col',
             'cos',
             'ole',
@@ -14963,12 +14965,12 @@ export const GAMES = [
             'coles',
             'loves',
             'solve',
-            'cloves'
-        ]
+            'cloves',
+        ],
     },
     {
-        'word': 'oincft',
-        'subset': [
+        word: 'oincft',
+        subset: [
             'con',
             'cot',
             'fin',
@@ -14984,12 +14986,12 @@ export const GAMES = [
             'info',
             'into',
             'tonic',
-            'confit'
-        ]
+            'confit',
+        ],
     },
     {
-        'word': 'ocoper',
-        'subset': [
+        word: 'ocoper',
+        subset: [
             'coo',
             'cop',
             'cor',
@@ -15005,12 +15007,12 @@ export const GAMES = [
             'poor',
             'pore',
             'rope',
-            'cooper'
-        ]
+            'cooper',
+        ],
     },
     {
-        'word': 'anoocr',
-        'subset': [
+        word: 'anoocr',
+        subset: [
             'arc',
             'can',
             'car',
@@ -15026,12 +15028,12 @@ export const GAMES = [
             'narc',
             'acorn',
             'croon',
-            'corona'
-        ]
+            'corona',
+        ],
     },
     {
-        'word': 'county',
-        'subset': [
+        word: 'county',
+        subset: [
             'con',
             'cot',
             'coy',
@@ -15047,12 +15049,12 @@ export const GAMES = [
             'tony',
             'unto',
             'count',
-            'county'
-        ]
+            'county',
+        ],
     },
     {
-        'word': 'pulceo',
-        'subset': [
+        word: 'pulceo',
+        subset: [
             'col',
             'cop',
             'cue',
@@ -15068,12 +15070,12 @@ export const GAMES = [
             'pole',
             'puce',
             'coupe',
-            'couple'
-        ]
+            'couple',
+        ],
     },
     {
-        'word': 'arnnyc',
-        'subset': [
+        word: 'arnnyc',
+        subset: [
             'any',
             'arc',
             'can',
@@ -15089,12 +15091,12 @@ export const GAMES = [
             'racy',
             'yarn',
             'nancy',
-            'cranny'
-        ]
+            'cranny',
+        ],
     },
     {
-        'word': 'cutter',
-        'subset': [
+        word: 'cutter',
+        subset: [
             'cue',
             'cur',
             'cut',
@@ -15110,12 +15112,12 @@ export const GAMES = [
             'cuter',
             'truce',
             'utter',
-            'cutter'
-        ]
+            'cutter',
+        ],
     },
     {
-        'word': 'ycrpus',
-        'subset': [
+        word: 'ycrpus',
+        subset: [
             'cry',
             'cup',
             'cur',
@@ -15131,12 +15133,12 @@ export const GAMES = [
             'spry',
             'spur',
             'syrup',
-            'cyprus'
-        ]
+            'cyprus',
+        ],
     },
     {
-        'word': 'aedndc',
-        'subset': [
+        word: 'aedndc',
+        subset: [
             'ace',
             'add',
             'and',
@@ -15152,12 +15154,12 @@ export const GAMES = [
             'dead',
             'dean',
             'dance',
-            'danced'
-        ]
+            'danced',
+        ],
     },
     {
-        'word': 'rdeakr',
-        'subset': [
+        word: 'rdeakr',
+        subset: [
             'are',
             'ark',
             'ear',
@@ -15173,12 +15175,12 @@ export const GAMES = [
             'rear',
             'drake',
             'raked',
-            'darker'
-        ]
+            'darker',
+        ],
     },
     {
-        'word': 'deenct',
-        'subset': [
+        word: 'deenct',
+        subset: [
             'cee',
             'dee',
             'den',
@@ -15194,12 +15196,12 @@ export const GAMES = [
             'teed',
             'teen',
             'tend',
-            'decent'
-        ]
+            'decent',
+        ],
     },
     {
-        'word': 'ffirde',
-        'subset': [
+        word: 'ffirde',
+        subset: [
             'die',
             'fed',
             'fer',
@@ -15215,12 +15217,12 @@ export const GAMES = [
             'riff',
             'fired',
             'fried',
-            'differ'
-        ]
+            'differ',
+        ],
     },
     {
-        'word': 'dirnne',
-        'subset': [
+        word: 'dirnne',
+        subset: [
             'den',
             'die',
             'end',
@@ -15236,12 +15238,12 @@ export const GAMES = [
             'ride',
             'diner',
             'inner',
-            'dinner'
-        ]
+            'dinner',
+        ],
     },
     {
-        'word': 'ddrune',
-        'subset': [
+        word: 'ddrune',
+        subset: [
             'den',
             'dud',
             'due',
@@ -15257,12 +15259,12 @@ export const GAMES = [
             'rude',
             'rune',
             'under',
-            'durned'
-        ]
+            'durned',
+        ],
     },
     {
-        'word': 'dsdtue',
-        'subset': [
+        word: 'dsdtue',
+        subset: [
             'dud',
             'due',
             'set',
@@ -15278,12 +15280,12 @@ export const GAMES = [
             'sued',
             'used',
             'dudes',
-            'dusted'
-        ]
+            'dusted',
+        ],
     },
     {
-        'word': 'enceor',
-        'subset': [
+        word: 'enceor',
+        subset: [
             'cee',
             'con',
             'cor',
@@ -15299,12 +15301,12 @@ export const GAMES = [
             'corn',
             'once',
             'recon',
-            'encore'
-        ]
+            'encore',
+        ],
     },
     {
-        'word': 'inetce',
-        'subset': [
+        word: 'inetce',
+        subset: [
             'cee',
             'ice',
             'nee',
@@ -15320,12 +15322,12 @@ export const GAMES = [
             'nite',
             'teen',
             'niece',
-            'entice'
-        ]
+            'entice',
+        ],
     },
     {
-        'word': 'xeldei',
-        'subset': [
+        word: 'xeldei',
+        subset: [
             'dee',
             'del',
             'dex',
@@ -15341,12 +15343,12 @@ export const GAMES = [
             'idle',
             'lied',
             'exile',
-            'exiled'
-        ]
+            'exiled',
+        ],
     },
     {
-        'word': 'tnxdee',
-        'subset': [
+        word: 'tnxdee',
+        subset: [
             'dee',
             'den',
             'dex',
@@ -15362,12 +15364,12 @@ export const GAMES = [
             'teed',
             'teen',
             'tend',
-            'extend'
-        ]
+            'extend',
+        ],
     },
     {
-        'word': 'fiknag',
-        'subset': [
+        word: 'fiknag',
+        subset: [
             'ain',
             'ani',
             'fag',
@@ -15383,12 +15385,12 @@ export const GAMES = [
             'fink',
             'gain',
             'king',
-            'faking'
-        ]
+            'faking',
+        ],
     },
     {
-        'word': 'falenl',
-        'subset': [
+        word: 'falenl',
+        subset: [
             'ale',
             'all',
             'ane',
@@ -15404,12 +15406,12 @@ export const GAMES = [
             'leaf',
             'lean',
             'fella',
-            'fallen'
-        ]
+            'fallen',
+        ],
     },
     {
-        'word': 'flolwa',
-        'subset': [
+        word: 'flolwa',
+        subset: [
             'all',
             'law',
             'low',
@@ -15425,12 +15427,12 @@ export const GAMES = [
             'wall',
             'wolf',
             'allow',
-            'fallow'
-        ]
+            'fallow',
+        ],
     },
     {
-        'word': 'fmaily',
-        'subset': [
+        word: 'fmaily',
+        subset: [
             'ail',
             'aim',
             'ami',
@@ -15446,12 +15448,12 @@ export const GAMES = [
             'flay',
             'lima',
             'mail',
-            'family'
-        ]
+            'family',
+        ],
     },
     {
-        'word': 'fsideh',
-        'subset': [
+        word: 'fsideh',
+        subset: [
             'die',
             'dis',
             'fed',
@@ -15467,12 +15469,12 @@ export const GAMES = [
             'shed',
             'side',
             'hides',
-            'fished'
-        ]
+            'fished',
+        ],
     },
     {
-        'word': 'aorflv',
-        'subset': [
+        word: 'aorflv',
+        subset: [
             'arf',
             'far',
             'for',
@@ -15488,12 +15490,12 @@ export const GAMES = [
             'favor',
             'flora',
             'valor',
-            'flavor'
-        ]
+            'flavor',
+        ],
     },
     {
-        'word': 'rflola',
-        'subset': [
+        word: 'rflola',
+        subset: [
             'all',
             'arf',
             'far',
@@ -15509,12 +15511,12 @@ export const GAMES = [
             'rolf',
             'roll',
             'flora',
-            'floral'
-        ]
+            'floral',
+        ],
     },
     {
-        'word': 'lyfers',
-        'subset': [
+        word: 'lyfers',
+        subset: [
             'elf',
             'ers',
             'fer',
@@ -15530,12 +15532,12 @@ export const GAMES = [
             'rely',
             'self',
             'flyer',
-            'flyers'
-        ]
+            'flyers',
+        ],
     },
     {
-        'word': 'gatbmi',
-        'subset': [
+        word: 'gatbmi',
+        subset: [
             'aim',
             'ami',
             'bag',
@@ -15551,12 +15553,12 @@ export const GAMES = [
             'tab',
             'tag',
             'bait',
-            'gambit'
-        ]
+            'gambit',
+        ],
     },
     {
-        'word': 'gbobel',
-        'subset': [
+        word: 'gbobel',
+        subset: [
             'beg',
             'bel',
             'bob',
@@ -15572,12 +15574,12 @@ export const GAMES = [
             'lobe',
             'ogle',
             'globe',
-            'gobble'
-        ]
+            'gobble',
+        ],
     },
     {
-        'word': 'rgassy',
-        'subset': [
+        word: 'rgassy',
+        subset: [
             'ass',
             'gar',
             'gas',
@@ -15593,12 +15595,12 @@ export const GAMES = [
             'says',
             'gassy',
             'grass',
-            'grassy'
-        ]
+            'grassy',
+        ],
     },
     {
-        'word': 'vergei',
-        'subset': [
+        word: 'vergei',
+        subset: [
             'ere',
             'eve',
             'gee',
@@ -15614,12 +15616,12 @@ export const GAMES = [
             'veer',
             'giver',
             'verge',
-            'grieve'
-        ]
+            'grieve',
+        ],
     },
     {
-        'word': 'irngog',
-        'subset': [
+        word: 'irngog',
+        subset: [
             'gig',
             'gin',
             'gor',
@@ -15635,12 +15637,12 @@ export const GAMES = [
             'ring',
             'going',
             'groin',
-            'gringo'
-        ]
+            'gringo',
+        ],
     },
     {
-        'word': 'gesust',
-        'subset': [
+        word: 'gesust',
+        subset: [
             'ess',
             'get',
             'gut',
@@ -15656,12 +15658,12 @@ export const GAMES = [
             'uses',
             'guess',
             'guest',
-            'guests'
-        ]
+            'guests',
+        ],
     },
     {
-        'word': 'ppahen',
-        'subset': [
+        word: 'ppahen',
+        subset: [
             'ane',
             'ape',
             'hap',
@@ -15677,12 +15679,12 @@ export const GAMES = [
             'pep',
             'heap',
             'pane',
-            'happen'
-        ]
+            'happen',
+        ],
     },
     {
-        'word': 'aehepd',
-        'subset': [
+        word: 'aehepd',
+        subset: [
             'ape',
             'dah',
             'dee',
@@ -15698,12 +15700,12 @@ export const GAMES = [
             'heap',
             'heed',
             'peed',
-            'heaped'
-        ]
+            'heaped',
+        ],
     },
     {
-        'word': 'hyeayd',
-        'subset': [
+        word: 'hyeayd',
+        subset: [
             'aye',
             'dah',
             'day',
@@ -15719,12 +15721,12 @@ export const GAMES = [
             'head',
             'yeah',
             'heady',
-            'heyday'
-        ]
+            'heyday',
+        ],
     },
     {
-        'word': 'uhrbsi',
-        'subset': [
+        word: 'uhrbsi',
+        subset: [
             'bus',
             'his',
             'hub',
@@ -15740,12 +15742,12 @@ export const GAMES = [
             'rush',
             'brush',
             'shrub',
-            'hubris'
-        ]
+            'hubris',
+        ],
     },
     {
-        'word': 'ilnand',
-        'subset': [
+        word: 'ilnand',
+        subset: [
             'aid',
             'ail',
             'ain',
@@ -15761,12 +15763,12 @@ export const GAMES = [
             'laid',
             'land',
             'nail',
-            'inland'
-        ]
+            'inland',
+        ],
     },
     {
-        'word': 'nitner',
-        'subset': [
+        word: 'nitner',
+        subset: [
             'inn',
             'net',
             'rin',
@@ -15782,12 +15784,12 @@ export const GAMES = [
             'tire',
             'inner',
             'inter',
-            'intern'
-        ]
+            'intern',
+        ],
     },
     {
-        'word': 'jlnieg',
-        'subset': [
+        word: 'jlnieg',
+        subset: [
             'eng',
             'gel',
             'gen',
@@ -15803,12 +15805,12 @@ export const GAMES = [
             'lien',
             'line',
             'ling',
-            'jingle'
-        ]
+            'jingle',
+        ],
     },
     {
-        'word': 'jonedi',
-        'subset': [
+        word: 'jonedi',
+        subset: [
             'den',
             'die',
             'doe',
@@ -15824,12 +15826,12 @@ export const GAMES = [
             'done',
             'join',
             'node',
-            'joined'
-        ]
+            'joined',
+        ],
     },
     {
-        'word': 'okjres',
-        'subset': [
+        word: 'okjres',
+        subset: [
             'ers',
             'joe',
             'ore',
@@ -15845,12 +15847,12 @@ export const GAMES = [
             'jerks',
             'joker',
             'jokes',
-            'jokers'
-        ]
+            'jokers',
+        ],
     },
     {
-        'word': 'tkietn',
-        'subset': [
+        word: 'tkietn',
+        subset: [
             'ink',
             'ken',
             'kin',
@@ -15866,12 +15868,12 @@ export const GAMES = [
             'knit',
             'nite',
             'tent',
-            'kitten'
-        ]
+            'kitten',
+        ],
     },
     {
-        'word': 'alwnma',
-        'subset': [
+        word: 'alwnma',
+        subset: [
             'ala',
             'ama',
             'ana',
@@ -15887,12 +15889,12 @@ export const GAMES = [
             'anal',
             'lama',
             'lawn',
-            'lawman'
-        ]
+            'lawman',
+        ],
     },
     {
-        'word': 'leegau',
-        'subset': [
+        word: 'leegau',
+        subset: [
             'age',
             'ale',
             'eel',
@@ -15908,12 +15910,12 @@ export const GAMES = [
             'glue',
             'luge',
             'eagle',
-            'league'
-        ]
+            'league',
+        ],
     },
     {
-        'word': 'leesns',
-        'subset': [
+        word: 'leesns',
+        subset: [
             'eel',
             'ess',
             'lee',
@@ -15929,12 +15931,12 @@ export const GAMES = [
             'sees',
             'sense',
             'lenses',
-            'lessen'
-        ]
+            'lessen',
+        ],
     },
     {
-        'word': 'sleesn',
-        'subset': [
+        word: 'sleesn',
+        subset: [
             'eel',
             'ess',
             'lee',
@@ -15950,12 +15952,12 @@ export const GAMES = [
             'sees',
             'sense',
             'lenses',
-            'lessen'
-        ]
+            'lessen',
+        ],
     },
     {
-        'word': 'milist',
-        'subset': [
+        word: 'milist',
+        subset: [
             'its',
             'lis',
             'lit',
@@ -15971,12 +15973,12 @@ export const GAMES = [
             'slim',
             'slit',
             'limit',
-            'limits'
-        ]
+            'limits',
+        ],
     },
     {
-        'word': 'linuep',
-        'subset': [
+        word: 'linuep',
+        subset: [
             'lei',
             'lie',
             'lin',
@@ -15992,12 +15994,12 @@ export const GAMES = [
             'line',
             'pile',
             'pine',
-            'lineup'
-        ]
+            'lineup',
+        ],
     },
     {
-        'word': 'lielvy',
-        'subset': [
+        word: 'lielvy',
+        subset: [
             'ell',
             'ill',
             'ivy',
@@ -16013,12 +16015,12 @@ export const GAMES = [
             'vile',
             'vill',
             'yell',
-            'lively'
-        ]
+            'lively',
+        ],
     },
     {
-        'word': 'eolkcr',
-        'subset': [
+        word: 'eolkcr',
+        subset: [
             'col',
             'cor',
             'elk',
@@ -16034,12 +16036,12 @@ export const GAMES = [
             'rock',
             'role',
             'clerk',
-            'locker'
-        ]
+            'locker',
+        ],
     },
     {
-        'word': 'cdlkue',
-        'subset': [
+        word: 'cdlkue',
+        subset: [
             'cud',
             'cue',
             'del',
@@ -16055,12 +16057,12 @@ export const GAMES = [
             'duke',
             'luce',
             'luck',
-            'lucked'
-        ]
+            'lucked',
+        ],
     },
     {
-        'word': 'dimway',
-        'subset': [
+        word: 'dimway',
+        subset: [
             'aid',
             'aim',
             'ami',
@@ -16076,12 +16078,12 @@ export const GAMES = [
             'yam',
             'yaw',
             'maid',
-            'midway'
-        ]
+            'midway',
+        ],
     },
     {
-        'word': 'llmier',
-        'subset': [
+        word: 'llmier',
+        subset: [
             'ell',
             'elm',
             'ill',
@@ -16097,12 +16099,12 @@ export const GAMES = [
             'mile',
             'mill',
             'rile',
-            'miller'
-        ]
+            'miller',
+        ],
     },
     {
-        'word': 'ismrey',
-        'subset': [
+        word: 'ismrey',
+        subset: [
             'ems',
             'ers',
             'mis',
@@ -16118,12 +16120,12 @@ export const GAMES = [
             'rise',
             'semi',
             'sire',
-            'misery'
-        ]
+            'misery',
+        ],
     },
     {
-        'word': 'ryemtl',
-        'subset': [
+        word: 'ryemtl',
+        subset: [
             'elm',
             'let',
             'lye',
@@ -16139,12 +16141,12 @@ export const GAMES = [
             'term',
             'trey',
             'tyre',
-            'myrtle'
-        ]
+            'myrtle',
+        ],
     },
     {
-        'word': 'nieesc',
-        'subset': [
+        word: 'nieesc',
+        subset: [
             'cee',
             'ice',
             'ins',
@@ -16160,12 +16162,12 @@ export const GAMES = [
             'niece',
             'scene',
             'since',
-            'nieces'
-        ]
+            'nieces',
+        ],
     },
     {
-        'word': 'inotfy',
-        'subset': [
+        word: 'inotfy',
+        subset: [
             'fin',
             'fit',
             'ion',
@@ -16181,12 +16183,12 @@ export const GAMES = [
             'tiny',
             'tony',
             'nifty',
-            'notify'
-        ]
+            'notify',
+        ],
     },
     {
-        'word': 'ymnoph',
-        'subset': [
+        word: 'ymnoph',
+        subset: [
             'hon',
             'hop',
             'hoy',
@@ -16202,12 +16204,12 @@ export const GAMES = [
             'pony',
             'nymph',
             'phony',
-            'nympho'
-        ]
+            'nympho',
+        ],
     },
     {
-        'word': 'ofefdn',
-        'subset': [
+        word: 'ofefdn',
+        subset: [
             'den',
             'doe',
             'don',
@@ -16223,12 +16225,12 @@ export const GAMES = [
             'fend',
             'fond',
             'node',
-            'offend'
-        ]
+            'offend',
+        ],
     },
     {
-        'word': 'aekyod',
-        'subset': [
+        word: 'aekyod',
+        subset: [
             'ado',
             'aye',
             'day',
@@ -16244,12 +16246,12 @@ export const GAMES = [
             'dyke',
             'okay',
             'yoke',
-            'okayed'
-        ]
+            'okayed',
+        ],
     },
     {
-        'word': 'ovreod',
-        'subset': [
+        word: 'ovreod',
+        subset: [
             'doe',
             'ode',
             'ore',
@@ -16265,12 +16267,12 @@ export const GAMES = [
             'rode',
             'drove',
             'rodeo',
-            'overdo'
-        ]
+            'overdo',
+        ],
     },
     {
-        'word': 'passse',
-        'subset': [
+        word: 'passse',
+        subset: [
             'ape',
             'ass',
             'ess',
@@ -16286,12 +16288,12 @@ export const GAMES = [
             'seas',
             'spas',
             'asses',
-            'passes'
-        ]
+            'passes',
+        ],
     },
     {
-        'word': 'cpeied',
-        'subset': [
+        word: 'cpeied',
+        subset: [
             'cee',
             'dee',
             'die',
@@ -16307,12 +16309,12 @@ export const GAMES = [
             'peed',
             'pied',
             'piece',
-            'pieced'
-        ]
+            'pieced',
+        ],
     },
     {
-        'word': 'tiepid',
-        'subset': [
+        word: 'tiepid',
+        subset: [
             'die',
             'dip',
             'dit',
@@ -16328,12 +16330,12 @@ export const GAMES = [
             'tide',
             'tied',
             'tepid',
-            'pitied'
-        ]
+            'pitied',
+        ],
     },
     {
-        'word': 'pgkoin',
-        'subset': [
+        word: 'pgkoin',
+        subset: [
             'gin',
             'ink',
             'ion',
@@ -16349,12 +16351,12 @@ export const GAMES = [
             'ping',
             'pink',
             'pong',
-            'poking'
-        ]
+            'poking',
+        ],
     },
     {
-        'word': 'oncohp',
-        'subset': [
+        word: 'oncohp',
+        subset: [
             'con',
             'coo',
             'cop',
@@ -16370,12 +16372,12 @@ export const GAMES = [
             'hoop',
             'pooh',
             'pooch',
-            'poncho'
-        ]
+            'poncho',
+        ],
     },
     {
-        'word': 'oprnos',
-        'subset': [
+        word: 'oprnos',
+        subset: [
             'noo',
             'nor',
             'nos',
@@ -16391,12 +16393,12 @@ export const GAMES = [
             'porno',
             'snoop',
             'spoon',
-            'pornos'
-        ]
+            'pornos',
+        ],
     },
     {
-        'word': 'rpetty',
-        'subset': [
+        word: 'rpetty',
+        subset: [
             'per',
             'pet',
             'pry',
@@ -16412,12 +16414,12 @@ export const GAMES = [
             'type',
             'tyre',
             'petty',
-            'pretty'
-        ]
+            'pretty',
+        ],
     },
     {
-        'word': 'rpofso',
-        'subset': [
+        word: 'rpofso',
+        subset: [
             'fop',
             'for',
             'fro',
@@ -16433,12 +16435,12 @@ export const GAMES = [
             'poofs',
             'proof',
             'roofs',
-            'proofs'
-        ]
+            'proofs',
+        ],
     },
     {
-        'word': 'piknug',
-        'subset': [
+        word: 'piknug',
+        subset: [
             'gin',
             'gun',
             'ink',
@@ -16454,12 +16456,12 @@ export const GAMES = [
             'ping',
             'pink',
             'punk',
-            'puking'
-        ]
+            'puking',
+        ],
     },
     {
-        'word': 'puipsl',
-        'subset': [
+        word: 'puipsl',
+        subset: [
             'lip',
             'lis',
             'pip',
@@ -16475,12 +16477,12 @@ export const GAMES = [
             'pulp',
             'slip',
             'pupil',
-            'pupils'
-        ]
+            'pupils',
+        ],
     },
     {
-        'word': 'lupyer',
-        'subset': [
+        word: 'lupyer',
+        subset: [
             'lye',
             'per',
             'pry',
@@ -16496,12 +16498,12 @@ export const GAMES = [
             'rely',
             'rule',
             'reply',
-            'purely'
-        ]
+            'purely',
+        ],
     },
     {
-        'word': 'uphess',
-        'subset': [
+        word: 'uphess',
+        subset: [
             'ess',
             'hep',
             'hue',
@@ -16517,12 +16519,12 @@ export const GAMES = [
             'shes',
             'sues',
             'uses',
-            'pushes'
-        ]
+            'pushes',
+        ],
     },
     {
-        'word': 'eronrb',
-        'subset': [
+        word: 'eronrb',
+        subset: [
             'ben',
             'bro',
             'brr',
@@ -16538,12 +16540,12 @@ export const GAMES = [
             'bren',
             'robe',
             'boner',
-            'reborn'
-        ]
+            'reborn',
+        ],
     },
     {
-        'word': 'icreet',
-        'subset': [
+        word: 'icreet',
+        subset: [
             'cee',
             'ere',
             'ice',
@@ -16559,12 +16561,12 @@ export const GAMES = [
             'tire',
             'tree',
             'erect',
-            'recite'
-        ]
+            'recite',
+        ],
     },
     {
-        'word': 'erflex',
-        'subset': [
+        word: 'erflex',
+        subset: [
             'eel',
             'elf',
             'ere',
@@ -16580,12 +16582,12 @@ export const GAMES = [
             'free',
             'reef',
             'reel',
-            'reflex'
-        ]
+            'reflex',
+        ],
     },
     {
-        'word': 'reufte',
-        'subset': [
+        word: 'reufte',
+        subset: [
             'ere',
             'fee',
             'fer',
@@ -16601,12 +16603,12 @@ export const GAMES = [
             'tree',
             'true',
             'turf',
-            'refute'
-        ]
+            'refute',
+        ],
     },
     {
-        'word': 'rmevoe',
-        'subset': [
+        word: 'rmevoe',
+        subset: [
             'ere',
             'eve',
             'mor',
@@ -16622,12 +16624,12 @@ export const GAMES = [
             'move',
             'over',
             'veer',
-            'remove'
-        ]
+            'remove',
+        ],
     },
     {
-        'word': 'ewnron',
-        'subset': [
+        word: 'ewnron',
+        subset: [
             'new',
             'nor',
             'now',
@@ -16643,12 +16645,12 @@ export const GAMES = [
             'wore',
             'worn',
             'owner',
-            'renown'
-        ]
+            'renown',
+        ],
     },
     {
-        'word': 'rveewi',
-        'subset': [
+        word: 'rveewi',
+        subset: [
             'ere',
             'eve',
             'ewe',
@@ -16664,12 +16666,12 @@ export const GAMES = [
             'were',
             'wire',
             'review',
-            'viewer'
-        ]
+            'viewer',
+        ],
     },
     {
-        'word': 'rsiing',
-        'subset': [
+        word: 'rsiing',
+        subset: [
             'gin',
             'ins',
             'rig',
@@ -16685,12 +16687,12 @@ export const GAMES = [
             'sing',
             'grins',
             'rings',
-            'rising'
-        ]
+            'rising',
+        ],
     },
     {
-        'word': 'orcetk',
-        'subset': [
+        word: 'orcetk',
+        subset: [
             'cor',
             'cot',
             'ore',
@@ -16706,12 +16708,12 @@ export const GAMES = [
             'toke',
             'tore',
             'trek',
-            'rocket'
-        ]
+            'rocket',
+        ],
     },
     {
-        'word': 'soroec',
-        'subset': [
+        word: 'soroec',
+        subset: [
             'coo',
             'cor',
             'cos',
@@ -16727,12 +16729,12 @@ export const GAMES = [
             'rose',
             'sore',
             'score',
-            'roscoe'
-        ]
+            'roscoe',
+        ],
     },
     {
-        'word': 'alsyra',
-        'subset': [
+        word: 'alsyra',
+        subset: [
             'ala',
             'als',
             'lar',
@@ -16748,12 +16750,12 @@ export const GAMES = [
             'lays',
             'rays',
             'slay',
-            'salary'
-        ]
+            'salary',
+        ],
     },
     {
-        'word': 'srecen',
-        'subset': [
+        word: 'srecen',
+        subset: [
             'cee',
             'ere',
             'ers',
@@ -16769,12 +16771,12 @@ export const GAMES = [
             'seer',
             'scene',
             'sneer',
-            'screen'
-        ]
+            'screen',
+        ],
     },
     {
-        'word': 'eesaws',
-        'subset': [
+        word: 'eesaws',
+        subset: [
             'ass',
             'awe',
             'ess',
@@ -16790,12 +16792,12 @@ export const GAMES = [
             'seas',
             'sees',
             'eases',
-            'seesaw'
-        ]
+            'seesaw',
+        ],
     },
     {
-        'word': 'elscte',
-        'subset': [
+        word: 'elscte',
+        subset: [
             'cee',
             'eel',
             'lee',
@@ -16811,12 +16813,12 @@ export const GAMES = [
             'elect',
             'sleet',
             'steel',
-            'select'
-        ]
+            'select',
+        ],
     },
     {
-        'word': 'esller',
-        'subset': [
+        word: 'esller',
+        subset: [
             'eel',
             'ell',
             'ere',
@@ -16832,12 +16834,12 @@ export const GAMES = [
             'seer',
             'sell',
             'reels',
-            'seller'
-        ]
+            'seller',
+        ],
     },
     {
-        'word': 'sensve',
-        'subset': [
+        word: 'sensve',
+        subset: [
             'ess',
             'eve',
             'nee',
@@ -16853,12 +16855,12 @@ export const GAMES = [
             'evens',
             'sense',
             'seven',
-            'sevens'
-        ]
+            'sevens',
+        ],
     },
     {
-        'word': 'ahmasn',
-        'subset': [
+        word: 'ahmasn',
+        subset: [
             'aha',
             'ama',
             'ana',
@@ -16874,12 +16876,12 @@ export const GAMES = [
             'hams',
             'mash',
             'sham',
-            'shaman'
-        ]
+            'shaman',
+        ],
     },
     {
-        'word': 'ikylsc',
-        'subset': [
+        word: 'ikylsc',
+        subset: [
             'ick',
             'icy',
             'ilk',
@@ -16895,12 +16897,12 @@ export const GAMES = [
             'licks',
             'silky',
             'slick',
-            'sickly'
-        ]
+            'sickly',
+        ],
     },
     {
-        'word': 'mismre',
-        'subset': [
+        word: 'mismre',
+        subset: [
             'ems',
             'ers',
             'mis',
@@ -16916,12 +16918,12 @@ export const GAMES = [
             'semi',
             'sire',
             'mimes',
-            'simmer'
-        ]
+            'simmer',
+        ],
     },
     {
-        'word': 'msinoy',
-        'subset': [
+        word: 'msinoy',
+        subset: [
             'ins',
             'ion',
             'mis',
@@ -16937,12 +16939,12 @@ export const GAMES = [
             'ions',
             'nosy',
             'noisy',
-            'simony'
-        ]
+            'simony',
+        ],
     },
     {
-        'word': 'mksipy',
-        'subset': [
+        word: 'mksipy',
+        subset: [
             'imp',
             'kip',
             'mis',
@@ -16958,12 +16960,12 @@ export const GAMES = [
             'skip',
             'skimp',
             'spiky',
-            'skimpy'
-        ]
+            'skimpy',
+        ],
     },
     {
-        'word': 'sslack',
-        'subset': [
+        word: 'sslack',
+        subset: [
             'als',
             'ask',
             'ass',
@@ -16979,12 +16981,12 @@ export const GAMES = [
             'lacks',
             'sacks',
             'slack',
-            'slacks'
-        ]
+            'slacks',
+        ],
     },
     {
-        'word': 'lpsees',
-        'subset': [
+        word: 'lpsees',
+        subset: [
             'eel',
             'ess',
             'lee',
@@ -17000,12 +17002,12 @@ export const GAMES = [
             'sees',
             'peels',
             'sleep',
-            'sleeps'
-        ]
+            'sleeps',
+        ],
     },
     {
-        'word': 'lsguho',
-        'subset': [
+        word: 'lsguho',
+        subset: [
             'hog',
             'hug',
             'log',
@@ -17021,12 +17023,12 @@ export const GAMES = [
             'slug',
             'soul',
             'ghoul',
-            'slough'
-        ]
+            'slough',
+        ],
     },
     {
-        'word': 'oonsze',
-        'subset': [
+        word: 'oonsze',
+        subset: [
             'noo',
             'nos',
             'one',
@@ -17042,12 +17044,12 @@ export const GAMES = [
             'noose',
             'ozone',
             'zones',
-            'snooze'
-        ]
+            'snooze',
+        ],
     },
     {
-        'word': 'csocer',
-        'subset': [
+        word: 'csocer',
+        subset: [
             'cor',
             'cos',
             'ers',
@@ -17063,12 +17065,12 @@ export const GAMES = [
             'rose',
             'sore',
             'score',
-            'soccer'
-        ]
+            'soccer',
+        ],
     },
     {
-        'word': 'dosium',
-        'subset': [
+        word: 'dosium',
+        subset: [
             'dim',
             'dis',
             'dom',
@@ -17084,12 +17086,12 @@ export const GAMES = [
             'sum',
             'sumo',
             'modus',
-            'sodium'
-        ]
+            'sodium',
+        ],
     },
     {
-        'word': 'soatna',
-        'subset': [
+        word: 'soatna',
+        subset: [
             'ana',
             'ant',
             'nos',
@@ -17105,12 +17107,12 @@ export const GAMES = [
             'snot',
             'tons',
             'santo',
-            'sonata'
-        ]
+            'sonata',
+        ],
     },
     {
-        'word': 'tsokcs',
-        'subset': [
+        word: 'tsokcs',
+        subset: [
             'cos',
             'cot',
             'sos',
@@ -17126,12 +17128,12 @@ export const GAMES = [
             'scots',
             'socks',
             'stock',
-            'stocks'
-        ]
+            'stocks',
+        ],
     },
     {
-        'word': 'ufsfer',
-        'subset': [
+        word: 'ufsfer',
+        subset: [
             'ers',
             'fer',
             'fur',
@@ -17147,12 +17149,12 @@ export const GAMES = [
             'sure',
             'surf',
             'user',
-            'suffer'
-        ]
+            'suffer',
+        ],
     },
     {
-        'word': 'gsyuar',
-        'subset': [
+        word: 'gsyuar',
+        subset: [
             'gar',
             'gas',
             'gay',
@@ -17168,12 +17170,12 @@ export const GAMES = [
             'rags',
             'rays',
             'sugar',
-            'sugary'
-        ]
+            'sugary',
+        ],
     },
     {
-        'word': 'esurfr',
-        'subset': [
+        word: 'esurfr',
+        subset: [
             'err',
             'ers',
             'fer',
@@ -17189,12 +17191,12 @@ export const GAMES = [
             'sure',
             'surf',
             'user',
-            'surfer'
-        ]
+            'surfer',
+        ],
     },
     {
-        'word': 'etmple',
-        'subset': [
+        word: 'etmple',
+        subset: [
             'eel',
             'elm',
             'lee',
@@ -17210,12 +17212,12 @@ export const GAMES = [
             'pele',
             'pelt',
             'temp',
-            'temple'
-        ]
+            'temple',
+        ],
     },
     {
-        'word': 'tended',
-        'subset': [
+        word: 'tended',
+        subset: [
             'dee',
             'den',
             'end',
@@ -17231,12 +17233,12 @@ export const GAMES = [
             'teen',
             'tend',
             'ended',
-            'tended'
-        ]
+            'tended',
+        ],
     },
     {
-        'word': 'hitvre',
-        'subset': [
+        word: 'hitvre',
+        subset: [
             'eth',
             'her',
             'hit',
@@ -17252,12 +17254,12 @@ export const GAMES = [
             'tier',
             'tire',
             'their',
-            'thrive'
-        ]
+            'thrive',
+        ],
     },
     {
-        'word': 'gihtst',
-        'subset': [
+        word: 'gihtst',
+        subset: [
             'git',
             'his',
             'hit',
@@ -17273,12 +17275,12 @@ export const GAMES = [
             'tits',
             'sight',
             'tight',
-            'tights'
-        ]
+            'tights',
+        ],
     },
     {
-        'word': 'tigyln',
-        'subset': [
+        word: 'tigyln',
+        subset: [
             'gin',
             'git',
             'lin',
@@ -17294,12 +17296,12 @@ export const GAMES = [
             'glint',
             'lying',
             'tying',
-            'tingly'
-        ]
+            'tingly',
+        ],
     },
     {
-        'word': 'uthoyc',
-        'subset': [
+        word: 'uthoyc',
+        subset: [
             'cot',
             'coy',
             'cut',
@@ -17315,12 +17317,12 @@ export const GAMES = [
             'thou',
             'touch',
             'youth',
-            'touchy'
-        ]
+            'touchy',
+        ],
     },
     {
-        'word': 'esstul',
-        'subset': [
+        word: 'esstul',
+        subset: [
             'ess',
             'let',
             'set',
@@ -17336,12 +17338,12 @@ export const GAMES = [
             'uses',
             'lusts',
             'sluts',
-            'tussle'
-        ]
+            'tussle',
+        ],
     },
     {
-        'word': 'yctoon',
-        'subset': [
+        word: 'yctoon',
+        subset: [
             'con',
             'coo',
             'cot',
@@ -17357,12 +17359,12 @@ export const GAMES = [
             'onto',
             'tony',
             'toon',
-            'tycoon'
-        ]
+            'tycoon',
+        ],
     },
     {
-        'word': 'tiypng',
-        'subset': [
+        word: 'tiypng',
+        subset: [
             'gin',
             'git',
             'nip',
@@ -17378,12 +17380,12 @@ export const GAMES = [
             'ting',
             'tiny',
             'tying',
-            'typing'
-        ]
+            'typing',
+        ],
     },
     {
-        'word': 'nofuld',
-        'subset': [
+        word: 'nofuld',
+        subset: [
             'dol',
             'don',
             'dun',
@@ -17399,12 +17401,12 @@ export const GAMES = [
             'loud',
             'undo',
             'found',
-            'unfold'
-        ]
+            'unfold',
+        ],
     },
     {
-        'word': 'fsunae',
-        'subset': [
+        word: 'fsunae',
+        subset: [
             'ane',
             'fan',
             'fen',
@@ -17420,12 +17422,12 @@ export const GAMES = [
             'fuse',
             'safe',
             'sane',
-            'unsafe'
-        ]
+            'unsafe',
+        ],
     },
     {
-        'word': 'laveud',
-        'subset': [
+        word: 'laveud',
+        subset: [
             'ale',
             'ave',
             'del',
@@ -17441,12 +17443,12 @@ export const GAMES = [
             'lead',
             'veal',
             'value',
-            'valued'
-        ]
+            'valued',
+        ],
     },
     {
-        'word': 'vested',
-        'subset': [
+        word: 'vested',
+        subset: [
             'dee',
             'eve',
             'see',
@@ -17462,12 +17464,12 @@ export const GAMES = [
             'vets',
             'deets',
             'steed',
-            'vested'
-        ]
+            'vested',
+        ],
     },
     {
-        'word': 'vieewr',
-        'subset': [
+        word: 'vieewr',
+        subset: [
             'ere',
             'eve',
             'ewe',
@@ -17483,12 +17485,12 @@ export const GAMES = [
             'were',
             'wire',
             'review',
-            'viewer'
-        ]
+            'viewer',
+        ],
     },
     {
-        'word': 'vlcoas',
-        'subset': [
+        word: 'vlcoas',
+        subset: [
             'als',
             'col',
             'cos',
@@ -17504,12 +17506,12 @@ export const GAMES = [
             'oval',
             'coals',
             'vocal',
-            'vocals'
-        ]
+            'vocals',
+        ],
     },
     {
-        'word': 'niagwn',
-        'subset': [
+        word: 'niagwn',
+        subset: [
             'ain',
             'ani',
             'gin',
@@ -17525,12 +17527,12 @@ export const GAMES = [
             'gain',
             'gnaw',
             'wing',
-            'waning'
-        ]
+            'waning',
+        ],
     },
     {
-        'word': 'wxangi',
-        'subset': [
+        word: 'wxangi',
+        subset: [
             'ain',
             'ani',
             'gin',
@@ -17546,12 +17548,12 @@ export const GAMES = [
             'gain',
             'gnaw',
             'wing',
-            'waxing'
-        ]
+            'waxing',
+        ],
     },
     {
-        'word': 'enwire',
-        'subset': [
+        word: 'enwire',
+        subset: [
             'ere',
             'ewe',
             'nee',
@@ -17567,12 +17569,12 @@ export const GAMES = [
             'wire',
             'renew',
             'weiner',
-            'wiener'
-        ]
+            'wiener',
+        ],
     },
     {
-        'word': 'aohwkc',
-        'subset': [
+        word: 'aohwkc',
+        subset: [
             'cow',
             'haw',
             'how',
@@ -17588,12 +17590,12 @@ export const GAMES = [
             'whoa',
             'wacko',
             'whack',
-            'whacko'
-        ]
+            'whacko',
+        ],
     },
     {
-        'word': 'wheesl',
-        'subset': [
+        word: 'wheesl',
+        subset: [
             'eel',
             'ewe',
             'lee',
@@ -17609,12 +17611,12 @@ export const GAMES = [
             'heels',
             'welsh',
             'wheel',
-            'wheels'
-        ]
+            'wheels',
+        ],
     },
     {
-        'word': 'nweeir',
-        'subset': [
+        word: 'nweeir',
+        subset: [
             'ere',
             'ewe',
             'nee',
@@ -17630,12 +17632,12 @@ export const GAMES = [
             'wire',
             'renew',
             'weiner',
-            'wiener'
-        ]
+            'wiener',
+        ],
     },
     {
-        'word': 'wiendd',
-        'subset': [
+        word: 'wiendd',
+        subset: [
             'den',
             'dew',
             'did',
@@ -17651,12 +17653,12 @@ export const GAMES = [
             'wine',
             'dined',
             'widen',
-            'winded'
-        ]
+            'winded',
+        ],
     },
     {
-        'word': 'eszreo',
-        'subset': [
+        word: 'eszreo',
+        subset: [
             'ere',
             'ers',
             'ore',
@@ -17672,12 +17674,12 @@ export const GAMES = [
             'sore',
             'zero',
             'zeros',
-            'zeroes'
-        ]
+            'zeroes',
+        ],
     },
     {
-        'word': 'raccdo',
-        'subset': [
+        word: 'raccdo',
+        subset: [
             'ado',
             'arc',
             'cad',
@@ -17692,12 +17694,12 @@ export const GAMES = [
             'cord',
             'croc',
             'road',
-            'accord'
-        ]
+            'accord',
+        ],
     },
     {
-        'word': 'ofalat',
-        'subset': [
+        word: 'ofalat',
+        subset: [
             'aft',
             'ala',
             'alt',
@@ -17712,12 +17714,12 @@ export const GAMES = [
             'aloft',
             'fatal',
             'float',
-            'afloat'
-        ]
+            'afloat',
+        ],
     },
     {
-        'word': 'ailing',
-        'subset': [
+        word: 'ailing',
+        subset: [
             'ail',
             'ain',
             'ani',
@@ -17732,12 +17734,12 @@ export const GAMES = [
             'lang',
             'ling',
             'nail',
-            'ailing'
-        ]
+            'ailing',
+        ],
     },
     {
-        'word': 'llaeur',
-        'subset': [
+        word: 'llaeur',
+        subset: [
             'ale',
             'all',
             'are',
@@ -17752,12 +17754,12 @@ export const GAMES = [
             'real',
             'rule',
             'allure',
-            'laurel'
-        ]
+            'laurel',
+        ],
     },
     {
-        'word': 'oanint',
-        'subset': [
+        word: 'oanint',
+        subset: [
             'ain',
             'ani',
             'ant',
@@ -17772,12 +17774,12 @@ export const GAMES = [
             'anti',
             'into',
             'anoint',
-            'nation'
-        ]
+            'nation',
+        ],
     },
     {
-        'word': 'paepal',
-        'subset': [
+        word: 'paepal',
+        subset: [
             'ala',
             'ale',
             'ape',
@@ -17792,12 +17794,12 @@ export const GAMES = [
             'papa',
             'plea',
             'apple',
-            'appeal'
-        ]
+            'appeal',
+        ],
     },
     {
-        'word': 'rivear',
-        'subset': [
+        word: 'rivear',
+        subset: [
             'air',
             'are',
             'ave',
@@ -17812,12 +17814,12 @@ export const GAMES = [
             'rear',
             'vera',
             'river',
-            'arrive'
-        ]
+            'arrive',
+        ],
     },
     {
-        'word': 'ggabde',
-        'subset': [
+        word: 'ggabde',
+        subset: [
             'age',
             'bad',
             'bag',
@@ -17832,12 +17834,12 @@ export const GAMES = [
             'aged',
             'gage',
             'badge',
-            'bagged'
-        ]
+            'bagged',
+        ],
     },
     {
-        'word': 'beahlf',
-        'subset': [
+        word: 'beahlf',
+        subset: [
             'ale',
             'bah',
             'bel',
@@ -17852,12 +17854,12 @@ export const GAMES = [
             'heal',
             'leaf',
             'fable',
-            'behalf'
-        ]
+            'behalf',
+        ],
     },
     {
-        'word': 'bended',
-        'subset': [
+        word: 'bended',
+        subset: [
             'bed',
             'bee',
             'ben',
@@ -17872,12 +17874,12 @@ export const GAMES = [
             'deed',
             'need',
             'ended',
-            'bended'
-        ]
+            'bended',
+        ],
     },
     {
-        'word': 'bideir',
-        'subset': [
+        word: 'bideir',
+        subset: [
             'bed',
             'bid',
             'deb',
@@ -17892,12 +17894,12 @@ export const GAMES = [
             'dire',
             'ride',
             'bride',
-            'birdie'
-        ]
+            'birdie',
+        ],
     },
     {
-        'word': 'ttienb',
-        'subset': [
+        word: 'ttienb',
+        subset: [
             'ben',
             'bet',
             'bin',
@@ -17912,12 +17914,12 @@ export const GAMES = [
             'bite',
             'nite',
             'tent',
-            'bitten'
-        ]
+            'bitten',
+        ],
     },
     {
-        'word': 'blnask',
-        'subset': [
+        word: 'blnask',
+        subset: [
             'abs',
             'als',
             'ask',
@@ -17932,12 +17934,12 @@ export const GAMES = [
             'sank',
             'banks',
             'blank',
-            'blanks'
-        ]
+            'blanks',
+        ],
     },
     {
-        'word': 'blekos',
-        'subset': [
+        word: 'blekos',
+        subset: [
             'bel',
             'elk',
             'lob',
@@ -17952,12 +17954,12 @@ export const GAMES = [
             'sole',
             'bloke',
             'lobes',
-            'blokes'
-        ]
+            'blokes',
+        ],
     },
     {
-        'word': 'btloto',
-        'subset': [
+        word: 'btloto',
+        subset: [
             'boo',
             'bot',
             'lob',
@@ -17972,12 +17974,12 @@ export const GAMES = [
             'tool',
             'toot',
             'lotto',
-            'blotto'
-        ]
+            'blotto',
+        ],
     },
     {
-        'word': 'robebm',
-        'subset': [
+        word: 'robebm',
+        subset: [
             'bob',
             'bro',
             'ebb',
@@ -17992,12 +17994,12 @@ export const GAMES = [
             'bore',
             'more',
             'robe',
-            'bomber'
-        ]
+            'bomber',
+        ],
     },
     {
-        'word': 'rsibeb',
-        'subset': [
+        word: 'rsibeb',
+        subset: [
             'bib',
             'ebb',
             'ers',
@@ -18012,12 +18014,12 @@ export const GAMES = [
             'rise',
             'sire',
             'bribe',
-            'bribes'
-        ]
+            'bribes',
+        ],
     },
     {
-        'word': 'oorskb',
-        'subset': [
+        word: 'oorskb',
+        subset: [
             'boo',
             'bro',
             'orb',
@@ -18032,12 +18034,12 @@ export const GAMES = [
             'sook',
             'books',
             'brook',
-            'brooks'
-        ]
+            'brooks',
+        ],
     },
     {
-        'word': 'kublec',
-        'subset': [
+        word: 'kublec',
+        subset: [
             'bel',
             'cub',
             'cue',
@@ -18052,12 +18054,12 @@ export const GAMES = [
             'lube',
             'luce',
             'luck',
-            'buckle'
-        ]
+            'buckle',
+        ],
     },
     {
-        'word': 'ulbetl',
-        'subset': [
+        word: 'ulbetl',
+        subset: [
             'bel',
             'bet',
             'but',
@@ -18072,12 +18074,12 @@ export const GAMES = [
             'tell',
             'tube',
             'tulle',
-            'bullet'
-        ]
+            'bullet',
+        ],
     },
     {
-        'word': 'bshuel',
-        'subset': [
+        word: 'bshuel',
+        subset: [
             'bel',
             'bus',
             'hub',
@@ -18092,12 +18094,12 @@ export const GAMES = [
             'lush',
             'blues',
             'blush',
-            'bushel'
-        ]
+            'bushel',
+        ],
     },
     {
-        'word': 'betutr',
-        'subset': [
+        word: 'betutr',
+        subset: [
             'bet',
             'but',
             'rub',
@@ -18112,12 +18114,12 @@ export const GAMES = [
             'tube',
             'brute',
             'utter',
-            'butter'
-        ]
+            'butter',
+        ],
     },
     {
-        'word': 'nbutto',
-        'subset': [
+        word: 'nbutto',
+        subset: [
             'bot',
             'bun',
             'but',
@@ -18132,12 +18134,12 @@ export const GAMES = [
             'bunt',
             'butt',
             'unto',
-            'button'
-        ]
+            'button',
+        ],
     },
     {
-        'word': 'bleyni',
-        'subset': [
+        word: 'bleyni',
+        subset: [
             'bel',
             'ben',
             'bey',
@@ -18152,12 +18154,12 @@ export const GAMES = [
             'yin',
             'lien',
             'line',
-            'byline'
-        ]
+            'byline',
+        ],
     },
     {
-        'word': 'acanry',
-        'subset': [
+        word: 'acanry',
+        subset: [
             'ana',
             'any',
             'arc',
@@ -18172,12 +18174,12 @@ export const GAMES = [
             'nary',
             'racy',
             'yarn',
-            'canary'
-        ]
+            'canary',
+        ],
     },
     {
-        'word': 'anccel',
-        'subset': [
+        word: 'anccel',
+        subset: [
             'ace',
             'ale',
             'ane',
@@ -18192,12 +18194,12 @@ export const GAMES = [
             'lean',
             'clean',
             'lance',
-            'cancel'
-        ]
+            'cancel',
+        ],
     },
     {
-        'word': 'inacne',
-        'subset': [
+        word: 'inacne',
+        subset: [
             'ace',
             'ain',
             'ane',
@@ -18212,12 +18214,12 @@ export const GAMES = [
             'nice',
             'nine',
             'nance',
-            'canine'
-        ]
+            'canine',
+        ],
     },
     {
-        'word': 'ncaedn',
-        'subset': [
+        word: 'ncaedn',
+        subset: [
             'ace',
             'and',
             'ane',
@@ -18232,12 +18234,12 @@ export const GAMES = [
             'dean',
             'dance',
             'nance',
-            'canned'
-        ]
+            'canned',
+        ],
     },
     {
-        'word': 'aycman',
-        'subset': [
+        word: 'aycman',
+        subset: [
             'ama',
             'ana',
             'any',
@@ -18252,12 +18254,12 @@ export const GAMES = [
             'many',
             'maya',
             'mayan',
-            'cayman'
-        ]
+            'cayman',
+        ],
     },
     {
-        'word': 'leecyr',
-        'subset': [
+        word: 'leecyr',
+        subset: [
             'cee',
             'cry',
             'eel',
@@ -18272,12 +18274,12 @@ export const GAMES = [
             'reel',
             'rely',
             'leery',
-            'celery'
-        ]
+            'celery',
+        ],
     },
     {
-        'word': 'atythc',
-        'subset': [
+        word: 'atythc',
+        subset: [
             'act',
             'att',
             'cat',
@@ -18292,12 +18294,12 @@ export const GAMES = [
             'that',
             'catty',
             'yacht',
-            'chatty'
-        ]
+            'chatty',
+        ],
     },
     {
-        'word': 'eehrcy',
-        'subset': [
+        word: 'eehrcy',
+        subset: [
             'cee',
             'cry',
             'ere',
@@ -18312,12 +18314,12 @@ export const GAMES = [
             'here',
             'yech',
             'cheer',
-            'cheery'
-        ]
+            'cheery',
+        ],
     },
     {
-        'word': 'hucebr',
-        'subset': [
+        word: 'hucebr',
+        subset: [
             'cub',
             'cue',
             'cur',
@@ -18332,12 +18334,12 @@ export const GAMES = [
             'cure',
             'herb',
             'rube',
-            'cherub'
-        ]
+            'cherub',
+        ],
     },
     {
-        'word': 'hcooes',
-        'subset': [
+        word: 'hcooes',
+        subset: [
             'coo',
             'cos',
             'hoe',
@@ -18352,12 +18354,12 @@ export const GAMES = [
             'shoe',
             'shoo',
             'chose',
-            'choose'
-        ]
+            'choose',
+        ],
     },
     {
-        'word': 'lcevae',
-        'subset': [
+        word: 'lcevae',
+        subset: [
             'ace',
             'ale',
             'ave',
@@ -18372,12 +18374,12 @@ export const GAMES = [
             'lace',
             'veal',
             'leave',
-            'cleave'
-        ]
+            'cleave',
+        ],
     },
     {
-        'word': 'lyoonc',
-        'subset': [
+        word: 'lyoonc',
+        subset: [
             'col',
             'con',
             'coo',
@@ -18392,12 +18394,12 @@ export const GAMES = [
             'only',
             'colon',
             'loony',
-            'colony'
-        ]
+            'colony',
+        ],
     },
     {
-        'word': 'mcoypl',
-        'subset': [
+        word: 'mcoypl',
+        subset: [
             'col',
             'cop',
             'coy',
@@ -18412,12 +18414,12 @@ export const GAMES = [
             'moly',
             'ploy',
             'poly',
-            'comply'
-        ]
+            'comply',
+        ],
     },
     {
-        'word': 'cneorn',
-        'subset': [
+        word: 'cneorn',
+        subset: [
             'con',
             'cor',
             'nor',
@@ -18432,12 +18434,12 @@ export const GAMES = [
             'none',
             'once',
             'recon',
-            'conner'
-        ]
+            'conner',
+        ],
     },
     {
-        'word': 'oclore',
-        'subset': [
+        word: 'oclore',
+        subset: [
             'col',
             'coo',
             'cor',
@@ -18452,12 +18454,12 @@ export const GAMES = [
             'lore',
             'role',
             'color',
-            'cooler'
-        ]
+            'cooler',
+        ],
     },
     {
-        'word': 'ocpnig',
-        'subset': [
+        word: 'ocpnig',
+        subset: [
             'cog',
             'con',
             'cop',
@@ -18472,12 +18474,12 @@ export const GAMES = [
             'icon',
             'ping',
             'pong',
-            'coping'
-        ]
+            'coping',
+        ],
     },
     {
-        'word': 'coguar',
-        'subset': [
+        word: 'coguar',
+        subset: [
             'ago',
             'arc',
             'car',
@@ -18492,12 +18494,12 @@ export const GAMES = [
             'rag',
             'rug',
             'cargo',
-            'cougar'
-        ]
+            'cougar',
+        ],
     },
     {
-        'word': 'guohcs',
-        'subset': [
+        word: 'guohcs',
+        subset: [
             'cog',
             'cos',
             'hog',
@@ -18512,12 +18514,12 @@ export const GAMES = [
             'such',
             'cough',
             'hocus',
-            'coughs'
-        ]
+            'coughs',
+        ],
     },
     {
-        'word': 'abcrby',
-        'subset': [
+        word: 'abcrby',
+        subset: [
             'arc',
             'bar',
             'bay',
@@ -18532,12 +18534,12 @@ export const GAMES = [
             'carb',
             'crab',
             'racy',
-            'crabby'
-        ]
+            'crabby',
+        ],
     },
     {
-        'word': 'icrnge',
-        'subset': [
+        word: 'icrnge',
+        subset: [
             'eng',
             'gen',
             'gin',
@@ -18552,12 +18554,12 @@ export const GAMES = [
             'ring',
             'nicer',
             'reign',
-            'cringe'
-        ]
+            'cringe',
+        ],
     },
     {
-        'word': 'rcysut',
-        'subset': [
+        word: 'rcysut',
+        subset: [
             'cry',
             'cur',
             'cut',
@@ -18572,12 +18574,12 @@ export const GAMES = [
             'crust',
             'rusty',
             'crusty',
-            'curtsy'
-        ]
+            'curtsy',
+        ],
     },
     {
-        'word': 'scyurt',
-        'subset': [
+        word: 'scyurt',
+        subset: [
             'cry',
             'cur',
             'cut',
@@ -18592,12 +18594,12 @@ export const GAMES = [
             'crust',
             'rusty',
             'crusty',
-            'curtsy'
-        ]
+            'curtsy',
+        ],
     },
     {
-        'word': 'cbyrog',
-        'subset': [
+        word: 'cbyrog',
+        subset: [
             'boy',
             'bro',
             'cob',
@@ -18612,12 +18614,12 @@ export const GAMES = [
             'cory',
             'gory',
             'orgy',
-            'cyborg'
-        ]
+            'cyborg',
+        ],
     },
     {
-        'word': 'cdeerk',
-        'subset': [
+        word: 'cdeerk',
+        subset: [
             'cee',
             'dee',
             'ere',
@@ -18632,12 +18634,12 @@ export const GAMES = [
             'creed',
             'creek',
             'dreck',
-            'decker'
-        ]
+            'decker',
+        ],
     },
     {
-        'word': 'deefis',
-        'subset': [
+        word: 'deefis',
+        subset: [
             'dee',
             'die',
             'dis',
@@ -18652,12 +18654,12 @@ export const GAMES = [
             'seed',
             'side',
             'feeds',
-            'defies'
-        ]
+            'defies',
+        ],
     },
     {
-        'word': 'deveis',
-        'subset': [
+        word: 'deveis',
+        subset: [
             'dee',
             'die',
             'dis',
@@ -18672,12 +18674,12 @@ export const GAMES = [
             'seed',
             'side',
             'dives',
-            'devise'
-        ]
+            'devise',
+        ],
     },
     {
-        'word': 'ybuold',
-        'subset': [
+        word: 'ybuold',
+        subset: [
             'bod',
             'boy',
             'bud',
@@ -18692,12 +18694,12 @@ export const GAMES = [
             'bold',
             'duly',
             'loud',
-            'doubly'
-        ]
+            'doubly',
+        ],
     },
     {
-        'word': 'rievdr',
-        'subset': [
+        word: 'rievdr',
+        subset: [
             'die',
             'err',
             'red',
@@ -18712,12 +18714,12 @@ export const GAMES = [
             'drive',
             'rider',
             'river',
-            'driver'
-        ]
+            'driver',
+        ],
     },
     {
-        'word': 'dgryin',
-        'subset': [
+        word: 'dgryin',
+        subset: [
             'dig',
             'dry',
             'gin',
@@ -18732,12 +18734,12 @@ export const GAMES = [
             'dingy',
             'dying',
             'grind',
-            'drying'
-        ]
+            'drying',
+        ],
     },
     {
-        'word': 'idtede',
-        'subset': [
+        word: 'idtede',
+        subset: [
             'dee',
             'did',
             'die',
@@ -18752,12 +18754,12 @@ export const GAMES = [
             'teed',
             'tide',
             'tied',
-            'edited'
-        ]
+            'edited',
+        ],
     },
     {
-        'word': 'neegyr',
-        'subset': [
+        word: 'neegyr',
+        subset: [
             'eng',
             'ere',
             'eye',
@@ -18772,12 +18774,12 @@ export const GAMES = [
             'grey',
             'genre',
             'green',
-            'energy'
-        ]
+            'energy',
+        ],
     },
     {
-        'word': 'insegn',
-        'subset': [
+        word: 'insegn',
+        subset: [
             'eng',
             'gen',
             'gin',
@@ -18792,12 +18794,12 @@ export const GAMES = [
             'sing',
             'nines',
             'singe',
-            'ensign'
-        ]
+            'ensign',
+        ],
     },
     {
-        'word': 'etniyt',
-        'subset': [
+        word: 'etniyt',
+        subset: [
             'net',
             'ten',
             'tet',
@@ -18812,12 +18814,12 @@ export const GAMES = [
             'tiny',
             'yeti',
             'nitty',
-            'entity'
-        ]
+            'entity',
+        ],
     },
     {
-        'word': 'xleeis',
-        'subset': [
+        word: 'xleeis',
+        subset: [
             'eel',
             'lee',
             'lei',
@@ -18832,12 +18834,12 @@ export const GAMES = [
             'exes',
             'lies',
             'exile',
-            'exiles'
-        ]
+            'exiles',
+        ],
     },
     {
-        'word': 'nacfgi',
-        'subset': [
+        word: 'nacfgi',
+        subset: [
             'ain',
             'ani',
             'can',
@@ -18852,12 +18854,12 @@ export const GAMES = [
             'fang',
             'gain',
             'acing',
-            'facing'
-        ]
+            'facing',
+        ],
     },
     {
-        'word': 'lelfah',
-        'subset': [
+        word: 'lelfah',
+        subset: [
             'ale',
             'all',
             'elf',
@@ -18872,12 +18874,12 @@ export const GAMES = [
             'hell',
             'leaf',
             'fella',
-            'fellah'
-        ]
+            'fellah',
+        ],
     },
     {
-        'word': 'frelle',
-        'subset': [
+        word: 'frelle',
+        subset: [
             'eel',
             'elf',
             'ell',
@@ -18892,12 +18894,12 @@ export const GAMES = [
             'free',
             'reef',
             'reel',
-            'feller'
-        ]
+            'feller',
+        ],
     },
     {
-        'word': 'ciklef',
-        'subset': [
+        word: 'ciklef',
+        subset: [
             'elf',
             'elk',
             'ice',
@@ -18912,12 +18914,12 @@ export const GAMES = [
             'life',
             'like',
             'flick',
-            'fickle'
-        ]
+            'fickle',
+        ],
     },
     {
-        'word': 'ifrtte',
-        'subset': [
+        word: 'ifrtte',
+        subset: [
             'fer',
             'fir',
             'fit',
@@ -18932,12 +18934,12 @@ export const GAMES = [
             'tier',
             'tire',
             'trite',
-            'fitter'
-        ]
+            'fitter',
+        ],
     },
     {
-        'word': 'tfdooe',
-        'subset': [
+        word: 'tfdooe',
+        subset: [
             'doe',
             'dot',
             'fed',
@@ -18952,12 +18954,12 @@ export const GAMES = [
             'food',
             'foot',
             'toed',
-            'footed'
-        ]
+            'footed',
+        ],
     },
     {
-        'word': 'mrfeor',
-        'subset': [
+        word: 'mrfeor',
+        subset: [
             'err',
             'fer',
             'foe',
@@ -18972,12 +18974,12 @@ export const GAMES = [
             'from',
             'more',
             'former',
-            'reform'
-        ]
+            'reform',
+        ],
     },
     {
-        'word': 'fezrno',
-        'subset': [
+        word: 'fezrno',
+        subset: [
             'fen',
             'fer',
             'fez',
@@ -18992,12 +18994,12 @@ export const GAMES = [
             'zero',
             'zone',
             'froze',
-            'frozen'
-        ]
+            'frozen',
+        ],
     },
     {
-        'word': 'rfluga',
-        'subset': [
+        word: 'rfluga',
+        subset: [
             'arf',
             'fag',
             'far',
@@ -19012,12 +19014,12 @@ export const GAMES = [
             'rug',
             'flag',
             'gulf',
-            'frugal'
-        ]
+            'frugal',
+        ],
     },
     {
-        'word': 'iuofsn',
-        'subset': [
+        word: 'iuofsn',
+        subset: [
             'fin',
             'fun',
             'ifs',
@@ -19032,12 +19034,12 @@ export const GAMES = [
             'info',
             'ions',
             'nous',
-            'fusion'
-        ]
+            'fusion',
+        ],
     },
     {
-        'word': 'aglnlo',
-        'subset': [
+        word: 'aglnlo',
+        subset: [
             'ago',
             'all',
             'gal',
@@ -19052,12 +19054,12 @@ export const GAMES = [
             'long',
             'along',
             'logan',
-            'gallon'
-        ]
+            'gallon',
+        ],
     },
     {
-        'word': 'aggaer',
-        'subset': [
+        word: 'aggaer',
+        subset: [
             'aga',
             'age',
             'are',
@@ -19072,12 +19074,12 @@ export const GAMES = [
             'gage',
             'gear',
             'rage',
-            'garage'
-        ]
+            'garage',
+        ],
     },
     {
-        'word': 'ngemoe',
-        'subset': [
+        word: 'ngemoe',
+        subset: [
             'ego',
             'eng',
             'gee',
@@ -19092,12 +19094,12 @@ export const GAMES = [
             'nome',
             'omen',
             'gnome',
-            'genome'
-        ]
+            'genome',
+        ],
     },
     {
-        'word': 'glbaol',
-        'subset': [
+        word: 'glbaol',
+        subset: [
             'ago',
             'all',
             'bag',
@@ -19112,12 +19114,12 @@ export const GAMES = [
             'ball',
             'gall',
             'goal',
-            'global'
-        ]
+            'global',
+        ],
     },
     {
-        'word': 'gohcit',
-        'subset': [
+        word: 'gohcit',
+        subset: [
             'chi',
             'cog',
             'cot',
@@ -19132,12 +19134,12 @@ export const GAMES = [
             'tic',
             'chit',
             'itch',
-            'gothic'
-        ]
+            'gothic',
+        ],
     },
     {
-        'word': 'gourhc',
-        'subset': [
+        word: 'gourhc',
+        subset: [
             'cog',
             'cor',
             'cur',
@@ -19152,12 +19154,12 @@ export const GAMES = [
             'ouch',
             'cough',
             'rough',
-            'grouch'
-        ]
+            'grouch',
+        ],
     },
     {
-        'word': 'rugeny',
-        'subset': [
+        word: 'rugeny',
+        subset: [
             'eng',
             'gen',
             'gun',
@@ -19172,12 +19174,12 @@ export const GAMES = [
             'rune',
             'rung',
             'urge',
-            'gurney'
-        ]
+            'gurney',
+        ],
     },
     {
-        'word': 'hacked',
-        'subset': [
+        word: 'hacked',
+        subset: [
             'ace',
             'cad',
             'dah',
@@ -19192,12 +19194,12 @@ export const GAMES = [
             'head',
             'heck',
             'ached',
-            'hacked'
-        ]
+            'hacked',
+        ],
     },
     {
-        'word': 'hneadd',
-        'subset': [
+        word: 'hneadd',
+        subset: [
             'add',
             'and',
             'ane',
@@ -19212,12 +19214,12 @@ export const GAMES = [
             'dean',
             'hand',
             'head',
-            'handed'
-        ]
+            'handed',
+        ],
     },
     {
-        'word': 'nhavig',
-        'subset': [
+        word: 'nhavig',
+        subset: [
             'ain',
             'ani',
             'gin',
@@ -19232,12 +19234,12 @@ export const GAMES = [
             'hang',
             'nigh',
             'vain',
-            'having'
-        ]
+            'having',
+        ],
     },
     {
-        'word': 'azihng',
-        'subset': [
+        word: 'azihng',
+        subset: [
             'ain',
             'ani',
             'gin',
@@ -19252,12 +19254,12 @@ export const GAMES = [
             'nazi',
             'nigh',
             'zing',
-            'hazing'
-        ]
+            'hazing',
+        ],
     },
     {
-        'word': 'hcecit',
-        'subset': [
+        word: 'hcecit',
+        subset: [
             'chi',
             'eth',
             'hic',
@@ -19272,12 +19274,12 @@ export const GAMES = [
             'cite',
             'itch',
             'ethic',
-            'hectic'
-        ]
+            'hectic',
+        ],
     },
     {
-        'word': 'ckheiy',
-        'subset': [
+        word: 'ckheiy',
+        subset: [
             'chi',
             'hey',
             'hic',
@@ -19292,12 +19294,12 @@ export const GAMES = [
             'hike',
             'icky',
             'yech',
-            'hickey'
-        ]
+            'hickey',
+        ],
     },
     {
-        'word': 'itrhte',
-        'subset': [
+        word: 'itrhte',
+        subset: [
             'eth',
             'her',
             'hit',
@@ -19312,12 +19314,12 @@ export const GAMES = [
             'tire',
             'their',
             'trite',
-            'hitter'
-        ]
+            'hitter',
+        ],
     },
     {
-        'word': 'hesoob',
-        'subset': [
+        word: 'hesoob',
+        subset: [
             'boo',
             'hob',
             'hoe',
@@ -19332,12 +19334,12 @@ export const GAMES = [
             'oboe',
             'shoe',
             'shoo',
-            'hoboes'
-        ]
+            'hoboes',
+        ],
     },
     {
-        'word': 'kcyhoe',
-        'subset': [
+        word: 'kcyhoe',
+        subset: [
             'coy',
             'hey',
             'hoe',
@@ -19352,12 +19354,12 @@ export const GAMES = [
             'yoke',
             'choke',
             'hokey',
-            'hockey'
-        ]
+            'hockey',
+        ],
     },
     {
-        'word': 'hronos',
-        'subset': [
+        word: 'hronos',
+        subset: [
             'hon',
             'noh',
             'noo',
@@ -19372,12 +19374,12 @@ export const GAMES = [
             'soon',
             'honor',
             'horns',
-            'honors'
-        ]
+            'honors',
+        ],
     },
     {
-        'word': 'muhbel',
-        'subset': [
+        word: 'muhbel',
+        subset: [
             'bel',
             'bum',
             'elm',
@@ -19392,12 +19394,12 @@ export const GAMES = [
             'lube',
             'mule',
             'blume',
-            'humble'
-        ]
+            'humble',
+        ],
     },
     {
-        'word': 'nfanit',
-        'subset': [
+        word: 'nfanit',
+        subset: [
             'aft',
             'ain',
             'ani',
@@ -19412,12 +19414,12 @@ export const GAMES = [
             'tin',
             'anti',
             'faint',
-            'infant'
-        ]
+            'infant',
+        ],
     },
     {
-        'word': 'nifcet',
-        'subset': [
+        word: 'nifcet',
+        subset: [
             'fen',
             'fin',
             'fit',
@@ -19432,12 +19434,12 @@ export const GAMES = [
             'fine',
             'nice',
             'nite',
-            'infect'
-        ]
+            'infect',
+        ],
     },
     {
-        'word': 'dnilia',
-        'subset': [
+        word: 'dnilia',
+        subset: [
             'aid',
             'ail',
             'ain',
@@ -19452,12 +19454,12 @@ export const GAMES = [
             'land',
             'nail',
             'iliad',
-            'inlaid'
-        ]
+            'inlaid',
+        ],
     },
     {
-        'word': 'niasen',
-        'subset': [
+        word: 'niasen',
+        subset: [
             'ain',
             'ane',
             'ani',
@@ -19472,12 +19474,12 @@ export const GAMES = [
             'sine',
             'anise',
             'nines',
-            'insane'
-        ]
+            'insane',
+        ],
     },
     {
-        'word': 'rujies',
-        'subset': [
+        word: 'rujies',
+        subset: [
             'ers',
             'jus',
             'res',
@@ -19492,12 +19494,12 @@ export const GAMES = [
             'sire',
             'sure',
             'user',
-            'juries'
-        ]
+            'juries',
+        ],
     },
     {
-        'word': 'kndyil',
-        'subset': [
+        word: 'kndyil',
+        subset: [
             'ilk',
             'ink',
             'kid',
@@ -19512,12 +19514,12 @@ export const GAMES = [
             'kind',
             'link',
             'dinky',
-            'kindly'
-        ]
+            'kindly',
+        ],
     },
     {
-        'word': 'reulal',
-        'subset': [
+        word: 'reulal',
+        subset: [
             'ale',
             'all',
             'are',
@@ -19532,12 +19534,12 @@ export const GAMES = [
             'real',
             'rule',
             'allure',
-            'laurel'
-        ]
+            'laurel',
+        ],
     },
     {
-        'word': 'leawye',
-        'subset': [
+        word: 'leawye',
+        subset: [
             'ale',
             'awe',
             'aye',
@@ -19552,12 +19554,12 @@ export const GAMES = [
             'wee',
             'yaw',
             'yea',
-            'leeway'
-        ]
+            'leeway',
+        ],
     },
     {
-        'word': 'gtelnh',
-        'subset': [
+        word: 'gtelnh',
+        subset: [
             'eng',
             'eth',
             'gel',
@@ -19572,12 +19574,12 @@ export const GAMES = [
             'glen',
             'lent',
             'then',
-            'length'
-        ]
+            'length',
+        ],
     },
     {
-        'word': 'uolver',
-        'subset': [
+        word: 'uolver',
+        subset: [
             'luv',
             'ole',
             'ore',
@@ -19592,12 +19594,12 @@ export const GAMES = [
             'role',
             'rule',
             'lover',
-            'louvre'
-        ]
+            'louvre',
+        ],
     },
     {
-        'word': 'masess',
-        'subset': [
+        word: 'masess',
+        subset: [
             'ass',
             'ems',
             'ess',
@@ -19612,12 +19614,12 @@ export const GAMES = [
             'seas',
             'asses',
             'seams',
-            'masses'
-        ]
+            'masses',
+        ],
     },
     {
-        'word': 'haymem',
-        'subset': [
+        word: 'haymem',
+        subset: [
             'aye',
             'ham',
             'hay',
@@ -19632,12 +19634,12 @@ export const GAMES = [
             'yeh',
             'ahem',
             'yeah',
-            'mayhem'
-        ]
+            'mayhem',
+        ],
     },
     {
-        'word': 'edmlye',
-        'subset': [
+        word: 'edmlye',
+        subset: [
             'dee',
             'del',
             'dey',
@@ -19652,12 +19654,12 @@ export const GAMES = [
             'mel',
             'deem',
             'eyed',
-            'medley'
-        ]
+            'medley',
+        ],
     },
     {
-        'word': 'oohmlc',
-        'subset': [
+        word: 'oohmlc',
+        subset: [
             'col',
             'coo',
             'loo',
@@ -19672,12 +19674,12 @@ export const GAMES = [
             'loco',
             'loom',
             'mooch',
-            'moloch'
-        ]
+            'moloch',
+        ],
     },
     {
-        'word': 'okmeyn',
-        'subset': [
+        word: 'okmeyn',
+        subset: [
             'ken',
             'key',
             'men',
@@ -19692,12 +19694,12 @@ export const GAMES = [
             'omen',
             'yoke',
             'money',
-            'monkey'
-        ]
+            'monkey',
+        ],
     },
     {
-        'word': 'apnikn',
-        'subset': [
+        word: 'apnikn',
+        subset: [
             'ain',
             'ani',
             'ink',
@@ -19712,12 +19714,12 @@ export const GAMES = [
             'pain',
             'pina',
             'pink',
-            'napkin'
-        ]
+            'napkin',
+        ],
     },
     {
-        'word': 'toanni',
-        'subset': [
+        word: 'toanni',
+        subset: [
             'ain',
             'ani',
             'ant',
@@ -19732,12 +19734,12 @@ export const GAMES = [
             'anti',
             'into',
             'anoint',
-            'nation'
-        ]
+            'nation',
+        ],
     },
     {
-        'word': 'tnghiy',
-        'subset': [
+        word: 'tnghiy',
+        subset: [
             'gin',
             'git',
             'hit',
@@ -19752,12 +19754,12 @@ export const GAMES = [
             'night',
             'thing',
             'tying',
-            'nighty'
-        ]
+            'nighty',
+        ],
     },
     {
-        'word': 'ipndep',
-        'subset': [
+        word: 'ipndep',
+        subset: [
             'den',
             'die',
             'dip',
@@ -19772,12 +19774,12 @@ export const GAMES = [
             'pied',
             'pine',
             'pipe',
-            'nipped'
-        ]
+            'nipped',
+        ],
     },
     {
-        'word': 'ublnei',
-        'subset': [
+        word: 'ublnei',
+        subset: [
             'bel',
             'ben',
             'bin',
@@ -19792,12 +19794,12 @@ export const GAMES = [
             'lieu',
             'line',
             'lube',
-            'nubile'
-        ]
+            'nubile',
+        ],
     },
     {
-        'word': 'ogilng',
-        'subset': [
+        word: 'ogilng',
+        subset: [
             'gig',
             'gin',
             'ion',
@@ -19812,12 +19814,12 @@ export const GAMES = [
             'long',
             'going',
             'lingo',
-            'ogling'
-        ]
+            'ogling',
+        ],
     },
     {
-        'word': 'uotest',
-        'subset': [
+        word: 'uotest',
+        subset: [
             'ose',
             'out',
             'set',
@@ -19832,12 +19834,12 @@ export const GAMES = [
             'toes',
             'tote',
             'tots',
-            'outset'
-        ]
+            'outset',
+        ],
     },
     {
-        'word': 'vorlye',
-        'subset': [
+        word: 'vorlye',
+        subset: [
             'lye',
             'ole',
             'ore',
@@ -19852,12 +19854,12 @@ export const GAMES = [
             'very',
             'yore',
             'lover',
-            'overly'
-        ]
+            'overly',
+        ],
     },
     {
-        'word': 'leopep',
-        'subset': [
+        word: 'leopep',
+        subset: [
             'eel',
             'lee',
             'lop',
@@ -19872,12 +19874,12 @@ export const GAMES = [
             'pole',
             'pope',
             'elope',
-            'people'
-        ]
+            'people',
+        ],
     },
     {
-        'word': 'phooey',
-        'subset': [
+        word: 'phooey',
+        subset: [
             'hep',
             'hey',
             'hoe',
@@ -19892,12 +19894,12 @@ export const GAMES = [
             'hype',
             'hypo',
             'pooh',
-            'phooey'
-        ]
+            'phooey',
+        ],
     },
     {
-        'word': 'rispsy',
-        'subset': [
+        word: 'rispsy',
+        subset: [
             'pis',
             'pry',
             'psi',
@@ -19912,12 +19914,12 @@ export const GAMES = [
             'sirs',
             'spry',
             'priss',
-            'prissy'
-        ]
+            'prissy',
+        ],
     },
     {
-        'word': 'upcrke',
-        'subset': [
+        word: 'upcrke',
+        subset: [
             'cue',
             'cup',
             'cur',
@@ -19932,12 +19934,12 @@ export const GAMES = [
             'puck',
             'puke',
             'pure',
-            'pucker'
-        ]
+            'pucker',
+        ],
     },
     {
-        'word': 'seeuqr',
-        'subset': [
+        word: 'seeuqr',
+        subset: [
             'ere',
             'ers',
             'ree',
@@ -19952,12 +19954,12 @@ export const GAMES = [
             'sure',
             'user',
             'queer',
-            'queers'
-        ]
+            'queers',
+        ],
     },
     {
-        'word': 'qiults',
-        'subset': [
+        word: 'qiults',
+        subset: [
             'its',
             'lis',
             'lit',
@@ -19972,12 +19974,12 @@ export const GAMES = [
             'suit',
             'quilt',
             'quits',
-            'quilts'
-        ]
+            'quilts',
+        ],
     },
     {
-        'word': 'erfrom',
-        'subset': [
+        word: 'erfrom',
+        subset: [
             'err',
             'fer',
             'foe',
@@ -19992,12 +19994,12 @@ export const GAMES = [
             'from',
             'more',
             'former',
-            'reform'
-        ]
+            'reform',
+        ],
     },
     {
-        'word': 'dyhmre',
-        'subset': [
+        word: 'dyhmre',
+        subset: [
             'dey',
             'dry',
             'dye',
@@ -20012,12 +20014,12 @@ export const GAMES = [
             'dyer',
             'herd',
             'rhyme',
-            'rhymed'
-        ]
+            'rhymed',
+        ],
     },
     {
-        'word': 'vrnoig',
-        'subset': [
+        word: 'vrnoig',
+        subset: [
             'gin',
             'gor',
             'ion',
@@ -20032,12 +20034,12 @@ export const GAMES = [
             'vino',
             'groin',
             'vigor',
-            'roving'
-        ]
+            'roving',
+        ],
     },
     {
-        'word': 'saagev',
-        'subset': [
+        word: 'saagev',
+        subset: [
             'aga',
             'age',
             'ava',
@@ -20052,12 +20054,12 @@ export const GAMES = [
             'sage',
             'save',
             'vase',
-            'savage'
-        ]
+            'savage',
+        ],
     },
     {
-        'word': 'scnset',
-        'subset': [
+        word: 'scnset',
+        subset: [
             'ess',
             'net',
             'sec',
@@ -20072,12 +20074,12 @@ export const GAMES = [
             'tens',
             'cents',
             'scent',
-            'scents'
-        ]
+            'scents',
+        ],
     },
     {
-        'word': 'lhcsoo',
-        'subset': [
+        word: 'lhcsoo',
+        subset: [
             'col',
             'coo',
             'cos',
@@ -20092,12 +20094,12 @@ export const GAMES = [
             'shoo',
             'solo',
             'cools',
-            'school'
-        ]
+            'school',
+        ],
     },
     {
-        'word': 'scewry',
-        'subset': [
+        word: 'scewry',
+        subset: [
             'cry',
             'ers',
             'rec',
@@ -20112,12 +20114,12 @@ export const GAMES = [
             'scry',
             'crews',
             'screw',
-            'screwy'
-        ]
+            'screwy',
+        ],
     },
     {
-        'word': 'sttele',
-        'subset': [
+        word: 'sttele',
+        subset: [
             'eel',
             'lee',
             'let',
@@ -20132,12 +20134,12 @@ export const GAMES = [
             'test',
             'sleet',
             'steel',
-            'settle'
-        ]
+            'settle',
+        ],
     },
     {
-        'word': 'rseswe',
-        'subset': [
+        word: 'rseswe',
+        subset: [
             'ere',
             'ers',
             'ess',
@@ -20152,12 +20154,12 @@ export const GAMES = [
             'sees',
             'were',
             'sewer',
-            'sewers'
-        ]
+            'sewers',
+        ],
     },
     {
-        'word': 'exsism',
-        'subset': [
+        word: 'exsism',
+        subset: [
             'ems',
             'ess',
             'mis',
@@ -20172,12 +20174,12 @@ export const GAMES = [
             'sims',
             'mixes',
             'sixes',
-            'sexism'
-        ]
+            'sexism',
+        ],
     },
     {
-        'word': 'shaybb',
-        'subset': [
+        word: 'shaybb',
+        subset: [
             'abs',
             'ash',
             'bah',
@@ -20192,12 +20194,12 @@ export const GAMES = [
             'bash',
             'bays',
             'shay',
-            'shabby'
-        ]
+            'shabby',
+        ],
     },
     {
-        'word': 'esehst',
-        'subset': [
+        word: 'esehst',
+        subset: [
             'ess',
             'eth',
             'see',
@@ -20212,12 +20214,12 @@ export const GAMES = [
             'sheet',
             'these',
             'sheets',
-            'theses'
-        ]
+            'theses',
+        ],
     },
     {
-        'word': 'shlley',
-        'subset': [
+        word: 'shlley',
+        subset: [
             'ell',
             'hey',
             'lye',
@@ -20232,12 +20234,12 @@ export const GAMES = [
             'hells',
             'shell',
             'yells',
-            'shelly'
-        ]
+            'shelly',
+        ],
     },
     {
-        'word': 'uhksnr',
-        'subset': [
+        word: 'uhksnr',
+        subset: [
             'hun',
             'run',
             'sun',
@@ -20252,12 +20254,12 @@ export const GAMES = [
             'sunk',
             'urns',
             'hunks',
-            'shrunk'
-        ]
+            'shrunk',
+        ],
     },
     {
-        'word': 'iscsko',
-        'subset': [
+        word: 'iscsko',
+        subset: [
             'cos',
             'ick',
             'koi',
@@ -20272,12 +20274,12 @@ export const GAMES = [
             'sock',
             'sicko',
             'socks',
-            'sickos'
-        ]
+            'sickos',
+        ],
     },
     {
-        'word': 'islkls',
-        'subset': [
+        word: 'islkls',
+        subset: [
             'ilk',
             'ill',
             'lis',
@@ -20292,12 +20294,12 @@ export const GAMES = [
             'kills',
             'silks',
             'skill',
-            'skills'
-        ]
+            'skills',
+        ],
     },
     {
-        'word': 'nslgis',
-        'subset': [
+        word: 'nslgis',
+        subset: [
             'gin',
             'ins',
             'lin',
@@ -20312,12 +20314,12 @@ export const GAMES = [
             'signs',
             'sings',
             'sling',
-            'slings'
-        ]
+            'slings',
+        ],
     },
     {
-        'word': 'yonosp',
-        'subset': [
+        word: 'yonosp',
+        subset: [
             'noo',
             'nos',
             'ops',
@@ -20332,12 +20334,12 @@ export const GAMES = [
             'soon',
             'snoop',
             'spoon',
-            'snoopy'
-        ]
+            'snoopy',
+        ],
     },
     {
-        'word': 'osvles',
-        'subset': [
+        word: 'osvles',
+        subset: [
             'ess',
             'ole',
             'ose',
@@ -20352,12 +20354,12 @@ export const GAMES = [
             'loves',
             'soles',
             'solve',
-            'solves'
-        ]
+            'solves',
+        ],
     },
     {
-        'word': 'spassm',
-        'subset': [
+        word: 'spassm',
+        subset: [
             'amp',
             'ass',
             'map',
@@ -20372,12 +20374,12 @@ export const GAMES = [
             'saps',
             'spas',
             'spasm',
-            'spasms'
-        ]
+            'spasms',
+        ],
     },
     {
-        'word': 'nspcee',
-        'subset': [
+        word: 'nspcee',
+        subset: [
             'cee',
             'nee',
             'pee',
@@ -20392,12 +20394,12 @@ export const GAMES = [
             'seep',
             'pence',
             'scene',
-            'spence'
-        ]
+            'spence',
+        ],
     },
     {
-        'word': 'stands',
-        'subset': [
+        word: 'stands',
+        subset: [
             'ads',
             'and',
             'ant',
@@ -20412,12 +20414,12 @@ export const GAMES = [
             'sans',
             'sands',
             'stand',
-            'stands'
-        ]
+            'stands',
+        ],
     },
     {
-        'word': 'steppe',
-        'subset': [
+        word: 'steppe',
+        subset: [
             'pee',
             'pep',
             'pet',
@@ -20432,12 +20434,12 @@ export const GAMES = [
             'step',
             'peeps',
             'steep',
-            'steppe'
-        ]
+            'steppe',
+        ],
     },
     {
-        'word': 'isttsl',
-        'subset': [
+        word: 'isttsl',
+        subset: [
             'its',
             'lis',
             'lit',
@@ -20452,12 +20454,12 @@ export const GAMES = [
             'tilt',
             'tits',
             'lists',
-            'stilts'
-        ]
+            'stilts',
+        ],
     },
     {
-        'word': 'tuspms',
-        'subset': [
+        word: 'tuspms',
+        subset: [
             'pus',
             'put',
             'sum',
@@ -20472,12 +20474,12 @@ export const GAMES = [
             'sump',
             'sums',
             'stump',
-            'stumps'
-        ]
+            'stumps',
+        ],
     },
     {
-        'word': 'mseumd',
-        'subset': [
+        word: 'mseumd',
+        subset: [
             'due',
             'ems',
             'med',
@@ -20492,12 +20494,12 @@ export const GAMES = [
             'muse',
             'sued',
             'used',
-            'summed'
-        ]
+            'summed',
+        ],
     },
     {
-        'word': 'wstees',
-        'subset': [
+        word: 'wstees',
+        subset: [
             'ess',
             'ewe',
             'see',
@@ -20512,12 +20514,12 @@ export const GAMES = [
             'west',
             'wets',
             'sweet',
-            'sweets'
-        ]
+            'sweets',
+        ],
     },
     {
-        'word': 'trethe',
-        'subset': [
+        word: 'trethe',
+        subset: [
             'ere',
             'eth',
             'her',
@@ -20532,12 +20534,12 @@ export const GAMES = [
             'teeth',
             'there',
             'three',
-            'tether'
-        ]
+            'tether',
+        ],
     },
     {
-        'word': 'theses',
-        'subset': [
+        word: 'theses',
+        subset: [
             'ess',
             'eth',
             'see',
@@ -20552,12 +20554,12 @@ export const GAMES = [
             'sheet',
             'these',
             'sheets',
-            'theses'
-        ]
+            'theses',
+        ],
     },
     {
-        'word': 'itshrt',
-        'subset': [
+        word: 'itshrt',
+        subset: [
             'his',
             'hit',
             'its',
@@ -20572,12 +20574,12 @@ export const GAMES = [
             'this',
             'tits',
             'shirt',
-            'thirst'
-        ]
+            'thirst',
+        ],
     },
     {
-        'word': 'otptie',
-        'subset': [
+        word: 'otptie',
+        subset: [
             'pet',
             'pie',
             'pit',
@@ -20592,12 +20594,12 @@ export const GAMES = [
             'poet',
             'tote',
             'petit',
-            'tiptoe'
-        ]
+            'tiptoe',
+        ],
     },
     {
-        'word': 'tramua',
-        'subset': [
+        word: 'tramua',
+        subset: [
             'ama',
             'arm',
             'art',
@@ -20612,12 +20614,12 @@ export const GAMES = [
             'aura',
             'mart',
             'tram',
-            'trauma'
-        ]
+            'trauma',
+        ],
     },
     {
-        'word': 'uktcde',
-        'subset': [
+        word: 'uktcde',
+        subset: [
             'cud',
             'cue',
             'cut',
@@ -20632,12 +20634,12 @@ export const GAMES = [
             'duet',
             'duke',
             'tuck',
-            'tucked'
-        ]
+            'tucked',
+        ],
     },
     {
-        'word': 'tueoxd',
-        'subset': [
+        word: 'tueoxd',
+        subset: [
             'dex',
             'doe',
             'dot',
@@ -20652,12 +20654,12 @@ export const GAMES = [
             'dote',
             'duet',
             'toed',
-            'tuxedo'
-        ]
+            'tuxedo',
+        ],
     },
     {
-        'word': 'nuborn',
-        'subset': [
+        word: 'nuborn',
+        subset: [
             'bro',
             'bun',
             'nor',
@@ -20672,12 +20674,12 @@ export const GAMES = [
             'born',
             'burn',
             'noun',
-            'unborn'
-        ]
+            'unborn',
+        ],
     },
     {
-        'word': 'ninsuo',
-        'subset': [
+        word: 'ninsuo',
+        subset: [
             'inn',
             'ins',
             'ion',
@@ -20692,12 +20694,12 @@ export const GAMES = [
             'nous',
             'nuns',
             'union',
-            'unions'
-        ]
+            'unions',
+        ],
     },
     {
-        'word': 'pliukn',
-        'subset': [
+        word: 'pliukn',
+        subset: [
             'ilk',
             'ink',
             'kin',
@@ -20712,12 +20714,12 @@ export const GAMES = [
             'link',
             'pink',
             'punk',
-            'uplink'
-        ]
+            'uplink',
+        ],
     },
     {
-        'word': 'hrunic',
-        'subset': [
+        word: 'hrunic',
+        subset: [
             'chi',
             'cur',
             'hic',
@@ -20732,12 +20734,12 @@ export const GAMES = [
             'ruin',
             'churn',
             'incur',
-            'urchin'
-        ]
+            'urchin',
+        ],
     },
     {
-        'word': 'erutus',
-        'subset': [
+        word: 'erutus',
+        subset: [
             'ers',
             'res',
             'rue',
@@ -20752,12 +20754,12 @@ export const GAMES = [
             'sure',
             'true',
             'user',
-            'uterus'
-        ]
+            'uterus',
+        ],
     },
     {
-        'word': 'utaopi',
-        'subset': [
+        word: 'utaopi',
+        subset: [
             'out',
             'pat',
             'pit',
@@ -20772,12 +20774,12 @@ export const GAMES = [
             'auto',
             'pout',
             'patio',
-            'utopia'
-        ]
+            'utopia',
+        ],
     },
     {
-        'word': 'iavagn',
-        'subset': [
+        word: 'iavagn',
+        subset: [
             'aga',
             'ain',
             'ana',
@@ -20792,12 +20794,12 @@ export const GAMES = [
             'gain',
             'vain',
             'again',
-            'vagina'
-        ]
+            'vagina',
+        ],
     },
     {
-        'word': 'slvave',
-        'subset': [
+        word: 'slvave',
+        subset: [
             'ale',
             'als',
             'ave',
@@ -20812,12 +20814,12 @@ export const GAMES = [
             'veal',
             'slave',
             'valve',
-            'valves'
-        ]
+            'valves',
+        ],
     },
     {
-        'word': 'vifery',
-        'subset': [
+        word: 'vifery',
+        subset: [
             'fer',
             'fey',
             'fir',
@@ -20832,12 +20834,12 @@ export const GAMES = [
             'very',
             'fiery',
             'fiver',
-            'verify'
-        ]
+            'verify',
+        ],
     },
     {
-        'word': 'ervsus',
-        'subset': [
+        word: 'ervsus',
+        subset: [
             'ers',
             'ess',
             'res',
@@ -20852,12 +20854,12 @@ export const GAMES = [
             'user',
             'uses',
             'users',
-            'versus'
-        ]
+            'versus',
+        ],
     },
     {
-        'word': 'rvtoex',
-        'subset': [
+        word: 'rvtoex',
+        subset: [
             'ore',
             'ort',
             'rev',
@@ -20872,12 +20874,12 @@ export const GAMES = [
             'vote',
             'trove',
             'voter',
-            'vortex'
-        ]
+            'vortex',
+        ],
     },
     {
-        'word': 'ewidge',
-        'subset': [
+        word: 'ewidge',
+        subset: [
             'dee',
             'dew',
             'die',
@@ -20892,12 +20894,12 @@ export const GAMES = [
             'weed',
             'wide',
             'wedge',
-            'wedgie'
-        ]
+            'wedgie',
+        ],
     },
     {
-        'word': 'weevil',
-        'subset': [
+        word: 'weevil',
+        subset: [
             'eel',
             'eve',
             'ewe',
@@ -20912,12 +20914,12 @@ export const GAMES = [
             'veil',
             'view',
             'vile',
-            'weevil'
-        ]
+            'weevil',
+        ],
     },
     {
-        'word': 'hwammo',
-        'subset': [
+        word: 'hwammo',
+        subset: [
             'ham',
             'haw',
             'hmm',
@@ -20932,12 +20934,12 @@ export const GAMES = [
             'wham',
             'whoa',
             'whom',
-            'whammo'
-        ]
+            'whammo',
+        ],
     },
     {
-        'word': 'oiwong',
-        'subset': [
+        word: 'oiwong',
+        subset: [
             'gin',
             'goo',
             'ion',
@@ -20952,12 +20954,12 @@ export const GAMES = [
             'gown',
             'wing',
             'owing',
-            'wooing'
-        ]
+            'wooing',
+        ],
     },
     {
-        'word': 'wrsits',
-        'subset': [
+        word: 'wrsits',
+        subset: [
             'its',
             'sir',
             'sis',
@@ -20972,12 +20974,12 @@ export const GAMES = [
             'writ',
             'stirs',
             'wrist',
-            'wrists'
-        ]
+            'wrists',
+        ],
     },
     {
-        'word': 'eylled',
-        'subset': [
+        word: 'eylled',
+        subset: [
             'dee',
             'del',
             'dey',
@@ -20992,12 +20994,12 @@ export const GAMES = [
             'eyed',
             'yell',
             'delly',
-            'yelled'
-        ]
+            'yelled',
+        ],
     },
     {
-        'word': 'duastj',
-        'subset': [
+        word: 'duastj',
+        subset: [
             'ads',
             'jus',
             'jut',
@@ -21011,12 +21013,12 @@ export const GAMES = [
             'just',
             'stud',
             'judas',
-            'adjust'
-        ]
+            'adjust',
+        ],
     },
     {
-        'word': 'iganan',
-        'subset': [
+        word: 'iganan',
+        subset: [
             'aga',
             'ain',
             'ana',
@@ -21030,12 +21032,12 @@ export const GAMES = [
             'gain',
             'nana',
             'again',
-            'angina'
-        ]
+            'angina',
+        ],
     },
     {
-        'word': 'nayoen',
-        'subset': [
+        word: 'nayoen',
+        subset: [
             'ane',
             'any',
             'aye',
@@ -21049,12 +21051,12 @@ export const GAMES = [
             'neon',
             'none',
             'annoy',
-            'anyone'
-        ]
+            'anyone',
+        ],
     },
     {
-        'word': 'arrswo',
-        'subset': [
+        word: 'arrswo',
+        subset: [
             'oar',
             'raw',
             'row',
@@ -21068,12 +21070,12 @@ export const GAMES = [
             'soar',
             'wars',
             'arrow',
-            'arrows'
-        ]
+            'arrows',
+        ],
     },
     {
-        'word': 'asiscb',
-        'subset': [
+        word: 'asiscb',
+        subset: [
             'abs',
             'ass',
             'cab',
@@ -21087,12 +21089,12 @@ export const GAMES = [
             'basic',
             'basis',
             'scabs',
-            'basics'
-        ]
+            'basics',
+        ],
     },
     {
-        'word': 'albbeu',
-        'subset': [
+        word: 'albbeu',
+        subset: [
             'ale',
             'bel',
             'ebb',
@@ -21106,12 +21108,12 @@ export const GAMES = [
             'blue',
             'bulb',
             'lube',
-            'bauble'
-        ]
+            'bauble',
+        ],
     },
     {
-        'word': 'enbnig',
-        'subset': [
+        word: 'enbnig',
+        subset: [
             'beg',
             'ben',
             'big',
@@ -21125,12 +21127,12 @@ export const GAMES = [
             'begin',
             'being',
             'binge',
-            'benign'
-        ]
+            'benign',
+        ],
     },
     {
-        'word': 'mgbiay',
-        'subset': [
+        word: 'mgbiay',
+        subset: [
             'aim',
             'ami',
             'bag',
@@ -21144,12 +21146,12 @@ export const GAMES = [
             'may',
             'yam',
             'gaby',
-            'bigamy'
-        ]
+            'bigamy',
+        ],
     },
     {
-        'word': 'sibmob',
-        'subset': [
+        word: 'sibmob',
+        subset: [
             'bib',
             'bio',
             'bob',
@@ -21163,12 +21165,12 @@ export const GAMES = [
             'mobs',
             'bimbo',
             'bombs',
-            'bimbos'
-        ]
+            'bimbos',
+        ],
     },
     {
-        'word': 'ibchyt',
-        'subset': [
+        word: 'ibchyt',
+        subset: [
             'bit',
             'chi',
             'hic',
@@ -21182,12 +21184,12 @@ export const GAMES = [
             'itch',
             'bitch',
             'itchy',
-            'bitchy'
-        ]
+            'bitchy',
+        ],
     },
     {
-        'word': 'liebym',
-        'subset': [
+        word: 'liebym',
+        subset: [
             'bel',
             'bey',
             'bye',
@@ -21201,12 +21203,12 @@ export const GAMES = [
             'lime',
             'mile',
             'limey',
-            'blimey'
-        ]
+            'blimey',
+        ],
     },
     {
-        'word': 'gobgle',
-        'subset': [
+        word: 'gobgle',
+        subset: [
             'beg',
             'bel',
             'egg',
@@ -21220,12 +21222,12 @@ export const GAMES = [
             'lobe',
             'ogle',
             'globe',
-            'boggle'
-        ]
+            'boggle',
+        ],
     },
     {
-        'word': 'oboker',
-        'subset': [
+        word: 'oboker',
+        subset: [
             'boo',
             'bro',
             'orb',
@@ -21239,12 +21241,12 @@ export const GAMES = [
             'rook',
             'broke',
             'brook',
-            'booker'
-        ]
+            'booker',
+        ],
     },
     {
-        'word': 'oosbts',
-        'subset': [
+        word: 'oosbts',
+        subset: [
             'boo',
             'bot',
             'sob',
@@ -21258,12 +21260,12 @@ export const GAMES = [
             'toss',
             'boost',
             'boots',
-            'boosts'
-        ]
+            'boosts',
+        ],
     },
     {
-        'word': 'booerz',
-        'subset': [
+        word: 'booerz',
+        subset: [
             'boo',
             'bro',
             'orb',
@@ -21277,12 +21279,12 @@ export const GAMES = [
             'robe',
             'zero',
             'booze',
-            'boozer'
-        ]
+            'boozer',
+        ],
     },
     {
-        'word': 'obttmo',
-        'subset': [
+        word: 'obttmo',
+        subset: [
             'boo',
             'bot',
             'mob',
@@ -21296,12 +21298,12 @@ export const GAMES = [
             'tomb',
             'toot',
             'motto',
-            'bottom'
-        ]
+            'bottom',
+        ],
     },
     {
-        'word': 'boucne',
-        'subset': [
+        word: 'boucne',
+        subset: [
             'ben',
             'bun',
             'cob',
@@ -21315,12 +21317,12 @@ export const GAMES = [
             'cube',
             'once',
             'ounce',
-            'bounce'
-        ]
+            'bounce',
+        ],
     },
     {
-        'word': 'liarzb',
-        'subset': [
+        word: 'liarzb',
+        subset: [
             'ail',
             'air',
             'bar',
@@ -21334,12 +21336,12 @@ export const GAMES = [
             'liar',
             'lira',
             'rail',
-            'brazil'
-        ]
+            'brazil',
+        ],
     },
     {
-        'word': 'bewerr',
-        'subset': [
+        word: 'bewerr',
+        subset: [
             'bee',
             'brr',
             'ere',
@@ -21353,12 +21355,12 @@ export const GAMES = [
             'brew',
             'were',
             'weber',
-            'brewer'
-        ]
+            'brewer',
+        ],
     },
     {
-        'word': 'grbiht',
-        'subset': [
+        word: 'grbiht',
+        subset: [
             'big',
             'bit',
             'gib',
@@ -21372,12 +21374,12 @@ export const GAMES = [
             'birth',
             'girth',
             'right',
-            'bright'
-        ]
+            'bright',
+        ],
     },
     {
-        'word': 'rbooyd',
-        'subset': [
+        word: 'rbooyd',
+        subset: [
             'bod',
             'boo',
             'boy',
@@ -21391,12 +21393,12 @@ export const GAMES = [
             'dory',
             'odor',
             'brood',
-            'broody'
-        ]
+            'broody',
+        ],
     },
     {
-        'word': 'rbuchn',
-        'subset': [
+        word: 'rbuchn',
+        subset: [
             'bun',
             'cub',
             'cur',
@@ -21410,12 +21412,12 @@ export const GAMES = [
             'curb',
             'bunch',
             'churn',
-            'brunch'
-        ]
+            'brunch',
+        ],
     },
     {
-        'word': 'pubmed',
-        'subset': [
+        word: 'pubmed',
+        subset: [
             'bed',
             'bud',
             'bum',
@@ -21429,12 +21431,12 @@ export const GAMES = [
             'bump',
             'dumb',
             'dump',
-            'bumped'
-        ]
+            'bumped',
+        ],
     },
     {
-        'word': 'ulapbr',
-        'subset': [
+        word: 'ulapbr',
+        subset: [
             'bar',
             'bra',
             'lab',
@@ -21448,12 +21450,12 @@ export const GAMES = [
             'blur',
             'bura',
             'burp',
-            'burlap'
-        ]
+            'burlap',
+        ],
     },
     {
-        'word': 'urbrne',
-        'subset': [
+        word: 'urbrne',
+        subset: [
             'ben',
             'brr',
             'bun',
@@ -21467,12 +21469,12 @@ export const GAMES = [
             'burn',
             'rube',
             'rune',
-            'burner'
-        ]
+            'burner',
+        ],
     },
     {
-        'word': 'ubhses',
-        'subset': [
+        word: 'ubhses',
+        subset: [
             'bus',
             'ess',
             'hub',
@@ -21486,12 +21488,12 @@ export const GAMES = [
             'sues',
             'uses',
             'buses',
-            'bushes'
-        ]
+            'bushes',
+        ],
     },
     {
-        'word': 'eifhcs',
-        'subset': [
+        word: 'eifhcs',
+        subset: [
             'chi',
             'hic',
             'his',
@@ -21505,12 +21507,12 @@ export const GAMES = [
             'fish',
             'chefs',
             'chief',
-            'chiefs'
-        ]
+            'chiefs',
+        ],
     },
     {
-        'word': 'ihlslc',
-        'subset': [
+        word: 'ihlslc',
+        subset: [
             'chi',
             'hic',
             'his',
@@ -21524,12 +21526,12 @@ export const GAMES = [
             'chill',
             'hills',
             'shill',
-            'chills'
-        ]
+            'chills',
+        ],
     },
     {
-        'word': 'icpyrh',
-        'subset': [
+        word: 'icpyrh',
+        subset: [
             'chi',
             'cry',
             'hic',
@@ -21543,12 +21545,12 @@ export const GAMES = [
             'chip',
             'rich',
             'chirp',
-            'chirpy'
-        ]
+            'chirpy',
+        ],
     },
     {
-        'word': 'crshuo',
-        'subset': [
+        word: 'crshuo',
+        subset: [
             'cor',
             'cos',
             'cur',
@@ -21562,12 +21564,12 @@ export const GAMES = [
             'crush',
             'hocus',
             'hours',
-            'chorus'
-        ]
+            'chorus',
+        ],
     },
     {
-        'word': 'crevle',
-        'subset': [
+        word: 'crevle',
+        subset: [
             'cee',
             'eel',
             'ere',
@@ -21581,12 +21583,12 @@ export const GAMES = [
             'reel',
             'veer',
             'lever',
-            'clever'
-        ]
+            'clever',
+        ],
     },
     {
-        'word': 'clloei',
-        'subset': [
+        word: 'clloei',
+        subset: [
             'col',
             'ell',
             'ice',
@@ -21600,12 +21602,12 @@ export const GAMES = [
             'cole',
             'lice',
             'cello',
-            'collie'
-        ]
+            'collie',
+        ],
     },
     {
-        'word': 'ncoevy',
-        'subset': [
+        word: 'ncoevy',
+        subset: [
             'con',
             'coy',
             'one',
@@ -21619,12 +21621,12 @@ export const GAMES = [
             'coney',
             'coven',
             'envoy',
-            'convey'
-        ]
+            'convey',
+        ],
     },
     {
-        'word': 'opocde',
-        'subset': [
+        word: 'opocde',
+        subset: [
             'cod',
             'coo',
             'cop',
@@ -21638,12 +21640,12 @@ export const GAMES = [
             'cope',
             'deco',
             'dope',
-            'cooped'
-        ]
+            'cooped',
+        ],
     },
     {
-        'word': 'onctto',
-        'subset': [
+        word: 'onctto',
+        subset: [
             'con',
             'coo',
             'cot',
@@ -21657,12 +21659,12 @@ export const GAMES = [
             'otto',
             'toon',
             'toot',
-            'cotton'
-        ]
+            'cotton',
+        ],
     },
     {
-        'word': 'rcooks',
-        'subset': [
+        word: 'rcooks',
+        subset: [
             'coo',
             'cor',
             'cos',
@@ -21676,12 +21678,12 @@ export const GAMES = [
             'corks',
             'crook',
             'rocks',
-            'crooks'
-        ]
+            'crooks',
+        ],
     },
     {
-        'word': 'cnurgi',
-        'subset': [
+        word: 'cnurgi',
+        subset: [
             'cur',
             'gin',
             'gun',
@@ -21695,12 +21697,12 @@ export const GAMES = [
             'ruin',
             'rung',
             'incur',
-            'curing'
-        ]
+            'curing',
+        ],
     },
     {
-        'word': 'ahdali',
-        'subset': [
+        word: 'ahdali',
+        subset: [
             'aha',
             'aid',
             'ail',
@@ -21714,12 +21716,12 @@ export const GAMES = [
             'dial',
             'hail',
             'laid',
-            'dahlia'
-        ]
+            'dahlia',
+        ],
     },
     {
-        'word': 'dnieed',
-        'subset': [
+        word: 'dnieed',
+        subset: [
             'dee',
             'den',
             'did',
@@ -21733,12 +21735,12 @@ export const GAMES = [
             'dined',
             'ended',
             'denied',
-            'indeed'
-        ]
+            'indeed',
+        ],
     },
     {
-        'word': 'epdyut',
-        'subset': [
+        word: 'epdyut',
+        subset: [
             'dey',
             'due',
             'dye',
@@ -21752,12 +21754,12 @@ export const GAMES = [
             'duty',
             'type',
             'typed',
-            'deputy'
-        ]
+            'deputy',
+        ],
     },
     {
-        'word': 'dirgge',
-        'subset': [
+        word: 'dirgge',
+        subset: [
             'die',
             'dig',
             'egg',
@@ -21771,12 +21773,12 @@ export const GAMES = [
             'ride',
             'ridge',
             'digger',
-            'rigged'
-        ]
+            'rigged',
+        ],
     },
     {
-        'word': 'digend',
-        'subset': [
+        word: 'digend',
+        subset: [
             'den',
             'did',
             'die',
@@ -21790,12 +21792,12 @@ export const GAMES = [
             'dine',
             'ding',
             'dined',
-            'dinged'
-        ]
+            'dinged',
+        ],
     },
     {
-        'word': 'dolled',
-        'subset': [
+        word: 'dolled',
+        subset: [
             'del',
             'doe',
             'dol',
@@ -21809,12 +21811,12 @@ export const GAMES = [
             'dole',
             'doll',
             'lode',
-            'dolled'
-        ]
+            'dolled',
+        ],
     },
     {
-        'word': 'odzing',
-        'subset': [
+        word: 'odzing',
+        subset: [
             'dig',
             'dog',
             'don',
@@ -21828,12 +21830,12 @@ export const GAMES = [
             'zing',
             'dingo',
             'doing',
-            'dozing'
-        ]
+            'dozing',
+        ],
     },
     {
-        'word': 'edrssy',
-        'subset': [
+        word: 'edrssy',
+        subset: [
             'dey',
             'dry',
             'dye',
@@ -21847,12 +21849,12 @@ export const GAMES = [
             'dyer',
             'reds',
             'dress',
-            'dressy'
-        ]
+            'dressy',
+        ],
     },
     {
-        'word': 'dresry',
-        'subset': [
+        word: 'dresry',
+        subset: [
             'dey',
             'dry',
             'dye',
@@ -21866,12 +21868,12 @@ export const GAMES = [
             'dyer',
             'reds',
             'dryer',
-            'dryers'
-        ]
+            'dryers',
+        ],
     },
     {
-        'word': 'udfefl',
-        'subset': [
+        word: 'udfefl',
+        subset: [
             'del',
             'due',
             'elf',
@@ -21885,12 +21887,12 @@ export const GAMES = [
             'flue',
             'fuel',
             'duffel',
-            'duffle'
-        ]
+            'duffle',
+        ],
     },
     {
-        'word': 'dfufle',
-        'subset': [
+        word: 'dfufle',
+        subset: [
             'del',
             'due',
             'elf',
@@ -21904,12 +21906,12 @@ export const GAMES = [
             'flue',
             'fuel',
             'duffel',
-            'duffle'
-        ]
+            'duffle',
+        ],
     },
     {
-        'word': 'gehyit',
-        'subset': [
+        word: 'gehyit',
+        subset: [
             'eth',
             'get',
             'git',
@@ -21923,12 +21925,12 @@ export const GAMES = [
             'they',
             'yeti',
             'eight',
-            'eighty'
-        ]
+            'eighty',
+        ],
     },
     {
-        'word': 'useqla',
-        'subset': [
+        word: 'useqla',
+        subset: [
             'ale',
             'als',
             'las',
@@ -21942,12 +21944,12 @@ export const GAMES = [
             'seal',
             'equal',
             'equals',
-            'squeal'
-        ]
+            'squeal',
+        ],
     },
     {
-        'word': 'seyass',
-        'subset': [
+        word: 'seyass',
+        subset: [
             'ass',
             'aye',
             'ess',
@@ -21961,12 +21963,12 @@ export const GAMES = [
             'asses',
             'essay',
             'sassy',
-            'essays'
-        ]
+            'essays',
+        ],
     },
     {
-        'word': 'uloeyg',
-        'subset': [
+        word: 'uloeyg',
+        subset: [
             'ego',
             'gel',
             'guy',
@@ -21980,12 +21982,12 @@ export const GAMES = [
             'luge',
             'ogle',
             'ugly',
-            'eulogy'
-        ]
+            'eulogy',
+        ],
     },
     {
-        'word': 'idtexe',
-        'subset': [
+        word: 'idtexe',
+        subset: [
             'dee',
             'dex',
             'die',
@@ -21999,12 +22001,12 @@ export const GAMES = [
             'teed',
             'tide',
             'tied',
-            'exited'
-        ]
+            'exited',
+        ],
     },
     {
-        'word': 'efyeul',
-        'subset': [
+        word: 'efyeul',
+        subset: [
             'eel',
             'elf',
             'eye',
@@ -22018,12 +22020,12 @@ export const GAMES = [
             'flee',
             'flue',
             'fuel',
-            'eyeful'
-        ]
+            'eyeful',
+        ],
     },
     {
-        'word': 'fgogat',
-        'subset': [
+        word: 'fgogat',
+        subset: [
             'aft',
             'ago',
             'fag',
@@ -22037,12 +22039,12 @@ export const GAMES = [
             'tag',
             'goat',
             'toga',
-            'faggot'
-        ]
+            'faggot',
+        ],
     },
     {
-        'word': 'fedeer',
-        'subset': [
+        word: 'fedeer',
+        subset: [
             'dee',
             'ere',
             'fed',
@@ -22056,12 +22058,12 @@ export const GAMES = [
             'reed',
             'reef',
             'freed',
-            'feeder'
-        ]
+            'feeder',
+        ],
     },
     {
-        'word': 'efrtre',
-        'subset': [
+        word: 'efrtre',
+        subset: [
             'ere',
             'err',
             'fee',
@@ -22075,12 +22077,12 @@ export const GAMES = [
             'tree',
             'freer',
             'refer',
-            'ferret'
-        ]
+            'ferret',
+        ],
     },
     {
-        'word': 'ifbbre',
-        'subset': [
+        word: 'ifbbre',
+        subset: [
             'bib',
             'ebb',
             'fer',
@@ -22094,12 +22096,12 @@ export const GAMES = [
             'brief',
             'fiber',
             'fibre',
-            'fibber'
-        ]
+            'fibber',
+        ],
     },
     {
-        'word': 'fciere',
-        'subset': [
+        word: 'fciere',
+        subset: [
             'cee',
             'ere',
             'fee',
@@ -22113,12 +22115,12 @@ export const GAMES = [
             'reef',
             'rice',
             'rife',
-            'fierce'
-        ]
+            'fierce',
+        ],
     },
     {
-        'word': 'ftietd',
-        'subset': [
+        word: 'ftietd',
+        subset: [
             'die',
             'dit',
             'fed',
@@ -22132,12 +22134,12 @@ export const GAMES = [
             'edit',
             'tide',
             'tied',
-            'fitted'
-        ]
+            'fitted',
+        ],
     },
     {
-        'word': 'lfeshy',
-        'subset': [
+        word: 'lfeshy',
+        subset: [
             'elf',
             'fey',
             'fly',
@@ -22151,12 +22153,12 @@ export const GAMES = [
             'self',
             'flesh',
             'shelf',
-            'fleshy'
-        ]
+            'fleshy',
+        ],
     },
     {
-        'word': 'ifrhgt',
-        'subset': [
+        word: 'ifrhgt',
+        subset: [
             'fig',
             'fir',
             'fit',
@@ -22170,12 +22172,12 @@ export const GAMES = [
             'girth',
             'grift',
             'right',
-            'fright'
-        ]
+            'fright',
+        ],
     },
     {
-        'word': 'fublme',
-        'subset': [
+        word: 'fublme',
+        subset: [
             'bel',
             'bum',
             'elf',
@@ -22189,12 +22191,12 @@ export const GAMES = [
             'lube',
             'mule',
             'blume',
-            'fumble'
-        ]
+            'fumble',
+        ],
     },
     {
-        'word': 'fuendd',
-        'subset': [
+        word: 'fuendd',
+        subset: [
             'den',
             'dud',
             'due',
@@ -22208,12 +22210,12 @@ export const GAMES = [
             'feud',
             'fund',
             'nude',
-            'funded'
-        ]
+            'funded',
+        ],
     },
     {
-        'word': 'ngylet',
-        'subset': [
+        word: 'ngylet',
+        subset: [
             'eng',
             'gel',
             'gen',
@@ -22227,12 +22229,12 @@ export const GAMES = [
             'yet',
             'glen',
             'lent',
-            'gently'
-        ]
+            'gently',
+        ],
     },
     {
-        'word': 'lgdlay',
-        'subset': [
+        word: 'lgdlay',
+        subset: [
             'all',
             'dag',
             'day',
@@ -22246,12 +22248,12 @@ export const GAMES = [
             'glad',
             'lady',
             'dally',
-            'gladly'
-        ]
+            'gladly',
+        ],
     },
     {
-        'word': 'lgrils',
-        'subset': [
+        word: 'lgrils',
+        subset: [
             'ill',
             'lis',
             'rig',
@@ -22265,12 +22267,12 @@ export const GAMES = [
             'gills',
             'girls',
             'grill',
-            'grills'
-        ]
+            'grills',
+        ],
     },
     {
-        'word': 'ndgune',
-        'subset': [
+        word: 'ndgune',
+        subset: [
             'den',
             'due',
             'dug',
@@ -22284,12 +22286,12 @@ export const GAMES = [
             'dung',
             'nude',
             'nudge',
-            'gunned'
-        ]
+            'gunned',
+        ],
     },
     {
-        'word': 'aggsih',
-        'subset': [
+        word: 'aggsih',
+        subset: [
             'ash',
             'gag',
             'gas',
@@ -22303,12 +22305,12 @@ export const GAMES = [
             'hags',
             'shag',
             'sigh',
-            'haggis'
-        ]
+            'haggis',
+        ],
     },
     {
-        'word': 'haeven',
-        'subset': [
+        word: 'haeven',
+        subset: [
             'ane',
             'ave',
             'eve',
@@ -22322,12 +22324,12 @@ export const GAMES = [
             'neve',
             'haven',
             'heave',
-            'heaven'
-        ]
+            'heaven',
+        ],
     },
     {
-        'word': 'ghsede',
-        'subset': [
+        word: 'ghsede',
+        subset: [
             'dee',
             'ged',
             'gee',
@@ -22341,12 +22343,12 @@ export const GAMES = [
             'shed',
             'edges',
             'hedge',
-            'hedges'
-        ]
+            'hedges',
+        ],
     },
     {
-        'word': 'ehirfe',
-        'subset': [
+        word: 'ehirfe',
+        subset: [
             'ere',
             'fee',
             'fer',
@@ -22360,12 +22362,12 @@ export const GAMES = [
             'hire',
             'reef',
             'rife',
-            'heifer'
-        ]
+            'heifer',
+        ],
     },
     {
-        'word': 'lolehr',
-        'subset': [
+        word: 'lolehr',
+        subset: [
             'ell',
             'her',
             'hoe',
@@ -22379,12 +22381,12 @@ export const GAMES = [
             'role',
             'roll',
             'hello',
-            'holler'
-        ]
+            'holler',
+        ],
     },
     {
-        'word': 'himoyl',
-        'subset': [
+        word: 'himoyl',
+        subset: [
             'him',
             'hoy',
             'mil',
@@ -22398,12 +22400,12 @@ export const GAMES = [
             'moil',
             'moly',
             'oily',
-            'homily'
-        ]
+            'homily',
+        ],
     },
     {
-        'word': 'onhour',
-        'subset': [
+        word: 'onhour',
+        subset: [
             'hon',
             'hun',
             'noh',
@@ -22417,12 +22419,12 @@ export const GAMES = [
             'horn',
             'hour',
             'honor',
-            'honour'
-        ]
+            'honour',
+        ],
     },
     {
-        'word': 'ushehd',
-        'subset': [
+        word: 'ushehd',
+        subset: [
             'due',
             'heh',
             'hue',
@@ -22436,12 +22438,12 @@ export const GAMES = [
             'shed',
             'sued',
             'used',
-            'hushed'
-        ]
+            'hushed',
+        ],
     },
     {
-        'word': 'diiost',
-        'subset': [
+        word: 'diiost',
+        subset: [
             'dis',
             'dit',
             'dos',
@@ -22455,12 +22457,12 @@ export const GAMES = [
             'dost',
             'dots',
             'idiot',
-            'idiots'
-        ]
+            'idiots',
+        ],
     },
     {
-        'word': 'indede',
-        'subset': [
+        word: 'indede',
+        subset: [
             'dee',
             'den',
             'did',
@@ -22474,12 +22476,12 @@ export const GAMES = [
             'dined',
             'ended',
             'denied',
-            'indeed'
-        ]
+            'indeed',
+        ],
     },
     {
-        'word': 'idorno',
-        'subset': [
+        word: 'idorno',
+        subset: [
             'don',
             'ion',
             'nod',
@@ -22493,12 +22495,12 @@ export const GAMES = [
             'noir',
             'odor',
             'donor',
-            'indoor'
-        ]
+            'indoor',
+        ],
     },
     {
-        'word': 'nivkoe',
-        'subset': [
+        word: 'nivkoe',
+        subset: [
             'ink',
             'ion',
             'ken',
@@ -22512,12 +22514,12 @@ export const GAMES = [
             'vein',
             'vine',
             'vino',
-            'invoke'
-        ]
+            'invoke',
+        ],
     },
     {
-        'word': 'jaegrg',
-        'subset': [
+        word: 'jaegrg',
+        subset: [
             'age',
             'are',
             'ear',
@@ -22531,12 +22533,12 @@ export const GAMES = [
             'gage',
             'gear',
             'rage',
-            'jagger'
-        ]
+            'jagger',
+        ],
     },
     {
-        'word': 'etojtd',
-        'subset': [
+        word: 'etojtd',
+        subset: [
             'doe',
             'dot',
             'jet',
@@ -22550,12 +22552,12 @@ export const GAMES = [
             'dote',
             'toed',
             'tote',
-            'jotted'
-        ]
+            'jotted',
+        ],
     },
     {
-        'word': 'jugsde',
-        'subset': [
+        word: 'jugsde',
+        subset: [
             'due',
             'dug',
             'ged',
@@ -22569,12 +22571,12 @@ export const GAMES = [
             'sued',
             'used',
             'judge',
-            'judges'
-        ]
+            'judges',
+        ],
     },
     {
-        'word': 'eedggl',
-        'subset': [
+        word: 'eedggl',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -22588,12 +22590,12 @@ export const GAMES = [
             'edge',
             'glee',
             'ledge',
-            'legged'
-        ]
+            'legged',
+        ],
     },
     {
-        'word': 'bliodi',
-        'subset': [
+        word: 'bliodi',
+        subset: [
             'bid',
             'bio',
             'bod',
@@ -22607,12 +22609,12 @@ export const GAMES = [
             'bold',
             'idol',
             'lido',
-            'libido'
-        ]
+            'libido',
+        ],
     },
     {
-        'word': 'eilkyl',
-        'subset': [
+        word: 'eilkyl',
+        subset: [
             'elk',
             'ell',
             'ilk',
@@ -22626,12 +22628,12 @@ export const GAMES = [
             'lily',
             'yell',
             'kelly',
-            'likely'
-        ]
+            'likely',
+        ],
     },
     {
-        'word': 'neolyo',
-        'subset': [
+        word: 'neolyo',
+        subset: [
             'loo',
             'lye',
             'noo',
@@ -22645,12 +22647,12 @@ export const GAMES = [
             'noel',
             'only',
             'loony',
-            'looney'
-        ]
+            'looney',
+        ],
     },
     {
-        'word': 'olving',
-        'subset': [
+        word: 'olving',
+        subset: [
             'gin',
             'ion',
             'lin',
@@ -22664,12 +22666,12 @@ export const GAMES = [
             'long',
             'vino',
             'lingo',
-            'loving'
-        ]
+            'loving',
+        ],
     },
     {
-        'word': 'amgotg',
-        'subset': [
+        word: 'amgotg',
+        subset: [
             'ago',
             'gag',
             'gat',
@@ -22683,12 +22685,12 @@ export const GAMES = [
             'goat',
             'moat',
             'toga',
-            'maggot'
-        ]
+            'maggot',
+        ],
     },
     {
-        'word': 'lumnaa',
-        'subset': [
+        word: 'lumnaa',
+        subset: [
             'ala',
             'ama',
             'ana',
@@ -22702,12 +22704,12 @@ export const GAMES = [
             'lama',
             'luna',
             'maul',
-            'manual'
-        ]
+            'manual',
+        ],
     },
     {
-        'word': 'mopnig',
-        'subset': [
+        word: 'mopnig',
+        subset: [
             'gin',
             'imp',
             'ion',
@@ -22721,12 +22723,12 @@ export const GAMES = [
             'gimp',
             'ping',
             'pong',
-            'moping'
-        ]
+            'moping',
+        ],
     },
     {
-        'word': 'nmuloi',
-        'subset': [
+        word: 'nmuloi',
+        subset: [
             'ion',
             'lin',
             'lum',
@@ -22740,12 +22742,12 @@ export const GAMES = [
             'loin',
             'milo',
             'moil',
-            'moulin'
-        ]
+            'moulin',
+        ],
     },
     {
-        'word': 'ldmule',
-        'subset': [
+        word: 'ldmule',
+        subset: [
             'del',
             'due',
             'ell',
@@ -22759,12 +22761,12 @@ export const GAMES = [
             'duel',
             'dull',
             'mule',
-            'mulled'
-        ]
+            'mulled',
+        ],
     },
     {
-        'word': 'ystimc',
-        'subset': [
+        word: 'ystimc',
+        subset: [
             'icy',
             'its',
             'mis',
@@ -22778,12 +22780,12 @@ export const GAMES = [
             'cyst',
             'mist',
             'misty',
-            'mystic'
-        ]
+            'mystic',
+        ],
     },
     {
-        'word': 'tmcyhi',
-        'subset': [
+        word: 'tmcyhi',
+        subset: [
             'chi',
             'hic',
             'him',
@@ -22797,12 +22799,12 @@ export const GAMES = [
             'itch',
             'myth',
             'itchy',
-            'mythic'
-        ]
+            'mythic',
+        ],
     },
     {
-        'word': 'newhpe',
-        'subset': [
+        word: 'newhpe',
+        subset: [
             'ewe',
             'hen',
             'hep',
@@ -22816,12 +22818,12 @@ export const GAMES = [
             'weep',
             'whee',
             'when',
-            'nephew'
-        ]
+            'nephew',
+        ],
     },
     {
-        'word': 'nielcy',
-        'subset': [
+        word: 'nielcy',
+        subset: [
             'ice',
             'icy',
             'lei',
@@ -22835,12 +22837,12 @@ export const GAMES = [
             'lien',
             'line',
             'nice',
-            'nicely'
-        ]
+            'nicely',
+        ],
     },
     {
-        'word': 'owtula',
-        'subset': [
+        word: 'owtula',
+        subset: [
             'alt',
             'law',
             'lot',
@@ -22854,12 +22856,12 @@ export const GAMES = [
             'auto',
             'awol',
             'lout',
-            'outlaw'
-        ]
+            'outlaw',
+        ],
     },
     {
-        'word': 'npnaed',
-        'subset': [
+        word: 'npnaed',
+        subset: [
             'and',
             'ane',
             'ape',
@@ -22873,12 +22875,12 @@ export const GAMES = [
             'pen',
             'dean',
             'pane',
-            'panned'
-        ]
+            'panned',
+        ],
     },
     {
-        'word': 'plwilo',
-        'subset': [
+        word: 'plwilo',
+        subset: [
             'ill',
             'lip',
             'lop',
@@ -22892,12 +22894,12 @@ export const GAMES = [
             'plow',
             'poll',
             'will',
-            'pillow'
-        ]
+            'pillow',
+        ],
     },
     {
-        'word': 'pimped',
-        'subset': [
+        word: 'pimped',
+        subset: [
             'die',
             'dim',
             'dip',
@@ -22911,12 +22913,12 @@ export const GAMES = [
             'pied',
             'pimp',
             'pipe',
-            'pimped'
-        ]
+            'pimped',
+        ],
     },
     {
-        'word': 'ninped',
-        'subset': [
+        word: 'ninped',
+        subset: [
             'den',
             'die',
             'dip',
@@ -22930,12 +22932,12 @@ export const GAMES = [
             'nine',
             'pied',
             'pine',
-            'pinned'
-        ]
+            'pinned',
+        ],
     },
     {
-        'word': 'pulses',
-        'subset': [
+        word: 'pulses',
+        subset: [
             'ess',
             'pus',
             'sue',
@@ -22949,12 +22951,12 @@ export const GAMES = [
             'uses',
             'pulse',
             'pluses',
-            'pulses'
-        ]
+            'pulses',
+        ],
     },
     {
-        'word': 'ocpket',
-        'subset': [
+        word: 'ocpket',
+        subset: [
             'cop',
             'cot',
             'pet',
@@ -22968,12 +22970,12 @@ export const GAMES = [
             'poet',
             'poke',
             'toke',
-            'pocket'
-        ]
+            'pocket',
+        ],
     },
     {
-        'word': 'opleln',
-        'subset': [
+        word: 'opleln',
+        subset: [
             'ell',
             'lop',
             'ole',
@@ -22987,12 +22989,12 @@ export const GAMES = [
             'peon',
             'pole',
             'poll',
-            'pollen'
-        ]
+            'pollen',
+        ],
     },
     {
-        'word': 'frerpe',
-        'subset': [
+        word: 'frerpe',
+        subset: [
             'ere',
             'err',
             'fee',
@@ -23006,12 +23008,12 @@ export const GAMES = [
             'reef',
             'freer',
             'refer',
-            'prefer'
-        ]
+            'prefer',
+        ],
     },
     {
-        'word': 'prfeix',
-        'subset': [
+        word: 'prfeix',
+        subset: [
             'fer',
             'fir',
             'fix',
@@ -23025,12 +23027,12 @@ export const GAMES = [
             'rife',
             'ripe',
             'fixer',
-            'prefix'
-        ]
+            'prefix',
+        ],
     },
     {
-        'word': 'primre',
-        'subset': [
+        word: 'primre',
+        subset: [
             'err',
             'imp',
             'per',
@@ -23044,12 +23046,12 @@ export const GAMES = [
             'prim',
             'ripe',
             'prime',
-            'primer'
-        ]
+            'primer',
+        ],
     },
     {
-        'word': 'proisr',
-        'subset': [
+        word: 'proisr',
+        subset: [
             'ops',
             'pis',
             'poi',
@@ -23063,12 +23065,12 @@ export const GAMES = [
             'pros',
             'rips',
             'prior',
-            'priors'
-        ]
+            'priors',
+        ],
     },
     {
-        'word': 'pringy',
-        'subset': [
+        word: 'pringy',
+        subset: [
             'gin',
             'nip',
             'pig',
@@ -23082,12 +23084,12 @@ export const GAMES = [
             'grip',
             'ping',
             'ring',
-            'prying'
-        ]
+            'prying',
+        ],
     },
     {
-        'word': 'ysphec',
-        'subset': [
+        word: 'ysphec',
+        subset: [
             'hep',
             'hey',
             'sec',
@@ -23101,12 +23103,12 @@ export const GAMES = [
             'pecs',
             'yech',
             'psych',
-            'psyche'
-        ]
+            'psyche',
+        ],
     },
     {
-        'word': 'uslpes',
-        'subset': [
+        word: 'uslpes',
+        subset: [
             'ess',
             'pus',
             'sue',
@@ -23120,12 +23122,12 @@ export const GAMES = [
             'uses',
             'pulse',
             'pluses',
-            'pulses'
-        ]
+            'pulses',
+        ],
     },
     {
-        'word': 'itdpru',
-        'subset': [
+        word: 'itdpru',
+        subset: [
             'dip',
             'dit',
             'dui',
@@ -23139,12 +23141,12 @@ export const GAMES = [
             'drip',
             'trip',
             'turd',
-            'putrid'
-        ]
+            'putrid',
+        ],
     },
     {
-        'word': 'qutode',
-        'subset': [
+        word: 'qutode',
+        subset: [
             'doe',
             'dot',
             'due',
@@ -23158,12 +23160,12 @@ export const GAMES = [
             'duet',
             'toed',
             'quote',
-            'quoted'
-        ]
+            'quoted',
+        ],
     },
     {
-        'word': 'craial',
-        'subset': [
+        word: 'craial',
+        subset: [
             'ail',
             'air',
             'ala',
@@ -23177,12 +23179,12 @@ export const GAMES = [
             'liar',
             'lira',
             'rail',
-            'racial'
-        ]
+            'racial',
+        ],
     },
     {
-        'word': 'arisin',
-        'subset': [
+        word: 'arisin',
+        subset: [
             'ain',
             'air',
             'ani',
@@ -23196,12 +23198,12 @@ export const GAMES = [
             'iris',
             'rain',
             'rains',
-            'raisin'
-        ]
+            'raisin',
+        ],
     },
     {
-        'word': 'enrder',
-        'subset': [
+        word: 'enrder',
+        subset: [
             'dee',
             'den',
             'end',
@@ -23215,12 +23217,12 @@ export const GAMES = [
             'nerd',
             'reed',
             'erred',
-            'render'
-        ]
+            'render',
+        ],
     },
     {
-        'word': 'irggde',
-        'subset': [
+        word: 'irggde',
+        subset: [
             'die',
             'dig',
             'egg',
@@ -23234,12 +23236,12 @@ export const GAMES = [
             'ride',
             'ridge',
             'digger',
-            'rigged'
-        ]
+            'rigged',
+        ],
     },
     {
-        'word': 'rubble',
-        'subset': [
+        word: 'rubble',
+        subset: [
             'bel',
             'ebb',
             'rub',
@@ -23253,12 +23255,12 @@ export const GAMES = [
             'rule',
             'bluer',
             'blurb',
-            'rubble'
-        ]
+            'rubble',
+        ],
     },
     {
-        'word': 'aslasd',
-        'subset': [
+        word: 'aslasd',
+        subset: [
             'ads',
             'ala',
             'als',
@@ -23272,12 +23274,12 @@ export const GAMES = [
             'lass',
             'salad',
             'salsa',
-            'salads'
-        ]
+            'salads',
+        ],
     },
     {
-        'word': 'svelse',
-        'subset': [
+        word: 'svelse',
+        subset: [
             'eel',
             'ess',
             'eve',
@@ -23291,12 +23293,12 @@ export const GAMES = [
             'sees',
             'elves',
             'selves',
-            'vessel'
-        ]
+            'vessel',
+        ],
     },
     {
-        'word': 'hsakns',
-        'subset': [
+        word: 'hsakns',
+        subset: [
             'ash',
             'ask',
             'ass',
@@ -23310,12 +23312,12 @@ export const GAMES = [
             'sans',
             'hanks',
             'shank',
-            'shanks'
-        ]
+            'shanks',
+        ],
     },
     {
-        'word': 'sahsdr',
-        'subset': [
+        word: 'sahsdr',
+        subset: [
             'ads',
             'ash',
             'ass',
@@ -23329,12 +23331,12 @@ export const GAMES = [
             'hard',
             'rash',
             'shad',
-            'shards'
-        ]
+            'shards',
+        ],
     },
     {
-        'word': 'htsity',
-        'subset': [
+        word: 'htsity',
+        subset: [
             'his',
             'hit',
             'its',
@@ -23348,12 +23350,12 @@ export const GAMES = [
             'shit',
             'this',
             'tits',
-            'shitty'
-        ]
+            'shitty',
+        ],
     },
     {
-        'word': 'dohuls',
-        'subset': [
+        word: 'dohuls',
+        subset: [
             'dol',
             'dos',
             'duo',
@@ -23367,12 +23369,12 @@ export const GAMES = [
             'sold',
             'soul',
             'holds',
-            'should'
-        ]
+            'should',
+        ],
     },
     {
-        'word': 'iresre',
-        'subset': [
+        word: 'iresre',
+        subset: [
             'ere',
             'err',
             'ers',
@@ -23386,12 +23388,12 @@ export const GAMES = [
             'seer',
             'sire',
             'siree',
-            'sirree'
-        ]
+            'sirree',
+        ],
     },
     {
-        'word': 'iksing',
-        'subset': [
+        word: 'iksing',
+        subset: [
             'gin',
             'ink',
             'ins',
@@ -23405,12 +23407,12 @@ export const GAMES = [
             'sink',
             'skin',
             'kings',
-            'skiing'
-        ]
+            'skiing',
+        ],
     },
     {
-        'word': 'iseglh',
-        'subset': [
+        word: 'iseglh',
+        subset: [
             'gel',
             'his',
             'leg',
@@ -23424,12 +23426,12 @@ export const GAMES = [
             'legs',
             'lies',
             'sigh',
-            'sleigh'
-        ]
+            'sleigh',
+        ],
     },
     {
-        'word': 'olppys',
-        'subset': [
+        word: 'olppys',
+        subset: [
             'lop',
             'ops',
             'pop',
@@ -23443,12 +23445,12 @@ export const GAMES = [
             'poly',
             'pops',
             'slop',
-            'sloppy'
-        ]
+            'sloppy',
+        ],
     },
     {
-        'word': 'smokey',
-        'subset': [
+        word: 'smokey',
+        subset: [
             'ems',
             'key',
             'ose',
@@ -23462,12 +23464,12 @@ export const GAMES = [
             'mosey',
             'smoke',
             'smoky',
-            'smokey'
-        ]
+            'smokey',
+        ],
     },
     {
-        'word': 'ncskas',
-        'subset': [
+        word: 'ncskas',
+        subset: [
             'ask',
             'ass',
             'can',
@@ -23481,12 +23483,12 @@ export const GAMES = [
             'sacks',
             'scans',
             'snack',
-            'snacks'
-        ]
+            'snacks',
+        ],
     },
     {
-        'word': 'oslley',
-        'subset': [
+        word: 'oslley',
+        subset: [
             'ell',
             'lye',
             'ole',
@@ -23500,12 +23502,12 @@ export const GAMES = [
             'sole',
             'yell',
             'yells',
-            'solely'
-        ]
+            'solely',
+        ],
     },
     {
-        'word': 'pokess',
-        'subset': [
+        word: 'pokess',
+        subset: [
             'ess',
             'ops',
             'ose',
@@ -23519,12 +23521,12 @@ export const GAMES = [
             'poses',
             'posse',
             'spoke',
-            'spokes'
-        ]
+            'spokes',
+        ],
     },
     {
-        'word': 'esqual',
-        'subset': [
+        word: 'esqual',
+        subset: [
             'ale',
             'als',
             'las',
@@ -23538,12 +23540,12 @@ export const GAMES = [
             'seal',
             'equal',
             'equals',
-            'squeal'
-        ]
+            'squeal',
+        ],
     },
     {
-        'word': 'qsiure',
-        'subset': [
+        word: 'qsiure',
+        subset: [
             'ers',
             'res',
             'rue',
@@ -23557,12 +23559,12 @@ export const GAMES = [
             'sire',
             'sure',
             'user',
-            'squire'
-        ]
+            'squire',
+        ],
     },
     {
-        'word': 'sktoes',
-        'subset': [
+        word: 'sktoes',
+        subset: [
             'ess',
             'ose',
             'set',
@@ -23576,12 +23578,12 @@ export const GAMES = [
             'toke',
             'toss',
             'stoke',
-            'stokes'
-        ]
+            'stokes',
+        ],
     },
     {
-        'word': 'dsytur',
-        'subset': [
+        word: 'dsytur',
+        subset: [
             'dry',
             'rut',
             'sty',
@@ -23595,12 +23597,12 @@ export const GAMES = [
             'rusty',
             'study',
             'turds',
-            'sturdy'
-        ]
+            'sturdy',
+        ],
     },
     {
-        'word': 'sltyes',
-        'subset': [
+        word: 'sltyes',
+        subset: [
             'ess',
             'let',
             'lye',
@@ -23614,12 +23616,12 @@ export const GAMES = [
             'lets',
             'sets',
             'style',
-            'styles'
-        ]
+            'styles',
+        ],
     },
     {
-        'word': 'sumnmo',
-        'subset': [
+        word: 'sumnmo',
+        subset: [
             'mom',
             'mon',
             'mum',
@@ -23633,12 +23635,12 @@ export const GAMES = [
             'mums',
             'nous',
             'sumo',
-            'summon'
-        ]
+            'summon',
+        ],
     },
     {
-        'word': 'srueyv',
-        'subset': [
+        word: 'srueyv',
+        subset: [
             'ers',
             'res',
             'rev',
@@ -23652,12 +23654,12 @@ export const GAMES = [
             'sure',
             'user',
             'very',
-            'survey'
-        ]
+            'survey',
+        ],
     },
     {
-        'word': 'esewps',
-        'subset': [
+        word: 'esewps',
+        subset: [
             'ess',
             'ewe',
             'pee',
@@ -23671,12 +23673,12 @@ export const GAMES = [
             'spew',
             'weep',
             'sweep',
-            'sweeps'
-        ]
+            'sweeps',
+        ],
     },
     {
-        'word': 'yslobm',
-        'subset': [
+        word: 'yslobm',
+        subset: [
             'boy',
             'lob',
             'mob',
@@ -23690,12 +23692,12 @@ export const GAMES = [
             'mobs',
             'moly',
             'slob',
-            'symbol'
-        ]
+            'symbol',
+        ],
     },
     {
-        'word': 'htilny',
-        'subset': [
+        word: 'htilny',
+        subset: [
             'hit',
             'lin',
             'lit',
@@ -23709,12 +23711,12 @@ export const GAMES = [
             'lint',
             'thin',
             'tiny',
-            'thinly'
-        ]
+            'thinly',
+        ],
     },
     {
-        'word': 'rthall',
-        'subset': [
+        word: 'rthall',
+        subset: [
             'all',
             'alt',
             'art',
@@ -23728,12 +23730,12 @@ export const GAMES = [
             'hart',
             'rath',
             'tall',
-            'thrall'
-        ]
+            'thrall',
+        ],
     },
     {
-        'word': 'uthsly',
-        'subset': [
+        word: 'uthsly',
+        subset: [
             'hut',
             'shy',
             'sly',
@@ -23747,12 +23749,12 @@ export const GAMES = [
             'thus',
             'tush',
             'tushy',
-            'thusly'
-        ]
+            'thusly',
+        ],
     },
     {
-        'word': 'tasots',
-        'subset': [
+        word: 'tasots',
+        subset: [
             'ass',
             'att',
             'sat',
@@ -23766,12 +23768,12 @@ export const GAMES = [
             'tots',
             'stats',
             'toast',
-            'toasts'
-        ]
+            'toasts',
+        ],
     },
     {
-        'word': 'matoto',
-        'subset': [
+        word: 'matoto',
+        subset: [
             'att',
             'mat',
             'moo',
@@ -23785,12 +23787,12 @@ export const GAMES = [
             'otto',
             'toot',
             'motto',
-            'tomato'
-        ]
+            'tomato',
+        ],
     },
     {
-        'word': 'yrtgin',
-        'subset': [
+        word: 'yrtgin',
+        subset: [
             'gin',
             'git',
             'rig',
@@ -23804,12 +23806,12 @@ export const GAMES = [
             'tiny',
             'trig',
             'tying',
-            'trying'
-        ]
+            'trying',
+        ],
     },
     {
-        'word': 'ittwch',
-        'subset': [
+        word: 'ittwch',
+        subset: [
             'chi',
             'hic',
             'hit',
@@ -23823,12 +23825,12 @@ export const GAMES = [
             'whit',
             'with',
             'witch',
-            'twitch'
-        ]
+            'twitch',
+        ],
     },
     {
-        'word': 'uendda',
-        'subset': [
+        word: 'uendda',
+        subset: [
             'add',
             'and',
             'ane',
@@ -23842,12 +23844,12 @@ export const GAMES = [
             'dean',
             'dude',
             'nude',
-            'undead'
-        ]
+            'undead',
+        ],
     },
     {
-        'word': 'nuutre',
-        'subset': [
+        word: 'nuutre',
+        subset: [
             'net',
             'nut',
             'rue',
@@ -23861,12 +23863,12 @@ export const GAMES = [
             'true',
             'tune',
             'turn',
-            'untrue'
-        ]
+            'untrue',
+        ],
     },
     {
-        'word': 'aatvce',
-        'subset': [
+        word: 'aatvce',
+        subset: [
             'ace',
             'act',
             'ate',
@@ -23880,12 +23882,12 @@ export const GAMES = [
             'vat',
             'vet',
             'cave',
-            'vacate'
-        ]
+            'vacate',
+        ],
     },
     {
-        'word': 'valyel',
-        'subset': [
+        word: 'valyel',
+        subset: [
             'ale',
             'all',
             'ave',
@@ -23899,12 +23901,12 @@ export const GAMES = [
             'veal',
             'yell',
             'alley',
-            'valley'
-        ]
+            'valley',
+        ],
     },
     {
-        'word': 'venree',
-        'subset': [
+        word: 'venree',
+        subset: [
             'ere',
             'eve',
             'nee',
@@ -23918,12 +23920,12 @@ export const GAMES = [
             'nerve',
             'never',
             'reeve',
-            'veneer'
-        ]
+            'veneer',
+        ],
     },
     {
-        'word': 'evssle',
-        'subset': [
+        word: 'evssle',
+        subset: [
             'eel',
             'ess',
             'eve',
@@ -23937,12 +23939,12 @@ export const GAMES = [
             'sees',
             'elves',
             'selves',
-            'vessel'
-        ]
+            'vessel',
+        ],
     },
     {
-        'word': 'ivwede',
-        'subset': [
+        word: 'ivwede',
+        subset: [
             'dee',
             'dew',
             'die',
@@ -23956,12 +23958,12 @@ export const GAMES = [
             'view',
             'weed',
             'wide',
-            'viewed'
-        ]
+            'viewed',
+        ],
     },
     {
-        'word': 'vxiens',
-        'subset': [
+        word: 'vxiens',
+        subset: [
             'ins',
             'nix',
             'sen',
@@ -23975,12 +23977,12 @@ export const GAMES = [
             'vine',
             'veins',
             'vixen',
-            'vixens'
-        ]
+            'vixens',
+        ],
     },
     {
-        'word': 'vnltoa',
-        'subset': [
+        word: 'vnltoa',
+        subset: [
             'alt',
             'ant',
             'lot',
@@ -23994,12 +23996,12 @@ export const GAMES = [
             'nova',
             'oval',
             'volt',
-            'volant'
-        ]
+            'volant',
+        ],
     },
     {
-        'word': 'wnautl',
-        'subset': [
+        word: 'wnautl',
+        subset: [
             'alt',
             'ant',
             'law',
@@ -24013,12 +24015,12 @@ export const GAMES = [
             'luna',
             'tuna',
             'want',
-            'walnut'
-        ]
+            'walnut',
+        ],
     },
     {
-        'word': 'dewled',
-        'subset': [
+        word: 'dewled',
+        subset: [
             'dee',
             'del',
             'dew',
@@ -24032,12 +24034,12 @@ export const GAMES = [
             'lewd',
             'weed',
             'weld',
-            'welded'
-        ]
+            'welded',
+        ],
     },
     {
-        'word': 'amwhmy',
-        'subset': [
+        word: 'amwhmy',
+        subset: [
             'ham',
             'haw',
             'hay',
@@ -24051,12 +24053,12 @@ export const GAMES = [
             'yam',
             'yaw',
             'wham',
-            'whammy'
-        ]
+            'whammy',
+        ],
     },
     {
-        'word': 'inehrw',
-        'subset': [
+        word: 'inehrw',
+        subset: [
             'hen',
             'her',
             'new',
@@ -24070,12 +24072,12 @@ export const GAMES = [
             'wine',
             'wire',
             'whine',
-            'whiner'
-        ]
+            'whiner',
+        ],
     },
     {
-        'word': 'ecwkdi',
-        'subset': [
+        word: 'ecwkdi',
+        subset: [
             'dew',
             'die',
             'ice',
@@ -24089,12 +24091,12 @@ export const GAMES = [
             'iced',
             'wick',
             'wide',
-            'wicked'
-        ]
+            'wicked',
+        ],
     },
     {
-        'word': 'lelrye',
-        'subset': [
+        word: 'lelrye',
+        subset: [
             'eel',
             'ell',
             'ere',
@@ -24108,12 +24110,12 @@ export const GAMES = [
             'rely',
             'yell',
             'leery',
-            'yeller'
-        ]
+            'yeller',
+        ],
     },
     {
-        'word': 'zehyrp',
-        'subset': [
+        word: 'zehyrp',
+        subset: [
             'hep',
             'her',
             'hey',
@@ -24127,12 +24129,12 @@ export const GAMES = [
             'prey',
             'pyre',
             'hyper',
-            'zephyr'
-        ]
+            'zephyr',
+        ],
     },
     {
-        'word': 'ppzier',
-        'subset': [
+        word: 'ppzier',
+        subset: [
             'pep',
             'per',
             'pie',
@@ -24146,12 +24148,12 @@ export const GAMES = [
             'ripe',
             'piper',
             'prize',
-            'zipper'
-        ]
+            'zipper',
+        ],
     },
     {
-        'word': 'abcuas',
-        'subset': [
+        word: 'abcuas',
+        subset: [
             'abs',
             'baa',
             'bus',
@@ -24164,12 +24166,12 @@ export const GAMES = [
             'cubs',
             'scab',
             'scuba',
-            'abacus'
-        ]
+            'abacus',
+        ],
     },
     {
-        'word': 'ffaord',
-        'subset': [
+        word: 'ffaord',
+        subset: [
             'ado',
             'arf',
             'fad',
@@ -24182,12 +24184,12 @@ export const GAMES = [
             'rod',
             'ford',
             'road',
-            'afford'
-        ]
+            'afford',
+        ],
     },
     {
-        'word': 'afriad',
-        'subset': [
+        word: 'afriad',
+        subset: [
             'aid',
             'air',
             'arf',
@@ -24200,12 +24202,12 @@ export const GAMES = [
             'arid',
             'fair',
             'raid',
-            'afraid'
-        ]
+            'afraid',
+        ],
     },
     {
-        'word': 'iading',
-        'subset': [
+        word: 'iading',
+        subset: [
             'aid',
             'ain',
             'and',
@@ -24218,12 +24220,12 @@ export const GAMES = [
             'dang',
             'ding',
             'gain',
-            'aiding'
-        ]
+            'aiding',
+        ],
     },
     {
-        'word': 'aiwray',
-        'subset': [
+        word: 'aiwray',
+        subset: [
             'air',
             'raw',
             'ray',
@@ -24236,12 +24238,12 @@ export const GAMES = [
             'away',
             'awry',
             'wary',
-            'airway'
-        ]
+            'airway',
+        ],
     },
     {
-        'word': 'zamaed',
-        'subset': [
+        word: 'zamaed',
+        subset: [
             'ama',
             'dam',
             'mad',
@@ -24254,12 +24256,12 @@ export const GAMES = [
             'maze',
             'mead',
             'amaze',
-            'amazed'
-        ]
+            'amazed',
+        ],
     },
     {
-        'word': 'annlsa',
-        'subset': [
+        word: 'annlsa',
+        subset: [
             'ala',
             'als',
             'ana',
@@ -24272,12 +24274,12 @@ export const GAMES = [
             'anna',
             'nana',
             'nasal',
-            'annals'
-        ]
+            'annals',
+        ],
     },
     {
-        'word': 'annoys',
-        'subset': [
+        word: 'annoys',
+        subset: [
             'any',
             'nan',
             'nay',
@@ -24290,12 +24292,12 @@ export const GAMES = [
             'nosy',
             'annoy',
             'sonny',
-            'annoys'
-        ]
+            'annoys',
+        ],
     },
     {
-        'word': 'atyahp',
-        'subset': [
+        word: 'atyahp',
+        subset: [
             'aha',
             'hap',
             'hat',
@@ -24308,12 +24310,12 @@ export const GAMES = [
             'yah',
             'yap',
             'path',
-            'apathy'
-        ]
+            'apathy',
+        ],
     },
     {
-        'word': 'uarrom',
-        'subset': [
+        word: 'uarrom',
+        subset: [
             'arm',
             'mar',
             'mor',
@@ -24326,12 +24328,12 @@ export const GAMES = [
             'roar',
             'armor',
             'rumor',
-            'armour'
-        ]
+            'armour',
+        ],
     },
     {
-        'word': 'tatina',
-        'subset': [
+        word: 'tatina',
+        subset: [
             'ain',
             'ana',
             'ani',
@@ -24344,12 +24346,12 @@ export const GAMES = [
             'anti',
             'taint',
             'titan',
-            'attain'
-        ]
+            'attain',
+        ],
     },
     {
-        'word': 'awaske',
-        'subset': [
+        word: 'awaske',
+        subset: [
             'ask',
             'awe',
             'saw',
@@ -24362,12 +24364,12 @@ export const GAMES = [
             'askew',
             'awake',
             'wakes',
-            'awakes'
-        ]
+            'awakes',
+        ],
     },
     {
-        'word': 'aaswdr',
-        'subset': [
+        word: 'aaswdr',
+        subset: [
             'ads',
             'raw',
             'sad',
@@ -24380,12 +24382,12 @@ export const GAMES = [
             'wars',
             'award',
             'draws',
-            'awards'
-        ]
+            'awards',
+        ],
     },
     {
-        'word': 'gaanbm',
-        'subset': [
+        word: 'gaanbm',
+        subset: [
             'aga',
             'ama',
             'ana',
@@ -24398,12 +24400,12 @@ export const GAMES = [
             'nag',
             'nam',
             'bang',
-            'bagman'
-        ]
+            'bagman',
+        ],
     },
     {
-        'word': 'abmant',
-        'subset': [
+        word: 'abmant',
+        subset: [
             'ama',
             'ana',
             'ant',
@@ -24416,12 +24418,12 @@ export const GAMES = [
             'nam',
             'tab',
             'tan',
-            'batman'
-        ]
+            'batman',
+        ],
     },
     {
-        'word': 'aieben',
-        'subset': [
+        word: 'aieben',
+        subset: [
             'ain',
             'ane',
             'ani',
@@ -24434,12 +24436,12 @@ export const GAMES = [
             'bean',
             'been',
             'bene',
-            'beanie'
-        ]
+            'beanie',
+        ],
     },
     {
-        'word': 'ebacme',
-        'subset': [
+        word: 'ebacme',
+        subset: [
             'ace',
             'bam',
             'bee',
@@ -24452,12 +24454,12 @@ export const GAMES = [
             'beam',
             'came',
             'mace',
-            'became'
-        ]
+            'became',
+        ],
     },
     {
-        'word': 'cibker',
-        'subset': [
+        word: 'cibker',
+        subset: [
             'ice',
             'ick',
             'rec',
@@ -24470,12 +24472,12 @@ export const GAMES = [
             'rick',
             'biker',
             'brick',
-            'bicker'
-        ]
+            'bicker',
+        ],
     },
     {
-        'word': 'lboskc',
-        'subset': [
+        word: 'lboskc',
+        subset: [
             'cob',
             'col',
             'cos',
@@ -24488,12 +24490,12 @@ export const GAMES = [
             'sock',
             'block',
             'locks',
-            'blocks'
-        ]
+            'blocks',
+        ],
     },
     {
-        'word': 'poblwu',
-        'subset': [
+        word: 'poblwu',
+        subset: [
             'bop',
             'bow',
             'lob',
@@ -24506,12 +24508,12 @@ export const GAMES = [
             'blow',
             'bowl',
             'plow',
-            'blowup'
-        ]
+            'blowup',
+        ],
     },
     {
-        'word': 'xboing',
-        'subset': [
+        word: 'xboing',
+        subset: [
             'big',
             'bin',
             'bio',
@@ -24524,12 +24526,12 @@ export const GAMES = [
             'obi',
             'bong',
             'bingo',
-            'boxing'
-        ]
+            'boxing',
+        ],
     },
     {
-        'word': 'eebrhc',
-        'subset': [
+        word: 'eebrhc',
+        subset: [
             'bee',
             'cee',
             'ere',
@@ -24542,12 +24544,12 @@ export const GAMES = [
             'here',
             'beech',
             'cheer',
-            'breech'
-        ]
+            'breech',
+        ],
     },
     {
-        'word': 'brezey',
-        'subset': [
+        word: 'brezey',
+        subset: [
             'bee',
             'bey',
             'bye',
@@ -24560,12 +24562,12 @@ export const GAMES = [
             'bree',
             'eyre',
             'beery',
-            'breezy'
-        ]
+            'breezy',
+        ],
     },
     {
-        'word': 'ubkcet',
-        'subset': [
+        word: 'ubkcet',
+        subset: [
             'bet',
             'but',
             'cub',
@@ -24578,12 +24580,12 @@ export const GAMES = [
             'cute',
             'tube',
             'tuck',
-            'bucket'
-        ]
+            'bucket',
+        ],
     },
     {
-        'word': 'buruea',
-        'subset': [
+        word: 'buruea',
+        subset: [
             'are',
             'bar',
             'bra',
@@ -24596,12 +24598,12 @@ export const GAMES = [
             'beau',
             'bura',
             'rube',
-            'bureau'
-        ]
+            'bureau',
+        ],
     },
     {
-        'word': 'akcecl',
-        'subset': [
+        word: 'akcecl',
+        subset: [
             'ace',
             'ale',
             'elk',
@@ -24614,12 +24616,12 @@ export const GAMES = [
             'lake',
             'leak',
             'clack',
-            'cackle'
-        ]
+            'cackle',
+        ],
     },
     {
-        'word': 'cactus',
-        'subset': [
+        word: 'cactus',
+        subset: [
             'act',
             'cat',
             'cut',
@@ -24632,12 +24634,12 @@ export const GAMES = [
             'cats',
             'cuts',
             'scat',
-            'cactus'
-        ]
+            'cactus',
+        ],
     },
     {
-        'word': 'encsus',
-        'subset': [
+        word: 'encsus',
+        subset: [
             'cue',
             'ess',
             'sec',
@@ -24650,12 +24652,12 @@ export const GAMES = [
             'ness',
             'sues',
             'uses',
-            'census'
-        ]
+            'census',
+        ],
     },
     {
-        'word': 'cckihs',
-        'subset': [
+        word: 'cckihs',
+        subset: [
             'chi',
             'hic',
             'his',
@@ -24668,12 +24670,12 @@ export const GAMES = [
             'sick',
             'chick',
             'hicks',
-            'chicks'
-        ]
+            'chicks',
+        ],
     },
     {
-        'word': 'chiors',
-        'subset': [
+        word: 'chiors',
+        subset: [
             'chi',
             'cor',
             'cos',
@@ -24686,12 +24688,12 @@ export const GAMES = [
             'cris',
             'rich',
             'choir',
-            'choirs'
-        ]
+            'choirs',
+        ],
     },
     {
-        'word': 'hdrcos',
-        'subset': [
+        word: 'hdrcos',
+        subset: [
             'cod',
             'cor',
             'cos',
@@ -24704,12 +24706,12 @@ export const GAMES = [
             'rods',
             'chord',
             'cords',
-            'chords'
-        ]
+            'chords',
+        ],
     },
     {
-        'word': 'stiice',
-        'subset': [
+        word: 'stiice',
+        subset: [
             'ice',
             'its',
             'sec',
@@ -24722,12 +24724,12 @@ export const GAMES = [
             'cite',
             'site',
             'ties',
-            'cities'
-        ]
+            'cities',
+        ],
     },
     {
-        'word': 'clisng',
-        'subset': [
+        word: 'clisng',
+        subset: [
             'gin',
             'ins',
             'lin',
@@ -24740,12 +24742,12 @@ export const GAMES = [
             'sing',
             'cling',
             'sling',
-            'clings'
-        ]
+            'clings',
+        ],
     },
     {
-        'word': 'olcsor',
-        'subset': [
+        word: 'olcsor',
+        subset: [
             'col',
             'coo',
             'cor',
@@ -24758,12 +24760,12 @@ export const GAMES = [
             'solo',
             'color',
             'cools',
-            'colors'
-        ]
+            'colors',
+        ],
     },
     {
-        'word': 'coeodk',
-        'subset': [
+        word: 'coeodk',
+        subset: [
             'cod',
             'coo',
             'doc',
@@ -24776,12 +24778,12 @@ export const GAMES = [
             'deck',
             'deco',
             'dock',
-            'cooked'
-        ]
+            'cooked',
+        ],
     },
     {
-        'word': 'rcoenr',
-        'subset': [
+        word: 'rcoenr',
+        subset: [
             'con',
             'cor',
             'err',
@@ -24794,12 +24796,12 @@ export const GAMES = [
             'corn',
             'once',
             'recon',
-            'corner'
-        ]
+            'corner',
+        ],
     },
     {
-        'word': 'cotxer',
-        'subset': [
+        word: 'cotxer',
+        subset: [
             'cor',
             'cot',
             'cox',
@@ -24812,12 +24814,12 @@ export const GAMES = [
             'tor',
             'core',
             'tore',
-            'cortex'
-        ]
+            'cortex',
+        ],
     },
     {
-        'word': 'acrcks',
-        'subset': [
+        word: 'acrcks',
+        subset: [
             'arc',
             'ark',
             'ask',
@@ -24830,12 +24832,12 @@ export const GAMES = [
             'scar',
             'crack',
             'racks',
-            'cracks'
-        ]
+            'cracks',
+        ],
     },
     {
-        'word': 'cdudel',
-        'subset': [
+        word: 'cdudel',
+        subset: [
             'cud',
             'cue',
             'del',
@@ -24848,12 +24850,12 @@ export const GAMES = [
             'dude',
             'duel',
             'luce',
-            'cuddle'
-        ]
+            'cuddle',
+        ],
     },
     {
-        'word': 'uctsey',
-        'subset': [
+        word: 'uctsey',
+        subset: [
             'cue',
             'cut',
             'sec',
@@ -24866,12 +24868,12 @@ export const GAMES = [
             'cute',
             'cuts',
             'cyst',
-            'cutesy'
-        ]
+            'cutesy',
+        ],
     },
     {
-        'word': 'ecddut',
-        'subset': [
+        word: 'ecddut',
+        subset: [
             'cud',
             'cue',
             'cut',
@@ -24884,12 +24886,12 @@ export const GAMES = [
             'duct',
             'dude',
             'duet',
-            'deduct'
-        ]
+            'deduct',
+        ],
     },
     {
-        'word': 'epdeer',
-        'subset': [
+        word: 'epdeer',
+        subset: [
             'dee',
             'ere',
             'pee',
@@ -24902,12 +24904,12 @@ export const GAMES = [
             'peed',
             'peer',
             'reed',
-            'deeper'
-        ]
+            'deeper',
+        ],
     },
     {
-        'word': 'fnedde',
-        'subset': [
+        word: 'fnedde',
+        subset: [
             'dee',
             'den',
             'end',
@@ -24920,12 +24922,12 @@ export const GAMES = [
             'fend',
             'need',
             'ended',
-            'defend'
-        ]
+            'defend',
+        ],
     },
     {
-        'word': 'dduele',
-        'subset': [
+        word: 'dduele',
+        subset: [
             'dee',
             'del',
             'dud',
@@ -24938,12 +24940,12 @@ export const GAMES = [
             'duel',
             'elude',
             'delude',
-            'eluded'
-        ]
+            'eluded',
+        ],
     },
     {
-        'word': 'dephts',
-        'subset': [
+        word: 'dephts',
+        subset: [
             'eth',
             'hep',
             'pet',
@@ -24956,12 +24958,12 @@ export const GAMES = [
             'shed',
             'step',
             'depth',
-            'depths'
-        ]
+            'depths',
+        ],
     },
     {
-        'word': 'edtets',
-        'subset': [
+        word: 'edtets',
+        subset: [
             'dee',
             'see',
             'set',
@@ -24974,12 +24976,12 @@ export const GAMES = [
             'deets',
             'steed',
             'detest',
-            'tested'
-        ]
+            'tested',
+        ],
     },
     {
-        'word': 'idmrem',
-        'subset': [
+        word: 'idmrem',
+        subset: [
             'die',
             'dim',
             'med',
@@ -24992,12 +24994,12 @@ export const GAMES = [
             'dire',
             'mime',
             'ride',
-            'dimmer'
-        ]
+            'dimmer',
+        ],
     },
     {
-        'word': 'ondbbi',
-        'subset': [
+        word: 'ondbbi',
+        subset: [
             'bib',
             'bid',
             'bin',
@@ -25010,12 +25012,12 @@ export const GAMES = [
             'obi',
             'bind',
             'bond',
-            'dobbin'
-        ]
+            'dobbin',
+        ],
     },
     {
-        'word': 'odckde',
-        'subset': [
+        word: 'odckde',
+        subset: [
             'cod',
             'doc',
             'doe',
@@ -25028,12 +25030,12 @@ export const GAMES = [
             'deco',
             'dock',
             'coded',
-            'docked'
-        ]
+            'docked',
+        ],
     },
     {
-        'word': 'oomded',
-        'subset': [
+        word: 'oomded',
+        subset: [
             'doe',
             'dom',
             'med',
@@ -25046,12 +25048,12 @@ export const GAMES = [
             'doom',
             'mode',
             'mood',
-            'doomed'
-        ]
+            'doomed',
+        ],
     },
     {
-        'word': 'radams',
-        'subset': [
+        word: 'radams',
+        subset: [
             'ads',
             'ama',
             'arm',
@@ -25064,12 +25066,12 @@ export const GAMES = [
             'arms',
             'mars',
             'drama',
-            'dramas'
-        ]
+            'dramas',
+        ],
     },
     {
-        'word': 'gddree',
-        'subset': [
+        word: 'gddree',
+        subset: [
             'dee',
             'ere',
             'ged',
@@ -25082,12 +25084,12 @@ export const GAMES = [
             'reed',
             'edged',
             'greed',
-            'dredge'
-        ]
+            'dredge',
+        ],
     },
     {
-        'word': 'pdoryo',
-        'subset': [
+        word: 'pdoryo',
+        subset: [
             'dry',
             'pod',
             'pro',
@@ -25100,12 +25102,12 @@ export const GAMES = [
             'poor',
             'prod',
             'droop',
-            'droopy'
-        ]
+            'droopy',
+        ],
     },
     {
-        'word': 'uddrge',
-        'subset': [
+        word: 'uddrge',
+        subset: [
             'dud',
             'due',
             'dug',
@@ -25118,12 +25120,12 @@ export const GAMES = [
             'rude',
             'urge',
             'urged',
-            'drudge'
-        ]
+            'drudge',
+        ],
     },
     {
-        'word': 'rdnuks',
-        'subset': [
+        word: 'rdnuks',
+        subset: [
             'dun',
             'run',
             'sun',
@@ -25136,12 +25138,12 @@ export const GAMES = [
             'urns',
             'drunk',
             'dunks',
-            'drunks'
-        ]
+            'drunks',
+        ],
     },
     {
-        'word': 'ukdned',
-        'subset': [
+        word: 'ukdned',
+        subset: [
             'den',
             'dud',
             'due',
@@ -25154,12 +25156,12 @@ export const GAMES = [
             'nude',
             'nuke',
             'nuked',
-            'dunked'
-        ]
+            'dunked',
+        ],
     },
     {
-        'word': 'chseoe',
-        'subset': [
+        word: 'chseoe',
+        subset: [
             'cee',
             'cos',
             'hoe',
@@ -25172,12 +25174,12 @@ export const GAMES = [
             'hose',
             'shoe',
             'chose',
-            'echoes'
-        ]
+            'echoes',
+        ],
     },
     {
-        'word': 'dnegig',
-        'subset': [
+        word: 'dnegig',
+        subset: [
             'den',
             'die',
             'dig',
@@ -25190,12 +25192,12 @@ export const GAMES = [
             'gin',
             'dine',
             'ding',
-            'edging'
-        ]
+            'edging',
+        ],
     },
     {
-        'word': 'ehgtih',
-        'subset': [
+        word: 'ehgtih',
+        subset: [
             'eth',
             'get',
             'git',
@@ -25208,12 +25210,12 @@ export const GAMES = [
             'heigh',
             'thigh',
             'eighth',
-            'height'
-        ]
+            'height',
+        ],
     },
     {
-        'word': 'ceitil',
-        'subset': [
+        word: 'ceitil',
+        subset: [
             'ice',
             'lei',
             'let',
@@ -25226,12 +25228,12 @@ export const GAMES = [
             'lice',
             'lite',
             'tile',
-            'elicit'
-        ]
+            'elicit',
+        ],
     },
     {
-        'word': 'euedld',
-        'subset': [
+        word: 'euedld',
+        subset: [
             'dee',
             'del',
             'dud',
@@ -25244,12 +25246,12 @@ export const GAMES = [
             'duel',
             'elude',
             'delude',
-            'eluded'
-        ]
+            'eluded',
+        ],
     },
     {
-        'word': 'denign',
-        'subset': [
+        word: 'denign',
+        subset: [
             'den',
             'die',
             'dig',
@@ -25262,12 +25264,12 @@ export const GAMES = [
             'dine',
             'ding',
             'nine',
-            'ending'
-        ]
+            'ending',
+        ],
     },
     {
-        'word': 'negage',
-        'subset': [
+        word: 'negage',
+        subset: [
             'age',
             'ane',
             'egg',
@@ -25280,12 +25282,12 @@ export const GAMES = [
             'gage',
             'gang',
             'gene',
-            'engage'
-        ]
+            'engage',
+        ],
     },
     {
-        'word': 'eevnly',
-        'subset': [
+        word: 'eevnly',
+        subset: [
             'eel',
             'eve',
             'eye',
@@ -25298,12 +25300,12 @@ export const GAMES = [
             'even',
             'levy',
             'neve',
-            'evenly'
-        ]
+            'evenly',
+        ],
     },
     {
-        'word': 'xceels',
-        'subset': [
+        word: 'xceels',
+        subset: [
             'cee',
             'eel',
             'lee',
@@ -25316,12 +25318,12 @@ export const GAMES = [
             'exes',
             'excel',
             'execs',
-            'excels'
-        ]
+            'excels',
+        ],
     },
     {
-        'word': 'exlhae',
-        'subset': [
+        word: 'exlhae',
+        subset: [
             'ale',
             'axe',
             'eel',
@@ -25334,12 +25336,12 @@ export const GAMES = [
             'hale',
             'heal',
             'heel',
-            'exhale'
-        ]
+            'exhale',
+        ],
     },
     {
-        'word': 'eopsxe',
-        'subset': [
+        word: 'eopsxe',
+        subset: [
             'ops',
             'ose',
             'pee',
@@ -25352,12 +25354,12 @@ export const GAMES = [
             'pees',
             'pose',
             'seep',
-            'expose'
-        ]
+            'expose',
+        ],
     },
     {
-        'word': 'exotrt',
-        'subset': [
+        word: 'exotrt',
+        subset: [
             'ore',
             'ort',
             'rex',
@@ -25370,12 +25372,12 @@ export const GAMES = [
             'tote',
             'trot',
             'otter',
-            'extort'
-        ]
+            'extort',
+        ],
     },
     {
-        'word': 'ncefes',
-        'subset': [
+        word: 'ncefes',
+        subset: [
             'cee',
             'fee',
             'fen',
@@ -25388,12 +25390,12 @@ export const GAMES = [
             'feces',
             'fence',
             'scene',
-            'fences'
-        ]
+            'fences',
+        ],
     },
     {
-        'word': 'clikfs',
-        'subset': [
+        word: 'clikfs',
+        subset: [
             'ick',
             'ifs',
             'ilk',
@@ -25406,12 +25408,12 @@ export const GAMES = [
             'flick',
             'licks',
             'slick',
-            'flicks'
-        ]
+            'flicks',
+        ],
     },
     {
-        'word': 'lgifth',
-        'subset': [
+        word: 'lgifth',
+        subset: [
             'fig',
             'fit',
             'git',
@@ -25424,12 +25426,12 @@ export const GAMES = [
             'fight',
             'filth',
             'light',
-            'flight'
-        ]
+            'flight',
+        ],
     },
     {
-        'word': 'olfors',
-        'subset': [
+        word: 'olfors',
+        subset: [
             'for',
             'fro',
             'loo',
@@ -25442,12 +25444,12 @@ export const GAMES = [
             'floor',
             'fools',
             'roofs',
-            'floors'
-        ]
+            'floors',
+        ],
     },
     {
-        'word': 'kafrns',
-        'subset': [
+        word: 'kafrns',
+        subset: [
             'arf',
             'ark',
             'ask',
@@ -25460,12 +25462,12 @@ export const GAMES = [
             'sark',
             'frank',
             'ranks',
-            'franks'
-        ]
+            'franks',
+        ],
     },
     {
-        'word': 'frisyk',
-        'subset': [
+        word: 'frisyk',
+        subset: [
             'fir',
             'fry',
             'ifs',
@@ -25478,12 +25480,12 @@ export const GAMES = [
             'risk',
             'frisk',
             'risky',
-            'frisky'
-        ]
+            'frisky',
+        ],
     },
     {
-        'word': 'ufller',
-        'subset': [
+        word: 'ufller',
+        subset: [
             'elf',
             'ell',
             'fer',
@@ -25496,12 +25498,12 @@ export const GAMES = [
             'full',
             'lure',
             'rule',
-            'fuller'
-        ]
+            'fuller',
+        ],
     },
     {
-        'word': 'thoetg',
-        'subset': [
+        word: 'thoetg',
+        subset: [
             'ego',
             'eth',
             'get',
@@ -25514,12 +25516,12 @@ export const GAMES = [
             'tho',
             'toe',
             'tote',
-            'ghetto'
-        ]
+            'ghetto',
+        ],
     },
     {
-        'word': 'ignger',
-        'subset': [
+        word: 'ignger',
+        subset: [
             'egg',
             'eng',
             'gen',
@@ -25532,12 +25534,12 @@ export const GAMES = [
             'ring',
             'reign',
             'ginger',
-            'nigger'
-        ]
+            'nigger',
+        ],
     },
     {
-        'word': 'ctghli',
-        'subset': [
+        word: 'ctghli',
+        subset: [
             'chi',
             'git',
             'hic',
@@ -25550,12 +25552,12 @@ export const GAMES = [
             'hilt',
             'itch',
             'light',
-            'glitch'
-        ]
+            'glitch',
+        ],
     },
     {
-        'word': 'odgloy',
-        'subset': [
+        word: 'odgloy',
+        subset: [
             'dog',
             'dol',
             'god',
@@ -25568,12 +25570,12 @@ export const GAMES = [
             'logo',
             'godly',
             'goody',
-            'goodly'
-        ]
+            'goodly',
+        ],
     },
     {
-        'word': 'greorc',
-        'subset': [
+        word: 'greorc',
+        subset: [
             'cog',
             'cor',
             'ego',
@@ -25586,12 +25588,12 @@ export const GAMES = [
             'gore',
             'ogre',
             'roger',
-            'grocer'
-        ]
+            'grocer',
+        ],
     },
     {
-        'word': 'urgdge',
-        'subset': [
+        word: 'urgdge',
+        subset: [
             'due',
             'dug',
             'egg',
@@ -25604,12 +25606,12 @@ export const GAMES = [
             'urge',
             'urged',
             'grudge',
-            'rugged'
-        ]
+            'rugged',
+        ],
     },
     {
-        'word': 'muypgr',
-        'subset': [
+        word: 'muypgr',
+        subset: [
             'gum',
             'guy',
             'gym',
@@ -25622,12 +25624,12 @@ export const GAMES = [
             'yum',
             'yup',
             'rump',
-            'grumpy'
-        ]
+            'grumpy',
+        ],
     },
     {
-        'word': 'khanie',
-        'subset': [
+        word: 'khanie',
+        subset: [
             'ain',
             'ane',
             'ani',
@@ -25640,12 +25642,12 @@ export const GAMES = [
             'hike',
             'kane',
             'khan',
-            'hankie'
-        ]
+            'hankie',
+        ],
     },
     {
-        'word': 'ehhgit',
-        'subset': [
+        word: 'ehhgit',
+        subset: [
             'eth',
             'get',
             'git',
@@ -25658,12 +25660,12 @@ export const GAMES = [
             'heigh',
             'thigh',
             'eighth',
-            'height'
-        ]
+            'height',
+        ],
     },
     {
-        'word': 'ryohao',
-        'subset': [
+        word: 'ryohao',
+        subset: [
             'hay',
             'hoy',
             'oar',
@@ -25676,12 +25678,12 @@ export const GAMES = [
             'ahoy',
             'hora',
             'yahoo',
-            'hooray'
-        ]
+            'hooray',
+        ],
     },
     {
-        'word': 'phpeod',
-        'subset': [
+        word: 'phpeod',
+        subset: [
             'doe',
             'hep',
             'hoe',
@@ -25694,12 +25696,12 @@ export const GAMES = [
             'hope',
             'pope',
             'hoped',
-            'hopped'
-        ]
+            'hopped',
+        ],
     },
     {
-        'word': 'emhdup',
-        'subset': [
+        word: 'emhdup',
+        subset: [
             'due',
             'hem',
             'hep',
@@ -25712,12 +25714,12 @@ export const GAMES = [
             'dump',
             'hemp',
             'hump',
-            'humped'
-        ]
+            'humped',
+        ],
     },
     {
-        'word': 'nkheur',
-        'subset': [
+        word: 'nkheur',
+        subset: [
             'hen',
             'her',
             'hue',
@@ -25730,12 +25732,12 @@ export const GAMES = [
             'kern',
             'nuke',
             'rune',
-            'hunker'
-        ]
+            'hunker',
+        ],
     },
     {
-        'word': 'ntejic',
-        'subset': [
+        word: 'ntejic',
+        subset: [
             'ice',
             'jet',
             'jin',
@@ -25748,12 +25750,12 @@ export const GAMES = [
             'cite',
             'nice',
             'nite',
-            'inject'
-        ]
+            'inject',
+        ],
     },
     {
-        'word': 'teinvn',
-        'subset': [
+        word: 'teinvn',
+        subset: [
             'inn',
             'net',
             'ten',
@@ -25766,12 +25768,12 @@ export const GAMES = [
             'vein',
             'vent',
             'vine',
-            'invent'
-        ]
+            'invent',
+        ],
     },
     {
-        'word': 'abjber',
-        'subset': [
+        word: 'abjber',
+        subset: [
             'are',
             'bar',
             'bra',
@@ -25784,12 +25786,12 @@ export const GAMES = [
             'barb',
             'bare',
             'bear',
-            'jabber'
-        ]
+            'jabber',
+        ],
     },
     {
-        'word': 'ajlpoy',
-        'subset': [
+        word: 'ajlpoy',
+        subset: [
             'jay',
             'joy',
             'lap',
@@ -25802,12 +25804,12 @@ export const GAMES = [
             'play',
             'ploy',
             'poly',
-            'jalopy'
-        ]
+            'jalopy',
+        ],
     },
     {
-        'word': 'mmeajr',
-        'subset': [
+        word: 'mmeajr',
+        subset: [
             'are',
             'arm',
             'ear',
@@ -25820,12 +25822,12 @@ export const GAMES = [
             'rem',
             'mare',
             'ream',
-            'jammer'
-        ]
+            'jammer',
+        ],
     },
     {
-        'word': 'esrjey',
-        'subset': [
+        word: 'esrjey',
+        subset: [
             'ere',
             'ers',
             'eye',
@@ -25838,12 +25840,12 @@ export const GAMES = [
             'eyes',
             'eyre',
             'seer',
-            'jersey'
-        ]
+            'jersey',
+        ],
     },
     {
-        'word': 'jlewse',
-        'subset': [
+        word: 'jlewse',
+        subset: [
             'eel',
             'ewe',
             'jew',
@@ -25856,12 +25858,12 @@ export const GAMES = [
             'jews',
             'slew',
             'jewel',
-            'jewels'
-        ]
+            'jewels',
+        ],
     },
     {
-        'word': 'ijgswa',
-        'subset': [
+        word: 'ijgswa',
+        subset: [
             'gas',
             'jag',
             'jaw',
@@ -25874,12 +25876,12 @@ export const GAMES = [
             'jaws',
             'swig',
             'wigs',
-            'jigsaw'
-        ]
+            'jigsaw',
+        ],
     },
     {
-        'word': 'joadrn',
-        'subset': [
+        word: 'joadrn',
+        subset: [
             'ado',
             'and',
             'don',
@@ -25892,12 +25894,12 @@ export const GAMES = [
             'darn',
             'rand',
             'road',
-            'jordan'
-        ]
+            'jordan',
+        ],
     },
     {
-        'word': 'eujngl',
-        'subset': [
+        word: 'eujngl',
+        subset: [
             'eng',
             'gel',
             'gen',
@@ -25910,12 +25912,12 @@ export const GAMES = [
             'luge',
             'lung',
             'lunge',
-            'jungle'
-        ]
+            'jungle',
+        ],
     },
     {
-        'word': 'eikdrd',
-        'subset': [
+        word: 'eikdrd',
+        subset: [
             'did',
             'die',
             'kid',
@@ -25928,12 +25930,12 @@ export const GAMES = [
             'ride',
             'dried',
             'redid',
-            'kidder'
-        ]
+            'kidder',
+        ],
     },
     {
-        'word': 'komino',
-        'subset': [
+        word: 'komino',
+        subset: [
             'ink',
             'ion',
             'kin',
@@ -25946,12 +25948,12 @@ export const GAMES = [
             'mono',
             'moon',
             'oink',
-            'kimono'
-        ]
+            'kimono',
+        ],
     },
     {
-        'word': 'ellesv',
-        'subset': [
+        word: 'ellesv',
+        subset: [
             'eel',
             'ell',
             'eve',
@@ -25964,12 +25966,12 @@ export const GAMES = [
             'sell',
             'elves',
             'level',
-            'levels'
-        ]
+            'levels',
+        ],
     },
     {
-        'word': 'olcket',
-        'subset': [
+        word: 'olcket',
+        subset: [
             'col',
             'cot',
             'elk',
@@ -25982,12 +25984,12 @@ export const GAMES = [
             'cole',
             'lock',
             'toke',
-            'locket'
-        ]
+            'locket',
+        ],
     },
     {
-        'word': 'elolny',
-        'subset': [
+        word: 'elolny',
+        subset: [
             'ell',
             'lye',
             'ole',
@@ -26000,12 +26002,12 @@ export const GAMES = [
             'only',
             'yell',
             'nelly',
-            'lonely'
-        ]
+            'lonely',
+        ],
     },
     {
-        'word': 'lokoed',
-        'subset': [
+        word: 'lokoed',
+        subset: [
             'del',
             'doe',
             'dol',
@@ -26018,12 +26020,12 @@ export const GAMES = [
             'dole',
             'lode',
             'look',
-            'looked'
-        ]
+            'looked',
+        ],
     },
     {
-        'word': 'macasw',
-        'subset': [
+        word: 'macasw',
+        subset: [
             'ama',
             'cam',
             'mac',
@@ -26036,12 +26038,12 @@ export const GAMES = [
             'casa',
             'scam',
             'swam',
-            'macaws'
-        ]
+            'macaws',
+        ],
     },
     {
-        'word': 'htamoz',
-        'subset': [
+        word: 'htamoz',
+        subset: [
             'ham',
             'hat',
             'hot',
@@ -26054,12 +26056,12 @@ export const GAMES = [
             'moat',
             'moth',
             'oath',
-            'matzoh'
-        ]
+            'matzoh',
+        ],
     },
     {
-        'word': 'emssed',
-        'subset': [
+        word: 'emssed',
+        subset: [
             'dee',
             'ems',
             'ess',
@@ -26072,12 +26074,12 @@ export const GAMES = [
             'sees',
             'seeds',
             'seems',
-            'messed'
-        ]
+            'messed',
+        ],
     },
     {
-        'word': 'imldyl',
-        'subset': [
+        word: 'imldyl',
+        subset: [
             'dim',
             'ill',
             'lid',
@@ -26090,12 +26092,12 @@ export const GAMES = [
             'mill',
             'dilly',
             'dimly',
-            'mildly'
-        ]
+            'mildly',
+        ],
     },
     {
-        'word': 'mwogin',
-        'subset': [
+        word: 'mwogin',
+        subset: [
             'gin',
             'ion',
             'mon',
@@ -26108,12 +26110,12 @@ export const GAMES = [
             'gown',
             'wing',
             'owing',
-            'mowing'
-        ]
+            'mowing',
+        ],
     },
     {
-        'word': 'meduld',
-        'subset': [
+        word: 'meduld',
+        subset: [
             'del',
             'dud',
             'due',
@@ -26126,12 +26128,12 @@ export const GAMES = [
             'dude',
             'duel',
             'mule',
-            'muddle'
-        ]
+            'muddle',
+        ],
     },
     {
-        'word': 'ulmelr',
-        'subset': [
+        word: 'ulmelr',
+        subset: [
             'ell',
             'elm',
             'lum',
@@ -26144,12 +26146,12 @@ export const GAMES = [
             'mule',
             'rule',
             'lemur',
-            'muller'
-        ]
+            'muller',
+        ],
     },
     {
-        'word': 'rmdure',
-        'subset': [
+        word: 'rmdure',
+        subset: [
             'due',
             'err',
             'med',
@@ -26162,12 +26164,12 @@ export const GAMES = [
             'rude',
             'demur',
             'ruder',
-            'murder'
-        ]
+            'murder',
+        ],
     },
     {
-        'word': 'msktue',
-        'subset': [
+        word: 'msktue',
+        subset: [
             'ems',
             'met',
             'set',
@@ -26180,12 +26182,12 @@ export const GAMES = [
             'mute',
             'stem',
             'tusk',
-            'musket'
-        ]
+            'musket',
+        ],
     },
     {
-        'word': 'smukie',
-        'subset': [
+        word: 'smukie',
+        subset: [
             'ems',
             'mis',
             'sim',
@@ -26198,12 +26200,12 @@ export const GAMES = [
             'semi',
             'skim',
             'mikes',
-            'muskie'
-        ]
+            'muskie',
+        ],
     },
     {
-        'word': 'nbible',
-        'subset': [
+        word: 'nbible',
+        subset: [
             'bel',
             'ben',
             'bib',
@@ -26216,12 +26218,12 @@ export const GAMES = [
             'lien',
             'line',
             'bible',
-            'nibble'
-        ]
+            'nibble',
+        ],
     },
     {
-        'word': 'ingerg',
-        'subset': [
+        word: 'ingerg',
+        subset: [
             'egg',
             'eng',
             'gen',
@@ -26234,12 +26236,12 @@ export const GAMES = [
             'ring',
             'reign',
             'ginger',
-            'nigger'
-        ]
+            'nigger',
+        ],
     },
     {
-        'word': 'neitny',
-        'subset': [
+        word: 'neitny',
+        subset: [
             'inn',
             'net',
             'ten',
@@ -26252,12 +26254,12 @@ export const GAMES = [
             'nite',
             'tiny',
             'yeti',
-            'ninety'
-        ]
+            'ninety',
+        ],
     },
     {
-        'word': 'ontnio',
-        'subset': [
+        word: 'ontnio',
+        subset: [
             'inn',
             'ion',
             'noo',
@@ -26270,12 +26272,12 @@ export const GAMES = [
             'onto',
             'toon',
             'onion',
-            'notion'
-        ]
+            'notion',
+        ],
     },
     {
-        'word': 'roally',
-        'subset': [
+        word: 'roally',
+        subset: [
             'all',
             'lar',
             'lay',
@@ -26288,12 +26290,12 @@ export const GAMES = [
             'loyal',
             'rally',
             'royal',
-            'orally'
-        ]
+            'orally',
+        ],
     },
     {
-        'word': 'artoor',
-        'subset': [
+        word: 'artoor',
+        subset: [
             'art',
             'oar',
             'ort',
@@ -26306,12 +26308,12 @@ export const GAMES = [
             'root',
             'roto',
             'toro',
-            'orator'
-        ]
+            'orator',
+        ],
     },
     {
-        'word': 'aplela',
-        'subset': [
+        word: 'aplela',
+        subset: [
             'ala',
             'ale',
             'all',
@@ -26324,12 +26326,12 @@ export const GAMES = [
             'pale',
             'plea',
             'lapel',
-            'paella'
-        ]
+            'paella',
+        ],
     },
     {
-        'word': 'parlor',
-        'subset': [
+        word: 'parlor',
+        subset: [
             'lap',
             'lar',
             'lop',
@@ -26342,12 +26344,12 @@ export const GAMES = [
             'oral',
             'roar',
             'polar',
-            'parlor'
-        ]
+            'parlor',
+        ],
     },
     {
-        'word': 'pledde',
-        'subset': [
+        word: 'pledde',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -26360,12 +26362,12 @@ export const GAMES = [
             'peel',
             'pele',
             'pled',
-            'peddle'
-        ]
+            'peddle',
+        ],
     },
     {
-        'word': 'hpaoib',
-        'subset': [
+        word: 'hpaoib',
+        subset: [
             'bah',
             'bio',
             'boa',
@@ -26378,12 +26380,12 @@ export const GAMES = [
             'pah',
             'phi',
             'poi',
-            'phobia'
-        ]
+            'phobia',
+        ],
     },
     {
-        'word': 'lpetny',
-        'subset': [
+        word: 'lpetny',
+        subset: [
             'let',
             'lye',
             'net',
@@ -26396,12 +26398,12 @@ export const GAMES = [
             'lent',
             'pelt',
             'type',
-            'plenty'
-        ]
+            'plenty',
+        ],
     },
     {
-        'word': 'lghipt',
-        'subset': [
+        word: 'lghipt',
+        subset: [
             'git',
             'hip',
             'hit',
@@ -26414,12 +26416,12 @@ export const GAMES = [
             'tip',
             'hilt',
             'light',
-            'plight'
-        ]
+            'plight',
+        ],
     },
     {
-        'word': 'eroppr',
-        'subset': [
+        word: 'eroppr',
+        subset: [
             'err',
             'ore',
             'pep',
@@ -26432,12 +26434,12 @@ export const GAMES = [
             'prep',
             'prop',
             'rope',
-            'proper'
-        ]
+            'proper',
+        ],
     },
     {
-        'word': 'puttre',
-        'subset': [
+        word: 'puttre',
+        subset: [
             'per',
             'pet',
             'put',
@@ -26450,12 +26452,12 @@ export const GAMES = [
             'true',
             'erupt',
             'utter',
-            'putter'
-        ]
+            'putter',
+        ],
     },
     {
-        'word': 'uqinat',
-        'subset': [
+        word: 'uqinat',
+        subset: [
             'ain',
             'ani',
             'ant',
@@ -26468,12 +26470,12 @@ export const GAMES = [
             'quit',
             'tuna',
             'unit',
-            'quaint'
-        ]
+            'quaint',
+        ],
     },
     {
-        'word': 'recess',
-        'subset': [
+        word: 'recess',
+        subset: [
             'cee',
             'ere',
             'ers',
@@ -26486,12 +26488,12 @@ export const GAMES = [
             'ser',
             'seer',
             'sees',
-            'recess'
-        ]
+            'recess',
+        ],
     },
     {
-        'word': 'elered',
-        'subset': [
+        word: 'elered',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -26504,12 +26506,12 @@ export const GAMES = [
             'reed',
             'reel',
             'elder',
-            'reeled'
-        ]
+            'reeled',
+        ],
     },
     {
-        'word': 'ertrto',
-        'subset': [
+        word: 'ertrto',
+        subset: [
             'err',
             'ore',
             'ort',
@@ -26522,12 +26524,12 @@ export const GAMES = [
             'trot',
             'otter',
             'retro',
-            'retort'
-        ]
+            'retort',
+        ],
     },
     {
-        'word': 'ircher',
-        'subset': [
+        word: 'ircher',
+        subset: [
             'chi',
             'err',
             'her',
@@ -26540,12 +26542,12 @@ export const GAMES = [
             'rice',
             'rich',
             'crier',
-            'richer'
-        ]
+            'richer',
+        ],
     },
     {
-        'word': 'ireppr',
-        'subset': [
+        word: 'ireppr',
+        subset: [
             'err',
             'pep',
             'per',
@@ -26558,12 +26560,12 @@ export const GAMES = [
             'prep',
             'ripe',
             'piper',
-            'ripper'
-        ]
+            'ripper',
+        ],
     },
     {
-        'word': 'esvrri',
-        'subset': [
+        word: 'esvrri',
+        subset: [
             'err',
             'ers',
             'res',
@@ -26576,12 +26578,12 @@ export const GAMES = [
             'rise',
             'sire',
             'river',
-            'rivers'
-        ]
+            'rivers',
+        ],
     },
     {
-        'word': 'urbbed',
-        'subset': [
+        word: 'urbbed',
+        subset: [
             'bed',
             'bud',
             'deb',
@@ -26594,12 +26596,12 @@ export const GAMES = [
             'bred',
             'rube',
             'rude',
-            'rubbed'
-        ]
+            'rubbed',
+        ],
     },
     {
-        'word': 'gruged',
-        'subset': [
+        word: 'gruged',
+        subset: [
             'due',
             'dug',
             'egg',
@@ -26612,12 +26614,12 @@ export const GAMES = [
             'urge',
             'urged',
             'grudge',
-            'rugged'
-        ]
+            'rugged',
+        ],
     },
     {
-        'word': 'fsaari',
-        'subset': [
+        word: 'fsaari',
+        subset: [
             'air',
             'arf',
             'far',
@@ -26630,12 +26632,12 @@ export const GAMES = [
             'aria',
             'fair',
             'firs',
-            'safari'
-        ]
+            'safari',
+        ],
     },
     {
-        'word': 'iavosr',
-        'subset': [
+        word: 'iavosr',
+        subset: [
             'air',
             'oar',
             'sir',
@@ -26648,12 +26650,12 @@ export const GAMES = [
             'visa',
             'savor',
             'visor',
-            'savior'
-        ]
+            'savior',
+        ],
     },
     {
-        'word': 'coscht',
-        'subset': [
+        word: 'coscht',
+        subset: [
             'cos',
             'cot',
             'hot',
@@ -26666,12 +26668,12 @@ export const GAMES = [
             'scot',
             'shot',
             'tosh',
-            'scotch'
-        ]
+            'scotch',
+        ],
     },
     {
-        'word': 'eieszd',
-        'subset': [
+        word: 'eieszd',
+        subset: [
             'dee',
             'die',
             'dis',
@@ -26684,12 +26686,12 @@ export const GAMES = [
             'size',
             'seize',
             'sized',
-            'seized'
-        ]
+            'seized',
+        ],
     },
     {
-        'word': 'esvleh',
-        'subset': [
+        word: 'esvleh',
+        subset: [
             'eel',
             'eve',
             'lee',
@@ -26702,12 +26704,12 @@ export const GAMES = [
             'heel',
             'elves',
             'heels',
-            'shelve'
-        ]
+            'shelve',
+        ],
     },
     {
-        'word': 'hseryr',
-        'subset': [
+        word: 'hseryr',
+        subset: [
             'err',
             'ers',
             'her',
@@ -26720,12 +26722,12 @@ export const GAMES = [
             'yeh',
             'yes',
             'hers',
-            'sherry'
-        ]
+            'sherry',
+        ],
     },
     {
-        'word': 'vhesos',
-        'subset': [
+        word: 'vhesos',
+        subset: [
             'ess',
             'hoe',
             'ose',
@@ -26738,12 +26740,12 @@ export const GAMES = [
             'hoses',
             'shoes',
             'shove',
-            'shoves'
-        ]
+            'shoves',
+        ],
     },
     {
-        'word': 'shuord',
-        'subset': [
+        word: 'shuord',
+        subset: [
             'dos',
             'duo',
             'our',
@@ -26756,12 +26758,12 @@ export const GAMES = [
             'rush',
             'sour',
             'hours',
-            'shroud'
-        ]
+            'shroud',
+        ],
     },
     {
-        'word': 'fisnul',
-        'subset': [
+        word: 'fisnul',
+        subset: [
             'fin',
             'flu',
             'fun',
@@ -26774,12 +26776,12 @@ export const GAMES = [
             'sun',
             'uns',
             'fins',
-            'sinful'
-        ]
+            'sinful',
+        ],
     },
     {
-        'word': 'lsices',
-        'subset': [
+        word: 'lsices',
+        subset: [
             'ess',
             'ice',
             'lei',
@@ -26792,12 +26794,12 @@ export const GAMES = [
             'lice',
             'lies',
             'slice',
-            'slices'
-        ]
+            'slices',
+        ],
     },
     {
-        'word': 'slelmy',
-        'subset': [
+        word: 'slelmy',
+        subset: [
             'ell',
             'elm',
             'ems',
@@ -26810,12 +26812,12 @@ export const GAMES = [
             'yell',
             'smell',
             'yells',
-            'smelly'
-        ]
+            'smelly',
+        ],
     },
     {
-        'word': 'espdes',
-        'subset': [
+        word: 'espdes',
+        subset: [
             'dee',
             'ess',
             'pee',
@@ -26828,12 +26830,12 @@ export const GAMES = [
             'sees',
             'seeds',
             'speed',
-            'speeds'
-        ]
+            'speeds',
+        ],
     },
     {
-        'word': 'mitusm',
-        'subset': [
+        word: 'mitusm',
+        subset: [
             'its',
             'mis',
             'mum',
@@ -26846,12 +26848,12 @@ export const GAMES = [
             'mums',
             'must',
             'suit',
-            'summit'
-        ]
+            'summit',
+        ],
     },
     {
-        'word': 'ssyetm',
-        'subset': [
+        word: 'ssyetm',
+        subset: [
             'ems',
             'ess',
             'met',
@@ -26864,12 +26866,12 @@ export const GAMES = [
             'stem',
             'messy',
             'stems',
-            'system'
-        ]
+            'system',
+        ],
     },
     {
-        'word': 'etsetd',
-        'subset': [
+        word: 'etsetd',
+        subset: [
             'dee',
             'see',
             'set',
@@ -26882,12 +26884,12 @@ export const GAMES = [
             'deets',
             'steed',
             'detest',
-            'tested'
-        ]
+            'tested',
+        ],
     },
     {
-        'word': 'utinng',
-        'subset': [
+        word: 'utinng',
+        subset: [
             'gin',
             'git',
             'gun',
@@ -26900,12 +26902,12 @@ export const GAMES = [
             'ting',
             'tung',
             'unit',
-            'tuning'
-        ]
+            'tuning',
+        ],
     },
     {
-        'word': 'rtkyue',
-        'subset': [
+        word: 'rtkyue',
+        subset: [
             'key',
             'rue',
             'rut',
@@ -26918,12 +26920,12 @@ export const GAMES = [
             'true',
             'turk',
             'tyre',
-            'turkey'
-        ]
+            'turkey',
+        ],
     },
     {
-        'word': 'itswts',
-        'subset': [
+        word: 'itswts',
+        subset: [
             'its',
             'sis',
             'sit',
@@ -26936,12 +26938,12 @@ export const GAMES = [
             'wits',
             'twist',
             'twits',
-            'twists'
-        ]
+            'twists',
+        ],
     },
     {
-        'word': 'tiwtys',
-        'subset': [
+        word: 'tiwtys',
+        subset: [
             'its',
             'sit',
             'sty',
@@ -26954,12 +26956,12 @@ export const GAMES = [
             'twist',
             'twits',
             'witty',
-            'twisty'
-        ]
+            'twisty',
+        ],
     },
     {
-        'word': 'cunles',
-        'subset': [
+        word: 'cunles',
+        subset: [
             'cue',
             'sec',
             'sen',
@@ -26972,12 +26974,12 @@ export const GAMES = [
             'luce',
             'clues',
             'uncle',
-            'uncles'
-        ]
+            'uncles',
+        ],
     },
     {
-        'word': 'siexnu',
-        'subset': [
+        word: 'siexnu',
+        subset: [
             'ins',
             'nix',
             'sen',
@@ -26990,12 +26992,12 @@ export const GAMES = [
             'use',
             'sine',
             'nexus',
-            'unisex'
-        ]
+            'unisex',
+        ],
     },
     {
-        'word': 'urging',
-        'subset': [
+        word: 'urging',
+        subset: [
             'gig',
             'gin',
             'gun',
@@ -27008,12 +27010,12 @@ export const GAMES = [
             'ring',
             'ruin',
             'rung',
-            'urging'
-        ]
+            'urging',
+        ],
     },
     {
-        'word': 'muotts',
-        'subset': [
+        word: 'muotts',
+        subset: [
             'out',
             'sot',
             'sum',
@@ -27026,12 +27028,12 @@ export const GAMES = [
             'sumo',
             'toms',
             'tots',
-            'utmost'
-        ]
+            'utmost',
+        ],
     },
     {
-        'word': 'eeverd',
-        'subset': [
+        word: 'eeverd',
+        subset: [
             'dee',
             'ere',
             'eve',
@@ -27044,12 +27046,12 @@ export const GAMES = [
             'reed',
             'veer',
             'reeve',
-            'veered'
-        ]
+            'veered',
+        ],
     },
     {
-        'word': 'otving',
-        'subset': [
+        word: 'otving',
+        subset: [
             'gin',
             'git',
             'got',
@@ -27062,12 +27064,12 @@ export const GAMES = [
             'ting',
             'tong',
             'vino',
-            'voting'
-        ]
+            'voting',
+        ],
     },
     {
-        'word': 'diwsom',
-        'subset': [
+        word: 'diwsom',
+        subset: [
             'dim',
             'dis',
             'dom',
@@ -27080,12 +27082,12 @@ export const GAMES = [
             'sod',
             'sow',
             'swim',
-            'wisdom'
-        ]
+            'wisdom',
+        ],
     },
     {
-        'word': 'wiseyl',
-        'subset': [
+        word: 'wiseyl',
+        subset: [
             'lei',
             'lie',
             'lis',
@@ -27098,12 +27100,12 @@ export const GAMES = [
             'wily',
             'wise',
             'lewis',
-            'wisely'
-        ]
+            'wisely',
+        ],
     },
     {
-        'word': 'twrigh',
-        'subset': [
+        word: 'twrigh',
+        subset: [
             'git',
             'hit',
             'rig',
@@ -27116,12 +27118,12 @@ export const GAMES = [
             'writ',
             'girth',
             'right',
-            'wright'
-        ]
+            'wright',
+        ],
     },
     {
-        'word': 'caecsu',
-        'subset': [
+        word: 'caecsu',
+        subset: [
             'ace',
             'cue',
             'sac',
@@ -27133,12 +27135,12 @@ export const GAMES = [
             'case',
             'cause',
             'sauce',
-            'accuse'
-        ]
+            'accuse',
+        ],
     },
     {
-        'word': 'ddtaci',
-        'subset': [
+        word: 'ddtaci',
+        subset: [
             'act',
             'add',
             'aid',
@@ -27150,12 +27152,12 @@ export const GAMES = [
             'tad',
             'tic',
             'acid',
-            'addict'
-        ]
+            'addict',
+        ],
     },
     {
-        'word': 'ddaedl',
-        'subset': [
+        word: 'ddaedl',
+        subset: [
             'add',
             'ale',
             'dad',
@@ -27167,12 +27169,12 @@ export const GAMES = [
             'deal',
             'lead',
             'added',
-            'addled'
-        ]
+            'addled',
+        ],
     },
     {
-        'word': 'august',
-        'subset': [
+        word: 'august',
+        subset: [
             'gas',
             'gat',
             'gut',
@@ -27184,12 +27186,12 @@ export const GAMES = [
             'guts',
             'stag',
             'tags',
-            'august'
-        ]
+            'august',
+        ],
     },
     {
-        'word': 'ubpcka',
-        'subset': [
+        word: 'ubpcka',
+        subset: [
             'auk',
             'cab',
             'cap',
@@ -27201,12 +27203,12 @@ export const GAMES = [
             'buck',
             'pack',
             'puck',
-            'backup'
-        ]
+            'backup',
+        ],
     },
     {
-        'word': 'dbebgu',
-        'subset': [
+        word: 'dbebgu',
+        subset: [
             'bed',
             'beg',
             'bud',
@@ -27218,12 +27220,12 @@ export const GAMES = [
             'ebb',
             'ged',
             'budge',
-            'bedbug'
-        ]
+            'bedbug',
+        ],
     },
     {
-        'word': 'nenebt',
-        'subset': [
+        word: 'nenebt',
+        subset: [
             'bee',
             'ben',
             'bet',
@@ -27235,12 +27237,12 @@ export const GAMES = [
             'bene',
             'bent',
             'teen',
-            'bennet'
-        ]
+            'bennet',
+        ],
     },
     {
-        'word': 'oibnng',
-        'subset': [
+        word: 'oibnng',
+        subset: [
             'big',
             'bin',
             'bio',
@@ -27252,12 +27254,12 @@ export const GAMES = [
             'obi',
             'bong',
             'bingo',
-            'boning'
-        ]
+            'boning',
+        ],
     },
     {
-        'word': 'onnbie',
-        'subset': [
+        word: 'onnbie',
+        subset: [
             'ben',
             'bin',
             'bio',
@@ -27269,12 +27271,12 @@ export const GAMES = [
             'neon',
             'nine',
             'none',
-            'bonnie'
-        ]
+            'bonnie',
+        ],
     },
     {
-        'word': 'bogeyo',
-        'subset': [
+        word: 'bogeyo',
+        subset: [
             'beg',
             'bey',
             'boo',
@@ -27286,12 +27288,12 @@ export const GAMES = [
             'obey',
             'oboe',
             'gooey',
-            'boogey'
-        ]
+            'boogey',
+        ],
     },
     {
-        'word': 'syboom',
-        'subset': [
+        word: 'syboom',
+        subset: [
             'boo',
             'boy',
             'mob',
@@ -27303,12 +27305,12 @@ export const GAMES = [
             'boys',
             'mobs',
             'bosom',
-            'bosomy'
-        ]
+            'bosomy',
+        ],
     },
     {
-        'word': 'cnouyb',
-        'subset': [
+        word: 'cnouyb',
+        subset: [
             'boy',
             'bun',
             'buy',
@@ -27320,12 +27322,12 @@ export const GAMES = [
             'yon',
             'you',
             'bony',
-            'bouncy'
-        ]
+            'bouncy',
+        ],
     },
     {
-        'word': 'oorbch',
-        'subset': [
+        word: 'oorbch',
+        subset: [
             'boo',
             'bro',
             'cob',
@@ -27337,12 +27339,12 @@ export const GAMES = [
             'orb',
             'rob',
             'hobo',
-            'brooch'
-        ]
+            'brooch',
+        ],
     },
     {
-        'word': 'gbugde',
-        'subset': [
+        word: 'gbugde',
+        subset: [
             'bed',
             'beg',
             'bud',
@@ -27354,12 +27356,12 @@ export const GAMES = [
             'egg',
             'ged',
             'budge',
-            'bugged'
-        ]
+            'bugged',
+        ],
     },
     {
-        'word': 'eblubm',
-        'subset': [
+        word: 'eblubm',
+        subset: [
             'bel',
             'bum',
             'ebb',
@@ -27371,12 +27373,12 @@ export const GAMES = [
             'lube',
             'mule',
             'blume',
-            'bumble'
-        ]
+            'bumble',
+        ],
     },
     {
-        'word': 'mumebd',
-        'subset': [
+        word: 'mumebd',
+        subset: [
             'bed',
             'bud',
             'bum',
@@ -27388,12 +27390,12 @@ export const GAMES = [
             'mum',
             'umm',
             'dumb',
-            'bummed'
-        ]
+            'bummed',
+        ],
     },
     {
-        'word': 'burreg',
-        'subset': [
+        word: 'burreg',
+        subset: [
             'beg',
             'brr',
             'bug',
@@ -27405,12 +27407,12 @@ export const GAMES = [
             'grub',
             'rube',
             'urge',
-            'burger'
-        ]
+            'burger',
+        ],
     },
     {
-        'word': 'sbuoyb',
-        'subset': [
+        word: 'sbuoyb',
+        subset: [
             'bob',
             'boy',
             'bus',
@@ -27422,12 +27424,12 @@ export const GAMES = [
             'boys',
             'busy',
             'buys',
-            'busboy'
-        ]
+            'busboy',
+        ],
     },
     {
-        'word': 'buygin',
-        'subset': [
+        word: 'buygin',
+        subset: [
             'big',
             'bin',
             'bug',
@@ -27439,12 +27441,12 @@ export const GAMES = [
             'guy',
             'nub',
             'yin',
-            'buying'
-        ]
+            'buying',
+        ],
     },
     {
-        'word': 'ciaclo',
-        'subset': [
+        word: 'ciaclo',
+        subset: [
             'ail',
             'col',
             'lac',
@@ -27456,12 +27458,12 @@ export const GAMES = [
             'cola',
             'loca',
             'colic',
-            'calico'
-        ]
+            'calico',
+        ],
     },
     {
-        'word': 'inadcd',
-        'subset': [
+        word: 'inadcd',
+        subset: [
             'add',
             'aid',
             'ain',
@@ -27473,12 +27475,12 @@ export const GAMES = [
             'did',
             'acid',
             'cain',
-            'candid'
-        ]
+            'candid',
+        ],
     },
     {
-        'word': 'canyon',
-        'subset': [
+        word: 'canyon',
+        subset: [
             'any',
             'can',
             'con',
@@ -27490,12 +27492,12 @@ export const GAMES = [
             'conn',
             'annoy',
             'nancy',
-            'canyon'
-        ]
+            'canyon',
+        ],
     },
     {
-        'word': 'cheyes',
-        'subset': [
+        word: 'cheyes',
+        subset: [
             'cee',
             'eye',
             'hey',
@@ -27507,12 +27509,12 @@ export const GAMES = [
             'yes',
             'eyes',
             'yech',
-            'cheesy'
-        ]
+            'cheesy',
+        ],
     },
     {
-        'word': 'lcmamy',
-        'subset': [
+        word: 'lcmamy',
+        subset: [
             'cam',
             'lac',
             'lam',
@@ -27524,12 +27526,12 @@ export const GAMES = [
             'clam',
             'clay',
             'lacy',
-            'clammy'
-        ]
+            'clammy',
+        ],
     },
     {
-        'word': 'cilche',
-        'subset': [
+        word: 'cilche',
+        subset: [
             'chi',
             'hic',
             'ice',
@@ -27541,12 +27543,12 @@ export const GAMES = [
             'lech',
             'lice',
             'chile',
-            'cliche'
-        ]
+            'cliche',
+        ],
     },
     {
-        'word': 'ccslik',
-        'subset': [
+        word: 'ccslik',
+        subset: [
             'ick',
             'ilk',
             'lis',
@@ -27558,12 +27560,12 @@ export const GAMES = [
             'click',
             'licks',
             'slick',
-            'clicks'
-        ]
+            'clicks',
+        ],
     },
     {
-        'word': 'cocekd',
-        'subset': [
+        word: 'cocekd',
+        subset: [
             'cod',
             'doc',
             'doe',
@@ -27575,12 +27577,12 @@ export const GAMES = [
             'deck',
             'deco',
             'dock',
-            'cocked'
-        ]
+            'cocked',
+        ],
     },
     {
-        'word': 'scuoln',
-        'subset': [
+        word: 'scuoln',
+        subset: [
             'col',
             'con',
             'cos',
@@ -27592,12 +27594,12 @@ export const GAMES = [
             'cons',
             'nous',
             'soul',
-            'consul'
-        ]
+            'consul',
+        ],
     },
     {
-        'word': 'gcooni',
-        'subset': [
+        word: 'gcooni',
+        subset: [
             'cog',
             'con',
             'coo',
@@ -27609,12 +27611,12 @@ export const GAMES = [
             'coon',
             'goon',
             'icon',
-            'cooing'
-        ]
+            'cooing',
+        ],
     },
     {
-        'word': 'cooker',
-        'subset': [
+        word: 'cooker',
+        subset: [
             'coo',
             'cor',
             'ore',
@@ -27626,12 +27628,12 @@ export const GAMES = [
             'rock',
             'rook',
             'crook',
-            'cooker'
-        ]
+            'cooker',
+        ],
     },
     {
-        'word': 'crkiey',
-        'subset': [
+        word: 'crkiey',
+        subset: [
             'cry',
             'ice',
             'ick',
@@ -27643,12 +27645,12 @@ export const GAMES = [
             'rice',
             'rick',
             'crikey',
-            'rickey'
-        ]
+            'rickey',
+        ],
     },
     {
-        'word': 'esctut',
-        'subset': [
+        word: 'esctut',
+        subset: [
             'cue',
             'cut',
             'sec',
@@ -27660,12 +27662,12 @@ export const GAMES = [
             'cute',
             'cuts',
             'test',
-            'cutest'
-        ]
+            'cutest',
+        ],
     },
     {
-        'word': 'adzzel',
-        'subset': [
+        word: 'adzzel',
+        subset: [
             'ale',
             'del',
             'lad',
@@ -27677,12 +27679,12 @@ export const GAMES = [
             'deal',
             'lead',
             'zeal',
-            'dazzle'
-        ]
+            'dazzle',
+        ],
     },
     {
-        'word': 'deedcu',
-        'subset': [
+        word: 'deedcu',
+        subset: [
             'cee',
             'cud',
             'cue',
@@ -27694,12 +27696,12 @@ export const GAMES = [
             'duce',
             'dude',
             'deuce',
-            'deduce'
-        ]
+            'deduce',
+        ],
     },
     {
-        'word': 'edlexu',
-        'subset': [
+        word: 'edlexu',
+        subset: [
             'dee',
             'del',
             'dex',
@@ -27711,12 +27713,12 @@ export const GAMES = [
             'lux',
             'duel',
             'elude',
-            'deluxe'
-        ]
+            'deluxe',
+        ],
     },
     {
-        'word': 'epndde',
-        'subset': [
+        word: 'epndde',
+        subset: [
             'dee',
             'den',
             'end',
@@ -27728,12 +27730,12 @@ export const GAMES = [
             'need',
             'peed',
             'ended',
-            'depend'
-        ]
+            'depend',
+        ],
     },
     {
-        'word': 'evdcie',
-        'subset': [
+        word: 'evdcie',
+        subset: [
             'cee',
             'dee',
             'die',
@@ -27745,12 +27747,12 @@ export const GAMES = [
             'dive',
             'iced',
             'vice',
-            'device'
-        ]
+            'device',
+        ],
     },
     {
-        'word': 'oddole',
-        'subset': [
+        word: 'oddole',
+        subset: [
             'del',
             'doe',
             'dol',
@@ -27762,12 +27764,12 @@ export const GAMES = [
             'ole',
             'dole',
             'lode',
-            'doodle'
-        ]
+            'doodle',
+        ],
     },
     {
-        'word': 'toddet',
-        'subset': [
+        word: 'toddet',
+        subset: [
             'doe',
             'dot',
             'odd',
@@ -27779,12 +27781,12 @@ export const GAMES = [
             'dote',
             'toed',
             'tote',
-            'dotted'
-        ]
+            'dotted',
+        ],
     },
     {
-        'word': 'dtuugo',
-        'subset': [
+        word: 'dtuugo',
+        subset: [
             'dog',
             'dot',
             'dug',
@@ -27796,12 +27798,12 @@ export const GAMES = [
             'tod',
             'tug',
             'gout',
-            'dugout'
-        ]
+            'dugout',
+        ],
     },
     {
-        'word': 'xperte',
-        'subset': [
+        word: 'xperte',
+        subset: [
             'ere',
             'pee',
             'per',
@@ -27813,12 +27815,12 @@ export const GAMES = [
             'peer',
             'tree',
             'peter',
-            'expert'
-        ]
+            'expert',
+        ],
     },
     {
-        'word': 'rarwfo',
-        'subset': [
+        word: 'rarwfo',
+        subset: [
             'arf',
             'far',
             'for',
@@ -27830,12 +27832,12 @@ export const GAMES = [
             'war',
             'roar',
             'arrow',
-            'farrow'
-        ]
+            'farrow',
+        ],
     },
     {
-        'word': 'uaflyt',
-        'subset': [
+        word: 'uaflyt',
+        subset: [
             'aft',
             'alt',
             'fat',
@@ -27847,12 +27849,12 @@ export const GAMES = [
             'flat',
             'flay',
             'fault',
-            'faulty'
-        ]
+            'faulty',
+        ],
     },
     {
-        'word': 'avofrs',
-        'subset': [
+        word: 'avofrs',
+        subset: [
             'arf',
             'far',
             'for',
@@ -27864,12 +27866,12 @@ export const GAMES = [
             'sofa',
             'favor',
             'savor',
-            'favors'
-        ]
+            'favors',
+        ],
     },
     {
-        'word': 'ugfrie',
-        'subset': [
+        word: 'ugfrie',
+        subset: [
             'fer',
             'fig',
             'fir',
@@ -27881,12 +27883,12 @@ export const GAMES = [
             'rife',
             'urge',
             'grief',
-            'figure'
-        ]
+            'figure',
+        ],
     },
     {
-        'word': 'nafksl',
-        'subset': [
+        word: 'nafksl',
+        subset: [
             'als',
             'ask',
             'fan',
@@ -27898,12 +27900,12 @@ export const GAMES = [
             'sank',
             'flank',
             'flask',
-            'flanks'
-        ]
+            'flanks',
+        ],
     },
     {
-        'word': 'lfimsy',
-        'subset': [
+        word: 'lfimsy',
+        subset: [
             'fly',
             'ifs',
             'lis',
@@ -27915,12 +27917,12 @@ export const GAMES = [
             'slim',
             'films',
             'slimy',
-            'flimsy'
-        ]
+            'flimsy',
+        ],
     },
     {
-        'word': 'ofssil',
-        'subset': [
+        word: 'ofssil',
+        subset: [
             'ifs',
             'lis',
             'oil',
@@ -27932,12 +27934,12 @@ export const GAMES = [
             'oils',
             'soil',
             'floss',
-            'fossil'
-        ]
+            'fossil',
+        ],
     },
     {
-        'word': 'rifsll',
-        'subset': [
+        word: 'rifsll',
+        subset: [
             'fir',
             'ifs',
             'ill',
@@ -27949,12 +27951,12 @@ export const GAMES = [
             'ills',
             'sill',
             'fills',
-            'frills'
-        ]
+            'frills',
+        ],
     },
     {
-        'word': 'cufdke',
-        'subset': [
+        word: 'cufdke',
+        subset: [
             'cud',
             'cue',
             'due',
@@ -27966,12 +27968,12 @@ export const GAMES = [
             'duke',
             'feud',
             'fuck',
-            'fucked'
-        ]
+            'fucked',
+        ],
     },
     {
-        'word': 'ngagly',
-        'subset': [
+        word: 'ngagly',
+        subset: [
             'any',
             'gag',
             'gal',
@@ -27983,12 +27985,12 @@ export const GAMES = [
             'gang',
             'lang',
             'yang',
-            'gangly'
-        ]
+            'gangly',
+        ],
     },
     {
-        'word': 'sgases',
-        'subset': [
+        word: 'sgases',
+        subset: [
             'age',
             'ass',
             'ess',
@@ -28000,12 +28002,12 @@ export const GAMES = [
             'seas',
             'asses',
             'gases',
-            'gasses'
-        ]
+            'gasses',
+        ],
     },
     {
-        'word': 'lyogmo',
-        'subset': [
+        word: 'lyogmo',
+        subset: [
             'goo',
             'gym',
             'log',
@@ -28017,12 +28019,12 @@ export const GAMES = [
             'loom',
             'moly',
             'gloom',
-            'gloomy'
-        ]
+            'gloomy',
+        ],
     },
     {
-        'word': 'oogeny',
-        'subset': [
+        word: 'oogeny',
+        subset: [
             'ego',
             'eng',
             'gen',
@@ -28034,12 +28036,12 @@ export const GAMES = [
             'gone',
             'goon',
             'gooey',
-            'gooney'
-        ]
+            'gooney',
+        ],
     },
     {
-        'word': 'ogsspi',
-        'subset': [
+        word: 'ogsspi',
+        subset: [
             'ops',
             'pig',
             'pis',
@@ -28051,12 +28053,12 @@ export const GAMES = [
             'sos',
             'pigs',
             'piss',
-            'gossip'
-        ]
+            'gossip',
+        ],
     },
     {
-        'word': 'gegoud',
-        'subset': [
+        word: 'gegoud',
+        subset: [
             'doe',
             'dog',
             'due',
@@ -28068,12 +28070,12 @@ export const GAMES = [
             'god',
             'ode',
             'gouge',
-            'gouged'
-        ]
+            'gouged',
+        ],
     },
     {
-        'word': 'orgove',
-        'subset': [
+        word: 'orgove',
+        subset: [
             'ego',
             'goo',
             'gor',
@@ -28085,12 +28087,12 @@ export const GAMES = [
             'ogre',
             'over',
             'grove',
-            'groove'
-        ]
+            'groove',
+        ],
     },
     {
-        'word': 'rugneg',
-        'subset': [
+        word: 'rugneg',
+        subset: [
             'egg',
             'eng',
             'gen',
@@ -28102,12 +28104,12 @@ export const GAMES = [
             'rune',
             'rung',
             'urge',
-            'grunge'
-        ]
+            'grunge',
+        ],
     },
     {
-        'word': 'gueidd',
-        'subset': [
+        word: 'gueidd',
+        subset: [
             'did',
             'die',
             'dig',
@@ -28119,12 +28121,12 @@ export const GAMES = [
             'died',
             'dude',
             'guide',
-            'guided'
-        ]
+            'guided',
+        ],
     },
     {
-        'word': 'uignea',
-        'subset': [
+        word: 'uignea',
+        subset: [
             'age',
             'ain',
             'ane',
@@ -28136,12 +28138,12 @@ export const GAMES = [
             'nag',
             'agin',
             'gain',
-            'guinea'
-        ]
+            'guinea',
+        ],
     },
     {
-        'word': 'uergnn',
-        'subset': [
+        word: 'uergnn',
+        subset: [
             'eng',
             'gen',
             'gun',
@@ -28153,12 +28155,12 @@ export const GAMES = [
             'rune',
             'rung',
             'urge',
-            'gunner'
-        ]
+            'gunner',
+        ],
     },
     {
-        'word': 'tgutre',
-        'subset': [
+        word: 'tgutre',
+        subset: [
             'get',
             'gut',
             'rue',
@@ -28170,12 +28172,12 @@ export const GAMES = [
             'true',
             'urge',
             'utter',
-            'gutter'
-        ]
+            'gutter',
+        ],
     },
     {
-        'word': 'vaheed',
-        'subset': [
+        word: 'vaheed',
+        subset: [
             'ave',
             'dah',
             'dee',
@@ -28187,12 +28189,12 @@ export const GAMES = [
             'heed',
             'evade',
             'heave',
-            'heaved'
-        ]
+            'heaved',
+        ],
     },
     {
-        'word': 'iddhne',
-        'subset': [
+        word: 'iddhne',
+        subset: [
             'den',
             'did',
             'die',
@@ -28204,12 +28206,12 @@ export const GAMES = [
             'hide',
             'hind',
             'dined',
-            'hidden'
-        ]
+            'hidden',
+        ],
     },
     {
-        'word': 'hobbit',
-        'subset': [
+        word: 'hobbit',
+        subset: [
             'bib',
             'bio',
             'bit',
@@ -28221,12 +28223,12 @@ export const GAMES = [
             'obi',
             'tho',
             'both',
-            'hobbit'
-        ]
+            'hobbit',
+        ],
     },
     {
-        'word': 'lbhboe',
-        'subset': [
+        word: 'lbhboe',
+        subset: [
             'bel',
             'bob',
             'ebb',
@@ -28238,12 +28240,12 @@ export const GAMES = [
             'helo',
             'hole',
             'lobe',
-            'hobble'
-        ]
+            'hobble',
+        ],
     },
     {
-        'word': 'yurhle',
-        'subset': [
+        word: 'yurhle',
+        subset: [
             'her',
             'hey',
             'hue',
@@ -28255,12 +28257,12 @@ export const GAMES = [
             'lure',
             'rely',
             'rule',
-            'hurley'
-        ]
+            'hurley',
+        ],
     },
     {
-        'word': 'tginie',
-        'subset': [
+        word: 'tginie',
+        subset: [
             'eng',
             'gen',
             'get',
@@ -28272,12 +28274,12 @@ export const GAMES = [
             'tin',
             'nite',
             'ting',
-            'ignite'
-        ]
+            'ignite',
+        ],
     },
     {
-        'word': 'ndiiog',
-        'subset': [
+        word: 'ndiiog',
+        subset: [
             'dig',
             'dog',
             'don',
@@ -28289,12 +28291,12 @@ export const GAMES = [
             'dong',
             'dingo',
             'doing',
-            'indigo'
-        ]
+            'indigo',
+        ],
     },
     {
-        'word': 'inssit',
-        'subset': [
+        word: 'inssit',
+        subset: [
             'ins',
             'its',
             'sin',
@@ -28306,12 +28308,12 @@ export const GAMES = [
             'sits',
             'snit',
             'tins',
-            'insist'
-        ]
+            'insist',
+        ],
     },
     {
-        'word': 'pcieac',
-        'subset': [
+        word: 'pcieac',
+        subset: [
             'ace',
             'ape',
             'cap',
@@ -28323,12 +28325,12 @@ export const GAMES = [
             'cape',
             'epic',
             'pace',
-            'ipecac'
-        ]
+            'ipecac',
+        ],
     },
     {
-        'word': 'rgjgeo',
-        'subset': [
+        word: 'rgjgeo',
+        subset: [
             'egg',
             'ego',
             'gor',
@@ -28340,12 +28342,12 @@ export const GAMES = [
             'grog',
             'ogre',
             'gorge',
-            'jogger'
-        ]
+            'jogger',
+        ],
     },
     {
-        'word': 'onirej',
-        'subset': [
+        word: 'onirej',
+        subset: [
             'ion',
             'jin',
             'joe',
@@ -28357,12 +28359,12 @@ export const GAMES = [
             'join',
             'noir',
             'rein',
-            'joiner'
-        ]
+            'joiner',
+        ],
     },
     {
-        'word': 'ojikng',
-        'subset': [
+        word: 'ojikng',
+        subset: [
             'gin',
             'ink',
             'ion',
@@ -28374,12 +28376,12 @@ export const GAMES = [
             'join',
             'king',
             'oink',
-            'joking'
-        ]
+            'joking',
+        ],
     },
     {
-        'word': 'ejuidc',
-        'subset': [
+        word: 'ejuidc',
+        subset: [
             'cud',
             'cue',
             'die',
@@ -28391,12 +28393,12 @@ export const GAMES = [
             'duce',
             'iced',
             'juice',
-            'juiced'
-        ]
+            'juiced',
+        ],
     },
     {
-        'word': 'juinro',
-        'subset': [
+        word: 'juinro',
+        subset: [
             'ion',
             'jin',
             'nor',
@@ -28408,12 +28410,12 @@ export const GAMES = [
             'join',
             'noir',
             'ruin',
-            'junior'
-        ]
+            'junior',
+        ],
     },
     {
-        'word': 'ossles',
-        'subset': [
+        word: 'ossles',
+        subset: [
             'ess',
             'ole',
             'ose',
@@ -28425,12 +28427,12 @@ export const GAMES = [
             'sole',
             'loses',
             'soles',
-            'losses'
-        ]
+            'losses',
+        ],
     },
     {
-        'word': 'amdanm',
-        'subset': [
+        word: 'amdanm',
+        subset: [
             'ama',
             'ana',
             'and',
@@ -28442,12 +28444,12 @@ export const GAMES = [
             'mama',
             'nada',
             'madam',
-            'madman'
-        ]
+            'madman',
+        ],
     },
     {
-        'word': 'kmaeup',
-        'subset': [
+        word: 'kmaeup',
+        subset: [
             'amp',
             'ape',
             'auk',
@@ -28459,12 +28461,12 @@ export const GAMES = [
             'make',
             'peak',
             'puke',
-            'makeup'
-        ]
+            'makeup',
+        ],
     },
     {
-        'word': 'medumi',
-        'subset': [
+        word: 'medumi',
+        subset: [
             'die',
             'dim',
             'due',
@@ -28476,12 +28478,12 @@ export const GAMES = [
             'umm',
             'dime',
             'mime',
-            'medium'
-        ]
+            'medium',
+        ],
     },
     {
-        'word': 'ndmede',
-        'subset': [
+        word: 'ndmede',
+        subset: [
             'dee',
             'den',
             'end',
@@ -28493,12 +28495,12 @@ export const GAMES = [
             'mend',
             'need',
             'ended',
-            'mended'
-        ]
+            'mended',
+        ],
     },
     {
-        'word': 'iitmsf',
-        'subset': [
+        word: 'iitmsf',
+        subset: [
             'fit',
             'ifs',
             'its',
@@ -28510,12 +28512,12 @@ export const GAMES = [
             'fits',
             'mist',
             'sift',
-            'misfit'
-        ]
+            'misfit',
+        ],
     },
     {
-        'word': 'moivse',
-        'subset': [
+        word: 'moivse',
+        subset: [
             'ems',
             'mis',
             'ose',
@@ -28527,12 +28529,12 @@ export const GAMES = [
             'some',
             'moves',
             'movie',
-            'movies'
-        ]
+            'movies',
+        ],
     },
     {
-        'word': 'llmeut',
-        'subset': [
+        word: 'llmeut',
+        subset: [
             'ell',
             'elm',
             'let',
@@ -28544,12 +28546,12 @@ export const GAMES = [
             'mute',
             'tell',
             'tulle',
-            'mullet'
-        ]
+            'mullet',
+        ],
     },
     {
-        'word': 'ummebl',
-        'subset': [
+        word: 'ummebl',
+        subset: [
             'bel',
             'bum',
             'elm',
@@ -28561,12 +28563,12 @@ export const GAMES = [
             'lube',
             'mule',
             'blume',
-            'mumble'
-        ]
+            'mumble',
+        ],
     },
     {
-        'word': 'meslfy',
-        'subset': [
+        word: 'meslfy',
+        subset: [
             'elf',
             'elm',
             'ems',
@@ -28578,12 +28580,12 @@ export const GAMES = [
             'yes',
             'elms',
             'self',
-            'myself'
-        ]
+            'myself',
+        ],
     },
     {
-        'word': 'nellie',
-        'subset': [
+        word: 'nellie',
+        subset: [
             'eel',
             'ell',
             'ill',
@@ -28595,12 +28597,12 @@ export const GAMES = [
             'nil',
             'lien',
             'line',
-            'nellie'
-        ]
+            'nellie',
+        ],
     },
     {
-        'word': 'noboyd',
-        'subset': [
+        word: 'noboyd',
+        subset: [
             'bod',
             'boo',
             'boy',
@@ -28612,12 +28614,12 @@ export const GAMES = [
             'bond',
             'bony',
             'boon',
-            'nobody'
-        ]
+            'nobody',
+        ],
     },
     {
-        'word': 'osning',
-        'subset': [
+        word: 'osning',
+        subset: [
             'gin',
             'inn',
             'ins',
@@ -28629,12 +28631,12 @@ export const GAMES = [
             'sign',
             'sing',
             'song',
-            'nosing'
-        ]
+            'nosing',
+        ],
     },
     {
-        'word': 'ionntg',
-        'subset': [
+        word: 'ionntg',
+        subset: [
             'gin',
             'git',
             'got',
@@ -28646,12 +28648,12 @@ export const GAMES = [
             'into',
             'ting',
             'tong',
-            'noting'
-        ]
+            'noting',
+        ],
     },
     {
-        'word': 'dinuty',
-        'subset': [
+        word: 'dinuty',
+        subset: [
             'dit',
             'dui',
             'dun',
@@ -28663,12 +28665,12 @@ export const GAMES = [
             'tiny',
             'unit',
             'unity',
-            'nudity'
-        ]
+            'nudity',
+        ],
     },
     {
-        'word': 'soionn',
-        'subset': [
+        word: 'soionn',
+        subset: [
             'inn',
             'ins',
             'ion',
@@ -28680,12 +28682,12 @@ export const GAMES = [
             'noon',
             'soon',
             'onion',
-            'onions'
-        ]
+            'onions',
+        ],
     },
     {
-        'word': 'iorgni',
-        'subset': [
+        word: 'iorgni',
+        subset: [
             'gin',
             'gor',
             'ion',
@@ -28697,12 +28699,12 @@ export const GAMES = [
             'noir',
             'ring',
             'groin',
-            'origin'
-        ]
+            'origin',
+        ],
     },
     {
-        'word': 'nwoing',
-        'subset': [
+        word: 'nwoing',
+        subset: [
             'gin',
             'inn',
             'ion',
@@ -28714,12 +28716,12 @@ export const GAMES = [
             'gown',
             'wing',
             'owing',
-            'owning'
-        ]
+            'owning',
+        ],
     },
     {
-        'word': 'epkade',
-        'subset': [
+        word: 'epkade',
+        subset: [
             'ape',
             'dee',
             'pad',
@@ -28731,12 +28733,12 @@ export const GAMES = [
             'peak',
             'peed',
             'peek',
-            'peaked'
-        ]
+            'peaked',
+        ],
     },
     {
-        'word': 'eleped',
-        'subset': [
+        word: 'eleped',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -28748,12 +28750,12 @@ export const GAMES = [
             'peel',
             'pele',
             'pled',
-            'peeled'
-        ]
+            'peeled',
+        ],
     },
     {
-        'word': 'etlple',
-        'subset': [
+        word: 'etlple',
+        subset: [
             'eel',
             'ell',
             'lee',
@@ -28765,12 +28767,12 @@ export const GAMES = [
             'pele',
             'pelt',
             'tell',
-            'pellet'
-        ]
+            'pellet',
+        ],
     },
     {
-        'word': 'pifefl',
-        'subset': [
+        word: 'pifefl',
+        subset: [
             'elf',
             'iff',
             'lei',
@@ -28782,12 +28784,12 @@ export const GAMES = [
             'flip',
             'life',
             'pile',
-            'piffle'
-        ]
+            'piffle',
+        ],
     },
     {
-        'word': 'ikienp',
-        'subset': [
+        word: 'ikienp',
+        subset: [
             'ink',
             'ken',
             'kin',
@@ -28799,12 +28801,12 @@ export const GAMES = [
             'pike',
             'pine',
             'pink',
-            'pinkie'
-        ]
+            'pinkie',
+        ],
     },
     {
-        'word': 'opprpe',
-        'subset': [
+        word: 'opprpe',
+        subset: [
             'ore',
             'pep',
             'per',
@@ -28816,12 +28818,12 @@ export const GAMES = [
             'prep',
             'prop',
             'rope',
-            'popper'
-        ]
+            'popper',
+        ],
     },
     {
-        'word': 'uiptlp',
-        'subset': [
+        word: 'uiptlp',
+        subset: [
             'lip',
             'lit',
             'pip',
@@ -28833,12 +28835,12 @@ export const GAMES = [
             'pulp',
             'pupil',
             'tulip',
-            'pulpit'
-        ]
+            'pulpit',
+        ],
     },
     {
-        'word': 'urpple',
-        'subset': [
+        word: 'urpple',
+        subset: [
             'pep',
             'per',
             'pup',
@@ -28850,12 +28852,12 @@ export const GAMES = [
             'pure',
             'rule',
             'upper',
-            'purple'
-        ]
+            'purple',
+        ],
     },
     {
-        'word': 'aqulms',
-        'subset': [
+        word: 'aqulms',
+        subset: [
             'als',
             'lam',
             'las',
@@ -28867,12 +28869,12 @@ export const GAMES = [
             'saul',
             'slam',
             'slum',
-            'qualms'
-        ]
+            'qualms',
+        ],
     },
     {
-        'word': 'uqoets',
-        'subset': [
+        word: 'uqoets',
+        subset: [
             'ose',
             'out',
             'set',
@@ -28884,12 +28886,12 @@ export const GAMES = [
             'toes',
             'quest',
             'quote',
-            'quotes'
-        ]
+            'quotes',
+        ],
     },
     {
-        'word': 'gefeur',
-        'subset': [
+        word: 'gefeur',
+        subset: [
             'ere',
             'fee',
             'fer',
@@ -28901,12 +28903,12 @@ export const GAMES = [
             'free',
             'reef',
             'urge',
-            'refuge'
-        ]
+            'refuge',
+        ],
     },
     {
-        'word': 'greiem',
-        'subset': [
+        word: 'greiem',
+        subset: [
             'ere',
             'gee',
             'gem',
@@ -28918,12 +28920,12 @@ export const GAMES = [
             'grim',
             'mere',
             'grime',
-            'regime'
-        ]
+            'regime',
+        ],
     },
     {
-        'word': 'eevrrt',
-        'subset': [
+        word: 'eevrrt',
+        subset: [
             'ere',
             'err',
             'eve',
@@ -28935,12 +28937,12 @@ export const GAMES = [
             'ever',
             'tree',
             'veer',
-            'revert'
-        ]
+            'revert',
+        ],
     },
     {
-        'word': 'irkcey',
-        'subset': [
+        word: 'irkcey',
+        subset: [
             'cry',
             'ice',
             'ick',
@@ -28952,12 +28954,12 @@ export const GAMES = [
             'rice',
             'rick',
             'crikey',
-            'rickey'
-        ]
+            'rickey',
+        ],
     },
     {
-        'word': 'riding',
-        'subset': [
+        word: 'riding',
+        subset: [
             'dig',
             'gin',
             'rid',
@@ -28969,12 +28971,12 @@ export const GAMES = [
             'ring',
             'grind',
             'rigid',
-            'riding'
-        ]
+            'riding',
+        ],
     },
     {
-        'word': 'runoff',
-        'subset': [
+        word: 'runoff',
+        subset: [
             'for',
             'fro',
             'fun',
@@ -28986,12 +28988,12 @@ export const GAMES = [
             'urn',
             'four',
             'ruff',
-            'runoff'
-        ]
+            'runoff',
+        ],
     },
     {
-        'word': 'aslaam',
-        'subset': [
+        word: 'aslaam',
+        subset: [
             'ala',
             'als',
             'ama',
@@ -29003,12 +29005,12 @@ export const GAMES = [
             'alma',
             'lama',
             'slam',
-            'salaam'
-        ]
+            'salaam',
+        ],
     },
     {
-        'word': 'neecss',
-        'subset': [
+        word: 'neecss',
+        subset: [
             'cee',
             'ess',
             'nee',
@@ -29020,12 +29022,12 @@ export const GAMES = [
             'sees',
             'scene',
             'sense',
-            'scenes'
-        ]
+            'scenes',
+        ],
     },
     {
-        'word': 'rensee',
-        'subset': [
+        word: 'rensee',
+        subset: [
             'ere',
             'ers',
             'nee',
@@ -29037,12 +29039,12 @@ export const GAMES = [
             'seen',
             'seer',
             'sneer',
-            'serene'
-        ]
+            'serene',
+        ],
     },
     {
-        'word': 'sahrks',
-        'subset': [
+        word: 'sahrks',
+        subset: [
             'ark',
             'ash',
             'ask',
@@ -29054,12 +29056,12 @@ export const GAMES = [
             'rash',
             'sark',
             'shark',
-            'sharks'
-        ]
+            'sharks',
+        ],
     },
     {
-        'word': 'skniny',
-        'subset': [
+        word: 'skniny',
+        subset: [
             'ink',
             'inn',
             'ins',
@@ -29071,12 +29073,12 @@ export const GAMES = [
             'kins',
             'sink',
             'skin',
-            'skinny'
-        ]
+            'skinny',
+        ],
     },
     {
-        'word': 'meslsl',
-        'subset': [
+        word: 'meslsl',
+        subset: [
             'ell',
             'elm',
             'ems',
@@ -29088,12 +29090,12 @@ export const GAMES = [
             'sell',
             'sells',
             'smell',
-            'smells'
-        ]
+            'smells',
+        ],
     },
     {
-        'word': 'hmoosc',
-        'subset': [
+        word: 'hmoosc',
+        subset: [
             'coo',
             'cos',
             'moo',
@@ -29105,12 +29107,12 @@ export const GAMES = [
             'homos',
             'mooch',
             'schmo',
-            'smooch'
-        ]
+            'smooch',
+        ],
     },
     {
-        'word': 'nbsoyb',
-        'subset': [
+        word: 'nbsoyb',
+        subset: [
             'bob',
             'boy',
             'nos',
@@ -29122,12 +29124,12 @@ export const GAMES = [
             'boys',
             'nosy',
             'snob',
-            'snobby'
-        ]
+            'snobby',
+        ],
     },
     {
-        'word': 'doosym',
-        'subset': [
+        word: 'doosym',
+        subset: [
             'dom',
             'dos',
             'mod',
@@ -29139,12 +29141,12 @@ export const GAMES = [
             'mood',
             'moods',
             'moody',
-            'sodomy'
-        ]
+            'sodomy',
+        ],
     },
     {
-        'word': 'ddoris',
-        'subset': [
+        word: 'ddoris',
+        subset: [
             'did',
             'dis',
             'dos',
@@ -29156,12 +29158,12 @@ export const GAMES = [
             'sri',
             'odds',
             'rods',
-            'sordid'
-        ]
+            'sordid',
+        ],
     },
     {
-        'word': 'pesceh',
-        'subset': [
+        word: 'pesceh',
+        subset: [
             'cee',
             'hep',
             'pee',
@@ -29173,12 +29175,12 @@ export const GAMES = [
             'seep',
             'cheep',
             'sheep',
-            'speech'
-        ]
+            'speech',
+        ],
     },
     {
-        'word': 'spedns',
-        'subset': [
+        word: 'spedns',
+        subset: [
             'den',
             'end',
             'ess',
@@ -29190,12 +29192,12 @@ export const GAMES = [
             'send',
             'sends',
             'spend',
-            'spends'
-        ]
+            'spends',
+        ],
     },
     {
-        'word': 'ospnos',
-        'subset': [
+        word: 'ospnos',
+        subset: [
             'noo',
             'nos',
             'ops',
@@ -29207,12 +29209,12 @@ export const GAMES = [
             'soon',
             'snoop',
             'spoon',
-            'spoons'
-        ]
+            'spoons',
+        ],
     },
     {
-        'word': 'urqsti',
-        'subset': [
+        word: 'urqsti',
+        subset: [
             'its',
             'rut',
             'sir',
@@ -29224,12 +29226,12 @@ export const GAMES = [
             'stir',
             'suit',
             'quits',
-            'squirt'
-        ]
+            'squirt',
+        ],
     },
     {
-        'word': 'tsicrt',
-        'subset': [
+        word: 'tsicrt',
+        subset: [
             'its',
             'sic',
             'sir',
@@ -29241,12 +29243,12 @@ export const GAMES = [
             'cris',
             'stir',
             'tits',
-            'strict'
-        ]
+            'strict',
+        ],
     },
     {
-        'word': 'utsryl',
-        'subset': [
+        word: 'utsryl',
+        subset: [
             'rut',
             'sly',
             'sty',
@@ -29258,12 +29260,12 @@ export const GAMES = [
             'rusty',
             'surly',
             'truly',
-            'sultry'
-        ]
+            'sultry',
+        ],
     },
     {
-        'word': 'usnkne',
-        'subset': [
+        word: 'usnkne',
+        subset: [
             'ken',
             'nun',
             'sen',
@@ -29275,12 +29277,12 @@ export const GAMES = [
             'nuns',
             'sunk',
             'nukes',
-            'sunken'
-        ]
+            'sunken',
+        ],
     },
     {
-        'word': 'osopws',
-        'subset': [
+        word: 'osopws',
+        subset: [
             'ops',
             'pow',
             'sop',
@@ -29292,12 +29294,12 @@ export const GAMES = [
             'wops',
             'swoop',
             'woops',
-            'swoops'
-        ]
+            'swoops',
+        ],
     },
     {
-        'word': 'swosdr',
-        'subset': [
+        word: 'swosdr',
+        subset: [
             'dos',
             'rod',
             'row',
@@ -29309,12 +29311,12 @@ export const GAMES = [
             'word',
             'sword',
             'words',
-            'swords'
-        ]
+            'swords',
+        ],
     },
     {
-        'word': 'otrrdi',
-        'subset': [
+        word: 'otrrdi',
+        subset: [
             'dit',
             'dot',
             'ort',
@@ -29326,12 +29328,12 @@ export const GAMES = [
             'dirt',
             'riot',
             'trio',
-            'torrid'
-        ]
+            'torrid',
+        ],
     },
     {
-        'word': 'otting',
-        'subset': [
+        word: 'otting',
+        subset: [
             'gin',
             'git',
             'got',
@@ -29343,12 +29345,12 @@ export const GAMES = [
             'into',
             'ting',
             'tong',
-            'toting'
-        ]
+            'toting',
+        ],
     },
     {
-        'word': 'tricky',
-        'subset': [
+        word: 'tricky',
+        subset: [
             'cry',
             'ick',
             'icy',
@@ -29360,12 +29362,12 @@ export const GAMES = [
             'rick',
             'tick',
             'trick',
-            'tricky'
-        ]
+            'tricky',
+        ],
     },
     {
-        'word': 'tewlve',
-        'subset': [
+        word: 'tewlve',
+        subset: [
             'eel',
             'eve',
             'ewe',
@@ -29377,12 +29379,12 @@ export const GAMES = [
             'wee',
             'wet',
             'welt',
-            'twelve'
-        ]
+            'twelve',
+        ],
     },
     {
-        'word': 'lneuss',
-        'subset': [
+        word: 'lneuss',
+        subset: [
             'ess',
             'sen',
             'sue',
@@ -29394,12 +29396,12 @@ export const GAMES = [
             'ness',
             'sues',
             'uses',
-            'unless'
-        ]
+            'unless',
+        ],
     },
     {
-        'word': 'ucpnka',
-        'subset': [
+        word: 'ucpnka',
+        subset: [
             'auk',
             'can',
             'cap',
@@ -29411,12 +29413,12 @@ export const GAMES = [
             'pack',
             'puck',
             'punk',
-            'unpack'
-        ]
+            'unpack',
+        ],
     },
     {
-        'word': 'nusene',
-        'subset': [
+        word: 'nusene',
+        subset: [
             'nee',
             'nun',
             'see',
@@ -29428,12 +29430,12 @@ export const GAMES = [
             'nuns',
             'seen',
             'ensue',
-            'unseen'
-        ]
+            'unseen',
+        ],
     },
     {
-        'word': 'dpuawr',
-        'subset': [
+        word: 'dpuawr',
+        subset: [
             'pad',
             'par',
             'paw',
@@ -29445,12 +29447,12 @@ export const GAMES = [
             'ward',
             'warp',
             'wrap',
-            'upward'
-        ]
+            'upward',
+        ],
     },
     {
-        'word': 'gevrre',
-        'subset': [
+        word: 'gevrre',
+        subset: [
             'ere',
             'err',
             'eve',
@@ -29462,12 +29464,12 @@ export const GAMES = [
             'ever',
             'veer',
             'verge',
-            'verger'
-        ]
+            'verger',
+        ],
     },
     {
-        'word': 'ervinm',
-        'subset': [
+        word: 'ervinm',
+        subset: [
             'men',
             'rem',
             'rev',
@@ -29479,12 +29481,12 @@ export const GAMES = [
             'vein',
             'vine',
             'miner',
-            'vermin'
-        ]
+            'vermin',
+        ],
     },
     {
-        'word': 'ivirle',
-        'subset': [
+        word: 'ivirle',
+        subset: [
             'lei',
             'lie',
             'rev',
@@ -29496,12 +29498,12 @@ export const GAMES = [
             'veil',
             'vile',
             'liver',
-            'virile'
-        ]
+            'virile',
+        ],
     },
     {
-        'word': 'gyoave',
-        'subset': [
+        word: 'gyoave',
+        subset: [
             'age',
             'ago',
             'ave',
@@ -29513,12 +29515,12 @@ export const GAMES = [
             'yea',
             'gave',
             'yoga',
-            'voyage'
-        ]
+            'voyage',
+        ],
     },
     {
-        'word': 'eouvry',
-        'subset': [
+        word: 'eouvry',
+        subset: [
             'ore',
             'our',
             'rev',
@@ -29530,12 +29532,12 @@ export const GAMES = [
             'very',
             'yore',
             'your',
-            'voyeur'
-        ]
+            'voyeur',
+        ],
     },
     {
-        'word': 'heiwgs',
-        'subset': [
+        word: 'heiwgs',
+        subset: [
             'his',
             'seg',
             'sew',
@@ -29547,12 +29549,12 @@ export const GAMES = [
             'wise',
             'wish',
             'weigh',
-            'weighs'
-        ]
+            'weighs',
+        ],
     },
     {
-        'word': 'cewnhe',
-        'subset': [
+        word: 'cewnhe',
+        subset: [
             'cee',
             'ewe',
             'hen',
@@ -29564,12 +29566,12 @@ export const GAMES = [
             'when',
             'hence',
             'wench',
-            'whence'
-        ]
+            'whence',
+        ],
     },
     {
-        'word': 'ywhmsi',
-        'subset': [
+        word: 'ywhmsi',
+        subset: [
             'him',
             'his',
             'mis',
@@ -29581,12 +29583,12 @@ export const GAMES = [
             'whys',
             'wish',
             'whims',
-            'whimsy'
-        ]
+            'whimsy',
+        ],
     },
     {
-        'word': 'niwdow',
-        'subset': [
+        word: 'niwdow',
+        subset: [
             'don',
             'ion',
             'nod',
@@ -29598,12 +29600,12 @@ export const GAMES = [
             'down',
             'wind',
             'widow',
-            'window'
-        ]
+            'window',
+        ],
     },
     {
-        'word': 'wirney',
-        'subset': [
+        word: 'wirney',
+        subset: [
             'new',
             'rin',
             'rye',
@@ -29615,12 +29617,12 @@ export const GAMES = [
             'weir',
             'wine',
             'wire',
-            'winery'
-        ]
+            'winery',
+        ],
     },
     {
-        'word': 'owodde',
-        'subset': [
+        word: 'owodde',
+        subset: [
             'dew',
             'doe',
             'odd',
@@ -29632,12 +29634,12 @@ export const GAMES = [
             'owed',
             'wood',
             'wooed',
-            'wooded'
-        ]
+            'wooded',
+        ],
     },
     {
-        'word': 'rwtire',
-        'subset': [
+        word: 'rwtire',
+        subset: [
             'err',
             'tie',
             'wet',
@@ -29649,12 +29651,12 @@ export const GAMES = [
             'wire',
             'writ',
             'write',
-            'writer'
-        ]
+            'writer',
+        ],
     },
     {
-        'word': 'yellwo',
-        'subset': [
+        word: 'yellwo',
+        subset: [
             'ell',
             'low',
             'lye',
@@ -29666,12 +29668,12 @@ export const GAMES = [
             'well',
             'yell',
             'lowly',
-            'yellow'
-        ]
+            'yellow',
+        ],
     },
     {
-        'word': 'oztyls',
-        'subset': [
+        word: 'oztyls',
+        subset: [
             'lot',
             'sly',
             'sol',
@@ -29683,12 +29685,12 @@ export const GAMES = [
             'lots',
             'slot',
             'toys',
-            'zlotys'
-        ]
+            'zlotys',
+        ],
     },
     {
-        'word': 'azabel',
-        'subset': [
+        word: 'azabel',
+        subset: [
             'ala',
             'ale',
             'baa',
@@ -29699,12 +29701,12 @@ export const GAMES = [
             'bale',
             'zeal',
             'blaze',
-            'ablaze'
-        ]
+            'ablaze',
+        ],
     },
     {
-        'word': 'access',
-        'subset': [
+        word: 'access',
+        subset: [
             'ace',
             'ass',
             'ess',
@@ -29715,12 +29717,12 @@ export const GAMES = [
             'case',
             'seas',
             'cases',
-            'access'
-        ]
+            'access',
+        ],
     },
     {
-        'word': 'amaezs',
-        'subset': [
+        word: 'amaezs',
+        subset: [
             'ama',
             'ems',
             'mae',
@@ -29731,12 +29733,12 @@ export const GAMES = [
             'same',
             'seam',
             'amaze',
-            'amazes'
-        ]
+            'amazes',
+        ],
     },
     {
-        'word': 'nanalu',
-        'subset': [
+        word: 'nanalu',
+        subset: [
             'ala',
             'ana',
             'nan',
@@ -29747,12 +29749,12 @@ export const GAMES = [
             'luna',
             'nana',
             'annul',
-            'annual'
-        ]
+            'annual',
+        ],
     },
     {
-        'word': 'nwyaay',
-        'subset': [
+        word: 'nwyaay',
+        subset: [
             'ana',
             'any',
             'naw',
@@ -29763,12 +29765,12 @@ export const GAMES = [
             'yay',
             'away',
             'yawn',
-            'anyway'
-        ]
+            'anyway',
+        ],
     },
     {
-        'word': 'alploo',
-        'subset': [
+        word: 'alploo',
+        subset: [
             'all',
             'lap',
             'loo',
@@ -29779,12 +29781,12 @@ export const GAMES = [
             'poll',
             'polo',
             'pool',
-            'apollo'
-        ]
+            'apollo',
+        ],
     },
     {
-        'word': 'cartic',
-        'subset': [
+        word: 'cartic',
+        subset: [
             'act',
             'air',
             'arc',
@@ -29795,12 +29797,12 @@ export const GAMES = [
             'tar',
             'tic',
             'cart',
-            'arctic'
-        ]
+            'arctic',
+        ],
     },
     {
-        'word': 'ahttac',
-        'subset': [
+        word: 'ahttac',
+        subset: [
             'act',
             'aha',
             'att',
@@ -29811,12 +29813,12 @@ export const GAMES = [
             'tach',
             'tact',
             'that',
-            'attach'
-        ]
+            'attach',
+        ],
     },
     {
-        'word': 'alobba',
-        'subset': [
+        word: 'alobba',
+        subset: [
             'ala',
             'baa',
             'boa',
@@ -29827,12 +29829,12 @@ export const GAMES = [
             'baba',
             'blab',
             'blob',
-            'balboa'
-        ]
+            'balboa',
+        ],
     },
     {
-        'word': 'eaedbd',
-        'subset': [
+        word: 'eaedbd',
+        subset: [
             'add',
             'bad',
             'bed',
@@ -29843,12 +29845,12 @@ export const GAMES = [
             'dee',
             'dead',
             'deed',
-            'beaded'
-        ]
+            'beaded',
+        ],
     },
     {
-        'word': 'bpeere',
-        'subset': [
+        word: 'bpeere',
+        subset: [
             'bee',
             'ere',
             'pee',
@@ -29859,12 +29861,12 @@ export const GAMES = [
             'beer',
             'bree',
             'peer',
-            'beeper'
-        ]
+            'beeper',
+        ],
     },
     {
-        'word': 'ebetrt',
-        'subset': [
+        word: 'ebetrt',
+        subset: [
             'bee',
             'bet',
             'ere',
@@ -29875,12 +29877,12 @@ export const GAMES = [
             'bree',
             'tree',
             'beret',
-            'better'
-        ]
+            'better',
+        ],
     },
     {
-        'word': 'ibgrge',
-        'subset': [
+        word: 'ibgrge',
+        subset: [
             'beg',
             'big',
             'egg',
@@ -29891,12 +29893,12 @@ export const GAMES = [
             'berg',
             'brie',
             'brig',
-            'bigger'
-        ]
+            'bigger',
+        ],
     },
     {
-        'word': 'ltibgh',
-        'subset': [
+        word: 'ltibgh',
+        subset: [
             'big',
             'bit',
             'gib',
@@ -29907,12 +29909,12 @@ export const GAMES = [
             'glib',
             'hilt',
             'light',
-            'blight'
-        ]
+            'blight',
+        ],
     },
     {
-        'word': 'obldoy',
-        'subset': [
+        word: 'obldoy',
+        subset: [
             'bod',
             'boo',
             'boy',
@@ -29923,12 +29925,12 @@ export const GAMES = [
             'body',
             'bold',
             'blood',
-            'bloody'
-        ]
+            'bloody',
+        ],
     },
     {
-        'word': 'booegi',
-        'subset': [
+        word: 'booegi',
+        subset: [
             'beg',
             'big',
             'bio',
@@ -29939,12 +29941,12 @@ export const GAMES = [
             'goo',
             'obi',
             'oboe',
-            'boogie'
-        ]
+            'boogie',
+        ],
     },
     {
-        'word': 'ubgger',
-        'subset': [
+        word: 'ubgger',
+        subset: [
             'beg',
             'bug',
             'egg',
@@ -29955,12 +29957,12 @@ export const GAMES = [
             'grub',
             'rube',
             'urge',
-            'bugger'
-        ]
+            'bugger',
+        ],
     },
     {
-        'word': 'bnouni',
-        'subset': [
+        word: 'bnouni',
+        subset: [
             'bin',
             'bio',
             'bun',
@@ -29971,12 +29973,12 @@ export const GAMES = [
             'obi',
             'noun',
             'union',
-            'bunion'
-        ]
+            'bunion',
+        ],
     },
     {
-        'word': 'uyobtu',
-        'subset': [
+        word: 'uyobtu',
+        subset: [
             'bot',
             'boy',
             'but',
@@ -29987,12 +29989,12 @@ export const GAMES = [
             'you',
             'bout',
             'toby',
-            'buyout'
-        ]
+            'buyout',
+        ],
     },
     {
-        'word': 'taycch',
-        'subset': [
+        word: 'taycch',
+        subset: [
             'act',
             'cat',
             'hat',
@@ -30003,12 +30005,12 @@ export const GAMES = [
             'tach',
             'catch',
             'yacht',
-            'catchy'
-        ]
+            'catchy',
+        ],
     },
     {
-        'word': 'etemcn',
-        'subset': [
+        word: 'etemcn',
+        subset: [
             'cee',
             'men',
             'met',
@@ -30019,12 +30021,12 @@ export const GAMES = [
             'cent',
             'meet',
             'teen',
-            'cement'
-        ]
+            'cement',
+        ],
     },
     {
-        'word': 'cahecn',
-        'subset': [
+        word: 'cahecn',
+        subset: [
             'ace',
             'ane',
             'can',
@@ -30035,12 +30037,12 @@ export const GAMES = [
             'cane',
             'each',
             'cache',
-            'chance'
-        ]
+            'chance',
+        ],
     },
     {
-        'word': 'hcests',
-        'subset': [
+        word: 'hcests',
+        subset: [
             'ess',
             'eth',
             'sec',
@@ -30051,12 +30053,12 @@ export const GAMES = [
             'shes',
             'chess',
             'chest',
-            'chests'
-        ]
+            'chests',
+        ],
     },
     {
-        'word': 'echedw',
-        'subset': [
+        word: 'echedw',
+        subset: [
             'cee',
             'dee',
             'dew',
@@ -30067,12 +30069,12 @@ export const GAMES = [
             'heed',
             'weed',
             'whee',
-            'chewed'
-        ]
+            'chewed',
+        ],
     },
     {
-        'word': 'hcsooy',
-        'subset': [
+        word: 'hcsooy',
+        subset: [
             'coo',
             'cos',
             'coy',
@@ -30083,12 +30085,12 @@ export const GAMES = [
             'soy',
             'cosy',
             'shoo',
-            'choosy'
-        ]
+            'choosy',
+        ],
     },
     {
-        'word': 'coldyl',
-        'subset': [
+        word: 'coldyl',
+        subset: [
             'cod',
             'col',
             'coy',
@@ -30099,12 +30101,12 @@ export const GAMES = [
             'cold',
             'doll',
             'dolly',
-            'coldly'
-        ]
+            'coldly',
+        ],
     },
     {
-        'word': 'cooulr',
-        'subset': [
+        word: 'cooulr',
+        subset: [
             'col',
             'coo',
             'cor',
@@ -30115,12 +30117,12 @@ export const GAMES = [
             'curl',
             'loco',
             'color',
-            'colour'
-        ]
+            'colour',
+        ],
     },
     {
-        'word': 'nccour',
-        'subset': [
+        word: 'nccour',
+        subset: [
             'con',
             'cor',
             'cur',
@@ -30131,12 +30133,12 @@ export const GAMES = [
             'corn',
             'croc',
             'occur',
-            'concur'
-        ]
+            'concur',
+        ],
     },
     {
-        'word': 'counpo',
-        'subset': [
+        word: 'counpo',
+        subset: [
             'con',
             'coo',
             'cop',
@@ -30147,12 +30149,12 @@ export const GAMES = [
             'coop',
             'coup',
             'upon',
-            'coupon'
-        ]
+            'coupon',
+        ],
     },
     {
-        'word': 'ecdied',
-        'subset': [
+        word: 'ecdied',
+        subset: [
             'cee',
             'dee',
             'did',
@@ -30163,12 +30165,12 @@ export const GAMES = [
             'died',
             'iced',
             'diced',
-            'decide'
-        ]
+            'decide',
+        ],
     },
     {
-        'word': 'dejaey',
-        'subset': [
+        word: 'dejaey',
+        subset: [
             'aye',
             'day',
             'dee',
@@ -30179,12 +30181,12 @@ export const GAMES = [
             'yea',
             'eyed',
             'jade',
-            'deejay'
-        ]
+            'deejay',
+        ],
     },
     {
-        'word': 'deftec',
-        'subset': [
+        word: 'deftec',
+        subset: [
             'cee',
             'dee',
             'fed',
@@ -30195,12 +30197,12 @@ export const GAMES = [
             'feed',
             'feet',
             'teed',
-            'defect'
-        ]
+            'defect',
+        ],
     },
     {
-        'word': 'egdree',
-        'subset': [
+        word: 'egdree',
+        subset: [
             'dee',
             'ere',
             'ged',
@@ -30211,12 +30213,12 @@ export const GAMES = [
             'edge',
             'reed',
             'greed',
-            'degree'
-        ]
+            'degree',
+        ],
     },
     {
-        'word': 'gidits',
-        'subset': [
+        word: 'gidits',
+        subset: [
             'dig',
             'dis',
             'dit',
@@ -30227,12 +30229,12 @@ export const GAMES = [
             'digs',
             'gist',
             'digit',
-            'digits'
-        ]
+            'digits',
+        ],
     },
     {
-        'word': 'disscu',
-        'subset': [
+        word: 'disscu',
+        subset: [
             'cud',
             'dis',
             'dui',
@@ -30243,12 +30245,12 @@ export const GAMES = [
             'scud',
             'suds',
             'discs',
-            'discus'
-        ]
+            'discus',
+        ],
     },
     {
-        'word': 'sdside',
-        'subset': [
+        word: 'sdside',
+        subset: [
             'did',
             'die',
             'dis',
@@ -30259,12 +30261,12 @@ export const GAMES = [
             'side',
             'sided',
             'sides',
-            'dissed'
-        ]
+            'dissed',
+        ],
     },
     {
-        'word': 'idggeo',
-        'subset': [
+        word: 'idggeo',
+        subset: [
             'die',
             'dig',
             'doe',
@@ -30275,12 +30277,12 @@ export const GAMES = [
             'gig',
             'god',
             'ode',
-            'doggie'
-        ]
+            'doggie',
+        ],
     },
     {
-        'word': 'olldop',
-        'subset': [
+        word: 'olldop',
+        subset: [
             'dol',
             'loo',
             'lop',
@@ -30291,12 +30293,12 @@ export const GAMES = [
             'poll',
             'polo',
             'pool',
-            'dollop'
-        ]
+            'dollop',
+        ],
     },
     {
-        'word': 'ukdced',
-        'subset': [
+        word: 'ukdced',
+        subset: [
             'cud',
             'cue',
             'dud',
@@ -30307,12 +30309,12 @@ export const GAMES = [
             'duck',
             'dude',
             'duke',
-            'ducked'
-        ]
+            'ducked',
+        ],
     },
     {
-        'word': 'cezema',
-        'subset': [
+        word: 'cezema',
+        subset: [
             'ace',
             'cam',
             'cee',
@@ -30323,12 +30325,12 @@ export const GAMES = [
             'came',
             'mace',
             'maze',
-            'eczema'
-        ]
+            'eczema',
+        ],
     },
     {
-        'word': 'enerte',
-        'subset': [
+        word: 'enerte',
+        subset: [
             'ere',
             'nee',
             'net',
@@ -30339,12 +30341,12 @@ export const GAMES = [
             'teen',
             'tree',
             'enter',
-            'entree'
-        ]
+            'entree',
+        ],
     },
     {
-        'word': 'erorrs',
-        'subset': [
+        word: 'erorrs',
+        subset: [
             'err',
             'ers',
             'ore',
@@ -30355,12 +30357,12 @@ export const GAMES = [
             'rose',
             'sore',
             'error',
-            'errors'
-        ]
+            'errors',
+        ],
     },
     {
-        'word': 'eeiyng',
-        'subset': [
+        word: 'eeiyng',
+        subset: [
             'eng',
             'eye',
             'gee',
@@ -30371,12 +30373,12 @@ export const GAMES = [
             'yin',
             'gene',
             'genie',
-            'eyeing'
-        ]
+            'eyeing',
+        ],
     },
     {
-        'word': 'faouvr',
-        'subset': [
+        word: 'faouvr',
+        subset: [
             'arf',
             'far',
             'for',
@@ -30387,12 +30389,12 @@ export const GAMES = [
             'our',
             'four',
             'favor',
-            'favour'
-        ]
+            'favour',
+        ],
     },
     {
-        'word': 'rfevor',
-        'subset': [
+        word: 'rfevor',
+        subset: [
             'err',
             'fer',
             'foe',
@@ -30403,12 +30405,12 @@ export const GAMES = [
             'fore',
             'over',
             'rover',
-            'fervor'
-        ]
+            'fervor',
+        ],
     },
     {
-        'word': 'yflign',
-        'subset': [
+        word: 'yflign',
+        subset: [
             'fig',
             'fin',
             'fly',
@@ -30419,12 +30421,12 @@ export const GAMES = [
             'ling',
             'fling',
             'lying',
-            'flying'
-        ]
+            'flying',
+        ],
     },
     {
-        'word': 'fgoged',
-        'subset': [
+        word: 'fgoged',
+        subset: [
             'doe',
             'dog',
             'egg',
@@ -30435,12 +30437,12 @@ export const GAMES = [
             'ged',
             'god',
             'ode',
-            'fogged'
-        ]
+            'fogged',
+        ],
     },
     {
-        'word': 'fowllo',
-        'subset': [
+        word: 'fowllo',
+        subset: [
             'loo',
             'low',
             'owl',
@@ -30451,12 +30453,12 @@ export const GAMES = [
             'wolf',
             'woof',
             'wool',
-            'follow'
-        ]
+            'follow',
+        ],
     },
     {
-        'word': 'uarfsd',
-        'subset': [
+        word: 'uarfsd',
+        subset: [
             'ads',
             'arf',
             'fad',
@@ -30467,12 +30469,12 @@ export const GAMES = [
             'furs',
             'surf',
             'fraud',
-            'frauds'
-        ]
+            'frauds',
+        ],
     },
     {
-        'word': 'ufiryt',
-        'subset': [
+        word: 'ufiryt',
+        subset: [
             'fir',
             'fit',
             'fry',
@@ -30483,12 +30485,12 @@ export const GAMES = [
             'rift',
             'turf',
             'fruit',
-            'fruity'
-        ]
+            'fruity',
+        ],
     },
     {
-        'word': 'rnfyig',
-        'subset': [
+        word: 'rnfyig',
+        subset: [
             'fig',
             'fin',
             'fir',
@@ -30499,12 +30501,12 @@ export const GAMES = [
             'yin',
             'grin',
             'ring',
-            'frying'
-        ]
+            'frying',
+        ],
     },
     {
-        'word': 'agglge',
-        'subset': [
+        word: 'agglge',
+        subset: [
             'age',
             'ale',
             'egg',
@@ -30515,12 +30517,12 @@ export const GAMES = [
             'leg',
             'gage',
             'gale',
-            'gaggle'
-        ]
+            'gaggle',
+        ],
     },
     {
-        'word': 'gasgba',
-        'subset': [
+        word: 'gasgba',
+        subset: [
             'abs',
             'aga',
             'baa',
@@ -30531,12 +30533,12 @@ export const GAMES = [
             'gaga',
             'gags',
             'saga',
-            'gasbag'
-        ]
+            'gasbag',
+        ],
     },
     {
-        'word': 'agbzoe',
-        'subset': [
+        word: 'agbzoe',
+        subset: [
             'age',
             'ago',
             'bag',
@@ -30547,12 +30549,12 @@ export const GAMES = [
             'gob',
             'zag',
             'gaze',
-            'gazebo'
-        ]
+            'gazebo',
+        ],
     },
     {
-        'word': 'idgooe',
-        'subset': [
+        word: 'idgooe',
+        subset: [
             'die',
             'dig',
             'doe',
@@ -30563,12 +30565,12 @@ export const GAMES = [
             'goo',
             'ode',
             'good',
-            'goodie'
-        ]
+            'goodie',
+        ],
     },
     {
-        'word': 'onoieg',
-        'subset': [
+        word: 'onoieg',
+        subset: [
             'ego',
             'eng',
             'gen',
@@ -30579,12 +30581,12 @@ export const GAMES = [
             'one',
             'gone',
             'goon',
-            'goonie'
-        ]
+            'goonie',
+        ],
     },
     {
-        'word': 'rgsoom',
-        'subset': [
+        word: 'rgsoom',
+        subset: [
             'goo',
             'gor',
             'moo',
@@ -30595,12 +30597,12 @@ export const GAMES = [
             'groom',
             'moors',
             'rooms',
-            'grooms'
-        ]
+            'grooms',
+        ],
     },
     {
-        'word': 'ehckle',
-        'subset': [
+        word: 'ehckle',
+        subset: [
             'cee',
             'eel',
             'elk',
@@ -30611,12 +30613,12 @@ export const GAMES = [
             'lech',
             'cheek',
             'leech',
-            'heckle'
-        ]
+            'heckle',
+        ],
     },
     {
-        'word': 'ehlelr',
-        'subset': [
+        word: 'ehlelr',
+        subset: [
             'eel',
             'ell',
             'ere',
@@ -30627,12 +30629,12 @@ export const GAMES = [
             'hell',
             'here',
             'reel',
-            'heller'
-        ]
+            'heller',
+        ],
     },
     {
-        'word': 'herien',
-        'subset': [
+        word: 'herien',
+        subset: [
             'ere',
             'hen',
             'her',
@@ -30643,12 +30645,12 @@ export const GAMES = [
             'here',
             'hire',
             'rein',
-            'herein'
-        ]
+            'herein',
+        ],
     },
     {
-        'word': 'cchiup',
-        'subset': [
+        word: 'cchiup',
+        subset: [
             'chi',
             'cup',
             'hic',
@@ -30659,12 +30661,12 @@ export const GAMES = [
             'pic',
             'chic',
             'chip',
-            'hiccup'
-        ]
+            'hiccup',
+        ],
     },
     {
-        'word': 'lohdup',
-        'subset': [
+        word: 'lohdup',
+        subset: [
             'dol',
             'duo',
             'hop',
@@ -30675,12 +30677,12 @@ export const GAMES = [
             'hold',
             'loud',
             'holdup',
-            'uphold'
-        ]
+            'uphold',
+        ],
     },
     {
-        'word': 'ollohw',
-        'subset': [
+        word: 'ollohw',
+        subset: [
             'how',
             'loo',
             'low',
@@ -30691,12 +30693,12 @@ export const GAMES = [
             'woo',
             'howl',
             'wool',
-            'hollow'
-        ]
+            'hollow',
+        ],
     },
     {
-        'word': 'hoinmg',
-        'subset': [
+        word: 'hoinmg',
+        subset: [
             'gin',
             'him',
             'hog',
@@ -30707,12 +30709,12 @@ export const GAMES = [
             'ohm',
             'hong',
             'nigh',
-            'homing'
-        ]
+            'homing',
+        ],
     },
     {
-        'word': 'oohesv',
-        'subset': [
+        word: 'oohesv',
+        subset: [
             'hoe',
             'oho',
             'ooh',
@@ -30723,12 +30725,12 @@ export const GAMES = [
             'shoe',
             'shoo',
             'shove',
-            'hooves'
-        ]
+            'hooves',
+        ],
     },
     {
-        'word': 'uhmmer',
-        'subset': [
+        word: 'uhmmer',
+        subset: [
             'hem',
             'her',
             'hmm',
@@ -30739,12 +30741,12 @@ export const GAMES = [
             'rue',
             'rum',
             'umm',
-            'hummer'
-        ]
+            'hummer',
+        ],
     },
     {
-        'word': 'uhnrgy',
-        'subset': [
+        word: 'uhnrgy',
+        subset: [
             'gun',
             'guy',
             'hug',
@@ -30755,12 +30757,12 @@ export const GAMES = [
             'urn',
             'hung',
             'rung',
-            'hungry'
-        ]
+            'hungry',
+        ],
     },
     {
-        'word': 'niugaa',
-        'subset': [
+        word: 'niugaa',
+        subset: [
             'aga',
             'ain',
             'ana',
@@ -30771,12 +30773,12 @@ export const GAMES = [
             'agin',
             'gain',
             'again',
-            'iguana'
-        ]
+            'iguana',
+        ],
     },
     {
-        'word': 'icnite',
-        'subset': [
+        word: 'icnite',
+        subset: [
             'ice',
             'net',
             'ten',
@@ -30787,12 +30789,12 @@ export const GAMES = [
             'cite',
             'nice',
             'nite',
-            'incite'
-        ]
+            'incite',
+        ],
     },
     {
-        'word': 'nientt',
-        'subset': [
+        word: 'nientt',
+        subset: [
             'inn',
             'net',
             'ten',
@@ -30803,12 +30805,12 @@ export const GAMES = [
             'nine',
             'nite',
             'tent',
-            'intent'
-        ]
+            'intent',
+        ],
     },
     {
-        'word': 'viniet',
-        'subset': [
+        word: 'viniet',
+        subset: [
             'net',
             'ten',
             'tie',
@@ -30819,12 +30821,12 @@ export const GAMES = [
             'vein',
             'vent',
             'vine',
-            'invite'
-        ]
+            'invite',
+        ],
     },
     {
-        'word': 'rnicoi',
-        'subset': [
+        word: 'rnicoi',
+        subset: [
             'con',
             'cor',
             'ion',
@@ -30835,12 +30837,12 @@ export const GAMES = [
             'icon',
             'iron',
             'noir',
-            'ironic'
-        ]
+            'ironic',
+        ],
     },
     {
-        'word': 'jmuepr',
-        'subset': [
+        word: 'jmuepr',
+        subset: [
             'per',
             'rem',
             'rep',
@@ -30851,12 +30853,12 @@ export const GAMES = [
             'perm',
             'pure',
             'rump',
-            'jumper'
-        ]
+            'jumper',
+        ],
     },
     {
-        'word': 'kepere',
-        'subset': [
+        word: 'kepere',
+        subset: [
             'ere',
             'pee',
             'per',
@@ -30867,12 +30869,12 @@ export const GAMES = [
             'peer',
             'perk',
             'reek',
-            'keeper'
-        ]
+            'keeper',
+        ],
     },
     {
-        'word': 'kibbel',
-        'subset': [
+        word: 'kibbel',
+        subset: [
             'bel',
             'bib',
             'ebb',
@@ -30883,12 +30885,12 @@ export const GAMES = [
             'bike',
             'like',
             'bible',
-            'kibble'
-        ]
+            'kibble',
+        ],
     },
     {
-        'word': 'ckkied',
-        'subset': [
+        word: 'ckkied',
+        subset: [
             'die',
             'ice',
             'ick',
@@ -30899,12 +30901,12 @@ export const GAMES = [
             'dike',
             'iced',
             'kick',
-            'kicked'
-        ]
+            'kicked',
+        ],
     },
     {
-        'word': 'klilre',
-        'subset': [
+        word: 'klilre',
+        subset: [
             'elk',
             'ell',
             'ilk',
@@ -30915,12 +30917,12 @@ export const GAMES = [
             'lier',
             'like',
             'rile',
-            'killer'
-        ]
+            'killer',
+        ],
     },
     {
-        'word': 'olyatu',
-        'subset': [
+        word: 'olyatu',
+        subset: [
             'alt',
             'lay',
             'lot',
@@ -30931,12 +30933,12 @@ export const GAMES = [
             'alto',
             'auto',
             'lout',
-            'layout'
-        ]
+            'layout',
+        ],
     },
     {
-        'word': 'nliikg',
-        'subset': [
+        word: 'nliikg',
+        subset: [
             'gin',
             'ilk',
             'ink',
@@ -30947,12 +30949,12 @@ export const GAMES = [
             'king',
             'ling',
             'link',
-            'liking'
-        ]
+            'liking',
+        ],
     },
     {
-        'word': 'koplcu',
-        'subset': [
+        word: 'koplcu',
+        subset: [
             'col',
             'cop',
             'cup',
@@ -30963,12 +30965,12 @@ export const GAMES = [
             'luck',
             'puck',
             'pluck',
-            'lockup'
-        ]
+            'lockup',
+        ],
     },
     {
-        'word': 'loohfa',
-        'subset': [
+        word: 'loohfa',
+        subset: [
             'loo',
             'oaf',
             'oho',
@@ -30979,12 +30981,12 @@ export const GAMES = [
             'halo',
             'hoof',
             'loaf',
-            'loofah'
-        ]
+            'loofah',
+        ],
     },
     {
-        'word': 'ulncya',
-        'subset': [
+        word: 'ulncya',
+        subset: [
             'any',
             'can',
             'lac',
@@ -30995,12 +30997,12 @@ export const GAMES = [
             'lacy',
             'luna',
             'yuan',
-            'lunacy'
-        ]
+            'lunacy',
+        ],
     },
     {
-        'word': 'dmaaem',
-        'subset': [
+        word: 'dmaaem',
+        subset: [
             'ama',
             'dam',
             'mad',
@@ -31011,12 +31013,12 @@ export const GAMES = [
             'mama',
             'mead',
             'madam',
-            'madame'
-        ]
+            'madame',
+        ],
     },
     {
-        'word': 'mlddee',
-        'subset': [
+        word: 'mlddee',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -31027,12 +31029,12 @@ export const GAMES = [
             'mel',
             'deed',
             'deem',
-            'meddle'
-        ]
+            'meddle',
+        ],
     },
     {
-        'word': 'memory',
-        'subset': [
+        word: 'memory',
+        subset: [
             'mom',
             'mor',
             'ore',
@@ -31043,12 +31045,12 @@ export const GAMES = [
             'memo',
             'more',
             'yore',
-            'memory'
-        ]
+            'memory',
+        ],
     },
     {
-        'word': 'ettmle',
-        'subset': [
+        word: 'ettmle',
+        subset: [
             'eel',
             'elm',
             'lee',
@@ -31059,12 +31061,12 @@ export const GAMES = [
             'tet',
             'meet',
             'melt',
-            'mettle'
-        ]
+            'mettle',
+        ],
     },
     {
-        'word': 'egrumg',
-        'subset': [
+        word: 'egrumg',
+        subset: [
             'egg',
             'gem',
             'gum',
@@ -31075,12 +31077,12 @@ export const GAMES = [
             'rum',
             'germ',
             'urge',
-            'mugger'
-        ]
+            'mugger',
+        ],
     },
     {
-        'word': 'ttoumn',
-        'subset': [
+        word: 'ttoumn',
+        subset: [
             'mon',
             'not',
             'nut',
@@ -31091,12 +31093,12 @@ export const GAMES = [
             'mutt',
             'unto',
             'mount',
-            'mutton'
-        ]
+            'mutton',
+        ],
     },
     {
-        'word': 'anusae',
-        'subset': [
+        word: 'anusae',
+        subset: [
             'ana',
             'ane',
             'sea',
@@ -31107,12 +31109,12 @@ export const GAMES = [
             'use',
             'sane',
             'sauna',
-            'nausea'
-        ]
+            'nausea',
+        ],
     },
     {
-        'word': 'eedeln',
-        'subset': [
+        word: 'eedeln',
+        subset: [
             'dee',
             'del',
             'den',
@@ -31123,12 +31125,12 @@ export const GAMES = [
             'nee',
             'lend',
             'need',
-            'needle'
-        ]
+            'needle',
+        ],
     },
     {
-        'word': 'endodd',
-        'subset': [
+        word: 'endodd',
+        subset: [
             'den',
             'doe',
             'don',
@@ -31139,12 +31141,12 @@ export const GAMES = [
             'one',
             'done',
             'node',
-            'nodded'
-        ]
+            'nodded',
+        ],
     },
     {
-        'word': 'nylson',
-        'subset': [
+        word: 'nylson',
+        subset: [
             'nos',
             'sly',
             'sol',
@@ -31155,12 +31157,12 @@ export const GAMES = [
             'only',
             'nylon',
             'sonny',
-            'nylons'
-        ]
+            'nylons',
+        ],
     },
     {
-        'word': 'peposo',
-        'subset': [
+        word: 'peposo',
+        subset: [
             'ops',
             'ose',
             'pep',
@@ -31171,12 +31173,12 @@ export const GAMES = [
             'pope',
             'pops',
             'pose',
-            'oppose'
-        ]
+            'oppose',
+        ],
     },
     {
-        'word': 'lutoet',
-        'subset': [
+        word: 'lutoet',
+        subset: [
             'let',
             'lot',
             'ole',
@@ -31187,12 +31189,12 @@ export const GAMES = [
             'lout',
             'tote',
             'lotte',
-            'outlet'
-        ]
+            'outlet',
+        ],
     },
     {
-        'word': 'lpbebe',
-        'subset': [
+        word: 'lpbebe',
+        subset: [
             'bee',
             'bel',
             'ebb',
@@ -31203,12 +31205,12 @@ export const GAMES = [
             'peel',
             'pele',
             'bleep',
-            'pebble'
-        ]
+            'pebble',
+        ],
     },
     {
-        'word': 'eepcdk',
-        'subset': [
+        word: 'eepcdk',
+        subset: [
             'cee',
             'dee',
             'pee',
@@ -31219,12 +31221,12 @@ export const GAMES = [
             'peck',
             'peed',
             'peek',
-            'pecked'
-        ]
+            'pecked',
+        ],
     },
     {
-        'word': 'nndpee',
-        'subset': [
+        word: 'nndpee',
+        subset: [
             'dee',
             'den',
             'end',
@@ -31235,12 +31237,12 @@ export const GAMES = [
             'need',
             'peed',
             'penne',
-            'penned'
-        ]
+            'penned',
+        ],
     },
     {
-        'word': 'tteipe',
-        'subset': [
+        word: 'tteipe',
+        subset: [
             'pee',
             'pet',
             'pie',
@@ -31251,12 +31253,12 @@ export const GAMES = [
             'tip',
             'tit',
             'petit',
-            'petite'
-        ]
+            'petite',
+        ],
     },
     {
-        'word': 'zaipsz',
-        'subset': [
+        word: 'zaipsz',
+        subset: [
             'pas',
             'pis',
             'psi',
@@ -31267,12 +31269,12 @@ export const GAMES = [
             'zip',
             'spaz',
             'pizza',
-            'pizzas'
-        ]
+            'pizzas',
+        ],
     },
     {
-        'word': 'opolry',
-        'subset': [
+        word: 'opolry',
+        subset: [
             'loo',
             'lop',
             'pro',
@@ -31283,12 +31285,12 @@ export const GAMES = [
             'poly',
             'pool',
             'poor',
-            'poorly'
-        ]
+            'poorly',
+        ],
     },
     {
-        'word': 'ptotao',
-        'subset': [
+        word: 'ptotao',
+        subset: [
             'att',
             'pat',
             'pot',
@@ -31299,12 +31301,12 @@ export const GAMES = [
             'atop',
             'otto',
             'toot',
-            'potato'
-        ]
+            'potato',
+        ],
     },
     {
-        'word': 'triyup',
-        'subset': [
+        word: 'triyup',
+        subset: [
             'pit',
             'pry',
             'put',
@@ -31315,12 +31317,12 @@ export const GAMES = [
             'yup',
             'pity',
             'trip',
-            'purity'
-        ]
+            'purity',
+        ],
     },
     {
-        'word': 'eesqnu',
-        'subset': [
+        word: 'eesqnu',
+        subset: [
             'nee',
             'see',
             'sen',
@@ -31331,12 +31333,12 @@ export const GAMES = [
             'seen',
             'ensue',
             'queen',
-            'queens'
-        ]
+            'queens',
+        ],
     },
     {
-        'word': 'erdeem',
-        'subset': [
+        word: 'erdeem',
+        subset: [
             'dee',
             'ere',
             'med',
@@ -31347,12 +31349,12 @@ export const GAMES = [
             'deer',
             'mere',
             'reed',
-            'redeem'
-        ]
+            'redeem',
+        ],
     },
     {
-        'word': 'orevek',
-        'subset': [
+        word: 'orevek',
+        subset: [
             'ere',
             'eve',
             'ore',
@@ -31363,12 +31365,12 @@ export const GAMES = [
             'over',
             'reek',
             'veer',
-            'revoke'
-        ]
+            'revoke',
+        ],
     },
     {
-        'word': 'ringre',
-        'subset': [
+        word: 'ringre',
+        subset: [
             'eng',
             'err',
             'gen',
@@ -31379,12 +31381,12 @@ export const GAMES = [
             'rein',
             'ring',
             'reign',
-            'ringer'
-        ]
+            'ringer',
+        ],
     },
     {
-        'word': 'robbre',
-        'subset': [
+        word: 'robbre',
+        subset: [
             'bob',
             'bro',
             'brr',
@@ -31395,12 +31397,12 @@ export const GAMES = [
             'rob',
             'bore',
             'robe',
-            'robber'
-        ]
+            'robber',
+        ],
     },
     {
-        'word': 'urffle',
-        'subset': [
+        word: 'urffle',
+        subset: [
             'elf',
             'fer',
             'flu',
@@ -31411,12 +31413,12 @@ export const GAMES = [
             'lure',
             'ruff',
             'rule',
-            'ruffle'
-        ]
+            'ruffle',
+        ],
     },
     {
-        'word': 'oocpss',
-        'subset': [
+        word: 'oocpss',
+        subset: [
             'coo',
             'cop',
             'cos',
@@ -31427,12 +31429,12 @@ export const GAMES = [
             'cops',
             'oops',
             'scoop',
-            'scoops'
-        ]
+            'scoops',
+        ],
     },
     {
-        'word': 'cswres',
-        'subset': [
+        word: 'cswres',
+        subset: [
             'ers',
             'ess',
             'rec',
@@ -31443,12 +31445,12 @@ export const GAMES = [
             'crew',
             'crews',
             'screw',
-            'screws'
-        ]
+            'screws',
+        ],
     },
     {
-        'word': 'bcsurs',
-        'subset': [
+        word: 'bcsurs',
+        subset: [
             'bus',
             'cub',
             'cur',
@@ -31459,12 +31461,12 @@ export const GAMES = [
             'cuss',
             'rubs',
             'scrub',
-            'scrubs'
-        ]
+            'scrubs',
+        ],
     },
     {
-        'word': 'ekseer',
-        'subset': [
+        word: 'ekseer',
+        subset: [
             'ere',
             'ers',
             'ree',
@@ -31475,12 +31477,12 @@ export const GAMES = [
             'seek',
             'seer',
             'reeks',
-            'seeker'
-        ]
+            'seeker',
+        ],
     },
     {
-        'word': 'elhsls',
-        'subset': [
+        word: 'elhsls',
+        subset: [
             'ell',
             'ess',
             'she',
@@ -31491,12 +31493,12 @@ export const GAMES = [
             'hells',
             'sells',
             'shell',
-            'shells'
-        ]
+            'shells',
+        ],
     },
     {
-        'word': 'sceicd',
-        'subset': [
+        word: 'sceicd',
+        subset: [
             'die',
             'dis',
             'ice',
@@ -31507,12 +31509,12 @@ export const GAMES = [
             'disc',
             'iced',
             'side',
-            'sicced'
-        ]
+            'sicced',
+        ],
     },
     {
-        'word': 'dignis',
-        'subset': [
+        word: 'dignis',
+        subset: [
             'dig',
             'dis',
             'gin',
@@ -31523,12 +31525,12 @@ export const GAMES = [
             'sign',
             'sing',
             'dings',
-            'siding'
-        ]
+            'siding',
+        ],
     },
     {
-        'word': 'sleeve',
-        'subset': [
+        word: 'sleeve',
+        subset: [
             'eel',
             'eve',
             'lee',
@@ -31539,12 +31541,12 @@ export const GAMES = [
             'eves',
             'elves',
             'levee',
-            'sleeve'
-        ]
+            'sleeve',
+        ],
     },
     {
-        'word': 'slloyw',
-        'subset': [
+        word: 'slloyw',
+        subset: [
             'low',
             'owl',
             'sly',
@@ -31555,12 +31557,12 @@ export const GAMES = [
             'owls',
             'slow',
             'lowly',
-            'slowly'
-        ]
+            'slowly',
+        ],
     },
     {
-        'word': 'ttussa',
-        'subset': [
+        word: 'ttussa',
+        subset: [
             'ass',
             'att',
             'sat',
@@ -31571,12 +31573,12 @@ export const GAMES = [
             'stat',
             'taut',
             'stats',
-            'status'
-        ]
+            'status',
+        ],
     },
     {
-        'word': 'dustly',
-        'subset': [
+        word: 'dustly',
+        subset: [
             'sly',
             'sty',
             'duly',
@@ -31587,12 +31589,12 @@ export const GAMES = [
             'stud',
             'dusty',
             'study',
-            'studly'
-        ]
+            'studly',
+        ],
     },
     {
-        'word': 'ulspep',
-        'subset': [
+        word: 'ulspep',
+        subset: [
             'pep',
             'pup',
             'pus',
@@ -31603,12 +31605,12 @@ export const GAMES = [
             'plus',
             'pulp',
             'pulse',
-            'supple'
-        ]
+            'supple',
+        ],
     },
     {
-        'word': 'lsewsl',
-        'subset': [
+        word: 'lsewsl',
+        subset: [
             'ell',
             'ess',
             'sew',
@@ -31619,12 +31621,12 @@ export const GAMES = [
             'sells',
             'swell',
             'wells',
-            'swells'
-        ]
+            'swells',
+        ],
     },
     {
-        'word': 'leertl',
-        'subset': [
+        word: 'leertl',
+        subset: [
             'eel',
             'ell',
             'ere',
@@ -31635,12 +31637,12 @@ export const GAMES = [
             'reel',
             'tell',
             'tree',
-            'teller'
-        ]
+            'teller',
+        ],
     },
     {
-        'word': 'teernn',
-        'subset': [
+        word: 'teernn',
+        subset: [
             'ere',
             'nee',
             'net',
@@ -31651,12 +31653,12 @@ export const GAMES = [
             'teen',
             'tree',
             'enter',
-            'tenner'
-        ]
+            'tenner',
+        ],
     },
     {
-        'word': 'ticekt',
-        'subset': [
+        word: 'ticekt',
+        subset: [
             'ice',
             'ick',
             'kit',
@@ -31667,12 +31669,12 @@ export const GAMES = [
             'cite',
             'kite',
             'tick',
-            'ticket'
-        ]
+            'ticket',
+        ],
     },
     {
-        'word': 'topuee',
-        'subset': [
+        word: 'topuee',
+        subset: [
             'out',
             'pee',
             'pet',
@@ -31683,12 +31685,12 @@ export const GAMES = [
             'top',
             'poet',
             'pout',
-            'toupee'
-        ]
+            'toupee',
+        ],
     },
     {
-        'word': 'tnechr',
-        'subset': [
+        word: 'tnechr',
+        subset: [
             'eth',
             'hen',
             'her',
@@ -31699,12 +31701,12 @@ export const GAMES = [
             'cent',
             'rent',
             'then',
-            'trench'
-        ]
+            'trench',
+        ],
     },
     {
-        'word': 'etntwy',
-        'subset': [
+        word: 'etntwy',
+        subset: [
             'net',
             'new',
             'ten',
@@ -31715,12 +31717,12 @@ export const GAMES = [
             'newt',
             'tent',
             'went',
-            'twenty'
-        ]
+            'twenty',
+        ],
     },
     {
-        'word': 'nuocol',
-        'subset': [
+        word: 'nuocol',
+        subset: [
             'col',
             'con',
             'coo',
@@ -31731,12 +31733,12 @@ export const GAMES = [
             'loco',
             'loon',
             'colon',
-            'uncool'
-        ]
+            'uncool',
+        ],
     },
     {
-        'word': 'pueldh',
-        'subset': [
+        word: 'pueldh',
+        subset: [
             'del',
             'due',
             'hep',
@@ -31747,12 +31749,12 @@ export const GAMES = [
             'held',
             'help',
             'pled',
-            'upheld'
-        ]
+            'upheld',
+        ],
     },
     {
-        'word': 'uhpodl',
-        'subset': [
+        word: 'uhpodl',
+        subset: [
             'dol',
             'duo',
             'hop',
@@ -31763,12 +31765,12 @@ export const GAMES = [
             'hold',
             'loud',
             'holdup',
-            'uphold'
-        ]
+            'uphold',
+        ],
     },
     {
-        'word': 'ugppin',
-        'subset': [
+        word: 'ugppin',
+        subset: [
             'gin',
             'gun',
             'nip',
@@ -31779,12 +31781,12 @@ export const GAMES = [
             'pun',
             'pup',
             'ping',
-            'upping'
-        ]
+            'upping',
+        ],
     },
     {
-        'word': 'cavnat',
-        'subset': [
+        word: 'cavnat',
+        subset: [
             'act',
             'ana',
             'ant',
@@ -31795,12 +31797,12 @@ export const GAMES = [
             'van',
             'vat',
             'cant',
-            'vacant'
-        ]
+            'vacant',
+        ],
     },
     {
-        'word': 'vriteu',
-        'subset': [
+        word: 'vriteu',
+        subset: [
             'rev',
             'rue',
             'rut',
@@ -31811,12 +31813,12 @@ export const GAMES = [
             'tier',
             'tire',
             'true',
-            'virtue'
-        ]
+            'virtue',
+        ],
     },
     {
-        'word': 'soveci',
-        'subset': [
+        word: 'soveci',
+        subset: [
             'cos',
             'ice',
             'ose',
@@ -31827,12 +31829,12 @@ export const GAMES = [
             'cove',
             'vice',
             'voice',
-            'voices'
-        ]
+            'voices',
+        ],
     },
     {
-        'word': 'volmue',
-        'subset': [
+        word: 'volmue',
+        subset: [
             'elm',
             'lum',
             'luv',
@@ -31843,12 +31845,12 @@ export const GAMES = [
             'mole',
             'move',
             'mule',
-            'volume'
-        ]
+            'volume',
+        ],
     },
     {
-        'word': 'kewyel',
-        'subset': [
+        word: 'kewyel',
+        subset: [
             'eel',
             'elk',
             'ewe',
@@ -31859,12 +31861,12 @@ export const GAMES = [
             'wee',
             'keel',
             'week',
-            'weekly'
-        ]
+            'weekly',
+        ],
     },
     {
-        'word': 'ewtrte',
-        'subset': [
+        word: 'ewtrte',
+        subset: [
             'ere',
             'ewe',
             'ree',
@@ -31875,12 +31877,12 @@ export const GAMES = [
             'tree',
             'were',
             'tweet',
-            'wetter'
-        ]
+            'wetter',
+        ],
     },
     {
-        'word': 'hwolly',
-        'subset': [
+        word: 'hwolly',
+        subset: [
             'how',
             'hoy',
             'low',
@@ -31891,12 +31893,12 @@ export const GAMES = [
             'howl',
             'holly',
             'lowly',
-            'wholly'
-        ]
+            'wholly',
+        ],
     },
     {
-        'word': 'owshoh',
-        'subset': [
+        word: 'owshoh',
+        subset: [
             'how',
             'oho',
             'ooh',
@@ -31907,12 +31909,12 @@ export const GAMES = [
             'hows',
             'shoo',
             'show',
-            'whoosh'
-        ]
+            'whoosh',
+        ],
     },
     {
-        'word': 'iwldyl',
-        'subset': [
+        word: 'iwldyl',
+        subset: [
             'ill',
             'lid',
             'dill',
@@ -31923,12 +31925,12 @@ export const GAMES = [
             'wily',
             'dilly',
             'willy',
-            'wildly'
-        ]
+            'wildly',
+        ],
     },
     {
-        'word': 'inwren',
-        'subset': [
+        word: 'inwren',
+        subset: [
             'inn',
             'new',
             'rin',
@@ -31939,12 +31941,12 @@ export const GAMES = [
             'wine',
             'wire',
             'inner',
-            'winner'
-        ]
+            'winner',
+        ],
     },
     {
-        'word': 'wiazdr',
-        'subset': [
+        word: 'wiazdr',
+        subset: [
             'aid',
             'air',
             'raw',
@@ -31955,12 +31957,12 @@ export const GAMES = [
             'draw',
             'raid',
             'ward',
-            'wizard'
-        ]
+            'wizard',
+        ],
     },
     {
-        'word': 'scwerk',
-        'subset': [
+        word: 'scwerk',
+        subset: [
             'ers',
             'rec',
             'res',
@@ -31971,12 +31973,12 @@ export const GAMES = [
             'crews',
             'screw',
             'wreck',
-            'wrecks'
-        ]
+            'wrecks',
+        ],
     },
     {
-        'word': 'afrfai',
-        'subset': [
+        word: 'afrfai',
+        subset: [
             'air',
             'arf',
             'far',
@@ -31986,12 +31988,12 @@ export const GAMES = [
             'aria',
             'fair',
             'riff',
-            'affair'
-        ]
+            'affair',
+        ],
     },
     {
-        'word': 'aissts',
-        'subset': [
+        word: 'aissts',
+        subset: [
             'ass',
             'its',
             'sat',
@@ -32001,12 +32003,12 @@ export const GAMES = [
             'tis',
             'sits',
             'assist',
-            'stasis'
-        ]
+            'stasis',
+        ],
     },
     {
-        'word': 'uautnm',
-        'subset': [
+        word: 'uautnm',
+        subset: [
             'ant',
             'man',
             'mat',
@@ -32016,12 +32018,12 @@ export const GAMES = [
             'tau',
             'aunt',
             'tuna',
-            'autumn'
-        ]
+            'autumn',
+        ],
     },
     {
-        'word': 'eavune',
-        'subset': [
+        word: 'eavune',
+        subset: [
             'ane',
             'ave',
             'eve',
@@ -32031,12 +32033,12 @@ export const GAMES = [
             'even',
             'neve',
             'venue',
-            'avenue'
-        ]
+            'avenue',
+        ],
     },
     {
-        'word': 'babsie',
-        'subset': [
+        word: 'babsie',
+        subset: [
             'abs',
             'bib',
             'ebb',
@@ -32046,12 +32048,12 @@ export const GAMES = [
             'bias',
             'sabe',
             'babes',
-            'babies'
-        ]
+            'babies',
+        ],
     },
     {
-        'word': 'abbmoo',
-        'subset': [
+        word: 'abbmoo',
+        subset: [
             'bam',
             'boa',
             'bob',
@@ -32061,12 +32063,12 @@ export const GAMES = [
             'bomb',
             'boob',
             'boom',
-            'bamboo'
-        ]
+            'bamboo',
+        ],
     },
     {
-        'word': 'begedg',
-        'subset': [
+        word: 'begedg',
+        subset: [
             'bed',
             'bee',
             'beg',
@@ -32076,12 +32078,12 @@ export const GAMES = [
             'ged',
             'gee',
             'edge',
-            'begged'
-        ]
+            'begged',
+        ],
     },
     {
-        'word': 'loybdl',
-        'subset': [
+        word: 'loybdl',
+        subset: [
             'bod',
             'boy',
             'dol',
@@ -32091,12 +32093,12 @@ export const GAMES = [
             'bold',
             'doll',
             'dolly',
-            'boldly'
-        ]
+            'boldly',
+        ],
     },
     {
-        'word': 'oboked',
-        'subset': [
+        word: 'oboked',
+        subset: [
             'bed',
             'bod',
             'boo',
@@ -32106,12 +32108,12 @@ export const GAMES = [
             'book',
             'kobo',
             'oboe',
-            'booked'
-        ]
+            'booked',
+        ],
     },
     {
-        'word': 'rbrowo',
-        'subset': [
+        word: 'rbrowo',
+        subset: [
             'boo',
             'bow',
             'bro',
@@ -32121,12 +32123,12 @@ export const GAMES = [
             'row',
             'woo',
             'brow',
-            'borrow'
-        ]
+            'borrow',
+        ],
     },
     {
-        'word': 'roebkr',
-        'subset': [
+        word: 'roebkr',
+        subset: [
             'bro',
             'brr',
             'err',
@@ -32136,12 +32138,12 @@ export const GAMES = [
             'bore',
             'robe',
             'broke',
-            'broker'
-        ]
+            'broker',
+        ],
     },
     {
-        'word': 'csaual',
-        'subset': [
+        word: 'csaual',
+        subset: [
             'ala',
             'als',
             'lac',
@@ -32151,12 +32153,12 @@ export const GAMES = [
             'alas',
             'casa',
             'saul',
-            'casual'
-        ]
+            'casual',
+        ],
     },
     {
-        'word': 'elclde',
-        'subset': [
+        word: 'elclde',
+        subset: [
             'cee',
             'dee',
             'del',
@@ -32166,12 +32168,12 @@ export const GAMES = [
             'lee',
             'cell',
             'dell',
-            'celled'
-        ]
+            'celled',
+        ],
     },
     {
-        'word': 'hpcpoy',
-        'subset': [
+        word: 'hpcpoy',
+        subset: [
             'cop',
             'coy',
             'hop',
@@ -32181,12 +32183,12 @@ export const GAMES = [
             'copy',
             'hypo',
             'hoppy',
-            'choppy'
-        ]
+            'choppy',
+        ],
     },
     {
-        'word': 'irclce',
-        'subset': [
+        word: 'irclce',
+        subset: [
             'ice',
             'lei',
             'lie',
@@ -32196,12 +32198,12 @@ export const GAMES = [
             'rice',
             'rile',
             'relic',
-            'circle'
-        ]
+            'circle',
+        ],
     },
     {
-        'word': 'ocbbew',
-        'subset': [
+        word: 'ocbbew',
+        subset: [
             'bob',
             'bow',
             'cob',
@@ -32211,12 +32213,12 @@ export const GAMES = [
             'web',
             'woe',
             'cobb',
-            'cobweb'
-        ]
+            'cobweb',
+        ],
     },
     {
-        'word': 'ocnmom',
-        'subset': [
+        word: 'ocnmom',
+        subset: [
             'con',
             'coo',
             'mom',
@@ -32226,12 +32228,12 @@ export const GAMES = [
             'coon',
             'mono',
             'moon',
-            'common'
-        ]
+            'common',
+        ],
     },
     {
-        'word': 'ocrekr',
-        'subset': [
+        word: 'ocrekr',
+        subset: [
             'cor',
             'err',
             'ore',
@@ -32241,12 +32243,12 @@ export const GAMES = [
             'cork',
             'rock',
             'corker',
-            'rocker'
-        ]
+            'rocker',
+        ],
     },
     {
-        'word': 'ctrcoh',
-        'subset': [
+        word: 'ctrcoh',
+        subset: [
             'cor',
             'cot',
             'hot',
@@ -32256,12 +32258,12 @@ export const GAMES = [
             'tor',
             'croc',
             'torch',
-            'crotch'
-        ]
+            'crotch',
+        ],
     },
     {
-        'word': 'csrstu',
-        'subset': [
+        word: 'csrstu',
+        subset: [
             'cur',
             'cut',
             'rut',
@@ -32271,12 +32273,12 @@ export const GAMES = [
             'rust',
             'crust',
             'truss',
-            'crusts'
-        ]
+            'crusts',
+        ],
     },
     {
-        'word': 'cptrys',
-        'subset': [
+        word: 'cptrys',
+        subset: [
             'cry',
             'pry',
             'spy',
@@ -32286,12 +32288,12 @@ export const GAMES = [
             'scry',
             'spry',
             'crypt',
-            'crypts'
-        ]
+            'crypts',
+        ],
     },
     {
-        'word': 'cfeudf',
-        'subset': [
+        word: 'cfeudf',
+        subset: [
             'cud',
             'cue',
             'due',
@@ -32301,12 +32303,12 @@ export const GAMES = [
             'duce',
             'duff',
             'feud',
-            'cuffed'
-        ]
+            'cuffed',
+        ],
     },
     {
-        'word': 'rcufwe',
-        'subset': [
+        word: 'rcufwe',
+        subset: [
             'cue',
             'cur',
             'fer',
@@ -32316,12 +32318,12 @@ export const GAMES = [
             'rue',
             'crew',
             'cure',
-            'curfew'
-        ]
+            'curfew',
+        ],
     },
     {
-        'word': 'rucran',
-        'subset': [
+        word: 'rucran',
+        subset: [
             'arc',
             'can',
             'car',
@@ -32331,12 +32333,12 @@ export const GAMES = [
             'urn',
             'carr',
             'narc',
-            'curran'
-        ]
+            'curran',
+        ],
     },
     {
-        'word': 'sytcci',
-        'subset': [
+        word: 'sytcci',
+        subset: [
             'icy',
             'its',
             'sic',
@@ -32346,12 +32348,12 @@ export const GAMES = [
             'tis',
             'city',
             'cyst',
-            'cystic'
-        ]
+            'cystic',
+        ],
     },
     {
-        'word': 'dceade',
-        'subset': [
+        word: 'dceade',
+        subset: [
             'ace',
             'add',
             'cad',
@@ -32361,12 +32363,12 @@ export const GAMES = [
             'aced',
             'dead',
             'deed',
-            'decade'
-        ]
+            'decade',
+        ],
     },
     {
-        'word': 'cedeer',
-        'subset': [
+        word: 'cedeer',
+        subset: [
             'cee',
             'dee',
             'ere',
@@ -32376,12 +32378,12 @@ export const GAMES = [
             'deer',
             'reed',
             'creed',
-            'decree'
-        ]
+            'decree',
+        ],
     },
     {
-        'word': 'edltee',
-        'subset': [
+        word: 'edltee',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -32391,12 +32393,12 @@ export const GAMES = [
             'ted',
             'tee',
             'teed',
-            'delete'
-        ]
+            'delete',
+        ],
     },
     {
-        'word': 'diekic',
-        'subset': [
+        word: 'diekic',
+        subset: [
             'die',
             'ice',
             'ick',
@@ -32406,12 +32408,12 @@ export const GAMES = [
             'dick',
             'dike',
             'iced',
-            'dickie'
-        ]
+            'dickie',
+        ],
     },
     {
-        'word': 'dpiped',
-        'subset': [
+        word: 'dpiped',
+        subset: [
             'did',
             'die',
             'dip',
@@ -32421,12 +32423,12 @@ export const GAMES = [
             'died',
             'pied',
             'pipe',
-            'dipped'
-        ]
+            'dipped',
+        ],
     },
     {
-        'word': 'idvine',
-        'subset': [
+        word: 'idvine',
+        subset: [
             'den',
             'die',
             'end',
@@ -32436,12 +32438,12 @@ export const GAMES = [
             'vein',
             'vine',
             'indie',
-            'divine'
-        ]
+            'divine',
+        ],
     },
     {
-        'word': 'ogeddg',
-        'subset': [
+        word: 'ogeddg',
+        subset: [
             'doe',
             'dog',
             'egg',
@@ -32451,12 +32453,12 @@ export const GAMES = [
             'odd',
             'ode',
             'dodge',
-            'dogged'
-        ]
+            'dogged',
+        ],
     },
     {
-        'word': 'rdadoo',
-        'subset': [
+        word: 'rdadoo',
+        subset: [
             'add',
             'ado',
             'dad',
@@ -32466,12 +32468,12 @@ export const GAMES = [
             'door',
             'odor',
             'road',
-            'dorado'
-        ]
+            'dorado',
+        ],
     },
     {
-        'word': 'dulled',
-        'subset': [
+        word: 'dulled',
+        subset: [
             'del',
             'dud',
             'due',
@@ -32481,12 +32483,12 @@ export const GAMES = [
             'dude',
             'duel',
             'dull',
-            'dulled'
-        ]
+            'dulled',
+        ],
     },
     {
-        'word': 'gnenie',
-        'subset': [
+        word: 'gnenie',
+        subset: [
             'eng',
             'gee',
             'gen',
@@ -32496,12 +32498,12 @@ export const GAMES = [
             'gene',
             'nine',
             'genie',
-            'engine'
-        ]
+            'engine',
+        ],
     },
     {
-        'word': 'tseeem',
-        'subset': [
+        word: 'tseeem',
+        subset: [
             'ems',
             'met',
             'see',
@@ -32511,12 +32513,12 @@ export const GAMES = [
             'seem',
             'stem',
             'meets',
-            'esteem'
-        ]
+            'esteem',
+        ],
     },
     {
-        'word': 'tcehed',
-        'subset': [
+        word: 'tcehed',
+        subset: [
             'cee',
             'dee',
             'eth',
@@ -32526,12 +32528,12 @@ export const GAMES = [
             'heed',
             'teed',
             'thee',
-            'etched'
-        ]
+            'etched',
+        ],
     },
     {
-        'word': 'excses',
-        'subset': [
+        word: 'excses',
+        subset: [
             'cee',
             'ess',
             'sec',
@@ -32541,12 +32543,12 @@ export const GAMES = [
             'sees',
             'execs',
             'sexes',
-            'excess'
-        ]
+            'excess',
+        ],
     },
     {
-        'word': 'xeuesc',
-        'subset': [
+        word: 'xeuesc',
+        subset: [
             'cee',
             'cue',
             'sec',
@@ -32556,12 +32558,12 @@ export const GAMES = [
             'use',
             'exes',
             'execs',
-            'excuse'
-        ]
+            'excuse',
+        ],
     },
     {
-        'word': 'toexic',
-        'subset': [
+        word: 'toexic',
+        subset: [
             'cot',
             'cox',
             'ice',
@@ -32571,12 +32573,12 @@ export const GAMES = [
             'cite',
             'exit',
             'toxic',
-            'exotic'
-        ]
+            'exotic',
+        ],
     },
     {
-        'word': 'txneet',
-        'subset': [
+        word: 'txneet',
+        subset: [
             'nee',
             'net',
             'tee',
@@ -32586,12 +32588,12 @@ export const GAMES = [
             'teen',
             'tent',
             'text',
-            'extent'
-        ]
+            'extent',
+        ],
     },
     {
-        'word': 'eeflbe',
-        'subset': [
+        word: 'eeflbe',
+        subset: [
             'bee',
             'bel',
             'eel',
@@ -32601,12 +32603,12 @@ export const GAMES = [
             'beef',
             'feel',
             'flee',
-            'feeble'
-        ]
+            'feeble',
+        ],
     },
     {
-        'word': 'lfityh',
-        'subset': [
+        word: 'lfityh',
+        subset: [
             'fit',
             'fly',
             'hit',
@@ -32616,12 +32618,12 @@ export const GAMES = [
             'hilt',
             'lift',
             'filth',
-            'filthy'
-        ]
+            'filthy',
+        ],
     },
     {
-        'word': 'ihfses',
-        'subset': [
+        word: 'ihfses',
+        subset: [
             'ess',
             'his',
             'ifs',
@@ -32631,12 +32633,12 @@ export const GAMES = [
             'fish',
             'hiss',
             'shes',
-            'fishes'
-        ]
+            'fishes',
+        ],
     },
     {
-        'word': 'lfinch',
-        'subset': [
+        word: 'lfinch',
+        subset: [
             'chi',
             'fin',
             'hic',
@@ -32646,12 +32648,12 @@ export const GAMES = [
             'chin',
             'inch',
             'finch',
-            'flinch'
-        ]
+            'flinch',
+        ],
     },
     {
-        'word': 'ufidsl',
-        'subset': [
+        word: 'ufidsl',
+        subset: [
             'dis',
             'dui',
             'flu',
@@ -32661,12 +32663,12 @@ export const GAMES = [
             'lids',
             'slid',
             'fluid',
-            'fluids'
-        ]
+            'fluids',
+        ],
     },
     {
-        'word': 'oflrci',
-        'subset': [
+        word: 'oflrci',
+        subset: [
             'col',
             'cor',
             'fir',
@@ -32676,12 +32678,12 @@ export const GAMES = [
             'coil',
             'foil',
             'rolf',
-            'frolic'
-        ]
+            'frolic',
+        ],
     },
     {
-        'word': 'srigly',
-        'subset': [
+        word: 'srigly',
+        subset: [
             'lis',
             'rig',
             'sir',
@@ -32691,12 +32693,12 @@ export const GAMES = [
             'rigs',
             'girls',
             'girly',
-            'grisly'
-        ]
+            'grisly',
+        ],
     },
     {
-        'word': 'gurbyb',
-        'subset': [
+        word: 'gurbyb',
+        subset: [
             'bug',
             'buy',
             'guy',
@@ -32706,12 +32708,12 @@ export const GAMES = [
             'grub',
             'ruby',
             'rugby',
-            'grubby'
-        ]
+            'grubby',
+        ],
     },
     {
-        'word': 'gulity',
-        'subset': [
+        word: 'gulity',
+        subset: [
             'git',
             'gut',
             'guy',
@@ -32721,12 +32723,12 @@ export const GAMES = [
             'tug',
             'ugly',
             'guilt',
-            'guilty'
-        ]
+            'guilty',
+        ],
     },
     {
-        'word': 'ngaumn',
-        'subset': [
+        word: 'ngaumn',
+        subset: [
             'gum',
             'gun',
             'mag',
@@ -32736,12 +32738,12 @@ export const GAMES = [
             'nam',
             'nan',
             'nun',
-            'gunman'
-        ]
+            'gunman',
+        ],
     },
     {
-        'word': 'negnum',
-        'subset': [
+        word: 'negnum',
+        subset: [
             'eng',
             'gem',
             'gen',
@@ -32751,12 +32753,12 @@ export const GAMES = [
             'mug',
             'nun',
             'menu',
-            'gunmen'
-        ]
+            'gunmen',
+        ],
     },
     {
-        'word': 'aheded',
-        'subset': [
+        word: 'aheded',
+        subset: [
             'add',
             'dad',
             'dah',
@@ -32766,12 +32768,12 @@ export const GAMES = [
             'deed',
             'head',
             'heed',
-            'headed'
-        ]
+            'headed',
+        ],
     },
     {
-        'word': 'ghgure',
-        'subset': [
+        word: 'ghgure',
+        subset: [
             'egg',
             'her',
             'hue',
@@ -32781,12 +32783,12 @@ export const GAMES = [
             'ugh',
             'huge',
             'urge',
-            'hugger'
-        ]
+            'hugger',
+        ],
     },
     {
-        'word': 'eduhmm',
-        'subset': [
+        word: 'eduhmm',
+        subset: [
             'due',
             'hem',
             'hmm',
@@ -32796,12 +32798,12 @@ export const GAMES = [
             'mud',
             'mum',
             'umm',
-            'hummed'
-        ]
+            'hummed',
+        ],
     },
     {
-        'word': 'uhmsmu',
-        'subset': [
+        word: 'uhmsmu',
+        subset: [
             'hmm',
             'hum',
             'mum',
@@ -32811,12 +32813,12 @@ export const GAMES = [
             'mums',
             'mush',
             'humus',
-            'hummus'
-        ]
+            'hummus',
+        ],
     },
     {
-        'word': 'hypehn',
-        'subset': [
+        word: 'hypehn',
+        subset: [
             'heh',
             'hen',
             'hep',
@@ -32826,12 +32828,12 @@ export const GAMES = [
             'yen',
             'yep',
             'hype',
-            'hyphen'
-        ]
+            'hyphen',
+        ],
     },
     {
-        'word': 'lnifxu',
-        'subset': [
+        word: 'lnifxu',
+        subset: [
             'fin',
             'fix',
             'flu',
@@ -32841,12 +32843,12 @@ export const GAMES = [
             'nil',
             'nix',
             'flux',
-            'influx'
-        ]
+            'influx',
+        ],
     },
     {
-        'word': 'jnrieu',
-        'subset': [
+        word: 'jnrieu',
+        subset: [
             'jin',
             'rin',
             'rue',
@@ -32856,12 +32858,12 @@ export const GAMES = [
             'ruin',
             'rune',
             'urine',
-            'injure'
-        ]
+            'injure',
+        ],
     },
     {
-        'word': 'rguaja',
-        'subset': [
+        word: 'rguaja',
+        subset: [
             'aga',
             'gar',
             'jag',
@@ -32871,12 +32873,12 @@ export const GAMES = [
             'rug',
             'ajar',
             'aura',
-            'jaguar'
-        ]
+            'jaguar',
+        ],
     },
     {
-        'word': 'jammed',
-        'subset': [
+        word: 'jammed',
+        subset: [
             'dam',
             'jam',
             'mad',
@@ -32886,12 +32888,12 @@ export const GAMES = [
             'jade',
             'made',
             'mead',
-            'jammed'
-        ]
+            'jammed',
+        ],
     },
     {
-        'word': 'erkdej',
-        'subset': [
+        word: 'erkdej',
+        subset: [
             'dee',
             'ere',
             'red',
@@ -32901,12 +32903,12 @@ export const GAMES = [
             'jerk',
             'reed',
             'reek',
-            'jerked'
-        ]
+            'jerked',
+        ],
     },
     {
-        'word': 'ernjki',
-        'subset': [
+        word: 'ernjki',
+        subset: [
             'ink',
             'jin',
             'ken',
@@ -32916,12 +32918,12 @@ export const GAMES = [
             'kern',
             'rein',
             'rink',
-            'jerkin'
-        ]
+            'jerkin',
+        ],
     },
     {
-        'word': 'jockey',
-        'subset': [
+        word: 'jockey',
+        subset: [
             'coy',
             'joe',
             'joy',
@@ -32931,12 +32933,12 @@ export const GAMES = [
             'joey',
             'joke',
             'yoke',
-            'jockey'
-        ]
+            'jockey',
+        ],
     },
     {
-        'word': 'mlbuej',
-        'subset': [
+        word: 'mlbuej',
+        subset: [
             'bel',
             'bum',
             'elm',
@@ -32946,12 +32948,12 @@ export const GAMES = [
             'lube',
             'mule',
             'blume',
-            'jumble'
-        ]
+            'jumble',
+        ],
     },
     {
-        'word': 'clitac',
-        'subset': [
+        word: 'clitac',
+        subset: [
             'act',
             'ail',
             'alt',
@@ -32961,12 +32963,12 @@ export const GAMES = [
             'tic',
             'til',
             'tail',
-            'lactic'
-        ]
+            'lactic',
+        ],
     },
     {
-        'word': 'luanch',
-        'subset': [
+        word: 'luanch',
+        subset: [
             'can',
             'hun',
             'lac',
@@ -32976,12 +32978,12 @@ export const GAMES = [
             'hula',
             'luna',
             'lunch',
-            'launch'
-        ]
+            'launch',
+        ],
     },
     {
-        'word': 'lteter',
-        'subset': [
+        word: 'lteter',
+        subset: [
             'eel',
             'ere',
             'lee',
@@ -32991,12 +32993,12 @@ export const GAMES = [
             'tet',
             'reel',
             'tree',
-            'letter'
-        ]
+            'letter',
+        ],
     },
     {
-        'word': 'illies',
-        'subset': [
+        word: 'illies',
+        subset: [
             'ell',
             'ill',
             'lei',
@@ -33006,12 +33008,12 @@ export const GAMES = [
             'lies',
             'sell',
             'sill',
-            'lilies'
-        ]
+            'lilies',
+        ],
     },
     {
-        'word': 'oldluy',
-        'subset': [
+        word: 'oldluy',
+        subset: [
             'dol',
             'duo',
             'old',
@@ -33021,12 +33023,12 @@ export const GAMES = [
             'duly',
             'loud',
             'dolly',
-            'loudly'
-        ]
+            'loudly',
+        ],
     },
     {
-        'word': 'ylircs',
-        'subset': [
+        word: 'ylircs',
+        subset: [
             'cry',
             'icy',
             'lis',
@@ -33036,12 +33038,12 @@ export const GAMES = [
             'sri',
             'cris',
             'scry',
-            'lyrics'
-        ]
+            'lyrics',
+        ],
     },
     {
-        'word': 'magmnu',
-        'subset': [
+        word: 'magmnu',
+        subset: [
             'gum',
             'gun',
             'mag',
@@ -33051,12 +33053,12 @@ export const GAMES = [
             'nag',
             'nam',
             'umm',
-            'magnum'
-        ]
+            'magnum',
+        ],
     },
     {
-        'word': 'smsise',
-        'subset': [
+        word: 'smsise',
+        subset: [
             'ems',
             'ess',
             'mis',
@@ -33066,12 +33068,12 @@ export const GAMES = [
             'miss',
             'semi',
             'sims',
-            'misses'
-        ]
+            'misses',
+        ],
     },
     {
-        'word': 'usmiss',
-        'subset': [
+        word: 'usmiss',
+        subset: [
             'mis',
             'sim',
             'sis',
@@ -33081,12 +33083,12 @@ export const GAMES = [
             'sims',
             'sums',
             'suss',
-            'missus'
-        ]
+            'missus',
+        ],
     },
     {
-        'word': 'mosuqe',
-        'subset': [
+        word: 'mosuqe',
+        subset: [
             'ems',
             'ose',
             'sue',
@@ -33096,12 +33098,12 @@ export const GAMES = [
             'some',
             'sumo',
             'mouse',
-            'mosque'
-        ]
+            'mosque',
+        ],
     },
     {
-        'word': 'umegdg',
-        'subset': [
+        word: 'umegdg',
+        subset: [
             'due',
             'dug',
             'egg',
@@ -33111,12 +33113,12 @@ export const GAMES = [
             'med',
             'mud',
             'mug',
-            'mugged'
-        ]
+            'mugged',
+        ],
     },
     {
-        'word': 'rmuhpy',
-        'subset': [
+        word: 'rmuhpy',
+        subset: [
             'hum',
             'hup',
             'pry',
@@ -33126,12 +33128,12 @@ export const GAMES = [
             'yup',
             'hump',
             'rump',
-            'murphy'
-        ]
+            'murphy',
+        ],
     },
     {
-        'word': 'miyunt',
-        'subset': [
+        word: 'miyunt',
+        subset: [
             'nut',
             'tin',
             'yin',
@@ -33141,12 +33143,12 @@ export const GAMES = [
             'unit',
             'minty',
             'unity',
-            'mutiny'
-        ]
+            'mutiny',
+        ],
     },
     {
-        'word': 'nuaenc',
-        'subset': [
+        word: 'nuaenc',
+        subset: [
             'ace',
             'ane',
             'can',
@@ -33156,12 +33158,12 @@ export const GAMES = [
             'acne',
             'cane',
             'nance',
-            'nuance'
-        ]
+            'nuance',
+        ],
     },
     {
-        'word': 'boject',
-        'subset': [
+        word: 'boject',
+        subset: [
             'bet',
             'bot',
             'cob',
@@ -33171,12 +33173,12 @@ export const GAMES = [
             'joe',
             'jot',
             'toe',
-            'object'
-        ]
+            'object',
+        ],
     },
     {
-        'word': 'ocutcl',
-        'subset': [
+        word: 'ocutcl',
+        subset: [
             'col',
             'cot',
             'cut',
@@ -33186,12 +33188,12 @@ export const GAMES = [
             'cult',
             'lout',
             'clout',
-            'occult'
-        ]
+            'occult',
+        ],
     },
     {
-        'word': 'feofst',
-        'subset': [
+        word: 'feofst',
+        subset: [
             'foe',
             'off',
             'ose',
@@ -33201,12 +33203,12 @@ export const GAMES = [
             'offs',
             'soft',
             'toes',
-            'offset'
-        ]
+            'offset',
+        ],
     },
     {
-        'word': 'znoigo',
-        'subset': [
+        word: 'znoigo',
+        subset: [
             'gin',
             'goo',
             'ion',
@@ -33216,12 +33218,12 @@ export const GAMES = [
             'goon',
             'zing',
             'gonzo',
-            'oozing'
-        ]
+            'oozing',
+        ],
     },
     {
-        'word': 'outddi',
-        'subset': [
+        word: 'outddi',
+        subset: [
             'did',
             'dit',
             'dot',
@@ -33231,12 +33233,12 @@ export const GAMES = [
             'odd',
             'out',
             'tod',
-            'outdid'
-        ]
+            'outdid',
+        ],
     },
     {
-        'word': 'xoford',
-        'subset': [
+        word: 'xoford',
+        subset: [
             'for',
             'fox',
             'fro',
@@ -33246,12 +33248,12 @@ export const GAMES = [
             'ford',
             'odor',
             'roof',
-            'oxford'
-        ]
+            'oxford',
+        ],
     },
     {
-        'word': 'mapaan',
-        'subset': [
+        word: 'mapaan',
+        subset: [
             'ama',
             'amp',
             'ana',
@@ -33261,12 +33263,12 @@ export const GAMES = [
             'nap',
             'pam',
             'pan',
-            'panama'
-        ]
+            'panama',
+        ],
     },
     {
-        'word': 'gpedge',
-        'subset': [
+        word: 'gpedge',
+        subset: [
             'dee',
             'egg',
             'ged',
@@ -33276,12 +33278,12 @@ export const GAMES = [
             'deep',
             'edge',
             'peed',
-            'pegged'
-        ]
+            'pegged',
+        ],
     },
     {
-        'word': 'reppep',
-        'subset': [
+        word: 'reppep',
+        subset: [
             'ere',
             'pee',
             'pep',
@@ -33291,12 +33293,12 @@ export const GAMES = [
             'peep',
             'peer',
             'prep',
-            'pepper'
-        ]
+            'pepper',
+        ],
     },
     {
-        'word': 'oehpbe',
-        'subset': [
+        word: 'oehpbe',
+        subset: [
             'bee',
             'bop',
             'hep',
@@ -33306,12 +33308,12 @@ export const GAMES = [
             'pee',
             'beep',
             'hope',
-            'phoebe'
-        ]
+            'phoebe',
+        ],
     },
     {
-        'word': 'ipilng',
-        'subset': [
+        word: 'ipilng',
+        subset: [
             'gin',
             'lin',
             'lip',
@@ -33321,12 +33323,12 @@ export const GAMES = [
             'pin',
             'ling',
             'ping',
-            'piling'
-        ]
+            'piling',
+        ],
     },
     {
-        'word': 'ispses',
-        'subset': [
+        word: 'ispses',
+        subset: [
             'ess',
             'pie',
             'pis',
@@ -33336,12 +33338,12 @@ export const GAMES = [
             'pies',
             'piss',
             'spies',
-            'pisses'
-        ]
+            'pisses',
+        ],
     },
     {
-        'word': 'qaepul',
-        'subset': [
+        word: 'qaepul',
+        subset: [
             'ale',
             'ape',
             'lap',
@@ -33351,12 +33353,12 @@ export const GAMES = [
             'pale',
             'plea',
             'equal',
-            'plaque'
-        ]
+            'plaque',
+        ],
     },
     {
-        'word': 'pssoes',
-        'subset': [
+        word: 'pssoes',
+        subset: [
             'ess',
             'ops',
             'ose',
@@ -33366,12 +33368,12 @@ export const GAMES = [
             'pesos',
             'poses',
             'posse',
-            'posses'
-        ]
+            'posses',
+        ],
     },
     {
-        'word': 'prpepy',
-        'subset': [
+        word: 'prpepy',
+        subset: [
             'pep',
             'per',
             'pry',
@@ -33381,12 +33383,12 @@ export const GAMES = [
             'prep',
             'prey',
             'pyre',
-            'preppy'
-        ]
+            'preppy',
+        ],
     },
     {
-        'word': 'upcbli',
-        'subset': [
+        word: 'upcbli',
+        subset: [
             'cub',
             'cup',
             'lip',
@@ -33396,12 +33398,12 @@ export const GAMES = [
             'clip',
             'club',
             'pubic',
-            'public'
-        ]
+            'public',
+        ],
     },
     {
-        'word': 'ulpedl',
-        'subset': [
+        word: 'ulpedl',
+        subset: [
             'del',
             'due',
             'ell',
@@ -33411,12 +33413,12 @@ export const GAMES = [
             'dull',
             'pled',
             'pull',
-            'pulled'
-        ]
+            'pulled',
+        ],
     },
     {
-        'word': 'mpumel',
-        'subset': [
+        word: 'mpumel',
+        subset: [
             'elm',
             'lum',
             'mel',
@@ -33426,12 +33428,12 @@ export const GAMES = [
             'lump',
             'mule',
             'plum',
-            'pummel'
-        ]
+            'pummel',
+        ],
     },
     {
-        'word': 'mupdpe',
-        'subset': [
+        word: 'mupdpe',
+        subset: [
             'due',
             'med',
             'mud',
@@ -33441,12 +33443,12 @@ export const GAMES = [
             'dump',
             'pump',
             'upped',
-            'pumped'
-        ]
+            'pumped',
+        ],
     },
     {
-        'word': 'uakqer',
-        'subset': [
+        word: 'uakqer',
+        subset: [
             'are',
             'ark',
             'auk',
@@ -33456,12 +33458,12 @@ export const GAMES = [
             'rake',
             'quake',
             'quark',
-            'quaker'
-        ]
+            'quaker',
+        ],
     },
     {
-        'word': 'yarrit',
-        'subset': [
+        word: 'yarrit',
+        subset: [
             'air',
             'art',
             'rat',
@@ -33471,12 +33473,12 @@ export const GAMES = [
             'try',
             'arty',
             'tray',
-            'rarity'
-        ]
+            'rarity',
+        ],
     },
     {
-        'word': 'efrere',
-        'subset': [
+        word: 'efrere',
+        subset: [
             'ere',
             'err',
             'fee',
@@ -33486,12 +33488,12 @@ export const GAMES = [
             'reef',
             'freer',
             'refer',
-            'reefer'
-        ]
+            'reefer',
+        ],
     },
     {
-        'word': 'eerjct',
-        'subset': [
+        word: 'eerjct',
+        subset: [
             'cee',
             'ere',
             'jet',
@@ -33501,12 +33503,12 @@ export const GAMES = [
             'tree',
             'eject',
             'erect',
-            'reject'
-        ]
+            'reject',
+        ],
     },
     {
-        'word': 'negree',
-        'subset': [
+        word: 'negree',
+        subset: [
             'eng',
             'ere',
             'gee',
@@ -33516,12 +33518,12 @@ export const GAMES = [
             'gene',
             'genre',
             'green',
-            'renege'
-        ]
+            'renege',
+        ],
     },
     {
-        'word': 'etrrie',
-        'subset': [
+        word: 'etrrie',
+        subset: [
             'ere',
             'err',
             'ree',
@@ -33531,12 +33533,12 @@ export const GAMES = [
             'tier',
             'tire',
             'tree',
-            'retire'
-        ]
+            'retire',
+        ],
     },
     {
-        'word': 'evrree',
-        'subset': [
+        word: 'evrree',
+        subset: [
             'ere',
             'err',
             'eve',
@@ -33546,12 +33548,12 @@ export const GAMES = [
             'ever',
             'veer',
             'reeve',
-            'revere'
-        ]
+            'revere',
+        ],
     },
     {
-        'word': 'ivrvee',
-        'subset': [
+        word: 'ivrvee',
+        subset: [
             'ere',
             'eve',
             'ree',
@@ -33561,12 +33563,12 @@ export const GAMES = [
             'ever',
             'veer',
             'vive',
-            'revive'
-        ]
+            'revive',
+        ],
     },
     {
-        'word': 'eocrkr',
-        'subset': [
+        word: 'eocrkr',
+        subset: [
             'cor',
             'err',
             'ore',
@@ -33576,12 +33578,12 @@ export const GAMES = [
             'cork',
             'rock',
             'corker',
-            'rocker'
-        ]
+            'rocker',
+        ],
     },
     {
-        'word': 'omroei',
-        'subset': [
+        word: 'omroei',
+        subset: [
             'moo',
             'mor',
             'ore',
@@ -33591,12 +33593,12 @@ export const GAMES = [
             'more',
             'room',
             'romeo',
-            'roomie'
-        ]
+            'roomie',
+        ],
     },
     {
-        'word': 'msuror',
-        'subset': [
+        word: 'msuror',
+        subset: [
             'mor',
             'our',
             'rom',
@@ -33606,12 +33608,12 @@ export const GAMES = [
             'sour',
             'sumo',
             'rumor',
-            'rumors'
-        ]
+            'rumors',
+        ],
     },
     {
-        'word': 'urmups',
-        'subset': [
+        word: 'urmups',
+        subset: [
             'pus',
             'rum',
             'sum',
@@ -33621,12 +33623,12 @@ export const GAMES = [
             'rump',
             'spur',
             'sump',
-            'rumpus'
-        ]
+            'rumpus',
+        ],
     },
     {
-        'word': 'sbcbya',
-        'subset': [
+        word: 'sbcbya',
+        subset: [
             'abs',
             'bay',
             'cab',
@@ -33636,12 +33638,12 @@ export const GAMES = [
             'bays',
             'cabs',
             'scab',
-            'scabby'
-        ]
+            'scabby',
+        ],
     },
     {
-        'word': 'csnice',
-        'subset': [
+        word: 'csnice',
+        subset: [
             'ice',
             'ins',
             'sec',
@@ -33651,12 +33653,12 @@ export const GAMES = [
             'nice',
             'sine',
             'since',
-            'scenic'
-        ]
+            'scenic',
+        ],
     },
     {
-        'word': 'shcnoz',
-        'subset': [
+        word: 'shcnoz',
+        subset: [
             'con',
             'cos',
             'coz',
@@ -33666,12 +33668,12 @@ export const GAMES = [
             'son',
             'cons',
             'nosh',
-            'schnoz'
-        ]
+            'schnoz',
+        ],
     },
     {
-        'word': 'hrbssu',
-        'subset': [
+        word: 'hrbssu',
+        subset: [
             'bus',
             'hub',
             'rub',
@@ -33681,12 +33683,12 @@ export const GAMES = [
             'rush',
             'brush',
             'shrub',
-            'shrubs'
-        ]
+            'shrubs',
+        ],
     },
     {
-        'word': 'kstech',
-        'subset': [
+        word: 'kstech',
+        subset: [
             'eth',
             'sec',
             'set',
@@ -33696,12 +33698,12 @@ export const GAMES = [
             'heck',
             'chest',
             'ketch',
-            'sketch'
-        ]
+            'sketch',
+        ],
     },
     {
-        'word': 'soulhc',
-        'subset': [
+        word: 'soulhc',
+        subset: [
             'col',
             'cos',
             'sol',
@@ -33711,12 +33713,12 @@ export const GAMES = [
             'soul',
             'such',
             'hocus',
-            'slouch'
-        ]
+            'slouch',
+        ],
     },
     {
-        'word': 'soemks',
-        'subset': [
+        word: 'soemks',
+        subset: [
             'ems',
             'ess',
             'ose',
@@ -33726,12 +33728,12 @@ export const GAMES = [
             'moss',
             'some',
             'smoke',
-            'smokes'
-        ]
+            'smokes',
+        ],
     },
     {
-        'word': 'satsis',
-        'subset': [
+        word: 'satsis',
+        subset: [
             'ass',
             'its',
             'sat',
@@ -33741,12 +33743,12 @@ export const GAMES = [
             'tis',
             'sits',
             'assist',
-            'stasis'
-        ]
+            'stasis',
+        ],
     },
     {
-        'word': 'luslen',
-        'subset': [
+        word: 'luslen',
+        subset: [
             'ell',
             'sen',
             'sue',
@@ -33756,12 +33758,12 @@ export const GAMES = [
             'lens',
             'null',
             'sell',
-            'sullen'
-        ]
+            'sullen',
+        ],
     },
     {
-        'word': 'upplys',
-        'subset': [
+        word: 'upplys',
+        subset: [
             'pup',
             'pus',
             'sly',
@@ -33771,12 +33773,12 @@ export const GAMES = [
             'yup',
             'plus',
             'pulp',
-            'supply'
-        ]
+            'supply',
+        ],
     },
     {
-        'word': 'tcacti',
-        'subset': [
+        word: 'tcacti',
+        subset: [
             'act',
             'att',
             'cat',
@@ -33786,12 +33788,12 @@ export const GAMES = [
             'tact',
             'attic',
             'tacit',
-            'tactic'
-        ]
+            'tactic',
+        ],
     },
     {
-        'word': 'otrerr',
-        'subset': [
+        word: 'otrerr',
+        subset: [
             'err',
             'ore',
             'ort',
@@ -33801,12 +33803,12 @@ export const GAMES = [
             'tore',
             'error',
             'retro',
-            'terror'
-        ]
+            'terror',
+        ],
     },
     {
-        'word': 'itring',
-        'subset': [
+        word: 'itring',
+        subset: [
             'gin',
             'git',
             'rig',
@@ -33816,12 +33818,12 @@ export const GAMES = [
             'ring',
             'ting',
             'trig',
-            'tiring'
-        ]
+            'tiring',
+        ],
     },
     {
-        'word': 'otsses',
-        'subset': [
+        word: 'otsses',
+        subset: [
             'ess',
             'ose',
             'set',
@@ -33831,12 +33833,12 @@ export const GAMES = [
             'sets',
             'toes',
             'toss',
-            'tosses'
-        ]
+            'tosses',
+        ],
     },
     {
-        'word': 'trpyip',
-        'subset': [
+        word: 'trpyip',
+        subset: [
             'pip',
             'pit',
             'pry',
@@ -33846,12 +33848,12 @@ export const GAMES = [
             'pity',
             'trip',
             'tippy',
-            'trippy'
-        ]
+            'trippy',
+        ],
     },
     {
-        'word': 'trutel',
-        'subset': [
+        word: 'trutel',
+        subset: [
             'let',
             'rue',
             'rut',
@@ -33861,12 +33863,12 @@ export const GAMES = [
             'rule',
             'true',
             'utter',
-            'turtle'
-        ]
+            'turtle',
+        ],
     },
     {
-        'word': 'uhnand',
-        'subset': [
+        word: 'uhnand',
+        subset: [
             'and',
             'dah',
             'dun',
@@ -33876,12 +33878,12 @@ export const GAMES = [
             'nan',
             'nun',
             'hand',
-            'unhand'
-        ]
+            'unhand',
+        ],
     },
     {
-        'word': 'huoonk',
-        'subset': [
+        word: 'huoonk',
+        subset: [
             'hon',
             'hun',
             'noh',
@@ -33891,12 +33893,12 @@ export const GAMES = [
             'honk',
             'hook',
             'hunk',
-            'unhook'
-        ]
+            'unhook',
+        ],
     },
     {
-        'word': 'upilhl',
-        'subset': [
+        word: 'upilhl',
+        subset: [
             'hip',
             'hup',
             'ill',
@@ -33906,12 +33908,12 @@ export const GAMES = [
             'hull',
             'pill',
             'pull',
-            'uphill'
-        ]
+            'uphill',
+        ],
     },
     {
-        'word': 'sueful',
-        'subset': [
+        word: 'sueful',
+        subset: [
             'elf',
             'flu',
             'sue',
@@ -33921,12 +33923,12 @@ export const GAMES = [
             'fuse',
             'self',
             'fuels',
-            'useful'
-        ]
+            'useful',
+        ],
     },
     {
-        'word': 'walfef',
-        'subset': [
+        word: 'walfef',
+        subset: [
             'ale',
             'awe',
             'elf',
@@ -33936,12 +33938,12 @@ export const GAMES = [
             'flea',
             'flew',
             'leaf',
-            'waffle'
-        ]
+            'waffle',
+        ],
     },
     {
-        'word': 'gwideg',
-        'subset': [
+        word: 'gwideg',
+        subset: [
             'dew',
             'die',
             'dig',
@@ -33951,12 +33953,12 @@ export const GAMES = [
             'wed',
             'wig',
             'wide',
-            'wigged'
-        ]
+            'wigged',
+        ],
     },
     {
-        'word': 'rwiing',
-        'subset': [
+        word: 'rwiing',
+        subset: [
             'gin',
             'rig',
             'rin',
@@ -33966,12 +33968,12 @@ export const GAMES = [
             'ring',
             'wing',
             'wring',
-            'wiring'
-        ]
+            'wiring',
+        ],
     },
     {
-        'word': 'iswhes',
-        'subset': [
+        word: 'iswhes',
+        subset: [
             'ess',
             'his',
             'sew',
@@ -33981,12 +33983,12 @@ export const GAMES = [
             'shes',
             'wise',
             'wish',
-            'wishes'
-        ]
+            'wishes',
+        ],
     },
     {
-        'word': 'wtiinh',
-        'subset': [
+        word: 'wtiinh',
+        subset: [
             'hit',
             'tin',
             'win',
@@ -33996,12 +33998,12 @@ export const GAMES = [
             'twin',
             'whit',
             'with',
-            'within'
-        ]
+            'within',
+        ],
     },
     {
-        'word': 'worekr',
-        'subset': [
+        word: 'worekr',
+        subset: [
             'err',
             'ore',
             'owe',
@@ -34011,12 +34013,12 @@ export const GAMES = [
             'woke',
             'wore',
             'work',
-            'worker'
-        ]
+            'worker',
+        ],
     },
     {
-        'word': 'woprku',
-        'subset': [
+        word: 'woprku',
+        subset: [
             'our',
             'pow',
             'pro',
@@ -34026,12 +34028,12 @@ export const GAMES = [
             'pork',
             'pour',
             'work',
-            'workup'
-        ]
+            'workup',
+        ],
     },
     {
-        'word': 'wrecth',
-        'subset': [
+        word: 'wrecth',
+        subset: [
             'eth',
             'her',
             'rec',
@@ -34041,12 +34043,12 @@ export const GAMES = [
             'crew',
             'whet',
             'threw',
-            'wretch'
-        ]
+            'wretch',
+        ],
     },
     {
-        'word': 'ipeeyp',
-        'subset': [
+        word: 'ipeeyp',
+        subset: [
             'eye',
             'pee',
             'pep',
@@ -34056,12 +34058,12 @@ export const GAMES = [
             'peep',
             'pipe',
             'yipe',
-            'yippee'
-        ]
+            'yippee',
+        ],
     },
     {
-        'word': 'ipzpde',
-        'subset': [
+        word: 'ipzpde',
+        subset: [
             'die',
             'dip',
             'pep',
@@ -34071,12 +34073,12 @@ export const GAMES = [
             'zip',
             'pied',
             'pipe',
-            'zipped'
-        ]
+            'zipped',
+        ],
     },
     {
-        'word': 'ucalat',
-        'subset': [
+        word: 'ucalat',
+        subset: [
             'act',
             'ala',
             'alt',
@@ -34085,12 +34087,12 @@ export const GAMES = [
             'lac',
             'tau',
             'cult',
-            'actual'
-        ]
+            'actual',
+        ],
     },
     {
-        'word': 'bbblae',
-        'subset': [
+        word: 'bbblae',
+        subset: [
             'ale',
             'bel',
             'ebb',
@@ -34099,12 +34101,12 @@ export const GAMES = [
             'babe',
             'bale',
             'blab',
-            'babble'
-        ]
+            'babble',
+        ],
     },
     {
-        'word': 'nabaiz',
-        'subset': [
+        word: 'nabaiz',
+        subset: [
             'ain',
             'ana',
             'ani',
@@ -34113,12 +34115,12 @@ export const GAMES = [
             'bin',
             'biz',
             'nazi',
-            'banzai'
-        ]
+            'banzai',
+        ],
     },
     {
-        'word': 'febeed',
-        'subset': [
+        word: 'febeed',
+        subset: [
             'bed',
             'bee',
             'deb',
@@ -34127,12 +34129,12 @@ export const GAMES = [
             'fee',
             'beef',
             'feed',
-            'beefed'
-        ]
+            'beefed',
+        ],
     },
     {
-        'word': 'ebpede',
-        'subset': [
+        word: 'ebpede',
+        subset: [
             'bed',
             'bee',
             'deb',
@@ -34141,12 +34143,12 @@ export const GAMES = [
             'beep',
             'deep',
             'peed',
-            'beeped'
-        ]
+            'beeped',
+        ],
     },
     {
-        'word': 'ebtlee',
-        'subset': [
+        word: 'ebtlee',
+        subset: [
             'bee',
             'bel',
             'bet',
@@ -34155,12 +34157,12 @@ export const GAMES = [
             'let',
             'tee',
             'belt',
-            'beetle'
-        ]
+            'beetle',
+        ],
     },
     {
-        'word': 'bbiles',
-        'subset': [
+        word: 'bbiles',
+        subset: [
             'bel',
             'bib',
             'ebb',
@@ -34169,12 +34171,12 @@ export const GAMES = [
             'lis',
             'lies',
             'bible',
-            'bibles'
-        ]
+            'bibles',
+        ],
     },
     {
-        'word': 'ibding',
-        'subset': [
+        word: 'ibding',
+        subset: [
             'bid',
             'big',
             'bin',
@@ -34183,12 +34185,12 @@ export const GAMES = [
             'gin',
             'bind',
             'ding',
-            'biding'
-        ]
+            'biding',
+        ],
     },
     {
-        'word': 'bilile',
-        'subset': [
+        word: 'bilile',
+        subset: [
             'bel',
             'ell',
             'ill',
@@ -34197,12 +34199,12 @@ export const GAMES = [
             'bell',
             'bill',
             'libel',
-            'billie'
-        ]
+            'billie',
+        ],
     },
     {
-        'word': 'niboci',
-        'subset': [
+        word: 'niboci',
+        subset: [
             'bin',
             'bio',
             'cob',
@@ -34211,12 +34213,12 @@ export const GAMES = [
             'obi',
             'coin',
             'icon',
-            'bionic'
-        ]
+            'bionic',
+        ],
     },
     {
-        'word': 'gbitin',
-        'subset': [
+        word: 'gbitin',
+        subset: [
             'big',
             'bin',
             'bit',
@@ -34225,12 +34227,12 @@ export const GAMES = [
             'git',
             'tin',
             'ting',
-            'biting'
-        ]
+            'biting',
+        ],
     },
     {
-        'word': 'kboieo',
-        'subset': [
+        word: 'kboieo',
+        subset: [
             'bio',
             'boo',
             'koi',
@@ -34239,12 +34241,12 @@ export const GAMES = [
             'book',
             'kobo',
             'oboe',
-            'bookie'
-        ]
+            'bookie',
+        ],
     },
     {
-        'word': 'umberm',
-        'subset': [
+        word: 'umberm',
+        subset: [
             'bum',
             'mum',
             'rem',
@@ -34253,12 +34255,12 @@ export const GAMES = [
             'rum',
             'umm',
             'rube',
-            'bummer'
-        ]
+            'bummer',
+        ],
     },
     {
-        'word': 'csaavn',
-        'subset': [
+        word: 'csaavn',
+        subset: [
             'ana',
             'ava',
             'can',
@@ -34267,12 +34269,12 @@ export const GAMES = [
             'cans',
             'casa',
             'scan',
-            'canvas'
-        ]
+            'canvas',
+        ],
     },
     {
-        'word': 'aviytc',
-        'subset': [
+        word: 'aviytc',
+        subset: [
             'act',
             'cat',
             'icy',
@@ -34281,12 +34283,12 @@ export const GAMES = [
             'vat',
             'via',
             'city',
-            'cavity'
-        ]
+            'cavity',
+        ],
     },
     {
-        'word': 'cherry',
-        'subset': [
+        word: 'cherry',
+        subset: [
             'cry',
             'err',
             'her',
@@ -34295,12 +34297,12 @@ export const GAMES = [
             'rye',
             'yeh',
             'yech',
-            'cherry'
-        ]
+            'cherry',
+        ],
     },
     {
-        'word': 'hicyll',
-        'subset': [
+        word: 'hicyll',
+        subset: [
             'chi',
             'hic',
             'ich',
@@ -34309,12 +34311,12 @@ export const GAMES = [
             'hill',
             'lily',
             'chill',
-            'chilly'
-        ]
+            'chilly',
+        ],
     },
     {
-        'word': 'ohccie',
-        'subset': [
+        word: 'ohccie',
+        subset: [
             'chi',
             'hic',
             'hoe',
@@ -34323,12 +34325,12 @@ export const GAMES = [
             'chic',
             'echo',
             'chico',
-            'choice'
-        ]
+            'choice',
+        ],
     },
     {
-        'word': 'hcumym',
-        'subset': [
+        word: 'hcumym',
+        subset: [
             'cum',
             'hmm',
             'hum',
@@ -34337,12 +34339,12 @@ export const GAMES = [
             'yum',
             'chum',
             'much',
-            'chummy'
-        ]
+            'chummy',
+        ],
     },
     {
-        'word': 'grcley',
-        'subset': [
+        word: 'grcley',
+        subset: [
             'cry',
             'gel',
             'leg',
@@ -34351,12 +34353,12 @@ export const GAMES = [
             'rye',
             'grey',
             'rely',
-            'clergy'
-        ]
+            'clergy',
+        ],
     },
     {
-        'word': 'lrckes',
-        'subset': [
+        word: 'lrckes',
+        subset: [
             'elk',
             'ers',
             'rec',
@@ -34365,12 +34367,12 @@ export const GAMES = [
             'ser',
             'elks',
             'clerk',
-            'clerks'
-        ]
+            'clerks',
+        ],
     },
     {
-        'word': 'nlcigy',
-        'subset': [
+        word: 'nlcigy',
+        subset: [
             'gin',
             'icy',
             'lin',
@@ -34379,12 +34381,12 @@ export const GAMES = [
             'ling',
             'cling',
             'lying',
-            'clingy'
-        ]
+            'clingy',
+        ],
     },
     {
-        'word': 'lciqeu',
-        'subset': [
+        word: 'lciqeu',
+        subset: [
             'cue',
             'ice',
             'lei',
@@ -34393,12 +34395,12 @@ export const GAMES = [
             'lice',
             'lieu',
             'luce',
-            'clique'
-        ]
+            'clique',
+        ],
     },
     {
-        'word': 'coclsk',
-        'subset': [
+        word: 'coclsk',
+        subset: [
             'col',
             'cos',
             'sol',
@@ -34407,12 +34409,12 @@ export const GAMES = [
             'sock',
             'clock',
             'locks',
-            'clocks'
-        ]
+            'clocks',
+        ],
     },
     {
-        'word': 'occere',
-        'subset': [
+        word: 'occere',
+        subset: [
             'cee',
             'cor',
             'ere',
@@ -34421,12 +34423,12 @@ export const GAMES = [
             'ree',
             'core',
             'croc',
-            'coerce'
-        ]
+            'coerce',
+        ],
     },
     {
-        'word': 'cfofin',
-        'subset': [
+        word: 'cfofin',
+        subset: [
             'con',
             'fin',
             'iff',
@@ -34435,12 +34437,12 @@ export const GAMES = [
             'coin',
             'icon',
             'info',
-            'coffin'
-        ]
+            'coffin',
+        ],
     },
     {
-        'word': 'wobcyo',
-        'subset': [
+        word: 'wobcyo',
+        subset: [
             'boo',
             'bow',
             'boy',
@@ -34449,12 +34451,12 @@ export const GAMES = [
             'cow',
             'coy',
             'woo',
-            'cowboy'
-        ]
+            'cowboy',
+        ],
     },
     {
-        'word': 'otycoe',
-        'subset': [
+        word: 'otycoe',
+        subset: [
             'coo',
             'cot',
             'coy',
@@ -34463,12 +34465,12 @@ export const GAMES = [
             'toy',
             'yet',
             'coot',
-            'coyote'
-        ]
+            'coyote',
+        ],
     },
     {
-        'word': 'coizre',
-        'subset': [
+        word: 'coizre',
+        subset: [
             'cor',
             'coz',
             'ice',
@@ -34477,12 +34479,12 @@ export const GAMES = [
             'core',
             'rice',
             'zero',
-            'cozier'
-        ]
+            'cozier',
+        ],
     },
     {
-        'word': 'cohruc',
-        'subset': [
+        word: 'cohruc',
+        subset: [
             'cor',
             'cur',
             'our',
@@ -34491,12 +34493,12 @@ export const GAMES = [
             'ouch',
             'couch',
             'occur',
-            'crouch'
-        ]
+            'crouch',
+        ],
     },
     {
-        'word': 'drcudy',
-        'subset': [
+        word: 'drcudy',
+        subset: [
             'cry',
             'cud',
             'cur',
@@ -34505,12 +34507,12 @@ export const GAMES = [
             'crud',
             'curd',
             'cuddy',
-            'cruddy'
-        ]
+            'cruddy',
+        ],
     },
     {
-        'word': 'cmrmuy',
-        'subset': [
+        word: 'cmrmuy',
+        subset: [
             'cry',
             'cum',
             'cur',
@@ -34519,12 +34521,12 @@ export const GAMES = [
             'umm',
             'yum',
             'rummy',
-            'crummy'
-        ]
+            'crummy',
+        ],
     },
     {
-        'word': 'rcucth',
-        'subset': [
+        word: 'rcucth',
+        subset: [
             'cur',
             'cut',
             'hut',
@@ -34533,12 +34535,12 @@ export const GAMES = [
             'hurt',
             'ruth',
             'thru',
-            'crutch'
-        ]
+            'crutch',
+        ],
     },
     {
-        'word': 'rcyign',
-        'subset': [
+        word: 'rcyign',
+        subset: [
             'cry',
             'gin',
             'icy',
@@ -34547,12 +34549,12 @@ export const GAMES = [
             'yin',
             'grin',
             'ring',
-            'crying'
-        ]
+            'crying',
+        ],
     },
     {
-        'word': 'dfiede',
-        'subset': [
+        word: 'dfiede',
+        subset: [
             'dee',
             'did',
             'die',
@@ -34561,12 +34563,12 @@ export const GAMES = [
             'deed',
             'died',
             'feed',
-            'defied'
-        ]
+            'defied',
+        ],
     },
     {
-        'word': 'dgoded',
-        'subset': [
+        word: 'dgoded',
+        subset: [
             'doe',
             'dog',
             'ego',
@@ -34575,12 +34577,12 @@ export const GAMES = [
             'odd',
             'ode',
             'dodge',
-            'dodged'
-        ]
+            'dodged',
+        ],
     },
     {
-        'word': 'duebbd',
-        'subset': [
+        word: 'duebbd',
+        subset: [
             'bed',
             'bud',
             'deb',
@@ -34589,12 +34591,12 @@ export const GAMES = [
             'due',
             'ebb',
             'dude',
-            'dubbed'
-        ]
+            'dubbed',
+        ],
     },
     {
-        'word': 'dupmde',
-        'subset': [
+        word: 'dupmde',
+        subset: [
             'dud',
             'due',
             'med',
@@ -34603,12 +34605,12 @@ export const GAMES = [
             'dude',
             'dump',
             'duped',
-            'dumped'
-        ]
+            'dumped',
+        ],
     },
     {
-        'word': 'duplex',
-        'subset': [
+        word: 'duplex',
+        subset: [
             'del',
             'dex',
             'due',
@@ -34617,12 +34619,12 @@ export const GAMES = [
             'lux',
             'duel',
             'pled',
-            'duplex'
-        ]
+            'duplex',
+        ],
     },
     {
-        'word': 'elveen',
-        'subset': [
+        word: 'elveen',
+        subset: [
             'eel',
             'eve',
             'lee',
@@ -34631,12 +34633,12 @@ export const GAMES = [
             'even',
             'neve',
             'levee',
-            'eleven'
-        ]
+            'eleven',
+        ],
     },
     {
-        'word': 'fnhiis',
-        'subset': [
+        word: 'fnhiis',
+        subset: [
             'fin',
             'his',
             'ifs',
@@ -34645,12 +34647,12 @@ export const GAMES = [
             'fins',
             'fish',
             'shin',
-            'finish'
-        ]
+            'finish',
+        ],
     },
     {
-        'word': 'ifring',
-        'subset': [
+        word: 'ifring',
+        subset: [
             'fig',
             'fin',
             'fir',
@@ -34659,12 +34661,12 @@ export const GAMES = [
             'rin',
             'grin',
             'ring',
-            'firing'
-        ]
+            'firing',
+        ],
     },
     {
-        'word': 'firrem',
-        'subset': [
+        word: 'firrem',
+        subset: [
             'err',
             'fer',
             'fir',
@@ -34673,12 +34675,12 @@ export const GAMES = [
             'fire',
             'firm',
             'rife',
-            'firmer'
-        ]
+            'firmer',
+        ],
     },
     {
-        'word': 'zizlfe',
-        'subset': [
+        word: 'zizlfe',
+        subset: [
             'elf',
             'fez',
             'lei',
@@ -34687,12 +34689,12 @@ export const GAMES = [
             'file',
             'fizz',
             'life',
-            'fizzle'
-        ]
+            'fizzle',
+        ],
     },
     {
-        'word': 'lfeeec',
-        'subset': [
+        word: 'lfeeec',
+        subset: [
             'cee',
             'eel',
             'elf',
@@ -34701,12 +34703,12 @@ export const GAMES = [
             'clef',
             'feel',
             'flee',
-            'fleece'
-        ]
+            'fleece',
+        ],
     },
     {
-        'word': 'floppy',
-        'subset': [
+        word: 'floppy',
+        subset: [
             'fly',
             'fop',
             'lop',
@@ -34715,12 +34717,12 @@ export const GAMES = [
             'plop',
             'ploy',
             'poly',
-            'floppy'
-        ]
+            'floppy',
+        ],
     },
     {
-        'word': 'lfkoys',
-        'subset': [
+        word: 'lfkoys',
+        subset: [
             'fly',
             'sky',
             'sly',
@@ -34729,12 +34731,12 @@ export const GAMES = [
             'folk',
             'yolk',
             'folks',
-            'folksy'
-        ]
+            'folksy',
+        ],
     },
     {
-        'word': 'rzefee',
-        'subset': [
+        word: 'rzefee',
+        subset: [
             'ere',
             'fee',
             'fer',
@@ -34743,12 +34745,12 @@ export const GAMES = [
             'zee',
             'free',
             'reef',
-            'freeze'
-        ]
+            'freeze',
+        ],
     },
     {
-        'word': 'rfenzy',
-        'subset': [
+        word: 'rfenzy',
+        subset: [
             'fen',
             'fer',
             'fey',
@@ -34757,12 +34759,12 @@ export const GAMES = [
             'rye',
             'yen',
             'fern',
-            'frenzy'
-        ]
+            'frenzy',
+        ],
     },
     {
-        'word': 'efcukr',
-        'subset': [
+        word: 'efcukr',
+        subset: [
             'cue',
             'cur',
             'fer',
@@ -34771,12 +34773,12 @@ export const GAMES = [
             'rue',
             'cure',
             'fuck',
-            'fucker'
-        ]
+            'fucker',
+        ],
     },
     {
-        'word': 'ddugfe',
-        'subset': [
+        word: 'ddugfe',
+        subset: [
             'dud',
             'due',
             'dug',
@@ -34785,12 +34787,12 @@ export const GAMES = [
             'dude',
             'feud',
             'fudge',
-            'fudged'
-        ]
+            'fudged',
+        ],
     },
     {
-        'word': 'funugs',
-        'subset': [
+        word: 'funugs',
+        subset: [
             'fun',
             'gun',
             'sun',
@@ -34799,12 +34801,12 @@ export const GAMES = [
             'guns',
             'snug',
             'sung',
-            'fungus'
-        ]
+            'fungus',
+        ],
     },
     {
-        'word': 'galaxy',
-        'subset': [
+        word: 'galaxy',
+        subset: [
             'aga',
             'ala',
             'gal',
@@ -34813,12 +34815,12 @@ export const GAMES = [
             'lax',
             'lay',
             'gala',
-            'galaxy'
-        ]
+            'galaxy',
+        ],
     },
     {
-        'word': 'gettre',
-        'subset': [
+        word: 'gettre',
+        subset: [
             'ere',
             'gee',
             'get',
@@ -34827,12 +34829,12 @@ export const GAMES = [
             'tet',
             'tree',
             'greet',
-            'getter'
-        ]
+            'getter',
+        ],
     },
     {
-        'word': 'rielig',
-        'subset': [
+        word: 'rielig',
+        subset: [
             'gel',
             'leg',
             'lei',
@@ -34841,12 +34843,12 @@ export const GAMES = [
             'girl',
             'lier',
             'rile',
-            'girlie'
-        ]
+            'girlie',
+        ],
     },
     {
-        'word': 'golssy',
-        'subset': [
+        word: 'golssy',
+        subset: [
             'log',
             'sly',
             'sol',
@@ -34855,12 +34857,12 @@ export const GAMES = [
             'logs',
             'loss',
             'gloss',
-            'glossy'
-        ]
+            'glossy',
+        ],
     },
     {
-        'word': 'nigugl',
-        'subset': [
+        word: 'nigugl',
+        subset: [
             'gig',
             'gin',
             'gun',
@@ -34869,12 +34871,12 @@ export const GAMES = [
             'nil',
             'ling',
             'lung',
-            'gluing'
-        ]
+            'gluing',
+        ],
     },
     {
-        'word': 'hleeed',
-        'subset': [
+        word: 'hleeed',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -34883,12 +34885,12 @@ export const GAMES = [
             'heed',
             'heel',
             'held',
-            'heeled'
-        ]
+            'heeled',
+        ],
     },
     {
-        'word': 'oohekr',
-        'subset': [
+        word: 'oohekr',
+        subset: [
             'her',
             'hoe',
             'oho',
@@ -34897,12 +34899,12 @@ export const GAMES = [
             'hero',
             'hook',
             'rook',
-            'hooker'
-        ]
+            'hooker',
+        ],
     },
     {
-        'word': 'dhdule',
-        'subset': [
+        word: 'dhdule',
+        subset: [
             'del',
             'dud',
             'due',
@@ -34911,12 +34913,12 @@ export const GAMES = [
             'dude',
             'duel',
             'held',
-            'huddle'
-        ]
+            'huddle',
+        ],
     },
     {
-        'word': 'dhguge',
-        'subset': [
+        word: 'dhguge',
+        subset: [
             'due',
             'dug',
             'egg',
@@ -34925,12 +34927,12 @@ export const GAMES = [
             'hug',
             'ugh',
             'huge',
-            'hugged'
-        ]
+            'hugged',
+        ],
     },
     {
-        'word': 'muhugb',
-        'subset': [
+        word: 'muhugb',
+        subset: [
             'bug',
             'bum',
             'gum',
@@ -34939,12 +34941,12 @@ export const GAMES = [
             'hum',
             'mug',
             'ugh',
-            'humbug'
-        ]
+            'humbug',
+        ],
     },
     {
-        'word': 'huumro',
-        'subset': [
+        word: 'huumro',
+        subset: [
             'hum',
             'mor',
             'ohm',
@@ -34953,12 +34955,12 @@ export const GAMES = [
             'rum',
             'hour',
             'humor',
-            'humour'
-        ]
+            'humour',
+        ],
     },
     {
-        'word': 'sisesu',
-        'subset': [
+        word: 'sisesu',
+        subset: [
             'ess',
             'sis',
             'sue',
@@ -34967,12 +34969,12 @@ export const GAMES = [
             'suss',
             'uses',
             'issue',
-            'issues'
-        ]
+            'issues',
+        ],
     },
     {
-        'word': 'acjekd',
-        'subset': [
+        word: 'acjekd',
+        subset: [
             'ace',
             'cad',
             'aced',
@@ -34981,12 +34983,12 @@ export const GAMES = [
             'jack',
             'jade',
             'jake',
-            'jacked'
-        ]
+            'jacked',
+        ],
     },
     {
-        'word': 'cjuies',
-        'subset': [
+        word: 'cjuies',
+        subset: [
             'cue',
             'ice',
             'jus',
@@ -34995,12 +34997,12 @@ export const GAMES = [
             'sue',
             'use',
             'juice',
-            'juices'
-        ]
+            'juices',
+        ],
     },
     {
-        'word': 'nahkua',
-        'subset': [
+        word: 'nahkua',
+        subset: [
             'aha',
             'ana',
             'auk',
@@ -35009,12 +35011,12 @@ export const GAMES = [
             'hank',
             'hunk',
             'khan',
-            'kahuna'
-        ]
+            'kahuna',
+        ],
     },
     {
-        'word': 'ekeled',
-        'subset': [
+        word: 'ekeled',
+        subset: [
             'dee',
             'del',
             'eel',
@@ -35023,12 +35025,12 @@ export const GAMES = [
             'lee',
             'deke',
             'keel',
-            'keeled'
-        ]
+            'keeled',
+        ],
     },
     {
-        'word': 'kahiks',
-        'subset': [
+        word: 'kahiks',
+        subset: [
             'ash',
             'ask',
             'has',
@@ -35037,12 +35039,12 @@ export const GAMES = [
             'ski',
             'saki',
             'khaki',
-            'khakis'
-        ]
+            'khakis',
+        ],
     },
     {
-        'word': 'ihkobs',
-        'subset': [
+        word: 'ihkobs',
+        subset: [
             'bio',
             'his',
             'hob',
@@ -35051,12 +35053,12 @@ export const GAMES = [
             'ski',
             'sob',
             'bios',
-            'kibosh'
-        ]
+            'kibosh',
+        ],
     },
     {
-        'word': 'koncks',
-        'subset': [
+        word: 'koncks',
+        subset: [
             'con',
             'cos',
             'nos',
@@ -35065,12 +35067,12 @@ export const GAMES = [
             'cons',
             'sock',
             'knock',
-            'knocks'
-        ]
+            'knocks',
+        ],
     },
     {
-        'word': 'aflwlu',
-        'subset': [
+        word: 'aflwlu',
+        subset: [
             'all',
             'flu',
             'law',
@@ -35079,12 +35081,12 @@ export const GAMES = [
             'full',
             'wall',
             'awful',
-            'lawful'
-        ]
+            'lawful',
+        ],
     },
     {
-        'word': 'eslese',
-        'subset': [
+        word: 'eslese',
+        subset: [
             'eel',
             'ess',
             'lee',
@@ -35093,12 +35095,12 @@ export const GAMES = [
             'else',
             'less',
             'sees',
-            'lessee'
-        ]
+            'lessee',
+        ],
     },
     {
-        'word': 'oloker',
-        'subset': [
+        word: 'oloker',
+        subset: [
             'elk',
             'loo',
             'ole',
@@ -35107,12 +35109,12 @@ export const GAMES = [
             'lore',
             'role',
             'rook',
-            'looker'
-        ]
+            'looker',
+        ],
     },
     {
-        'word': 'amyady',
-        'subset': [
+        word: 'amyady',
+        subset: [
             'ama',
             'dam',
             'day',
@@ -35121,12 +35123,12 @@ export const GAMES = [
             'yam',
             'yay',
             'maya',
-            'mayday'
-        ]
+            'mayday',
+        ],
     },
     {
-        'word': 'bmemer',
-        'subset': [
+        word: 'bmemer',
+        subset: [
             'bee',
             'ere',
             'ree',
@@ -35135,12 +35137,12 @@ export const GAMES = [
             'bree',
             'mere',
             'ember',
-            'member'
-        ]
+            'member',
+        ],
     },
     {
-        'word': 'emrrce',
-        'subset': [
+        word: 'emrrce',
+        subset: [
             'cee',
             'ere',
             'err',
@@ -35149,12 +35151,12 @@ export const GAMES = [
             'rem',
             'mere',
             'creme',
-            'mercer'
-        ]
+            'mercer',
+        ],
     },
     {
-        'word': 'mreegr',
-        'subset': [
+        word: 'mreegr',
+        subset: [
             'ere',
             'err',
             'gee',
@@ -35163,12 +35165,12 @@ export const GAMES = [
             'rem',
             'germ',
             'mere',
-            'merger'
-        ]
+            'merger',
+        ],
     },
     {
-        'word': 'mickey',
-        'subset': [
+        word: 'mickey',
+        subset: [
             'ice',
             'ick',
             'icy',
@@ -35177,12 +35179,12 @@ export const GAMES = [
             'mice',
             'mick',
             'mike',
-            'mickey'
-        ]
+            'mickey',
+        ],
     },
     {
-        'word': 'mffeid',
-        'subset': [
+        word: 'mffeid',
+        subset: [
             'die',
             'dim',
             'fed',
@@ -35191,12 +35193,12 @@ export const GAMES = [
             'mid',
             'dime',
             'fife',
-            'miffed'
-        ]
+            'miffed',
+        ],
     },
     {
-        'word': 'nmionw',
-        'subset': [
+        word: 'nmionw',
+        subset: [
             'inn',
             'ion',
             'mon',
@@ -35205,12 +35207,12 @@ export const GAMES = [
             'own',
             'win',
             'won',
-            'minnow'
-        ]
+            'minnow',
+        ],
     },
     {
-        'word': 'oromrw',
-        'subset': [
+        word: 'oromrw',
+        subset: [
             'moo',
             'mor',
             'mow',
@@ -35219,12 +35221,12 @@ export const GAMES = [
             'woo',
             'room',
             'worm',
-            'morrow'
-        ]
+            'morrow',
+        ],
     },
     {
-        'word': 'eummsu',
-        'subset': [
+        word: 'eummsu',
+        subset: [
             'ems',
             'mum',
             'sue',
@@ -35233,12 +35235,12 @@ export const GAMES = [
             'use',
             'mums',
             'muse',
-            'museum'
-        ]
+            'museum',
+        ],
     },
     {
-        'word': 'mautul',
-        'subset': [
+        word: 'mautul',
+        subset: [
             'alt',
             'lam',
             'lum',
@@ -35247,12 +35249,12 @@ export const GAMES = [
             'luau',
             'malt',
             'maul',
-            'mutual'
-        ]
+            'mutual',
+        ],
     },
     {
-        'word': 'occurs',
-        'subset': [
+        word: 'occurs',
+        subset: [
             'cor',
             'cos',
             'cur',
@@ -35261,12 +35263,12 @@ export const GAMES = [
             'ours',
             'sour',
             'occur',
-            'occurs'
-        ]
+            'occurs',
+        ],
     },
     {
-        'word': 'fnifgo',
-        'subset': [
+        word: 'fnifgo',
+        subset: [
             'fig',
             'fin',
             'fog',
@@ -35275,12 +35277,12 @@ export const GAMES = [
             'ion',
             'off',
             'info',
-            'offing'
-        ]
+            'offing',
+        ],
     },
     {
-        'word': 'ornery',
-        'subset': [
+        word: 'ornery',
+        subset: [
             'err',
             'nor',
             'one',
@@ -35289,12 +35291,12 @@ export const GAMES = [
             'yen',
             'yon',
             'yore',
-            'ornery'
-        ]
+            'ornery',
+        ],
     },
     {
-        'word': 'oygxen',
-        'subset': [
+        word: 'oygxen',
+        subset: [
             'ego',
             'eng',
             'gen',
@@ -35303,12 +35305,12 @@ export const GAMES = [
             'yon',
             'gone',
             'oxen',
-            'oxygen'
-        ]
+            'oxygen',
+        ],
     },
     {
-        'word': 'icpkup',
-        'subset': [
+        word: 'icpkup',
+        subset: [
             'cup',
             'ick',
             'kip',
@@ -35317,12 +35319,12 @@ export const GAMES = [
             'pup',
             'pick',
             'puck',
-            'pickup'
-        ]
+            'pickup',
+        ],
     },
     {
-        'word': 'mppily',
-        'subset': [
+        word: 'mppily',
+        subset: [
             'imp',
             'lip',
             'mil',
@@ -35331,12 +35333,12 @@ export const GAMES = [
             'pimp',
             'imply',
             'lippy',
-            'pimply'
-        ]
+            'pimply',
+        ],
     },
     {
-        'word': 'piisex',
-        'subset': [
+        word: 'piisex',
+        subset: [
             'pie',
             'pis',
             'psi',
@@ -35345,12 +35347,12 @@ export const GAMES = [
             'six',
             'pies',
             'pixie',
-            'pixies'
-        ]
+            'pixies',
+        ],
     },
     {
-        'word': 'lpckuy',
-        'subset': [
+        word: 'lpckuy',
+        subset: [
             'cup',
             'yuk',
             'yup',
@@ -35359,12 +35361,12 @@ export const GAMES = [
             'yuck',
             'lucky',
             'pluck',
-            'plucky'
-        ]
+            'plucky',
+        ],
     },
     {
-        'word': 'eppdoo',
-        'subset': [
+        word: 'eppdoo',
+        subset: [
             'doe',
             'ode',
             'pep',
@@ -35373,12 +35375,12 @@ export const GAMES = [
             'dope',
             'poop',
             'pope',
-            'pooped'
-        ]
+            'pooped',
+        ],
     },
     {
-        'word': 'orpoer',
-        'subset': [
+        word: 'orpoer',
+        subset: [
             'err',
             'ore',
             'per',
@@ -35387,12 +35389,12 @@ export const GAMES = [
             'poor',
             'pore',
             'rope',
-            'poorer'
-        ]
+            'poorer',
+        ],
     },
     {
-        'word': 'opppet',
-        'subset': [
+        word: 'opppet',
+        subset: [
             'pep',
             'pet',
             'pop',
@@ -35401,12 +35403,12 @@ export const GAMES = [
             'top',
             'poet',
             'pope',
-            'poppet'
-        ]
+            'poppet',
+        ],
     },
     {
-        'word': 'puddel',
-        'subset': [
+        word: 'puddel',
+        subset: [
             'del',
             'dud',
             'due',
@@ -35415,12 +35417,12 @@ export const GAMES = [
             'duel',
             'pled',
             'duped',
-            'puddle'
-        ]
+            'puddle',
+        ],
     },
     {
-        'word': 'ulpelr',
-        'subset': [
+        word: 'ulpelr',
+        subset: [
             'ell',
             'per',
             'rep',
@@ -35429,12 +35431,12 @@ export const GAMES = [
             'pull',
             'pure',
             'rule',
-            'puller'
-        ]
+            'puller',
+        ],
     },
     {
-        'word': 'euasqy',
-        'subset': [
+        word: 'euasqy',
+        subset: [
             'aye',
             'say',
             'sea',
@@ -35443,12 +35445,12 @@ export const GAMES = [
             'yea',
             'yes',
             'easy',
-            'queasy'
-        ]
+            'queasy',
+        ],
     },
     {
-        'word': 'greret',
-        'subset': [
+        word: 'greret',
+        subset: [
             'ere',
             'err',
             'gee',
@@ -35457,12 +35459,12 @@ export const GAMES = [
             'tee',
             'tree',
             'greet',
-            'regret'
-        ]
+            'regret',
+        ],
     },
     {
-        'word': 'girhyt',
-        'subset': [
+        word: 'girhyt',
+        subset: [
             'git',
             'hit',
             'rig',
@@ -35471,12 +35473,12 @@ export const GAMES = [
             'trig',
             'girth',
             'right',
-            'righty'
-        ]
+            'righty',
+        ],
     },
     {
-        'word': 'rrttie',
-        'subset': [
+        word: 'rrttie',
+        subset: [
             'err',
             'tet',
             'tie',
@@ -35485,12 +35487,12 @@ export const GAMES = [
             'tier',
             'tire',
             'trite',
-            'ritter'
-        ]
+            'ritter',
+        ],
     },
     {
-        'word': 'foeorr',
-        'subset': [
+        word: 'foeorr',
+        subset: [
             'err',
             'fer',
             'foe',
@@ -35499,12 +35501,12 @@ export const GAMES = [
             'ore',
             'fore',
             'roof',
-            'roofer'
-        ]
+            'roofer',
+        ],
     },
     {
-        'word': 'rdduer',
-        'subset': [
+        word: 'rdduer',
+        subset: [
             'dud',
             'due',
             'err',
@@ -35513,12 +35515,12 @@ export const GAMES = [
             'dude',
             'rude',
             'ruder',
-            'rudder'
-        ]
+            'rudder',
+        ],
     },
     {
-        'word': 'scmhee',
-        'subset': [
+        word: 'scmhee',
+        subset: [
             'cee',
             'ems',
             'hem',
@@ -35527,12 +35529,12 @@ export const GAMES = [
             'she',
             'mesh',
             'seem',
-            'scheme'
-        ]
+            'scheme',
+        ],
     },
     {
-        'word': 'eizsse',
-        'subset': [
+        word: 'eizsse',
+        subset: [
             'ess',
             'see',
             'sis',
@@ -35541,12 +35543,12 @@ export const GAMES = [
             'size',
             'seize',
             'sizes',
-            'seizes'
-        ]
+            'seizes',
+        ],
     },
     {
-        'word': 'nsesse',
-        'subset': [
+        word: 'nsesse',
+        subset: [
             'ess',
             'nee',
             'see',
@@ -35555,12 +35557,12 @@ export const GAMES = [
             'seen',
             'sees',
             'sense',
-            'senses'
-        ]
+            'senses',
+        ],
     },
     {
-        'word': 'sohkcs',
-        'subset': [
+        word: 'sohkcs',
+        subset: [
             'cos',
             'sos',
             'hock',
@@ -35569,12 +35571,12 @@ export const GAMES = [
             'hocks',
             'shock',
             'socks',
-            'shocks'
-        ]
+            'shocks',
+        ],
     },
     {
-        'word': 'hsskuc',
-        'subset': [
+        word: 'hsskuc',
+        subset: [
             'cuss',
             'huck',
             'husk',
@@ -35583,12 +35585,12 @@ export const GAMES = [
             'husks',
             'shuck',
             'sucks',
-            'shucks'
-        ]
+            'shucks',
+        ],
     },
     {
-        'word': 'posyok',
-        'subset': [
+        word: 'posyok',
+        subset: [
             'ops',
             'sky',
             'sop',
@@ -35597,12 +35599,12 @@ export const GAMES = [
             'oops',
             'sook',
             'spook',
-            'spooky'
-        ]
+            'spooky',
+        ],
     },
     {
-        'word': 'tsssre',
-        'subset': [
+        word: 'tsssre',
+        subset: [
             'ers',
             'ess',
             'res',
@@ -35611,12 +35613,12 @@ export const GAMES = [
             'rest',
             'sets',
             'rests',
-            'stress'
-        ]
+            'stress',
+        ],
     },
     {
-        'word': 'sugars',
-        'subset': [
+        word: 'sugars',
+        subset: [
             'ass',
             'gar',
             'gas',
@@ -35625,12 +35627,12 @@ export const GAMES = [
             'rags',
             'grass',
             'sugar',
-            'sugars'
-        ]
+            'sugars',
+        ],
     },
     {
-        'word': 'atrnaz',
-        'subset': [
+        word: 'atrnaz',
+        subset: [
             'ana',
             'ant',
             'art',
@@ -35639,12 +35641,12 @@ export const GAMES = [
             'tan',
             'tar',
             'rant',
-            'tarzan'
-        ]
+            'tarzan',
+        ],
     },
     {
-        'word': 'fhttes',
-        'subset': [
+        word: 'fhttes',
+        subset: [
             'eth',
             'set',
             'she',
@@ -35653,12 +35655,12 @@ export const GAMES = [
             'heft',
             'test',
             'theft',
-            'thefts'
-        ]
+            'thefts',
+        ],
     },
     {
-        'word': 'tsrtuy',
-        'subset': [
+        word: 'tsrtuy',
+        subset: [
             'rut',
             'sty',
             'try',
@@ -35667,12 +35669,12 @@ export const GAMES = [
             'rusty',
             'strut',
             'trust',
-            'trusty'
-        ]
+            'trusty',
+        ],
     },
     {
-        'word': 'treurt',
-        'subset': [
+        word: 'treurt',
+        subset: [
             'err',
             'rue',
             'rut',
@@ -35681,12 +35683,12 @@ export const GAMES = [
             'true',
             'truer',
             'utter',
-            'turret'
-        ]
+            'turret',
+        ],
     },
     {
-        'word': 'uhonyl',
-        'subset': [
+        word: 'uhonyl',
+        subset: [
             'hon',
             'hoy',
             'hun',
@@ -35695,12 +35697,12 @@ export const GAMES = [
             'you',
             'holy',
             'only',
-            'unholy'
-        ]
+            'unholy',
+        ],
     },
     {
-        'word': 'sungun',
-        'subset': [
+        word: 'sungun',
+        subset: [
             'gun',
             'nun',
             'sun',
@@ -35709,12 +35711,12 @@ export const GAMES = [
             'nuns',
             'snug',
             'sung',
-            'unsung'
-        ]
+            'unsung',
+        ],
     },
     {
-        'word': 'pptiyu',
-        'subset': [
+        word: 'pptiyu',
+        subset: [
             'pip',
             'pit',
             'pup',
@@ -35723,12 +35725,12 @@ export const GAMES = [
             'yup',
             'pity',
             'tippy',
-            'uppity'
-        ]
+            'uppity',
+        ],
     },
     {
-        'word': 'ruopar',
-        'subset': [
+        word: 'ruopar',
+        subset: [
             'oar',
             'our',
             'par',
@@ -35737,12 +35739,12 @@ export const GAMES = [
             'pour',
             'purr',
             'roar',
-            'uproar'
-        ]
+            'uproar',
+        ],
     },
     {
-        'word': 'evtdet',
-        'subset': [
+        word: 'evtdet',
+        subset: [
             'dee',
             'eve',
             'ted',
@@ -35751,12 +35753,12 @@ export const GAMES = [
             'vee',
             'vet',
             'teed',
-            'vetted'
-        ]
+            'vetted',
+        ],
     },
     {
-        'word': 'coirvt',
-        'subset': [
+        word: 'coirvt',
+        subset: [
             'cor',
             'cot',
             'ort',
@@ -35765,12 +35767,12 @@ export const GAMES = [
             'tor',
             'riot',
             'trio',
-            'victor'
-        ]
+            'victor',
+        ],
     },
     {
-        'word': 'iivons',
-        'subset': [
+        word: 'iivons',
+        subset: [
             'ins',
             'ion',
             'nos',
@@ -35779,12 +35781,12 @@ export const GAMES = [
             'vis',
             'ions',
             'vino',
-            'vision'
-        ]
+            'vision',
+        ],
     },
     {
-        'word': 'vuglra',
-        'subset': [
+        word: 'vuglra',
+        subset: [
             'gal',
             'gar',
             'lag',
@@ -35793,12 +35795,12 @@ export const GAMES = [
             'luv',
             'rag',
             'rug',
-            'vulgar'
-        ]
+            'vulgar',
+        ],
     },
     {
-        'word': 'lwalow',
-        'subset': [
+        word: 'lwalow',
+        subset: [
             'all',
             'law',
             'low',
@@ -35807,12 +35809,12 @@ export const GAMES = [
             'awol',
             'wall',
             'allow',
-            'wallow'
-        ]
+            'wallow',
+        ],
     },
     {
-        'word': 'mauwpm',
-        'subset': [
+        word: 'mauwpm',
+        subset: [
             'amp',
             'map',
             'maw',
@@ -35821,12 +35823,12 @@ export const GAMES = [
             'paw',
             'umm',
             'ump',
-            'wampum'
-        ]
+            'wampum',
+        ],
     },
     {
-        'word': 'hwkisy',
-        'subset': [
+        word: 'hwkisy',
+        subset: [
             'his',
             'shy',
             'ski',
@@ -35835,12 +35837,12 @@ export const GAMES = [
             'whys',
             'wish',
             'whisk',
-            'whisky'
-        ]
+            'whisky',
+        ],
     },
     {
-        'word': 'wingip',
-        'subset': [
+        word: 'wingip',
+        subset: [
             'gin',
             'nip',
             'pig',
@@ -35849,12 +35851,12 @@ export const GAMES = [
             'win',
             'ping',
             'wing',
-            'wiping'
-        ]
+            'wiping',
+        ],
     },
     {
-        'word': 'owodsy',
-        'subset': [
+        word: 'owodsy',
+        subset: [
             'dos',
             'sod',
             'sow',
@@ -35863,12 +35865,12 @@ export const GAMES = [
             'wood',
             'woods',
             'woody',
-            'woodsy'
-        ]
+            'woodsy',
+        ],
     },
     {
-        'word': 'wrench',
-        'subset': [
+        word: 'wrench',
+        subset: [
             'hen',
             'her',
             'new',
@@ -35877,12 +35879,12 @@ export const GAMES = [
             'crew',
             'when',
             'wench',
-            'wrench'
-        ]
+            'wrench',
+        ],
     },
     {
-        'word': 'uyppei',
-        'subset': [
+        word: 'uyppei',
+        subset: [
             'pep',
             'pie',
             'pip',
@@ -35891,12 +35893,12 @@ export const GAMES = [
             'yup',
             'pipe',
             'yipe',
-            'yuppie'
-        ]
+            'yuppie',
+        ],
     },
     {
-        'word': 'ppazed',
-        'subset': [
+        word: 'ppazed',
+        subset: [
             'ape',
             'pad',
             'pap',
@@ -35905,12 +35907,12 @@ export const GAMES = [
             'zap',
             'zed',
             'daze',
-            'zapped'
-        ]
+            'zapped',
+        ],
     },
     {
-        'word': 'azoicd',
-        'subset': [
+        word: 'azoicd',
+        subset: [
             'ado',
             'aid',
             'cad',
@@ -35919,7 +35921,7 @@ export const GAMES = [
             'doc',
             'acid',
             'ciao',
-            'zodiac'
-        ]
-    }
+            'zodiac',
+        ],
+    },
 ];

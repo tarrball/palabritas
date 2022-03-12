@@ -1,10 +1,17 @@
+// @flow
+
 import { GAMES } from './games.en.js';
 
-export default class GameManager {
-    #currentGame;
+type Game = {
+    word: string,
+    subset: Array<string>,
+};
 
-    nextGame() {
-        this.#currentGame = GAMES[Math.floor(Math.random() * (GAMES.length - 1))];
+export default class GameManager {
+    #currentGame: Game;
+
+    nextGame(): Game {
+        this.#currentGame = GAMES[Math.floor(Math.random() * GAMES.length)];
 
         return this.#currentGame;
     }

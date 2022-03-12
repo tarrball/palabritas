@@ -39,11 +39,24 @@ class LetterBox extends HTMLElement {
         }
     }
 
-    get placeholder(): ?string {
-        return this.getAttribute(LetterBox.placeholderKey);
+    get placeholder(): string {
+        const attr = this.getAttribute(LetterBox.placeholderKey);
+
+        if (attr) {
+            return attr;
+        }
+
+        throw `'placeholder' wasn't set`;
     }
-    get value(): ?string {
-        return this.getAttribute(LetterBox.valueKey);
+
+    get value(): string {
+        const attr = this.getAttribute(LetterBox.valueKey);
+
+        if (attr) {
+            return attr;
+        }
+
+        throw `'value' wasn't set`;
     }
 
     set placeholder(value: string) {

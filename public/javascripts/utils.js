@@ -1,13 +1,7 @@
-const isNullOrUndefined = (value) => value == null;
+// @flow
 
-if (!Array.prototype.last) {
-    Array.prototype.last = function () {
-        return this[this.length - 1];
-    };
-}
+const isNullOrUndefined = (value: any): boolean => value == null;
+const first = (array: Array<any>): any => array[0];
+const last = (array: Array<any>): any => array[array.length - 1];
 
-if (!Array.prototype.first) {
-    Array.prototype.first = function () {
-        return this[0];
-    };
-}
+export { isNullOrUndefined, first, last };
