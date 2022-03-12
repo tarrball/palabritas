@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "flow-remove-types public/javascripts/ -d ./bin/www",
+    "build": "flow-remove-types public/javascripts/ -d public/javascripts/dist",
     "flow": "flow",
-    "prepublish": "npm run build",
     "start": "node ./bin/www"
   },
   "dependencies": {

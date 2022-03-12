@@ -1,57 +1,57 @@
 // @flow
 
 class LetterBox extends HTMLElement {
-  static template: HTMLTemplateElement = document.createElement("template");
+    static template: HTMLTemplateElement = document.createElement('template');
 
-  // TODO are these necessary?
-  static placeholderKey: string = "placeholder";
+    static placeholderKey: string = 'placeholder';
 
-  static valueKey: string = "value";
+    static valueKey: string = 'value';
 
-  static observedAttributes: Array<string> = [
-    LetterBox.placeholderKey,
-    LetterBox.valueKey,
-  ];
+    static observedAttributes: Array<string> = [
+        LetterBox.placeholderKey,
+        LetterBox.valueKey,
+    ];
 
-  constructor() {
-    super();
+    innerSpan: HTMLSpanElement;
 
-    this.attachShadow({ mode: "open" });
+    constructor() {
+        super();
 
-    if (!this.shadowRoot) {
-      console.error("");
+        this.attachShadow({ mode: 'open' });
 
-      return;
+        this.shadowRoot?.append(LetterBox.template.content.cloneNode(true));
+        const innerSpan = this.shadowRoot?.querySelector('.letter') ?? null;
+
+        if (!(innerSpan instanceof HTMLSpanElement)) {
+            throw `Failed to create 'LetterBox'`;
+        }
+
+        this.innerSpan = innerSpan;
     }
 
-    this.shadowRoot.append(LetterBox.template.content.cloneNode(true));
-
-    this.innerSpan = this.shadowRoot.querySelector(".letter");
-  }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    if (name === LetterBox.valueKey && newValue) {
-      this.innerSpan.textContent = newValue;
-    } else if (name === LetterBox.placeholderKey && !this.value) {
-      this.innerSpan.textContent = newValue;
-    } else {
-      this.innerSpan.textContent = this.placeholder;
+    attributeChangedCallback(name: string, oldValue: string, newValue: string) {
+        if (name === LetterBox.valueKey && newValue) {
+            this.innerSpan.textContent = newValue;
+        } else if (name === LetterBox.placeholderKey && !this.value) {
+            this.innerSpan.textContent = newValue;
+        } else {
+            this.innerSpan.textContent = this.placeholder ?? '';
+        }
     }
-  }
 
-  get placeholder() {
-    return this.getAttribute(LetterBox.placeholderKey);
-  }
-  get value() {
-    return this.getAttribute(LetterBox.valueKey);
-  }
+    get placeholder(): ?string {
+        return this.getAttribute(LetterBox.placeholderKey);
+    }
+    get value(): ?string {
+        return this.getAttribute(LetterBox.valueKey);
+    }
 
-  set placeholder(value) {
-    this.setAttribute(LetterBox.placeholderKey, value);
-  }
-  set value(value) {
-    this.setAttribute(LetterBox.valueKey, value);
-  }
+    set placeholder(value: string) {
+        this.setAttribute(LetterBox.placeholderKey, value);
+    }
+    set value(value: string) {
+        this.setAttribute(LetterBox.valueKey, value);
+    }
 }
 
 LetterBox.template.innerHTML = `
