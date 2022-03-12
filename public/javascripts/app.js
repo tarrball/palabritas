@@ -88,7 +88,7 @@ function wasEnterPressed(key: string): boolean {
 }
 
 function wasLetterPressed(key: string): boolean {
-    return key.match(/^[a-zA-Z]$/);
+    return key.match(/^[a-zA-Z]$/) != null;
 }
 
 function tryBackspace() {
@@ -137,9 +137,9 @@ function trySubmitWord() {
         });
 
         const boxes = getLetterBoxes(answer.container);
-        boxes.forEach((b) => (b.value = b.placeholder));
+        boxes.forEach((b) => (b.value = b.placeholder ?? ''));
         entries.forEach((e) => (e.value = ''));
-        letters.forEach((l) => (l.value = l.placeholder));
+        letters.forEach((l) => (l.value = l.placeholder ?? ''));
     } else {
         // wrong answer
     }
