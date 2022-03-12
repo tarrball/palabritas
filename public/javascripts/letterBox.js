@@ -56,26 +56,7 @@ class LetterBox extends HTMLElement {
 
 LetterBox.template.innerHTML = `
 <style>
-    :host {
-        user-select: none;
-    }
-
-    .letter-container {
-        background-color: #333030e8;
-        border: black solid 1px;
-        cursor: default;
-        display: inline-block;
-        width: 1em;
-    }
-
-    .letter {
-        color: white;
-        display: inline-block;
-        padding-top: .125em;
-        text-align: center;
-        text-transform: uppercase;
-        width: 100%;
-    }
+    @import url('stylesheets/letterBox.css');
 </style>
 <span class="letter-container">
     <span class="letter"></span>
