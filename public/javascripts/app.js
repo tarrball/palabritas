@@ -118,6 +118,7 @@ function trySubmitWord() {
 
   if (answer) {
     answer.isFound = true;
+    answer.container.scrollIntoView({ behavior: "smooth", block: "center" });
 
     const boxes = answer.container.querySelectorAll("p-letter-box");
     boxes.forEach((b) => (b.value = b.placeholder));

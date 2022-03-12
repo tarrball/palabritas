@@ -27,13 +27,13 @@ body {
 .main-container {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  width: 66%; }
+  flex-direction: column; }
 
 .answers-container {
   align-items: flex-end;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   overflow-y: auto;
   padding: .5em 0; }
   .answers-container > * {
