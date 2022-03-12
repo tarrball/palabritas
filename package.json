@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "build": "flow-remove-types public/javascripts/ -d ./bin/www",
+    "flow": "flow",
+    "prepublish": "npm run build",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -11,5 +14,10 @@
     "express": "^4.17.3",
     "morgan": "^1.10.0",
     "node-sass-middleware": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "flow-bin": "^0.173.0",
+    "flow-remove-types": "^2.173.0"
   }
 }

@@ -1,11 +1,29 @@
+// @flow
+
 class LetterBox extends HTMLElement {
-  static placeholderKey = "placeholder";
-  static valueKey = "value";
+  static template: HTMLTemplateElement = document.createElement("template");
+
+  // TODO are these necessary?
+  static placeholderKey: string = "placeholder";
+
+  static valueKey: string = "value";
+
+  static observedAttributes: Array<string> = [
+    LetterBox.placeholderKey,
+    LetterBox.valueKey,
+  ];
 
   constructor() {
     super();
 
     this.attachShadow({ mode: "open" });
+
+    if (!this.shadowRoot) {
+      console.error("");
+
+      return;
+    }
+
     this.shadowRoot.append(LetterBox.template.content.cloneNode(true));
 
     this.innerSpan = this.shadowRoot.querySelector(".letter");
@@ -36,8 +54,6 @@ class LetterBox extends HTMLElement {
   }
 }
 
-LetterBox.observedAttributes = [LetterBox.placeholderKey, LetterBox.valueKey];
-LetterBox.template = document.createElement("template");
 LetterBox.template.innerHTML = `
 <style>
     :host {
