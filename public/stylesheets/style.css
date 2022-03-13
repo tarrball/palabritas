@@ -26,7 +26,7 @@ body {
   cursor: default; }
 
 .main-container {
-  align-items: center;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,5 +44,25 @@ body {
   padding: .5em 0; }
   .answers-container > * {
     padding: .2em .1em; }
+
+.scamble-container, .entry-container {
+  min-height: 70px; }
+
+.footer {
+  align-content: space-between;
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 3em;
+  justify-content: space-between;
+  margin-top: 1.5em; }
+  .footer button {
+    background: #333030e8;
+    color: white;
+    font-size: .5em;
+    font-weight: bold;
+    height: 50px;
+    text-transform: uppercase;
+    width: 100px; }
 
 /*# sourceMappingURL=style.css.map */

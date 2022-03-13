@@ -9,7 +9,9 @@ customElements.define('p-letter-box', LetterBox);
 const empty = '_';
 const gameManager = new GameManager();
 const answerContainer = getDiv('.answers-container');
-const game = gameManager.nextGame();
+const nextButton = getButton('#next-button');
+
+nextButton.addEventListener('click', () => startNextGame());
 
 const letters = createLetterBoxArray(
     document.querySelectorAll("[id^='letter-']")
@@ -19,7 +21,13 @@ const entries = createLetterBoxArray(
     document.querySelectorAll("[id^='entry-']")
 );
 
+let game = gameManager.nextGame();
 let answers = [];
+
+function startNextGame() {
+    game = gameManager.nextGame();
+    answers = [];
+}
 
 function createLetterBoxArray(nodes: NodeList<HTMLElement>): Array<LetterBox> {
     const boxes = Array.from(nodes).map((element) => {
@@ -152,8 +160,18 @@ function isLetterAvailable(key) {
     return !!letter;
 }
 
+function getButton(selector: string): HTMLButtonElement {
+    const button = document.querySelector(selector);
+
+    if (button instanceof HTMLButtonElement) {
+        return button;
+    }
+
+    throw `'button' selector '${selector}' not found`;
+}
+
 function getDiv(selector: string): HTMLDivElement {
-    const div = document.querySelector('.answers-container');
+    const div = document.querySelector(selector);
 
     if (div instanceof HTMLDivElement) {
         return div;
@@ -163,7 +181,7 @@ function getDiv(selector: string): HTMLDivElement {
 }
 
 function getInput(selector: string): HTMLInputElement {
-    const element = document.querySelector('.hidden-input');
+    const element = document.querySelector(selector);
 
     if (element instanceof HTMLInputElement) {
         return element;
