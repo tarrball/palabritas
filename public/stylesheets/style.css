@@ -1,4 +1,5 @@
 body {
+  background: #222020;
   display: flex;
   font: 1rem "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 100vh;
@@ -30,6 +31,8 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 11em; }
+  .main-container > div {
+    padding: 2px 0; }
 
 .answers-container {
   align-items: flex-end;
