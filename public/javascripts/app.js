@@ -50,6 +50,7 @@ Array.from(game.word).forEach((l, i) => {
 game.subset.forEach((word) => {
     const letterBoxes = Array.from(word).map((letter) => {
         const box = createLetterBox();
+        box.innerSpan.parentElement?.classList.add('answer-box');
         box.placeholder = letter;
         box.value = empty;
 

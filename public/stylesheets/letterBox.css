@@ -6,7 +6,12 @@
   border: black solid 1px;
   cursor: default;
   display: inline-block;
-  width: 1em; }
+  font-size: 2rem;
+  font-weight: bold;
+  height: 62px;
+  line-height: 2rem;
+  margin: 1px;
+  width: 62px; }
 
 .letter {
   color: white;
@@ -15,5 +20,12 @@
   text-align: center;
   text-transform: uppercase;
   width: 100%; }
+
+.answer-box {
+  font-size: 1.2em;
+  height: 30px;
+  width: 30px; }
+  .answer-box .letter {
+    padding-top: 0; }
 
 /*# sourceMappingURL=letterBox.css.map */
