@@ -1,19 +1,15 @@
 :host {
   user-select: none; }
 
-.letter-container {
+.char-container {
   background-color: #333030e8;
   border: #c6c6c6 solid 1px;
   cursor: default;
   display: inline-block;
-  font-size: 3rem;
   font-weight: bold;
-  height: 62px;
-  line-height: 3rem;
-  margin: 1px;
-  width: 62px; }
+  margin: 1px; }
 
-.letter {
+.char {
   color: white;
   display: inline-block;
   padding-top: .125em;
@@ -21,10 +17,16 @@
   text-transform: uppercase;
   width: 100%; }
 
-.answer-box {
+.char-container {
+  font-size: 3rem;
+  height: 62px;
+  line-height: 3rem;
+  width: 62px; }
+
+.answer {
   font-size: 1.2em;
   height: 30px;
   line-height: 1.2em;
   width: 30px; }
 
-/*# sourceMappingURL=letterBox.css.map */
+/*# sourceMappingURL=charBox.css.map */

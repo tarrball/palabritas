@@ -1,82 +1,51 @@
 // @flow
 
-import LetterBox from './letterBox.js';
+import CharBox from './charBox.js';
+import WordBox from './wordBox.js';
 import GameManager from './gameManager.js';
-import { isNullOrUndefined, first, last } from './utils.js';
 
-customElements.define('p-letter-box', LetterBox);
+customElements.define('p-char-box', CharBox);
+customElements.define('p-word-box', WordBox);
 
 const empty = '_';
 const gameManager = new GameManager();
 const answerContainer = getDiv('.answers-container');
 const nextButton = getButton('#next-button');
 
-nextButton.addEventListener('click', () => startNextGame());
-
-const letters = createLetterBoxArray(
-    document.querySelectorAll("[id^='letter-']")
-);
-
-const entries = createLetterBoxArray(
-    document.querySelectorAll("[id^='entry-']")
-);
+// $FlowIgnore
+const scrambleBox: WordBox = document.querySelector('#scramble-box');
+// $FlowIgnore
+const entryBox: WordBox = document.querySelector('#entry-box');
 
 let game = gameManager.nextGame();
+scrambleBox.word = game.word;
+entryBox.word = null;
+
 let answers = [];
 
-function startNextGame() {
-    game = gameManager.nextGame();
-    answers = [];
-}
-
-function createLetterBoxArray(nodes: NodeList<HTMLElement>): Array<LetterBox> {
-    const boxes = Array.from(nodes).map((element) => {
-        if (element instanceof LetterBox) {
-            return element;
-        }
-
-        throw 'Failed to create LetterBox array';
-    });
-
-    return boxes;
-}
-
-function createLetterBox(): LetterBox {
-    const box = document.createElement('p-letter-box');
-
-    if (box instanceof LetterBox) {
-        return box;
-    }
-
-    throw 'Failed to create LetterBox';
-}
-
-Array.from(game.word).forEach((l, i) => {
-    letters[i].placeholder = letters[i].value = l;
-});
-
 game.subset.forEach((word) => {
-    const letterBoxes = Array.from(word).map((letter) => {
-        const box = createLetterBox();
-        box.innerSpan.parentElement?.classList.add('answer-box');
-        box.placeholder = letter;
-        box.value = empty;
+    const wordBox = WordBox.createWordBox(word, 'answer');
 
-        return box;
-    });
-
-    const div = document.createElement('div');
-    div.classList.add('answer-container');
-    div.append(...letterBoxes);
-
-    answerContainer.append(div);
+    answerContainer.append(wordBox);
 
     answers.push({
-        container: div,
+        container: wordBox,
         isFound: false,
         word,
     });
 });
+
+function createCharBoxArray(nodes: NodeList<HTMLElement>): Array<CharBox> {
+    const boxes = Array.from(nodes).map((element) => {
+        if (element instanceof CharBox) {
+            return element;
+        }
+
+        throw 'Failed to create CharBox array';
+    });
+
+    return boxes;
+}
 
 function handleKeyDown(key: string) {
     if (wasBackspacePressed(key)) {
@@ -101,63 +70,43 @@ function wasLetterPressed(key: string): boolean {
 }
 
 function tryBackspace() {
-    const lastEntry = last(entries.filter((element) => element.value));
-
-    if (!isNullOrUndefined(lastEntry)) {
-        const letter = last(
-            letters.filter(
-                (e) => e.placeholder == lastEntry.value && e.value === empty
-            )
-        );
-
-        letter.value = letter.placeholder;
-        lastEntry.value = '';
-    }
-}
-
-function trySubmitLetter(key) {
-    if (!isLetterAvailable(key)) {
+    if (entryBox.isEmpty()) {
         return;
     }
 
-    const nextEntry = first(entries.filter((e) => !e.value));
+    backspace();
+}
 
-    if (!isNullOrUndefined(nextEntry)) {
-        const letter = first(
-            letters.filter((element) => element.value === key)
-        );
+function backspace() {
+    scrambleBox.unshift(entryBox.pop());
+}
 
-        letter.value = empty;
-        nextEntry.value = key;
+function trySubmitLetter(key: string) {
+    if (!scrambleBox.includes(key)) {
+        return;
     }
+
+    entryBox.push(scrambleBox.shift(key));
 }
 
 function trySubmitWord() {
     input.value = '';
 
-    const entry = entries.map((e) => e.value).join('');
+    const entry = entryBox.build();
     const answer = answers.find((a) => !a.isFound && a.word === entry);
 
-    if (answer) {
-        answer.isFound = true;
-        answer.container.scrollIntoView({
-            behavior: 'smooth',
-            block: 'center',
-        });
-
-        const boxes = getLetterBoxes(answer.container);
-        boxes.forEach((b) => (b.value = b.placeholder ?? ''));
-        entries.forEach((e) => (e.value = ''));
-        letters.forEach((l) => (l.value = l.placeholder ?? ''));
-    } else {
-        // wrong answer
+    if (!answer) {
+        // wrong answer buddy
+        return;
     }
-}
 
-function isLetterAvailable(key) {
-    const letter = first(letters.filter((e) => e.value === key));
+    answer.isFound = true;
+    answer.container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    answer.container.reveal();
 
-    return !!letter;
+    while (!entryBox.isEmpty()) {
+        backspace();
+    }
 }
 
 function getButton(selector: string): HTMLButtonElement {
@@ -190,14 +139,14 @@ function getInput(selector: string): HTMLInputElement {
     throw `'input' selector '${selector}' not found`;
 }
 
-function getLetterBoxes(container: HTMLDivElement): Array<LetterBox> {
-    const boxes = Array.from(container.querySelectorAll('p-letter-box')).map(
+function getCharBoxes(container: HTMLDivElement): Array<CharBox> {
+    const boxes = Array.from(container.querySelectorAll('p-char-box')).map(
         (element) => {
-            if (element instanceof LetterBox) {
+            if (element instanceof CharBox) {
                 return element;
             }
 
-            throw 'Failed to retrieve LetterBox array';
+            throw 'Failed to retrieve CharBox array';
         }
     );
 
