@@ -10,6 +10,7 @@ customElements.define('p-word-box', WordBox);
 const empty = '_';
 const gameManager = new GameManager();
 const answerContainer = getDiv('.answers-container');
+const scoreLabel = getLabel('#score-label');
 const nextButton = getButton('#next-button');
 
 // $FlowIgnore
@@ -17,34 +18,32 @@ const scrambleBox: WordBox = document.querySelector('#scramble-box');
 // $FlowIgnore
 const entryBox: WordBox = document.querySelector('#entry-box');
 
-let game = gameManager.nextGame();
-scrambleBox.word = game.word;
-entryBox.word = null;
-
 let answers = [];
 
-game.subset.forEach((word) => {
-    const wordBox = WordBox.createWordBox(word, 'answer');
+startNewGame();
 
-    answerContainer.append(wordBox);
+function startNewGame() {
+    let game = gameManager.nextGame();
+    scrambleBox.word = game.word;
+    entryBox.word = null;
+    answers = [];
+    scoreLabel.textContent = '000';
 
-    answers.push({
-        container: wordBox,
-        isFound: false,
-        word,
+    Array.from(answerContainer.children).forEach((child) =>
+        answerContainer.removeChild(child)
+    );
+
+    game.subset.forEach((word) => {
+        const wordBox = WordBox.createWordBox(word, 'answer');
+
+        answerContainer.append(wordBox);
+
+        answers.push({
+            container: wordBox,
+            isFound: false,
+            word,
+        });
     });
-});
-
-function createCharBoxArray(nodes: NodeList<HTMLElement>): Array<CharBox> {
-    const boxes = Array.from(nodes).map((element) => {
-        if (element instanceof CharBox) {
-            return element;
-        }
-
-        throw 'Failed to create CharBox array';
-    });
-
-    return boxes;
 }
 
 function handleKeyDown(key: string) {
@@ -104,9 +103,19 @@ function trySubmitWord() {
     answer.container.scrollIntoView({ behavior: 'smooth', block: 'center' });
     answer.container.reveal();
 
+    updateScore(answer.word);
+
     while (!entryBox.isEmpty()) {
         backspace();
     }
+}
+
+function updateScore(word: string) {
+    const score = Number(scoreLabel.textContent);
+
+    scoreLabel.textContent = (score + word.length * 10)
+        .toString()
+        .padStart(3, '0');
 }
 
 function getButton(selector: string): HTMLButtonElement {
@@ -137,6 +146,16 @@ function getInput(selector: string): HTMLInputElement {
     }
 
     throw `'input' selector '${selector}' not found`;
+}
+
+function getLabel(selector: string): HTMLLabelElement {
+    const label = document.querySelector(selector);
+
+    if (label instanceof HTMLLabelElement) {
+        return label;
+    }
+
+    throw `'label' selector '${selector}' not found`;
 }
 
 function getCharBoxes(container: HTMLDivElement): Array<CharBox> {
@@ -180,3 +199,8 @@ if (
         handleKeyDown(event.key)
     );
 }
+
+nextButton.addEventListener('click', () => {
+    nextButton.blur();
+    startNewGame();
+});

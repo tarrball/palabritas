@@ -34,6 +34,10 @@ class WordBox extends HTMLElement {
         if (value) {
             this.setAttribute(WordBox.wordKey, value);
         } else {
+            Array.from(this.shadowRoot?.children ?? []).forEach((node) =>
+                this.shadowRoot?.removeChild(node)
+            );
+
             const charBoxes = [0, 1, 2, 3, 4, 5].map(() =>
                 CharBox.createCharBox(EMPTY)
             );
@@ -68,7 +72,7 @@ class WordBox extends HTMLElement {
             throw 'Failed to set CharBoxes';
         }
 
-        wordBox.shadowRoot.childNodes.forEach((node) =>
+        Array.from(wordBox.shadowRoot.children).forEach((node) =>
             wordBox.shadowRoot?.removeChild(node)
         );
 
