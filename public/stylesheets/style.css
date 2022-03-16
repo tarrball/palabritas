@@ -35,8 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 2em;
-  padding-bottom: 11em; }
+  margin-right: 2em; }
   .main-container > * {
     min-height: 70px;
     padding: 2px 0; }
@@ -46,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  justify-content: center;
   margin: 2em 0;
   overflow-y: auto;
   padding: .5em 0; }
