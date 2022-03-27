@@ -1,4 +1,9 @@
-export const GAMES = [
+interface Game {
+    word: string;
+    answers: string[];
+}
+
+export const GAMES: Game[] = [
     {
         word: 'ubando',
         subset: [

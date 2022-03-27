@@ -1,4 +1,4 @@
-import { GAMES } from './games.en.js';
+import { GAMES } from './games.en';
 
 export default class GameManager {
     #currentGame;

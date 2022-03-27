@@ -1,14 +1,17 @@
+import { useEffect, useRef } from 'react';
+
 function Answer({ word, wasFound }) {
     return (
-        <div>
-            <label>{wasFound ? word : '_'.repeat(word.length)}</label>
+        <label>
+            {wasFound ? word : '_'.repeat(word.length)}
             <style jsx>{`
                 label {
                     letter-spacing: 2px;
+                    margin: 0 4px;
                     text-transform: uppercase;
                 }
             `}</style>
-        </div>
+        </label>
     );
 }
 

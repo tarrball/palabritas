@@ -1,9 +1,11 @@
-import Head from 'next/head';
-import { useState } from 'react';
-import Tile from '../components/tile';
 import Answer from '../components/answer';
-import InteractiveWord from '../components/interactiveWord';
 import GameManager from '../lib/gameManager';
+import Grade from '../components/grade';
+import Head from 'next/head';
+import InteractiveWord from '../components/interactiveWord';
+import Score from '../components/score';
+import Tile from '../components/tile';
+import { useRef, useState } from 'react';
 
 const gameManager = new GameManager();
 const game = gameManager.nextGame();
@@ -12,6 +14,8 @@ function Home() {
     const [scramble, setScramble] = useState(makeTiles(game.word));
     const [entry, setEntry] = useState([]);
     const [answers, setAnswers] = useState(makeAnswers(game.subset));
+    const [lastAnswer, setLastAnswer] = useState('');
+    const lastAnswerRef = useRef(null);
 
     function makeAnswers(answers) {
         if (!Number.isInteger(answers?.length)) {
@@ -56,6 +60,7 @@ function Home() {
             setAnswers(answers);
             setEntry([]);
             setScramble(newScramble.sort((a, b) => a.index - b.index));
+            setLastAnswer(word);
         }
     }
 
@@ -68,11 +73,26 @@ function Home() {
 
             {scramble ? (
                 <main>
-                    <div className='answers-container'>
-                        {answers.map((answer, i) => (
-                            <Answer key={i} {...answer}></Answer>
-                        ))}
+                    <div className='score-container'>
+                        <Score label='Score' score='0'></Score>
+                        <Grade max='300' score='0'></Grade>
+                        <Score label='Max' score='300'></Score>
                     </div>
+
+                    <div className='answers-container'>
+                        {answers.map((answer, i) =>
+                            answer.word === lastAnswer ? (
+                                <Answer
+                                    key={i}
+                                    ref={lastAnswerRef}
+                                    {...answer}
+                                ></Answer>
+                            ) : (
+                                <Answer key={i} {...answer}></Answer>
+                            )
+                        )}
+                    </div>
+
                     <div className='entry-container'>
                         <InteractiveWord
                             id='entry-box'
@@ -85,6 +105,7 @@ function Home() {
                             onTileTap={popScramble}
                         ></InteractiveWord>
                     </div>
+
                     <div className='enter-container'>
                         <Tile value='Enter ↵' onTap={tryEnterWord}></Tile>
                     </div>
@@ -93,13 +114,14 @@ function Home() {
                 <main></main>
             )}
 
-            <footer>tarrball inc</footer>
+            <footer>tarrball@palabs.app</footer>
 
             <style jsx global>{`
                 html,
                 body {
                     background: #222020;
-                    padding: 0;
+                    color: white;
+                    padding: 8px;
                     margin: 0;
                     font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
                         Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
@@ -114,6 +136,30 @@ function Home() {
                     display: flex;
                     flex-direction: column;
                     overflow: hidden;
+                }
+
+                .answers-container {
+                    display: flex;
+                    font-size: 18px;
+                    padding: 16px;
+                    margin: 8px;
+                    overflow-x: auto;
+                    -ms-overflow-style: none; /* IE and Edge */
+                    scrollbar-width: none; /* Firefox */
+                }
+
+                /* Hide scrollbar for Chrome, Safari and Opera */
+                .answers-container::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .answers-container > * {
+                }
+
+                .score-container {
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
                 }
 
                 .entry-container {
@@ -138,20 +184,6 @@ function Home() {
                     justify-content: flex-end;
                 }
 
-                .answers-container {
-                    color: white;
-                    display: flex;
-                    flex-direction: column;
-                    flex-grow: 1;
-                    flex-wrap: wrap;
-                    font-size: 18px;
-                    height: 100px;
-                    padding: 0.5em;
-                }
-
-                .answers-container > * {
-                }
-
                 footer {
                     align-content: space-between;
                     align-items: flex-end;
@@ -160,19 +192,6 @@ function Home() {
                     font-size: 3em;
                     justify-content: space-between;
                     margin-top: 1.5em;
-                }
-
-                .score-container {
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .score-container span {
-                    font-size: 0.5em;
-                    margin-bottom: -4px;
-                    margin-left: 3px;
-                    opacity: 0.5;
-                    text-transform: uppercase;
                 }
             `}</style>
         </div>
