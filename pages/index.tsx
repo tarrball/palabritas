@@ -110,7 +110,10 @@ function Home() {
                     <span>🚧🚧🚧</span>
                 </div>
                 <div>
-                    <a href='https://github.com/tarrball/palabritas'>
+                    <a
+                        href='https://github.com/tarrball/palabritas'
+                        target='_blank'
+                    >
                         palabritas (GitHub)
                     </a>
                     <label>andrew@tarrball.com</label>
