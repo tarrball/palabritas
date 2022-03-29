@@ -19,11 +19,6 @@ function Tile({ value, onTap }) {
                     min-width: 50px;
                     text-transform: uppercase;
                 }
-
-                button:active, button:focus, button:hover {
-                    background: #3330302b;
-                    border-color: gray;
-                }
             `}</style>
         </div>
     );

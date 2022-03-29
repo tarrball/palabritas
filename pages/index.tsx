@@ -5,7 +5,7 @@ import Head from 'next/head';
 import InteractiveWord from '../components/interactiveWord';
 import Score from '../components/score';
 import Tile from '../components/tile';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 const gameManager = new GameManager();
 const game = gameManager.nextGame();
@@ -14,8 +14,6 @@ function Home() {
     const [scramble, setScramble] = useState(makeTiles(game.word));
     const [entry, setEntry] = useState([]);
     const [answers, setAnswers] = useState(makeAnswers(game.subset));
-    const [lastAnswer, setLastAnswer] = useState('');
-    const lastAnswerRef = useRef(null);
 
     function makeAnswers(answers) {
         if (!Number.isInteger(answers?.length)) {
@@ -60,7 +58,6 @@ function Home() {
             setAnswers(answers);
             setEntry([]);
             setScramble(newScramble.sort((a, b) => a.index - b.index));
-            setLastAnswer(word);
         }
     }
 
@@ -80,17 +77,9 @@ function Home() {
                     </div>
 
                     <div className='answers-container'>
-                        {answers.map((answer, i) =>
-                            answer.word === lastAnswer ? (
-                                <Answer
-                                    key={i}
-                                    ref={lastAnswerRef}
-                                    {...answer}
-                                ></Answer>
-                            ) : (
-                                <Answer key={i} {...answer}></Answer>
-                            )
-                        )}
+                        {answers.map((answer, i) => (
+                            <Answer key={i} {...answer}></Answer>
+                        ))}
                     </div>
 
                     <div className='entry-container'>
@@ -114,7 +103,19 @@ function Home() {
                 <main></main>
             )}
 
-            <footer>tarrball@palabs.app</footer>
+            <footer>
+                <div>
+                    <span>🚧🚧🚧</span>
+                    <p>v0.0.0 (3/28/22)</p>
+                    <span>🚧🚧🚧</span>
+                </div>
+                <div>
+                    <a href='https://github.com/tarrball/palabritas'>
+                        palabritas (GitHub)
+                    </a>
+                    <label>andrew@tarrball.com</label>
+                </div>
+            </footer>
 
             <style jsx global>{`
                 html,
@@ -135,14 +136,15 @@ function Home() {
                 main {
                     display: flex;
                     flex-direction: column;
+                    height: 75vh;
                     overflow: hidden;
                 }
 
                 .answers-container {
                     display: flex;
-                    font-size: 18px;
-                    padding: 16px;
-                    margin: 8px;
+                    font-size: 32px;
+                    padding: 16px 0;
+                    margin: 8px 0;
                     overflow-x: auto;
                     -ms-overflow-style: none; /* IE and Edge */
                     scrollbar-width: none; /* Firefox */
@@ -151,9 +153,6 @@ function Home() {
                 /* Hide scrollbar for Chrome, Safari and Opera */
                 .answers-container::-webkit-scrollbar {
                     display: none;
-                }
-
-                .answers-container > * {
                 }
 
                 .score-container {
@@ -185,13 +184,20 @@ function Home() {
                 }
 
                 footer {
-                    align-content: space-between;
-                    align-items: flex-end;
-                    color: white;
+                    align-items: center;
                     display: flex;
-                    font-size: 3em;
-                    justify-content: space-between;
+                    flex-direction: column;
                     margin-top: 1.5em;
+                }
+
+                footer div {
+                    align-items: center;
+                    display: flex;
+                }
+
+                footer div {
+                    justify-content: space-evenly;
+                    width: 100%;
                 }
             `}</style>
         </div>
