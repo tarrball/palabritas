@@ -74,7 +74,7 @@ function Home() {
                     </div>
 
                     <div className="enter-container">
-                        <Tile value="Enter ↵" onTap={tryEnterWord}></Tile>
+                        <Tile value="Enter" onTap={tryEnterWord}></Tile>
                     </div>
                 </main>
             ) : (
@@ -89,7 +89,7 @@ function Home() {
                 </div>
                 <div>
                     <a href="https://github.com/tarrball/palabritas" target="_blank">
-                        palabritas (GitHub)
+                        View on GitHub
                     </a>
                     <label>andrew@tarrball.com</label>
                 </div>
@@ -158,6 +158,7 @@ function Home() {
                     align-items: center;
                     display: flex;
                     justify-content: flex-end;
+                    padding: 4px;
                 }
 
                 footer {
