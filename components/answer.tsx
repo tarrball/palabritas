@@ -28,6 +28,7 @@ function Answer({ word, wasFound }: AnswerProp) {
                     letter-spacing: 5px;
                     margin: 0 4px;
                     text-transform: uppercase;
+                    white-space: nowrap;
                 }
             `}</style>
         </label>
