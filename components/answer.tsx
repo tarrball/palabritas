@@ -25,8 +25,7 @@ function Answer({ word, wasFound }: AnswerProp) {
             <style jsx>{`
                 label {
                     font-weight: bold;
-                    letter-spacing: 5px;
-                    margin: 0 4px;
+                    margin: 0 8px;
                     text-transform: uppercase;
                     white-space: nowrap;
                 }

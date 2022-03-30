@@ -52,6 +52,7 @@ function Home() {
             <Head>
                 <title>Palabs</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta name="viewport" content="width=device-width,initial-scale=1" />
             </Head>
 
             {scramble ? (
@@ -100,8 +101,6 @@ function Home() {
                 body {
                     background: #222020;
                     color: white;
-                    padding: 8px;
-                    margin: 0;
                     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
                         Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
                 }
@@ -110,11 +109,20 @@ function Home() {
                     box-sizing: border-box;
                 }
 
+                .container {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    height: 85vh;
+                    width: 100%;
+                }
+
                 main {
                     display: flex;
                     flex-direction: column;
-                    height: 75vh;
+                    flex-grow: 1;
                     overflow: hidden;
+                    width: 100%
                 }
 
                 .answers-container {
@@ -139,10 +147,10 @@ function Home() {
                 }
 
                 .entry-container {
-                    align-items: stretch;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    width: 100%;
                 }
 
                 .entry-container > * {
@@ -166,6 +174,7 @@ function Home() {
                     display: flex;
                     flex-direction: column;
                     margin-top: 1.5em;
+                    width: 100%;
                 }
 
                 footer div {
