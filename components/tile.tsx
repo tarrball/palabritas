@@ -1,7 +1,12 @@
-function Tile({ value, onTap }) {
+interface Props {
+    value: string;
+    onTap: () => void;
+}
+
+function Tile({ value, onTap }: Props) {
     return (
         <div>
-            <button className='tile' onClick={onTap}>
+            <button className="tile" onClick={onTap}>
                 {value}
             </button>
             <style jsx>{`

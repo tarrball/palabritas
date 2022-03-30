@@ -1,14 +1,16 @@
-import Tile from './tile';
+import Tile from "./tile";
+import { TileProp } from "./types";
 
-function InteractiveWord({ word, onTileTap }) {
+interface Props {
+    word: TileProp[];
+    onTileTap: (tile: TileProp) => void;
+}
+
+function InteractiveWord({ word, onTileTap }: Props) {
     return (
         <div>
             {word.map((tile) => (
-                <Tile
-                    key={tile.index}
-                    value={tile.letter}
-                    onTap={() => onTileTap(tile)}
-                ></Tile>
+                <Tile key={tile.index} value={tile.letter} onTap={() => onTileTap(tile)}></Tile>
             ))}
             <style jsx>{`
                 div {

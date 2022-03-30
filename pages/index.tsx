@@ -1,55 +1,41 @@
-import Answer from '../components/answer';
-import GameManager from '../lib/gameManager';
-import Grade from '../components/grade';
-import Head from 'next/head';
-import InteractiveWord from '../components/interactiveWord';
-import Score from '../components/score';
-import Tile from '../components/tile';
-import { useState } from 'react';
+import Answer from "../components/answer";
+import GameManager from "../lib/gameManager";
+import Grade from "../components/grade";
+import Head from "next/head";
+import InteractiveWord from "../components/interactiveWord";
+import Score from "../components/score";
+import Tile from "../components/tile";
+import { useState } from "react";
+import { AnswerProp, TileProp } from "../components/types";
 
-const gameManager = new GameManager();
-const game = gameManager.nextGame();
+let game = GameManager.nextGame();
 
 function Home() {
-    const [scramble, setScramble] = useState(makeTiles(game.word));
-    const [entry, setEntry] = useState([]);
-    const [answers, setAnswers] = useState(makeAnswers(game.subset));
+    const [scramble, setScramble] = useState<TileProp[]>(makeTiles(game.word));
+    const [entry, setEntry] = useState<TileProp[]>([]);
+    const [answers, setAnswers] = useState<AnswerProp[]>(makeAnswers(game.answers));
 
-    function makeAnswers(answers) {
-        if (!Number.isInteger(answers?.length)) {
-            console.error(`Failed to create answers: '${answers}'`);
-
-            return;
-        }
-
+    function makeAnswers(answers: string[]): AnswerProp[] {
         return answers.map((answer) => ({ word: answer, wasFound: false }));
     }
 
-    function makeTiles(word) {
-        if (typeof word !== 'string') {
-            console.error(`Failed to create tiles: '${word}'`);
-
-            return;
-        }
-
+    function makeTiles(word: string): TileProp[] {
         return Array.from(word).map((letter, i) => ({ letter, index: i }));
     }
 
-    function popScramble(tile) {
+    function popScramble(tile: TileProp) {
         setScramble(scramble.filter((f) => f.index !== tile.index));
         setEntry(entry.concat(tile));
     }
 
-    function popEntry(tile) {
+    function popEntry(tile: TileProp) {
         setEntry(entry.filter((f) => f.index !== tile.index));
         setScramble(scramble.concat(tile).sort((a, b) => a.index - b.index));
     }
 
     function tryEnterWord() {
-        const word = entry.map((m) => m.letter).join('');
-        const answerIndex = answers.findIndex(
-            (f) => f.word === word && !f.wasFound
-        );
+        const word = entry.map((m) => m.letter).join("");
+        const answerIndex = answers.findIndex((f) => f.word === word && !f.wasFound);
 
         if (answerIndex >= 0) {
             answers[answerIndex].wasFound = true;
@@ -62,41 +48,33 @@ function Home() {
     }
 
     return (
-        <div className='container'>
+        <div className="container">
             <Head>
                 <title>Palabs</title>
-                <link rel='icon' href='/favicon.ico' />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             {scramble ? (
                 <main>
-                    <div className='score-container'>
-                        <Score label='Score' score='0'></Score>
-                        <Grade max='300' score='0'></Grade>
-                        <Score label='Max' score='300'></Score>
+                    <div className="score-container">
+                        <Score label="Score" score={0}></Score>
+                        <Grade max={300} score={0}></Grade>
+                        <Score label="Max" score={300}></Score>
                     </div>
 
-                    <div className='answers-container'>
+                    <div className="answers-container">
                         {answers.map((answer, i) => (
                             <Answer key={i} {...answer}></Answer>
                         ))}
                     </div>
 
-                    <div className='entry-container'>
-                        <InteractiveWord
-                            id='entry-box'
-                            word={entry}
-                            onTileTap={popEntry}
-                        ></InteractiveWord>
-                        <InteractiveWord
-                            id='scramble-box'
-                            word={scramble}
-                            onTileTap={popScramble}
-                        ></InteractiveWord>
+                    <div className="entry-container">
+                        <InteractiveWord word={entry} onTileTap={popEntry}></InteractiveWord>
+                        <InteractiveWord word={scramble} onTileTap={popScramble}></InteractiveWord>
                     </div>
 
-                    <div className='enter-container'>
-                        <Tile value='Enter ↵' onTap={tryEnterWord}></Tile>
+                    <div className="enter-container">
+                        <Tile value="Enter ↵" onTap={tryEnterWord}></Tile>
                     </div>
                 </main>
             ) : (
@@ -106,14 +84,11 @@ function Home() {
             <footer>
                 <div>
                     <span>🚧🚧🚧</span>
-                    <p>v0.0.0 (3/28/22)</p>
+                    <p>v0.0.1 (3/29/22)</p>
                     <span>🚧🚧🚧</span>
                 </div>
                 <div>
-                    <a
-                        href='https://github.com/tarrball/palabritas'
-                        target='_blank'
-                    >
+                    <a href="https://github.com/tarrball/palabritas" target="_blank">
                         palabritas (GitHub)
                     </a>
                     <label>andrew@tarrball.com</label>
@@ -127,9 +102,8 @@ function Home() {
                     color: white;
                     padding: 8px;
                     margin: 0;
-                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
-                        Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-                        Helvetica Neue, sans-serif;
+                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+                        Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
                 }
 
                 * {

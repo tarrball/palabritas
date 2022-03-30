@@ -1,5 +1,10 @@
-function Score({ label, score }) {
-    const paddedScore = score.toString().padStart(3, '0');
+interface Props {
+    label: string;
+    score: number;
+}
+
+function Score({ label, score }: Props) {
+    const paddedScore = score.toString().padStart(3, "0");
 
     return (
         <div>

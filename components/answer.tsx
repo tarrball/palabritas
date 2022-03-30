@@ -1,23 +1,27 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
+import { AnswerProp } from "./types";
 
-function Answer({ word, wasFound }) {
-    const labelRef = useRef(null);
+function Answer({ word, wasFound }: AnswerProp) {
+    const labelRef = useRef<HTMLLabelElement>(null);
 
     let wasScrolled = false;
 
     useEffect(() => {
-        if (labelRef && wasFound && !wasScrolled) {
+        if (labelRef?.current && wasFound && !wasScrolled) {
             wasScrolled = true;
+
+            console.log("scrolling...");
+
             labelRef.current.scrollIntoView({
-                behavior: 'smooth',
-                inline: 'center',
+                behavior: "smooth",
+                inline: "center",
             });
         }
     });
 
     return (
         <label ref={labelRef}>
-            {wasFound ? word : '-'.repeat(word.length)}
+            {wasFound ? word : "-".repeat(word.length)}
             <style jsx>{`
                 label {
                     font-weight: bold;
