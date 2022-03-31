@@ -14,9 +14,18 @@ function Home() {
     const [scramble, setScramble] = useState<TileProp[]>(makeTiles(game.word));
     const [entry, setEntry] = useState<TileProp[]>([]);
     const [answers, setAnswers] = useState<AnswerProp[]>(makeAnswers(game.answers));
+    const [score, setScore] = useState(0);
+    const [maxScore, setMaxScore] = useState(makeMaxScore(game.answers));
 
     function makeAnswers(answers: string[]): AnswerProp[] {
         return answers.map((answer) => ({ word: answer, wasFound: false }));
+    }
+
+    function makeMaxScore(answers: string[]): number {
+        const charCount = answers.reduce((acc, x) => acc + x.length, 0);
+        const maxScore = charCount * 10;
+        
+        return maxScore;
     }
 
     function makeTiles(word: string): TileProp[] {
@@ -44,6 +53,7 @@ function Home() {
             setAnswers(answers);
             setEntry([]);
             setScramble(newScramble.sort((a, b) => a.index - b.index));
+            setScore(score + (word.length * 10));
         }
     }
 
@@ -58,9 +68,9 @@ function Home() {
             {scramble ? (
                 <main>
                     <div className="score-container">
-                        <Score label="Score" score={0}></Score>
-                        <Grade max={300} score={0}></Grade>
-                        <Score label="Max" score={300}></Score>
+                        <Score label="Score" score={score}></Score>
+                        <Grade max={maxScore} score={0}></Grade>
+                        <Score label="Max" score={maxScore}></Score>
                     </div>
 
                     <div className="answers-container">
@@ -85,7 +95,7 @@ function Home() {
             <footer>
                 <div>
                     <span>🚧🚧🚧</span>
-                    <p>v0.0.1 (3/29/22)</p>
+                    <p>v0.0.1 (3/30/22)</p>
                     <span>🚧🚧🚧</span>
                 </div>
                 <div>
@@ -175,6 +185,10 @@ function Home() {
                     flex-direction: column;
                     margin-top: 1.5em;
                     width: 100%;
+                }
+
+                footer a, footer a:active, footer a:hover, footer a:visited {
+                    color: white;
                 }
 
                 footer div {
