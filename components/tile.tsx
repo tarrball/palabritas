@@ -11,8 +11,8 @@ function Tile({ value, onTap }: Props) {
             </button>
             <style jsx>{`
                 div {
-                    padding: 4px;
-                    flex-basis: 16.6%;
+                    flex: 1 1 0;
+                    max-width: 150px
                 }
 
                 button {
@@ -23,8 +23,9 @@ function Tile({ value, onTap }: Props) {
                     font-size: 170%;
                     font-weight: bold;
                     height: 50px;
+                    padding: 4px;
                     text-transform: uppercase;
-                    width: 100%;
+                    width: calc(100% - 8px);
                 }
             `}</style>
         </div>
