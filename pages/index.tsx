@@ -18,7 +18,7 @@ function Home() {
     const [maxScore, setMaxScore] = useState(makeMaxScore(game.answers));
 
     function makeAnswers(answers: string[]): AnswerProp[] {
-        return answers.map((answer) => ({ word: answer, wasFound: false }));
+        return answers.map((answer) => ({ word: answer, wasFound: false, shouldScroll: false }));
     }
 
     function makeMaxScore(answers: string[]): number {
@@ -47,7 +47,10 @@ function Home() {
         const answerIndex = answers.findIndex((f) => f.word === word && !f.wasFound);
 
         if (answerIndex >= 0) {
+            answers.forEach(answer => answer.shouldScroll = false);
+            answers[answerIndex].shouldScroll = true;
             answers[answerIndex].wasFound = true;
+            
             const newScramble = scramble.concat(...entry);
 
             setAnswers(answers);
@@ -135,9 +138,8 @@ function Home() {
                     align-items: center;
                     display: flex;
                     flex-grow: 1;
-                    font-size: 32px;
+                    font-size: 60px;
                     padding: 16px 0;
-                    margin: 8px 0;
                     overflow-x: auto;
                     -ms-overflow-style: none; /* IE and Edge */
                     scrollbar-width: none; /* Firefox */
@@ -174,7 +176,7 @@ function Home() {
                     align-items: center;
                     display: flex;
                     justify-content: flex-end;
-                    padding: 4px;
+                    padding: 4px 4px 16px 4px;
                 }
 
                 footer {
