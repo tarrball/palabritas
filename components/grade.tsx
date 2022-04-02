@@ -5,7 +5,7 @@ interface Props {
 
 function Grade({ score, max }: Props) {
     const grade = score / max;
-    let text = "Palabritas";
+    let text = "Palabs";
 
     if (grade === 1) {
         text = "Perfect!";
@@ -20,6 +20,7 @@ function Grade({ score, max }: Props) {
             <label>{text}</label>
             <style jsx>{`
                 label {
+                    font-size: 35px;
                     font-variant: small-caps;
                 }
             `}</style>

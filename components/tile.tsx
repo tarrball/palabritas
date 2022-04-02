@@ -5,13 +5,20 @@ interface Props {
 
 function Tile({ value, onTap }: Props) {
     return (
-        <div>
+        <div className={value.length === 1 ? 'letter' : 'word'}>
             <button className="tile" onClick={onTap}>
                 {value}
             </button>
             <style jsx>{`
                 div {
                     flex: 1 1 0;
+                }
+                
+                div.letter {
+                    max-width: 16.6%;
+                }
+
+                div.word {
                     max-width: 150px
                 }
 

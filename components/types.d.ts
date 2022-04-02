@@ -1,4 +1,5 @@
 interface AnswerProp {
+    shouldScroll: boolean;
     wasFound: boolean;
     word: string;
 }

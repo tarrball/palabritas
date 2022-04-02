@@ -18,13 +18,13 @@ function Home() {
     const [maxScore, setMaxScore] = useState(makeMaxScore(game.answers));
 
     function makeAnswers(answers: string[]): AnswerProp[] {
-        return answers.map((answer) => ({ word: answer, wasFound: false }));
+        return answers.map((answer) => ({ word: answer, wasFound: false, shouldScroll: false }));
     }
 
     function makeMaxScore(answers: string[]): number {
         const charCount = answers.reduce((acc, x) => acc + x.length, 0);
         const maxScore = charCount * 10;
-        
+
         return maxScore;
     }
 
@@ -47,20 +47,23 @@ function Home() {
         const answerIndex = answers.findIndex((f) => f.word === word && !f.wasFound);
 
         if (answerIndex >= 0) {
+            answers.forEach(answer => answer.shouldScroll = false);
+            answers[answerIndex].shouldScroll = true;
             answers[answerIndex].wasFound = true;
+            
             const newScramble = scramble.concat(...entry);
 
             setAnswers(answers);
             setEntry([]);
             setScramble(newScramble.sort((a, b) => a.index - b.index));
-            setScore(score + (word.length * 10));
+            setScore(score + word.length * 10);
         }
     }
 
     return (
         <div className="container">
             <Head>
-                <title>Palabs</title>
+                <title>Palabritas</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="viewport" content="width=device-width,initial-scale=1" />
             </Head>
@@ -70,7 +73,7 @@ function Home() {
                     <div className="score-container">
                         <Score label="Score" score={score}></Score>
                         <Grade max={maxScore} score={0}></Grade>
-                        <Score label="Max" score={maxScore}></Score>
+                        <Score label="Max" score={maxScore} align="right"></Score>
                     </div>
 
                     <div className="answers-container">
@@ -93,17 +96,11 @@ function Home() {
             )}
 
             <footer>
-                <div>
-                    <span>🚧🚧🚧</span>
-                    <p>v0.0.1 (3/30/22)</p>
-                    <span>🚧🚧🚧</span>
-                </div>
-                <div>
-                    <a href="https://github.com/tarrball/palabritas" target="_blank">
-                        View on GitHub
-                    </a>
-                    <label>andrew@tarrball.com</label>
-                </div>
+                <label>andrew@tarrball.com</label>
+
+                <a href="https://github.com/tarrball/palabritas" target="_blank">
+                    View on GitHub
+                </a>
             </footer>
 
             <style jsx global>{`
@@ -124,6 +121,8 @@ function Home() {
                     display: flex;
                     flex-direction: column;
                     height: 85vh;
+                    margin: auto;
+                    max-width: 500px;
                     width: 100%;
                 }
 
@@ -132,14 +131,15 @@ function Home() {
                     flex-direction: column;
                     flex-grow: 1;
                     overflow: hidden;
-                    width: 100%
+                    width: 100%;
                 }
 
                 .answers-container {
+                    align-items: center;
                     display: flex;
-                    font-size: 32px;
+                    flex-grow: 1;
+                    font-size: 60px;
                     padding: 16px 0;
-                    margin: 8px 0;
                     overflow-x: auto;
                     -ms-overflow-style: none; /* IE and Edge */
                     scrollbar-width: none; /* Firefox */
@@ -176,29 +176,23 @@ function Home() {
                     align-items: center;
                     display: flex;
                     justify-content: flex-end;
-                    padding: 4px;
+                    padding: 4px 4px 16px 4px;
                 }
 
                 footer {
                     align-items: center;
                     display: flex;
-                    flex-direction: column;
-                    margin-top: 1.5em;
+                    font-variant: small-caps;
+                    justify-content: space-between;
+                    padding: 16px;
                     width: 100%;
                 }
 
-                footer a, footer a:active, footer a:hover, footer a:visited {
+                footer a,
+                footer a:active,
+                footer a:hover,
+                footer a:visited {
                     color: white;
-                }
-
-                footer div {
-                    align-items: center;
-                    display: flex;
-                }
-
-                footer div {
-                    justify-content: space-evenly;
-                    width: 100%;
                 }
             `}</style>
         </div>

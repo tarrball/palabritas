@@ -1,21 +1,19 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnswerProp } from "./types";
 
 function Answer({ word, wasFound }: AnswerProp) {
     const labelRef = useRef<HTMLLabelElement>(null);
 
-    let wasScrolled = false;
+    let [wasScrolled, setWasScrolled] = useState(false);
 
     useEffect(() => {
-        if (labelRef?.current && wasFound && !wasScrolled) {
-            wasScrolled = true;
-
-            console.log("scrolling...");
-
+        if (wasFound && !wasScrolled && labelRef?.current) {
             labelRef.current.scrollIntoView({
                 behavior: "smooth",
                 inline: "center",
             });
+
+            setWasScrolled(true);
         }
     });
 
@@ -24,7 +22,6 @@ function Answer({ word, wasFound }: AnswerProp) {
             {wasFound ? word : "-".repeat(word.length)}
             <style jsx>{`
                 label {
-                    font-weight: bold;
                     margin: 0 8px;
                     text-transform: uppercase;
                     white-space: nowrap;
