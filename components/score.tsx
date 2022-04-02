@@ -1,28 +1,34 @@
 interface Props {
     label: string;
     score: number;
+    align?: string;
 }
 
-function Score({ label, score }: Props) {
+function Score({ label, score, align = 'left' }: Props) {
     const paddedScore = score.toString().padStart(3, "0");
 
     return (
-        <div>
+        <div className={align === 'right' ? 'right' : ''}>
             <label>{label}</label>
             <label>{paddedScore}</label>
             <style jsx>{`
                 div {
                     display: flex;
                     flex-direction: column;
-                    text-transform: uppercase;
+                    font-variant: small-caps;
+                }
+
+                div.right {
+                    align-items: flex-end;
                 }
 
                 label:first-child {
+                    font-size: 23px;
                     opacity: 0.5;
                 }
 
                 label:last-child {
-                    font-size: 20px;
+                    font-size: 30px;
                 }
             `}</style>
         </div>
