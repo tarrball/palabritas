@@ -1,6 +1,7 @@
 interface AnswerProp {
     shouldScroll: boolean;
     wasFound: boolean;
+    wasRevealed: boolean;
     word: string;
 }
 

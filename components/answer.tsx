@@ -1,30 +1,36 @@
-import { useEffect, useRef, useState } from "react";
-import { AnswerProp } from "./types";
+import { AnswerProp } from './types';
+import { useEffect, useRef, useState } from 'react';
 
-function Answer({ word, wasFound }: AnswerProp) {
+function Answer({ word, wasFound, wasRevealed = false }: AnswerProp) {
     const labelRef = useRef<HTMLLabelElement>(null);
 
     let [wasScrolled, setWasScrolled] = useState(false);
 
-    useEffect(() => {
-        if (wasFound && !wasScrolled && labelRef?.current) {
-            labelRef.current.scrollIntoView({
-                behavior: "smooth",
-                inline: "center",
-            });
+    if (!wasRevealed && wasFound && !wasScrolled) {
+        useEffect(() => {
+            if (labelRef?.current) {
+                labelRef.current.scrollIntoView({
+                    behavior: 'smooth',
+                    inline: 'center',
+                });
 
-            setWasScrolled(true);
-        }
-    });
+                setWasScrolled(true);
+            }
+        });
+    }
 
     return (
-        <label ref={labelRef}>
-            {wasFound ? word : "-".repeat(word.length)}
+        <label className={wasRevealed ? 'revealed' : ''} ref={labelRef}>
+            {wasFound ? word : '-'.repeat(word.length)}
             <style jsx>{`
                 label {
                     margin: 0 8px;
                     text-transform: uppercase;
                     white-space: nowrap;
+                }
+
+                label.revealed {
+                    opacity: 0.35;
                 }
             `}</style>
         </label>

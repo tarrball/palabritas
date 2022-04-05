@@ -1,12 +1,12 @@
-import Answer from "../components/answer";
-import GameManager from "../lib/gameManager";
-import Grade from "../components/grade";
-import Head from "next/head";
-import InteractiveWord from "../components/interactiveWord";
-import Score from "../components/score";
-import Tile from "../components/tile";
-import { useState } from "react";
-import { AnswerProp, TileProp } from "../components/types";
+import Answer from '../components/answer';
+import GameManager from '../lib/gameManager';
+import Grade from '../components/grade';
+import Head from 'next/head';
+import InteractiveWord from '../components/interactiveWord';
+import Score from '../components/score';
+import Tile from '../components/tile';
+import { AnswerProp, TileProp } from '../components/types';
+import { useState } from 'react';
 
 let game = GameManager.nextGame();
 
@@ -42,6 +42,17 @@ function Home() {
         setScramble(scramble.concat(tile).sort((a, b) => a.index - b.index));
     }
 
+    function revealAnswers() {
+        answers.forEach(answer => {
+            if (!answer.wasFound) {
+                answer.wasFound = true;
+                answer.wasRevealed = true;
+            }
+        });
+
+        setAnswers(answers);
+    }
+
     function tryEnterWord() {
         const word = entry.map((m) => m.letter).join("");
         const answerIndex = answers.findIndex((f) => f.word === word && !f.wasFound);
@@ -72,7 +83,7 @@ function Home() {
                 <main>
                     <div className="score-container">
                         <Score label="Score" score={score}></Score>
-                        <Grade max={maxScore} score={0}></Grade>
+                        <Grade max={maxScore} score={score}></Grade>
                         <Score label="Max" score={maxScore} align="right"></Score>
                     </div>
 
@@ -88,6 +99,7 @@ function Home() {
                     </div>
 
                     <div className="enter-container">
+                        <Tile value="Reveal" onTap={revealAnswers}></Tile>
                         <Tile value="Enter" onTap={tryEnterWord}></Tile>
                     </div>
                 </main>
@@ -139,7 +151,7 @@ function Home() {
                     display: flex;
                     flex-grow: 1;
                     font-size: 60px;
-                    padding: 16px 0;
+                    padding: 16px 15%;
                     overflow-x: auto;
                     -ms-overflow-style: none; /* IE and Edge */
                     scrollbar-width: none; /* Firefox */
@@ -164,7 +176,7 @@ function Home() {
                 }
 
                 .entry-container > * {
-                    height: 100px;
+                    height: 75px;
                 }
 
                 .main-container > * {
@@ -175,8 +187,8 @@ function Home() {
                 .enter-container {
                     align-items: center;
                     display: flex;
-                    justify-content: flex-end;
-                    padding: 4px 4px 16px 4px;
+                    justify-content: space-between;
+                    padding: 32px 6px 16px 6px;
                 }
 
                 footer {
@@ -184,7 +196,7 @@ function Home() {
                     display: flex;
                     font-variant: small-caps;
                     justify-content: space-between;
-                    padding: 16px;
+                    padding: 16px 10px;
                     width: 100%;
                 }
 
