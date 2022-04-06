@@ -7,6 +7,7 @@ function Answer({ word, wasFound, wasRevealed = false }: AnswerProp) {
     let [wasScrolled, setWasScrolled] = useState(false);
 
     if (!wasRevealed && wasFound && !wasScrolled) {
+        console.log('1');
         useEffect(() => {
             if (labelRef?.current) {
                 labelRef.current.scrollIntoView({

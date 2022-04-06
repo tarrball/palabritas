@@ -1,16 +1,18 @@
-import Answer from '../components/answer';
-import GameManager from '../lib/gameManager';
-import Grade from '../components/grade';
-import Head from 'next/head';
-import InteractiveWord from '../components/interactiveWord';
-import Score from '../components/score';
-import Tile from '../components/tile';
-import { AnswerProp, TileProp } from '../components/types';
-import { useState } from 'react';
+import Answer from "../components/answer";
+import GameManager from "../lib/gameManager";
+import Grade from "../components/grade";
+import Head from "next/head";
+import InteractiveWord from "../components/interactiveWord";
+import Score from "../components/score";
+import Tile from "../components/tile";
+import { AnswerProp, TileProp } from "../components/types";
+import { useState } from "react";
 
 let game = GameManager.nextGame();
 
 function Home() {
+    console.log('HOME!');
+    
     const [scramble, setScramble] = useState<TileProp[]>(makeTiles(game.word));
     const [entry, setEntry] = useState<TileProp[]>([]);
     const [answers, setAnswers] = useState<AnswerProp[]>(makeAnswers(game.answers));
@@ -18,10 +20,19 @@ function Home() {
     const [maxScore, setMaxScore] = useState(makeMaxScore(game.answers));
 
     function makeAnswers(answers: string[]): AnswerProp[] {
-        return answers.map((answer) => ({ word: answer, wasFound: false, shouldScroll: false }));
+        console.log('makeAnswers');
+
+        return answers.map((answer) => ({ 
+            word: answer, 
+            wasFound: false, 
+            wasRevealed: false,
+            shouldScroll: false 
+        }));
     }
 
     function makeMaxScore(answers: string[]): number {
+        console.log('makeMaxScore');
+
         const charCount = answers.reduce((acc, x) => acc + x.length, 0);
         const maxScore = charCount * 10;
 
@@ -29,21 +40,29 @@ function Home() {
     }
 
     function makeTiles(word: string): TileProp[] {
+        console.log('makeTiles');
+
         return Array.from(word).map((letter, i) => ({ letter, index: i }));
     }
 
     function popScramble(tile: TileProp) {
+        console.log('popScramble');
+
         setScramble(scramble.filter((f) => f.index !== tile.index));
         setEntry(entry.concat(tile));
     }
 
     function popEntry(tile: TileProp) {
+        console.log('popEntry');
+
         setEntry(entry.filter((f) => f.index !== tile.index));
         setScramble(scramble.concat(tile).sort((a, b) => a.index - b.index));
     }
 
     function revealAnswers() {
-        answers.forEach(answer => {
+        console.log('revealAnswers');
+
+        answers.forEach((answer) => {
             if (!answer.wasFound) {
                 answer.wasFound = true;
                 answer.wasRevealed = true;
@@ -54,14 +73,16 @@ function Home() {
     }
 
     function tryEnterWord() {
+        console.log('tryEnterWord');
+
         const word = entry.map((m) => m.letter).join("");
         const answerIndex = answers.findIndex((f) => f.word === word && !f.wasFound);
 
         if (answerIndex >= 0) {
-            answers.forEach(answer => answer.shouldScroll = false);
+            answers.forEach((answer) => (answer.shouldScroll = false));
             answers[answerIndex].shouldScroll = true;
             answers[answerIndex].wasFound = true;
-            
+
             const newScramble = scramble.concat(...entry);
 
             setAnswers(answers);
