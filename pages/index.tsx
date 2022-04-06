@@ -5,12 +5,14 @@ import Head from "next/head";
 import InteractiveWord from "../components/interactiveWord";
 import Score from "../components/score";
 import Tile from "../components/tile";
-import { useState } from "react";
 import { AnswerProp, TileProp } from "../components/types";
+import { useState } from "react";
 
 let game = GameManager.nextGame();
 
 function Home() {
+    console.log('HOME!');
+    
     const [scramble, setScramble] = useState<TileProp[]>(makeTiles(game.word));
     const [entry, setEntry] = useState<TileProp[]>([]);
     const [answers, setAnswers] = useState<AnswerProp[]>(makeAnswers(game.answers));
@@ -18,10 +20,19 @@ function Home() {
     const [maxScore, setMaxScore] = useState(makeMaxScore(game.answers));
 
     function makeAnswers(answers: string[]): AnswerProp[] {
-        return answers.map((answer) => ({ word: answer, wasFound: false, shouldScroll: false }));
+        console.log('makeAnswers');
+
+        return answers.map((answer) => ({ 
+            word: answer, 
+            wasFound: false, 
+            wasRevealed: false,
+            shouldScroll: false 
+        }));
     }
 
     function makeMaxScore(answers: string[]): number {
+        console.log('makeMaxScore');
+
         const charCount = answers.reduce((acc, x) => acc + x.length, 0);
         const maxScore = charCount * 10;
 
@@ -29,28 +40,49 @@ function Home() {
     }
 
     function makeTiles(word: string): TileProp[] {
+        console.log('makeTiles');
+
         return Array.from(word).map((letter, i) => ({ letter, index: i }));
     }
 
     function popScramble(tile: TileProp) {
+        console.log('popScramble');
+
         setScramble(scramble.filter((f) => f.index !== tile.index));
         setEntry(entry.concat(tile));
     }
 
     function popEntry(tile: TileProp) {
+        console.log('popEntry');
+
         setEntry(entry.filter((f) => f.index !== tile.index));
         setScramble(scramble.concat(tile).sort((a, b) => a.index - b.index));
     }
 
+    function revealAnswers() {
+        console.log('revealAnswers');
+
+        answers.forEach((answer) => {
+            if (!answer.wasFound) {
+                answer.wasFound = true;
+                answer.wasRevealed = true;
+            }
+        });
+
+        setAnswers(answers);
+    }
+
     function tryEnterWord() {
+        console.log('tryEnterWord');
+
         const word = entry.map((m) => m.letter).join("");
         const answerIndex = answers.findIndex((f) => f.word === word && !f.wasFound);
 
         if (answerIndex >= 0) {
-            answers.forEach(answer => answer.shouldScroll = false);
+            answers.forEach((answer) => (answer.shouldScroll = false));
             answers[answerIndex].shouldScroll = true;
             answers[answerIndex].wasFound = true;
-            
+
             const newScramble = scramble.concat(...entry);
 
             setAnswers(answers);
@@ -72,7 +104,7 @@ function Home() {
                 <main>
                     <div className="score-container">
                         <Score label="Score" score={score}></Score>
-                        <Grade max={maxScore} score={0}></Grade>
+                        <Grade max={maxScore} score={score}></Grade>
                         <Score label="Max" score={maxScore} align="right"></Score>
                     </div>
 
@@ -88,6 +120,7 @@ function Home() {
                     </div>
 
                     <div className="enter-container">
+                        <Tile value="Reveal" onTap={revealAnswers}></Tile>
                         <Tile value="Enter" onTap={tryEnterWord}></Tile>
                     </div>
                 </main>
@@ -139,7 +172,7 @@ function Home() {
                     display: flex;
                     flex-grow: 1;
                     font-size: 60px;
-                    padding: 16px 0;
+                    padding: 16px 15%;
                     overflow-x: auto;
                     -ms-overflow-style: none; /* IE and Edge */
                     scrollbar-width: none; /* Firefox */
@@ -164,7 +197,7 @@ function Home() {
                 }
 
                 .entry-container > * {
-                    height: 100px;
+                    height: 75px;
                 }
 
                 .main-container > * {
@@ -175,8 +208,8 @@ function Home() {
                 .enter-container {
                     align-items: center;
                     display: flex;
-                    justify-content: flex-end;
-                    padding: 4px 4px 16px 4px;
+                    justify-content: space-between;
+                    padding: 32px 6px 16px 6px;
                 }
 
                 footer {
@@ -184,7 +217,7 @@ function Home() {
                     display: flex;
                     font-variant: small-caps;
                     justify-content: space-between;
-                    padding: 16px;
+                    padding: 16px 10px;
                     width: 100%;
                 }
 

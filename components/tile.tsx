@@ -11,7 +11,10 @@ function Tile({ value, onTap }: Props) {
             </button>
             <style jsx>{`
                 div {
+                    align-items: center;
+                    display: flex;
                     flex: 1 1 0;
+                    justify-content: center;
                 }
                 
                 div.letter {
@@ -23,14 +26,14 @@ function Tile({ value, onTap }: Props) {
                 }
 
                 button {
-                    background: #333030e8;
+                    background: transparent;
                     color: white;
                     cursor: pointer;
                     display: inline-block;
-                    font-size: 170%;
+                    font-size: 200%;
                     font-weight: bold;
                     height: 50px;
-                    padding: 4px;
+                    padding-bottom: 2px;
                     text-transform: uppercase;
                     width: calc(100% - 8px);
                 }
