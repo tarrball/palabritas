@@ -1,7 +1,7 @@
 export interface Answer {
   word: string;
   letters: string[];
-  isRevealed: boolean;
+  isFound: boolean;
 }
 
 export interface Letter {

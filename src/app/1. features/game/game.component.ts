@@ -10,7 +10,9 @@ import {
   selectAnswers,
   selectClickableLetters,
   selectClickedLetters,
+  selectEarnedPoints,
   selectMostRecentAnswer,
+  selectPotentialPoints,
 } from 'src/app/2. store/game/game.selectors';
 import { Answer, Letter } from 'src/app/2. store/game/game.state';
 
@@ -23,11 +25,15 @@ export class GameComponent implements OnInit {
   public answers$: Observable<Answer[]>;
   public clickableLetters$: Observable<Letter[]>;
   public clickedLetters$: Observable<Letter[]>;
+  public earnedPoints$: Observable<number>;
+  public potentialPoints$: Observable<number>;
 
   constructor(private readonly store: Store) {
     this.answers$ = this.store.select(selectAnswers);
     this.clickableLetters$ = this.store.select(selectClickableLetters);
     this.clickedLetters$ = this.store.select(selectClickedLetters);
+    this.earnedPoints$ = this.store.select(selectEarnedPoints);
+    this.potentialPoints$ = this.store.select(selectPotentialPoints);
   }
 
   public ngOnInit(): void {

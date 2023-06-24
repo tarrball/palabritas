@@ -17,7 +17,7 @@ export const gameReducer = createReducer(
         // TODO a bit of redundancy here
         word: answer,
         letters: Array.from(answer),
-        isRevealed: false,
+        isFound: false,
       }));
 
       draft.scrambedLetters = Array.from(word).map((letter, index) => ({
@@ -62,7 +62,7 @@ export const gameReducer = createReducer(
       );
 
       if (matchingAnswer) {
-        matchingAnswer.isRevealed = true;
+        matchingAnswer.isFound = true;
         draft.mostRecentAnswer = submittedWord;
       }
 

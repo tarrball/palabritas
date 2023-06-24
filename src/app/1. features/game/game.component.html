@@ -1,7 +1,12 @@
+<div class="container">
+  <div>Points: {{ earnedPoints$ | async }}</div>
+  <div>Total Points: {{ potentialPoints$ | async }}</div>
+</div>
+
 <div class="container answer-container">
   <div class="word" *ngFor="let answer of answers$ | async" [id]="answer.word">
     <span class="letter" *ngFor="let letter of answer.letters">
-      {{ answer.isRevealed ? letter : "_" }}
+      {{ answer.isFound ? letter : "_" }}
     </span>
   </div>
 </div>
