@@ -10,6 +10,7 @@ import { metaReducers, reducers } from './2. store';
 import { EffectsModule } from '@ngrx/effects';
 import { GameEffects } from './2. store/game/game.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [AppComponent, GameComponent],
@@ -17,6 +18,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule,
     StoreModule.forRoot(reducers, {
       metaReducers,
       runtimeChecks: {

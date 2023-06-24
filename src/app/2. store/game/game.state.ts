@@ -1,10 +1,12 @@
 export interface Answer {
   word: string;
+  letters: string[];
   isRevealed: boolean;
 }
 
 export interface Letter {
   value: string;
+  index: number;
   typedIndex: number | undefined;
 }
 

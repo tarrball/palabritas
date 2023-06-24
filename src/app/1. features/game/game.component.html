@@ -1,1 +1,32 @@
-<p>game works!</p>
+<div class="container answer-container">
+  <div class="word" *ngFor="let answer of answers$ | async" [id]="answer.word">
+    <span class="letter" *ngFor="let letter of answer.letters">
+      {{ answer.isRevealed ? letter : "_" }}
+    </span>
+  </div>
+</div>
+
+<div class="container">
+  <button
+    mat-raised-button
+    *ngFor="let letter of clickedLetters$ | async"
+    (click)="clickLetter(letter)"
+  >
+    {{ letter.value }}
+  </button>
+</div>
+
+<div class="container">
+  <button
+    mat-raised-button
+    *ngFor="let letter of clickableLetters$ | async"
+    (click)="clickLetter(letter)"
+  >
+    {{ letter.value }}
+  </button>
+</div>
+
+<div class="container">
+  <button mat-raised-button (click)="clickNewGame()">New Game</button>
+  <button mat-raised-button (click)="clickEnter()">Enter</button>
+</div>
