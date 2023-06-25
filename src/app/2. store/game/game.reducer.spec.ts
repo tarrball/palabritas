@@ -1,4 +1,4 @@
-import { INIT, select } from '@ngrx/store';
+import { INIT } from '@ngrx/store';
 import { gameReducer } from './game.reducer';
 import { GameState, initialState } from './game.state';
 import {

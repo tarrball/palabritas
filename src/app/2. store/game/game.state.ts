@@ -10,6 +10,10 @@ export interface Letter {
   typedIndex: number | undefined;
 }
 
+export interface TypedLetter extends Letter {
+  typedIndex: number;
+}
+
 export interface GameState {
   answers: Answer[];
   scrambledLetters: Letter[];

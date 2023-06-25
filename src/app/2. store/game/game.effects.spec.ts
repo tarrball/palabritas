@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { Action } from '@ngrx/store';
-import { MockStore, provideMockStore } from '@ngrx/store/testing';
+import { provideMockStore } from '@ngrx/store/testing';
 import { provideMockActions } from '@ngrx/effects/testing';
 import { Observable, of, toArray } from 'rxjs';
 import { GameService } from 'src/app/3. services/game.service';
@@ -12,7 +12,6 @@ import { newGameRequested, newGameStarted } from './game.actions';
 describe('GameEffects', () => {
   let effects: GameEffects;
   let actions$: Observable<Action>;
-  let mockStore: MockStore;
   let gameServiceSpy: jasmine.SpyObj<GameService>;
 
   beforeEach(() => {
@@ -30,7 +29,6 @@ describe('GameEffects', () => {
       ],
     });
 
-    mockStore = TestBed.inject(MockStore);
     effects = TestBed.inject(GameEffects);
   });
 

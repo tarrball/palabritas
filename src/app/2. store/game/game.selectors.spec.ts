@@ -100,7 +100,7 @@ describe('GameSelectors', () => {
 
     describe('selectPotentialPoints', () => {
       it('should select the total points that can be earned in the current game', () => {
-        let state = generateGameState(3);
+        const state = generateGameState(3);
         let expectedPoints = state.answers[0].word.length * 10;
         expectedPoints += state.answers[1].word.length * 10;
         expectedPoints += state.answers[2].word.length * 10;
