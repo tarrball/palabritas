@@ -1,0 +1,54 @@
+<header class="flex-center">
+  <h1 class="w-100">Palabritas</h1>
+</header>
+
+<main class="flex-grow-1">
+  <div class="flex-center-between">
+    <div>Points: {{ earnedPoints$ | async }}</div>
+    <div>Total Points: {{ potentialPoints$ | async }}</div>
+  </div>
+
+  <div class="flex-center hori-scroll answers-container">
+    <div
+      class="flex-center word"
+      *ngFor="let answer of answers$ | async"
+      [id]="answer.word"
+    >
+      <span class="letter" *ngFor="let letter of answer.letters">
+        {{ answer.isFound ? letter : "_" }}
+      </span>
+    </div>
+  </div>
+
+  <div class="flex-center-center letter-button-container">
+    <button
+      mat-raised-button
+      *ngFor="let letter of clickedLetters$ | async"
+      (click)="clickLetter(letter)"
+    >
+      {{ letter.value }}
+    </button>
+  </div>
+
+  <div class="flex-center-center letter-button-container">
+    <button
+      mat-raised-button
+      *ngFor="let letter of clickableLetters$ | async"
+      (click)="clickLetter(letter)"
+    >
+      {{ letter.value }}
+    </button>
+  </div>
+
+  <div class="flex-center-between">
+    <button mat-raised-button (click)="clickNewGame()">New Game</button>
+    <button mat-raised-button (click)="clickEnter()">Enter</button>
+  </div>
+</main>
+
+<footer class="flex-center-between">
+  <span>andrew@tarrball.com</span>
+  <a href="https://github.com/tarrball/palabritas" target="_blank"
+    >View on GitHub</a
+  >
+</footer>
