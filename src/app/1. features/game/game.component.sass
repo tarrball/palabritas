@@ -1,20 +1,35 @@
-.container
+:host
   display: flex
-  align-items: center
-  justify-content: space-between
-  max-width: 500px
-  min-height: 100px
+  flex-direction: column
+  font-variant: small-caps
+  max-width: 496px
 
-.answer-container
-  display: flex
-  align-items: center
-  justify-content: space-between
-  min-height: 300px
-  overflow-x: auto
+header
+  h1
+    flex-grow: 1
+    text-align: center
+
+main
+  .letter-buttons
+    button
+      margin: 0 4px
+
+footer
+  margin-top: 64px
+
+  span
+    text-transform: uppercase
+
+.answers-container
+  height: 160px
+
+.letter-button-container
+  min-height: 96px
+
+  button
+    margin: 0 6px
 
 .word
-  display: flex
-  align-items: center
   font-size: 24px
   padding: 0 8px
 

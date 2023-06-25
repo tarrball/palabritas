@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* Utilities */
+
+.d-flex
+  display: flex !important
+
+.align-items-center
+  align-items: center !important
+
+.flex-grow-1
+  flex-grow: 1 !important
+
+.justify-content-center
+  justify-content: center !important
+
+.justify-content-between
+  justify-content: space-between !important
+
+.h-100
+  height: 100% !important
+
+.w-100
+  width: 100% !important
+
+.flex-center
+  @extend .d-flex
+  @extend .align-items-center
+
+.flex-center-center
+  @extend .flex-center
+  @extend .justify-content-center
+
+.flex-center-between
+  @extend .flex-center
+  @extend .justify-content-between
+
+.hori-scroll
+  overflow-x: auto
+
+/* Material Overrides */
+
+app-game 
+  .mdc-button
+    min-width: 50px
