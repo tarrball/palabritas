@@ -1,26 +1,26 @@
 import { createReducer, on } from '@ngrx/store';
-import { initialState } from './game.state';
+import { GameState, Letter, initialState } from './game.state';
 import {
   letterTapped,
   newGameStarted,
   newGameRequested,
   wordSubmitted,
 } from './game.actions';
+import * as shared from './game.shared';
 import { produce } from 'immer';
 
 export const gameReducer = createReducer(
   initialState,
-  on(newGameRequested, (state) => state),
+  on(newGameRequested, (state): GameState => state),
   on(newGameStarted, (state, { word, answers }) =>
     produce(state, (draft) => {
       draft.answers = answers.map((answer) => ({
-        // TODO a bit of redundancy here
         word: answer,
         letters: Array.from(answer),
         isFound: false,
       }));
 
-      draft.scrambedLetters = Array.from(word).map((letter, index) => ({
+      draft.scrambledLetters = Array.from(word).map((letter, index) => ({
         value: letter,
         index,
         typedIndex: undefined,
@@ -29,36 +29,25 @@ export const gameReducer = createReducer(
   ),
   on(letterTapped, (state, { index }) =>
     produce(state, (draft) => {
-      if (draft.scrambedLetters[index].typedIndex !== undefined) {
-        draft.scrambedLetters[index].typedIndex = undefined;
-        return;
-      }
+      const letter = draft.scrambledLetters[index];
 
-      const typedIndexes = draft.scrambedLetters
-        .map((l) => l.typedIndex)
-        .filter((i) => i !== undefined)
-        .sort();
-
-      if (typedIndexes.length) {
-        const lastTypedIndex = typedIndexes[typedIndexes.length - 1];
-        draft.scrambedLetters[index].typedIndex = lastTypedIndex! + 1;
+      if (letter.typedIndex === undefined) {
+        letter.typedIndex = calculateNextTypedIndex(draft.scrambledLetters);
       } else {
-        draft.scrambedLetters[index].typedIndex = 0;
+        letter.typedIndex = undefined;
       }
     })
   ),
   on(wordSubmitted, (state) =>
     produce(state, (draft) => {
-      const submittedLetters = draft.scrambedLetters
-        .filter((letter) => letter.typedIndex !== undefined)
-        .sort((a, b) => a.typedIndex! - b.typedIndex!);
+      const submittedLetters = shared.getTypedLetters(draft.scrambledLetters);
 
       const submittedWord = submittedLetters
         .map((letter) => letter.value)
         .join('');
 
       const matchingAnswer = draft.answers.find(
-        (answer) => answer.letters.join('') === submittedWord
+        (answer) => answer.word === submittedWord
       );
 
       if (matchingAnswer) {
@@ -66,9 +55,19 @@ export const gameReducer = createReducer(
         draft.mostRecentAnswer = submittedWord;
       }
 
-      draft.scrambedLetters.forEach((letter) => {
+      draft.scrambledLetters.forEach((letter) => {
         letter.typedIndex = undefined;
       });
     })
   )
 );
+
+function calculateNextTypedIndex(letters: Letter[]): number {
+  const lastIndex =
+    shared
+      .getTypedLetters(letters)
+      .map((letter) => letter.typedIndex)
+      .reverse()[0] ?? -1;
+
+  return lastIndex + 1;
+}

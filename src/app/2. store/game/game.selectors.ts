@@ -1,5 +1,6 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { GameState } from './game.state';
+import * as shared from './game.shared';
 
 const PointsPerLetter = 10;
 
@@ -11,13 +12,15 @@ export const selectAnswers = createSelector(
 );
 
 export const selectClickableLetters = createSelector(selectFeature, (state) =>
-  state.scrambedLetters.filter((letter) => letter.typedIndex === undefined)
+  state.scrambledLetters.filter((letter) => letter.typedIndex === undefined)
 );
 
 export const selectClickedLetters = createSelector(selectFeature, (state) =>
-  state.scrambedLetters
-    .filter((letter) => letter.typedIndex !== undefined)
-    .sort((a, b) => a.typedIndex! - b.typedIndex!)
+  state.scrambledLetters
+    .filter(shared.typedLetterFilter)
+    .sort((a, b) =>
+      shared.typedLetterSort(shared.typedLetterMap(a), shared.typedLetterMap(b))
+    )
 );
 
 export const selectMostRecentAnswer = createSelector(

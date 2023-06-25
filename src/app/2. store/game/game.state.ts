@@ -10,14 +10,18 @@ export interface Letter {
   typedIndex: number | undefined;
 }
 
+export interface TypedLetter extends Letter {
+  typedIndex: number;
+}
+
 export interface GameState {
   answers: Answer[];
-  scrambedLetters: Letter[];
+  scrambledLetters: Letter[];
   mostRecentAnswer: string | undefined;
 }
 
 export const initialState: GameState = {
   answers: [],
-  scrambedLetters: [],
+  scrambledLetters: [],
   mostRecentAnswer: undefined,
 };

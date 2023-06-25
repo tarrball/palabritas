@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable, filter } from 'rxjs';
 import {
@@ -28,7 +29,10 @@ export class GameComponent implements OnInit {
   public earnedPoints$: Observable<number>;
   public potentialPoints$: Observable<number>;
 
-  constructor(private readonly store: Store) {
+  constructor(
+    @Inject(DOCUMENT) private readonly document: Document,
+    private readonly store: Store
+  ) {
     this.answers$ = this.store.select(selectAnswers);
     this.clickableLetters$ = this.store.select(selectClickableLetters);
     this.clickedLetters$ = this.store.select(selectClickedLetters);
@@ -41,12 +45,14 @@ export class GameComponent implements OnInit {
 
     this.store
       .select(selectMostRecentAnswer)
+      // falsy are filtered out so we can safely use the non-null assertion operator
       .pipe(filter((answer) => !!answer))
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       .subscribe((answer) => this.scrollToRevealedAnswer(answer!));
   }
 
   private scrollToRevealedAnswer(answer: string): void {
-    const answerElement = document.getElementById(answer);
+    const answerElement = this.document.getElementById(answer);
     answerElement?.scrollIntoView({ behavior: 'smooth', inline: 'center' });
   }
 
