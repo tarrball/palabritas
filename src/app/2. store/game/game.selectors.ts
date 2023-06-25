@@ -11,11 +11,11 @@ export const selectAnswers = createSelector(
 );
 
 export const selectClickableLetters = createSelector(selectFeature, (state) =>
-  state.scrambedLetters.filter((letter) => letter.typedIndex === undefined)
+  state.scrambledLetters.filter((letter) => letter.typedIndex === undefined)
 );
 
 export const selectClickedLetters = createSelector(selectFeature, (state) =>
-  state.scrambedLetters
+  state.scrambledLetters
     .filter((letter) => letter.typedIndex !== undefined)
     .sort((a, b) => a.typedIndex! - b.typedIndex!)
 );

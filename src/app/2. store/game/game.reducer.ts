@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { initialState } from './game.state';
+import { Letter, initialState } from './game.state';
 import {
   letterTapped,
   newGameStarted,
@@ -14,13 +14,12 @@ export const gameReducer = createReducer(
   on(newGameStarted, (state, { word, answers }) =>
     produce(state, (draft) => {
       draft.answers = answers.map((answer) => ({
-        // TODO a bit of redundancy here
         word: answer,
         letters: Array.from(answer),
         isFound: false,
       }));
 
-      draft.scrambedLetters = Array.from(word).map((letter, index) => ({
+      draft.scrambledLetters = Array.from(word).map((letter, index) => ({
         value: letter,
         index,
         typedIndex: undefined,
@@ -29,27 +28,17 @@ export const gameReducer = createReducer(
   ),
   on(letterTapped, (state, { index }) =>
     produce(state, (draft) => {
-      if (draft.scrambedLetters[index].typedIndex !== undefined) {
-        draft.scrambedLetters[index].typedIndex = undefined;
-        return;
-      }
+      const letter = draft.scrambledLetters[index];
 
-      const typedIndexes = draft.scrambedLetters
-        .map((l) => l.typedIndex)
-        .filter((i) => i !== undefined)
-        .sort();
-
-      if (typedIndexes.length) {
-        const lastTypedIndex = typedIndexes[typedIndexes.length - 1];
-        draft.scrambedLetters[index].typedIndex = lastTypedIndex! + 1;
-      } else {
-        draft.scrambedLetters[index].typedIndex = 0;
-      }
+      letter.typedIndex =
+        letter.typedIndex !== undefined
+          ? undefined
+          : calculateNextTypedIndex(draft.scrambledLetters);
     })
   ),
   on(wordSubmitted, (state) =>
     produce(state, (draft) => {
-      const submittedLetters = draft.scrambedLetters
+      const submittedLetters = draft.scrambledLetters
         .filter((letter) => letter.typedIndex !== undefined)
         .sort((a, b) => a.typedIndex! - b.typedIndex!);
 
@@ -66,9 +55,19 @@ export const gameReducer = createReducer(
         draft.mostRecentAnswer = submittedWord;
       }
 
-      draft.scrambedLetters.forEach((letter) => {
+      draft.scrambledLetters.forEach((letter) => {
         letter.typedIndex = undefined;
       });
     })
   )
 );
+
+function calculateNextTypedIndex(letters: Letter[]): number {
+  const lastIndex =
+    letters
+      .filter((l) => l.typedIndex !== undefined)
+      .map((l) => l.typedIndex!)
+      .sort((a, b) => b - a)[0] ?? -1;
+
+  return lastIndex + 1;
+}

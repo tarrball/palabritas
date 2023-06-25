@@ -12,12 +12,12 @@ export interface Letter {
 
 export interface GameState {
   answers: Answer[];
-  scrambedLetters: Letter[];
+  scrambledLetters: Letter[];
   mostRecentAnswer: string | undefined;
 }
 
 export const initialState: GameState = {
   answers: [],
-  scrambedLetters: [],
+  scrambledLetters: [],
   mostRecentAnswer: undefined,
 };
