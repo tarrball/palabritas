@@ -15,6 +15,9 @@
 .justify-content-between
   justify-content: space-between !important
 
+.justify-content-end
+  justify-content: flex-end !important
+
 .h-100
   height: 100% !important
 
@@ -33,8 +36,18 @@
   @extend .flex-center
   @extend .justify-content-between
 
+.flex-center-end
+  @extend .flex-center
+  @extend .justify-content-end
+
 .hori-scroll
   overflow-x: auto
+
+.spacer
+  flex: 1 1 auto
+
+.text-align-center
+  text-align: center
 
 /* Material Overrides */
 

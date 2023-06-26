@@ -11,6 +11,9 @@ import { EffectsModule } from '@ngrx/effects';
 import { GameEffects } from './2. store/game/game.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [AppComponent, GameComponent],
@@ -19,6 +22,9 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule,
     StoreModule.forRoot(reducers, {
       metaReducers,
       runtimeChecks: {

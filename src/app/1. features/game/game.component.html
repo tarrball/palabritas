@@ -1,5 +1,32 @@
-<header class="flex-center">
-  <h1 class="w-100">Palabritas</h1>
+<header>
+  <mat-toolbar>
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="clickNewGame()">New Game</button>
+    </mat-menu>
+
+    <!-- <span>Palabritas</span> -->
+    <span class="flex-grow-1 text-align-center">Palabritas</span>
+
+    <a
+      class="github-logo d-flex align-items-center"
+      target="_blank"
+      href="https://github.com/tarrball/palabritas"
+    >
+      <img
+        src="../../../assets/github-mark-white.png"
+        alt="GitHub logo"
+        aria-label="View on GitHub"
+      />
+    </a>
+  </mat-toolbar>
 </header>
 
 <main class="flex-grow-1">
@@ -40,15 +67,7 @@
     </button>
   </div>
 
-  <div class="flex-center-between">
-    <button mat-raised-button (click)="clickNewGame()">New Game</button>
+  <div class="flex-center-end">
     <button mat-raised-button (click)="clickEnter()">Enter</button>
   </div>
 </main>
-
-<footer class="flex-center-between">
-  <span>andrew@tarrball.com</span>
-  <a href="https://github.com/tarrball/palabritas" target="_blank"
-    >View on GitHub</a
-  >
-</footer>
