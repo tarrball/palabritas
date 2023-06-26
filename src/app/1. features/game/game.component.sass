@@ -9,9 +9,12 @@
     height: 24px
 
 main
-  .letter-buttons
-    button
-      margin: 0 4px
+  margin: 0 auto
+  padding: 16px
+  max-width: 600px
+
+.points
+  font-weight: bold
 
 .answers-container
   height: 160px
@@ -20,11 +23,15 @@ main
   min-height: 96px
 
   button
-    margin: 0 6px
+    margin: 0 4px
+
+  @media screen and (max-width: 375px)
+    button
+      min-width: 14.5%
 
 .word
   font-size: 24px
   padding: 0 8px
 
 .letter
-  padding: 0 8px
+  padding: 0 4px
