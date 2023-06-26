@@ -4,6 +4,6 @@
 
 For example, if your word unscrambles to be "SECURE", this word also contains "CURE", "SURE", "RESCUE", and so on.
 
-Words are pulled from Webster's Unabridged Dictionary (August 22, 2009) provided by [Project Gutenberg](https://www.gutenberg.org/ebooks/29765).
+Words are pulled from Webster's Unabridged Dictionary (August 22, 2009) provided by [Project Gutenberg](https://www.gutenberg.org/ebooks/29765). It's not the best word list, but it'll do for now.
 
-The game is still rough around the edges, but I'm working on it.
+The game is still rough around the edges.
