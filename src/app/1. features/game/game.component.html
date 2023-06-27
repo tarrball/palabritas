@@ -1,33 +1,3 @@
-<header>
-  <mat-toolbar>
-    <button
-      mat-icon-button
-      [matMenuTriggerFor]="menu"
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
-    >
-      <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="clickNewGame()">New Game</button>
-    </mat-menu>
-
-    <span class="flex-grow-1 text-align-center">Palabs</span>
-
-    <a
-      class="github-logo d-flex align-items-center"
-      target="_blank"
-      href="https://github.com/tarrball/palabritas"
-    >
-      <img
-        src="../../../assets/github-mark-white.png"
-        alt="GitHub logo"
-        aria-label="View on GitHub"
-      />
-    </a>
-  </mat-toolbar>
-</header>
-
 <main class="flex-grow-1">
   <div class="flex-center-between">
     <div>
@@ -45,7 +15,7 @@
       [id]="answer.word"
     >
       <span class="letter" *ngFor="let letter of answer.letters">
-        {{ answer.isFound ? letter : "_" }}
+        {{ answer.state === "not-found" ? "_" : letter }}
       </span>
     </div>
   </div>

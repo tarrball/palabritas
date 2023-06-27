@@ -5,6 +5,7 @@ import {
   letterTapped,
   newGameRequested,
   newGameStarted,
+  revealGameRequested,
   wordSubmitted,
 } from './game.actions';
 import { selectClickableLetters, selectClickedLetters } from './game.selectors';
@@ -44,12 +45,12 @@ describe('GameReducer', () => {
         {
           word: 'set',
           letters: ['s', 'e', 't'],
-          isFound: false,
+          state: 'not-found',
         },
         {
           word: 'test',
           letters: ['t', 'e', 's', 't'],
-          isFound: false,
+          state: 'not-found',
         },
       ]);
     });
@@ -130,6 +131,24 @@ describe('GameReducer', () => {
       });
     });
 
+    describe('revealGameRequested', () => {
+      it(`should reveal the remaining 'not-found' words`, () => {
+        [0, 1, 2, 3].forEach(
+          (i) =>
+            (state = gameReducer(
+              state,
+              letterTapped({ index: state.scrambledLetters[i].index })
+            ))
+        );
+
+        state = gameReducer(state, wordSubmitted());
+        state = gameReducer(state, revealGameRequested());
+
+        expect(state.answers[0].state).toEqual('revealed');
+        expect(state.answers[1].state).toEqual('found');
+      });
+    });
+
     describe('wordSubmitted', () => {
       beforeEach(() => {
         state = gameReducer(
@@ -158,8 +177,8 @@ describe('GameReducer', () => {
           (answer) => answer.word === 'test'
         )[0];
 
-        expect(foundAnswer.isFound).toEqual(true);
-        expect(remainingAnswer.isFound).toEqual(false);
+        expect(foundAnswer.state).toEqual('found');
+        expect(remainingAnswer.state).toEqual('not-found');
       });
 
       it('should reset the clicked letters if the word is correct', () => {

@@ -7,6 +7,6 @@ export function generateAnswer(): Answer {
   return {
     word,
     letters: Array.from({ length: word.length }, faker.string.alpha),
-    isFound: false,
+    state: 'not-found',
   };
 }

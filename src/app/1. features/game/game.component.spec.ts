@@ -54,16 +54,6 @@ describe('GameComponent', () => {
     });
   });
 
-  describe('clickNewGame', () => {
-    it('should dispatch the newGameRequested action', () => {
-      const dispatchSpy = spyOn(mockStore, 'dispatch');
-
-      component.clickNewGame();
-
-      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested());
-    });
-  });
-
   describe('ngOnInit', () => {
     it('should dispatch the newGameRequested action', () => {
       const dispatchSpy = spyOn(mockStore, 'dispatch');

@@ -1,8 +1,6 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { GameState } from './game.state';
+import { Answer, GameState } from './game.state';
 import * as shared from './game.shared';
-
-const PointsPerLetter = 10;
 
 export const selectFeature = createFeatureSelector<GameState>('game');
 
@@ -29,14 +27,12 @@ export const selectMostRecentAnswer = createSelector(
 );
 
 export const selectEarnedPoints = createSelector(selectAnswers, (answers) =>
-  answers
-    .filter((answer) => answer.isFound)
-    .reduce((acc, answer) => acc + answer.letters.length * PointsPerLetter, 0)
+  answers.filter((answer) => answer.state === 'found').reduce(pointsReducer, 0)
 );
 
 export const selectPotentialPoints = createSelector(selectAnswers, (answers) =>
-  answers.reduce(
-    (acc, answer) => acc + answer.letters.length * PointsPerLetter,
-    0
-  )
+  answers.reduce(pointsReducer, 0)
 );
+
+const pointsReducer = (accumulator: number, answer: Answer) =>
+  accumulator + answer.letters.length * 10;

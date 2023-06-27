@@ -77,8 +77,10 @@ describe('GameSelectors', () => {
     describe('selectEarnedPoints', () => {
       it('should select the total points earned in the current game', () => {
         const state = generateGameState();
-        state.answers[0].isFound = true;
-        state.answers[2].isFound = true;
+        state.answers[0].state = 'found';
+        state.answers[1].state = 'not-found';
+        state.answers[2].state = 'found';
+        state.answers[3].state = 'revealed';
 
         const expectedPoints =
           Array.from(state.answers[0].word).length * 10 +
