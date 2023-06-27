@@ -63,8 +63,4 @@ export class GameComponent implements OnInit {
   public clickEnter(): void {
     this.store.dispatch(wordSubmitted());
   }
-
-  public clickNewGame(): void {
-    this.store.dispatch(newGameRequested());
-  }
 }
