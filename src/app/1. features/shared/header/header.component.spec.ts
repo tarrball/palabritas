@@ -2,7 +2,10 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
 import { MockStore, provideMockStore } from '@ngrx/store/testing';
-import { newGameRequested } from 'src/app/2. store/game/game.actions';
+import {
+  newGameRequested,
+  revealGameRequested,
+} from 'src/app/2. store/game/game.actions';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MockComponents, MockDirectives } from 'ng-mocks';
 import { MatIcon } from '@angular/material/icon';
@@ -41,6 +44,16 @@ describe('HeaderComponent', () => {
       component.clickNewGame();
 
       expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested());
+    });
+  });
+
+  describe('revealAnswers', () => {
+    it('should dispatch the revealGameRequested action', () => {
+      const dispatchSpy = spyOn(mockStore, 'dispatch');
+
+      component.revealAnswers();
+
+      expect(dispatchSpy).toHaveBeenCalledWith(revealGameRequested());
     });
   });
 });

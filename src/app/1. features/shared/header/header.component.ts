@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { newGameRequested } from 'src/app/2. store/game/game.actions';
+import {
+  newGameRequested,
+  revealGameRequested,
+} from 'src/app/2. store/game/game.actions';
 
 @Component({
   selector: 'app-header',
@@ -12,5 +15,9 @@ export class HeaderComponent {
 
   public clickNewGame(): void {
     this.store.dispatch(newGameRequested());
+  }
+
+  public revealAnswers(): void {
+    this.store.dispatch(revealGameRequested());
   }
 }

@@ -1,7 +1,9 @@
+export type AnswerState = 'found' | 'not-found' | 'revealed';
+
 export interface Answer {
   word: string;
   letters: string[];
-  isFound: boolean;
+  state: AnswerState;
 }
 
 export interface Letter {

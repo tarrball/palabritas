@@ -5,6 +5,7 @@ import {
   newGameStarted,
   newGameRequested,
   wordSubmitted,
+  revealGameRequested,
 } from './game.actions';
 import * as shared from './game.shared';
 import { produce } from 'immer';
@@ -17,7 +18,7 @@ export const gameReducer = createReducer(
       draft.answers = answers.map((answer) => ({
         word: answer,
         letters: Array.from(answer),
-        isFound: false,
+        state: 'not-found',
       }));
 
       draft.scrambledLetters = Array.from(word).map((letter, index) => ({
@@ -51,7 +52,7 @@ export const gameReducer = createReducer(
       );
 
       if (matchingAnswer) {
-        matchingAnswer.isFound = true;
+        matchingAnswer.state = 'found';
         draft.mostRecentAnswer = submittedWord;
       }
 
@@ -59,10 +60,19 @@ export const gameReducer = createReducer(
         letter.typedIndex = undefined;
       });
     })
+  ),
+  on(revealGameRequested, (state) =>
+    produce(state, (draft) => {
+      draft.answers
+        .filter((answer) => answer.state === 'not-found')
+        .forEach((answer) => {
+          answer.state = 'revealed';
+        });
+    })
   )
 );
 
-function calculateNextTypedIndex(letters: Letter[]): number {
+const calculateNextTypedIndex = (letters: Letter[]) => {
   const lastIndex =
     shared
       .getTypedLetters(letters)
@@ -70,4 +80,4 @@ function calculateNextTypedIndex(letters: Letter[]): number {
       .reverse()[0] ?? -1;
 
   return lastIndex + 1;
-}
+};

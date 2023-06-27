@@ -15,7 +15,7 @@
       [id]="answer.word"
     >
       <span class="letter" *ngFor="let letter of answer.letters">
-        {{ answer.isFound ? letter : "_" }}
+        {{ answer.state === "not-found" ? "_" : letter }}
       </span>
     </div>
   </div>
