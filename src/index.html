@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- SEO -->
+    <meta
+      name="description"
+      content="Palabritas is a casual word-finding game where you uncover hidden words from a mix of letters. Designed for relaxed play, it's simple and satisfying."
+    />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Palabritas" />
     <meta
       property="og:description"
@@ -36,6 +42,20 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Palabritas",
+        "url": "http://www.palabs.app",
+        "description": "Palabritas is a casual word-finding game where you uncover hidden words from a mix of letters. Designed for relaxed play, it's simple and satisfying.",
+        "publisher": {
+          "@type": "Person",
+          "name": "Andrew Tarr"
+        }
+      }
+    </script>
   </head>
   <body class="mat-typography">
     <app-root></app-root>
