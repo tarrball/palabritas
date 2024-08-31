@@ -27,7 +27,7 @@
     "@ngrx/store-devtools": "^18.0.2",
     "immer": "^10.1.1",
     "rxjs": "~7.8.0",
-    "tslib": "^2.6.2",
+    "tslib": "^2.7.0",
     "zone.js": "^0.14.10"
   },
   "devDependencies": {
@@ -42,9 +42,9 @@
     "@faker-js/faker": "^8.4.1",
     "@ngrx/eslint-plugin": "^18.0.2",
     "@types/jasmine": "^5.1.4",
-    "@typescript-eslint/eslint-plugin": "^8.0.1",
-    "@typescript-eslint/parser": "^8.0.1",
-    "eslint": "^9.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
     "jasmine-core": "^5.2.0",
     "karma": "^6.4.4",
     "karma-chrome-launcher": "^3.2.0",
