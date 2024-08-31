@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GameComponent } from './game.component';
@@ -64,14 +62,15 @@ describe('GameComponent', () => {
     });
 
     describe('recent answer changes', () => {
-      let eleSpy: any;
-      let docSpy: any;
+      let eleSpy: jasmine.Spy;
+      let docSpy: jasmine.Spy;
 
       beforeEach(() => {
         const document = TestBed.inject(DOCUMENT);
+        const element = document.createElement('div');
 
-        eleSpy = { scrollIntoView: jasmine.createSpy() } as any;
-        docSpy = spyOn(document, 'getElementById').and.returnValue(eleSpy);
+        docSpy = spyOn(document, 'getElementById').and.returnValue(element);
+        eleSpy = spyOn(element, 'scrollIntoView');
       });
 
       it('should listen for answer changes and scroll to the most recent answer when a new answer is found', () => {
@@ -83,7 +82,7 @@ describe('GameComponent', () => {
         mockStore.setState({ game: nextState });
 
         expect(docSpy).toHaveBeenCalledWith('test');
-        expect(eleSpy.scrollIntoView).toHaveBeenCalled();
+        expect(eleSpy).toHaveBeenCalled();
       });
 
       it('should ignore undefined answers', () => {
@@ -97,7 +96,7 @@ describe('GameComponent', () => {
         mockStore.setState({ game: { ...nextState } });
 
         expect(docSpy).not.toHaveBeenCalled();
-        expect(eleSpy.scrollIntoView).not.toHaveBeenCalled();
+        expect(eleSpy).not.toHaveBeenCalled();
       });
     });
   });
