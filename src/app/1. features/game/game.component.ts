@@ -47,7 +47,6 @@ export class GameComponent implements OnInit {
       .select(selectMostRecentAnswer)
       // falsy are filtered out so we can safely use the non-null assertion operator
       .pipe(filter((answer) => !!answer))
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       .subscribe((answer) => this.scrollToRevealedAnswer(answer!));
   }
 

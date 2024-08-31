@@ -13,7 +13,6 @@ export function typedLetterFilter(letter: Letter): boolean {
 
 export function typedLetterMap(letter: Letter): TypedLetter {
   // You cannot map an letter without a typed index to a TypedLetter
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   return { ...letter, typedIndex: letter.typedIndex! };
 }
 
