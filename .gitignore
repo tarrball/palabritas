@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Auto issue runner
-auto-issue-runner/
+/auto-issue-runner
