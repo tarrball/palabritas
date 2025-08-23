@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://palabs.app/sitemap.xml
+
+# Allow crawling of all assets
+Allow: /assets/
+
+# Disallow any admin or private paths (none currently exist)
+# Disallow: /admin/

@@ -158,6 +158,10 @@ Use our [auto issue template](.github/ISSUE_TEMPLATE/auto.md) for feature reques
 
 This project is open source. See the repository for license details.
 
+## 📖 Documentation
+
+- **SEO and Metadata**: [docs/seo.md](docs/seo.md) - Complete guide to SEO implementation, social media optimization, and structured data
+
 ## 🔗 Links
 
 - **Live Demo**: [palabs.app](https://palabs.app/)
