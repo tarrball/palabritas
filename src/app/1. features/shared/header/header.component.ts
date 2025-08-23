@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { Store } from '@ngrx/store';
 import {
   newGameRequested,
@@ -9,9 +13,11 @@ import {
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass'],
+  standalone: true,
+  imports: [MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule],
 })
 export class HeaderComponent {
-  constructor(private readonly store: Store) {}
+  private readonly store = inject(Store);
 
   public clickNewGame(): void {
     this.store.dispatch(newGameRequested());
