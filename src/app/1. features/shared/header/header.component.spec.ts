@@ -6,10 +6,7 @@ import {
   newGameRequested,
   revealGameRequested,
 } from 'src/app/2. store/game/game.actions';
-import { MatToolbar } from '@angular/material/toolbar';
-import { MockComponents, MockDirectives } from 'ng-mocks';
-import { MatIcon } from '@angular/material/icon';
-import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { initialState } from 'src/app/2. store/game/game.state';
 
 describe('HeaderComponent', () => {
@@ -19,12 +16,9 @@ describe('HeaderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        HeaderComponent,
-        MockComponents(MatIcon, MatMenu, MatToolbar),
-        MockDirectives(MatMenuTrigger),
-      ],
+      imports: [HeaderComponent],
       providers: [provideMockStore({ initialState: { game: initialState } })],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     });
 
     mockStore = TestBed.inject(MockStore);
