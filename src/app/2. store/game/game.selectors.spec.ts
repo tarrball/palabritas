@@ -1,7 +1,10 @@
 import {
   selectAnswers,
+  selectAllWordsFound,
   selectClickableLetters,
   selectClickedLetters,
+  selectCumulativeScore,
+  selectCurrentRoundPoints,
   selectEarnedPoints,
   selectMostRecentAnswer,
   selectPotentialPoints,
@@ -74,29 +77,43 @@ describe('GameSelectors', () => {
   });
 
   describe('selecting points', () => {
-    describe('selectEarnedPoints', () => {
-      it('should select the total points earned in the current game', () => {
+    describe('selectCumulativeScore', () => {
+      it('should select the cumulative score', () => {
+        const state: GameState = { ...generateGameState(), cumulativeScore: 150 };
+
+        const result = selectCumulativeScore.projector(state);
+
+        expect(result).toEqual(150);
+      });
+    });
+
+    describe('selectCurrentRoundPoints', () => {
+      it('should select points from current round only', () => {
         const state = generateGameState();
         state.answers[0].state = 'found';
         state.answers[1].state = 'not-found';
         state.answers[2].state = 'found';
-        state.answers[3].state = 'revealed';
 
         const expectedPoints =
           Array.from(state.answers[0].word).length * 10 +
           Array.from(state.answers[2].word).length * 10;
 
-        const result = selectEarnedPoints.projector(state.answers);
+        const result = selectCurrentRoundPoints.projector(state.answers);
 
         expect(result).toEqual(expectedPoints);
       });
+    });
 
-      it('should return 0 if no answers have been found', () => {
+    describe('selectEarnedPoints', () => {
+      it('should combine cumulative score with current round points', () => {
         const state = generateGameState();
+        state.answers[0].state = 'found';
+        const currentPoints = state.answers[0].word.length * 10;
+        const cumulativeScore = 100;
 
-        const result = selectEarnedPoints.projector(state.answers);
+        const result = selectEarnedPoints.projector(cumulativeScore, currentPoints);
 
-        expect(result).toEqual(0);
+        expect(result).toEqual(cumulativeScore + currentPoints);
       });
     });
 
@@ -111,6 +128,34 @@ describe('GameSelectors', () => {
 
         expect(result).toEqual(expectedPoints);
       });
+    });
+  });
+
+  describe('selectAllWordsFound', () => {
+    it('should return true when all words are found', () => {
+      const state = generateGameState(3);
+      state.answers.forEach(answer => answer.state = 'found');
+
+      const result = selectAllWordsFound.projector(state.answers);
+
+      expect(result).toBe(true);
+    });
+
+    it('should return false when some words are not found', () => {
+      const state = generateGameState(3);
+      state.answers[0].state = 'found';
+      state.answers[1].state = 'not-found';
+      state.answers[2].state = 'found';
+
+      const result = selectAllWordsFound.projector(state.answers);
+
+      expect(result).toBe(false);
+    });
+
+    it('should return false when there are no answers', () => {
+      const result = selectAllWordsFound.projector([]);
+
+      expect(result).toBe(false);
     });
   });
 });

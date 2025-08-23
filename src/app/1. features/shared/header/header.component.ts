@@ -5,7 +5,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Store } from '@ngrx/store';
 import {
-  newGameRequested,
+  resetGameRequested,
   revealGameRequested,
 } from 'src/app/2. store/game/game.actions';
 
@@ -19,8 +19,8 @@ import {
 export class HeaderComponent {
   private readonly store = inject(Store);
 
-  public clickNewGame(): void {
-    this.store.dispatch(newGameRequested());
+  public clickReset(): void {
+    this.store.dispatch(resetGameRequested());
   }
 
   public revealAnswers(): void {

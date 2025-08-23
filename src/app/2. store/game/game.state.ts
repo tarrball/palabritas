@@ -20,10 +20,12 @@ export interface GameState {
   answers: Answer[];
   scrambledLetters: Letter[];
   mostRecentAnswer: string | undefined;
+  cumulativeScore: number;
 }
 
 export const initialState: GameState = {
   answers: [],
   scrambledLetters: [],
   mostRecentAnswer: undefined,
+  cumulativeScore: 0,
 };

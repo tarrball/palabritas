@@ -26,12 +26,27 @@ export const selectMostRecentAnswer = createSelector(
   (state) => state.mostRecentAnswer
 );
 
-export const selectEarnedPoints = createSelector(selectAnswers, (answers) =>
+export const selectCumulativeScore = createSelector(
+  selectFeature,
+  (state) => state.cumulativeScore
+);
+
+export const selectCurrentRoundPoints = createSelector(selectAnswers, (answers) =>
   answers.filter((answer) => answer.state === 'found').reduce(pointsReducer, 0)
+);
+
+export const selectEarnedPoints = createSelector(
+  selectCumulativeScore,
+  selectCurrentRoundPoints,
+  (cumulative, current) => cumulative + current
 );
 
 export const selectPotentialPoints = createSelector(selectAnswers, (answers) =>
   answers.reduce(pointsReducer, 0)
+);
+
+export const selectAllWordsFound = createSelector(selectAnswers, (answers) =>
+  answers.length > 0 && answers.every((answer) => answer.state === 'found')
 );
 
 const pointsReducer = (accumulator: number, answer: Answer) =>

@@ -10,5 +10,6 @@ export function generateGameState(answerCount = 5): GameState {
       generateLetter(i)
     ),
     mostRecentAnswer: faker.word.noun(),
+    cumulativeScore: 0,
   };
 }

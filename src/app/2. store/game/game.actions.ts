@@ -15,3 +15,7 @@ export const letterTapped = createAction(
 export const wordSubmitted = createAction('[Game] Word Submitted');
 
 export const revealGameRequested = createAction('[Game] Reveal Game Requested');
+
+export const nextRoundRequested = createAction('[Game] Next Round Requested');
+
+export const resetGameRequested = createAction('[Game] Reset Game Requested');

@@ -6,6 +6,8 @@ import {
   newGameRequested,
   wordSubmitted,
   revealGameRequested,
+  nextRoundRequested,
+  resetGameRequested,
 } from './game.actions';
 import * as shared from './game.shared';
 import { produce } from 'immer';
@@ -13,8 +15,16 @@ import { produce } from 'immer';
 export const gameReducer = createReducer(
   initialState,
   on(newGameRequested, (state): GameState => state),
+  on(resetGameRequested, (): GameState => initialState),
+  on(nextRoundRequested, (state): GameState => state),
   on(newGameStarted, (state, { word, answers }) =>
     produce(state, (draft) => {
+      const currentRoundPoints = draft.answers
+        .filter((answer) => answer.state === 'found')
+        .reduce((acc, answer) => acc + answer.letters.length * 10, 0);
+      
+      draft.cumulativeScore += currentRoundPoints;
+      
       draft.answers = answers.map((answer) => ({
         word: answer,
         letters: Array.from(answer),
@@ -26,6 +36,8 @@ export const gameReducer = createReducer(
         index,
         typedIndex: undefined,
       }));
+      
+      draft.mostRecentAnswer = undefined;
     })
   ),
   on(letterTapped, (state, { index }) =>

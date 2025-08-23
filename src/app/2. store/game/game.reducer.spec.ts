@@ -5,6 +5,8 @@ import {
   letterTapped,
   newGameRequested,
   newGameStarted,
+  nextRoundRequested,
+  resetGameRequested,
   revealGameRequested,
   wordSubmitted,
 } from './game.actions';
@@ -149,7 +151,57 @@ describe('GameReducer', () => {
       });
     });
 
-    describe('wordSubmitted', () => {
+    describe('resetGameRequested', () => {
+    it('should reset to initial state', () => {
+      const stateWithScore: GameState = {
+        ...initialState,
+        cumulativeScore: 100,
+        answers: [{ word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' }],
+      };
+
+      const nextState = gameReducer(stateWithScore, resetGameRequested());
+
+      expect(nextState).toEqual(initialState);
+      expect(nextState.cumulativeScore).toBe(0);
+    });
+  });
+
+  describe('nextRoundRequested', () => {
+    it('should preserve state for effect to handle', () => {
+      const currentState: GameState = {
+        ...initialState,
+        cumulativeScore: 50,
+      };
+
+      const nextState = gameReducer(currentState, nextRoundRequested());
+
+      expect(nextState).toBe(currentState);
+    });
+  });
+
+  describe('score accumulation', () => {
+    it('should accumulate score when starting new game after completing round', () => {
+      let state: GameState = {
+        ...initialState,
+        answers: [
+          { word: 'set', letters: ['s', 'e', 't'], state: 'found' },
+          { word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' },
+        ],
+        cumulativeScore: 0,
+      };
+
+      state = gameReducer(
+        state,
+        newGameStarted({ word: 'new', answers: ['new', 'we'] })
+      );
+
+      expect(state.cumulativeScore).toBe(70); // 30 + 40 from previous round
+      expect(state.answers[0].state).toBe('not-found');
+      expect(state.answers[1].state).toBe('not-found');
+    });
+  });
+
+  describe('wordSubmitted', () => {
       beforeEach(() => {
         state = gameReducer(
           state,

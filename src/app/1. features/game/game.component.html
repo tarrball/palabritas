@@ -41,6 +41,7 @@
   </div>
 
   <div class="flex-center-end">
-    <button mat-raised-button (click)="clickEnter()">Enter</button>
+    <button mat-raised-button (click)="clickEnter()" *ngIf="(allWordsFound$ | async) === false">Enter</button>
+    <button mat-raised-button color="primary" (click)="clickNextRound()" *ngIf="allWordsFound$ | async">Next Round</button>
   </div>
 </main>

@@ -6,10 +6,12 @@ import { Observable, filter } from 'rxjs';
 import {
   letterTapped,
   newGameRequested,
+  nextRoundRequested,
   wordSubmitted,
 } from 'src/app/2. store/game/game.actions';
 import {
   selectAnswers,
+  selectAllWordsFound,
   selectClickableLetters,
   selectClickedLetters,
   selectEarnedPoints,
@@ -30,6 +32,7 @@ export class GameComponent implements OnInit {
   private readonly store = inject(Store);
 
   public answers$: Observable<Answer[]>;
+  public allWordsFound$: Observable<boolean>;
   public clickableLetters$: Observable<Letter[]>;
   public clickedLetters$: Observable<Letter[]>;
   public earnedPoints$: Observable<number>;
@@ -37,6 +40,7 @@ export class GameComponent implements OnInit {
 
   constructor() {
     this.answers$ = this.store.select(selectAnswers);
+    this.allWordsFound$ = this.store.select(selectAllWordsFound);
     this.clickableLetters$ = this.store.select(selectClickableLetters);
     this.clickedLetters$ = this.store.select(selectClickedLetters);
     this.earnedPoints$ = this.store.select(selectEarnedPoints);
@@ -64,5 +68,9 @@ export class GameComponent implements OnInit {
 
   public clickEnter(): void {
     this.store.dispatch(wordSubmitted());
+  }
+
+  public clickNextRound(): void {
+    this.store.dispatch(nextRoundRequested());
   }
 }
