@@ -1,5 +1,5 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { Store } from '@ngrx/store';
 import { Observable, filter } from 'rxjs';
@@ -26,16 +26,16 @@ import { Answer, Letter } from 'src/app/2. store/game/game.state';
   imports: [CommonModule, MatButtonModule],
 })
 export class GameComponent implements OnInit {
+  private readonly document = inject(DOCUMENT);
+  private readonly store = inject(Store);
+
   public answers$: Observable<Answer[]>;
   public clickableLetters$: Observable<Letter[]>;
   public clickedLetters$: Observable<Letter[]>;
   public earnedPoints$: Observable<number>;
   public potentialPoints$: Observable<number>;
 
-  constructor(
-    @Inject(DOCUMENT) private readonly document: Document,
-    private readonly store: Store
-  ) {
+  constructor() {
     this.answers$ = this.store.select(selectAnswers);
     this.clickableLetters$ = this.store.select(selectClickableLetters);
     this.clickedLetters$ = this.store.select(selectClickedLetters);
