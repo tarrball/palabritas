@@ -43,3 +43,8 @@ Thumbs.db
 
 # Auto issue runner
 /auto-issue-runner
+
+# Auto-runner temporary files
+.auto-runner.lock
+issue_prompt.md
+debug_claude_prompt.md

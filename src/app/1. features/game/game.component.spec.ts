@@ -9,7 +9,8 @@ import {
   newGameRequested,
   wordSubmitted,
 } from 'src/app/2. store/game/game.actions';
-import { DOCUMENT } from '@angular/common';
+import { CommonModule, DOCUMENT } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('GameComponent', () => {
   let component: GameComponent;
@@ -18,8 +19,9 @@ describe('GameComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GameComponent],
+      imports: [GameComponent, CommonModule],
       providers: [provideMockStore({ initialState: { game: initialState } })],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     });
 
     mockStore = TestBed.inject(MockStore);

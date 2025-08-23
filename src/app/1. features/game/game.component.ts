@@ -1,5 +1,6 @@
-import { DOCUMENT } from '@angular/common';
+import { CommonModule, DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { Store } from '@ngrx/store';
 import { Observable, filter } from 'rxjs';
 import {
@@ -21,6 +22,8 @@ import { Answer, Letter } from 'src/app/2. store/game/game.state';
   selector: 'app-game',
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.sass'],
+  standalone: true,
+  imports: [CommonModule, MatButtonModule],
 })
 export class GameComponent implements OnInit {
   public answers$: Observable<Answer[]>;
