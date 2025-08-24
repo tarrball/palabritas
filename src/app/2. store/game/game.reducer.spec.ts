@@ -55,13 +55,16 @@ describe('GameReducer', () => {
       ]);
     });
 
-    it('should create scrambledLetters on the state', () => {
-      expect(state.scrambledLetters).toEqual([
-        { value: 't', index: 0, typedIndex: undefined },
-        { value: 'e', index: 1, typedIndex: undefined },
-        { value: 's', index: 2, typedIndex: undefined },
-        { value: 't', index: 3, typedIndex: undefined },
-      ]);
+    it('should create scrambledLetters on the state with shuffled letters', () => {
+      expect(state.scrambledLetters.length).toBe(4);
+      
+      const letters = state.scrambledLetters.map(l => l.value).sort();
+      expect(letters).toEqual(['e', 's', 't', 't']);
+      
+      state.scrambledLetters.forEach((letter, index) => {
+        expect(letter.index).toBe(index);
+        expect(letter.typedIndex).toBeUndefined();
+      });
     });
   });
 
@@ -80,66 +83,79 @@ describe('GameReducer', () => {
 
     describe('letterTapped', () => {
       it('should move clicked letters into the clicked array in order', () => {
+        const firstLetter = state.scrambledLetters[1];
+        const secondLetter = state.scrambledLetters[2];
+        
         state = gameReducer(
           state,
-          letterTapped({ index: state.scrambledLetters[1].index })
+          letterTapped({ index: firstLetter.index })
         );
 
         state = gameReducer(
           state,
-          letterTapped({ index: state.scrambledLetters[2].index })
+          letterTapped({ index: secondLetter.index })
         );
 
         const clickableLetters = selectClickableLetters.projector(state);
         const clickedLetters = selectClickedLetters.projector(state);
 
         expect(clickableLetters.length).toEqual(2);
-        expect(clickableLetters[0].value).toEqual('t');
-        expect(clickableLetters[1].value).toEqual('t');
+        
+        const unclickedLetters = state.scrambledLetters.filter(
+          l => l.typedIndex === undefined
+        );
+        expect(unclickedLetters.length).toEqual(2);
 
         expect(clickedLetters.length).toEqual(2);
-        expect(clickedLetters[0].value).toEqual('e');
-        expect(clickedLetters[1].value).toEqual('s');
+        expect(clickedLetters[0].value).toEqual(firstLetter.value);
+        expect(clickedLetters[1].value).toEqual(secondLetter.value);
       });
 
       it('should remove the letter from the clicked array if it is clicked again', () => {
+        const firstLetter = state.scrambledLetters[0];
+        const secondLetter = state.scrambledLetters[2];
+        
         state = gameReducer(
           state,
-          letterTapped({ index: state.scrambledLetters[0].index })
+          letterTapped({ index: firstLetter.index })
         );
 
         state = gameReducer(
           state,
-          letterTapped({ index: state.scrambledLetters[2].index })
+          letterTapped({ index: secondLetter.index })
         );
 
         state = gameReducer(
           state,
-          letterTapped({ index: state.scrambledLetters[2].index })
+          letterTapped({ index: secondLetter.index })
         );
 
         const clickableLetters = selectClickableLetters.projector(state);
         const clickedLetters = selectClickedLetters.projector(state);
 
         expect(clickableLetters.length).toEqual(3);
-        expect(clickableLetters[0].value).toEqual('e');
-        expect(clickableLetters[1].value).toEqual('s');
-        expect(clickableLetters[2].value).toEqual('t');
+        
+        const unclickedLetters = state.scrambledLetters.filter(
+          l => l.typedIndex === undefined
+        );
+        expect(unclickedLetters.length).toEqual(3);
 
         expect(clickedLetters.length).toEqual(1);
-        expect(clickedLetters[0].value).toEqual('t');
+        expect(clickedLetters[0].value).toEqual(firstLetter.value);
       });
     });
 
     describe('revealGameRequested', () => {
       it(`should reveal the remaining 'not-found' words`, () => {
-        [0, 1, 2, 3].forEach(
-          (i) =>
-            (state = gameReducer(
-              state,
-              letterTapped({ index: state.scrambledLetters[i].index })
-            ))
-        );
+        // Find and click letters to spell 'test'
+        const tLetters = state.scrambledLetters.filter(l => l.value === 't');
+        const eLetter = state.scrambledLetters.find(l => l.value === 'e');
+        const sLetter = state.scrambledLetters.find(l => l.value === 's');
+        
+        state = gameReducer(state, letterTapped({ index: tLetters[0].index }));
+        state = gameReducer(state, letterTapped({ index: eLetter!.index }));
+        state = gameReducer(state, letterTapped({ index: sLetter!.index }));
+        state = gameReducer(state, letterTapped({ index: tLetters[1].index }));
 
         state = gameReducer(state, wordSubmitted());
         state = gameReducer(state, revealGameRequested());
@@ -151,19 +167,24 @@ describe('GameReducer', () => {
 
     describe('wordSubmitted', () => {
       beforeEach(() => {
+        // Find the letters for 'set' in the scrambled array
+        const sLetter = state.scrambledLetters.find(l => l.value === 's');
+        const eLetter = state.scrambledLetters.find(l => l.value === 'e');
+        const tLetter = state.scrambledLetters.find(l => l.value === 't');
+        
         state = gameReducer(
           state,
-          letterTapped({ index: state.scrambledLetters[2].index })
+          letterTapped({ index: sLetter!.index })
         );
 
         state = gameReducer(
           state,
-          letterTapped({ index: state.scrambledLetters[1].index })
+          letterTapped({ index: eLetter!.index })
         );
 
         state = gameReducer(
           state,
-          letterTapped({ index: state.scrambledLetters[0].index })
+          letterTapped({ index: tLetter!.index })
         );
       });
 

@@ -10,6 +10,15 @@ import {
 import * as shared from './game.shared';
 import { produce } from 'immer';
 
+const shuffleArray = <T>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 export const gameReducer = createReducer(
   initialState,
   on(newGameRequested, (state): GameState => state),
@@ -21,7 +30,10 @@ export const gameReducer = createReducer(
         state: 'not-found',
       }));
 
-      draft.scrambledLetters = Array.from(word).map((letter, index) => ({
+      const letters = Array.from(word);
+      const shuffledLetters = shuffleArray(letters);
+      
+      draft.scrambledLetters = shuffledLetters.map((letter, index) => ({
         value: letter,
         index,
         typedIndex: undefined,
