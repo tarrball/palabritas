@@ -1,5 +1,6 @@
 # Palabritas
 
+[![CI - Angular Build & Coverage](https://github.com/tarrball/palabritas/actions/workflows/ci-angular.yml/badge.svg)](https://github.com/tarrball/palabritas/actions/workflows/ci-angular.yml)
 [![Live Demo](https://img.shields.io/badge/demo-live-green)](https://palabs.app/)
 [![Angular](https://img.shields.io/badge/Angular-20-red)](https://angular.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue)](https://www.typescriptlang.org/)
