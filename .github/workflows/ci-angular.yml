@@ -24,7 +24,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular app for production
-        run: ng build --configuration production
+        run: npm run build
 
       - name: Run tests with coverage enforcement
         run: |
