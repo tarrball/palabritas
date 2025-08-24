@@ -1,0 +1,54 @@
+name: CI - Angular Build & Coverage
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Angular app for production
+        run: ng build --configuration production
+
+      - name: Run tests with coverage enforcement
+        run: |
+          # Run tests and capture output
+          npm test 2>&1 | tee test-output.log
+          
+          # Extract coverage percentages from output
+          STATEMENTS=$(grep "Statements" test-output.log | grep -oE '[0-9]+(\.[0-9]+)?%' | tr -d '%')
+          BRANCHES=$(grep "Branches" test-output.log | grep -oE '[0-9]+(\.[0-9]+)?%' | tr -d '%')
+          FUNCTIONS=$(grep "Functions" test-output.log | grep -oE '[0-9]+(\.[0-9]+)?%' | tr -d '%')
+          LINES=$(grep "Lines" test-output.log | grep -oE '[0-9]+(\.[0-9]+)?%' | tr -d '%')
+          
+          echo "Coverage Summary:"
+          echo "  Statements: ${STATEMENTS}%"
+          echo "  Branches: ${BRANCHES}%"
+          echo "  Functions: ${FUNCTIONS}%"
+          echo "  Lines: ${LINES}%"
+          
+          # Check if all metrics are 100%
+          if [ "$STATEMENTS" != "100" ] || [ "$BRANCHES" != "100" ] || [ "$FUNCTIONS" != "100" ] || [ "$LINES" != "100" ]; then
+            echo "❌ Coverage check failed! All metrics must be 100%"
+            exit 1
+          else
+            echo "✅ All coverage metrics meet 100% requirement"
+          fi
+        env:
+          CHROME_BIN: /usr/bin/google-chrome
