@@ -7,7 +7,7 @@
       "Bash(find:*)",
       "Bash(grep:*)",
       "Bash(npm run lint)",
-      "Bash(ng lint)",
+      "Bash(ng lint)"
     ],
     "deny": [],
     "ask": []
