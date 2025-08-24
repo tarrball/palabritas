@@ -8,9 +8,6 @@
       "Bash(grep:*)",
       "Bash(npm run lint)",
       "Bash(ng lint)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
