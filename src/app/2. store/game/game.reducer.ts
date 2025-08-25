@@ -24,10 +24,10 @@ const shuffleArray = <T>(array: T[]): T[] => {
 export const gameReducer = createReducer(
   initialState,
   on(newGameRequested, () =>
-    produce(initialState, () => {
+    produce(initialState, (draft) => {
       // Fresh start - return to initial state with score reset
       // Since we want a complete reset, we just return the initial state
-      return initialState;
+      return draft;
     })
   ),
   on(newGameAfterCompletion, (state) =>
