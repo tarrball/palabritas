@@ -21,7 +21,10 @@ const shuffleArray = <T>(array: T[]): T[] => {
 
 export const gameReducer = createReducer(
   initialState,
-  on(newGameRequested, (state): GameState => state),
+  on(newGameRequested, (state): GameState => ({
+    ...initialState,
+    score: state.score, // Preserve score across games
+  })),
   on(newGameStarted, (state, { word, answers }) =>
     produce(state, (draft) => {
       draft.answers = answers.map((answer) => ({
@@ -66,6 +69,7 @@ export const gameReducer = createReducer(
       if (matchingAnswer) {
         matchingAnswer.state = 'found';
         draft.mostRecentAnswer = submittedWord;
+        draft.score += matchingAnswer.letters.length * 10;
       }
 
       draft.scrambledLetters.forEach((letter) => {

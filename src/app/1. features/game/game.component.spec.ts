@@ -45,12 +45,20 @@ describe('GameComponent', () => {
   });
 
   describe('clickEnter', () => {
-    it('should dispatch wordSubmitted action', () => {
+    it('should dispatch wordSubmitted action when game is not complete', () => {
       const dispatchSpy = spyOn(mockStore, 'dispatch');
 
-      component.clickEnter();
+      component.clickEnter(false);
 
       expect(dispatchSpy).toHaveBeenCalledWith(wordSubmitted());
+    });
+
+    it('should dispatch newGameRequested action when game is complete', () => {
+      const dispatchSpy = spyOn(mockStore, 'dispatch');
+
+      component.clickEnter(true);
+
+      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested());
     });
   });
 
