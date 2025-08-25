@@ -9,6 +9,7 @@ import {
   newGameRequested,
   newGameAfterCompletion,
   wordSubmitted,
+  shuffleRequested,
 } from 'src/app/2. store/game/game.actions';
 import {
   selectAnswers,
@@ -76,5 +77,9 @@ export class GameComponent implements OnInit {
     } else {
       this.store.dispatch(wordSubmitted());
     }
+  }
+
+  public clickShuffle(): void {
+    this.store.dispatch(shuffleRequested());
   }
 }

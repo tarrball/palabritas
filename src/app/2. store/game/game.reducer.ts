@@ -7,6 +7,7 @@ import {
   newGameAfterCompletion,
   wordSubmitted,
   revealGameRequested,
+  shuffleRequested,
 } from './game.actions';
 import * as shared from './game.shared';
 import { produce } from 'immer';
@@ -95,6 +96,30 @@ export const gameReducer = createReducer(
           answer.state = 'revealed';
         });
       // Keep score - user should see their earned points until new game
+    })
+  ),
+  on(shuffleRequested, (state) =>
+    produce(state, (draft) => {
+      // Create a new shuffled arrangement that's different from current
+      const currentOrder = draft.scrambledLetters.map((l) => l.value).join('');
+      let shuffled = [...draft.scrambledLetters];
+      let newOrder = currentOrder;
+      
+      // Keep shuffling until we get a different arrangement (with max attempts for edge cases)
+      let attempts = 0;
+      const maxAttempts = 10;
+      
+      while (newOrder === currentOrder && attempts < maxAttempts) {
+        shuffled = shuffleArray(draft.scrambledLetters);
+        newOrder = shuffled.map((l) => l.value).join('');
+        attempts++;
+      }
+      
+      // Update the scrambled letters with the new order
+      draft.scrambledLetters = shuffled.map((letter, index) => ({
+        ...letter,
+        index,
+      }));
     })
   )
 );
