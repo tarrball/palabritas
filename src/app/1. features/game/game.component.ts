@@ -1,20 +1,25 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { Store } from '@ngrx/store';
 import { Observable, filter } from 'rxjs';
 import {
   letterTapped,
   newGameRequested,
+  newGameAfterCompletion,
   wordSubmitted,
+  shuffleRequested,
 } from 'src/app/2. store/game/game.actions';
 import {
   selectAnswers,
   selectClickableLetters,
   selectClickedLetters,
   selectEarnedPoints,
+  selectIsGameComplete,
   selectMostRecentAnswer,
   selectPotentialPoints,
+  selectScore,
 } from 'src/app/2. store/game/game.selectors';
 import { Answer, Letter } from 'src/app/2. store/game/game.state';
 
@@ -23,7 +28,7 @@ import { Answer, Letter } from 'src/app/2. store/game/game.state';
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.sass'],
   standalone: true,
-  imports: [CommonModule, MatButtonModule],
+  imports: [CommonModule, MatButtonModule, MatIconModule],
 })
 export class GameComponent implements OnInit {
   private readonly document = inject(DOCUMENT);
@@ -34,6 +39,8 @@ export class GameComponent implements OnInit {
   public clickedLetters$: Observable<Letter[]>;
   public earnedPoints$: Observable<number>;
   public potentialPoints$: Observable<number>;
+  public isGameComplete$: Observable<boolean>;
+  public score$: Observable<number>;
 
   constructor() {
     this.answers$ = this.store.select(selectAnswers);
@@ -41,6 +48,8 @@ export class GameComponent implements OnInit {
     this.clickedLetters$ = this.store.select(selectClickedLetters);
     this.earnedPoints$ = this.store.select(selectEarnedPoints);
     this.potentialPoints$ = this.store.select(selectPotentialPoints);
+    this.isGameComplete$ = this.store.select(selectIsGameComplete);
+    this.score$ = this.store.select(selectScore);
   }
 
   public ngOnInit(): void {
@@ -62,7 +71,15 @@ export class GameComponent implements OnInit {
     this.store.dispatch(letterTapped({ index }));
   }
 
-  public clickEnter(): void {
-    this.store.dispatch(wordSubmitted());
+  public clickEnter(isGameComplete: boolean): void {
+    if (isGameComplete) {
+      this.store.dispatch(newGameAfterCompletion());
+    } else {
+      this.store.dispatch(wordSubmitted());
+    }
+  }
+
+  public clickShuffle(): void {
+    this.store.dispatch(shuffleRequested());
   }
 }

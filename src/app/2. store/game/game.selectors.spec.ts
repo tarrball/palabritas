@@ -3,8 +3,10 @@ import {
   selectClickableLetters,
   selectClickedLetters,
   selectEarnedPoints,
+  selectIsGameComplete,
   selectMostRecentAnswer,
   selectPotentialPoints,
+  selectScore,
 } from './game.selectors';
 import { generateGameState } from 'src/app/4. shared/fakers/game.state.faker';
 import { gameReducer } from './game.reducer';
@@ -110,6 +112,47 @@ describe('GameSelectors', () => {
         const result = selectPotentialPoints.projector(state.answers);
 
         expect(result).toEqual(expectedPoints);
+      });
+    });
+  });
+
+  describe('selecting game state', () => {
+    describe('selectIsGameComplete', () => {
+      it('should return true when all answers are found', () => {
+        const state = generateGameState(3);
+        state.answers.forEach(answer => answer.state = 'found');
+
+        const result = selectIsGameComplete.projector(state.answers);
+
+        expect(result).toBe(true);
+      });
+
+      it('should return false when some answers are not found', () => {
+        const state = generateGameState(3);
+        state.answers[0].state = 'found';
+        state.answers[1].state = 'not-found';
+        state.answers[2].state = 'found';
+
+        const result = selectIsGameComplete.projector(state.answers);
+
+        expect(result).toBe(false);
+      });
+
+      it('should return false when there are no answers', () => {
+        const result = selectIsGameComplete.projector([]);
+
+        expect(result).toBe(false);
+      });
+    });
+
+    describe('selectScore', () => {
+      it('should select the total score from the state', () => {
+        const state = generateGameState();
+        state.score = 250;
+
+        const result = selectScore.projector(state);
+
+        expect(result).toBe(250);
       });
     });
   });

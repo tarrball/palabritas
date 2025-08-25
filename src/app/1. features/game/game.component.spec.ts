@@ -7,7 +7,9 @@ import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
 import {
   letterTapped,
   newGameRequested,
+  newGameAfterCompletion,
   wordSubmitted,
+  shuffleRequested,
 } from 'src/app/2. store/game/game.actions';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -45,12 +47,30 @@ describe('GameComponent', () => {
   });
 
   describe('clickEnter', () => {
-    it('should dispatch wordSubmitted action', () => {
+    it('should dispatch wordSubmitted action when game is not complete', () => {
       const dispatchSpy = spyOn(mockStore, 'dispatch');
 
-      component.clickEnter();
+      component.clickEnter(false);
 
       expect(dispatchSpy).toHaveBeenCalledWith(wordSubmitted());
+    });
+
+    it('should dispatch newGameRequested action when game is complete', () => {
+      const dispatchSpy = spyOn(mockStore, 'dispatch');
+
+      component.clickEnter(true);
+
+      expect(dispatchSpy).toHaveBeenCalledWith(newGameAfterCompletion());
+    });
+  });
+
+  describe('clickShuffle', () => {
+    it('should dispatch shuffleRequested action', () => {
+      const dispatchSpy = spyOn(mockStore, 'dispatch');
+
+      component.clickShuffle();
+
+      expect(dispatchSpy).toHaveBeenCalledWith(shuffleRequested());
     });
   });
 

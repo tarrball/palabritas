@@ -2,6 +2,8 @@ import { createAction, props } from '@ngrx/store';
 
 export const newGameRequested = createAction('[Game] New Game Requested');
 
+export const newGameAfterCompletion = createAction('[Game] New Game After Completion');
+
 export const newGameStarted = createAction(
   '[Game] New Game Started',
   props<{ word: string; answers: string[] }>()
@@ -15,3 +17,5 @@ export const letterTapped = createAction(
 export const wordSubmitted = createAction('[Game] Word Submitted');
 
 export const revealGameRequested = createAction('[Game] Reveal Game Requested');
+
+export const shuffleRequested = createAction('[Game] Shuffle Requested');

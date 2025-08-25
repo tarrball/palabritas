@@ -1,11 +1,13 @@
 import { createReducer, on } from '@ngrx/store';
-import { GameState, Letter, initialState } from './game.state';
+import { Letter, initialState } from './game.state';
 import {
   letterTapped,
   newGameStarted,
   newGameRequested,
+  newGameAfterCompletion,
   wordSubmitted,
   revealGameRequested,
+  shuffleRequested,
 } from './game.actions';
 import * as shared from './game.shared';
 import { produce } from 'immer';
@@ -21,7 +23,19 @@ const shuffleArray = <T>(array: T[]): T[] => {
 
 export const gameReducer = createReducer(
   initialState,
-  on(newGameRequested, (state): GameState => state),
+  on(newGameRequested, () =>
+    produce(initialState, (draft) => {
+      // Fresh start - return to initial state with score reset
+      // Since we want a complete reset, we just return the initial state
+      return draft;
+    })
+  ),
+  on(newGameAfterCompletion, (state) =>
+    produce(initialState, (draft) => {
+      // Reset to initial state but preserve the score from completed game
+      draft.score = state.score;
+    })
+  ),
   on(newGameStarted, (state, { word, answers }) =>
     produce(state, (draft) => {
       draft.answers = answers.map((answer) => ({
@@ -66,6 +80,7 @@ export const gameReducer = createReducer(
       if (matchingAnswer) {
         matchingAnswer.state = 'found';
         draft.mostRecentAnswer = submittedWord;
+        draft.score += matchingAnswer.letters.length * 10;
       }
 
       draft.scrambledLetters.forEach((letter) => {
@@ -80,6 +95,31 @@ export const gameReducer = createReducer(
         .forEach((answer) => {
           answer.state = 'revealed';
         });
+      // Keep score - user should see their earned points until new game
+    })
+  ),
+  on(shuffleRequested, (state) =>
+    produce(state, (draft) => {
+      // Create a new shuffled arrangement that's different from current
+      const currentOrder = draft.scrambledLetters.map((l) => l.value).join('');
+      let shuffled = [...draft.scrambledLetters];
+      let newOrder = currentOrder;
+      
+      // Keep shuffling until we get a different arrangement (with max attempts for edge cases)
+      let attempts = 0;
+      const maxAttempts = 10;
+      
+      while (newOrder === currentOrder && attempts < maxAttempts) {
+        shuffled = shuffleArray(draft.scrambledLetters);
+        newOrder = shuffled.map((l) => l.value).join('');
+        attempts++;
+      }
+      
+      // Update the scrambled letters with the new order
+      draft.scrambledLetters = shuffled.map((letter, index) => ({
+        ...letter,
+        index,
+      }));
     })
   )
 );

@@ -4,9 +4,11 @@ import { GameState, initialState } from './game.state';
 import {
   letterTapped,
   newGameRequested,
+  newGameAfterCompletion,
   newGameStarted,
   revealGameRequested,
   wordSubmitted,
+  shuffleRequested,
 } from './game.actions';
 import { selectClickableLetters, selectClickedLetters } from './game.selectors';
 
@@ -20,10 +22,36 @@ describe('GameReducer', () => {
   });
 
   describe('newGameRequested', () => {
-    it('should return the same state', () => {
-      const nextState = gameReducer(initialState, newGameRequested());
+    it('should reset state and reset score for fresh start', () => {
+      const stateWithScore: GameState = {
+        ...initialState,
+        score: 150,
+        answers: [{ word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' }],
+      };
+      
+      const nextState = gameReducer(stateWithScore, newGameRequested());
 
-      expect(nextState).toBe(initialState);
+      expect(nextState.score).toBe(0);
+      expect(nextState.answers).toEqual([]);
+      expect(nextState.scrambledLetters).toEqual([]);
+      expect(nextState.mostRecentAnswer).toBeUndefined();
+    });
+  });
+
+  describe('newGameAfterCompletion', () => {
+    it('should reset state but preserve score after game completion', () => {
+      const stateWithScore: GameState = {
+        ...initialState,
+        score: 150,
+        answers: [{ word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' }],
+      };
+      
+      const nextState = gameReducer(stateWithScore, newGameAfterCompletion());
+
+      expect(nextState.score).toBe(150);
+      expect(nextState.answers).toEqual([]);
+      expect(nextState.scrambledLetters).toEqual([]);
+      expect(nextState.mostRecentAnswer).toBeUndefined();
     });
   });
 
@@ -146,7 +174,7 @@ describe('GameReducer', () => {
     });
 
     describe('revealGameRequested', () => {
-      it(`should reveal the remaining 'not-found' words`, () => {
+      it(`should reveal the remaining 'not-found' words and preserve score`, () => {
         // Find and click letters to spell 'test'
         const tLetters = state.scrambledLetters.filter(l => l.value === 't');
         const eLetter = state.scrambledLetters.find(l => l.value === 'e');
@@ -158,10 +186,15 @@ describe('GameReducer', () => {
         state = gameReducer(state, letterTapped({ index: tLetters[1].index }));
 
         state = gameReducer(state, wordSubmitted());
+        
+        // Verify we earned points before revealing
+        expect(state.score).toBeGreaterThan(0);
+        
         state = gameReducer(state, revealGameRequested());
 
         expect(state.answers[0].state).toEqual('revealed');
         expect(state.answers[1].state).toEqual('found');
+        expect(state.score).toBeGreaterThan(0); // Score should be preserved after reveal
       });
     });
 
@@ -202,6 +235,14 @@ describe('GameReducer', () => {
         expect(remainingAnswer.state).toEqual('not-found');
       });
 
+      it('should update the score when a word is found', () => {
+        const initialScore = state.score;
+        state = gameReducer(state, wordSubmitted());
+
+        // 'set' has 3 letters, so score should increase by 30
+        expect(state.score).toEqual(initialScore + 30);
+      });
+
       it('should reset the clicked letters if the word is correct', () => {
         state = gameReducer(state, wordSubmitted());
 
@@ -221,6 +262,56 @@ describe('GameReducer', () => {
         const clickedLetters = selectClickedLetters.projector(state);
 
         expect(clickedLetters.length).toEqual(0);
+      });
+    });
+
+    describe('shuffleRequested', () => {
+      it('should shuffle the scrambled letters', () => {
+        const initialOrder = state.scrambledLetters.map(l => l.value).join('');
+        
+        // Shuffle may produce the same order on first try (especially for short words)
+        // so we may need to shuffle multiple times
+        let shuffledState = state;
+        let attempts = 0;
+        const maxAttempts = 10;
+        let newOrder = initialOrder;
+        
+        while (newOrder === initialOrder && attempts < maxAttempts) {
+          shuffledState = gameReducer(shuffledState, shuffleRequested());
+          newOrder = shuffledState.scrambledLetters.map(l => l.value).join('');
+          attempts++;
+        }
+        
+        // For words with more than 2 unique letters, we should get a different order
+        if (initialOrder.length > 2) {
+          expect(newOrder).not.toEqual(initialOrder);
+        }
+        
+        // Verify all letters are still present
+        const initialLetters = state.scrambledLetters.map(l => l.value).sort();
+        const shuffledLetters = shuffledState.scrambledLetters.map(l => l.value).sort();
+        expect(shuffledLetters).toEqual(initialLetters);
+        
+        // Verify indices are updated correctly
+        shuffledState.scrambledLetters.forEach((letter, index) => {
+          expect(letter.index).toBe(index);
+        });
+      });
+
+      it('should preserve typed indices when shuffling', () => {
+        // Tap a letter first
+        const firstLetter = state.scrambledLetters[0];
+        state = gameReducer(state, letterTapped({ index: firstLetter.index }));
+        
+        // Verify letter is tapped
+        expect(state.scrambledLetters.find(l => l.index === firstLetter.index)?.typedIndex).toBeDefined();
+        
+        // Shuffle
+        const shuffledState = gameReducer(state, shuffleRequested());
+        
+        // Verify the typed letter still has its typedIndex
+        const tappedLetters = shuffledState.scrambledLetters.filter(l => l.typedIndex !== undefined);
+        expect(tappedLetters.length).toBe(1);
       });
     });
   });
