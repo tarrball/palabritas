@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { GameState, Letter, initialState } from './game.state';
+import { Letter, initialState } from './game.state';
 import {
   letterTapped,
   newGameStarted,
@@ -23,7 +23,7 @@ const shuffleArray = <T>(array: T[]): T[] => {
 export const gameReducer = createReducer(
   initialState,
   on(newGameRequested, () =>
-    produce(initialState, (draft) => {
+    produce(initialState, () => {
       // Fresh start - return to initial state with score reset
       // Since we want a complete reset, we just return the initial state
       return initialState;
