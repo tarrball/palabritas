@@ -31,6 +31,27 @@ The application uses NgRx for state management with the following pattern:
 - **Effects**: Side effects in `game.effects.ts` for async operations
 - **Selectors**: Memoized selectors in `game.selectors.ts` for derived state
 
+#### Important: Immer Usage in Reducers
+
+**ALWAYS use Immer's `produce` function for state updates in reducers. NEVER use spread operators.**
+
+```typescript
+// ❌ WRONG - Don't use spread operators
+on(someAction, (state) => ({
+  ...state,
+  someProperty: newValue
+}))
+
+// ✅ CORRECT - Use Immer's produce
+on(someAction, (state) =>
+  produce(state, (draft) => {
+    draft.someProperty = newValue;
+  })
+)
+```
+
+Immer allows you to write "mutative" logic that is actually immutable under the hood. This makes the code more readable and less error-prone than manual spreading.
+
 ### Key Architecture Patterns
 
 1. **Component-Store Pattern**: Components dispatch actions and select from store using observables

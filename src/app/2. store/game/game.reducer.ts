@@ -22,14 +22,19 @@ const shuffleArray = <T>(array: T[]): T[] => {
 
 export const gameReducer = createReducer(
   initialState,
-  on(newGameRequested, (): GameState => ({
-    ...initialState,
-    score: 0, // Fresh start, reset score
-  })),
-  on(newGameAfterCompletion, (state): GameState => ({
-    ...initialState,
-    score: state.score, // Preserve score after completing a game
-  })),
+  on(newGameRequested, () =>
+    produce(initialState, (draft) => {
+      // Fresh start - return to initial state with score reset
+      // Since we want a complete reset, we just return the initial state
+      return initialState;
+    })
+  ),
+  on(newGameAfterCompletion, (state) =>
+    produce(initialState, (draft) => {
+      // Reset to initial state but preserve the score from completed game
+      draft.score = state.score;
+    })
+  ),
   on(newGameStarted, (state, { word, answers }) =>
     produce(state, (draft) => {
       draft.answers = answers.map((answer) => ({
