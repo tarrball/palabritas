@@ -12,46 +12,56 @@
   </div>
 
   <div class="flex-center hori-scroll answers-container">
-    <div
-      class="flex-center word"
-      *ngFor="let answer of answers$ | async"
-      [id]="answer.word"
-    >
-      <span class="letter" *ngFor="let letter of answer.letters">
-        {{ answer.state === "not-found" ? "_" : letter }}
-      </span>
+    @for (answer of answers$ | async; track answer.word) {
+      <div
+        class="flex-center word"
+        [id]="answer.word"
+      >
+        @for (letter of answer.letters; track $index) {
+          <span class="letter">
+            {{ answer.state === "not-found" ? "_" : letter }}
+          </span>
+        }
+      </div>
+    }
+  </div>
+
+  <div class="flex-center-center letter-button-container">
+    @for (letter of clickedLetters$ | async; track letter.value) {
+      <button
+        mat-raised-button
+        (click)="clickLetter(letter)"
+      >
+        {{ letter.value }}
+      </button>
+    }
+  </div>
+
+  <div class="flex-center-center letter-button-container">
+    @for (letter of clickableLetters$ | async; track letter.value) {
+      <button
+        mat-raised-button
+        (click)="clickLetter(letter)"
+      >
+        {{ letter.value }}
+      </button>
+    }
+  </div>
+
+  @if ({ isComplete: isGameComplete$ | async }; as vm) {
+    <div class="flex-center-end">
+      <button 
+        mat-raised-button 
+        [color]="vm.isComplete ? 'accent' : 'primary'"
+        (click)="clickEnter(!!vm.isComplete)"
+      >
+        @if (vm.isComplete) {
+          <mat-icon>refresh</mat-icon>
+        } @else {
+          <mat-icon>send</mat-icon>
+        }
+        {{ vm.isComplete ? 'Start New Game' : 'Enter' }}
+      </button>
     </div>
-  </div>
-
-  <div class="flex-center-center letter-button-container">
-    <button
-      mat-raised-button
-      *ngFor="let letter of clickedLetters$ | async"
-      (click)="clickLetter(letter)"
-    >
-      {{ letter.value }}
-    </button>
-  </div>
-
-  <div class="flex-center-center letter-button-container">
-    <button
-      mat-raised-button
-      *ngFor="let letter of clickableLetters$ | async"
-      (click)="clickLetter(letter)"
-    >
-      {{ letter.value }}
-    </button>
-  </div>
-
-  <div class="flex-center-end" *ngIf="{ isComplete: isGameComplete$ | async } as vm">
-    <button 
-      mat-raised-button 
-      [color]="vm.isComplete ? 'accent' : 'primary'"
-      (click)="clickEnter(!!vm.isComplete)"
-    >
-      <mat-icon *ngIf="vm.isComplete">refresh</mat-icon>
-      <mat-icon *ngIf="!vm.isComplete">send</mat-icon>
-      {{ vm.isComplete ? 'Start New Game' : 'Enter' }}
-    </button>
-  </div>
+  }
 </main>
