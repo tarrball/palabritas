@@ -49,7 +49,15 @@
   </div>
 
   @if ({ isComplete: isGameComplete$ | async }; as vm) {
-    <div class="flex-center-end">
+    <div class="flex-center-between">
+      <button 
+        mat-raised-button
+        [disabled]="vm.isComplete"
+        (click)="clickShuffle()"
+      >
+        <mat-icon>shuffle</mat-icon>
+        Shuffle
+      </button>
       <button 
         mat-raised-button 
         [color]="vm.isComplete ? 'accent' : 'primary'"

@@ -9,6 +9,7 @@ import {
   newGameRequested,
   newGameAfterCompletion,
   wordSubmitted,
+  shuffleRequested,
 } from 'src/app/2. store/game/game.actions';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -60,6 +61,16 @@ describe('GameComponent', () => {
       component.clickEnter(true);
 
       expect(dispatchSpy).toHaveBeenCalledWith(newGameAfterCompletion());
+    });
+  });
+
+  describe('clickShuffle', () => {
+    it('should dispatch shuffleRequested action', () => {
+      const dispatchSpy = spyOn(mockStore, 'dispatch');
+
+      component.clickShuffle();
+
+      expect(dispatchSpy).toHaveBeenCalledWith(shuffleRequested());
     });
   });
 

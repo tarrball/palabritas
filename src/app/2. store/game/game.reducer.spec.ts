@@ -8,6 +8,7 @@ import {
   newGameStarted,
   revealGameRequested,
   wordSubmitted,
+  shuffleRequested,
 } from './game.actions';
 import { selectClickableLetters, selectClickedLetters } from './game.selectors';
 
@@ -261,6 +262,56 @@ describe('GameReducer', () => {
         const clickedLetters = selectClickedLetters.projector(state);
 
         expect(clickedLetters.length).toEqual(0);
+      });
+    });
+
+    describe('shuffleRequested', () => {
+      it('should shuffle the scrambled letters', () => {
+        const initialOrder = state.scrambledLetters.map(l => l.value).join('');
+        
+        // Shuffle may produce the same order on first try (especially for short words)
+        // so we may need to shuffle multiple times
+        let shuffledState = state;
+        let attempts = 0;
+        const maxAttempts = 10;
+        let newOrder = initialOrder;
+        
+        while (newOrder === initialOrder && attempts < maxAttempts) {
+          shuffledState = gameReducer(shuffledState, shuffleRequested());
+          newOrder = shuffledState.scrambledLetters.map(l => l.value).join('');
+          attempts++;
+        }
+        
+        // For words with more than 2 unique letters, we should get a different order
+        if (initialOrder.length > 2) {
+          expect(newOrder).not.toEqual(initialOrder);
+        }
+        
+        // Verify all letters are still present
+        const initialLetters = state.scrambledLetters.map(l => l.value).sort();
+        const shuffledLetters = shuffledState.scrambledLetters.map(l => l.value).sort();
+        expect(shuffledLetters).toEqual(initialLetters);
+        
+        // Verify indices are updated correctly
+        shuffledState.scrambledLetters.forEach((letter, index) => {
+          expect(letter.index).toBe(index);
+        });
+      });
+
+      it('should preserve typed indices when shuffling', () => {
+        // Tap a letter first
+        const firstLetter = state.scrambledLetters[0];
+        state = gameReducer(state, letterTapped({ index: firstLetter.index }));
+        
+        // Verify letter is tapped
+        expect(state.scrambledLetters.find(l => l.index === firstLetter.index)?.typedIndex).toBeDefined();
+        
+        // Shuffle
+        const shuffledState = gameReducer(state, shuffleRequested());
+        
+        // Verify the typed letter still has its typedIndex
+        const tappedLetters = shuffledState.scrambledLetters.filter(l => l.typedIndex !== undefined);
+        expect(tappedLetters.length).toBe(1);
       });
     });
   });
