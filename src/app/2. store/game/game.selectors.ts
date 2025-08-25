@@ -34,5 +34,11 @@ export const selectPotentialPoints = createSelector(selectAnswers, (answers) =>
   answers.reduce(pointsReducer, 0)
 );
 
+export const selectIsGameComplete = createSelector(selectAnswers, (answers) =>
+  answers.length > 0 && answers.every((answer) => answer.state === 'found')
+);
+
+export const selectScore = createSelector(selectFeature, (state) => state.score);
+
 const pointsReducer = (accumulator: number, answer: Answer) =>
   accumulator + answer.letters.length * 10;

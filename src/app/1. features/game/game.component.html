@@ -1,10 +1,13 @@
 <main class="flex-grow-1">
   <div class="flex-center-between">
     <div>
-      Points: <span class="points">{{ earnedPoints$ | async }}</span>
+      Round: <span class="points">{{ earnedPoints$ | async }}</span>
     </div>
     <div>
-      Total Points: <span class="points">{{ potentialPoints$ | async }}</span>
+      Total Score: <span class="points">{{ score$ | async }}</span>
+    </div>
+    <div>
+      Potential: <span class="points">{{ potentialPoints$ | async }}</span>
     </div>
   </div>
 
@@ -40,7 +43,15 @@
     </button>
   </div>
 
-  <div class="flex-center-end">
-    <button mat-raised-button (click)="clickEnter()">Enter</button>
+  <div class="flex-center-end" *ngIf="{ isComplete: isGameComplete$ | async } as vm">
+    <button 
+      mat-raised-button 
+      [color]="vm.isComplete ? 'accent' : 'primary'"
+      (click)="clickEnter(!!vm.isComplete)"
+    >
+      <mat-icon *ngIf="vm.isComplete">refresh</mat-icon>
+      <mat-icon *ngIf="!vm.isComplete">send</mat-icon>
+      {{ vm.isComplete ? 'Start New Game' : 'Enter' }}
+    </button>
   </div>
 </main>

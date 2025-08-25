@@ -4,6 +4,7 @@ import {
   letterTapped,
   newGameStarted,
   newGameRequested,
+  newGameAfterCompletion,
   wordSubmitted,
   revealGameRequested,
 } from './game.actions';
@@ -21,7 +22,19 @@ const shuffleArray = <T>(array: T[]): T[] => {
 
 export const gameReducer = createReducer(
   initialState,
-  on(newGameRequested, (state): GameState => state),
+  on(newGameRequested, () =>
+    produce(initialState, (draft) => {
+      // Fresh start - return to initial state with score reset
+      // Since we want a complete reset, we just return the initial state
+      return initialState;
+    })
+  ),
+  on(newGameAfterCompletion, (state) =>
+    produce(initialState, (draft) => {
+      // Reset to initial state but preserve the score from completed game
+      draft.score = state.score;
+    })
+  ),
   on(newGameStarted, (state, { word, answers }) =>
     produce(state, (draft) => {
       draft.answers = answers.map((answer) => ({
@@ -66,6 +79,7 @@ export const gameReducer = createReducer(
       if (matchingAnswer) {
         matchingAnswer.state = 'found';
         draft.mostRecentAnswer = submittedWord;
+        draft.score += matchingAnswer.letters.length * 10;
       }
 
       draft.scrambledLetters.forEach((letter) => {
@@ -80,6 +94,7 @@ export const gameReducer = createReducer(
         .forEach((answer) => {
           answer.state = 'revealed';
         });
+      // Keep score - user should see their earned points until new game
     })
   )
 );

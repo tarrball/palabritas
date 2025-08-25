@@ -7,6 +7,7 @@ import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
 import {
   letterTapped,
   newGameRequested,
+  newGameAfterCompletion,
   wordSubmitted,
 } from 'src/app/2. store/game/game.actions';
 import { CommonModule, DOCUMENT } from '@angular/common';
@@ -45,12 +46,20 @@ describe('GameComponent', () => {
   });
 
   describe('clickEnter', () => {
-    it('should dispatch wordSubmitted action', () => {
+    it('should dispatch wordSubmitted action when game is not complete', () => {
       const dispatchSpy = spyOn(mockStore, 'dispatch');
 
-      component.clickEnter();
+      component.clickEnter(false);
 
       expect(dispatchSpy).toHaveBeenCalledWith(wordSubmitted());
+    });
+
+    it('should dispatch newGameRequested action when game is complete', () => {
+      const dispatchSpy = spyOn(mockStore, 'dispatch');
+
+      component.clickEnter(true);
+
+      expect(dispatchSpy).toHaveBeenCalledWith(newGameAfterCompletion());
     });
   });
 
