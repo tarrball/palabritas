@@ -21,9 +21,9 @@ const shuffleArray = <T>(array: T[]): T[] => {
 
 export const gameReducer = createReducer(
   initialState,
-  on(newGameRequested, (state): GameState => ({
+  on(newGameRequested, (state, { preserveScore }): GameState => ({
     ...initialState,
-    score: state.score, // Preserve score across games
+    score: preserveScore ? state.score : 0,
   })),
   on(newGameStarted, (state, { word, answers }) =>
     produce(state, (draft) => {
@@ -84,6 +84,7 @@ export const gameReducer = createReducer(
         .forEach((answer) => {
           answer.state = 'revealed';
         });
+      draft.score = 0; // Reset score when revealing answers
     })
   )
 );

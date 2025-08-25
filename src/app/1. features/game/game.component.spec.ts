@@ -58,7 +58,7 @@ describe('GameComponent', () => {
 
       component.clickEnter(true);
 
-      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested());
+      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested({ preserveScore: true }));
     });
   });
 
@@ -68,7 +68,7 @@ describe('GameComponent', () => {
 
       component.ngOnInit();
 
-      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested());
+      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested({ preserveScore: false }));
     });
 
     describe('recent answer changes', () => {

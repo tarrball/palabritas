@@ -20,16 +20,46 @@ describe('GameReducer', () => {
   });
 
   describe('newGameRequested', () => {
-    it('should reset state but preserve score', () => {
+    it('should reset state and preserve score when preserveScore is true', () => {
       const stateWithScore: GameState = {
         ...initialState,
         score: 150,
         answers: [{ word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' }],
       };
       
-      const nextState = gameReducer(stateWithScore, newGameRequested());
+      const nextState = gameReducer(stateWithScore, newGameRequested({ preserveScore: true }));
 
       expect(nextState.score).toBe(150);
+      expect(nextState.answers).toEqual([]);
+      expect(nextState.scrambledLetters).toEqual([]);
+      expect(nextState.mostRecentAnswer).toBeUndefined();
+    });
+
+    it('should reset state and reset score when preserveScore is false', () => {
+      const stateWithScore: GameState = {
+        ...initialState,
+        score: 150,
+        answers: [{ word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' }],
+      };
+      
+      const nextState = gameReducer(stateWithScore, newGameRequested({ preserveScore: false }));
+
+      expect(nextState.score).toBe(0);
+      expect(nextState.answers).toEqual([]);
+      expect(nextState.scrambledLetters).toEqual([]);
+      expect(nextState.mostRecentAnswer).toBeUndefined();
+    });
+
+    it('should reset score by default when preserveScore is undefined', () => {
+      const stateWithScore: GameState = {
+        ...initialState,
+        score: 150,
+        answers: [{ word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' }],
+      };
+      
+      const nextState = gameReducer(stateWithScore, newGameRequested({}));
+
+      expect(nextState.score).toBe(0);
       expect(nextState.answers).toEqual([]);
       expect(nextState.scrambledLetters).toEqual([]);
       expect(nextState.mostRecentAnswer).toBeUndefined();
@@ -155,7 +185,7 @@ describe('GameReducer', () => {
     });
 
     describe('revealGameRequested', () => {
-      it(`should reveal the remaining 'not-found' words`, () => {
+      it(`should reveal the remaining 'not-found' words and reset score`, () => {
         // Find and click letters to spell 'test'
         const tLetters = state.scrambledLetters.filter(l => l.value === 't');
         const eLetter = state.scrambledLetters.find(l => l.value === 'e');
@@ -167,10 +197,15 @@ describe('GameReducer', () => {
         state = gameReducer(state, letterTapped({ index: tLetters[1].index }));
 
         state = gameReducer(state, wordSubmitted());
+        
+        // Verify we earned points before revealing
+        expect(state.score).toBeGreaterThan(0);
+        
         state = gameReducer(state, revealGameRequested());
 
         expect(state.answers[0].state).toEqual('revealed');
         expect(state.answers[1].state).toEqual('found');
+        expect(state.score).toEqual(0); // Score should be reset
       });
     });
 

@@ -38,7 +38,7 @@ describe('GameEffects', () => {
 
   describe('requestNewGame$', () => {
     it('should return newGameStarted action with nextGame from GameService', (done) => {
-      actions$ = of(newGameRequested());
+      actions$ = of(newGameRequested({ preserveScore: false }));
 
       const nextGame = generateGame();
 

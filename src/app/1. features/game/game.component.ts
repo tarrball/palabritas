@@ -51,7 +51,7 @@ export class GameComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.store.dispatch(newGameRequested());
+    this.store.dispatch(newGameRequested({ preserveScore: false }));
 
     this.store
       .select(selectMostRecentAnswer)
@@ -71,7 +71,7 @@ export class GameComponent implements OnInit {
 
   public clickEnter(isGameComplete: boolean): void {
     if (isGameComplete) {
-      this.store.dispatch(newGameRequested());
+      this.store.dispatch(newGameRequested({ preserveScore: true }));
     } else {
       this.store.dispatch(wordSubmitted());
     }
