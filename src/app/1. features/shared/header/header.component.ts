@@ -20,7 +20,7 @@ export class HeaderComponent {
   private readonly store = inject(Store);
 
   public clickNewGame(): void {
-    this.store.dispatch(newGameRequested({ preserveScore: false }));
+    this.store.dispatch(newGameRequested());
   }
 
   public revealAnswers(): void {

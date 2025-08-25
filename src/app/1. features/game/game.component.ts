@@ -7,6 +7,7 @@ import { Observable, filter } from 'rxjs';
 import {
   letterTapped,
   newGameRequested,
+  newGameAfterCompletion,
   wordSubmitted,
 } from 'src/app/2. store/game/game.actions';
 import {
@@ -51,7 +52,7 @@ export class GameComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.store.dispatch(newGameRequested({ preserveScore: false }));
+    this.store.dispatch(newGameRequested());
 
     this.store
       .select(selectMostRecentAnswer)
@@ -71,7 +72,7 @@ export class GameComponent implements OnInit {
 
   public clickEnter(isGameComplete: boolean): void {
     if (isGameComplete) {
-      this.store.dispatch(newGameRequested({ preserveScore: true }));
+      this.store.dispatch(newGameAfterCompletion());
     } else {
       this.store.dispatch(wordSubmitted());
     }

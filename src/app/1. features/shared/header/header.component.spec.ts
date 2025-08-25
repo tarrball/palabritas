@@ -37,7 +37,7 @@ describe('HeaderComponent', () => {
 
       component.clickNewGame();
 
-      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested({ preserveScore: false }));
+      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested());
     });
   });
 

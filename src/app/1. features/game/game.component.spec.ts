@@ -7,6 +7,7 @@ import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
 import {
   letterTapped,
   newGameRequested,
+  newGameAfterCompletion,
   wordSubmitted,
 } from 'src/app/2. store/game/game.actions';
 import { CommonModule, DOCUMENT } from '@angular/common';
@@ -58,7 +59,7 @@ describe('GameComponent', () => {
 
       component.clickEnter(true);
 
-      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested({ preserveScore: true }));
+      expect(dispatchSpy).toHaveBeenCalledWith(newGameAfterCompletion());
     });
   });
 
@@ -68,7 +69,7 @@ describe('GameComponent', () => {
 
       component.ngOnInit();
 
-      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested({ preserveScore: false }));
+      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested());
     });
 
     describe('recent answer changes', () => {

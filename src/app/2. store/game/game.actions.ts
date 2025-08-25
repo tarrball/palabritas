@@ -1,9 +1,8 @@
 import { createAction, props } from '@ngrx/store';
 
-export const newGameRequested = createAction(
-  '[Game] New Game Requested',
-  props<{ preserveScore?: boolean }>()
-);
+export const newGameRequested = createAction('[Game] New Game Requested');
+
+export const newGameAfterCompletion = createAction('[Game] New Game After Completion');
 
 export const newGameStarted = createAction(
   '[Game] New Game Started',

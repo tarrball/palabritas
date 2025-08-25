@@ -4,6 +4,7 @@ import {
   letterTapped,
   newGameStarted,
   newGameRequested,
+  newGameAfterCompletion,
   wordSubmitted,
   revealGameRequested,
 } from './game.actions';
@@ -21,9 +22,13 @@ const shuffleArray = <T>(array: T[]): T[] => {
 
 export const gameReducer = createReducer(
   initialState,
-  on(newGameRequested, (state, { preserveScore }): GameState => ({
+  on(newGameRequested, (): GameState => ({
     ...initialState,
-    score: preserveScore ? state.score : 0,
+    score: 0, // Fresh start, reset score
+  })),
+  on(newGameAfterCompletion, (state): GameState => ({
+    ...initialState,
+    score: state.score, // Preserve score after completing a game
   })),
   on(newGameStarted, (state, { word, answers }) =>
     produce(state, (draft) => {
@@ -84,7 +89,7 @@ export const gameReducer = createReducer(
         .forEach((answer) => {
           answer.state = 'revealed';
         });
-      draft.score = 0; // Reset score when revealing answers
+      // Keep score - user should see their earned points until new game
     })
   )
 );

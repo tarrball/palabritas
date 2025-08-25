@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { GameService } from 'src/app/3. services/game.service';
-import { newGameStarted, newGameRequested } from './game.actions';
+import { newGameStarted, newGameRequested, newGameAfterCompletion } from './game.actions';
 import { mergeMap, of } from 'rxjs';
 
 @Injectable()
@@ -11,7 +11,7 @@ export class GameEffects {
 
   public requestNewGame$ = createEffect(() => {
     return this.actions$.pipe(
-      ofType(newGameRequested),
+      ofType(newGameRequested, newGameAfterCompletion),
       mergeMap(() => of(newGameStarted(this.gameService.nextGame())))
     );
   });
