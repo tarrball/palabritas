@@ -9,6 +9,11 @@ export const selectAnswers = createSelector(
   (state) => state.answers
 );
 
+export const selectScrambledLetters = createSelector(
+  selectFeature,
+  (state) => state.scrambledLetters
+);
+
 export const selectClickableLetters = createSelector(selectFeature, (state) =>
   state.scrambledLetters.filter((letter) => letter.typedIndex === undefined)
 );

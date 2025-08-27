@@ -8,6 +8,7 @@ import {
   wordSubmitted,
   revealGameRequested,
   shuffleRequested,
+  restoreStateFromCache,
 } from './game.actions';
 import * as shared from './game.shared';
 import { produce } from 'immer';
@@ -120,6 +121,28 @@ export const gameReducer = createReducer(
         ...letter,
         index,
       }));
+    })
+  ),
+  on(restoreStateFromCache, (state, { scrambledLetters, answers, score }) =>
+    produce(state, (draft) => {
+      // Restore the scrambled letters (ensuring typedIndex is cleared)
+      draft.scrambledLetters = scrambledLetters.map((letter) => ({
+        ...letter,
+        typedIndex: undefined,
+      }));
+      
+      // Restore the answers with their found/revealed states
+      draft.answers = answers.map((answer) => ({
+        word: answer.word,
+        letters: Array.from(answer.word),
+        state: answer.found ? 'found' : answer.revealed ? 'revealed' : 'not-found',
+      }));
+      
+      // Restore the score
+      draft.score = score;
+      
+      // Clear mostRecentAnswer to start fresh
+      draft.mostRecentAnswer = undefined;
     })
   )
 );
