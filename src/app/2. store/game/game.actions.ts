@@ -21,7 +21,8 @@ export const restoreStateFromCache = createAction(
   props<{ 
     scrambledLetters: Letter[];
     answers: Answer[];
-    score: number;
+    roundScore: number;
+    totalScore: number;
   }>()
 );
 

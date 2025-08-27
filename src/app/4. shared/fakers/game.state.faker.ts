@@ -10,6 +10,7 @@ export function generateGameState(answerCount = 5): GameState {
       generateLetter(i)
     ),
     mostRecentAnswer: faker.word.noun(),
-    score: faker.number.int({ min: 0, max: 1000 }),
+    roundScore: faker.number.int({ min: 0, max: 200 }),
+    totalScore: faker.number.int({ min: 0, max: 1000 }),
   };
 }

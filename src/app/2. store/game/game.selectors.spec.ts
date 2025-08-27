@@ -158,7 +158,7 @@ describe('GameSelectors', () => {
     describe('selectScore', () => {
       it('should select the total score from the state', () => {
         const state = generateGameState();
-        state.score = 250;
+        state.totalScore = 250;
 
         const result = selectScore.projector(state);
 

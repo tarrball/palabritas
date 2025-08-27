@@ -27,9 +27,10 @@ describe('LocalStorageService', () => {
         { word: 'AB', letters: ['A', 'B'], state: 'found' },
         { word: 'BA', letters: ['B', 'A'], state: 'revealed' },
       ];
-      const score = 100;
+      const roundScore = 50;
+      const totalScore = 100;
 
-      service.saveGameState(scrambledLetters, answers, score);
+      service.saveGameState(scrambledLetters, answers, roundScore, totalScore);
 
       const storedData = localStorage.getItem(STORAGE_KEY);
       expect(storedData).toBeTruthy();
@@ -46,18 +47,20 @@ describe('LocalStorageService', () => {
         { word: 'AB', found: true, revealed: false },
         { word: 'BA', found: false, revealed: true },
       ]);
-      expect(parsedData.score).toBe(score);
+      expect(parsedData.roundScore).toBe(roundScore);
+      expect(parsedData.totalScore).toBe(totalScore);
     });
 
     it('should handle localStorage errors gracefully', () => {
       const scrambledLetters: Letter[] = [];
       const answers: Answer[] = [];
-      const score = 0;
+      const roundScore = 0;
+      const totalScore = 0;
 
       spyOn(localStorage, 'setItem').and.throwError('Storage quota exceeded');
       spyOn(console, 'error');
 
-      expect(() => service.saveGameState(scrambledLetters, answers, score)).not.toThrow();
+      expect(() => service.saveGameState(scrambledLetters, answers, roundScore, totalScore)).not.toThrow();
       expect(console.error).toHaveBeenCalledWith(
         'Failed to save game state to localStorage:',
         jasmine.any(Error)
@@ -77,7 +80,8 @@ describe('LocalStorageService', () => {
         answers: [
           { word: 'AB', found: true, revealed: false },
         ],
-        score: 50,
+        roundScore: 20,
+        totalScore: 50,
       };
 
       localStorage.setItem(STORAGE_KEY, JSON.stringify(storedState));
@@ -94,7 +98,8 @@ describe('LocalStorageService', () => {
         answers: [
           { word: 'AB', letters: ['A', 'B'], state: 'found' },
         ],
-        score: storedState.score,
+        roundScore: storedState.roundScore,
+        totalScore: storedState.totalScore,
       });
     });
 
@@ -121,7 +126,8 @@ describe('LocalStorageService', () => {
     it('should return null and clear cache for invalid data structure - missing scrambledLetters', () => {
       const invalidState = {
         answers: [],
-        score: 0,
+        roundScore: 0,
+        totalScore: 0,
       };
 
       localStorage.setItem(STORAGE_KEY, JSON.stringify(invalidState));
@@ -137,7 +143,8 @@ describe('LocalStorageService', () => {
       const invalidState = {
         scrambledLetters: 'not an array',
         answers: [],
-        score: 0,
+        roundScore: 0,
+        totalScore: 0,
       };
 
       localStorage.setItem(STORAGE_KEY, JSON.stringify(invalidState));
@@ -153,7 +160,8 @@ describe('LocalStorageService', () => {
       const invalidState = {
         scrambledLetters: [],
         answers: 'not an array',
-        score: 0,
+        roundScore: 0,
+        totalScore: 0,
       };
 
       localStorage.setItem(STORAGE_KEY, JSON.stringify(invalidState));
@@ -165,11 +173,12 @@ describe('LocalStorageService', () => {
       expect(service.clearGameState).toHaveBeenCalled();
     });
 
-    it('should return null and clear cache for invalid data structure - score not number', () => {
+    it('should return null and clear cache for invalid data structure - scores not numbers', () => {
       const invalidState = {
         scrambledLetters: [],
         answers: [],
-        score: 'not a number',
+        roundScore: 'not a number',
+        totalScore: 'also not a number',
       };
 
       localStorage.setItem(STORAGE_KEY, JSON.stringify(invalidState));
@@ -191,7 +200,8 @@ describe('LocalStorageService', () => {
           { word: 'AB', found: false, revealed: true },
           { word: 'BA', found: false, revealed: false },
         ],
-        score: 0,
+        roundScore: 0,
+        totalScore: 0,
       };
 
       localStorage.setItem(STORAGE_KEY, JSON.stringify(storedState));
@@ -207,7 +217,8 @@ describe('LocalStorageService', () => {
           { word: 'AB', letters: ['A', 'B'], state: 'revealed' },
           { word: 'BA', letters: ['B', 'A'], state: 'not-found' },
         ],
-        score: 0,
+        roundScore: 0,
+        totalScore: 0,
       });
     });
 

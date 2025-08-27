@@ -7,12 +7,12 @@ import { ROOT_EFFECTS_INIT } from '@ngrx/effects';
 import { GameService } from 'src/app/3. services/game.service';
 import { LocalStorageService } from 'src/app/3. services/local-storage.service';
 import { GameEffects } from './game.effects';
-import { initialState, Answer } from './game.state';
+import { initialState } from './game.state';
 import { generateGame } from 'src/app/4. shared/fakers/game.faker';
 import { generateAnswer } from 'src/app/4. shared/fakers/answer.faker';
 import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
 import { newGameAfterCompletion, newGameRequested, newGameStarted, restoreStateFromCache, revealGameRequested, wordSubmitted } from './game.actions';
-import { selectAnswers, selectScrambledLetters, selectScore } from './game.selectors';
+import { selectAnswers, selectScrambledLetters, selectRoundScore, selectTotalScore } from './game.selectors';
 
 describe('GameEffects', () => {
   let effects: GameEffects;
@@ -97,7 +97,8 @@ describe('GameEffects', () => {
       const cachedState = {
         scrambledLetters: [generateLetter(0)],
         answers: [generateAnswer()],
-        score: 100
+        roundScore: 50,
+        totalScore: 100
       };
       localStorageServiceSpy.loadGameState.and.returnValue(cachedState);
       
@@ -139,7 +140,8 @@ describe('GameEffects', () => {
       const scrambledLetters = [generateLetter(0)];
       const foundAnswer = { ...generateAnswer(), state: 'found' as const };
       const answers = [foundAnswer];
-      const score = 100;
+      const roundScore = 20;
+      const totalScore = 100;
 
       // Reinitialize TestBed with mock store values
       TestBed.resetTestingModule();
@@ -156,11 +158,12 @@ describe('GameEffects', () => {
           },
           provideMockActions(() => of(wordSubmitted())),
           provideMockStore({
-            initialState: { game: { scrambledLetters, answers, score } },
+            initialState: { game: { scrambledLetters, answers, roundScore, totalScore } },
             selectors: [
               { selector: selectScrambledLetters, value: scrambledLetters },
               { selector: selectAnswers, value: answers },
-              { selector: selectScore, value: score }
+              { selector: selectRoundScore, value: roundScore },
+              { selector: selectTotalScore, value: totalScore }
             ]
           }),
         ],
@@ -173,7 +176,8 @@ describe('GameEffects', () => {
         expect(localStorageServiceSpy.saveGameState).toHaveBeenCalledWith(
           scrambledLetters,
           answers,
-          score
+          roundScore,
+          totalScore
         );
         done();
       });
@@ -183,7 +187,8 @@ describe('GameEffects', () => {
       const scrambledLetters = [generateLetter(0)];
       const notFoundAnswer = { ...generateAnswer(), state: 'not-found' as const };
       const answers = [notFoundAnswer];
-      const score = 100;
+      const roundScore = 0;
+      const totalScore = 100;
 
       // Reinitialize TestBed with mock store values
       TestBed.resetTestingModule();
@@ -200,11 +205,12 @@ describe('GameEffects', () => {
           },
           provideMockActions(() => of(wordSubmitted())),
           provideMockStore({
-            initialState: { game: { scrambledLetters, answers, score } },
+            initialState: { game: { scrambledLetters, answers, roundScore, totalScore } },
             selectors: [
               { selector: selectScrambledLetters, value: scrambledLetters },
               { selector: selectAnswers, value: answers },
-              { selector: selectScore, value: score }
+              { selector: selectRoundScore, value: roundScore },
+              { selector: selectTotalScore, value: totalScore }
             ]
           }),
         ],

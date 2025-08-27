@@ -20,12 +20,14 @@ export interface GameState {
   answers: Answer[];
   scrambledLetters: Letter[];
   mostRecentAnswer: string | undefined;
-  score: number;
+  roundScore: number;
+  totalScore: number;
 }
 
 export const initialState: GameState = {
   answers: [],
   scrambledLetters: [],
   mostRecentAnswer: undefined,
-  score: 0,
+  roundScore: 0,
+  totalScore: 0,
 };

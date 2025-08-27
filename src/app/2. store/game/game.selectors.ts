@@ -43,7 +43,12 @@ export const selectIsGameComplete = createSelector(selectAnswers, (answers) =>
   answers.length > 0 && answers.every((answer) => answer.state === 'found')
 );
 
-export const selectScore = createSelector(selectFeature, (state) => state.score);
+export const selectRoundScore = createSelector(selectFeature, (state) => state.roundScore);
+
+export const selectTotalScore = createSelector(selectFeature, (state) => state.totalScore);
+
+// Backward compatibility - keeping selectScore as total score for now
+export const selectScore = selectTotalScore;
 
 const pointsReducer = (accumulator: number, answer: Answer) =>
   accumulator + answer.letters.length * 10;

@@ -6,7 +6,7 @@ import { map, mergeMap, of, tap } from 'rxjs';
 import { GameService } from 'src/app/3. services/game.service';
 import { LocalStorageService } from 'src/app/3. services/local-storage.service';
 import { newGameAfterCompletion, newGameRequested, newGameStarted, restoreStateFromCache, revealGameRequested, wordSubmitted } from './game.actions';
-import { selectScrambledLetters, selectAnswers, selectScore } from './game.selectors';
+import { selectScrambledLetters, selectAnswers, selectRoundScore, selectTotalScore } from './game.selectors';
 
 @Injectable()
 export class GameEffects {
@@ -57,7 +57,8 @@ export class GameEffects {
           return restoreStateFromCache({
             scrambledLetters: cachedState.scrambledLetters,
             answers: cachedState.answers,
-            score: cachedState.score
+            roundScore: cachedState.roundScore,
+            totalScore: cachedState.totalScore
           });
         } else {
           // If no cached state, start a new game
@@ -74,13 +75,14 @@ export class GameEffects {
         concatLatestFrom(() => [
           this.store.select(selectScrambledLetters),
           this.store.select(selectAnswers),
-          this.store.select(selectScore)
+          this.store.select(selectRoundScore),
+          this.store.select(selectTotalScore)
         ]),
-        tap(([, scrambledLetters, answers, score]) => {
+        tap(([, scrambledLetters, answers, roundScore, totalScore]) => {
           // Check if a word was actually found by looking for at least one found answer
           const hasFoundWord = answers.some(answer => answer.state === 'found');
           if (hasFoundWord) {
-            this.localStorageService.saveGameState(scrambledLetters, answers, score);
+            this.localStorageService.saveGameState(scrambledLetters, answers, roundScore, totalScore);
           }
         })
       );

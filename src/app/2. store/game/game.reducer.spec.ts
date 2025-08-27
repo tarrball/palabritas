@@ -26,13 +26,15 @@ describe('GameReducer', () => {
     it('should reset state and reset score for fresh start', () => {
       const stateWithScore: GameState = {
         ...initialState,
-        score: 150,
+        roundScore: 100,
+        totalScore: 150,
         answers: [{ word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' }],
       };
       
       const nextState = gameReducer(stateWithScore, newGameRequested());
 
-      expect(nextState.score).toBe(0);
+      expect(nextState.roundScore).toBe(0);
+      expect(nextState.totalScore).toBe(0);
       expect(nextState.answers).toEqual([]);
       expect(nextState.scrambledLetters).toEqual([]);
       expect(nextState.mostRecentAnswer).toBeUndefined();
@@ -40,16 +42,18 @@ describe('GameReducer', () => {
   });
 
   describe('newGameAfterCompletion', () => {
-    it('should reset state but preserve score after game completion', () => {
+    it('should reset state and add round score to total score after game completion', () => {
       const stateWithScore: GameState = {
         ...initialState,
-        score: 150,
+        roundScore: 100,
+        totalScore: 150,
         answers: [{ word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' }],
       };
       
       const nextState = gameReducer(stateWithScore, newGameAfterCompletion());
 
-      expect(nextState.score).toBe(150);
+      expect(nextState.roundScore).toBe(0);
+      expect(nextState.totalScore).toBe(250); // 150 + 100
       expect(nextState.answers).toEqual([]);
       expect(nextState.scrambledLetters).toEqual([]);
       expect(nextState.mostRecentAnswer).toBeUndefined();
@@ -189,13 +193,13 @@ describe('GameReducer', () => {
         state = gameReducer(state, wordSubmitted());
         
         // Verify we earned points before revealing
-        expect(state.score).toBeGreaterThan(0);
+        expect(state.roundScore).toBeGreaterThan(0);
         
         state = gameReducer(state, revealGameRequested());
 
         expect(state.answers[0].state).toEqual('revealed');
         expect(state.answers[1].state).toEqual('found');
-        expect(state.score).toBeGreaterThan(0); // Score should be preserved after reveal
+        expect(state.roundScore).toBeGreaterThan(0); // Round score should be preserved after reveal
       });
     });
 
@@ -236,12 +240,12 @@ describe('GameReducer', () => {
         expect(remainingAnswer.state).toEqual('not-found');
       });
 
-      it('should update the score when a word is found', () => {
-        const initialScore = state.score;
+      it('should update the round score when a word is found', () => {
+        const initialRoundScore = state.roundScore;
         state = gameReducer(state, wordSubmitted());
 
-        // 'set' has 3 letters, so score should increase by 30
-        expect(state.score).toEqual(initialScore + 30);
+        // 'set' has 3 letters, so round score should increase by 30
+        expect(state.roundScore).toEqual(initialRoundScore + 30);
       });
 
       it('should reset the clicked letters if the word is correct', () => {
@@ -318,7 +322,7 @@ describe('GameReducer', () => {
   });
 
   describe('restoreStateFromCache', () => {
-    it('should restore scrambled letters, answers, and score from cache', () => {
+    it('should restore scrambled letters, answers, and scores from cache', () => {
       const cachedData = {
         scrambledLetters: [
           { value: 'a', index: 0, typedIndex: 1 },
@@ -328,7 +332,8 @@ describe('GameReducer', () => {
           { word: 'ab', letters: ['a', 'b'], state: 'found' as const },
           { word: 'ba', letters: ['b', 'a'], state: 'not-found' as const }
         ],
-        score: 150
+        roundScore: 50,
+        totalScore: 150
       };
 
       const nextState = gameReducer(initialState, restoreStateFromCache(cachedData));
@@ -342,8 +347,9 @@ describe('GameReducer', () => {
       // Verify answers are restored
       expect(nextState.answers).toEqual(cachedData.answers);
 
-      // Verify score is restored
-      expect(nextState.score).toBe(150);
+      // Verify scores are restored
+      expect(nextState.roundScore).toBe(50);
+      expect(nextState.totalScore).toBe(150);
 
       // Verify mostRecentAnswer is cleared
       expect(nextState.mostRecentAnswer).toBeUndefined();

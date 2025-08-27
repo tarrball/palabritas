@@ -37,8 +37,10 @@ export const gameReducer = createReducer(
   ),
   on(newGameAfterCompletion, (state) =>
     produce(initialState, (draft) => {
-      // Reset to initial state but preserve the score from completed game
-      draft.score = state.score;
+      // Reset to initial state but add current round score to total score
+      // and clear round score for the new game
+      draft.totalScore = state.totalScore + state.roundScore;
+      draft.roundScore = 0;
     })
   ),
   on(newGameRequested, () =>
@@ -66,7 +68,7 @@ export const gameReducer = createReducer(
       }));
     })
   ),
-  on(restoreStateFromCache, (state, { scrambledLetters, answers, score }) =>
+  on(restoreStateFromCache, (state, { scrambledLetters, answers, roundScore, totalScore }) =>
     produce(state, (draft) => {
       // Restore the scrambled letters (ensuring typedIndex is cleared)
       draft.scrambledLetters = scrambledLetters.map((letter) => ({
@@ -77,8 +79,9 @@ export const gameReducer = createReducer(
       // Restore the answers directly - they already have the correct Answer format
       draft.answers = answers;
       
-      // Restore the score
-      draft.score = score;
+      // Restore both scores
+      draft.roundScore = roundScore;
+      draft.totalScore = totalScore;
       
       // Clear mostRecentAnswer to start fresh
       draft.mostRecentAnswer = undefined;
@@ -133,7 +136,7 @@ export const gameReducer = createReducer(
       if (matchingAnswer) {
         matchingAnswer.state = 'found';
         draft.mostRecentAnswer = submittedWord;
-        draft.score += matchingAnswer.letters.length * 10;
+        draft.roundScore += matchingAnswer.letters.length * 10;
       }
 
       draft.scrambledLetters.forEach((letter) => {

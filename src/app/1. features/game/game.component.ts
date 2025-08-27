@@ -18,6 +18,7 @@ import {
   selectIsGameComplete,
   selectMostRecentAnswer,
   selectPotentialPoints,
+  selectRoundScore,
   selectScore,
 } from 'src/app/2. store/game/game.selectors';
 import { Answer, Letter } from 'src/app/2. store/game/game.state';
@@ -39,6 +40,7 @@ export class GameComponent implements OnInit {
   public earnedPoints$: Observable<number>;
   public potentialPoints$: Observable<number>;
   public isGameComplete$: Observable<boolean>;
+  public roundScore$: Observable<number>;
   public score$: Observable<number>;
 
   constructor() {
@@ -48,6 +50,7 @@ export class GameComponent implements OnInit {
     this.earnedPoints$ = this.store.select(selectEarnedPoints);
     this.potentialPoints$ = this.store.select(selectPotentialPoints);
     this.isGameComplete$ = this.store.select(selectIsGameComplete);
+    this.roundScore$ = this.store.select(selectRoundScore);
     this.score$ = this.store.select(selectScore);
   }
 

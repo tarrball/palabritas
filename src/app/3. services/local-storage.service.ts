@@ -12,14 +12,16 @@ interface StoredAnswer {
 interface StoredGameState {
   scrambledLetters: Letter[];
   answers: StoredAnswer[];
-  score: number;
+  roundScore: number;
+  totalScore: number;
 }
 
 // Public interface using domain types
 export interface CachedGameState {
   scrambledLetters: Letter[];
   answers: Answer[];
-  score: number;
+  roundScore: number;
+  totalScore: number;
 }
 
 @Injectable({
@@ -28,7 +30,7 @@ export interface CachedGameState {
 export class LocalStorageService {
   private readonly STORAGE_KEY = 'palabritas.game.state';
 
-  saveGameState(scrambledLetters: Letter[], answers: Answer[], score: number): void {
+  saveGameState(scrambledLetters: Letter[], answers: Answer[], roundScore: number, totalScore: number): void {
     try {
       // Convert Answer[] to StoredAnswer[] for storage
       const storedAnswers: StoredAnswer[] = answers.map(answer => ({
@@ -40,7 +42,8 @@ export class LocalStorageService {
       const state: StoredGameState = {
         scrambledLetters,
         answers: storedAnswers,
-        score,
+        roundScore,
+        totalScore,
       };
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(state));
     } catch (error) {
@@ -62,7 +65,8 @@ export class LocalStorageService {
         !parsedState ||
         !Array.isArray(parsedState.scrambledLetters) ||
         !Array.isArray(parsedState.answers) ||
-        typeof parsedState.score !== 'number'
+        typeof parsedState.roundScore !== 'number' ||
+        typeof parsedState.totalScore !== 'number'
       ) {
         this.clearGameState();
         return null;
@@ -85,7 +89,8 @@ export class LocalStorageService {
       return {
         scrambledLetters,
         answers,
-        score: parsedState.score
+        roundScore: parsedState.roundScore,
+        totalScore: parsedState.totalScore
       };
     } catch (error) {
       console.error('Failed to load game state from localStorage:', error);
