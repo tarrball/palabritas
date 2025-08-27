@@ -7,6 +7,7 @@ import {
   selectMostRecentAnswer,
   selectPotentialPoints,
   selectScore,
+  selectScrambledLetters,
 } from './game.selectors';
 import { generateGameState } from 'src/app/4. shared/fakers/game.state.faker';
 import { gameReducer } from './game.reducer';
@@ -52,6 +53,15 @@ describe('GameSelectors', () => {
         state,
         letterTapped({ index: state.scrambledLetters[3].index })
       );
+    });
+
+    describe('selectScrambledLetters', () => {
+      it('should select all scrambled letters from the state', () => {
+        const result = selectScrambledLetters.projector(state);
+
+        expect(result).toEqual(state.scrambledLetters);
+        expect(result.length).toBeGreaterThan(0);
+      });
     });
 
     describe('selectClickableLetters', () => {
