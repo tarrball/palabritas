@@ -9,7 +9,8 @@
       "Bash(npm run lint)",
       "Bash(ng lint)",
       "Bash(git checkout:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

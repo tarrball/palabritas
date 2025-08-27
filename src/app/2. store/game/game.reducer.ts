@@ -131,12 +131,8 @@ export const gameReducer = createReducer(
         typedIndex: undefined,
       }));
       
-      // Restore the answers with their found/revealed states
-      draft.answers = answers.map((answer) => ({
-        word: answer.word,
-        letters: Array.from(answer.word),
-        state: answer.found ? 'found' : answer.revealed ? 'revealed' : 'not-found',
-      }));
+      // Restore the answers directly - they already have the correct Answer format
+      draft.answers = answers;
       
       // Restore the score
       draft.score = score;

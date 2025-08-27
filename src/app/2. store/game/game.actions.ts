@@ -1,11 +1,6 @@
 import { createAction, props } from '@ngrx/store';
 import { Letter } from '../../4. shared/types';
-
-interface StoredAnswer {
-  word: string;
-  found: boolean;
-  revealed: boolean;
-}
+import { Answer } from './game.state';
 
 export const newGameRequested = createAction('[Game] New Game Requested');
 
@@ -31,7 +26,7 @@ export const restoreStateFromCache = createAction(
   '[Game] Restore State From Cache',
   props<{ 
     scrambledLetters: Letter[];
-    answers: StoredAnswer[];
+    answers: Answer[];
     score: number;
   }>()
 );

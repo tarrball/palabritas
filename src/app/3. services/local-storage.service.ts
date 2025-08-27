@@ -1,15 +1,24 @@
 import { Injectable } from '@angular/core';
 import { Letter } from '../4. shared/types';
+import { Answer } from '../2. store/game/game.state';
 
+// Internal storage format - not exported
 interface StoredAnswer {
   word: string;
   found: boolean;
   revealed: boolean;
 }
 
-interface CachedGameState {
+interface StoredGameState {
   scrambledLetters: Letter[];
   answers: StoredAnswer[];
+  score: number;
+}
+
+// Public interface using domain types
+export interface CachedGameState {
+  scrambledLetters: Letter[];
+  answers: Answer[];
   score: number;
 }
 
@@ -19,11 +28,18 @@ interface CachedGameState {
 export class LocalStorageService {
   private readonly STORAGE_KEY = 'palabritas.game.state';
 
-  saveGameState(scrambledLetters: Letter[], answers: StoredAnswer[], score: number): void {
+  saveGameState(scrambledLetters: Letter[], answers: Answer[], score: number): void {
     try {
-      const state: CachedGameState = {
+      // Convert Answer[] to StoredAnswer[] for storage
+      const storedAnswers: StoredAnswer[] = answers.map(answer => ({
+        word: answer.word,
+        found: answer.state === 'found',
+        revealed: answer.state === 'revealed'
+      }));
+
+      const state: StoredGameState = {
         scrambledLetters,
-        answers,
+        answers: storedAnswers,
         score,
       };
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(state));
@@ -39,7 +55,7 @@ export class LocalStorageService {
         return null;
       }
 
-      const parsedState = JSON.parse(storedState) as CachedGameState;
+      const parsedState = JSON.parse(storedState) as StoredGameState;
       
       // Validate the structure
       if (
@@ -52,7 +68,25 @@ export class LocalStorageService {
         return null;
       }
 
-      return parsedState;
+      // Convert StoredAnswer[] back to Answer[]
+      const answers: Answer[] = parsedState.answers.map(storedAnswer => ({
+        word: storedAnswer.word,
+        letters: Array.from(storedAnswer.word),
+        state: storedAnswer.found ? 'found' : storedAnswer.revealed ? 'revealed' : 'not-found' as const
+      }));
+
+      // Ensure scrambledLetters have typedIndex property (even if undefined)
+      const scrambledLetters: Letter[] = parsedState.scrambledLetters.map(letter => ({
+        value: letter.value,
+        index: letter.index,
+        typedIndex: letter.typedIndex ?? undefined
+      }));
+
+      return {
+        scrambledLetters,
+        answers,
+        score: parsedState.score
+      };
     } catch (error) {
       console.error('Failed to load game state from localStorage:', error);
       this.clearGameState();

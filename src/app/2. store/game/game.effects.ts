@@ -1,5 +1,6 @@
 import { Injectable, inject } from '@angular/core';
-import { Actions, ROOT_EFFECTS_INIT, createEffect, ofType, concatLatestFrom } from '@ngrx/effects';
+import { Actions, ROOT_EFFECTS_INIT, createEffect, ofType } from '@ngrx/effects';
+import { concatLatestFrom } from '@ngrx/operators';
 import { GameService } from 'src/app/3. services/game.service';
 import { LocalStorageService } from 'src/app/3. services/local-storage.service';
 import { Store } from '@ngrx/store';
@@ -34,13 +35,7 @@ export class GameEffects {
           // Check if a word was actually found by looking for at least one found answer
           const hasFoundWord = answers.some(answer => answer.state === 'found');
           if (hasFoundWord) {
-            // Map answers back to the simplified format for storage
-            const simplifiedAnswers = answers.map(answer => ({
-              word: answer.word,
-              found: answer.state === 'found',
-              revealed: answer.state === 'revealed'
-            }));
-            this.localStorageService.saveGameState(scrambledLetters, simplifiedAnswers, score);
+            this.localStorageService.saveGameState(scrambledLetters, answers, score);
           }
         })
       );
