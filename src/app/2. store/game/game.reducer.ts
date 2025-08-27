@@ -2,13 +2,13 @@ import { createReducer, on } from '@ngrx/store';
 import { Letter, initialState } from './game.state';
 import {
   letterTapped,
-  newGameStarted,
-  newGameRequested,
   newGameAfterCompletion,
-  wordSubmitted,
+  newGameRequested,
+  newGameStarted,
+  restoreStateFromCache,
   revealGameRequested,
   shuffleRequested,
-  restoreStateFromCache,
+  wordSubmitted,
 } from './game.actions';
 import * as shared from './game.shared';
 import { produce } from 'immer';
@@ -24,17 +24,28 @@ const shuffleArray = <T>(array: T[]): T[] => {
 
 export const gameReducer = createReducer(
   initialState,
-  on(newGameRequested, () =>
-    produce(initialState, (draft) => {
-      // Fresh start - return to initial state with score reset
-      // Since we want a complete reset, we just return the initial state
-      return draft;
+  on(letterTapped, (state, { index }) =>
+    produce(state, (draft) => {
+      const letter = draft.scrambledLetters[index];
+
+      if (letter.typedIndex === undefined) {
+        letter.typedIndex = calculateNextTypedIndex(draft.scrambledLetters);
+      } else {
+        letter.typedIndex = undefined;
+      }
     })
   ),
   on(newGameAfterCompletion, (state) =>
     produce(initialState, (draft) => {
       // Reset to initial state but preserve the score from completed game
       draft.score = state.score;
+    })
+  ),
+  on(newGameRequested, () =>
+    produce(initialState, (draft) => {
+      // Fresh start - return to initial state with score reset
+      // Since we want a complete reset, we just return the initial state
+      return draft;
     })
   ),
   on(newGameStarted, (state, { word, answers }) =>
@@ -55,38 +66,22 @@ export const gameReducer = createReducer(
       }));
     })
   ),
-  on(letterTapped, (state, { index }) =>
+  on(restoreStateFromCache, (state, { scrambledLetters, answers, score }) =>
     produce(state, (draft) => {
-      const letter = draft.scrambledLetters[index];
-
-      if (letter.typedIndex === undefined) {
-        letter.typedIndex = calculateNextTypedIndex(draft.scrambledLetters);
-      } else {
-        letter.typedIndex = undefined;
-      }
-    })
-  ),
-  on(wordSubmitted, (state) =>
-    produce(state, (draft) => {
-      const submittedLetters = shared.getTypedLetters(draft.scrambledLetters);
-
-      const submittedWord = submittedLetters
-        .map((letter) => letter.value)
-        .join('');
-
-      const matchingAnswer = draft.answers.find(
-        (answer) => answer.word === submittedWord
-      );
-
-      if (matchingAnswer) {
-        matchingAnswer.state = 'found';
-        draft.mostRecentAnswer = submittedWord;
-        draft.score += matchingAnswer.letters.length * 10;
-      }
-
-      draft.scrambledLetters.forEach((letter) => {
-        letter.typedIndex = undefined;
-      });
+      // Restore the scrambled letters (ensuring typedIndex is cleared)
+      draft.scrambledLetters = scrambledLetters.map((letter) => ({
+        ...letter,
+        typedIndex: undefined,
+      }));
+      
+      // Restore the answers directly - they already have the correct Answer format
+      draft.answers = answers;
+      
+      // Restore the score
+      draft.score = score;
+      
+      // Clear mostRecentAnswer to start fresh
+      draft.mostRecentAnswer = undefined;
     })
   ),
   on(revealGameRequested, (state) =>
@@ -123,22 +118,27 @@ export const gameReducer = createReducer(
       }));
     })
   ),
-  on(restoreStateFromCache, (state, { scrambledLetters, answers, score }) =>
+  on(wordSubmitted, (state) =>
     produce(state, (draft) => {
-      // Restore the scrambled letters (ensuring typedIndex is cleared)
-      draft.scrambledLetters = scrambledLetters.map((letter) => ({
-        ...letter,
-        typedIndex: undefined,
-      }));
-      
-      // Restore the answers directly - they already have the correct Answer format
-      draft.answers = answers;
-      
-      // Restore the score
-      draft.score = score;
-      
-      // Clear mostRecentAnswer to start fresh
-      draft.mostRecentAnswer = undefined;
+      const submittedLetters = shared.getTypedLetters(draft.scrambledLetters);
+
+      const submittedWord = submittedLetters
+        .map((letter) => letter.value)
+        .join('');
+
+      const matchingAnswer = draft.answers.find(
+        (answer) => answer.word === submittedWord
+      );
+
+      if (matchingAnswer) {
+        matchingAnswer.state = 'found';
+        draft.mostRecentAnswer = submittedWord;
+        draft.score += matchingAnswer.letters.length * 10;
+      }
+
+      draft.scrambledLetters.forEach((letter) => {
+        letter.typedIndex = undefined;
+      });
     })
   )
 );

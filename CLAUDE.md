@@ -71,6 +71,10 @@ Immer allows you to write "mutative" logic that is actually immutable under the 
 - Game words are stored in `src/assets/games.en.ts` (from Webster's Unabridged Dictionary)
 - `GameService` randomly selects games from this static data
 
+### Code Organization
+
+**Keep imports and exports alphabetical** in all NgRx files (actions, reducers, effects, selectors) for better maintainability and consistency.
+
 ### ESLint Configuration
 
 The project uses ESLint v9 with:

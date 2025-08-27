@@ -1,11 +1,11 @@
 import { Injectable, inject } from '@angular/core';
 import { Actions, ROOT_EFFECTS_INIT, createEffect, ofType } from '@ngrx/effects';
+import { Store } from '@ngrx/store';
 import { concatLatestFrom } from '@ngrx/operators';
+import { map, mergeMap, of, tap } from 'rxjs';
 import { GameService } from 'src/app/3. services/game.service';
 import { LocalStorageService } from 'src/app/3. services/local-storage.service';
-import { Store } from '@ngrx/store';
-import { newGameStarted, newGameRequested, newGameAfterCompletion, wordSubmitted, restoreStateFromCache } from './game.actions';
-import { mergeMap, of, tap, map } from 'rxjs';
+import { newGameAfterCompletion, newGameRequested, newGameStarted, restoreStateFromCache, wordSubmitted } from './game.actions';
 import { selectScrambledLetters, selectAnswers, selectScore } from './game.selectors';
 
 @Injectable()
@@ -15,33 +15,25 @@ export class GameEffects {
   private readonly localStorageService = inject(LocalStorageService);
   private readonly store = inject(Store);
 
+  public clearCacheOnNewGame$ = createEffect(
+    () => {
+      return this.actions$.pipe(
+        ofType(newGameStarted),
+        tap(() => {
+          // Clear the cache when a new game starts
+          this.localStorageService.clearGameState();
+        })
+      );
+    },
+    { dispatch: false }
+  );
+
   public requestNewGame$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(newGameRequested, newGameAfterCompletion),
       mergeMap(() => of(newGameStarted(this.gameService.nextGame())))
     );
   });
-
-  public saveGameStateOnWordFound$ = createEffect(
-    () => {
-      return this.actions$.pipe(
-        ofType(wordSubmitted),
-        concatLatestFrom(() => [
-          this.store.select(selectScrambledLetters),
-          this.store.select(selectAnswers),
-          this.store.select(selectScore)
-        ]),
-        tap(([, scrambledLetters, answers, score]) => {
-          // Check if a word was actually found by looking for at least one found answer
-          const hasFoundWord = answers.some(answer => answer.state === 'found');
-          if (hasFoundWord) {
-            this.localStorageService.saveGameState(scrambledLetters, answers, score);
-          }
-        })
-      );
-    },
-    { dispatch: false }
-  );
 
   public restoreGameStateOnInit$ = createEffect(() => {
     return this.actions$.pipe(
@@ -62,13 +54,21 @@ export class GameEffects {
     );
   });
 
-  public clearCacheOnNewGame$ = createEffect(
+  public saveGameStateOnWordFound$ = createEffect(
     () => {
       return this.actions$.pipe(
-        ofType(newGameStarted),
-        tap(() => {
-          // Clear the cache when a new game starts
-          this.localStorageService.clearGameState();
+        ofType(wordSubmitted),
+        concatLatestFrom(() => [
+          this.store.select(selectScrambledLetters),
+          this.store.select(selectAnswers),
+          this.store.select(selectScore)
+        ]),
+        tap(([, scrambledLetters, answers, score]) => {
+          // Check if a word was actually found by looking for at least one found answer
+          const hasFoundWord = answers.some(answer => answer.state === 'found');
+          if (hasFoundWord) {
+            this.localStorageService.saveGameState(scrambledLetters, answers, score);
+          }
         })
       );
     },
