@@ -3,12 +3,13 @@ import { gameReducer } from './game.reducer';
 import { GameState, initialState } from './game.state';
 import {
   letterTapped,
-  newGameRequested,
   newGameAfterCompletion,
+  newGameRequested,
   newGameStarted,
+  restoreStateFromCache,
   revealGameRequested,
-  wordSubmitted,
   shuffleRequested,
+  wordSubmitted,
 } from './game.actions';
 import { selectClickableLetters, selectClickedLetters } from './game.selectors';
 
@@ -313,6 +314,39 @@ describe('GameReducer', () => {
         const tappedLetters = shuffledState.scrambledLetters.filter(l => l.typedIndex !== undefined);
         expect(tappedLetters.length).toBe(1);
       });
+    });
+  });
+
+  describe('restoreStateFromCache', () => {
+    it('should restore scrambled letters, answers, and score from cache', () => {
+      const cachedData = {
+        scrambledLetters: [
+          { value: 'a', index: 0, typedIndex: 1 },
+          { value: 'b', index: 1, typedIndex: undefined }
+        ],
+        answers: [
+          { word: 'ab', letters: ['a', 'b'], state: 'found' as const },
+          { word: 'ba', letters: ['b', 'a'], state: 'not-found' as const }
+        ],
+        score: 150
+      };
+
+      const nextState = gameReducer(initialState, restoreStateFromCache(cachedData));
+
+      // Verify scrambled letters are restored but typedIndex is cleared
+      expect(nextState.scrambledLetters).toEqual([
+        { value: 'a', index: 0, typedIndex: undefined },
+        { value: 'b', index: 1, typedIndex: undefined }
+      ]);
+
+      // Verify answers are restored
+      expect(nextState.answers).toEqual(cachedData.answers);
+
+      // Verify score is restored
+      expect(nextState.score).toBe(150);
+
+      // Verify mostRecentAnswer is cleared
+      expect(nextState.mostRecentAnswer).toBeUndefined();
     });
   });
 });

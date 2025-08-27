@@ -3,19 +3,30 @@ import { Action } from '@ngrx/store';
 import { provideMockStore } from '@ngrx/store/testing';
 import { provideMockActions } from '@ngrx/effects/testing';
 import { Observable, of, toArray } from 'rxjs';
+import { ROOT_EFFECTS_INIT } from '@ngrx/effects';
 import { GameService } from 'src/app/3. services/game.service';
+import { LocalStorageService } from 'src/app/3. services/local-storage.service';
 import { GameEffects } from './game.effects';
-import { initialState } from './game.state';
+import { initialState, Answer } from './game.state';
 import { generateGame } from 'src/app/4. shared/fakers/game.faker';
-import { newGameRequested, newGameAfterCompletion, newGameStarted } from './game.actions';
+import { generateAnswer } from 'src/app/4. shared/fakers/answer.faker';
+import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
+import { newGameAfterCompletion, newGameRequested, newGameStarted, restoreStateFromCache, wordSubmitted } from './game.actions';
+import { selectAnswers, selectScrambledLetters, selectScore } from './game.selectors';
 
 describe('GameEffects', () => {
   let effects: GameEffects;
   let actions$: Observable<Action>;
   let gameServiceSpy: jasmine.SpyObj<GameService>;
+  let localStorageServiceSpy: jasmine.SpyObj<LocalStorageService>;
 
   beforeEach(() => {
     gameServiceSpy = jasmine.createSpyObj('GameService', ['nextGame']);
+    localStorageServiceSpy = jasmine.createSpyObj('LocalStorageService', [
+      'loadGameState',
+      'saveGameState',
+      'clearGameState'
+    ]);
 
     TestBed.configureTestingModule({
       providers: [
@@ -23,6 +34,10 @@ describe('GameEffects', () => {
         {
           provide: GameService,
           useValue: gameServiceSpy,
+        },
+        {
+          provide: LocalStorageService,
+          useValue: localStorageServiceSpy,
         },
         provideMockActions(() => actions$),
         provideMockStore({ initialState: { game: initialState } }),
@@ -61,6 +76,134 @@ describe('GameEffects', () => {
       effects.requestNewGame$.pipe(toArray()).subscribe((actions) => {
         expect(actions).toEqual([newGameStarted(nextGame)]);
 
+        done();
+      });
+    });
+  });
+
+  describe('clearCacheOnNewGame$', () => {
+    it('should clear localStorage when newGameStarted is dispatched', (done) => {
+      actions$ = of(newGameStarted(generateGame()));
+
+      effects.clearCacheOnNewGame$.pipe(toArray()).subscribe(() => {
+        expect(localStorageServiceSpy.clearGameState).toHaveBeenCalled();
+        done();
+      });
+    });
+  });
+
+  describe('restoreGameStateOnInit$', () => {
+    it('should return restoreStateFromCache when cached state exists', (done) => {
+      const cachedState = {
+        scrambledLetters: [generateLetter(0)],
+        answers: [generateAnswer()],
+        score: 100
+      };
+      localStorageServiceSpy.loadGameState.and.returnValue(cachedState);
+      
+      actions$ = of({ type: ROOT_EFFECTS_INIT });
+
+      effects.restoreGameStateOnInit$.pipe(toArray()).subscribe((actions) => {
+        expect(actions).toEqual([restoreStateFromCache(cachedState)]);
+        expect(localStorageServiceSpy.loadGameState).toHaveBeenCalled();
+        done();
+      });
+    });
+
+    it('should return newGameRequested when no cached state exists', (done) => {
+      localStorageServiceSpy.loadGameState.and.returnValue(null);
+      
+      actions$ = of({ type: ROOT_EFFECTS_INIT });
+
+      effects.restoreGameStateOnInit$.pipe(toArray()).subscribe((actions) => {
+        expect(actions).toEqual([newGameRequested()]);
+        expect(localStorageServiceSpy.loadGameState).toHaveBeenCalled();
+        done();
+      });
+    });
+  });
+
+  describe('saveGameStateOnWordFound$', () => {
+    it('should save game state when a word is found', (done) => {
+      const scrambledLetters = [generateLetter(0)];
+      const foundAnswer = { ...generateAnswer(), state: 'found' as const };
+      const answers = [foundAnswer];
+      const score = 100;
+
+      // Reinitialize TestBed with mock store values
+      TestBed.resetTestingModule();
+      TestBed.configureTestingModule({
+        providers: [
+          GameEffects,
+          {
+            provide: GameService,
+            useValue: gameServiceSpy,
+          },
+          {
+            provide: LocalStorageService,
+            useValue: localStorageServiceSpy,
+          },
+          provideMockActions(() => of(wordSubmitted())),
+          provideMockStore({
+            initialState: { game: { scrambledLetters, answers, score } },
+            selectors: [
+              { selector: selectScrambledLetters, value: scrambledLetters },
+              { selector: selectAnswers, value: answers },
+              { selector: selectScore, value: score }
+            ]
+          }),
+        ],
+      });
+
+      effects = TestBed.inject(GameEffects);
+      actions$ = of(wordSubmitted());
+
+      effects.saveGameStateOnWordFound$.pipe(toArray()).subscribe(() => {
+        expect(localStorageServiceSpy.saveGameState).toHaveBeenCalledWith(
+          scrambledLetters,
+          answers,
+          score
+        );
+        done();
+      });
+    });
+
+    it('should not save game state when no word is found', (done) => {
+      const scrambledLetters = [generateLetter(0)];
+      const notFoundAnswer = { ...generateAnswer(), state: 'not-found' as const };
+      const answers = [notFoundAnswer];
+      const score = 100;
+
+      // Reinitialize TestBed with mock store values
+      TestBed.resetTestingModule();
+      TestBed.configureTestingModule({
+        providers: [
+          GameEffects,
+          {
+            provide: GameService,
+            useValue: gameServiceSpy,
+          },
+          {
+            provide: LocalStorageService,
+            useValue: localStorageServiceSpy,
+          },
+          provideMockActions(() => of(wordSubmitted())),
+          provideMockStore({
+            initialState: { game: { scrambledLetters, answers, score } },
+            selectors: [
+              { selector: selectScrambledLetters, value: scrambledLetters },
+              { selector: selectAnswers, value: answers },
+              { selector: selectScore, value: score }
+            ]
+          }),
+        ],
+      });
+
+      effects = TestBed.inject(GameEffects);
+      actions$ = of(wordSubmitted());
+
+      effects.saveGameStateOnWordFound$.pipe(toArray()).subscribe(() => {
+        expect(localStorageServiceSpy.saveGameState).not.toHaveBeenCalled();
         done();
       });
     });
