@@ -5,7 +5,7 @@ import { concatLatestFrom } from '@ngrx/operators';
 import { map, mergeMap, of, tap } from 'rxjs';
 import { GameService } from 'src/app/3. services/game.service';
 import { LocalStorageService } from 'src/app/3. services/local-storage.service';
-import { newGameAfterCompletion, newGameRequested, newGameStarted, restoreStateFromCache, wordSubmitted } from './game.actions';
+import { newGameAfterCompletion, newGameRequested, newGameStarted, restoreStateFromCache, revealGameRequested, wordSubmitted } from './game.actions';
 import { selectScrambledLetters, selectAnswers, selectScore } from './game.selectors';
 
 @Injectable()
@@ -21,6 +21,19 @@ export class GameEffects {
         ofType(newGameStarted),
         tap(() => {
           // Clear the cache when a new game starts
+          this.localStorageService.clearGameState();
+        })
+      );
+    },
+    { dispatch: false }
+  );
+
+  public clearCacheOnReveal$ = createEffect(
+    () => {
+      return this.actions$.pipe(
+        ofType(revealGameRequested),
+        tap(() => {
+          // Clear the cache when game is revealed (game session is over)
           this.localStorageService.clearGameState();
         })
       );

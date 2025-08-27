@@ -181,6 +181,36 @@ describe('LocalStorageService', () => {
       expect(service.clearGameState).toHaveBeenCalled();
     });
 
+    it('should correctly convert revealed answers back to Answer format', () => {
+      const storedState = {
+        scrambledLetters: [
+          { value: 'A', index: 0 },
+          { value: 'B', index: 1 },
+        ],
+        answers: [
+          { word: 'AB', found: false, revealed: true },
+          { word: 'BA', found: false, revealed: false },
+        ],
+        score: 0,
+      };
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(storedState));
+
+      const loadedState = service.loadGameState();
+      
+      expect(loadedState).toEqual({
+        scrambledLetters: [
+          { value: 'A', index: 0, typedIndex: undefined },
+          { value: 'B', index: 1, typedIndex: undefined },
+        ],
+        answers: [
+          { word: 'AB', letters: ['A', 'B'], state: 'revealed' },
+          { word: 'BA', letters: ['B', 'A'], state: 'not-found' },
+        ],
+        score: 0,
+      });
+    });
+
     it('should handle localStorage access errors gracefully', () => {
       spyOn(localStorage, 'getItem').and.throwError('Access denied');
       spyOn(console, 'error');

@@ -11,7 +11,7 @@ import { initialState, Answer } from './game.state';
 import { generateGame } from 'src/app/4. shared/fakers/game.faker';
 import { generateAnswer } from 'src/app/4. shared/fakers/answer.faker';
 import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
-import { newGameAfterCompletion, newGameRequested, newGameStarted, restoreStateFromCache, wordSubmitted } from './game.actions';
+import { newGameAfterCompletion, newGameRequested, newGameStarted, restoreStateFromCache, revealGameRequested, wordSubmitted } from './game.actions';
 import { selectAnswers, selectScrambledLetters, selectScore } from './game.selectors';
 
 describe('GameEffects', () => {
@@ -118,6 +118,17 @@ describe('GameEffects', () => {
       effects.restoreGameStateOnInit$.pipe(toArray()).subscribe((actions) => {
         expect(actions).toEqual([newGameRequested()]);
         expect(localStorageServiceSpy.loadGameState).toHaveBeenCalled();
+        done();
+      });
+    });
+  });
+
+  describe('clearCacheOnReveal$', () => {
+    it('should clear localStorage when revealGameRequested is dispatched', (done) => {
+      actions$ = of(revealGameRequested());
+
+      effects.clearCacheOnReveal$.pipe(toArray()).subscribe(() => {
+        expect(localStorageServiceSpy.clearGameState).toHaveBeenCalled();
         done();
       });
     });
