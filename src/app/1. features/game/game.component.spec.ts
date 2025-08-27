@@ -6,10 +6,9 @@ import { GameState, initialState } from 'src/app/2. store/game/game.state';
 import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
 import {
   letterTapped,
-  newGameRequested,
   newGameAfterCompletion,
-  wordSubmitted,
   shuffleRequested,
+  wordSubmitted,
 } from 'src/app/2. store/game/game.actions';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -55,7 +54,7 @@ describe('GameComponent', () => {
       expect(dispatchSpy).toHaveBeenCalledWith(wordSubmitted());
     });
 
-    it('should dispatch newGameRequested action when game is complete', () => {
+    it('should dispatch newGameAfterCompletion action when game is complete', () => {
       const dispatchSpy = spyOn(mockStore, 'dispatch');
 
       component.clickEnter(true);
@@ -75,14 +74,6 @@ describe('GameComponent', () => {
   });
 
   describe('ngOnInit', () => {
-    it('should dispatch the newGameRequested action', () => {
-      const dispatchSpy = spyOn(mockStore, 'dispatch');
-
-      component.ngOnInit();
-
-      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested());
-    });
-
     describe('recent answer changes', () => {
       let eleSpy: jasmine.Spy;
       let docSpy: jasmine.Spy;

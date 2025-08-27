@@ -6,10 +6,9 @@ import { Store } from '@ngrx/store';
 import { Observable, filter } from 'rxjs';
 import {
   letterTapped,
-  newGameRequested,
   newGameAfterCompletion,
-  wordSubmitted,
   shuffleRequested,
+  wordSubmitted,
 } from 'src/app/2. store/game/game.actions';
 import {
   selectAnswers,
@@ -53,8 +52,6 @@ export class GameComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.store.dispatch(newGameRequested());
-
     this.store
       .select(selectMostRecentAnswer)
       // falsy are filtered out so we can safely use the non-null assertion operator
