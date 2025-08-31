@@ -1,14 +1,18 @@
+import { isDevMode, importProvidersFrom } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { importProvidersFrom } from '@angular/core';
-import { AppComponent } from './app/app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppComponent } from './app/app.component';
 import { AppRoutingModule } from './app/app-routing.module';
+
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+
 import { metaReducers, reducers } from './app/2. store';
 import { GameEffects } from './app/2. store/game/game.effects';
-import { isDevMode } from '@angular/core';
+import { HydrationEffects } from './app/2. store/hydration/hydration.effects';
+import { PersistenceEffects } from './app/2. store/persistence/persistence.effects';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -26,7 +30,11 @@ bootstrapApplication(AppComponent, {
           strictActionTypeUniqueness: true,
         },
       }),
-      EffectsModule.forRoot([GameEffects]),
+      EffectsModule.forRoot([
+        GameEffects,
+        HydrationEffects,
+        PersistenceEffects,
+      ]),
       StoreDevtoolsModule.instrument({
         maxAge: 25,
         logOnly: !isDevMode(),
@@ -34,6 +42,6 @@ bootstrapApplication(AppComponent, {
         trace: false,
         traceLimit: 75,
       })
-    )
-  ]
-}).catch(err => console.error(err));
+    ),
+  ],
+}).catch((err) => console.error(err));
