@@ -84,43 +84,29 @@ npm run build
 - **Testing**: Jasmine + Karma with ng-mocks
 - **Code Quality**: ESLint with Angular and NgRx rules
 
-### Project Structure
+### Architecture Overview
 
-```
-src/app/
-├── 1. features/          # UI components and feature modules
-│   ├── game/            # Main game component
-│   └── shared/          # Shared UI components
-├── 2. store/            # NgRx state management
-│   ├── game/            # Game state, actions, reducers, effects
-│   └── hydration/       # Hydration state management
-├── 3. services/         # Injectable services
-│   └── game.service.ts  # Game logic and data management
-└── 4. shared/           # Shared utilities and types
-    ├── types/           # TypeScript interfaces
-    └── fakers/          # Test data generators
-```
+Palabritas follows a clean, modular architecture built on Angular 18 best practices:
 
-### State Management
+#### **Folder Organization**
+The codebase uses a numbered folder structure for logical organization:
+- `1. features/` - UI components and Angular feature modules
+- `2. store/` - NgRx state management (stores, actions, effects, reducers)
+- `3. services/` - Injectable services for business logic and external APIs
+- `4. shared/` - Shared utilities, types, and test helpers
 
-The app uses NgRx with a clean architecture:
-- **Actions**: User interactions (`letterTapped`, `wordSubmitted`, etc.)
-- **State**: Immutable game state with Immer for updates
-- **Reducers**: Pure functions for state transitions
-- **Effects**: Side effects and async operations
-- **Selectors**: Memoized state derivations
-- **Hydration**: Automatic state persistence and restoration using LocalStorage
+#### **State Management**
+Built on NgRx for predictable state management:
+- **Reactive Architecture**: RxJS observables throughout the application
+- **Immutable Updates**: Uses Immer for safe, readable state mutations
+- **Effect-driven Side Effects**: Async operations and external API calls
+- **Type-safe Selectors**: Memoized state derivations with full TypeScript support
 
-#### State Persistence & Hydration
-
-The application automatically saves your game progress to localStorage and restores it when you return:
-
-- **Automatic Save**: Game state is persisted whenever words are found
-- **Automatic Restore**: Saved state is restored on app startup
-- **Seamless Experience**: Continue your game exactly where you left off
-- **Fallback Handling**: Starts a new game if no saved state exists
-
-The hydration system uses NgRx meta-reducers and effects to handle state persistence transparently without affecting game logic.
+#### **Persistence System**
+Automatic game progress saving and restoration:
+- **Seamless Experience**: Your game continues exactly where you left off
+- **Smart Hydration**: State restored on startup, falls back to new game gracefully
+- **Transparent Operation**: No impact on game logic or user interface
 
 ## 🧪 Testing
 
