@@ -7,6 +7,8 @@ export interface State {
   game: GameState;
 }
 
+export const selectState = (state: State) => state;
+
 export const reducers: ActionReducerMap<State> = {
   game: gameReducer,
 };
