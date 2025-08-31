@@ -42,4 +42,11 @@ export class LocalStorageService {
       return null;
     }
   }
+
+  /**
+   * Clears the application state from local storage
+   */
+  clearState(): void {
+    localStorage.removeItem(this.storageKey);
+  }
 }
