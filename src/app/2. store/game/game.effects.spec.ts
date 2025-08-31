@@ -5,7 +5,7 @@ import { provideMockActions } from '@ngrx/effects/testing';
 import { Observable, of, toArray } from 'rxjs';
 import { GameService } from 'src/app/3. services/game.service';
 import { GameEffects } from './game.effects';
-import { initialState } from './game.state';
+import { initialState, GameState } from './game.state';
 import { generateGame } from 'src/app/4. shared/fakers/game.faker';
 import { newGameRequested, newGameAfterCompletion, newGameStarted, wordSubmitted, wordFound, wordNotFound } from './game.actions';
 
@@ -14,9 +14,8 @@ describe('GameEffects', () => {
   let actions$: Observable<Action>;
   let gameServiceSpy: jasmine.SpyObj<GameService>;
 
-  beforeEach(() => {
-    gameServiceSpy = jasmine.createSpyObj('GameService', ['nextGame']);
-
+  const setupTestBed = (gameState: GameState = initialState) => {
+    TestBed.resetTestingModule();
     TestBed.configureTestingModule({
       providers: [
         GameEffects,
@@ -25,11 +24,16 @@ describe('GameEffects', () => {
           useValue: gameServiceSpy,
         },
         provideMockActions(() => actions$),
-        provideMockStore({ initialState: { game: initialState } }),
+        provideMockStore({ initialState: { game: gameState } }),
       ],
     });
 
     effects = TestBed.inject(GameEffects);
+  };
+
+  beforeEach(() => {
+    gameServiceSpy = jasmine.createSpyObj('GameService', ['nextGame']);
+    setupTestBed();
   });
 
   it('should be created', () => {
@@ -82,20 +86,7 @@ describe('GameEffects', () => {
         ]
       };
 
-      TestBed.resetTestingModule();
-      TestBed.configureTestingModule({
-        providers: [
-          GameEffects,
-          {
-            provide: GameService,
-            useValue: gameServiceSpy,
-          },
-          provideMockActions(() => actions$),
-          provideMockStore({ initialState: { game: testState } }),
-        ],
-      });
-
-      effects = TestBed.inject(GameEffects);
+      setupTestBed(testState);
       actions$ = of(wordSubmitted());
 
       effects.submitWord$.pipe(toArray()).subscribe((actions) => {
@@ -118,20 +109,7 @@ describe('GameEffects', () => {
         ]
       };
 
-      TestBed.resetTestingModule();
-      TestBed.configureTestingModule({
-        providers: [
-          GameEffects,
-          {
-            provide: GameService,
-            useValue: gameServiceSpy,
-          },
-          provideMockActions(() => actions$),
-          provideMockStore({ initialState: { game: testState } }),
-        ],
-      });
-
-      effects = TestBed.inject(GameEffects);
+      setupTestBed(testState);
       actions$ = of(wordSubmitted());
 
       effects.submitWord$.pipe(toArray()).subscribe((actions) => {
@@ -154,20 +132,7 @@ describe('GameEffects', () => {
         ]
       };
 
-      TestBed.resetTestingModule();
-      TestBed.configureTestingModule({
-        providers: [
-          GameEffects,
-          {
-            provide: GameService,
-            useValue: gameServiceSpy,
-          },
-          provideMockActions(() => actions$),
-          provideMockStore({ initialState: { game: testState } }),
-        ],
-      });
-
-      effects = TestBed.inject(GameEffects);
+      setupTestBed(testState);
       actions$ = of(wordSubmitted());
 
       effects.submitWord$.pipe(toArray()).subscribe((actions) => {
