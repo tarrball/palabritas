@@ -6,8 +6,6 @@ import { State } from '..';
 describe('HydrationMetaReducer', () => {
   let mockReducer: ActionReducer<unknown>;
   let metaReducer: ActionReducer<unknown>;
-
-
   beforeEach(() => {
     mockReducer = jasmine.createSpy('mockReducer').and.returnValue({ mocked: 'state' });
     metaReducer = hydrationMetaReducer(mockReducer);
