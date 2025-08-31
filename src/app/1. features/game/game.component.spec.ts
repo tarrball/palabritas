@@ -6,7 +6,6 @@ import { GameState, initialState } from 'src/app/2. store/game/game.state';
 import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
 import {
   letterTapped,
-  newGameRequested,
   newGameAfterCompletion,
   wordSubmitted,
   shuffleRequested,

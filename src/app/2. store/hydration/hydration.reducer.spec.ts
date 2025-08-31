@@ -2,22 +2,11 @@ import { ActionReducer } from '@ngrx/store';
 import { hydrationMetaReducer } from './hydration.reducer';
 import * as HydrationActions from './hydration.actions';
 import { State } from '..';
-import { GameState } from '../game/game.state';
 
 describe('HydrationMetaReducer', () => {
-  let mockReducer: ActionReducer<any>;
-  let metaReducer: ActionReducer<any>;
+  let mockReducer: ActionReducer<unknown>;
+  let metaReducer: ActionReducer<unknown>;
 
-  const mockGameState: GameState = {
-    answers: [],
-    scrambledLetters: [],
-    mostRecentAnswer: undefined,
-    score: 0
-  };
-
-  const mockState: State = {
-    game: mockGameState
-  };
 
   beforeEach(() => {
     mockReducer = jasmine.createSpy('mockReducer').and.returnValue({ mocked: 'state' });

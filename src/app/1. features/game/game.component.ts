@@ -6,7 +6,6 @@ import { Store } from '@ngrx/store';
 import { Observable, filter } from 'rxjs';
 import {
   letterTapped,
-  newGameRequested,
   newGameAfterCompletion,
   wordSubmitted,
   shuffleRequested,

@@ -9,7 +9,7 @@ import { State } from '..';
 import { GameState } from '../game/game.state';
 
 describe('HydrationEffects', () => {
-  let actions$: Observable<any>;
+  let actions$: Observable<unknown>;
   let effects: HydrationEffects;
   let localStorageService: jasmine.SpyObj<LocalStorageService>;
 
