@@ -7,8 +7,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Start development server**: `npm start` or `ng serve`
 - **Build for production**: `npm run build` or `ng build`
 - **Run tests**: `npm test` or `ng test`
+- **Run tests with coverage**: `npm test -- --no-watch --code-coverage`
 - **Lint code**: `npm run lint` or `ng lint`
 - **Watch build**: `npm run watch` or `ng build --watch --configuration development`
+
+### Code Coverage
+
+The project maintains 100% test coverage. When running tests with `--code-coverage`, the coverage report summary appears at the end of the test output showing Statements, Branches, Functions, and Lines percentages. Coverage files are generated in `coverage/app/` directory with multiple formats (HTML, LCOV, JSON summary, and text).
 
 ## Project Architecture
 

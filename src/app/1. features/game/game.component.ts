@@ -40,6 +40,7 @@ export class GameComponent implements OnInit {
   public potentialPoints$: Observable<number>;
   public isGameComplete$: Observable<boolean>;
   public score$: Observable<number>;
+  public mostRecentAnswer$: Observable<string | undefined>;
 
   constructor() {
     this.answers$ = this.store.select(selectAnswers);
@@ -49,6 +50,7 @@ export class GameComponent implements OnInit {
     this.potentialPoints$ = this.store.select(selectPotentialPoints);
     this.isGameComplete$ = this.store.select(selectIsGameComplete);
     this.score$ = this.store.select(selectScore);
+    this.mostRecentAnswer$ = this.store.select(selectMostRecentAnswer);
   }
 
   public ngOnInit(): void {
@@ -89,5 +91,36 @@ export class GameComponent implements OnInit {
    */
   public clickShuffle(): void {
     this.store.dispatch(shuffleRequested());
+  }
+
+  /**
+   * Calculates animation delay for letter drop effect
+   * @param answer The answer being displayed
+   * @param letterIndex The index of the letter in the word
+   * @param recentAnswer The most recently found answer
+   * @returns Animation delay in milliseconds
+   */
+  public getLetterAnimationDelay(
+    answer: Answer,
+    letterIndex: number,
+    recentAnswer: string | null | undefined
+  ): number {
+    if (answer.word === recentAnswer && answer.state !== 'not-found') {
+      return 200 + letterIndex * 100;
+    }
+    return 0;
+  }
+
+  /**
+   * Determines if letter should have drop animation
+   * @param answer The answer being displayed
+   * @param recentAnswer The most recently found answer
+   * @returns True if letter should animate
+   */
+  public shouldAnimateLetter(
+    answer: Answer,
+    recentAnswer: string | null | undefined
+  ): boolean {
+    return answer.word === recentAnswer && answer.state !== 'not-found';
   }
 }

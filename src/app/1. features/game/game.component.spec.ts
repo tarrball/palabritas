@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GameComponent } from './game.component';
 import { MockStore, provideMockStore } from '@ngrx/store/testing';
-import { GameState, initialState } from 'src/app/2. store/game/game.state';
+import { Answer, GameState, initialState } from 'src/app/2. store/game/game.state';
 import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
 import {
   letterTapped,
@@ -118,6 +118,78 @@ describe('GameComponent', () => {
 
         expect(docSpy).not.toHaveBeenCalled();
         expect(eleSpy).not.toHaveBeenCalled();
+      });
+    });
+
+    describe('Animation Methods', () => {
+      describe('getLetterAnimationDelay', () => {
+        it('should return delay for matching recent answer', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'found' };
+          const delay = component.getLetterAnimationDelay(answer, 2, 'TEST');
+          expect(delay).toBe(400); // 200 + (2 * 100)
+        });
+
+        it('should return 0 for non-matching answer', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'found' };
+          const delay = component.getLetterAnimationDelay(answer, 2, 'OTHER');
+          expect(delay).toBe(0);
+        });
+
+        it('should return 0 for not-found state', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'not-found' };
+          const delay = component.getLetterAnimationDelay(answer, 2, 'TEST');
+          expect(delay).toBe(0);
+        });
+
+        it('should handle null recentAnswer', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'found' };
+          const delay = component.getLetterAnimationDelay(answer, 2, null);
+          expect(delay).toBe(0);
+        });
+
+        it('should handle undefined recentAnswer', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'found' };
+          const delay = component.getLetterAnimationDelay(answer, 2, undefined);
+          expect(delay).toBe(0);
+        });
+      });
+
+      describe('shouldAnimateLetter', () => {
+        it('should return true for matching recent answer with found state', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'found' };
+          const result = component.shouldAnimateLetter(answer, 'TEST');
+          expect(result).toBe(true);
+        });
+
+        it('should return true for matching recent answer with revealed state', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'revealed' };
+          const result = component.shouldAnimateLetter(answer, 'TEST');
+          expect(result).toBe(true);
+        });
+
+        it('should return false for non-matching answer', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'found' };
+          const result = component.shouldAnimateLetter(answer, 'OTHER');
+          expect(result).toBe(false);
+        });
+
+        it('should return false for not-found state', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'not-found' };
+          const result = component.shouldAnimateLetter(answer, 'TEST');
+          expect(result).toBe(false);
+        });
+
+        it('should handle null recentAnswer', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'found' };
+          const result = component.shouldAnimateLetter(answer, null);
+          expect(result).toBe(false);
+        });
+
+        it('should handle undefined recentAnswer', () => {
+          const answer: Answer = { word: 'TEST', letters: ['T', 'E', 'S', 'T'], state: 'found' };
+          const result = component.shouldAnimateLetter(answer, undefined);
+          expect(result).toBe(false);
+        });
       });
     });
   });
