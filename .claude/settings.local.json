@@ -11,8 +11,7 @@
       "Bash(npm test:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)",
-      "Bash(/export claude-tasks/3_local_storage_service_clear_state/chat.md)"
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
