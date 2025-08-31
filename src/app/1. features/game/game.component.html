@@ -12,7 +12,10 @@
   </div>
 
   <div class="flex-center hori-scroll answers-container">
-    @for (answer of answers$ | async; track answer.word) {
+    @for (answer of answers$ | async; track answer.word; let i = $index) {
+      @if (i > 0) {
+        <span class="word-separator">•</span>
+      }
       <div
         class="flex-center word"
         [id]="answer.word"
