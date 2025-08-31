@@ -16,6 +16,13 @@ export const letterTapped = createAction(
 
 export const wordSubmitted = createAction('[Game] Word Submitted');
 
+export const wordFound = createAction(
+  '[Game] Word Found',
+  props<{ word: string }>()
+);
+
+export const wordNotFound = createAction('[Game] Word Not Found');
+
 export const revealGameRequested = createAction('[Game] Reveal Game Requested');
 
 export const shuffleRequested = createAction('[Game] Shuffle Requested');

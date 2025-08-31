@@ -8,6 +8,8 @@ import {
   newGameStarted,
   revealGameRequested,
   wordSubmitted,
+  wordFound,
+  wordNotFound,
   shuffleRequested,
 } from './game.actions';
 import { selectClickableLetters, selectClickedLetters } from './game.selectors';
@@ -186,6 +188,7 @@ describe('GameReducer', () => {
         state = gameReducer(state, letterTapped({ index: tLetters[1].index }));
 
         state = gameReducer(state, wordSubmitted());
+        state = gameReducer(state, wordFound({ word: 'test' }));
         
         // Verify we earned points before revealing
         expect(state.score).toBeGreaterThan(0);
@@ -221,8 +224,32 @@ describe('GameReducer', () => {
         );
       });
 
-      it('should mark the answer as found if the word is correct', () => {
+      it('should not change state (letters reset happens in wordFound/wordNotFound)', () => {
+        const stateBefore = { ...state };
         state = gameReducer(state, wordSubmitted());
+
+        // wordSubmitted is now a no-op - letters remain selected until wordFound/wordNotFound
+        expect(state).toEqual(stateBefore);
+        
+        const clickedLetters = selectClickedLetters.projector(state);
+        expect(clickedLetters.length).toEqual(3); // Letters still selected
+      });
+    });
+
+    describe('wordFound', () => {
+      beforeEach(() => {
+        // Set up some clicked letters first
+        const sLetter = state.scrambledLetters.find(l => l.value === 's');
+        const eLetter = state.scrambledLetters.find(l => l.value === 'e');
+        const tLetter = state.scrambledLetters.find(l => l.value === 't');
+        
+        state = gameReducer(state, letterTapped({ index: sLetter!.index }));
+        state = gameReducer(state, letterTapped({ index: eLetter!.index }));
+        state = gameReducer(state, letterTapped({ index: tLetter!.index }));
+      });
+
+      it('should mark the answer as found', () => {
+        state = gameReducer(state, wordFound({ word: 'set' }));
 
         const foundAnswer = state.answers.filter(
           (answer) => answer.word === 'set'
@@ -237,30 +264,50 @@ describe('GameReducer', () => {
 
       it('should update the score when a word is found', () => {
         const initialScore = state.score;
-        state = gameReducer(state, wordSubmitted());
+        state = gameReducer(state, wordFound({ word: 'set' }));
 
         // 'set' has 3 letters, so score should increase by 30
         expect(state.score).toEqual(initialScore + 30);
       });
 
-      it('should reset the clicked letters if the word is correct', () => {
-        state = gameReducer(state, wordSubmitted());
+      it('should set the most recent answer', () => {
+        state = gameReducer(state, wordFound({ word: 'test' }));
+
+        expect(state.mostRecentAnswer).toEqual('test');
+      });
+
+      it('should reset the clicked letters', () => {
+        state = gameReducer(state, wordFound({ word: 'set' }));
 
         const clickedLetters = selectClickedLetters.projector(state);
-
         expect(clickedLetters.length).toEqual(0);
       });
 
-      it('should reset the clicked letters if the word is incorrect', () => {
-        state = gameReducer(
-          state,
-          letterTapped({ index: state.scrambledLetters[3].index })
-        );
+    });
 
-        state = gameReducer(state, wordSubmitted());
+    describe('wordNotFound', () => {
+      beforeEach(() => {
+        // Set up some clicked letters first
+        const sLetter = state.scrambledLetters.find(l => l.value === 's');
+        const eLetter = state.scrambledLetters.find(l => l.value === 'e');
+        const tLetter = state.scrambledLetters.find(l => l.value === 't');
+        
+        state = gameReducer(state, letterTapped({ index: sLetter!.index }));
+        state = gameReducer(state, letterTapped({ index: eLetter!.index }));
+        state = gameReducer(state, letterTapped({ index: tLetter!.index }));
+      });
 
+      it('should reset the clicked letters but not change other state', () => {
+        const stateBefore = { ...state };
+        state = gameReducer(state, wordNotFound());
+
+        // Verify other state remains unchanged
+        expect(state.score).toEqual(stateBefore.score);
+        expect(state.answers).toEqual(stateBefore.answers);
+        expect(state.mostRecentAnswer).toEqual(stateBefore.mostRecentAnswer);
+        
+        // But letters should be reset
         const clickedLetters = selectClickedLetters.projector(state);
-
         expect(clickedLetters.length).toEqual(0);
       });
     });
