@@ -131,4 +131,29 @@ describe('LocalStorageService', () => {
       expect(localStorage.getItem(storageKey)).toBeNull();
     });
   });
+
+  describe('clearState', () => {
+    it('should clear state from localStorage when state exists', () => {
+      service.saveState(mockState);
+      const stateBeforeClear = service.getState();
+      expect(stateBeforeClear).toBeTruthy();
+
+      service.clearState();
+
+      const stateAfterClear = service.getState();
+      expect(stateAfterClear).toBeNull();
+      expect(localStorage.getItem(storageKey)).toBeNull();
+    });
+
+    it('should clear state from localStorage when no state exists', () => {
+      const stateBeforeClear = service.getState();
+      expect(stateBeforeClear).toBeNull();
+
+      service.clearState();
+
+      const stateAfterClear = service.getState();
+      expect(stateAfterClear).toBeNull();
+      expect(localStorage.getItem(storageKey)).toBeNull();
+    });
+  });
 });
