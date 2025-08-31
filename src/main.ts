@@ -47,4 +47,6 @@ bootstrapApplication(AppComponent, {
   ],
 }).catch((err) => console.error(err));
 
-injectSpeedInsights();
+if (!isDevMode()) {
+  injectSpeedInsights();
+}
