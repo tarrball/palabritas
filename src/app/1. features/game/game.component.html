@@ -62,7 +62,7 @@
     role="region"
     aria-label="Selected letters"
   >
-    @for (letter of clickedLetters$ | async; track letter; trackBy: trackByLetterIndexValue) {
+    @for (letter of clickedLetters$ | async; track trackByLetterIndexValue(0, letter)) {
     <button
       mat-raised-button
       (click)="clickLetter(letter)"
@@ -78,7 +78,7 @@
     role="region"
     aria-label="Available letters"
   >
-    @for (letter of clickableLetters$ | async; track letter; trackBy: trackByLetterIndexValue) {
+    @for (letter of clickableLetters$ | async; track trackByLetterIndexValue(0, letter)) {
     <button
       mat-raised-button
       (click)="clickLetter(letter)"
