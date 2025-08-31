@@ -67,13 +67,7 @@ export const gameReducer = createReducer(
       }
     })
   ),
-  on(wordSubmitted, (state) =>
-    produce(state, (draft) => {
-      draft.scrambledLetters.forEach((letter) => {
-        letter.typedIndex = undefined;
-      });
-    })
-  ),
+  on(wordSubmitted, (state): GameState => state),
   on(wordFound, (state, { word }) =>
     produce(state, (draft) => {
       const matchingAnswer = draft.answers.find(
@@ -85,9 +79,21 @@ export const gameReducer = createReducer(
         draft.mostRecentAnswer = word;
         draft.score += matchingAnswer.letters.length * 10;
       }
+
+      // Reset letter selections after processing the word
+      draft.scrambledLetters.forEach((letter) => {
+        letter.typedIndex = undefined;
+      });
     })
   ),
-  on(wordNotFound, (state): GameState => state),
+  on(wordNotFound, (state) =>
+    produce(state, (draft) => {
+      // Reset letter selections after failed word attempt
+      draft.scrambledLetters.forEach((letter) => {
+        letter.typedIndex = undefined;
+      });
+    })
+  ),
   on(revealGameRequested, (state) =>
     produce(state, (draft) => {
       draft.answers
