@@ -16,6 +16,7 @@
 
   <section class="flex-center hori-scroll answers-container" role="region" aria-label="Word answers">
     @for (answer of answers$ | async; track answer.word; let i = $index) {
+      @let recentAnswer = mostRecentAnswer$ | async;
       @if (i > 0) {
         <span class="word-separator" aria-hidden="true">•</span>
       }
@@ -24,9 +25,16 @@
         [id]="answer.word"
         role="group"
         [attr.aria-label]="answer.state === 'not-found' ? 'Unfound word with ' + answer.letters.length + ' letters' : 'Found word: ' + answer.word"
+        [class.word-found]="answer.state === 'found'"
+        [class.word-revealed]="answer.state === 'revealed'"
       >
-        @for (letter of answer.letters; track $index) {
-          <span class="letter" aria-hidden="true">
+        @for (letter of answer.letters; track $index; let letterIndex = $index) {
+          <span 
+            class="letter" 
+            aria-hidden="true"
+            [class.letter-drop]="answer.word === recentAnswer && answer.state !== 'not-found'"
+            [style.animation-delay.ms]="answer.word === recentAnswer && answer.state !== 'not-found' ? letterIndex * 100 : 0"
+          >
             {{ answer.state === "not-found" ? "_" : letter }}
           </span>
         }

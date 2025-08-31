@@ -40,6 +40,7 @@ export class GameComponent implements OnInit {
   public potentialPoints$: Observable<number>;
   public isGameComplete$: Observable<boolean>;
   public score$: Observable<number>;
+  public mostRecentAnswer$: Observable<string | undefined>;
 
   constructor() {
     this.answers$ = this.store.select(selectAnswers);
@@ -49,6 +50,7 @@ export class GameComponent implements OnInit {
     this.potentialPoints$ = this.store.select(selectPotentialPoints);
     this.isGameComplete$ = this.store.select(selectIsGameComplete);
     this.score$ = this.store.select(selectScore);
+    this.mostRecentAnswer$ = this.store.select(selectMostRecentAnswer);
   }
 
   public ngOnInit(): void {
