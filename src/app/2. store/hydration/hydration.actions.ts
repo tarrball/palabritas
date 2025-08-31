@@ -7,5 +7,3 @@ export const hydrateSuccess = createAction(
   '[Hydration] Hydrate Success',
   props<{ state: State }>()
 );
-
-export const hydrateFailure = createAction('[Hydration] Hydrate Failure');

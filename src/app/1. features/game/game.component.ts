@@ -53,8 +53,6 @@ export class GameComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.store.dispatch(newGameRequested());
-
     this.store
       .select(selectMostRecentAnswer)
       // falsy are filtered out so we can safely use the non-null assertion operator

@@ -9,7 +9,7 @@ import { selectState } from '..';
 @Injectable()
 export class PersistenceEffects {
   private action$ = inject(Actions);
-  private store = inject(Store).select(selectState);
+  private state$ = inject(Store).select(selectState);
   private localStorageService = inject(LocalStorageService);
 
   /**
@@ -34,7 +34,7 @@ export class PersistenceEffects {
     () => {
       return this.action$.pipe(
         ofType(GameActions.wordFound),
-        switchMap(() => this.store),
+        switchMap(() => this.state$),
         map((state) => {
           this.localStorageService.saveState(state);
         })

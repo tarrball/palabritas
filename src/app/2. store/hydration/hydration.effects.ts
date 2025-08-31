@@ -2,6 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { Actions, OnInitEffects, createEffect, ofType } from '@ngrx/effects';
 import { Action } from '@ngrx/store';
 import { map } from 'rxjs';
+import * as GameActions from '../game/game.actions';
 import * as HydrationActions from './hydration.actions';
 import { LocalStorageService } from '../../3. services/local-storage.service';
 
@@ -23,7 +24,7 @@ export class HydrationEffects implements OnInitEffects {
 
         return state
           ? HydrationActions.hydrateSuccess({ state })
-          : HydrationActions.hydrateFailure();
+          : GameActions.newGameRequested();
       })
     );
   });
