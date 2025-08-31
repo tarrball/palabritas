@@ -283,17 +283,6 @@ describe('GameReducer', () => {
         expect(clickedLetters.length).toEqual(0);
       });
 
-      it('should handle finding a word that does not exist in answers', () => {
-        const stateBefore = { ...state };
-        state = gameReducer(state, wordFound({ word: 'notfound' }));
-
-        // State should remain unchanged except letters are reset
-        expect(state.score).toEqual(stateBefore.score);
-        expect(state.mostRecentAnswer).toEqual(stateBefore.mostRecentAnswer);
-        
-        const clickedLetters = selectClickedLetters.projector(state);
-        expect(clickedLetters.length).toEqual(0); // Letters still get reset
-      });
     });
 
     describe('wordNotFound', () => {

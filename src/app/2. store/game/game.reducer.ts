@@ -72,13 +72,11 @@ export const gameReducer = createReducer(
     produce(state, (draft) => {
       const matchingAnswer = draft.answers.find(
         (answer) => answer.word === word
-      );
+      )!; // Non-null assertion since effect guarantees this exists
 
-      if (matchingAnswer) {
-        matchingAnswer.state = 'found';
-        draft.mostRecentAnswer = word;
-        draft.score += matchingAnswer.letters.length * 10;
-      }
+      matchingAnswer.state = 'found';
+      draft.mostRecentAnswer = word;
+      draft.score += matchingAnswer.letters.length * 10;
 
       // Reset letter selections after processing the word
       draft.scrambledLetters.forEach((letter) => {
