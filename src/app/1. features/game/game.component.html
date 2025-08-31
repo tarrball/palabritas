@@ -30,7 +30,7 @@
   </div>
 
   <div class="flex-center-center letter-button-container">
-    @for (letter of clickedLetters$ | async; track letter.value) {
+    @for (letter of clickedLetters$ | async; track letter.index) {
       <button
         mat-raised-button
         (click)="clickLetter(letter)"
@@ -41,7 +41,7 @@
   </div>
 
   <div class="flex-center-center letter-button-container">
-    @for (letter of clickableLetters$ | async; track letter.value) {
+    @for (letter of clickableLetters$ | async; track letter.index) {
       <button
         mat-raised-button
         (click)="clickLetter(letter)"
