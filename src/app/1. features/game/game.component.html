@@ -25,8 +25,8 @@
     role="region"
     aria-label="Word answers"
   >
-    @for (answer of answers$ | async; track answer.word; let i = $index) { @let
-    recentAnswer = mostRecentAnswer$ | async; @if (i > 0) {
+    @let recentAnswer = mostRecentAnswer$ | async; @for (answer of answers$ |
+    async; track answer.word; let i = $index) { @if (i > 0) {
     <span class="word-separator" aria-hidden="true">•</span>
     }
     <div
@@ -62,7 +62,8 @@
     role="region"
     aria-label="Selected letters"
   >
-    @for (letter of clickedLetters$ | async; track letter.index) {
+    @for (letter of clickedLetters$ | async; track letter.index + '-' +
+    letter.value) {
     <button
       mat-raised-button
       (click)="clickLetter(letter)"
@@ -78,7 +79,8 @@
     role="region"
     aria-label="Available letters"
   >
-    @for (letter of clickableLetters$ | async; track letter.index) {
+    @for (letter of clickableLetters$ | async; track letter.index + '-' +
+    letter.value) {
     <button
       mat-raised-button
       (click)="clickLetter(letter)"
