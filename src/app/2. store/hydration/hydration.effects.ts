@@ -14,7 +14,7 @@ export class HydrationEffects implements OnInitEffects {
   /**
    * Hydrate the state from local storage.
    * If the state is successfully retrieved, dispatch the hydrateSuccess action.
-   * If the state is not found, dispatch the hydrateFailure action.
+   * If the state is not found, dispatch the newGameRequested action.
    */
   hydrate$ = createEffect(() => {
     return this.action$.pipe(
