@@ -109,6 +109,18 @@ The app uses NgRx with a clean architecture:
 - **Reducers**: Pure functions for state transitions
 - **Effects**: Side effects and async operations
 - **Selectors**: Memoized state derivations
+- **Hydration**: Automatic state persistence and restoration using LocalStorage
+
+#### State Persistence & Hydration
+
+The application automatically saves your game progress to localStorage and restores it when you return:
+
+- **Automatic Save**: Game state is persisted whenever words are found
+- **Automatic Restore**: Saved state is restored on app startup
+- **Seamless Experience**: Continue your game exactly where you left off
+- **Fallback Handling**: Starts a new game if no saved state exists
+
+The hydration system uses NgRx meta-reducers and effects to handle state persistence transparently without affecting game logic.
 
 ## 🧪 Testing
 

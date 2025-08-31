@@ -29,6 +29,11 @@ export class HydrationEffects implements OnInitEffects {
     );
   });
 
+  /**
+   * Automatically dispatches the hydrate action when the NgRx effects are initialized.
+   * This ensures state hydration happens on app startup.
+   * @returns The hydrate action to be dispatched on initialization
+   */
   ngrxOnInitEffects(): Action {
     return HydrationActions.hydrate();
   }

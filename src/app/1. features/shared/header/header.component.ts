@@ -19,10 +19,16 @@ import {
 export class HeaderComponent {
   private readonly store = inject(Store);
 
+  /**
+   * Handles new game button click events
+   */
   public clickNewGame(): void {
     this.store.dispatch(newGameRequested());
   }
 
+  /**
+   * Handles reveal answers button click events
+   */
   public revealAnswers(): void {
     this.store.dispatch(revealGameRequested());
   }
