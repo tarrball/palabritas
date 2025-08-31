@@ -2,95 +2,124 @@
   <section class="flex-center-between" role="region" aria-label="Game scores">
     <div role="status" aria-live="polite" aria-atomic="true">
       <span id="round-label">Round:</span>
-      <span class="points" aria-labelledby="round-label">{{ earnedPoints$ | async }}</span>
+      <span class="points" aria-labelledby="round-label">{{
+        earnedPoints$ | async
+      }}</span>
     </div>
     <div role="status" aria-live="polite" aria-atomic="true">
       <span id="total-label">Total Score:</span>
-      <span class="points" aria-labelledby="total-label">{{ score$ | async }}</span>
+      <span class="points" aria-labelledby="total-label">{{
+        score$ | async
+      }}</span>
     </div>
     <div>
       <span id="potential-label">Potential:</span>
-      <span class="points" aria-labelledby="potential-label">{{ potentialPoints$ | async }}</span>
+      <span class="points" aria-labelledby="potential-label">{{
+        potentialPoints$ | async
+      }}</span>
     </div>
   </section>
 
-  <section class="flex-center hori-scroll answers-container" role="region" aria-label="Word answers">
-    @for (answer of answers$ | async; track answer.word; let i = $index) {
-      @let recentAnswer = mostRecentAnswer$ | async;
-      @if (i > 0) {
-        <span class="word-separator" aria-hidden="true">•</span>
+  <section
+    class="flex-center hori-scroll answers-container"
+    role="region"
+    aria-label="Word answers"
+  >
+    @for (answer of answers$ | async; track answer.word; let i = $index) { @let
+    recentAnswer = mostRecentAnswer$ | async; @if (i > 0) {
+    <span class="word-separator" aria-hidden="true">•</span>
+    }
+    <div
+      class="flex-center word"
+      [id]="answer.word"
+      role="group"
+      [attr.aria-label]="
+        answer.state === 'not-found'
+          ? 'Unfound word with ' + answer.letters.length + ' letters'
+          : 'Found word: ' + answer.word
+      "
+      [class.word-found]="answer.state === 'found'"
+      [class.word-revealed]="answer.state === 'revealed'"
+    >
+      @for (letter of answer.letters; track $index; let letterIndex = $index) {
+      <span
+        class="letter"
+        aria-hidden="true"
+        [class.letter-drop]="shouldAnimateLetter(answer, recentAnswer)"
+        [style.animation-delay.ms]="
+          getLetterAnimationDelay(answer, letterIndex, recentAnswer)
+        "
+      >
+        {{ answer.state === "not-found" ? "_" : letter }}
+      </span>
       }
-      <div
-        class="flex-center word"
-        [id]="answer.word"
-        role="group"
-        [attr.aria-label]="answer.state === 'not-found' ? 'Unfound word with ' + answer.letters.length + ' letters' : 'Found word: ' + answer.word"
-        [class.word-found]="answer.state === 'found'"
-        [class.word-revealed]="answer.state === 'revealed'"
-      >
-        @for (letter of answer.letters; track $index; let letterIndex = $index) {
-          <span 
-            class="letter" 
-            aria-hidden="true"
-            [class.letter-drop]="answer.word === recentAnswer && answer.state !== 'not-found'"
-            [style.animation-delay.ms]="answer.word === recentAnswer && answer.state !== 'not-found' ? letterIndex * 100 : 0"
-          >
-            {{ answer.state === "not-found" ? "_" : letter }}
-          </span>
-        }
-      </div>
+    </div>
     }
   </section>
 
-  <section class="flex-center-center letter-button-container" role="region" aria-label="Selected letters">
+  <section
+    class="flex-center-center letter-button-container"
+    role="region"
+    aria-label="Selected letters"
+  >
     @for (letter of clickedLetters$ | async; track letter.index) {
-      <button
-        mat-raised-button
-        (click)="clickLetter(letter)"
-        [attr.aria-label]="'Remove letter ' + letter.value"
-      >
-        {{ letter.value }}
-      </button>
+    <button
+      mat-raised-button
+      (click)="clickLetter(letter)"
+      [attr.aria-label]="'Remove letter ' + letter.value"
+    >
+      {{ letter.value }}
+    </button>
     }
   </section>
 
-  <section class="flex-center-center letter-button-container" role="region" aria-label="Available letters">
+  <section
+    class="flex-center-center letter-button-container"
+    role="region"
+    aria-label="Available letters"
+  >
     @for (letter of clickableLetters$ | async; track letter.index) {
-      <button
-        mat-raised-button
-        (click)="clickLetter(letter)"
-        [attr.aria-label]="'Remove letter ' + letter.value"
-      >
-        {{ letter.value }}
-      </button>
+    <button
+      mat-raised-button
+      (click)="clickLetter(letter)"
+      [attr.aria-label]="'Remove letter ' + letter.value"
+    >
+      {{ letter.value }}
+    </button>
     }
   </section>
 
   @if ({ isComplete: isGameComplete$ | async }; as vm) {
-    <section class="flex-center-between" role="region" aria-label="Game controls">
-      <button 
-        mat-raised-button
-        [disabled]="vm.isComplete"
-        (click)="clickShuffle()"
-        [attr.aria-label]="vm.isComplete ? 'Shuffle letters (disabled - game complete)' : 'Shuffle available letters'"
-        [attr.aria-disabled]="vm.isComplete"
-      >
-        <mat-icon aria-hidden="true">shuffle</mat-icon>
-        Shuffle
-      </button>
-      <button 
-        mat-raised-button 
-        [color]="vm.isComplete ? 'accent' : 'primary'"
-        (click)="clickEnter(!!vm.isComplete)"
-        [attr.aria-label]="vm.isComplete ? 'Start a new game' : 'Submit current word'"
-      >
-        @if (vm.isComplete) {
-          <mat-icon aria-hidden="true">refresh</mat-icon>
-        } @else {
-          <mat-icon aria-hidden="true">send</mat-icon>
-        }
-        {{ vm.isComplete ? 'Start New Game' : 'Enter' }}
-      </button>
-    </section>
+  <section class="flex-center-between" role="region" aria-label="Game controls">
+    <button
+      mat-raised-button
+      [disabled]="vm.isComplete"
+      (click)="clickShuffle()"
+      [attr.aria-label]="
+        vm.isComplete
+          ? 'Shuffle letters (disabled - game complete)'
+          : 'Shuffle available letters'
+      "
+      [attr.aria-disabled]="vm.isComplete"
+    >
+      <mat-icon aria-hidden="true">shuffle</mat-icon>
+      Shuffle
+    </button>
+    <button
+      mat-raised-button
+      [color]="vm.isComplete ? 'accent' : 'primary'"
+      (click)="clickEnter(!!vm.isComplete)"
+      [attr.aria-label]="
+        vm.isComplete ? 'Start a new game' : 'Submit current word'
+      "
+    >
+      @if (vm.isComplete) {
+      <mat-icon aria-hidden="true">refresh</mat-icon>
+      } @else {
+      <mat-icon aria-hidden="true">send</mat-icon>
+      }
+      {{ vm.isComplete ? "Start New Game" : "Enter" }}
+    </button>
+  </section>
   }
 </main>

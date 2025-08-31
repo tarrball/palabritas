@@ -9,18 +9,28 @@
       <mat-icon aria-hidden="true">menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu" aria-label="Game options">
-      <button mat-menu-item (click)="revealAnswers()" aria-label="Reveal all answers">
+      <button
+        mat-menu-item
+        (click)="revealAnswers()"
+        aria-label="Reveal all answers"
+      >
         <mat-icon aria-hidden="true">visibility</mat-icon>
         <span>Reveal</span>
       </button>
 
-      <button mat-menu-item (click)="clickNewGame()" aria-label="Start a new game">
+      <button
+        mat-menu-item
+        (click)="clickNewGame()"
+        aria-label="Start a new game"
+      >
         <mat-icon aria-hidden="true">refresh</mat-icon>
         <span>New Game</span>
       </button>
     </mat-menu>
 
-    <h1 class="flex-grow-1 text-align-center" aria-label="Palabritas word game">Palabritas</h1>
+    <h1 class="flex-grow-1 text-align-center" aria-label="Palabritas word game">
+      Palabritas
+    </h1>
 
     <a
       class="github-logo d-flex align-items-center"
@@ -29,10 +39,7 @@
       href="https://github.com/tarrball/palabritas"
       aria-label="View Palabritas source code on GitHub (opens in new tab)"
     >
-      <img
-        src="../../../assets/github-mark-white.png"
-        alt="GitHub logo"
-      />
+      <img src="../../../assets/github-mark-white.png" alt="GitHub logo" />
     </a>
   </mat-toolbar>
 </header>
