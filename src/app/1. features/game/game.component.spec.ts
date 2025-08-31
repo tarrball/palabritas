@@ -192,5 +192,25 @@ describe('GameComponent', () => {
         });
       });
     });
+
+    describe('trackByLetterIndexValue', () => {
+      it('should return composite key combining letter index and value', () => {
+        const letter = { ...generateLetter(5), value: 'A' };
+        const result = component.trackByLetterIndexValue(0, letter);
+        expect(result).toBe('5-A');
+      });
+
+      it('should return unique keys for letters with same value but different indices', () => {
+        const letter1 = { ...generateLetter(1), value: 'E' };
+        const letter2 = { ...generateLetter(3), value: 'E' };
+        
+        const result1 = component.trackByLetterIndexValue(0, letter1);
+        const result2 = component.trackByLetterIndexValue(1, letter2);
+        
+        expect(result1).toBe('1-E');
+        expect(result2).toBe('3-E');
+        expect(result1).not.toBe(result2);
+      });
+    });
   });
 });

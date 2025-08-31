@@ -123,4 +123,14 @@ export class GameComponent implements OnInit {
   ): boolean {
     return answer.word === recentAnswer && answer.state !== 'not-found';
   }
+
+  /**
+   * TrackBy function for letter arrays to optimize change detection
+   * @param index The index of the item in the array
+   * @param letter The letter object
+   * @returns Unique tracking key combining index and value
+   */
+  public trackByLetterIndexValue(index: number, letter: Letter): string {
+    return letter.index + '-' + letter.value;
+  }
 }
