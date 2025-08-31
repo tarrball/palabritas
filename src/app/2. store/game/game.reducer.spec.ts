@@ -8,6 +8,8 @@ import {
   newGameStarted,
   revealGameRequested,
   wordSubmitted,
+  wordFound,
+  wordNotFound,
   shuffleRequested,
 } from './game.actions';
 import { selectClickableLetters, selectClickedLetters } from './game.selectors';
@@ -186,6 +188,7 @@ describe('GameReducer', () => {
         state = gameReducer(state, letterTapped({ index: tLetters[1].index }));
 
         state = gameReducer(state, wordSubmitted());
+        state = gameReducer(state, wordFound({ word: 'test' }));
         
         // Verify we earned points before revealing
         expect(state.score).toBeGreaterThan(0);
@@ -221,8 +224,18 @@ describe('GameReducer', () => {
         );
       });
 
-      it('should mark the answer as found if the word is correct', () => {
+      it('should reset the clicked letters', () => {
         state = gameReducer(state, wordSubmitted());
+
+        const clickedLetters = selectClickedLetters.projector(state);
+
+        expect(clickedLetters.length).toEqual(0);
+      });
+    });
+
+    describe('wordFound', () => {
+      it('should mark the answer as found', () => {
+        state = gameReducer(state, wordFound({ word: 'set' }));
 
         const foundAnswer = state.answers.filter(
           (answer) => answer.word === 'set'
@@ -237,31 +250,35 @@ describe('GameReducer', () => {
 
       it('should update the score when a word is found', () => {
         const initialScore = state.score;
-        state = gameReducer(state, wordSubmitted());
+        state = gameReducer(state, wordFound({ word: 'set' }));
 
         // 'set' has 3 letters, so score should increase by 30
         expect(state.score).toEqual(initialScore + 30);
       });
 
-      it('should reset the clicked letters if the word is correct', () => {
-        state = gameReducer(state, wordSubmitted());
+      it('should set the most recent answer', () => {
+        state = gameReducer(state, wordFound({ word: 'test' }));
 
-        const clickedLetters = selectClickedLetters.projector(state);
-
-        expect(clickedLetters.length).toEqual(0);
+        expect(state.mostRecentAnswer).toEqual('test');
       });
 
-      it('should reset the clicked letters if the word is incorrect', () => {
-        state = gameReducer(
-          state,
-          letterTapped({ index: state.scrambledLetters[3].index })
-        );
+      it('should handle finding a word that does not exist in answers', () => {
+        const stateBefore = { ...state };
+        state = gameReducer(state, wordFound({ word: 'notfound' }));
 
-        state = gameReducer(state, wordSubmitted());
+        // State should remain unchanged
+        expect(state.score).toEqual(stateBefore.score);
+        expect(state.mostRecentAnswer).toEqual(stateBefore.mostRecentAnswer);
+      });
+    });
 
-        const clickedLetters = selectClickedLetters.projector(state);
+    describe('wordNotFound', () => {
+      it('should not change any state', () => {
+        const stateBefore = { ...state };
+        state = gameReducer(state, wordNotFound());
 
-        expect(clickedLetters.length).toEqual(0);
+        // Verify state remains unchanged
+        expect(state).toEqual(stateBefore);
       });
     });
 

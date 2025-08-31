@@ -1,11 +1,13 @@
 import { createReducer, on } from '@ngrx/store';
-import { Letter, initialState } from './game.state';
+import { Letter, GameState, initialState } from './game.state';
 import {
   letterTapped,
   newGameStarted,
   newGameRequested,
   newGameAfterCompletion,
   wordSubmitted,
+  wordFound,
+  wordNotFound,
   revealGameRequested,
   shuffleRequested,
 } from './game.actions';
@@ -67,27 +69,25 @@ export const gameReducer = createReducer(
   ),
   on(wordSubmitted, (state) =>
     produce(state, (draft) => {
-      const submittedLetters = shared.getTypedLetters(draft.scrambledLetters);
-
-      const submittedWord = submittedLetters
-        .map((letter) => letter.value)
-        .join('');
-
-      const matchingAnswer = draft.answers.find(
-        (answer) => answer.word === submittedWord
-      );
-
-      if (matchingAnswer) {
-        matchingAnswer.state = 'found';
-        draft.mostRecentAnswer = submittedWord;
-        draft.score += matchingAnswer.letters.length * 10;
-      }
-
       draft.scrambledLetters.forEach((letter) => {
         letter.typedIndex = undefined;
       });
     })
   ),
+  on(wordFound, (state, { word }) =>
+    produce(state, (draft) => {
+      const matchingAnswer = draft.answers.find(
+        (answer) => answer.word === word
+      );
+
+      if (matchingAnswer) {
+        matchingAnswer.state = 'found';
+        draft.mostRecentAnswer = word;
+        draft.score += matchingAnswer.letters.length * 10;
+      }
+    })
+  ),
+  on(wordNotFound, (state): GameState => state),
   on(revealGameRequested, (state) =>
     produce(state, (draft) => {
       draft.answers
