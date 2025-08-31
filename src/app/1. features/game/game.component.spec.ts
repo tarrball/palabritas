@@ -6,7 +6,6 @@ import { GameState, initialState } from 'src/app/2. store/game/game.state';
 import { generateLetter } from 'src/app/4. shared/fakers/letter.faker';
 import {
   letterTapped,
-  newGameRequested,
   newGameAfterCompletion,
   wordSubmitted,
   shuffleRequested,
@@ -75,12 +74,12 @@ describe('GameComponent', () => {
   });
 
   describe('ngOnInit', () => {
-    it('should dispatch the newGameRequested action', () => {
+    it('should not dispatch any actions (hydration system handles game initialization)', () => {
       const dispatchSpy = spyOn(mockStore, 'dispatch');
 
       component.ngOnInit();
 
-      expect(dispatchSpy).toHaveBeenCalledWith(newGameRequested());
+      expect(dispatchSpy).not.toHaveBeenCalled();
     });
 
     describe('recent answer changes', () => {

@@ -6,7 +6,6 @@ import { Store } from '@ngrx/store';
 import { Observable, filter } from 'rxjs';
 import {
   letterTapped,
-  newGameRequested,
   newGameAfterCompletion,
   wordSubmitted,
   shuffleRequested,
@@ -53,8 +52,6 @@ export class GameComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.store.dispatch(newGameRequested());
-
     this.store
       .select(selectMostRecentAnswer)
       // falsy are filtered out so we can safely use the non-null assertion operator
@@ -67,10 +64,18 @@ export class GameComponent implements OnInit {
     answerElement?.scrollIntoView({ behavior: 'smooth', inline: 'center' });
   }
 
+  /**
+   * Handles letter click events by dispatching a letterTapped action
+   * @param letter The letter object containing the index to tap
+   */
   public clickLetter({ index }: Letter): void {
     this.store.dispatch(letterTapped({ index }));
   }
 
+  /**
+   * Handles enter button click events
+   * @param isGameComplete Whether the current game is complete
+   */
   public clickEnter(isGameComplete: boolean): void {
     if (isGameComplete) {
       this.store.dispatch(newGameAfterCompletion());
@@ -79,6 +84,9 @@ export class GameComponent implements OnInit {
     }
   }
 
+  /**
+   * Handles shuffle button click events by requesting letter rearrangement
+   */
   public clickShuffle(): void {
     this.store.dispatch(shuffleRequested());
   }

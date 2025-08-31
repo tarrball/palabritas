@@ -1,11 +1,13 @@
 import { createReducer, on } from '@ngrx/store';
-import { Letter, initialState } from './game.state';
+import { Letter, GameState, initialState } from './game.state';
 import {
   letterTapped,
   newGameStarted,
   newGameRequested,
   newGameAfterCompletion,
   wordSubmitted,
+  wordFound,
+  wordNotFound,
   revealGameRequested,
   shuffleRequested,
 } from './game.actions';
@@ -65,24 +67,26 @@ export const gameReducer = createReducer(
       }
     })
   ),
-  on(wordSubmitted, (state) =>
+  on(wordSubmitted, (state): GameState => state),
+  on(wordFound, (state, { word }) =>
     produce(state, (draft) => {
-      const submittedLetters = shared.getTypedLetters(draft.scrambledLetters);
-
-      const submittedWord = submittedLetters
-        .map((letter) => letter.value)
-        .join('');
-
       const matchingAnswer = draft.answers.find(
-        (answer) => answer.word === submittedWord
-      );
+        (answer) => answer.word === word
+      )!; // Non-null assertion since effect guarantees this exists
 
-      if (matchingAnswer) {
-        matchingAnswer.state = 'found';
-        draft.mostRecentAnswer = submittedWord;
-        draft.score += matchingAnswer.letters.length * 10;
-      }
+      matchingAnswer.state = 'found';
+      draft.mostRecentAnswer = word;
+      draft.score += matchingAnswer.letters.length * 10;
 
+      // Reset letter selections after processing the word
+      draft.scrambledLetters.forEach((letter) => {
+        letter.typedIndex = undefined;
+      });
+    })
+  ),
+  on(wordNotFound, (state) =>
+    produce(state, (draft) => {
+      // Reset letter selections after failed word attempt
       draft.scrambledLetters.forEach((letter) => {
         letter.typedIndex = undefined;
       });
