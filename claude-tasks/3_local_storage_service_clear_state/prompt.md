@@ -43,7 +43,7 @@ I need you to implement the following specific change. This should be ONE atomic
 ## Specific requirements
 - [ ] Each required behavior that can be tested, should be tested.
 - [ ] When complete each task and requirement, commit and push.
-- [ ] After pushing the feature, /export this conversation to a file you'll create at claude-tasks/2_implement_local_storage_service/chat.md.
+- [ ] After pushing the feature, /export this conversation to a file you'll create at claude-tasks/3_local_storage_service_clear_state/chat.md.
 
 ## What you may NOT do
 - Do not modify any other files
