@@ -100,7 +100,7 @@ describe('LocalStorageService', () => {
       expect(result!.game.mostRecentAnswer).toEqual(mockState.game.mostRecentAnswer);
       expect(result!.game.score).toEqual(mockState.game.score);
       // Check scrambledLetters array - undefined typedIndex will be missing after deserialization
-      expect(result!.game.scrambledLetters).toHaveSize(4);
+      expect(result!.game.scrambledLetters).toHaveLength(4);
       expect(result!.game.scrambledLetters[0]).toEqual(jasmine.objectContaining({ value: 'T', index: 0 }));
       expect(result!.game.scrambledLetters[1]).toEqual(jasmine.objectContaining({ value: 'E', index: 1 }));
       expect(result!.game.scrambledLetters[2]).toEqual(jasmine.objectContaining({ value: 'S', index: 2 }));
