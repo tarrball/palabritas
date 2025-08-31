@@ -92,7 +92,8 @@ src/app/
 │   ├── game/            # Main game component
 │   └── shared/          # Shared UI components
 ├── 2. store/            # NgRx state management
-│   └── game/            # Game state, actions, reducers, effects
+│   ├── game/            # Game state, actions, reducers, effects
+│   └── hydration/       # Hydration state management
 ├── 3. services/         # Injectable services
 │   └── game.service.ts  # Game logic and data management
 └── 4. shared/           # Shared utilities and types

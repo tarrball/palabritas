@@ -24,12 +24,21 @@ The codebase uses a numbered folder structure for organization:
 
 ### State Management (NgRx)
 
-The application uses NgRx for state management with the following pattern:
+The application uses NgRx for state management with the following stores:
+
+#### Game Store (`2. store/game/`)
 - **State**: Defined in `game.state.ts` with interfaces for `GameState`, `Answer`, `Letter`, and `TypedLetter`
 - **Actions**: Game actions in `game.actions.ts` (newGameRequested, letterTapped, wordSubmitted)
 - **Reducers**: Pure functions in `game.reducer.ts` using Immer for immutable updates
 - **Effects**: Side effects in `game.effects.ts` for async operations
 - **Selectors**: Memoized selectors in `game.selectors.ts` for derived state
+
+#### Hydration Store (`2. store/hydration/`)
+- **State**: Defined in `hydration.state.ts` with `HydrationState` interface
+- **Actions**: Hydration actions in `hydration.actions.ts`
+- **Reducers**: Pure functions in `hydration.reducer.ts` using Immer for immutable updates
+- **Effects**: Side effects in `hydration.effects.ts` for async operations
+- **Note**: No selectors file (uses direct state access when needed)
 
 #### Important: Immer Usage in Reducers
 
