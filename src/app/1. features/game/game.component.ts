@@ -15,7 +15,7 @@ import {
   selectClickableLetters,
   selectClickedLetters,
   selectEarnedPoints,
-  selectIsGameComplete,
+  selectIsGameOver,
   selectMostRecentAnswer,
   selectPotentialPoints,
   selectScore,
@@ -38,7 +38,7 @@ export class GameComponent implements OnInit {
   public clickedLetters$: Observable<Letter[]>;
   public earnedPoints$: Observable<number>;
   public potentialPoints$: Observable<number>;
-  public isGameComplete$: Observable<boolean>;
+  public isGameOver$: Observable<boolean>;
   public score$: Observable<number>;
   public mostRecentAnswer$: Observable<string | undefined>;
 
@@ -48,7 +48,7 @@ export class GameComponent implements OnInit {
     this.clickedLetters$ = this.store.select(selectClickedLetters);
     this.earnedPoints$ = this.store.select(selectEarnedPoints);
     this.potentialPoints$ = this.store.select(selectPotentialPoints);
-    this.isGameComplete$ = this.store.select(selectIsGameComplete);
+    this.isGameOver$ = this.store.select(selectIsGameOver);
     this.score$ = this.store.select(selectScore);
     this.mostRecentAnswer$ = this.store.select(selectMostRecentAnswer);
   }
@@ -76,10 +76,10 @@ export class GameComponent implements OnInit {
 
   /**
    * Handles enter button click events
-   * @param isGameComplete Whether the current game is complete
+   * @param isGameOver Whether the current game is over
    */
-  public clickEnter(isGameComplete: boolean): void {
-    if (isGameComplete) {
+  public clickEnter(isGameOver: boolean): void {
+    if (isGameOver) {
       this.store.dispatch(newGameAfterCompletion());
     } else {
       this.store.dispatch(wordSubmitted());

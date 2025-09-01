@@ -1,11 +1,22 @@
-h1
+.toolbar-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.toolbar-spacer, .toolbar-actions
+  flex: 1
+  display: flex
+
+.toolbar-spacer
+  justify-content: flex-start
+
+.toolbar-actions
+  justify-content: flex-end
+
+.toolbar-title
   margin: 0
   font-size: 1.25rem
   font-weight: 500
-
-.github-logo
-  cursor: pointer
-  padding: 12px
-
-  img
-    height: 24px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)

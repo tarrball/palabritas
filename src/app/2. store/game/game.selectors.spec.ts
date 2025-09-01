@@ -3,7 +3,7 @@ import {
   selectClickableLetters,
   selectClickedLetters,
   selectEarnedPoints,
-  selectIsGameComplete,
+  selectIsGameOver,
   selectMostRecentAnswer,
   selectPotentialPoints,
   selectScore,
@@ -117,29 +117,40 @@ describe('GameSelectors', () => {
   });
 
   describe('selecting game state', () => {
-    describe('selectIsGameComplete', () => {
+    describe('selectIsGameOver', () => {
       it('should return true when all answers are found', () => {
         const state = generateGameState(3);
         state.answers.forEach(answer => answer.state = 'found');
 
-        const result = selectIsGameComplete.projector(state.answers);
+        const result = selectIsGameOver.projector(state.answers);
 
         expect(result).toBe(true);
       });
 
-      it('should return false when some answers are not found', () => {
+      it('should return true when any answer is revealed', () => {
+        const state = generateGameState(3);
+        state.answers[0].state = 'found';
+        state.answers[1].state = 'revealed';
+        state.answers[2].state = 'not-found';
+
+        const result = selectIsGameOver.projector(state.answers);
+
+        expect(result).toBe(true);
+      });
+
+      it('should return false when some answers are not found and none are revealed', () => {
         const state = generateGameState(3);
         state.answers[0].state = 'found';
         state.answers[1].state = 'not-found';
         state.answers[2].state = 'found';
 
-        const result = selectIsGameComplete.projector(state.answers);
+        const result = selectIsGameOver.projector(state.answers);
 
         expect(result).toBe(false);
       });
 
       it('should return false when there are no answers', () => {
-        const result = selectIsGameComplete.projector([]);
+        const result = selectIsGameOver.projector([]);
 
         expect(result).toBe(false);
       });
