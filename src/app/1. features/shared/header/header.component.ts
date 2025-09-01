@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -14,7 +15,7 @@ import {
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass'],
   standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule],
+  imports: [MatButtonModule, MatDividerModule, MatIconModule, MatMenuModule, MatToolbarModule],
 })
 export class HeaderComponent {
   private readonly store = inject(Store);

@@ -1,13 +1,21 @@
 <header role="banner">
-  <mat-toolbar role="navigation" aria-label="Main navigation">
-    <button
-      mat-icon-button
-      [matMenuTriggerFor]="menu"
-      class="example-icon"
-      aria-label="Open game menu"
-    >
-      <mat-icon aria-hidden="true">menu</mat-icon>
-    </button>
+  <mat-toolbar role="navigation" aria-label="Main navigation" class="toolbar-container">
+    <div class="toolbar-spacer"></div>
+    
+    <h1 class="toolbar-title" aria-label="Palabritas word game">
+      Palabritas
+    </h1>
+
+    <div class="toolbar-actions">
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        class="example-icon"
+        aria-label="Open game menu"
+      >
+        <mat-icon aria-hidden="true">menu</mat-icon>
+      </button>
+    </div>
     <mat-menu #menu="matMenu" aria-label="Game options">
       <button
         mat-menu-item
@@ -26,20 +34,19 @@
         <mat-icon aria-hidden="true">refresh</mat-icon>
         <span>New Game</span>
       </button>
+
+      <mat-divider></mat-divider>
+
+      <a
+        mat-menu-item
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/tarrball/palabritas"
+        aria-label="View source code on GitHub (opens in new tab)"
+      >
+        <mat-icon aria-hidden="true">code</mat-icon>
+        <span>GitHub</span>
+      </a>
     </mat-menu>
-
-    <h1 class="flex-grow-1 text-align-center" aria-label="Palabritas word game">
-      Palabritas
-    </h1>
-
-    <a
-      class="github-logo d-flex align-items-center"
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://github.com/tarrball/palabritas"
-      aria-label="View Palabritas source code on GitHub (opens in new tab)"
-    >
-      <img src="../../../assets/github-mark-white.png" alt="GitHub logo" />
-    </a>
   </mat-toolbar>
 </header>
