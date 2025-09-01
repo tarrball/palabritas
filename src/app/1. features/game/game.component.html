@@ -90,36 +90,36 @@
     }
   </section>
 
-  @if ({ isComplete: isGameComplete$ | async }; as vm) {
+  @if ({ isOver: isGameOver$ | async }; as vm) {
     <section class="flex-center-between" role="region" aria-label="Game controls">
       <button
         mat-raised-button
-        [disabled]="vm.isComplete"
+        [disabled]="vm.isOver"
         (click)="clickShuffle()"
         [attr.aria-label]="
-          vm.isComplete
-            ? 'Shuffle letters (disabled - game complete)'
+          vm.isOver
+            ? 'Shuffle letters (disabled - game over)'
             : 'Shuffle available letters'
         "
-        [attr.aria-disabled]="vm.isComplete"
+        [attr.aria-disabled]="vm.isOver"
       >
         <mat-icon aria-hidden="true">shuffle</mat-icon>
         Shuffle
       </button>
       <button
         mat-raised-button
-        [color]="vm.isComplete ? 'accent' : 'primary'"
-        (click)="clickEnter(!!vm.isComplete)"
+        [color]="vm.isOver ? 'accent' : 'primary'"
+        (click)="clickEnter(!!vm.isOver)"
         [attr.aria-label]="
-          vm.isComplete ? 'Start a new game' : 'Submit current word'
+          vm.isOver ? 'Start a new game' : 'Submit current word'
         "
       >
-        @if (vm.isComplete) {
+        @if (vm.isOver) {
           <mat-icon aria-hidden="true">refresh</mat-icon>
         } @else {
           <mat-icon aria-hidden="true">send</mat-icon>
         }
-        {{ vm.isComplete ? "Start New Game" : "Enter" }}
+        {{ vm.isOver ? "Start New Game" : "Enter" }}
       </button>
     </section>
   }
