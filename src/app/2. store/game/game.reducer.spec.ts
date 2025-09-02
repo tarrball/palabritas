@@ -55,6 +55,24 @@ describe('GameReducer', () => {
       expect(nextState.scrambledLetters).toEqual([]);
       expect(nextState.mostRecentAnswer).toBeUndefined();
     });
+
+    it('should reset score to 0 if any answers were revealed', () => {
+      const stateWithRevealedAnswers: GameState = {
+        ...initialState,
+        score: 150,
+        answers: [
+          { word: 'test', letters: ['t', 'e', 's', 't'], state: 'found' },
+          { word: 'set', letters: ['s', 'e', 't'], state: 'revealed' }
+        ],
+      };
+      
+      const nextState = gameReducer(stateWithRevealedAnswers, newGameAfterCompletion());
+
+      expect(nextState.score).toBe(0);
+      expect(nextState.answers).toEqual([]);
+      expect(nextState.scrambledLetters).toEqual([]);
+      expect(nextState.mostRecentAnswer).toBeUndefined();
+    });
   });
 
   describe('newGameStarted', () => {
