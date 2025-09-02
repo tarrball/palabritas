@@ -34,8 +34,13 @@ export const gameReducer = createReducer(
   ),
   on(newGameAfterCompletion, (state) =>
     produce(initialState, (draft) => {
-      // Reset to initial state but preserve the score from completed game
-      draft.score = state.score;
+      // Reset to initial state but preserve the score from completed game,
+      // unless they revealed the answers.
+      draft.score = state.answers.some((a) => a.state === 'revealed')
+        ? 0
+        : state.score;
+
+      return draft;
     })
   ),
   on(newGameStarted, (state, { word, answers }) =>
@@ -48,7 +53,7 @@ export const gameReducer = createReducer(
 
       const letters = Array.from(word);
       const shuffledLetters = shuffleArray(letters);
-      
+
       draft.scrambledLetters = shuffledLetters.map((letter, index) => ({
         value: letter,
         index,
@@ -108,17 +113,17 @@ export const gameReducer = createReducer(
       const currentOrder = draft.scrambledLetters.map((l) => l.value).join('');
       let shuffled = [...draft.scrambledLetters];
       let newOrder = currentOrder;
-      
+
       // Keep shuffling until we get a different arrangement (with max attempts for edge cases)
       let attempts = 0;
       const maxAttempts = 10;
-      
+
       while (newOrder === currentOrder && attempts < maxAttempts) {
         shuffled = shuffleArray(draft.scrambledLetters);
         newOrder = shuffled.map((l) => l.value).join('');
         attempts++;
       }
-      
+
       // Update the scrambled letters with the new order
       draft.scrambledLetters = shuffled.map((letter, index) => ({
         ...letter,
