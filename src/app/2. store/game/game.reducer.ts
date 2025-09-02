@@ -39,8 +39,6 @@ export const gameReducer = createReducer(
       draft.score = state.answers.some((a) => a.state === 'revealed')
         ? 0
         : state.score;
-
-      return draft;
     })
   ),
   on(newGameStarted, (state, { word, answers }) =>
