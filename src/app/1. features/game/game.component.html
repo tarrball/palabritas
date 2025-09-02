@@ -1,22 +1,25 @@
 <main class="flex-grow-1">
-  <section class="flex-center-between" role="region" aria-label="Game scores">
+  <section class="d-flex justify-content-between" role="region" aria-label="Game scores">
+    @let earnedPoints = earnedPoints$ | async | number;
+    @let potentialPoints = potentialPoints$ | async | number;
+    @let totalScore = score$ | async | number;
+    
     <div role="status" aria-live="polite" aria-atomic="true">
-      <span id="round-label">Round:</span>
-      <span class="points" aria-labelledby="round-label">{{
-        earnedPoints$ | async
-      }}</span>
+      <div id="round-label" class="score-label">Round Score</div>
+      <div 
+        aria-labelledby="round-label"
+        [attr.aria-label]="'Round score: ' + earnedPoints + ' out of ' + potentialPoints + ' points'"
+      >
+        <span aria-hidden="true">{{ earnedPoints }}</span>
+        <span aria-hidden="true">/</span>
+        <span aria-hidden="true" class="points">{{ potentialPoints }}</span>
+      </div>
     </div>
     <div role="status" aria-live="polite" aria-atomic="true">
-      <span id="total-label">Total Score:</span>
-      <span class="points" aria-labelledby="total-label">{{
-        score$ | async
-      }}</span>
-    </div>
-    <div>
-      <span id="potential-label">Potential:</span>
-      <span class="points" aria-labelledby="potential-label">{{
-        potentialPoints$ | async
-      }}</span>
+      <div id="total-label" class="score-label">Total Score</div>
+      <div class="points text-align-right" aria-labelledby="total-label">{{
+        totalScore
+      }}</div>
     </div>
   </section>
 
